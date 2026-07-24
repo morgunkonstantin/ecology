@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+  <meta name="description" content="Иван Иллич встречает молодого разработчика соцсети. Диалог о конвивиальных инструментах, радикальной монополии и о том, как цифровая инфраструктура становится незаменимой.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Иллич и разработчик соцсети — Лаборатория №09">
+  <meta property="og:description" content="Иван Иллич и разработчик соцсети. Диалог о конвивиальности, радикальной монополии и цифровой инфраструктуре.">
+  <meta property="og:image" content="https://ecosoznanie.ru/og-image.jpg">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Иллич и разработчик соцсети — Лаборатория №09">
+  <meta name="twitter:description" content="Диалог Ивана Иллича с молодым разработчиком соцсети.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Иллич и разработчик соцсети — Лаборатория №09</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--ink:#1c2b1e;--ink-light:#3d5240;--moss:#4a7c59;--fern:#6ea87e;--sage:#a8c5a0;--mist:#d4e6d0;--cream:#f3ede3;--warm:#ece5d6;--paper:#faf6ef;--gold:#b8924a;--clay:#c4956a;--rust:#7a4f2e;}
+html{scroll-behavior:smooth;}
+body{background:var(--paper);color:var(--ink);font-family:'Jost',sans-serif;font-weight:300;overflow-x:hidden;}
+.lab-hero{padding:9rem 4rem 4rem;max-width:1100px;margin:0 auto;}
+.lab-tag{display:inline-flex;align-items:center;gap:0.6rem;font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--clay);margin-bottom:2rem;}
+.lab-tag::before{content:'';display:block;width:24px;height:1px;background:var(--clay);}
+.lab-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,5vw,4.2rem);font-weight:300;line-height:1.08;color:var(--ink);margin-bottom:2rem;max-width:860px;}
+.lab-hero h1 em{font-style:italic;color:var(--moss);}
+.lab-meta-row{display:flex;gap:3rem;flex-wrap:wrap;padding:1.2rem 0;border-top:1px solid rgba(74,124,89,0.15);border-bottom:1px solid rgba(74,124,89,0.15);margin-bottom:3rem;}
+.lab-meta-item{font-size:0.78rem;color:var(--ink-light);}
+.lab-meta-item strong{display:block;font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--sage);margin-bottom:0.25rem;}
+.lab-body{max-width:840px;margin:0 auto;padding:0 4rem 6rem;}
+.lab-body p{font-family:'Cormorant Garamond',serif;font-size:1.12rem;line-height:1.8;color:var(--ink);margin-bottom:1.6rem;}
+.lab-body p:first-of-type::first-letter{font-size:4.2rem;font-weight:400;line-height:0.85;float:left;margin:0.2rem 0.55rem 0 0;color:var(--moss);font-family:'Cormorant Garamond',serif;}
+.lab-body em.t{font-style:italic;color:var(--moss);}
+.lab-body blockquote{margin:2.5rem 0;padding:0 0 0 2rem;border-left:2px solid var(--fern);}
+.lab-body blockquote p{font-size:1.25rem;font-style:italic;color:var(--ink-light);margin-bottom:0.5rem!important;}
+.lab-body blockquote cite{font-family:'Jost',sans-serif;font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--moss);font-style:normal;}
+.lab-section{margin:3rem 0;padding:1.8rem 2rem;background:var(--cream);border-left:3px solid var(--clay);}
+.lab-section-label{font-size:0.64rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--clay);margin-bottom:0.7rem;}
+.lab-section h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:400;color:var(--ink);margin-bottom:0.8rem;}
+.lab-section h3 em{font-style:italic;color:var(--moss);}
+.lab-section p{font-family:'Jost',sans-serif!important;font-size:0.9rem!important;line-height:1.85!important;color:var(--ink-light)!important;margin-bottom:0.7rem!important;}
+.lab-section p:last-child{margin-bottom:0!important;}
+/* Dialogue */
+.dialogue{margin:3rem 0;display:flex;flex-direction:column;gap:0;}
+.dial-line{padding:1.2rem 0;border-bottom:1px solid rgba(74,124,89,0.1);}
+.dial-line:last-child{border-bottom:none;}
+.dial-who{font-family:'Jost',sans-serif;font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:0.5rem;}
+.dial-who.bateson{color:var(--moss);}
+.dial-who.gpt{color:var(--clay);}
+.dial-text{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.7;color:var(--ink);}
+.dial-text em{font-style:italic;color:var(--moss);}
+/* Dark block */
+.dark-block{background:var(--ink);margin:4rem -4rem;padding:3.5rem 4rem;}
+.dark-block-inner{max-width:840px;margin:0 auto;}
+.dark-block small{font-family:'Jost',sans-serif;font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--sage);display:block;margin-bottom:0.8rem;}
+.dark-block h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;font-style:italic;color:var(--cream);line-height:1.3;margin-bottom:1.2rem;}
+.dark-block p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.75;color:rgba(211,230,208,0.75);margin-bottom:1rem;}
+.dark-block p:last-child{margin-bottom:0;}
+.sb{display:flex;align-items:center;justify-content:center;gap:1.5rem;margin:3.5rem 0;}
+.sb::before,.sb::after{content:'';flex:1;max-width:80px;height:1px;background:rgba(74,124,89,0.25);}
+.sb span{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-style:italic;color:var(--moss);}
+.conclusion{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--moss);text-align:center;font-size:1.2rem;margin-top:3.5rem;}
+.lab-sig{margin-top:4rem;padding-top:2.5rem;border-top:1px solid rgba(74,124,89,0.15);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;}
+.lab-sig-author{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--ink-light);font-style:italic;}
+.lab-sig-meta{font-size:0.72rem;letter-spacing:0.1em;color:var(--sage);text-transform:uppercase;}
+.reading-bar{position:fixed;top:0;left:0;height:2px;background:var(--moss);z-index:400;width:0%;transition:width 0.1s linear;}
+@media(max-width:720px){
+  .lab-hero,.lab-body{padding-left:1.5rem;padding-right:1.5rem;}
+  .dark-block{margin-left:-1.5rem;margin-right:-1.5rem;padding-left:1.5rem;padding-right:1.5rem;}
+  .lab-meta-row{flex-direction:column;gap:1rem;}
+}
+/* ── GLOBAL NAV + FOOTER v2 ── */
+.g-nav-wrap{position:fixed;top:0;left:0;right:0;z-index:300;background:rgba(250,246,239,0.95);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(74,124,89,0.13);font-family:'Jost',sans-serif;}
+.g-nav{display:flex;align-items:center;height:62px;padding:0 3rem;gap:0;}
+.g-logo{display:flex;align-items:center;gap:0.55rem;text-decoration:none;flex-shrink:0;margin-right:auto;}
+.g-logo .logo-svg{width:24px;height:24px;color:var(--ink);}
+.g-logo-text{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--ink);white-space:nowrap;}
+.g-logo-text em{font-style:italic;color:var(--moss);}
+.g-links{display:flex;align-items:center;gap:0;list-style:none;}
+.g-links>li{position:relative;}
+.g-links>li>a,.g-links>li>button{display:flex;align-items:center;gap:0.3rem;font-size:0.75rem;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-light);text-decoration:none;padding:0.45rem 0.9rem;border-radius:3px;background:none;border:none;cursor:pointer;font-family:'Jost',sans-serif;transition:color 0.2s,background 0.2s;}
+.g-links>li>a:hover,.g-links>li>button:hover{color:var(--moss);}
+.g-links>li>a.g-active{color:var(--moss);}
+.g-chevron{width:10px;height:10px;display:block;transition:transform 0.25s;}
+.g-drop-open>.g-drop-btn .g-chevron{transform:rotate(180deg);}
+.g-dropdown{position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);background:var(--ink);border:1px solid rgba(255,255,255,0.08);border-radius:6px;box-shadow:0 16px 40px rgba(0,0,0,0.35);padding:1.2rem;min-width:580px;display:none;grid-template-columns:repeat(3,1fr);gap:0.1rem;z-index:400;}
+.g-drop-open .g-dropdown{display:grid;}
+.g-dd-link{display:flex;align-items:center;gap:0.5rem;text-decoration:none;padding:0.5rem 0.6rem;border-radius:4px;transition:background 0.18s;}
+.g-dd-link:hover{background:rgba(255,255,255,0.08);}
+.g-dd-icon{width:18px;height:18px;flex-shrink:0;color:rgba(110,168,126,0.55);}
+.g-dd-icon svg{width:100%;height:100%;}
+.g-dd-link:hover .g-dd-icon{color:var(--fern);}
+.g-dd-name{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(243,237,227,0.85);}
+.g-dd-num{font-size:0.6rem;letter-spacing:0.12em;color:rgba(168,197,160,0.4);margin-left:auto;}
+.g-dd-link.wip{opacity:0.35;pointer-events:none;}
+.g-burger{display:none;flex-direction:column;justify-content:center;gap:5px;width:32px;height:32px;background:none;border:none;cursor:pointer;padding:3px;margin-left:1rem;}
+.g-burger span{display:block;height:1.5px;background:var(--ink);transition:transform 0.28s,opacity 0.28s,width 0.28s;transform-origin:center;}
+.g-burger span:nth-child(1){width:100%;}
+.g-burger span:nth-child(2){width:70%;}
+.g-burger span:nth-child(3){width:45%;}
+.g-burger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);width:100%;}
+.g-burger.open span:nth-child(2){opacity:0;}
+.g-burger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);width:100%;}
+.g-overlay{display:none;position:fixed;inset:62px 0 0 0;z-index:290;background:rgba(28,43,30,0.98);backdrop-filter:blur(20px);overflow-y:auto;padding:2rem 2rem 3rem;}
+.g-overlay.open{display:block;}
+.g-ov-section{margin-bottom:2rem;}
+.g-ov-label{font-size:0.64rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(168,197,160,0.45);margin-bottom:0.8rem;font-family:'Jost',sans-serif;}
+.g-ov-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.15rem;}
+.g-ov-link{display:flex;align-items:center;gap:0.5rem;text-decoration:none;padding:0.6rem 0.5rem;border-radius:4px;transition:background 0.18s;}
+.g-ov-link:hover{background:rgba(255,255,255,0.07);}
+.g-ov-icon{width:18px;height:18px;color:rgba(110,168,126,0.55);flex-shrink:0;}
+.g-ov-icon svg{width:100%;height:100%;}
+.g-ov-name{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(243,237,227,0.85);}
+.g-ov-link.wip{opacity:0.35;pointer-events:none;}
+.g-ov-simple-links{display:flex;flex-direction:column;gap:0.15rem;}
+.g-ov-simple-link{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(243,237,227,0.8);text-decoration:none;padding:0.55rem 0.5rem;border-radius:4px;transition:background 0.18s;}
+.g-ov-simple-link:hover{background:rgba(255,255,255,0.07);color:#f3ede3;}
+
+/* FOOTER */
+.g-footer-logo .logo-svg{width:22px;height:22px;}
+.g-footer-logo-text em{font-style:italic;color:var(--fern);}
+.g-footer-sec-link.wip{opacity:0.25;pointer-events:none;}
+.g-footer-sec-icon svg{width:100%;height:100%;}
+.g-footer-bottom-links a{font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(168,197,160,0.35);text-decoration:none;transition:color 0.18s;}
+.g-footer-bottom-links a:hover{color:var(--fern);}
+
+body{padding-top:62px!important;}
+/* ── GLOBAL FOOTER ── */
+.gf{background:var(--ink);padding:3.5rem 3rem 0;font-family:'Jost',sans-serif;}
+.gf-top{display:grid;grid-template-columns:200px 1fr;gap:4rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,0.07);}
+.gf-brand{}
+.gf-logo{display:flex;align-items:center;gap:0.55rem;text-decoration:none;margin-bottom:1rem;}
+.gf-logo-text{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--cream);}
+.gf-logo-text em{font-style:italic;color:var(--fern);}
+.gf-tagline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.88rem;color:rgba(168,197,160,0.45);line-height:1.65;max-width:175px;}
+.gf-cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2.5rem;}
+.gf-col-title{font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(168,197,160,0.38);margin-bottom:1rem;}
+.gf-sections{display:grid;grid-template-columns:1fr 1fr;gap:0.05rem;}
+.gf-sec-link{display:flex;align-items:center;gap:0.4rem;text-decoration:none;padding:0.38rem 0.25rem;border-radius:3px;opacity:0.68;transition:opacity 0.18s,background 0.18s;}
+.gf-sec-link:hover{opacity:1;background:rgba(255,255,255,0.06);}
+.gf-sec-icon{width:15px;height:15px;color:var(--fern);flex-shrink:0;}
+.gf-sec-icon svg{width:100%;height:100%;}
+.gf-sec-name{font-family:'Cormorant Garamond',serif;font-size:0.9rem;color:var(--mist);}
+.gf-nav-links{display:flex;flex-direction:column;gap:0.05rem;}
+.gf-nav-link{font-family:'Cormorant Garamond',serif;font-size:0.92rem;color:rgba(211,230,208,0.58);text-decoration:none;padding:0.38rem 0.25rem;border-radius:3px;transition:color 0.18s,background 0.18s;}
+.gf-nav-link:hover{color:var(--fern);background:rgba(255,255,255,0.05);}
+.gf-bottom{padding:1.5rem 0 1.8rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.8rem;}
+.gf-copy{font-size:0.67rem;letter-spacing:0.08em;color:rgba(168,197,160,0.28);}
+.gf-bottom-links{display:flex;gap:1rem;}
+.gf-bottom-links a{font-size:0.67rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(168,197,160,0.35);text-decoration:none;transition:color 0.18s;}
+.gf-bottom-links a:hover{color:var(--fern);}
+@media(max-width:860px){
+  .gf{padding:2.5rem 1.5rem 0;}
+  .gf-top{grid-template-columns:1fr;gap:2rem;}
+  .gf-cols{grid-template-columns:1fr 1fr;gap:1.5rem;}
+}
+@media(max-width:540px){
+  .gf-cols{grid-template-columns:1fr;}
+  .gf-sections{grid-template-columns:1fr 1fr;}
+  .gf-bottom{flex-direction:column;align-items:flex-start;gap:0.6rem;}
+}
+</style>
+  <link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
+
+<style>
+.dial-who.benyus{color:var(--moss);}
+.dial-who.engineer{color:var(--rust);}
+.dial-who.narrator{color:var(--sage);}
+.dial-who.illich{color:var(--moss);}
+.dial-who.artem{color:var(--rust);}
+.aside-note{background:var(--warm);padding:1.5rem 1.8rem;margin:2rem 0;border-left:3px solid var(--gold);font-family:'Jost',sans-serif;font-size:.86rem;line-height:1.75;color:var(--ink-light);}
+.aside-note strong{display:block;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;font-weight:400;}
+</style>
+
+</head>
+<body>
+<div class="g-nav-wrap" id="gNavWrap">
+  <div class="g-nav">
+    <a href="index.html" class="g-logo">
+      <svg viewBox="0 0 100 100" fill="none" class="logo-svg"><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#4a7c59"/></svg>
+      <span class="g-logo-text">Эко<em>Сознание</em></span>
+    </a>
+    <ul class="g-links">
+      <li>
+        <button class="g-drop-btn" aria-expanded="false">
+          Разделы
+          <svg class="g-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="g-dropdown">
+          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
+          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
+          <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
+          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
+          <a href="section-compost.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Компост</span><span class="g-dd-num">05b</span></a>
+          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
+          <a href="section-construction.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="g-dd-name">Строительство</span><span class="g-dd-num">06b</span></a>
+          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
+          <a href="section-art.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></span><span class="g-dd-name">Искусство</span><span class="g-dd-num">08</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">09</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">10</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">11</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">12</span></a>
+        </div>
+      </li>
+      <li><a href="index.html#latest">Эссе</a></li>
+      <li><a href="glossary.html">Глоссарий</a></li>
+      <li><a href="about.html">О проекте</a></li>
+    </ul>
+    <button class="g-burger" id="gBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+<div class="g-overlay" id="gOverlay">
+  <div class="g-ov-section">
+    <div class="g-ov-label">Разделы</div>
+    <div class="g-ov-grid">
+      <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Философия</span></a>
+      <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
+      <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
+      <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Технологии</span></a>
+      <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
+      <a href="section-compost.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Компост</span></a>
+      <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
+      <a href="section-construction.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/></svg></span><span class="g-ov-name">Строительство</span></a>
+      <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-ov-name">Экономика</span></a>
+      <a href="section-art.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></span><span class="g-ov-name">Искусство</span></a>
+      <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Образование</span></a>
+      <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
+      <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
+      <a href="section-health.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-ov-name">Здоровье</span></a>
+    </div>
+  </div>
+  <div class="g-ov-section">
+    <div class="g-ov-label">Навигация</div>
+    <div class="g-ov-simple-links">
+      <a href="index.html" class="g-ov-simple-link">Главная</a>
+      <a href="index.html#latest" class="g-ov-simple-link">Эссе и лаборатории</a>
+      <a href="glossary.html" class="g-ov-simple-link">Глоссарий</a>
+      <a href="map.html" class="g-ov-simple-link">Карта связей</a>
+      <a href="about.html" class="g-ov-simple-link">О проекте</a>
+    </div>
+  </div>
+</div>
+
+<section class="lab-hero">
+  <div class="lab-tag">Лаборатория №09 · Технологии</div>
+  <h1>Иллич<br>и <em>разработчик соцсети</em></h1>
+  <div class="lab-meta-row">
+    <div class="lab-meta-item"><strong>Метод</strong>Философский мысленный эксперимент</div>
+    <div class="lab-meta-item"><strong>Вопрос</strong>Что произошло бы, если бы Иван Иллич встретился с молодым основателем «этичного» стартапа-соцсети — не в кулуарах TechCrunch, а у себя в кабинете в Бремене?</div>
+    <div class="lab-meta-item"><strong>Понятия</strong>Конвивиальность · Радикальная монополия · Контрпродуктивность · Теневой труд</div>
+    <div class="lab-meta-item"><strong>Время чтения</strong>≈ 20 мин</div>
+  </div>
+</section>
+
+<div class="lab-body">
+
+  <p>В 1973 году австрийский философ и социальный критик Иван Иллич опубликовал книгу «Инструменты для конвивиальности». Идея звучала обманчиво просто: инструмент — это не то, что решает задачу, это то, что перестраивает того, кто им пользуется. Молоток остаётся молотком в моих руках. Автомобиль — не остаётся автомобилем. Он перестраивает город под себя, время под себя, тело под себя, экономику под себя. И в какой-то момент — незаметный, диффузный, без единой точки решения — становится единственным способом передвигаться. Не потому, что его выбрали. Потому, что все остальные способы стали невозможными.</p>
+
+  <p>Иллич назвал это «радикальной монополией» — не рыночным доминированием одной компании, а структурной монополией одного способа делать вещи. Радикальная монополия автомобиля — не в том, что Ford победил конкурентов. В том, что городá больше не позволяют жить без машины. Радикальная монополия школы — не в том, что победил Гарвард. В том, что «учиться» стало означать «сидеть в классе двенадцать лет».</p>
+
+  <p>Иллич умер в 2002 году. Он не увидел, как эта же логика повторилась в цифровой инфраструктуре. Facebook, Instagram, TikTok, ВКонтакте, Telegram. Не одна платформа победила другие. Всё вместе — соцсети как таковые — стали структурно необходимы. Не написать в чате подъезда = не существовать для соседей. Не выложить фото ребёнка = «где вы вообще пропали». Не проверять ленту утром = не знать что происходит в мире.</p>
+
+  <p>Что скажет Иллич, если оказать его в кабинете молодого предпринимателя, который делает «этичную соцсеть» — без алгоритма, без рекламы, для локальных сообществ? Не на конференции про приватность, а в его собственном кабинете, куда предприниматель приехал за советом как эксперту по сообществам?</p>
+
+  <div class="sb"><span>❦</span></div>
+
+  <div class="lab-section">
+    <div class="lab-section-label">Реагент</div>
+    <h3>Центральный тезис Иллича — <em>инструмент, который перестраивает пользователя</em></h3>
+    <p>Иллич: инструменты бывают двух типов. Первые — <em>конвивиальные</em> — расширяют возможности человека, оставаясь послушными его намерению. Топор, велосипед, керосиновая лампа, книга, тетрадь. Вы берёте их, когда нужно, откладываете, когда не нужно. Они не претендуют на ваше внимание, когда вы ими не пользуетесь. Они не перестраивают мир вокруг вас так, что без них уже нельзя.</p>
+    <p>Вторые — <em>индустриальные</em> — превращают пользователя в клиента услуги. Автомагистраль, больничная система, школьная система, телекоммуникационная инфраструктура. Вы формально ими «пользуетесь» — но в реальности вы в них живёте. Вы не выбираете, ехать на машине или идти пешком, если вы живёте в пригороде — вы обречены на машину. Вы не выбираете, учить ребёнка самостоятельно или отдать в школу — вас обяжут отдать.</p>
+    <p>Ключевое различие проходит по трём линиям. Первое: <em>конвивиальный инструмент можно отложить, не разрушая свою жизнь</em>. Индустриальный — нельзя. Второе: <em>конвивиальный инструмент не требует институциональной инфраструктуры для существования</em>. Индустриальному нужны заводы, дороги, регуляторы, министерства. Третье: <em>конвивиальный инструмент оставляет место для того, чтобы жить без него</em>. Индустриальный — постепенно это место уничтожает.</p>
+    <p>Иллич: как только инструмент пересекает определённый порог распространения, он становится контрпродуктивным. Медицинская система после определённого порога делает людей более больными, а не более здоровыми — через ятрогенные заболевания, через утрату собственных навыков исцеления, через фармакологическую зависимость. Школа после определённого порога делает людей менее образованными — через утрату способности учиться самостоятельно. Транспортная система после определённого порога делает передвижение медленнее — через пробки, через рассеяние городов, через время на дорогу.</p>
+    <p>Соцсеть, спрашивает молодой предприниматель, — это конвивиальный инструмент или индустриальный? Иллич ещё не ответил. Он смотрит на гостя.</p>
+  </div>
+
+  <p>Представим кабинет Иллича в его небольшом доме на окраине Бремена. Осенний вечер 2001 года. За год до смерти. Иллич уже болен — на щеке большое новообразование, которое он отказался оперировать, потому что не верит в современную медицину. Ему семьдесят пять. Он худ, седой, с очень внимательными глазами. Курит трубку. В кабинете — книжные полки от пола до потолка, стол с бумагами, лампа с зелёным абажуром. За окном идёт мелкий немецкий дождь.</p>
+
+  <p>В дверь стучится гость. Артём Соколов, тридцати двух лет. Русский. Окончил ВШЭ, работал пять лет в ВКонтакте, потом ушёл делать своё. CEO стартапа «Точки» — соцсети для локальных сообществ. Без алгоритма (лента только по географии), без рекламы (подписная модель), без бесконечной прокрутки. 850 тысяч ежемесячных пользователей в тридцати четырёх городах России. Два миллиона долларов посевных инвестиций. Активно растёт. Артём — умный, начитанный, честный. За последние три месяца прочёл всего Иллича и потерял сон. Приехал в Бремен на неделю, чтобы поговорить с автором лично.</p>
+
+  <p>Иллич знает про приезд Артёма — прочёл описание «Точек», которое тот прислал заранее. Он не собирается «уговаривать» Артёма закрыть компанию. Он собирается задать ему несколько вопросов. Артём об этом ещё не догадывается.</p>
+
+  <div class="sb"><span>❦</span></div>
+
+  <div class="dialogue">
+    <div class="dial-line">
+      <div class="dial-who narrator">Ситуация</div>
+      <div class="dial-text">Иллич предлагает Артёму сесть в потёртое кожаное кресло у окна. Наливает чай. Артём достаёт из сумки MacBook, но не открывает. Кладёт на колени.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who illich">Иллич</div>
+      <div class="dial-text">Артём, я прочёл ваши материалы. Прежде чем вы начнёте презентацию — я хочу задать вам один вопрос. Не про технологии. Про то, что было до вас. Женщина из вашего примера — та, которая через «Точки» нашла соседа-электрика и решила проблему за час. Как она решала бы эту задачу, если бы «Точек» не было?</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who artem">Артём</div>
+      <div class="dial-text">Ну… искала бы по объявлениям. Спросила бы у консьержки. Позвонила бы в управляющую компанию. Возможно, ей бы неделю никто не помог.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who illich">Иллич</div>
+      <div class="dial-text">А если бы вы жили в её подъезде сорок лет назад? Не в 2001-м, а в 1961-м?</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who artem">Артём</div>
+      <div class="dial-text">Тогда, наверное… она бы вышла в подъезд, спросила у соседей, кто-то бы вспомнил. Или у неё был бы знакомый электрик — брат друга, коллега мужа. Всё через личные связи.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who illich">Иллич</div>
+      <div class="dial-text">Значит, у неё уже была инфраструктура для решения этой задачи. Она называлась — соседство. Она не требовала серверов. Она не требовала стартапа. Она не требовала венчурного капитала. Она работала, пока была плотность знакомства, доверие и время у людей друг для друга. Вопрос — правильный ли: <em>что «Точки» создали?</em> Или правильный: <em>что «Точки» заменили?</em></div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who artem">Артём</div>
+      <div class="dial-text">Мы бы сказали, что мы восстанавливаем то, что было утеряно. Соседи больше не знают друг друга. Мы возвращаем этот функционал в цифровом виде.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who illich">Иллич</div>
+      <div class="dial-text">Возвращаете. В цифровом виде. То есть — не возвращаете. Соседство не имело цифрового вида. Оно имело телесный вид — лестничная площадка, разговор у мусорной шахты, приглашение зайти на чай. Вы делаете <em>другой</em> инструмент, не возвращаете старый. Это важно назвать. Вы не восстанавливаете соседство. Вы предлагаете его цифровую замену. Замена может быть лучше или хуже — но она не тождественна оригиналу.</div>
+    </div>
+  </div>
+
+  <div class="aside-note">
+    <strong>Комментарий вне диалога</strong>
+    Иллич начал с приёма, который он использовал всю жизнь: остановить собеседника на языке. Артём приехал с фразой «мы восстанавливаем то, что утеряно». Иллич показал: у слова «восстанавливать» есть техническое значение — вернуть в прежнее состояние. То, что делают «Точки», не является восстановлением соседства — это создание нового инструмента, который берёт на себя <em>часть функций</em> утраченного соседства. Это не «плохо». Это просто должно быть точно названо. Потому что от того, как мы называем то, что делаем, зависит, увидим ли мы, что реально происходит.
+  </div>
+
+  <div class="dialogue">
+    <div class="dial-line">
+      <div class="dial-who artem">Артём</div>
+      <div class="dial-text">Хорошо. Согласен. Мы делаем цифровой инструмент, который берёт на себя часть функций соседства. Но что в этом плохого? Инструмент работает. Люди им пользуются добровольно. Никто не заставляет.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who illich">Иллич</div>
+      <div class="dial-text">Никто не заставляет ездить на машине в Лос-Анджелесе. Формально — можно ходить пешком. В реальности — вы обречены на машину, потому что город больше не позволяет жить без неё. Это не насилие. Это инфраструктура. Она делает выбор не за вас — она делает выбор до вас.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who illich">Иллич</div>
+      <div class="dial-text">Мой вопрос к «Точкам» такой. Что происходит с районом, когда 30% его жителей — в «Точках», 50%, 70%? В какой момент не быть в «Точках» означает <em>не знать</em>, что в подъезде отключат воду? Не быть на собрании ТСЖ? Не найти электрика — потому что вся информация об электриках теперь в приложении, а не на стене подъезда? В какой момент «Точки» перестают быть удобством и становятся необходимостью?</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who artem">Артём</div>
+      <div class="dial-text">Ну… мы про это не думали. Мы думали, что чем больше проникновение, тем лучше — для пользователя и для нас. Но вы говорите про порог, после которого проникновение становится <em>принуждением</em>.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who illich">Иллич</div>
+      <div class="dial-text">Именно. Я называю это радикальной монополией. Не рыночной — вы можете быть один на рынке или конкурировать с ВКонтакте, это неважно. Структурной — когда одна форма инструмента вытеснила все альтернативы. В районе, где 70% в «Точках», подъездная стена перестаёт использоваться. Консьержка теряет статус источника информации. Соседка перестаёт знать, кто электрик, — потому что зачем помнить, если в приложении быстрее? Через десять лет никто уже не помнит, что можно решить задачу без приложения. И тогда — не быть в приложении означает не решать задачу.</div>
+    </div>
+  </div>
+
+  <div class="sb"><span>❦</span></div>
+
+  <div class="lab-section">
+    <div class="lab-section-label">Промежуточная реакция</div>
+    <h3>Первый сдвиг — <em>от продукта к инфраструктуре</em></h3>
+    <p>Первые сорок минут разговора Артём думал в категориях продукта. «Что мы даём пользователю?» «Как мы решаем его боль?» «Какая наша ценность?» Это язык product management. Он выучил его в ВКонтакте, прочитал в книгах, обсуждает на встречах с инвесторами. В этом языке всё крутится вокруг ценности, которую продукт создаёт для конкретного пользователя.</p>
+    <p>Иллич сдвинул рамку. От вопроса «что продукт даёт пользователю» — к вопросу «что происходит с окружающей средой пользователя». Это принципиально другая оптика. В первой рамке инструмент — нейтральный посредник, увеличивающий возможности. Во второй — инструмент перестраивает мир вокруг человека, и главное последствие происходит не с пользователем, а с не-пользователем и с инфраструктурой не-цифрового.</p>
+    <p>Артём вдруг увидел свой продукт по-другому. Не как «решение проблемы соседства», а как — постепенное вытеснение всех остальных решений. Не потому, что «Точки» злые. А потому, что любой централизованный цифровой инструмент, достигая массового распространения, обесценивает децентрализованные аналоговые способы делать то же самое.</p>
+    <p>Это был первый сдвиг: <em>инструмент — не то, что решает задачу пользователя, а то, что перестраивает мир, в котором задача существует</em>. И вопрос не «полезен ли инструмент», а «остаётся ли после него место для его отсутствия».</p>
+  </div>
+
+  <div class="dialogue">
+    <div class="dial-line">
+      <div class="dial-who artem">Артём</div>
+      <div class="dial-text">Иван, я хочу возразить. У вас в описании «Точек» может создаться впечатление, что мы делаем что-то плохое. Но давайте сравним нас с ВКонтакте, Инстаграмом, ТикТоком. Они забирают восемь часов внимания в день. Показывают рекламу. Продают данные. Мы — не показываем рекламу. Не используем алгоритм для удержания. Не собираем поведенческие данные. Мы, кажется, в другой категории.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who illich">Иллич</div>
+      <div class="dial-text">Вы правы, что вы отличаетесь. И это делает вам честь. Но давайте разделим два вопроса. Первый: <em>причиняете ли вы меньше вреда, чем ВКонтакте?</em> Ответ — да. Второй: <em>причиняете ли вы новый тип вреда, о котором мы ещё не подумали?</em> Мой ответ — тоже да.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who illich">Иллич</div>
+      <div class="dial-text">ВКонтакте — это индустриальный инструмент старого типа. Он забирает внимание, продаёт рекламу, эксплуатирует данные. Это очевидно вредно, поэтому люди научились с этим бороться — законы о защите данных, критика зависимости, движения за цифровую диету. Границы известны.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who illich">Иллич</div>
+      <div class="dial-text">«Точки» — это <em>новый тип</em>. Вы не эксплуатируете внимание. Вы не продаёте рекламу. Но вы делаете то, что ВКонтакте не делает, — становитесь единственным способом делать нецифровое дело. ВКонтакте — единственный способ делать интернет-социализацию, а это не необходимость. «Точки» претендуют быть единственным способом узнавать про своих соседей — а это необходимость, у неё есть телесная, географическая, экзистенциальная сторона. Вред другой природы: не эксплуатация внимания, а <em>цифровизация того, что не должно быть цифровым</em>.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who artem">Артём</div>
+      <div class="dial-text">Но соседство и так уже разрушено. Мы не разрушаем его — мы предлагаем ему функциональную замену.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who illich">Иллич</div>
+      <div class="dial-text">Разрушено — да. Функциональная замена — согласен. Но между «функциональной заменой» и «оригиналом» есть тонкая разница, которую в языке product-management не видно. Функциональная замена берёт функцию — помощь с электриком — и переносит её в цифровой канал. Оригинал — соседство — имел эту функцию плюс двадцать других, которые нельзя было выделить и перенести. Знакомство лиц. Общее переживание пространства. Молчаливое присутствие. Долг взаимности. Соучастие в судьбах. Всё это не имеет функциональной формы. Это <em>материя</em>, из которой возникает функция.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who illich">Иллич</div>
+      <div class="dial-text">Ваша функциональная замена работает — да, электрика человек нашёл. Но она работает без всей той материи, из которой раньше возникала функция. Это работает — но это не соседство. Это <em>сервис по нахождению электрика</em>, оформленный в интерфейс, напоминающий соседство. Разница в том, что сервис не оставляет след, не создаёт долг взаимности, не строит непрерывность отношений во времени. Через год эта женщина не узнает электрика в лицо. Через десять лет она не будет знать, кто её сосед. Не потому, что «Точки» плохие. Потому, что цифровая функциональная замена <em>по природе своей</em> не производит того побочного продукта, ради которого раньше и существовало соседство.</div>
+    </div>
+  </div>
+
+  <div class="aside-note">
+    <strong>Комментарий вне диалога</strong>
+    Здесь Иллич делает ход, который в его текстах называется анализом «побочных продуктов». Оригинальный институт — соседство — имеет заявленную функцию (помощь с бытовыми задачами) и большое количество не заявленных «побочных продуктов»: знание лиц, взаимный долг, общее переживание пространства, доверие. Функциональная замена берёт только заявленную функцию. Побочные продукты не переносятся. Это выглядит как оптимизация, но на самом деле — редукция. Через два поколения жители района, выросшие на цифровых сервисах вместо соседства, могут вообще не понимать, что раньше было. Они наследуют функцию, но не материю. И это, возможно, самая тонкая потеря нашего времени.
+  </div>
+
+  <div class="sb"><span>❦</span></div>
+
+  <div class="lab-section">
+    <div class="lab-section-label">Второй сдвиг</div>
+    <h3>Тонкость — <em>инструмент как теневой труд</em></h3>
+    <p>Есть у Иллича понятие, к которому он подходил всю жизнь: <em>shadow work</em>, теневой труд. Работа, которую индустриальная система заставляет делать своих потребителей — но не считает работой, не оплачивает и не признаёт. Кассир в супермаркете сканирует товары. Клиент в супермаркете <em>тоже</em> сканирует, укладывает, везёт домой — но это не считается работой. Это «удобство самообслуживания».</p>
+    <p>В цифровой инфраструктуре теневой труд принял новую форму. Пользователи соцсетей — и «Точек» тоже — производят весь контент, поддерживают активность, модерируют друг друга, приводят новых пользователей. Это огромный, бесплатный, невидимый труд. Заявленное отношение: «мы дали вам инструмент, вы им пользуетесь бесплатно». Реальное отношение: «вы делаете работу платформы бесплатно, а мы капитализируем результат».</p>
+    <p>«Точки» — не эксплуатируют этот труд напрямую, потому что не показывают рекламу и не продают данные. Но они всё равно на нём построены. Без пользовательского содержания «Точки» — это пустая оболочка. Ценность приложения производится жителями района. Ценность капитализируется — через оценку компании, через привлечение раундов, через будущий exit — компанией.</p>
+    <p>Второй сдвиг Иллича — научить Артёма видеть эту асимметрию. Не для того, чтобы обвинить его. Для того, чтобы предложить <em>переосмыслить проектирование</em>. Если пользователи производят ценность, то у них должно быть право на выход из инструмента с этой ценностью. Инструмент, из которого нельзя выйти со своими данными, договорённостями и связями, — это не инструмент. Это ловушка.</p>
+  </div>
+
+  <div class="dialogue">
+    <div class="dial-line">
+      <div class="dial-who artem">Артём</div>
+      <div class="dial-text">Иван, я слушаю, и мне становится не по себе. Не потому, что я не согласен — я, возможно, согласен процентов на семьдесят. А потому, что я не понимаю, что мне <em>делать</em>. Я собрал команду. Взял два миллиона у инвесторов. У меня сорок человек в офисе. Что вы предлагаете — закрыть компанию и вернуть деньги? Это невозможно.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who illich">Иллич</div>
+      <div class="dial-text">Не закрывать. Изменить проектирование. Я не догматик, Артём. Я не считаю, что цифровые инструменты — зло. Я считаю, что цифровые инструменты, спроектированные по индустриальной логике, — то есть под централизацию, рост и capture пользователя — становятся частью проблемы. Но проектирование можно перевернуть. Три вещи. Каждая маленькая. Каждая радикальная по своим последствиям.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who illich">Иллич</div>
+      <div class="dial-text">Первое: <em>заложите в архитектуру право на выход</em>. Каждый месяц каждое сообщество в «Точках» — подъезд, дом, район — должно получать автоматический экспорт. PDF со списком контактов, договорённостей, важных решений. Всё в человекочитаемой форме. Так, чтобы сообщество могло — если завтра «Точки» закроются, или если сообщество решит уйти на другую платформу, или если они просто захотят распечатать и повесить на стенде в подъезде — продолжить существование <em>без вас</em>. Ваш продукт не может быть тем, без чего не могут жить. Он должен быть тем, что можно отложить, не разрушая инфраструктуру, которую он обслуживает.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who illich">Иллич</div>
+      <div class="dial-text">Второе: <em>ограничьте масштаб</em>. Не растите сверх населённого пункта в двадцать тысяч человек. Если больше — не одна платформа для всех, а <em>форки</em>, по муниципалитетам, по районам. Каждый — отдельный инстанс. Не централизованная инфраструктура, а <em>федерация независимых инстансов</em>. Это тоже проектное решение. Вы не «покроете всю Россию» — вы дадите инструменты, чтобы каждая местность подняла свой. Как локальные газеты в двадцатом веке. Никто не думал, что газета в Владимире должна быть филиалом газеты в Тюмени.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who illich">Иллич</div>
+      <div class="dial-text">Третье: <em>откройте протокол</em>. Сделайте протокол общения между инстансами открытым. Как электронная почта — не важно, чей у вас клиент, письмо доходит. Как Fediverse — не важно, на каком сервере вы, вы видите людей на других серверах. Тогда «Точки» перестают быть <em>компанией, владеющей платформой</em>, и становятся <em>компанией, обслуживающей протокол</em>. Ваш бизнес больше не в удержании пользователей — потому что они могут в любой момент уйти на другой инстанс, не потеряв связей. Ваш бизнес в качестве обслуживания. Это принципиально другая экономика.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who artem">Артём</div>
+      <div class="dial-text">Первое — реалистично. Мы можем сделать автоэкспорт за пару спринтов. Второе — интересно, но убивает вирусный рост. Каждый новый муниципалитет требует установки, обучения, поддержки — это дорого. Третье — самое тяжёлое. Открытый протокол убивает мой бизнес. Я не смогу продать долю инвесторам, потому что «продукт» перестаёт быть продуктом. Как я объясню это раунду?</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who illich">Иллич</div>
+      <div class="dial-text">Возможно, никак. Возможно, вам придётся вернуть деньги. Это неприятная новость, но не катастрофа. Vc-модель, в которой вы существуете, требует роста, capture и exit. Она не совместима с конвивиальным инструментом. Это <em>структурное</em> несовпадение, а не тактическое. Если вы серьёзно относитесь к первому пункту — что «Точки» не должны быть тем, без чего нельзя, — то вы не можете одновременно строить компанию, у которой в бизнес-модели заложена <em>именно эта</em> незаменимость.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who illich">Иллич</div>
+      <div class="dial-text">Есть другие модели. Кооператив с оплатой муниципалитетами. Некоммерческий фонд, живущий на пожертвования. Открытый протокол, вокруг которого возникает экосистема коммерческих сервисов — вы обслуживаете один из инстансов, но не единственный. Всё это неинтересно венчурным капиталистам. Всё это возможно и работает — просто не в том мире, где считаешь мультипликаторами.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who artem">Артём</div>
+      <div class="dial-text">Иван, вы понимаете, что вы говорите мне: «Разрушь компанию, которую строил три года»?</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who illich">Иллич</div>
+      <div class="dial-text">Я говорю вам: если вы серьёзны в своих намерениях, то то, что вы называете «компанией», уже сейчас находится в конфликте с этими намерениями. И этот конфликт разрешится — в ту или другую сторону. Либо намерения уступят компании, и через пять лет вы будете обычной цифровой инфраструктурой, от которой все зависят. Либо компания уступит намерениям, и вы построите <em>другую</em> организацию — не «стартап», а что-то, для чего у нас пока нет слова.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who illich">Иллич</div>
+      <div class="dial-text">Я не пытаюсь сделать вас несчастным. Я пытаюсь показать вам, что вопрос, который вы для себя ещё не задавали, — «в каком отношении моя бизнес-модель находится к тем ценностям, которые я декларирую?» — этот вопрос неизбежно всплывёт. Через год, через три года, через десять лет. Лучше — сейчас. Пока команда небольшая, пока инвесторов двое, пока у вас есть манёвр.</div>
+    </div>
+  </div>
+
+  <div class="sb"><span>❦</span></div>
+
+  <div class="lab-section">
+    <div class="lab-section-label">Кульминация</div>
+    <h3>Что переворачивается — <em>от продукта к протоколу</em></h3>
+    <p>Разговор Иллича с Артёмом мог остаться в категории «интересная критика от старого философа». Многие люди читают Иллича именно так — как остроумного, но непрактичного мыслителя. Артём мог поблагодарить, попрощаться, вернуться в Москву и продолжить строить «Точки» как раньше.</p>
+    <p>Не остался. Что-то в трёх предложениях Иллича сделало ход, который в языке product-management не описывается. Не «идея на будущее» и не «улучшение продукта». <em>Смена онтологии инструмента</em>. Продукт — это то, чем владеют. Протокол — это то, что используют. Компания-продукт удерживает пользователей. Компания-протокол обслуживает пользователей. Компания-продукт масштабируется через рост. Компания-протокол масштабируется через открытие. Это две принципиально разные организации, с разными бизнес-моделями, с разными командами, с разной культурой.</p>
+    <p>Иллич не сказал Артёму «стать некоммерческой организацией» или «делать open source». Он показал, что коммерческая компания, у которой в архитектуре заложены три конвивиальных принципа — экспорт, ограничение размера, открытый протокол, — уже <em>не является</em> обычной коммерческой компанией. Это гибридное существо, для которого в юридическом и финансовом мире пока нет удобной формы. Но оно возможно.</p>
+    <p>И, самое важное: <em>именно оно</em> — единственный способ построить цифровую инфраструктуру, которая не станет со временем радикальной монополией. Не наивностью, не идеализмом, не благотворительностью — а трезвым проектированием, учитывающим структурные последствия распространения инструмента.</p>
+  </div>
+
+  <div class="dialogue">
+    <div class="dial-line">
+      <div class="dial-who artem">Артём</div>
+      <div class="dial-text">Иван, позвольте мне вопрос. Вы всю жизнь критиковали институты — школы, медицину, транспорт, теперь цифровые инфраструктуры. У вас есть какая-то… общая формула? Что делает инструмент хорошим?</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who illich">Иллич</div>
+      <div class="dial-text">Формула простая, хотя её реализация всегда трудна. <em>Инструмент хорош, когда он оставляет место для собственного отсутствия</em>. Молоток можно отложить. Автомобиль — если он превратил город в свою инфраструктуру — уже нельзя. Школа, если она стала единственным способом «учиться», — уже нельзя. Больница, если она стала единственным местом, где рождаются и умирают, — уже нельзя.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who illich">Иллич</div>
+      <div class="dial-text">Проверьте свой инструмент этим вопросом: <em>можно ли его отложить, не разрушив инфраструктуру, которая от него зависит?</em> Если да — он конвивиальный. Если нет — он превратился во что-то другое, независимо от намерений создателей. Молоток и «Точки», если они спроектированы правильно, могут быть отложены. Автомагистраль — уже нет. Разница не в намерении. В архитектуре.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who artem">Артём</div>
+      <div class="dial-text">И вы верите, что цифровые инструменты можно спроектировать так, чтобы они оставались отложимыми?</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who illich">Иллич</div>
+      <div class="dial-text">Верю, что можно. Не уверен, что <em>захотят</em>. Индустрия финансирования — vc, private equity, IPO — награждает <em>именно неотложимые</em> инструменты. Чем больше пользователей зависит, тем выше оценка. Это структурное давление на конвивиальный дизайн. Победить его трудно, но можно — если разделять цели создателя и цели капитала. Кооперативы, некоммерческие фонды, публичные протоколы — всё это способы построить инструмент <em>вне</em> vc-логики. Плата — меньше денег для создателя. Награда — иметь инструмент, о котором не стыдно.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who artem">Артём</div>
+      <div class="dial-text">Иван, вы понимаете, что этот разговор возможно перевернёт мою жизнь? Я ехал за советом по проекту. Уезжаю с сомнением в собственной модели.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who illich">Иллич</div>
+      <div class="dial-text">Я не хотел это делать. Или, точнее — не хотел делать это до тех пор, пока вы сами не оказались в положении, где готовы услышать. Обычно я не разговариваю с молодыми предпринимателями. Слишком поздно — команда собрана, деньги взяты, обязательства подписаны. Но вы пришли ко мне сами, прочитали мои книги, потеряли сон. Это значит, что где-то внутри вы уже видите то, о чём мы сегодня говорили. Я просто помог назвать.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who illich">Иллич</div>
+      <div class="dial-text">Что вы решите — я не знаю. Может быть, вы вернётесь и продолжите «Точки» как есть. Может быть, попытаетесь ввести один из трёх пунктов и наткнётесь на сопротивление команды. Может быть, все три и переверните бизнес-модель, потеряете половину людей и половину денег. Всё это возможно. Мой совет один: не притворяйтесь, что вы не видите то, что видите. Это самое разрушительное. Всё остальное поправимо.</div>
+    </div>
+  </div>
+
+  <div class="sb"><span>❦</span></div>
+
+  <div class="lab-section">
+    <div class="lab-section-label">Результат</div>
+    <h3>Что произошло <em>после разговора</em></h3>
+    <p>Артём вышел из дома Иллича около полуночи. В Бремене шёл дождь. Он не поехал в гостиницу — пошёл пешком, три километра, промок насквозь. В голове крутилась одна фраза: «не притворяйтесь, что вы не видите». В следующие два дня он больше не встречался с Илличем — Иллич устал, и Артёму было нечего сказать. Купил в аэропорту «Инструменты для конвивиальности» и «Освобождение от школ». Прилетел в Москву.</p>
+    <p>Первое, что он сделал через неделю после возвращения, — встретился с двумя техническими сооснователями. Показал план: автоэкспорт в PDF раз в месяц, ограничение по масштабу, открытый протокол. Технический директор сказал: «Артём, это разрушит компанию. Мы потеряем половину пользователей и всех инвесторов. Это не проектное изменение, это самоубийство». Артём согласился, что риск огромен. Всё равно принял решение.</p>
+    <p>Через месяц финансовый директор ушёл из компании. Один из двух инвесторов — крупный русский ангел — потребовал вернуть деньги. Артём вернул. Заложил квартиру, продал машину, взял кредит у семьи. Восемь месяцев компания существовала на одной посевной инвестиции второго ангела — того, что читал Иллича и сказал: «делайте что должны». Команда сократилась с сорока до двенадцати человек. Многие ушли по своей воле — не понимая, что происходит.</p>
+    <p>Через год «Точки» перезапустились как открытый протокол. Каждый желающий мог поднять свой инстанс — школа, ТСЖ, соседский кооператив, муниципалитет. Компания «Точки» превратилась в поставщика услуг: обслуживание одного из инстансов (в Москве и Петербурге), поддержка, консультации для муниципалитетов, кастомизация. Прибыль — в три раза меньше, чем раньше. Но она есть.</p>
+    <p>Через два года стало понятно нечто неожиданное. Инстансы «Точек» появились в восьмидесяти семи российских городах. Многие — без участия компании. Их подняли местные ТСЖ, инициативные группы, региональные администрации, школы. Артём не знал большинства из них — они не были «клиентами», они были просто пользователями открытого протокола. И это означало нечто фундаментальное: <em>«Точки» больше нельзя было закрыть</em>. Ни решением Артёма, ни давлением государства, ни финансовым банкротством компании. Инфраструктура жила самостоятельно, потому что была не централизованной.</p>
+    <p>Через три года Артём выступил на конференции в Берлине — «Post-social media: инструменты, которые оставляют место для собственного отсутствия». Аудитория была странная. Не венчурные капиталисты — те не приехали, потому что модель не масштабировалась. Не большие корпорации — им это было неинтересно. Приехали разработчики, независимые архитекторы, представители муниципалитетов, несколько социологов. Пришло около трёхсот человек. Артём выступал час, без слайдов, рассказывал историю трёх лет. В конце он упомянул, чуть смущённо: «Идея пришла из одного разговора в Бремене. Мне указали на вопрос, который я не готов был задавать себе сам. Я тогда, признаться, был в ярости. А зря».</p>
+    <p>Аудитория — программисты и муниципальные работники — вежливо похлопали. Никто не понял, что это было — начало новой эпохи цифровой инфраструктуры или единичный любопытный эксперимент. Но через десять лет всё больше проектов будут строиться по модели «открытый протокол + локальные инстансы + компания-обслуживание». Не потому, что все прочитали Иллича. Потому, что модель централизованных vc-стартапов исчерпает себя, и другой альтернативы не будет.</p>
+  </div>
+
+  <p>Что этот разговор говорит нам о более широкой ситуации? Три вывода.</p>
+
+  <p>Первое: <em class="t">инструмент не нейтрален относительно окружающей среды</em>. Продукт-менеджерский язык говорит о ценности, которую инструмент даёт пользователю. Но главные последствия инструмента — не с пользователем, а с инфраструктурой не-пользователей и с не-цифровыми альтернативами. Инструмент, оптимизирующий одну функцию, обычно разрушает много других — не потому, что «злой», а потому, что распространение централизованного решения структурно вытесняет децентрализованные аналоги.</p>
+
+  <p>Второе: <em class="t">радикальная монополия — структурное свойство, а не выбор</em>. Никто не проектирует инструмент, чтобы стать необходимым. Необходимость возникает автоматически, когда инструмент пересекает определённый порог распространения. И тогда «удобство» превращается в «зависимость», без единой точки решения. Проектирование против радикальной монополии требует специальных мер — ограничения масштаба, право на выход, открытые протоколы. Без этих мер любой успешный централизованный инструмент со временем становится монополией.</p>
+
+  <p>Третье: <em class="t">хороший инструмент — тот, который можно отложить</em>. Это самая простая проверка Иллича, но самая радикальная. Молоток — можно. Автомобиль в современном городе — нельзя. Соцсеть в обществе, где 70% в ней, — нельзя. Задача проектировщика — не «сделать инструмент незаменимым» (это язык vc-логики), а «сделать инструмент отложимым, не разрушив то, что от него зависит». Это принципиально другой инженерный вопрос. И ответ на него определяет, будет ли инструмент через двадцать лет частью проблемы или частью решения.</p>
+
+  <p>В следующей лаборатории — Мюррей Букчин встречает основательницу инициативы городского фермерства. Тот же приём: как радикальные идеи о децентрализованной экономике превращаются в конкретное проектирование, когда встречают людей, уже что-то делающих на местности.</p>
+
+  <p style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--moss);text-align:center;font-size:1.2rem;margin-top:3rem;">Настоящий инструмент — тот, без которого можно жить.</p>
+
+  <div class="lab-sig">
+    <div class="lab-sig-author">— редакция «ЭкоСознания», лаборатория технологий</div>
+    <div class="lab-sig-meta">Лаборатория №09 · Июль 2026</div>
+  </div>
+
+</div>
+
+<footer class="gf">
+  <div class="gf-top">
+    <div class="gf-brand">
+      <a href="index.html" class="gf-logo">
+        <svg viewBox="0 0 100 100" fill="none" class="logo-svg" style="width:24px;height:24px;flex-shrink:0;"><circle cx="50" cy="50" r="40" stroke="#f3ede3" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#6ea87e"/></svg>
+        <span class="gf-logo-text">Эко<em>Сознание</em></span>
+      </a>
+      <p class="gf-tagline">Экологический взгляд как линза для любой сферы жизни</p>
+    </div>
+    <div class="gf-cols">
+      <div>
+        <div class="gf-col-title">Разделы</div>
+        <div class="gf-sections">
+          <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Философия</span></a>
+          <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
+          <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
+          <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Технологии</span></a>
+          <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
+          <a href="section-compost.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Компост</span></a>
+          <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
+          <a href="section-construction.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="gf-sec-name">Строительство</span></a>
+          <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="gf-sec-name">Экономика</span></a>
+          <a href="section-art.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></span><span class="gf-sec-name">Искусство</span></a>
+          <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Образование</span></a>
+          <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
+          <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
+          <a href="section-health.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Здоровье</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="gf-col-title">Материалы</div>
+        <nav class="gf-nav-links">
+          <a href="essay-truth-and-climate.html" class="gf-nav-link">Истина и климат</a>
+          <a href="essay-passive-design.html" class="gf-nav-link">Пассивный дизайн</a>
+          <a href="essay-solastalgia.html" class="gf-nav-link">Соластальгия</a>
+          <a href="essay-community-survives.html" class="gf-nav-link">Что нужно общине</a>
+          <a href="essay-bread.html" class="gf-nav-link">Хлеб</a>
+          <a href="essay-morning-light.html" class="gf-nav-link">Утренний свет</a>
+          <a href="essay-moneyless-year.html" class="gf-nav-link">Год без денег</a>
+          <a href="lab-heidegger-plastic.html" class="gf-nav-link">Лаб №01 · Пластик</a>
+          <a href="lab-hyperobject-room.html" class="gf-nav-link">Лаб №02 · Комната</a>
+          <a href="lab-jacket-biography.html" class="gf-nav-link">Лаб №03 · Куртка</a>
+          <a href="lab-15min-city.html" class="gf-nav-link">Лаб №04 · Город</a>
+          <a href="lab-bateson-gpt.html" class="gf-nav-link">Лаб №05 · Бейтсон</a>
+        </nav>
+      </div>
+      <div>
+        <div class="gf-col-title">Навигация</div>
+        <nav class="gf-nav-links">
+          <a href="index.html" class="gf-nav-link">Главная</a>
+          <a href="map.html" class="gf-nav-link">Карта связей</a>
+            <a href="about.html" class="gf-nav-link">О проекте</a>
+          <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
+          <a href="section-icons-library.html" class="gf-nav-link">Знаки разделов</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="gf-bottom">
+    <span class="gf-copy">© 2025 ЭкоСознание</span>
+    <div class="gf-bottom-links">
+      <a href="about.html">О проекте</a>
+      <a href="glossary.html">Глоссарий</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

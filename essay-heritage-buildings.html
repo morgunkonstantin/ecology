@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Историческая архитектура — не вопрос ностальгии, а вопрос углеродного бюджета. Воплощённая энергия, Джейн Джейкобс, adaptive reuse и российский контекст.">
+<meta property="og:title" content="Самый зелёный дом — тот, что уже стоит — ЭкоСознание">
+<meta property="og:description" content="Почему сохранение исторической архитектуры — самый прямой экологический выбор. Воплощённая энергия, Джейн Джейкобс, Tate Modern, российский контекст.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Самый зелёный дом — тот, что уже стоит — ЭкоСознание</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--ink:#1c2b1e;--ink-light:#3d5240;--moss:#4a7c59;--fern:#6ea87e;--sage:#a8c5a0;--mist:#d4e6d0;--cream:#f3ede3;--warm:#ece5d6;--paper:#faf6ef;--gold:#b8924a;--clay:#c4956a;--rust:#7a4f2e;}
+html{scroll-behavior:smooth;}
+body{background:var(--paper);color:var(--ink);font-family:'Jost',sans-serif;font-weight:300;overflow-x:hidden;}
+.essay-hero{padding:9rem 4rem 5rem;max-width:1100px;margin:0 auto;}
+.essay-tag{display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:2rem;}
+.essay-tag::before{content:'';display:block;width:24px;height:1px;background:var(--fern);}
+.essay-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,5.5vw,4.6rem);font-weight:300;line-height:1.05;color:var(--ink);margin-bottom:2.5rem;max-width:900px;}
+.essay-hero h1 em{font-style:italic;color:var(--moss);}
+.essay-meta{display:flex;gap:3rem;padding:1.4rem 0;border-top:1px solid rgba(74,124,89,.18);border-bottom:1px solid rgba(74,124,89,.18);flex-wrap:wrap;}
+.essay-meta-item{font-size:.78rem;color:var(--ink-light);}
+.essay-meta-item strong{display:block;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:.3rem;}
+.essay{max-width:720px;margin:0 auto;padding:5rem 4rem 6rem;}
+.essay>p{font-family:'Cormorant Garamond',serif;font-size:1.18rem;line-height:1.75;color:var(--ink);margin-bottom:1.8rem;}
+.essay>p:first-of-type::first-letter{font-size:4.6rem;font-weight:400;line-height:.85;float:left;margin:.25rem .6rem 0 0;color:var(--moss);font-family:'Cormorant Garamond',serif;}
+.essay h2{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--ink);margin:3.5rem 0 2rem;line-height:1.2;}
+.essay h2 em{font-style:italic;color:var(--moss);}
+.essay h2 small{display:block;font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--clay);font-weight:400;margin-bottom:.7rem;}
+.essay em.t{font-style:italic;color:var(--moss);}
+.essay blockquote{margin:2.5rem 0;padding:0 0 0 2rem;border-left:2px solid var(--fern);}
+.essay blockquote p{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-style:italic;color:var(--ink-light);line-height:1.5;margin-bottom:.6rem!important;}
+.essay blockquote cite{font-family:'Jost',sans-serif;font-style:normal;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--moss);}
+.sb{display:flex;align-items:center;justify-content:center;gap:1.5rem;margin:4rem 0;}
+.sb::before,.sb::after{content:'';flex:1;max-width:100px;height:1px;background:rgba(74,124,89,.25);}
+.sb span{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-style:italic;color:var(--moss);}
+.idea{margin:3rem 0;padding:2.2rem 2.5rem 2.2rem 3rem;background:var(--cream);border-left:3px solid var(--moss);position:relative;}
+.idea::before{content:'Идея';position:absolute;top:-.7rem;left:2.2rem;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);background:var(--paper);padding:0 .6rem;}
+.idea p{font-family:'Cormorant Garamond',serif!important;font-size:1.15rem!important;font-style:italic;color:var(--ink)!important;line-height:1.55!important;margin:0!important;}
+.interlude{background:var(--ink);margin:5rem -4rem;padding:4rem 4rem;}
+.interlude-in{max-width:720px;margin:0 auto;}
+.interlude small{font-family:'Jost',sans-serif;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sage);display:block;margin-bottom:1rem;}
+.interlude h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;font-style:italic;color:var(--cream);line-height:1.3;margin-bottom:1.5rem;}
+.interlude p{font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.7;color:rgba(211,230,208,.78);margin-bottom:1.3rem;}
+.numbers-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.15);margin:2rem 0;}
+.num-card{background:var(--cream);padding:1.4rem 1.1rem;text-align:center;}
+.num-card .n-big{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--moss);line-height:1;margin-bottom:.4rem;}
+.num-card .n-lbl{font-size:.74rem;line-height:1.5;color:var(--ink-light);}
+.sig{margin-top:5rem;padding-top:3rem;border-top:1px solid rgba(74,124,89,.18);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem;}
+.sig-a{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink-light);font-style:italic;}
+.sig-m{font-size:.74rem;letter-spacing:.1em;color:var(--sage);text-transform:uppercase;}
+.rel{background:var(--cream);padding:4rem;border-top:1px solid rgba(74,124,89,.15);}
+.rel-in{max-width:1100px;margin:0 auto;}
+.rel-label{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--moss);margin-bottom:1.5rem;}
+.rel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.15);}
+.rel-card{background:var(--cream);padding:1.6rem;text-decoration:none;transition:background .25s;}
+.rel-card:hover{background:var(--warm);}
+.rel-kind{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.5rem;}
+.rel-name{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink);line-height:1.3;}
+.reading-bar{position:fixed;top:0;left:0;height:2px;background:var(--moss);z-index:400;width:0%;transition:width .1s linear;}
+@media(max-width:720px){
+  .essay-hero,.essay,.rel{padding-left:1.5rem;padding-right:1.5rem;}
+  .interlude{margin-left:-1.5rem;margin-right:-1.5rem;padding-left:1.5rem;padding-right:1.5rem;}
+  .rel-grid{grid-template-columns:1fr;}
+  .essay-meta{flex-direction:column;gap:1rem;}
+  .numbers-row{grid-template-columns:1fr 1fr;}
+}
+/* ── Glossary term links ── */
+a.gterm{color:var(--moss);text-decoration:none;border-bottom:1px dashed rgba(74,124,89,.45);transition:border-color .2s,color .2s;}
+a.gterm:hover{color:var(--ink);border-bottom-style:solid;}
+/* ── GLOBAL FOOTER ── */
+.gf{background:var(--ink);padding:3.5rem 3rem 0;font-family:'Jost',sans-serif;}
+.gf-top{display:grid;grid-template-columns:200px 1fr;gap:4rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,0.07);}
+.gf-brand{}
+.gf-logo{display:flex;align-items:center;gap:0.55rem;text-decoration:none;margin-bottom:1rem;}
+.gf-logo-text{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--cream);}
+.gf-logo-text em{font-style:italic;color:var(--fern);}
+.gf-tagline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.88rem;color:rgba(168,197,160,0.45);line-height:1.65;max-width:175px;}
+.gf-cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2.5rem;}
+.gf-col-title{font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(168,197,160,0.38);margin-bottom:1rem;}
+.gf-sections{display:grid;grid-template-columns:1fr 1fr;gap:0.05rem;}
+.gf-sec-link{display:flex;align-items:center;gap:0.4rem;text-decoration:none;padding:0.38rem 0.25rem;border-radius:3px;opacity:0.68;transition:opacity 0.18s,background 0.18s;}
+.gf-sec-link:hover{opacity:1;background:rgba(255,255,255,0.06);}
+.gf-sec-icon{width:15px;height:15px;color:var(--fern);flex-shrink:0;}
+.gf-sec-icon svg{width:100%;height:100%;}
+.gf-sec-name{font-family:'Cormorant Garamond',serif;font-size:0.9rem;color:var(--mist);}
+.gf-nav-links{display:flex;flex-direction:column;gap:0.05rem;}
+.gf-nav-link{font-family:'Cormorant Garamond',serif;font-size:0.92rem;color:rgba(211,230,208,0.58);text-decoration:none;padding:0.38rem 0.25rem;border-radius:3px;transition:color 0.18s,background 0.18s;}
+.gf-nav-link:hover{color:var(--fern);background:rgba(255,255,255,0.05);}
+.gf-bottom{padding:1.5rem 0 1.8rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.8rem;}
+.gf-copy{font-size:0.67rem;letter-spacing:0.08em;color:rgba(168,197,160,0.28);}
+.gf-bottom-links{display:flex;gap:1rem;}
+.gf-bottom-links a{font-size:0.67rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(168,197,160,0.35);text-decoration:none;transition:color 0.18s;}
+.gf-bottom-links a:hover{color:var(--fern);}
+@media(max-width:860px){
+  .gf{padding:2.5rem 1.5rem 0;}
+  .gf-top{grid-template-columns:1fr;gap:2rem;}
+  .gf-cols{grid-template-columns:1fr 1fr;gap:1.5rem;}
+}
+@media(max-width:540px){
+  .gf-cols{grid-template-columns:1fr;}
+  .gf-sections{grid-template-columns:1fr 1fr;}
+  .gf-bottom{flex-direction:column;align-items:flex-start;gap:0.6rem;}
+}
+/* ── GLOBAL NAV + FOOTER v2 ── */
+.g-nav-wrap{position:fixed;top:0;left:0;right:0;z-index:300;background:rgba(250,246,239,0.95);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(74,124,89,0.13);font-family:'Jost',sans-serif;}
+.g-nav{display:flex;align-items:center;height:62px;padding:0 3rem;gap:0;}
+.g-logo{display:flex;align-items:center;gap:0.55rem;text-decoration:none;flex-shrink:0;margin-right:auto;}
+.g-logo .logo-svg{width:24px;height:24px;color:var(--ink);}
+.g-logo-text{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--ink);white-space:nowrap;}
+.g-logo-text em{font-style:italic;color:var(--moss);}
+.g-links{display:flex;align-items:center;gap:0;list-style:none;}
+.g-links>li{position:relative;}
+.g-links>li>a,.g-links>li>button{display:flex;align-items:center;gap:0.3rem;font-size:0.75rem;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-light);text-decoration:none;padding:0.45rem 0.9rem;border-radius:3px;background:none;border:none;cursor:pointer;font-family:'Jost',sans-serif;transition:color 0.2s,background 0.2s;}
+.g-links>li>a:hover,.g-links>li>button:hover{color:var(--moss);}
+.g-links>li>a.g-active{color:var(--moss);}
+.g-chevron{width:10px;height:10px;display:block;transition:transform 0.25s;}
+.g-drop-open>.g-drop-btn .g-chevron{transform:rotate(180deg);}
+.g-dropdown{position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);background:var(--ink);border:1px solid rgba(255,255,255,0.08);border-radius:6px;box-shadow:0 16px 40px rgba(0,0,0,0.35);padding:1.2rem;min-width:580px;display:none;grid-template-columns:repeat(3,1fr);gap:0.1rem;z-index:400;}
+.g-drop-open .g-dropdown{display:grid;}
+.g-dd-link{display:flex;align-items:center;gap:0.5rem;text-decoration:none;padding:0.5rem 0.6rem;border-radius:4px;transition:background 0.18s;}
+.g-dd-link:hover{background:rgba(255,255,255,0.08);}
+.g-dd-icon{width:18px;height:18px;flex-shrink:0;color:rgba(110,168,126,0.55);}
+.g-dd-icon svg{width:100%;height:100%;}
+.g-dd-link:hover .g-dd-icon{color:var(--fern);}
+.g-dd-name{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(243,237,227,0.85);}
+.g-dd-num{font-size:0.6rem;letter-spacing:0.12em;color:rgba(168,197,160,0.4);margin-left:auto;}
+.g-dd-link.wip{opacity:0.35;pointer-events:none;}
+.g-burger{display:none;flex-direction:column;justify-content:center;gap:5px;width:32px;height:32px;background:none;border:none;cursor:pointer;padding:3px;margin-left:1rem;}
+.g-burger span{display:block;height:1.5px;background:var(--ink);transition:transform 0.28s,opacity 0.28s,width 0.28s;transform-origin:center;}
+.g-burger span:nth-child(1){width:100%;}
+.g-burger span:nth-child(2){width:70%;}
+.g-burger span:nth-child(3){width:45%;}
+.g-burger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);width:100%;}
+.g-burger.open span:nth-child(2){opacity:0;}
+.g-burger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);width:100%;}
+.g-overlay{display:none;position:fixed;inset:62px 0 0 0;z-index:290;background:rgba(28,43,30,0.98);backdrop-filter:blur(20px);overflow-y:auto;padding:2rem 2rem 3rem;}
+.g-overlay.open{display:block;}
+.g-ov-section{margin-bottom:2rem;}
+.g-ov-label{font-size:0.64rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(168,197,160,0.45);margin-bottom:0.8rem;font-family:'Jost',sans-serif;}
+.g-ov-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.15rem;}
+.g-ov-link{display:flex;align-items:center;gap:0.5rem;text-decoration:none;padding:0.6rem 0.5rem;border-radius:4px;transition:background 0.18s;}
+.g-ov-link:hover{background:rgba(255,255,255,0.07);}
+.g-ov-icon{width:18px;height:18px;color:rgba(110,168,126,0.55);flex-shrink:0;}
+.g-ov-icon svg{width:100%;height:100%;}
+.g-ov-name{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(243,237,227,0.85);}
+.g-ov-link.wip{opacity:0.35;pointer-events:none;}
+.g-ov-simple-links{display:flex;flex-direction:column;gap:0.15rem;}
+.g-ov-simple-link{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(243,237,227,0.8);text-decoration:none;padding:0.55rem 0.5rem;border-radius:4px;transition:background 0.18s;}
+.g-ov-simple-link:hover{background:rgba(255,255,255,0.07);color:#f3ede3;}
+
+/* FOOTER */
+.g-footer-logo .logo-svg{width:22px;height:22px;}
+.g-footer-logo-text em{font-style:italic;color:var(--fern);}
+.g-footer-sec-link.wip{opacity:0.25;pointer-events:none;}
+.g-footer-sec-icon svg{width:100%;height:100%;}
+.g-footer-bottom-links a{font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(168,197,160,0.35);text-decoration:none;transition:color 0.18s;}
+.g-footer-bottom-links a:hover{color:var(--fern);}
+
+body{padding-top:62px!important;}</style>
+</head>
+<body>
+<div class="g-nav-wrap" id="gNavWrap">
+  <div class="g-nav">
+    <a href="index.html" class="g-logo">
+      <svg viewBox="0 0 100 100" fill="none" class="logo-svg"><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#4a7c59"/></svg>
+      <span class="g-logo-text">Эко<em>Сознание</em></span>
+    </a>
+    <ul class="g-links">
+      <li>
+        <button class="g-drop-btn" aria-expanded="false">
+          Разделы
+          <svg class="g-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="g-dropdown">
+          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
+          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
+          <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
+          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
+          <a href="section-compost.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Компост</span><span class="g-dd-num">05b</span></a>
+          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
+          <a href="section-construction.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="g-dd-name">Строительство</span><span class="g-dd-num">06b</span></a>
+          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
+          <a href="section-art.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></span><span class="g-dd-name">Искусство</span><span class="g-dd-num">08</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">09</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">10</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">11</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">12</span></a>
+        </div>
+      </li>
+      <li><a href="index.html#latest">Эссе</a></li>
+      <li><a href="glossary.html">Глоссарий</a></li>
+      <li><a href="about.html">О проекте</a></li>
+    </ul>
+    <button class="g-burger" id="gBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+<div class="g-overlay" id="gOverlay">
+  <div class="g-ov-section">
+    <div class="g-ov-label">Разделы</div>
+    <div class="g-ov-grid">
+      <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Философия</span></a>
+      <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
+      <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
+      <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Технологии</span></a>
+      <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
+      <a href="section-compost.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Компост</span></a>
+      <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
+      <a href="section-construction.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/></svg></span><span class="g-ov-name">Строительство</span></a>
+      <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-ov-name">Экономика</span></a>
+      <a href="section-art.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></span><span class="g-ov-name">Искусство</span></a>
+      <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Образование</span></a>
+      <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
+      <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
+      <a href="section-health.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-ov-name">Здоровье</span></a>
+    </div>
+  </div>
+  <div class="g-ov-section">
+    <div class="g-ov-label">Навигация</div>
+    <div class="g-ov-simple-links">
+      <a href="index.html" class="g-ov-simple-link">Главная</a>
+      <a href="index.html#latest" class="g-ov-simple-link">Эссе и лаборатории</a>
+      <a href="glossary.html" class="g-ov-simple-link">Глоссарий</a>
+      <a href="map.html" class="g-ov-simple-link">Карта связей</a>
+      <a href="about.html" class="g-ov-simple-link">О проекте</a>
+    </div>
+  </div>
+</div>
+
+<div class="reading-bar" id="rb"></div>
+
+<section class="essay-hero">
+  <div class="essay-tag">Эссе · Архитектура</div>
+  <h1>Самый зелёный дом —<br><em>тот, что уже стоит</em></h1>
+  <div class="essay-meta">
+    <div class="essay-meta-item"><strong>Раздел</strong>Архитектура</div>
+    <div class="essay-meta-item"><strong>Тип</strong>Эссе-размышление</div>
+    <div class="essay-meta-item"><strong>Темы</strong>Воплощённая энергия · Память места · Adaptive reuse · Джейн Джейкобс</div>
+    <div class="essay-meta-item"><strong>Время</strong>≈ 14 мин</div>
+  </div>
+</section>
+
+<article class="essay">
+
+  <p>Зимой 2017 года в Москве снесли дом на Малой Бронной. Конструктивистский, 1928 года, с круглыми балконами и угловыми окнами — один из последних в этом квартале. На его месте за два года вырос «жилой комплекс премиум-класса» со стеклянным фасадом и сертификатом BREEAM. Новостройка набрала высокий балл за энергоэффективность. Но никто не посчитал, сколько углерода ушло в атмосферу при сносе, сколько вложенной за девяносто лет энергии превратилось в строительный мусор и сколько ещё десятилетий новое здание будет «отбивать» этот невидимый долг через свою энергоэффективную эксплуатацию.</p>
+
+  <p>Эта арифметика — главный, но почти никогда не звучащий аргумент в разговоре о сохранении исторической архитектуры. Обычно про старые здания спорят в категориях красоты, идентичности, культурной памяти — и проигрывают экономике. На стороне сноса всегда конкретные цифры: стоимость метра, эффективность застройки, налоги. На стороне сохранения — слова «душа места» и «наследие». Никто не выигрывает спор словами против цифр.</p>
+
+  <p>Но если посчитать честно — с учётом <a href="glossary.html#Воплощённая энергия" class="gterm" title="Воплощённая энергия">воплощённой энергии</a>, отходов и климатического следа сноса — оказывается, что сохранение исторических зданий не противоположность экологическому подходу. Это сам экологический подход. Самый зелёный дом — тот, который уже стоит.</p>
+
+  <div class="sb"><span>❦</span></div>
+  <h2><small>Часть I</small>Скрытая <em>арифметика сноса</em></h2>
+
+  <p>В 2011 году Национальный фонд сохранения исторических зданий США (National Trust for Historic Preservation) опубликовал исследование под названием «Самое зелёное здание». Они посчитали полный углеродный след для разных сценариев — снос старого здания и возведение современного энергоэффективного на его месте против глубокой реновации существующего здания. Результаты оказались неудобными для индустрии.</p>
+
+  <p>Главная цифра: новому энергоэффективному зданию требуется от <em class="t">10 до 80 лет</em>, чтобы за счёт более низкого энергопотребления компенсировать углеродный долг, накопленный при сносе и постройке. Десять — для очень редкого сочетания дешёвого сноса, простого нового здания и сильного контраста в эффективности. Восемьдесят — обычный случай для жилых и офисных зданий.</p>
+
+  <div class="numbers-row">
+    <div class="num-card"><div class="n-big">10–80</div><div class="n-lbl">лет нужно новому «зелёному» зданию, чтобы окупить углерод сноса</div></div>
+    <div class="num-card"><div class="n-big">50–80%</div><div class="n-lbl">всего углерода здания приходится на стройку и материалы</div></div>
+    <div class="num-card"><div class="n-big">×4</div><div class="n-lbl">материалов уходит в отходы при сносе vs реновации</div></div>
+    <div class="num-card"><div class="n-big">35%</div><div class="n-lbl">мирового мусора на свалках — строительные отходы</div></div>
+  </div>
+
+  <p>Эти цифры переворачивают привычную логику. Когда говорят, что «современное здание гораздо энергоэффективнее старого» — это правда. Но эта правда касается только эксплуатации: отопления, охлаждения, освещения. Расходы, которые уже понесены при строительстве — «воплощённая энергия» — в этом расчёте обычно не учитываются. А ведь именно они для большинства зданий составляют половину или больше всего углеродного следа за жизненный цикл.</p>
+
+  <blockquote>
+    <p>«Самое экологичное здание — то, что уже построено. Не то, которое будет построено по экологическим стандартам, а то, что уже стоит и работает»</p>
+    <cite>Карл Элефанте, Американский институт архитекторов, 2007</cite>
+  </blockquote>
+
+  <p>Из этого следует контринтуитивный вывод: даже посредственное по энергоэффективности старое здание чаще всего экологичнее нового, построенного по высоким стандартам. Чтобы снос имел смысл, новое здание должно быть не просто эффективнее — а кардинально эффективнее, и эта разница должна успеть «отыграть» сначала вложенный углерод.</p>
+
+  <p>На практике это бывает редко. Обычно сносят не разрушенное и не безнадёжное — а просто «старое», «устаревшее», «непрестижное». И заменяют не футуристически эффективным, а просто новым, чуть более энергоэффективным по нормативам сегодняшнего дня — которые через десять лет будут считаться устаревшими, и здание снова станет кандидатом на снос.</p>
+
+  <div class="sb"><span>❦</span></div>
+  <h2><small>Часть II</small>Здание <em>как процесс, а не объект</em></h2>
+
+  <p>Есть более глубокая причина, по которой снос разрушительнее, чем кажется. Здание — не объект, а процесс. Оно складывается слоями десятилетий. Балки несут на себе следы прежних перестроек. Кирпич сохраняет память о климате года, в котором обжигался. Каждый поворот лестницы — это решение конкретного человека сто лет назад. Эти слои невоспроизводимы.</p>
+
+  <p>В современной архитектуре есть понятие <em class="t">пэйшинс</em> (patina) — благородной патины, которую материалы приобретают со временем. Дерево темнеет, медь зеленеет, кирпич выщелачивается. Эти процессы идут десятилетиями и придают зданию качество, которого невозможно достичь за один сезон стройки. Историческое здание — это материал, который природа доработала вместе с людьми.</p>
+
+  <p>Когда такое здание сносят и строят на его месте «копию в историческом стиле», получается не возврат — получается фальшивка. Ровные стены, новые материалы, идеальные углы. Снаружи похоже, по сути — пластиковый муляж. Венеция, регулярно реставрирующая свои фасады по точным историческим документам, всё чаще выглядит как Disneyland с водой — слишком чистая, слишком ровная, без той самой патины.</p>
+
+  <div class="idea"><p>Здание содержит в себе труд людей, которых давно нет. Снос — это уничтожение не только материала, но и накопленного, овеществлённого в стене человеческого времени.</p></div>
+
+  <p>В Кижи и Малых Корелах русские плотники в XVII–XVIII веках строили деревянные церкви без единого гвоздя, используя соединения, для овладения которыми требовались десятилетия практики. Сегодня в России осталось меньше десяти мастеров, способных воспроизвести их работу с прежним качеством. Каждый раз, когда сгорает или сносится старая деревянная церковь — это потеря не только конкретного здания, но и подтверждения того, что такие здания существовали и могут существовать. Без них следующие поколения уже не поверят, что так строили — потому что не увидят живых примеров.</p>
+
+  <div class="sb"><span>❦</span></div>
+  <h2><small>Часть III</small>Джейн Джейкобс — <em>и битва за город</em></h2>
+
+  <p>В 1960 году Манхэттен едва не лишился значительной части Гринвич-Виллидж. Городские планировщики во главе с легендарным Робертом Мозесом готовили проект «расширения Пятой авеню» — пробивки шоссе через старый квартал низкоэтажной застройки XIX века. Дома предполагалось снести, жителей переселить в современные многоквартирные башни на окраине города.</p>
+
+  <p>Мозес был непобедим — за тридцать лет он построил в Нью-Йорке сотни мостов, парков, шоссе и реконструировал десятки районов. Никто не смел с ним спорить. Никто, кроме Джейн Джейкобс — журналистки и активистки, жившей в том самом квартале. Она написала книгу «Смерть и жизнь больших американских городов» (1961), и эта книга изменила понимание города в мировой практике.</p>
+
+  <p>Главный её аргумент: <em class="t">старые районы с разнообразной мелкомасштабной застройкой работают лучше</em>, чем спроектированные с нуля современные комплексы. Они дают приют разным социальным группам, разным видам деятельности, разному темпу жизни. В них есть «глаза на улице» — постоянное мягкое наблюдение жителей за общим пространством, которое делает район безопасным без полиции. В современных «спальных районах» этих «глаз» нет: дворы пусты, тротуары — транзитные, никто не знает соседей.</p>
+
+  <blockquote>
+    <p>«Города нуждаются в смеси старых и новых зданий. Только старые здания дают пространство для тех видов деятельности, у которых нет прибыли первого года»</p>
+    <cite>Джейн Джейкобс, «Смерть и жизнь больших американских городов», 1961</cite>
+  </blockquote>
+
+  <p>Это важное и редко произносимое наблюдение. Новые здания требуют высокой арендной платы — нужно отбивать вложения. Поэтому в них размещаются только те арендаторы, которые могут платить много: сети, банки, корпорации. Маленькая книжная лавка, мастерская реставратора, локальная пекарня, экспериментальный театр, ремесленная студия, недорогое кафе — всё это может существовать только в старых зданиях, где аренда ниже.</p>
+
+  <p>Когда квартал сносят и заменяют новым — экономическое разнообразие уничтожается. Остаётся монокультура: только то, что коммерчески эффективно сейчас. Через десять лет, когда мода меняется, такой район деградирует целиком — все его арендаторы из одной экономической категории, и эта категория уходит.</p>
+
+  <p>Старый квартал работает иначе: разные здания, разные арендные ставки, разные виды деятельности. Одни выживают в кризис, другие — в подъём. Целое сохраняется через изменчивость частей. Это <em class="t">экосистемная</em> модель, прямо противоположная плановой модели «обновления».</p>
+
+  
+  <div class="sb"><span>❦</span></div>
+  <h2><small>Часть IV</small>Короткие деньги <em>против длинных</em></h2>
+
+  <p>Чтобы понять, почему историческая архитектура исчезает даже там, где её любят, нужно посмотреть на временной горизонт решений. Это не разговор об экономике против ценностей. Это разговор о двух разных моделях экономики, работающих с разной длиной времени.</p>
+
+  <p><em class="t">Цикл застройщика</em> — короткий. От покупки участка до продажи последней квартиры в среднем проходит три–семь лет. Внутри этого окна нужно вернуть вложенный капитал, проценты по кредиту, ожидаемую прибыль инвесторов и собственную маржу. Каждый месяц задержки — потери. В этой логике старое здание на участке — препятствие. Его реновация дороже сноса, занимает больше времени, требует индивидуальных решений вместо типовых, упирается в охранные ограничения и непредсказуемые проблемы. Снести и построить заново быстрее, дешевле и предсказуемее.</p>
+
+  <p><em class="t">Цикл здания и района</em> — длинный. Хорошее здание стоит сто лет. За эти сто лет в нём могут жить три-четыре поколения семей, открываться и закрываться десятки бизнесов, формироваться социальная ткань квартала, накапливаться репутация места. Стоимость этого долгого процесса в моменте сноса не видна — она распределена в будущее, которое не входит в финансовую модель застройщика.</p>
+
+  <div class="numbers-row">
+    <div class="num-card"><div class="n-big">3–7</div><div class="n-lbl">лет горизонт окупаемости застройщика</div></div>
+    <div class="num-card"><div class="n-big">50–100</div><div class="n-lbl">лет реальная жизнь здания и квартала</div></div>
+    <div class="num-card"><div class="n-big">×10</div><div class="n-lbl">разница между этими горизонтами решений</div></div>
+    <div class="num-card"><div class="n-big">0</div><div class="n-lbl">остаточная стоимость «снесённого» в финансовой модели</div></div>
+  </div>
+
+  <p>Получается асимметрия: одни считают доход за пять лет и продают, другие — жители, район, город — несут последствия этого решения пятьдесят лет. Это не злонамеренность — это разные временные перспективы, встроенные в разные роли. Но из этой асимметрии следует, что решения о сносе исторических зданий принимаются на основе модели, в которую большая часть стоимости здания просто не входит.</p>
+
+  <blockquote>
+    <p>«Старое здание — это не остановившаяся в развитии форма. Это материальный капитал, который продолжает работать столетиями. Снос — это решение списать этот капитал, потому что он не помещается в годовой отчёт»</p>
+    <cite>Carol Highsmith, Library of Congress</cite>
+  </blockquote>
+
+  <p>Если посмотреть на цифры по-другому, сохранение всегда оказывается лучшей инвестицией — но в другой валюте и с другим инвестором. Застройщик зарабатывает на сносе и продаже больше. Но город, квартал, жители, культурная среда выигрывают на сохранении — через десятилетия стабильности, через сохранённую социальную ткань, через туристическую привлекательность, через долгую амортизацию материала. Эти доходы реальны, но они достаются не тем, кто принимает решение о сносе. Поэтому они не учитываются.</p>
+
+  <p>Главные европейские города — Париж, Прага, Рим, Амстердам, Барселона — давно сделали выбор. Их центры в массе своей сохранены не потому, что европейцы более сентиментальны, а потому, что муниципалитеты приняли длинный горизонт как основу политики. Они посчитали, что доходы от туризма, налогов, недвижимости и качества жизни за пятьдесят лет существенно превосходят разовую прибыль от точечной застройки. Этот расчёт оказался правильным.</p>
+
+  <div class="idea"><p>Дискуссия о сносе — это не «деньги против души». Это «короткие деньги против длинных денег». На любой временной шкале длиннее десяти лет сохранение почти всегда выигрывает экономически.</p></div>
+
+  <p>Это меняет тип аргумента, с которым стоит идти в публичный разговор о сохранении наследия. Не «давайте сохраним красивое старое, потому что оно ценное» — а «давайте посчитаем стоимость снесённого через тридцать лет, и сравним с тем, что застройщик предлагает заработать за пять». Этот аргумент труднее опровергнуть. Он переводит разговор из эстетической плоскости в экономическую, на территорию оппонента — и часто там выигрывает.</p>
+<div class="sb"><span>❦</span></div>
+  <h2><small>Часть V</small>Adaptive reuse — <em>другая жизнь</em></h2>
+
+  <p>В мировой архитектуре последних тридцати лет одно из самых интересных направлений — <em class="t">adaptive reuse</em>, «адаптивное переиспользование» зданий. Промышленные сооружения, потерявшие функцию, не сносятся, а получают новую жизнь — обычно неожиданную для исходного замысла.</p>
+
+  <p>Tate Modern в Лондоне — бывшая электростанция Bankside, построенная в 1947 году и закрытая в 1981-м. Архитекторы Herzog & de Meuron сохранили огромный объём турбинного зала, его индустриальную эстетику, металлические конструкции — и сделали из него один из самых посещаемых музеев мира. Снос здания и постройка музея с нуля обошлась бы дороже, потребовала бы в три-четыре раза больше материалов и не дала бы того характерного пространства, которое сейчас определяет лицо музея.</p>
+
+  <p>High Line в Нью-Йорке — заброшенная грузовая железная дорога на эстакаде в Манхэттене, построенная в 1934-м и брошенная в 1980-м. Активисты добились отказа от сноса, и в 2009 году эстакада превратилась в парк на высоте девяти метров над уровнем улиц. Сегодня это одно из самых популярных мест города — и катализатор регенерации всего прилегающего квартала.</p>
+
+  <p>Эссенский угольный комбинат Цольферайн в Германии — комплекс шахт и заводов, закрытых в 1980-х, превращённый в музейный и культурный кластер. Винные подвалы в старых железнодорожных туннелях, лофты в бывших фабриках, парки на месте промзон — всё это адаптивное переиспользование, ставшее заметным явлением в архитектуре последних трёх десятилетий.</p>
+
+  <div class="interlude">
+    <div class="interlude-in">
+      <small>Ключевая идея</small>
+      <h3>Здание — не функция. Здание — оболочка, которая может вмещать разные функции в разное время</h3>
+      <p>Старая церковь становится концертным залом. Бывший завод — лофт-комплексом. Промышленный склад — арт-галереей. Это не «нецелевое использование» — это здравый смысл. Здание физически способно служить столетиями, но конкретная функция, ради которой его строили, обычно живёт двадцать-пятьдесят лет. Гибкость в смене функций — главное качество долговечной архитектуры.</p>
+      <p>Парадокс: жёстко привязанные к функции современные здания деградируют быстрее. Бизнес-центр, заточенный под современный офисный сценарий, через двадцать лет становится непригодным — формат работы изменился. Старый фабричный корпус с высокими потолками и крепкими стенами легко превращается во что угодно и существует столетиями.</p>
+    </div>
+  </div>
+
+  <div class="sb"><span>❦</span></div>
+  <h2><small>Часть VI</small>Российский контекст: <em>что мы теряем</em></h2>
+
+  <p>Постсоветское пространство — место уникальной архитектурной потери. За последние тридцать лет здесь снесли больше исторических зданий, чем в любой европейской стране за тот же период. И речь не только об известных памятниках. Речь о ткани города в целом — о тысячах рядовых, не статусных, не охраняемых построек, которые формируют облик улицы и района.</p>
+
+  <p>Конструктивистское наследие 1920-30-х — российский вклад в мировую архитектуру, влиявший на Баухаус и модернизм в целом — большей частью утрачено или находится в аварийном состоянии. Дом Наркомфина в Москве реставрировали почти три десятилетия и довели до состояния «элитного жилья», но это исключение. Десятки других конструктивистских зданий снесены, перестроены до неузнаваемости или ждут своей очереди.</p>
+
+  <p>Деревянная архитектура Русского Севера — Карелии, Архангельской области, Вологодчины — исчезает по двум причинам сразу: пожары и заброшенность. Когда в деревне не остаётся жителей, дом приходит в упадок за десять-пятнадцать лет. Восстановить уже невозможно. Карты деревень тридцатилетней давности фиксируют сотни населённых пунктов, которых больше нет.</p>
+
+  <p>Купеческие особняки провинциальных городов — Костромы, Углича, Боровска, Гороховца — массово сносятся под застройку. Их формальное состояние позволяет — они не имеют статуса памятника, формально не охраняются, требуют дорогого ремонта. Их рыночная стоимость в качестве участка под снос выше, чем стоимость реставрации. Эта арифметика и решает.</p>
+
+  <p>Программа «реновации» в Москве с 2017 года выводит на новый уровень масштаб явления. Снос пятиэтажек 1960-х — зданий, физически способных простоять ещё пятьдесят лет — оправдывается «улучшением жилищных условий». Жители получают новые квартиры в высотках. Но никто не считает совокупный климатический след: миллионы тонн строительного мусора, миллионы тонн новых материалов, годы стройки, рост этажности, увеличение нагрузки на инфраструктуру.</p>
+
+  <div class="idea"><p>Сохранение исторической архитектуры — не вопрос вкуса или ностальгии. Это вопрос углеродного бюджета. И здесь Россия живёт за счёт будущих поколений.</p></div>
+
+  <div class="sb"><span>❦</span></div>
+  <h2><small>Часть VII</small>Честный взгляд: <em>когда сохранение тоже ошибка</em></h2>
+
+  <p>Сохранение исторической архитектуры — не безусловное добро. У него есть свои ловушки и крайности, которые стоит признать честно.</p>
+
+  <p><em class="t">Музеефикация.</em> Когда квартал слишком хорошо сохраняется — он перестаёт быть живым местом. Венецианская туристификация — крайний пример: исторический центр стал декорацией для туристов, реальная городская жизнь оттуда ушла. Население упало с 175 тысяч в 1950-м до 50 тысяч сегодня. Сохранять стены, теряя жителей — это другой вид утраты.</p>
+
+  <p><em class="t">Джентрификация через сохранение.</em> Восстановление старых кварталов часто приводит к росту цен, после которого исходные жители — обычно бедные — вынуждены уехать. Получается, что сохранили физические здания, но уничтожили социальную ткань, которая в них жила. Это особенно характерно для бывших рабочих кварталов в больших городах.</p>
+
+  <p><em class="t">Замораживание в янтаре.</em> Жёсткие охранные требования к историческим зданиям иногда делают невозможной их адаптацию для современной жизни. Запрет на изменения снаружи и внутри, на улучшение энергоэффективности, на установку лифтов — превращает здание в музей и снижает шансы, что в нём кто-то будет жить и оплачивать поддержание. В итоге здание простаивает и медленно разрушается под охраной государства.</p>
+
+  <p><em class="t">Селективная память.</em> Какие эпохи мы решаем сохранять? Часто это политическое решение. В России охотно реставрируют дореволюционные особняки, но конструктивистское наследие 1920-х — куда хуже. В новой Европе любят восстанавливать средневековое, но к индустриальной архитектуре XIX века до 1980-х относились без интереса. Сохранение всегда выбирает — и эти выборы тоже стоит замечать.</p>
+
+  <p><em class="t">Некоторые здания действительно стоит снести.</em> Не каждая постройка имеет историческую или экологическую ценность. Брежневский ДК, наспех построенный жилой барак, неудачное здание 1990-х из плохого материала — всё это иногда лучше снести. Главное — чтобы решение принималось осознанно, с учётом полной стоимости, а не автоматически.</p>
+
+  <div class="sb"><span>❦</span></div>
+  <h2><small>Заключение</small>Снос — это <em>не нейтральное действие</em></h2>
+
+  <p>Главная мысль, которую хочется донести: снос здания — это значимое действие, требующее обоснования. Сейчас по умолчанию обоснования требует сохранение — нужно доказывать, что здание ценно, что его стоит спасать. Это нужно перевернуть. По умолчанию обоснования должен требовать снос — нужно доказывать, что здание невозможно сохранить, что глубокая реновация невозможна или хуже строительства нового.</p>
+
+  <p>В разговоре об экологии всегда есть искушение мыслить большими и далёкими категориями: тающие ледники, исчезающие виды, далёкие фабрики, выбрасывающие выбросы. Это правда — но это не вся правда. Огромная часть экологического кризиса разворачивается в самой обычной городской рутине — в решении мэрии снести квартал, в инвестиционном анализе застройщика, в графике строительных работ. Камни, цемент и сталь — это огромный материальный поток, и каждое здание, превращённое в строительный мусор, увеличивает этот поток.</p>
+
+  <p>Сохранение исторической архитектуры — это не консерватизм и не ностальгия. Это форма уважения к ресурсу, который природа вложила в материалы, а люди — в труд по их обработке и сборке. Это самый прямой и проверенный способ снизить углеродный след городского строительства. И это последняя возможность сохранить разнообразие — экономическое, социальное, эстетическое — которое делает города действительно пригодными для жизни.</p>
+
+  <p style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--moss);text-align:center;font-size:1.25rem;">Старое здание — не препятствие будущему. Это материал, из которого будущее можно собрать.</p>
+
+  <div class="sig">
+    <div class="sig-a">— редакция «ЭкоСознания», рубрика «Архитектура»</div>
+    <div class="sig-m">Эссе · Май 2025</div>
+  </div>
+
+</article>
+
+<section class="rel">
+  <div class="rel-in">
+    <div class="rel-label">Читать дальше</div>
+    <div class="rel-grid">
+      <a href="section-architecture.html" class="rel-card">
+        <div class="rel-kind">Раздел</div>
+        <div class="rel-name">Архитектура — здание как договор с климатом</div>
+      </a>
+      <a href="section-construction.html" class="rel-card">
+        <div class="rel-kind">Раздел</div>
+        <div class="rel-name">Строительство — материалы и технологии</div>
+      </a>
+      <a href="essay-passive-design.html" class="rel-card">
+        <div class="rel-kind">Эссе</div>
+        <div class="rel-name">Шесть принципов пассивного дизайна</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>window.addEventListener('scroll',()=>{const h=document.documentElement;document.getElementById('rb').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';});</script>
+<footer class="gf">
+  <div class="gf-top">
+    <div class="gf-brand">
+      <a href="index.html" class="gf-logo">
+        <svg viewBox="0 0 100 100" fill="none" class="logo-svg" style="width:24px;height:24px;flex-shrink:0;"><circle cx="50" cy="50" r="40" stroke="#f3ede3" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#6ea87e"/></svg>
+        <span class="gf-logo-text">Эко<em>Сознание</em></span>
+      </a>
+      <p class="gf-tagline">Экологический взгляд как линза для любой сферы жизни</p>
+    </div>
+    <div class="gf-cols">
+      <div>
+        <div class="gf-col-title">Разделы</div>
+        <div class="gf-sections">
+          <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Философия</span></a>
+          <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
+          <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
+          <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Технологии</span></a>
+          <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
+          <a href="section-compost.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Компост</span></a>
+          <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
+          <a href="section-construction.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="gf-sec-name">Строительство</span></a>
+          <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="gf-sec-name">Экономика</span></a>
+          <a href="section-art.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></span><span class="gf-sec-name">Искусство</span></a>
+          <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Образование</span></a>
+          <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
+          <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
+          <a href="section-health.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Здоровье</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="gf-col-title">Материалы</div>
+        <nav class="gf-nav-links">
+          <a href="essay-truth-and-climate.html" class="gf-nav-link">Истина и климат</a>
+          <a href="essay-passive-design.html" class="gf-nav-link">Пассивный дизайн</a>
+          <a href="essay-solastalgia.html" class="gf-nav-link">Соластальгия</a>
+          <a href="essay-community-survives.html" class="gf-nav-link">Что нужно общине</a>
+          <a href="essay-bread.html" class="gf-nav-link">Хлеб</a>
+          <a href="essay-morning-light.html" class="gf-nav-link">Утренний свет</a>
+          <a href="essay-moneyless-year.html" class="gf-nav-link">Год без денег</a>
+          <a href="lab-heidegger-plastic.html" class="gf-nav-link">Лаб №01 · Пластик</a>
+          <a href="lab-hyperobject-room.html" class="gf-nav-link">Лаб №02 · Комната</a>
+          <a href="lab-jacket-biography.html" class="gf-nav-link">Лаб №03 · Куртка</a>
+          <a href="lab-15min-city.html" class="gf-nav-link">Лаб №04 · Город</a>
+          <a href="lab-bateson-gpt.html" class="gf-nav-link">Лаб №05 · Бейтсон</a>
+        </nav>
+      </div>
+      <div>
+        <div class="gf-col-title">Навигация</div>
+        <nav class="gf-nav-links">
+          <a href="index.html" class="gf-nav-link">Главная</a>
+          <a href="map.html" class="gf-nav-link">Карта связей</a>
+            <a href="about.html" class="gf-nav-link">О проекте</a>
+          <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
+          <a href="section-icons-library.html" class="gf-nav-link">Знаки разделов</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="gf-bottom">
+    <span class="gf-copy">© 2025 ЭкоСознание</span>
+    <div class="gf-bottom-links">
+      <a href="about.html">О проекте</a>
+      <a href="glossary.html">Глоссарий</a>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  // Dropdown toggle
+  document.querySelectorAll('.g-drop-btn').forEach(btn=>{
+    btn.addEventListener('click',e=>{
+      e.stopPropagation();
+      const li=btn.closest('li');
+      const open=li.classList.toggle('g-drop-open');
+      btn.setAttribute('aria-expanded',open);
+      document.querySelectorAll('.g-drop-open').forEach(el=>{if(el!==li)el.classList.remove('g-drop-open');});
+    });
+  });
+  document.addEventListener('click',()=>document.querySelectorAll('.g-drop-open').forEach(el=>el.classList.remove('g-drop-open')));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.g-drop-open').forEach(el=>el.classList.remove('g-drop-open'));});
+
+  // Burger / overlay
+  const burger=document.getElementById('gBurger');
+  const overlay=document.getElementById('gOverlay');
+  if(burger&&overlay){
+    burger.addEventListener('click',()=>{
+      const open=overlay.classList.toggle('open');
+      burger.classList.toggle('open',open);
+      document.body.style.overflow=open?'hidden':'';
+    });
+    overlay.querySelectorAll('a[href]').forEach(a=>a.addEventListener('click',()=>{
+      overlay.classList.remove('open');burger.classList.remove('open');document.body.style.overflow='';
+    }));
+    document.addEventListener('keydown',e=>{
+      if(e.key==='Escape'&&overlay.classList.contains('open')){
+        overlay.classList.remove('open');burger.classList.remove('open');document.body.style.overflow='';
+      }
+    });
+  }
+
+  // Highlight active page
+  const pg = location.pathname.split('/').pop() || 'ecolife-landing.html';
+  // Mark active in dropdown and overlay
+  document.querySelectorAll('.g-dd-link, .g-ov-link').forEach(a => {
+    const href = a.getAttribute('href');
+    if (href === pg) {
+      a.style.background = 'rgba(255,255,255,0.1)';
+      const name = a.querySelector('.g-dd-name, .g-ov-name');
+      if (name) name.style.color = '#f3ede3';
+      const icon = a.querySelector('.g-dd-icon, .g-ov-icon');
+      if (icon) icon.style.color = 'var(--fern)';
+    }
+  });
+  // Mark active top-level nav link
+  document.querySelectorAll('.g-links > li > a').forEach(a => {
+    const href = a.getAttribute('href');
+    if (href === pg || href === 'ecolife-landing.html#latest' && ['essay','lab'].some(p => pg.startsWith(p))) {
+      a.classList.add('g-active');
+    }
+    if (href === 'glossary.html' && pg === 'glossary.html') a.classList.add('g-active');
+    if (href === 'about.html' && pg === 'about.html') a.classList.add('g-active');
+  });
+  // If current page is a section, mark 'Разделы' button as active
+  if (pg.startsWith('section-')) {
+    const btn = document.querySelector('.g-drop-btn');
+    if (btn) btn.style.color = 'var(--moss)';
+  }
+})();</script>
+</body>
+</html>

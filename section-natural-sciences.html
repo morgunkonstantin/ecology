@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Естественные науки в порядке исторического формирования — от астрономии до климатологии — и то, как каждая на своём пределе редукции обнаружила сеть, а не элемент.">
+<meta property="og:title" content="Естественные науки — ЭкоСознание">
+<meta property="og:description" content="Тринадцать естественных дисциплин в порядке появления. История дробления, за которой пришла история собирания.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Естественные науки — ЭкоСознание</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--ink:#1c2b1e;--ink-light:#3d5240;--moss:#4a7c59;--fern:#6ea87e;--sage:#a8c5a0;--mist:#d4e6d0;--cream:#f3ede3;--warm:#ece5d6;--paper:#faf6ef;--gold:#b8924a;--clay:#c4956a;--rust:#7a4f2e;}
+html{scroll-behavior:smooth;}
+body{background:var(--paper);color:var(--ink);font-family:'Jost',sans-serif;font-weight:300;overflow-x:hidden;}
+.hero{padding:10rem 4rem 5rem;display:grid;grid-template-columns:1fr 380px;gap:4rem;align-items:end;border-bottom:1px solid rgba(74,124,89,.15);position:relative;overflow:hidden;}
+.hero-mark-svg{position:absolute;right:4rem;top:11rem;width:90px;height:90px;color:rgba(74,124,89,.18);pointer-events:none;}
+.hero-mark-svg svg{width:100%;height:100%;display:block;}
+.hero-tag{display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:1.5rem;}
+.hero-tag::before{content:'';display:block;width:24px;height:1px;background:var(--fern);}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,6vw,5rem);font-weight:300;line-height:1.05;color:var(--ink);margin-bottom:1.8rem;}
+h1 em{font-style:italic;color:var(--moss);display:block;}
+.hero-lead{font-size:1rem;line-height:1.85;color:var(--ink-light);max-width:580px;}
+.hero-meta{display:flex;flex-direction:column;gap:1.5rem;padding-left:2rem;border-left:1px solid rgba(74,124,89,.2);}
+.meta-label{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:.4rem;}
+.meta-value{font-size:.9rem;color:var(--ink-light);line-height:1.6;}
+.toc-bar{background:var(--ink);padding:0 4rem;display:flex;align-items:stretch;overflow-x:auto;}
+.toc-bar a{color:rgba(211,230,208,.6);text-decoration:none;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:1rem 1.5rem;border-right:1px solid rgba(255,255,255,.06);white-space:nowrap;transition:color .2s,background .2s;}
+.toc-bar a:hover{color:var(--mist);}
+.toc-bar a.active{color:var(--fern);}
+.content-section{padding:5rem 4rem;border-bottom:1px solid rgba(74,124,89,.1);}
+.content-section.alt{background:var(--cream);}
+.content-section.dark{background:var(--ink);}
+.section-label{display:flex;align-items:center;gap:1rem;margin-bottom:3rem;}
+.section-label-num{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);}
+.section-label-line{flex:1;height:1px;background:rgba(74,124,89,.15);}
+.section-label-tag{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);}
+h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;color:var(--ink);line-height:1.15;margin-bottom:1.5rem;}
+h2 em{font-style:italic;color:var(--moss);}
+h2.light{color:var(--cream);}
+h2.light em{color:var(--fern);}
+.article-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+.article-layout.wide{grid-template-columns:3fr 2fr;}
+.article-body p{font-size:.95rem;line-height:1.9;color:var(--ink-light);margin-bottom:1.1rem;}
+.article-body p:last-child{margin-bottom:0;}
+.article-body p.light{color:rgba(211,230,208,.72);}
+.pull-quote{border-left:3px solid var(--moss);padding:1.2rem 1.5rem;margin:2rem 0;background:rgba(74,124,89,.05);}
+.pull-quote p{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:var(--ink);line-height:1.5;margin:0!important;}
+.pull-quote.light{background:rgba(255,255,255,.06);border-color:var(--fern);}
+.pull-quote.light p{color:var(--cream);}
+.pull-quote cite{display:block;margin-top:.6rem!important;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);font-style:normal;}
+.practices-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(74,124,89,.12);margin-top:2rem;}
+.practice-card{background:var(--paper);padding:2rem 1.8rem;transition:background .25s;}
+.content-section.alt .practice-card{background:var(--cream);}
+.practice-card:hover{background:var(--warm);}
+.practice-num{font-family:'Cormorant Garamond',serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.6rem;}
+.practice-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--ink);margin-bottom:.6rem;}
+.practice-name em{font-style:italic;color:var(--moss);}
+.practice-desc{font-size:.85rem;line-height:1.75;color:var(--ink-light);}
+.featured-strip{background:var(--ink);padding:3rem 3.5rem;display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center;margin-top:3rem;}
+.featured-label{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:1rem;}
+.featured-strip h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;font-style:italic;color:var(--cream);margin-bottom:.8rem;line-height:1.2;}
+.featured-strip p{font-size:.87rem;line-height:1.8;color:rgba(211,230,208,.68);}
+.featured-btn{background:transparent;color:var(--fern);border:1px solid rgba(110,168,126,.4);padding:.8rem 1.6rem;text-decoration:none;font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;display:inline-block;transition:background .25s,color .25s;}
+.featured-btn:hover{background:var(--fern);color:var(--ink);}
+.rubrics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.12);margin-top:3rem;}
+.rubric-card{background:var(--paper);padding:2rem 1.6rem;transition:background .25s;}
+.rubric-card:hover{background:var(--warm);}
+.rubric-icon{font-size:1.4rem;margin-bottom:1rem;}
+.rubric-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--ink);margin-bottom:.6rem;}
+.rubric-desc{font-size:.82rem;line-height:1.75;color:var(--ink-light);}
+.rubric-example{margin-top:1rem;font-size:.78rem;font-style:italic;color:var(--moss);line-height:1.6;}
+.rubric-card.dark-card{background:var(--ink);}
+.rubric-card.dark-card .rubric-name{color:var(--cream);}
+.rubric-card.dark-card .rubric-desc{color:rgba(211,230,208,.65);}
+.rubric-card.dark-card .rubric-example{color:var(--fern);}
+.g-next-section{background:var(--ink);padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;}
+.g-next-label{font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(168,197,160,.45);margin-bottom:.5rem;}
+.g-next-link{display:inline-flex;align-items:center;gap:.8rem;text-decoration:none;}
+.g-next-name{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--cream);font-style:italic;transition:color .2s;}
+.g-next-link:hover .g-next-name{color:var(--fern);}
+.g-next-arrow{font-family:'Cormorant Garamond',serif;font-size:2rem;color:rgba(110,168,126,.5);transition:transform .2s,color .2s;}
+.g-next-link:hover .g-next-arrow{transform:translateX(6px);color:var(--fern);}
+.g-next-num{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:300;color:rgba(255,255,255,.06);line-height:1;}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease;}
+.reveal.visible{opacity:1;transform:none;}
+.d1{transition-delay:.1s;}.d2{transition-delay:.2s;}
+@media(max-width:800px){
+  .hero,.toc-bar,.content-section,.g-next-section{padding-left:1.5rem;padding-right:1.5rem;}
+  .hero{grid-template-columns:1fr;}
+  .hero-meta{padding-left:0;border-left:none;border-top:1px solid rgba(74,124,89,.2);padding-top:1.5rem;}
+  .hero-mark-svg{right:1.5rem;top:9rem;width:60px;height:60px;}
+  .article-layout,.article-layout.wide{grid-template-columns:1fr;gap:2rem;}
+  .practices-grid,.rubrics-grid{grid-template-columns:1fr;}
+  .featured-strip{grid-template-columns:1fr;gap:1.5rem;}
+}
+
+
+/* Methods comparison */
+.methods-table{margin:2rem 0;border:1px solid rgba(74,124,89,.15);overflow-x:auto;}
+.methods-row{display:grid;grid-template-columns:180px repeat(4,1fr);gap:0;border-bottom:1px solid rgba(74,124,89,.1);min-width:760px;}
+.methods-row:last-child{border-bottom:none;}
+.methods-row.header{background:var(--ink);}
+.methods-row.header > div{color:var(--sage);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;padding:.9rem 1rem;}
+.methods-row > div{background:var(--paper);padding:.95rem 1rem;font-size:.85rem;color:var(--ink-light);line-height:1.5;border-right:1px solid rgba(74,124,89,.08);}
+.content-section.alt .methods-row > div{background:var(--cream);}
+.methods-row > div:last-child{border-right:none;}
+.methods-row > .method-name{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;color:var(--ink);}
+.methods-row.header > .method-name{color:var(--sage);font-style:normal;}
+/* Seasons */
+.seasons-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.12);margin:2rem 0;}
+.season-card{background:var(--paper);padding:1.8rem 1.5rem;transition:background .25s;display:flex;flex-direction:column;}
+.content-section.alt .season-card{background:var(--cream);}
+.season-card:hover{background:var(--warm);}
+.season-icon{font-size:1.9rem;margin-bottom:.7rem;line-height:1;}
+.season-name{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--ink);margin-bottom:.2rem;}
+.season-name em{font-style:italic;color:var(--moss);}
+.season-months{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:.9rem;}
+.season-actions{font-size:.83rem;line-height:1.7;color:var(--ink-light);margin-bottom:.8rem;}
+.season-watch{font-size:.78rem;line-height:1.6;color:var(--ink-light);padding-top:.7rem;border-top:1px dashed rgba(74,124,89,.18);margin-top:auto;}
+.season-watch strong{color:var(--rust);font-weight:400;}
+/* Timeline */
+.timeline{margin:2rem 0;position:relative;border-left:1px solid rgba(74,124,89,.2);padding-left:2rem;}
+.timeline-item{margin-bottom:2rem;position:relative;}
+.timeline-item:last-child{margin-bottom:0;}
+.timeline-item::before{content:'';position:absolute;left:-2.45rem;top:.3rem;width:9px;height:9px;border-radius:50%;background:var(--moss);box-shadow:0 0 0 3px var(--paper);}
+.content-section.alt .timeline-item::before{box-shadow:0 0 0 3px var(--cream);}
+.timeline-era{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.4rem;}
+.timeline-name{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--ink);margin-bottom:.5rem;line-height:1.3;}
+.timeline-name em{font-style:italic;color:var(--moss);}
+.timeline-desc{font-size:.88rem;line-height:1.75;color:var(--ink-light);}
+.timeline-desc em{font-style:italic;color:var(--moss);}
+/* Case study */
+.case-block{background:var(--ink);padding:4rem 3.5rem;margin:2rem 0;}
+.case-inner{max-width:920px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start;}
+.case-block h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;color:var(--cream);line-height:1.25;margin-bottom:1.3rem;}
+.case-block h3 em{font-style:italic;color:var(--fern);}
+.case-block p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.75;color:rgba(211,230,208,.75);margin-bottom:1rem;}
+.case-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.08);}
+.case-stat{background:rgba(255,255,255,.04);padding:1.4rem 1.2rem;text-align:center;}
+.case-stat-num{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--fern);font-weight:300;line-height:1;margin-bottom:.4rem;}
+.case-stat-lbl{font-size:.72rem;color:rgba(211,230,208,.65);line-height:1.5;}
+.case-link{display:inline-flex;align-items:center;gap:.6rem;font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--fern);text-decoration:none;border-bottom:1px solid rgba(110,168,126,.4);padding-bottom:.3rem;margin-top:1rem;}
+.case-link:hover{border-color:var(--fern);}
+@media(max-width:800px){
+  .case-inner{grid-template-columns:1fr;gap:2rem;}
+  .case-block{padding:2.5rem 1.5rem;}
+  .seasons-grid{grid-template-columns:1fr 1fr;}
+  .methods-row{grid-template-columns:140px repeat(4,1fr);min-width:660px;}
+}
+@media(max-width:540px){
+  .seasons-grid{grid-template-columns:1fr;}
+  .case-stats{grid-template-columns:1fr 1fr;}
+}
+/* ── Glossary term links ── */
+
+/* Compost-specific */
+.cycle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.12);margin:2rem 0;}
+.cycle-card{background:var(--paper);padding:1.8rem 1.6rem;text-align:center;transition:background .25s;}
+.content-section.alt .cycle-card{background:var(--cream);}
+.cycle-card:hover{background:var(--warm);}
+.cycle-step{font-family:'Cormorant Garamond',serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.6rem;}
+.cycle-icon{font-size:2rem;margin-bottom:.8rem;line-height:1;}
+.cycle-name{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--ink);margin-bottom:.5rem;}
+.cycle-name em{font-style:italic;color:var(--moss);}
+.cycle-desc{font-size:.82rem;line-height:1.7;color:var(--ink-light);}
+.can-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:2rem 0;}
+.can-col h4{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:400;margin-bottom:1rem;}
+.can-col.yes h4{color:var(--moss);}
+.can-col.no h4{color:var(--rust);}
+.can-list{list-style:none;display:flex;flex-direction:column;gap:0;}
+.can-item{font-size:.85rem;line-height:1.6;color:var(--ink-light);padding:.45rem 0;border-bottom:1px dashed rgba(74,124,89,.12);}
+.can-item:last-child{border-bottom:none;}
+.can-item::before{margin-right:.5rem;}
+.can-col.yes .can-item::before{content:'✓';color:var(--fern);}
+.can-col.no .can-item::before{content:'✗';color:var(--rust);}
+.soil-block{background:var(--ink);padding:4rem 3.5rem;margin:3rem 0;}
+.soil-inner{max-width:720px;margin:0 auto;}
+.soil-block h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;font-style:italic;color:var(--cream);line-height:1.3;margin-bottom:1.5rem;}
+.soil-block h3 em{color:var(--fern);}
+.soil-block p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.8;color:rgba(211,230,208,.75);margin-bottom:1.2rem;}
+.soil-block p:last-child{margin-bottom:0;}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.15);margin:2rem 0;}
+.stat-card{background:var(--paper);padding:1.6rem 1.2rem;text-align:center;}
+.content-section.alt .stat-card{background:var(--cream);}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:300;color:var(--moss);line-height:1;margin-bottom:.4rem;}
+.stat-label{font-size:.78rem;line-height:1.5;color:var(--ink-light);}
+.q-list{display:flex;flex-direction:column;gap:0;margin:1.5rem 0;}
+.q-item{padding:1.2rem 0;border-bottom:1px solid rgba(74,124,89,.1);}
+.q-item:last-child{border-bottom:none;}
+.q-question{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink);margin-bottom:.5rem;font-weight:400;}
+.q-question em{font-style:italic;color:var(--moss);}
+.q-answer{font-size:.88rem;line-height:1.75;color:var(--ink-light);}
+@media(max-width:800px){
+  .cycle-grid{grid-template-columns:1fr 1fr;}
+  .can-grid{grid-template-columns:1fr;}
+  .stats-row{grid-template-columns:1fr 1fr;}
+  .soil-block{padding:2.5rem 1.5rem;}
+}
+@media(max-width:540px){
+  .cycle-grid{grid-template-columns:1fr;}
+  .stats-row{grid-template-columns:1fr 1fr;}
+}
+/* ── Glossary term links ── */
+a.gterm{color:var(--moss);text-decoration:none;border-bottom:1px dashed rgba(74,124,89,.45);transition:border-color .2s,color .2s;}
+a.gterm:hover{color:var(--ink);border-bottom-style:solid;}
+/* ── GLOBAL FOOTER ── */
+.gf{background:var(--ink);padding:3.5rem 3rem 0;font-family:'Jost',sans-serif;}
+.gf-top{display:grid;grid-template-columns:200px 1fr;gap:4rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,0.07);}
+.gf-brand{}
+.gf-logo{display:flex;align-items:center;gap:0.55rem;text-decoration:none;margin-bottom:1rem;}
+.gf-logo-text{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--cream);}
+.gf-logo-text em{font-style:italic;color:var(--fern);}
+.gf-tagline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.88rem;color:rgba(168,197,160,0.45);line-height:1.65;max-width:175px;}
+.gf-cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2.5rem;}
+.gf-col-title{font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(168,197,160,0.38);margin-bottom:1rem;}
+.gf-sections{display:grid;grid-template-columns:1fr 1fr;gap:0.05rem;}
+.gf-sec-link{display:flex;align-items:center;gap:0.4rem;text-decoration:none;padding:0.38rem 0.25rem;border-radius:3px;opacity:0.68;transition:opacity 0.18s,background 0.18s;}
+.gf-sec-link:hover{opacity:1;background:rgba(255,255,255,0.06);}
+.gf-sec-icon{width:15px;height:15px;color:var(--fern);flex-shrink:0;}
+.gf-sec-icon svg{width:100%;height:100%;}
+.gf-sec-name{font-family:'Cormorant Garamond',serif;font-size:0.9rem;color:var(--mist);}
+.gf-nav-links{display:flex;flex-direction:column;gap:0.05rem;}
+.gf-nav-link{font-family:'Cormorant Garamond',serif;font-size:0.92rem;color:rgba(211,230,208,0.58);text-decoration:none;padding:0.38rem 0.25rem;border-radius:3px;transition:color 0.18s,background 0.18s;}
+.gf-nav-link:hover{color:var(--fern);background:rgba(255,255,255,0.05);}
+.gf-bottom{padding:1.5rem 0 1.8rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.8rem;}
+.gf-copy{font-size:0.67rem;letter-spacing:0.08em;color:rgba(168,197,160,0.28);}
+.gf-bottom-links{display:flex;gap:1rem;}
+.gf-bottom-links a{font-size:0.67rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(168,197,160,0.35);text-decoration:none;transition:color 0.18s;}
+.gf-bottom-links a:hover{color:var(--fern);}
+@media(max-width:860px){
+  .gf{padding:2.5rem 1.5rem 0;}
+  .gf-top{grid-template-columns:1fr;gap:2rem;}
+  .gf-cols{grid-template-columns:1fr 1fr;gap:1.5rem;}
+}
+@media(max-width:540px){
+  .gf-cols{grid-template-columns:1fr;}
+  .gf-sections{grid-template-columns:1fr 1fr;}
+  .gf-bottom{flex-direction:column;align-items:flex-start;gap:0.6rem;}
+}
+/* ── GLOBAL NAV + FOOTER v2 ── */
+.g-nav-wrap{position:fixed;top:0;left:0;right:0;z-index:300;background:rgba(250,246,239,0.95);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(74,124,89,0.13);font-family:'Jost',sans-serif;}
+.g-nav{display:flex;align-items:center;height:62px;padding:0 3rem;gap:0;}
+.g-logo{display:flex;align-items:center;gap:0.55rem;text-decoration:none;flex-shrink:0;margin-right:auto;}
+.g-logo .logo-svg{width:24px;height:24px;color:var(--ink);}
+.g-logo-text{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--ink);white-space:nowrap;}
+.g-logo-text em{font-style:italic;color:var(--moss);}
+.g-links{display:flex;align-items:center;gap:0;list-style:none;}
+.g-links>li{position:relative;}
+.g-links>li>a,.g-links>li>button{display:flex;align-items:center;gap:0.3rem;font-size:0.75rem;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-light);text-decoration:none;padding:0.45rem 0.9rem;border-radius:3px;background:none;border:none;cursor:pointer;font-family:'Jost',sans-serif;transition:color 0.2s,background 0.2s;}
+.g-links>li>a:hover,.g-links>li>button:hover{color:var(--moss);}
+.g-links>li>a.g-active{color:var(--moss);}
+.g-chevron{width:10px;height:10px;display:block;transition:transform 0.25s;}
+.g-drop-open>.g-drop-btn .g-chevron{transform:rotate(180deg);}
+.g-dropdown{position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);background:var(--ink);border:1px solid rgba(255,255,255,0.08);border-radius:6px;box-shadow:0 16px 40px rgba(0,0,0,0.35);padding:1.2rem;min-width:580px;display:none;grid-template-columns:repeat(3,1fr);gap:0.1rem;z-index:400;}
+.g-drop-open .g-dropdown{display:grid;}
+.g-dd-link{display:flex;align-items:center;gap:0.5rem;text-decoration:none;padding:0.5rem 0.6rem;border-radius:4px;transition:background 0.18s;}
+.g-dd-link:hover{background:rgba(255,255,255,0.08);}
+.g-dd-icon{width:18px;height:18px;flex-shrink:0;color:rgba(110,168,126,0.55);}
+.g-dd-icon svg{width:100%;height:100%;}
+.g-dd-link:hover .g-dd-icon{color:var(--fern);}
+.g-dd-name{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(243,237,227,0.85);}
+.g-dd-num{font-size:0.6rem;letter-spacing:0.12em;color:rgba(168,197,160,0.4);margin-left:auto;}
+.g-dd-link.wip{opacity:0.35;pointer-events:none;}
+.g-burger{display:none;flex-direction:column;justify-content:center;gap:5px;width:32px;height:32px;background:none;border:none;cursor:pointer;padding:3px;margin-left:1rem;}
+.g-burger span{display:block;height:1.5px;background:var(--ink);transition:transform 0.28s,opacity 0.28s,width 0.28s;transform-origin:center;}
+.g-burger span:nth-child(1){width:100%;}
+.g-burger span:nth-child(2){width:70%;}
+.g-burger span:nth-child(3){width:45%;}
+.g-burger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);width:100%;}
+.g-burger.open span:nth-child(2){opacity:0;}
+.g-burger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);width:100%;}
+.g-overlay{display:none;position:fixed;inset:62px 0 0 0;z-index:290;background:rgba(28,43,30,0.98);backdrop-filter:blur(20px);overflow-y:auto;padding:2rem 2rem 3rem;}
+.g-overlay.open{display:block;}
+.g-ov-section{margin-bottom:2rem;}
+.g-ov-label{font-size:0.64rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(168,197,160,0.45);margin-bottom:0.8rem;font-family:'Jost',sans-serif;}
+.g-ov-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.15rem;}
+.g-ov-link{display:flex;align-items:center;gap:0.5rem;text-decoration:none;padding:0.6rem 0.5rem;border-radius:4px;transition:background 0.18s;}
+.g-ov-link:hover{background:rgba(255,255,255,0.07);}
+.g-ov-icon{width:18px;height:18px;color:rgba(110,168,126,0.55);flex-shrink:0;}
+.g-ov-icon svg{width:100%;height:100%;}
+.g-ov-name{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(243,237,227,0.85);}
+.g-ov-link.wip{opacity:0.35;pointer-events:none;}
+.g-ov-simple-links{display:flex;flex-direction:column;gap:0.15rem;}
+.g-ov-simple-link{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(243,237,227,0.8);text-decoration:none;padding:0.55rem 0.5rem;border-radius:4px;transition:background 0.18s;}
+.g-ov-simple-link:hover{background:rgba(255,255,255,0.07);color:#f3ede3;}
+
+/* FOOTER */
+.g-footer-logo .logo-svg{width:22px;height:22px;}
+.g-footer-logo-text em{font-style:italic;color:var(--fern);}
+.g-footer-sec-link.wip{opacity:0.25;pointer-events:none;}
+.g-footer-sec-icon svg{width:100%;height:100%;}
+.g-footer-bottom-links a{font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(168,197,160,0.35);text-decoration:none;transition:color 0.18s;}
+.g-footer-bottom-links a:hover{color:var(--fern);}
+
+body{padding-top:62px!important;}
+.section-num{font-family:'Cormorant Garamond',serif;font-size:0.85rem;letter-spacing:0.3em;color:var(--moss);margin-bottom:1rem;font-style:italic;}
+.disc-meta{font-family:'Jost',sans-serif;font-size:0.78rem;letter-spacing:0.05em;color:var(--ink-light);margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid rgba(74,124,89,0.15);font-weight:300;line-height:1.7;}
+.content-section p{font-size:1rem;line-height:1.85;color:var(--ink);margin-top:1.2rem;}
+.content-section p strong{color:var(--moss);font-weight:500;}
+.content-section p em{font-style:italic;color:var(--ink-light);}
+.content-section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;line-height:1.15;color:var(--ink);margin-bottom:0.5rem;}
+.content-section h2 em{color:var(--moss);font-style:italic;display:block;}
+</style>
+</head>
+<body>
+<div class="g-nav-wrap" id="gNavWrap">
+  <div class="g-nav">
+    <a href="index.html" class="g-logo">
+      <svg viewBox="0 0 100 100" fill="none" class="logo-svg"><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#4a7c59"/></svg>
+      <span class="g-logo-text">Эко<em>Сознание</em></span>
+    </a>
+    <ul class="g-links">
+      <li>
+        <button class="g-drop-btn" aria-expanded="false">
+          Разделы
+          <svg class="g-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="g-dropdown">
+          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
+          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
+          <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
+          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
+          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
+          <a href="section-construction.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="g-dd-name">Строительство</span><span class="g-dd-num">06b</span></a>
+          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
+          <a href="section-art.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></span><span class="g-dd-name">Искусство</span><span class="g-dd-num">08</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">09</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">10</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">11</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">12</span></a>
+        </div>
+      </li>
+      <li><a href="index.html#latest">Эссе</a></li>
+      <li><a href="glossary.html">Глоссарий</a></li>
+      <li><a href="about.html">О проекте</a></li>
+    </ul>
+    <button class="g-burger" id="gBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<section class="hero" id="top">
+  <div class="hero-mark-svg"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="50" cy="50" r="45"/><path d="M 50 15 Q 75 30, 68 55 Q 60 78, 35 72 Q 15 65, 22 42 Q 30 22, 50 25" stroke-linecap="round"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/></svg></div>
+  <div>
+    <div class="hero-tag">Раздел · Естественные науки</div>
+    <h1>Естественные науки —<br><em>как физика мира</em><br>снова собралась в жизнь</h1>
+    <p class="hero-lead">Естественные науки начинались как единая натурфилософия — Аристотель писал «Физику» и «О частях животных» в одной раме. Затем два тысячелетия шло раздробление: каждый век выделял новую дисциплину, каждая с более узким предметом, с более острым инструментом, с более редукционистской моделью. Молекула, клетка, ген — казалось, чем дробнее объект, тем точнее знание. Но во второй половине XX века что-то повернулось: генетика открыла эпигенетику, микробиология — микробиом, биология — голобионт, астрономия — теорию Геи, физика — диссипативные структуры. Раздробленные науки начали собираться обратно — не в старую натурфилософию, а в новую науку о планетарной жизни. Ниже — тринадцать дисциплин в порядке их появления, и как каждая на своём пределе обнаружила: изучаемый объект не изолирован, а живёт в сети.</p>
+  </div>
+  <div class="hero-meta">
+    <div><div class="meta-label">Ключевые сдвиги</div><div class="meta-value">Симбиогенез · Голобионт · Диссипативные структуры · Планетарные границы · Wood Wide Web · Эпигенетика · Микробиом</div></div>
+    <div><div class="meta-label">Ключевые фигуры</div><div class="meta-value">Линн Маргулис · Джеймс Лавлок · Илья Пригожин · Рэйчел Карсон · Сюзанна Симард · Пауль Крутцен · Йохан Рокстрём</div></div>
+    <div><div class="meta-label">Способ чтения</div><div class="meta-value">В хронологии — как история дробления, за которым следует история собирания. Каждая дисциплина, дойдя до предела редукции, открыла своё, что жизнь есть не индивид, а сеть отношений</div></div>
+  </div>
+</section>
+
+<div class="toc-bar">
+  <a href="#intro" class="active">Введение</a>
+  <a href="#astronomy">Астрономия</a>
+  <a href="#physics">Физика</a>
+  <a href="#botany">Ботаника</a>
+  <a href="#zoology">Зоология</a>
+  <a href="#geography">География</a>
+  <a href="#chemistry">Химия</a>
+  <a href="#geology">Геология</a>
+  <a href="#biology">Биология</a>
+  <a href="#microbiology">Микробиология</a>
+  <a href="#genetics">Генетика</a>
+  <a href="#ecology">Экология</a>
+  <a href="#oceanography">Океанография</a>
+  <a href="#climate">Климатология</a>
+  <a href="#outro">Итог</a>
+</div>
+
+<!-- ═══ ВВЕДЕНИЕ ══════════════════════════════════════════════════════════ -->
+<section class="content-section" id="intro">
+  <div style="max-width:820px;">
+    <div class="section-num">00</div>
+    <h2>История дробления,<br><em>за которой пришла история собирания</em></h2>
+    <p style="font-size:1.05rem;line-height:1.85;color:var(--ink-light);margin-top:2rem;">У гуманитарных наук была одна общая история: расширение субъекта, включение в него всё новых участников — от белого европейца-мужчины к другим людям, а потом и к не-людям. У естественных наук — история симметричная и противоположная. Они начинали единой натурфилософией, где астрономия, физика, ботаника, зоология были частями одной науки о природе. С XVII века шло дробление: физика отделилась от философии, химия от алхимии, биология от естественной истории, экология от биологии, микробиология от медицины. К XX веку получилось около двадцати «настоящих» естественных наук со своими объектами, методами и институтами.</p>
+    <p style="font-size:1.05rem;line-height:1.85;color:var(--ink-light);margin-top:1.2rem;">Логика дробления работала: чем уже предмет, тем точнее метод. Ньютон описал движение планет, Лавуазье — химические реакции, Дарвин — эволюцию, Мендель — наследственность. Каждая новая дисциплина открывала новый уровень реальности. Казалось, что редукция — универсальный ключ: чтобы понять живой организм, нужно свести его к клеткам, клетки — к молекулам, молекулы — к атомам. Гены объяснят биологию, атомы — химию, элементарные частицы — физику. Всё сверху донизу.</p>
+    <p style="font-size:1.05rem;line-height:1.85;color:var(--ink-light);margin-top:1.2rem;">В середине XX века эта программа стала давать сбои. Термодинамика не сводится к механике. Жизнь не сводится к химии. Экосистема не сводится к сумме организмов. Пригожин, изучая неравновесные системы, показал: сложность возникает как самостоятельное явление. Маргулис доказала, что клетка — это сообщество бывших бактерий. Лавлок предположил, что вся биосфера регулирует климат планеты. Экология открыла, что виды существуют в сетях, а не в изоляции. Микробиологи обнаружили, что человек — не «организм», а голобионт: 10 триллионов человеческих клеток и 100 триллионов микробных.</p>
+    <p style="font-size:1.05rem;line-height:1.85;color:var(--ink-light);margin-top:1.2rem;">Ниже — тринадцать дисциплин в порядке их появления. У каждой был свой предмет и свой момент, когда предмет вдруг оказался частью большей сети. Астрономия открыла: Земля — не одна планета среди множества, а редкий планетарный организм. Физика: жизнь — локальный порядок посреди растущей энтропии. Ботаника: деревья образуют подземную сеть. Зоология: у животных есть внутренний мир. Химия: продукты нашей химии становятся геологической силой. Генетика: гены не «программа», а участник диалога со средой. Экология из периферийной дисциплины перешла в центр.</p>
+    <p style="font-size:1.05rem;line-height:1.85;color:var(--ink-light);margin-top:1.2rem;">Это одна общая история — история собирания. Наука, устав от редукции, начала находить в самих объектах — на всех уровнях сразу — обнажающиеся связи. Не «холизм в противоположность редукционизму», как когда-то любили спорить, а более тонкое: <em>сеть, оказавшаяся первичнее элемента, из которого предполагалось её собрать</em>.</p>
+  </div>
+</section>
+
+<!-- ═══ 01 АСТРОНОМИЯ ═══════════════════════════════════════════════════ -->
+<section class="content-section alt" id="astronomy">
+  <div style="max-width:820px;">
+    <div class="section-num">01</div>
+    <div class="disc-meta">Тысячелетия до н.э. · Вавилон, Египет, античная Греция · Птолемей (II в.), Коперник (1543), Галилей, Кеплер, Ньютон</div>
+    <h2>Астрономия —<br><em>Земля как редкая планета</em></h2>
+    <p>Астрономия — древнейшая из наук. Вавилонские жрецы уже в третьем тысячелетии до н.э. вели систематические наблюдения планет и составили первые прогнозы затмений. Древние египтяне ориентировали пирамиды по звёздам. Античная Греция дала первую математическую модель мира — Птолемея (II в. н.э.), просуществовавшую четырнадцать веков. Коперник в 1543 году поместил Солнце в центр. Галилей в 1610 направил телескоп на небо и увидел спутники Юпитера. Ньютон в «Началах» (1687) объяснил движение планет одним законом всемирного тяготения. Тысячелетия наблюдений сложились в одну из самых прекрасных теорий, которые когда-либо создавал человек.</p>
+    <p>До середины XX века астрономия была наукой, в основном, о далёких телах — о том, что происходит там. Земля рассматривалась как одна из планет — интересный объект, но не более особый, чем Марс или Венера. Астрономия помогала определиться со своим местом в космосе (мы не центр), с масштабом Вселенной (миллиарды галактик), с её возрастом (13,8 миллиардов лет). Но все эти открытия постепенно уменьшали значение Земли — от центра к периферии, от главной сцены к рядовому камню.</p>
+    <p>Поворот произошёл в 1960–70-е годы. Британский химик и физик <strong>Джеймс Лавлок</strong>, работая в NASA над проектом поиска жизни на Марсе, задал странный вопрос: как из космоса определить, есть ли на планете жизнь? Его ответ: по составу атмосферы. Мёртвая планета должна быть в химическом равновесии — как Марс или Венера. Земная атмосфера, содержащая одновременно кислород и метан (которые должны быстро прореагировать), находится в состоянии крайнего неравновесия. Значит, что-то её активно поддерживает. Это «что-то» — жизнь.</p>
+    <p>Из этого наблюдения Лавлок и биолог <strong>Линн Маргулис</strong> в 1970-е сформулировали <strong>гипотезу Геи</strong>: биосфера Земли — саморегулирующаяся система, поддерживающая условия, пригодные для жизни, в узком диапазоне на протяжении миллиардов лет. Температура, состав атмосферы, солёность океана — всё это активно регулируется живым сообществом. Земля — не «планета с жизнью», Земля — жизнь и планета в одном целом. Тезис вызвал бурю: научный истеблишмент долго его отвергал как «телеологический». К 2000-м годам, однако, «Гея» превратилась в <strong>Earth System Science</strong> — серьёзную научную программу, к которой сходятся климатологи, биологи, геохимики.</p>
+    <p>Параллельно астрономия вошла в фазу активного поиска экзопланет. С 1995 года открыто более 5000 планет за пределами Солнечной системы. Стало возможным сравнивать. Вопрос «уникальна ли Земля?» перестал быть философским. В книге «Rare Earth» (2000) Питер Уорд и Дональд Браунли предложили: жизнь простая, возможно, распространена в галактике; но сложная многоклеточная жизнь требует такого точного набора условий (стабильная звезда, планета в обитаемой зоне, крупный спутник для стабилизации оси, движение плит для геохимических циклов, счастливо расположенные Юпитер и Сатурн для защиты от астероидов), что может быть исключительной редкостью.</p>
+    <p>Земля из «одной из планет» превратилась в редкий, возможно уникальный планетарный организм. Астробиология, работая на границе астрономии и биологии, начала спрашивать: что вообще есть жизнь? На каких субстратах она возможна? Является ли она случайным событием или устойчивой тенденцией материи? Астрономия, которая веками смотрела «наружу», обнаружила, что самый интересный объект её изучения — тот, на котором она стоит. И это меняет всё.</p>
+  </div>
+</section>
+
+<!-- ═══ 02 ФИЗИКА ═══════════════════════════════════════════════════════ -->
+<section class="content-section" id="physics">
+  <div style="max-width:820px;">
+    <div class="section-num">02</div>
+    <div class="disc-meta">IV век до н.э. · Аристотель «Физика» · 1687 · Ньютон «Начала» · далее — Максвелл, Больцман, Эйнштейн, Планк, Пригожин</div>
+    <h2>Физика —<br><em>жизнь как порядок посреди энтропии</em></h2>
+    <p>Физика в античном смысле означала «науку о природе» вообще — Аристотелева «Физика» обсуждает движение, время, причинность, космос. Современная физика рождается в XVII веке. Галилей вводит эксперимент и математизацию, Ньютон в «Математических началах натуральной философии» (1687) даёт три закона механики и закон всемирного тяготения. XVIII век — Эйлер, Лагранж, Лаплас — доводит классическую механику до совершенства. XIX век приносит электромагнетизм Максвелла, термодинамику, статистическую механику Больцмана. XX — теорию относительности Эйнштейна, квантовую механику, стандартную модель частиц.</p>
+    <p>Классическая механика описывала мир как обратимый. Уравнения Ньютона одинаково работают вперёд и назад во времени. Планетная траектория, обращённая наоборот, столь же правильна. Мир Лапласа — детерминистский: зная начальные условия, можно рассчитать всё будущее и прошлое. Это давало ощущение полной прозрачности природы. Но параллельно шла другая линия — термодинамика.</p>
+    <p>Второй закон термодинамики, сформулированный в 1850-е Клаузиусом и Кельвином, ввёл в физику <strong>стрелу времени</strong>. Тепло переходит от горячего к холодному, а не наоборот. Кофе остывает, но не согревается сам. Больцман в 1870-е дал статистическое объяснение: макроскопический порядок вероятностно превращается в беспорядок. Энтропия растёт. У Вселенной есть направление — от порядка к хаосу, к «тепловой смерти».</p>
+    <p>Но живые организмы — очевидное исключение. Клетка поддерживает порядок; тело растёт; экосистема развивается. Как это возможно во Вселенной, где всё стремится к беспорядку? Ответ, впервые чётко данный <strong>Эрвином Шрёдингером</strong> в маленькой книге «Что такое жизнь?» (1944), звучал так: живое поддерживает свой порядок, откачивая беспорядок наружу — питаясь «отрицательной энтропией», как её тогда назвали. Организм — открытая система, локально уменьшающая энтропию за счёт увеличения её в окружающей среде.</p>
+    <p>В 1970-е бельгийский физик <strong>Илья Пригожин</strong> (Нобелевская премия 1977) развил это в теорию <em>диссипативных структур</em>. Он показал: далеко от термодинамического равновесия материя ведёт себя не хаотически, а самоорганизуется — возникают устойчивые сложные структуры, поддерживающие себя за счёт постоянного потока энергии. Ячейки Бенара, химические часы Белоусова-Жаботинского, ураганы, экосистемы, живые клетки, человеческий мозг — всё это диссипативные структуры. Пригожин с Изабель Стенгерс в книге «Порядок из хаоса» (1984) обобщили: сложность — не аномалия, а основной режим материи в неравновесных условиях. Второй закон термодинамики не отрицается — но локально, на потоке энергии, порядок не только возможен, он неизбежен.</p>
+    <p>Это радикально изменило понимание того, что такое жизнь. Не «нарушение физических законов», как иногда думали виталисты. И не «случайность», как утверждали редукционисты. Жизнь — <em>физическое явление, возникающее там, где есть градиент потока энергии</em>. Земля, получая энергию от Солнца и излучая её обратно в холодное пространство, — идеальная площадка для диссипативной самоорганизации. Жизнь на ней — не удивительный подарок, а закономерный ответ материи на условия неравновесия.</p>
+    <p>Ещё одна параллельная линия — <strong>квантовая биология</strong>. С 2000-х годов набирает силу гипотеза, что некоторые биологические процессы (фотосинтез, миграция птиц по магнитному полю, обоняние) используют квантовые эффекты — суперпозицию, туннелирование, спутанность. Если это верно, жизнь и на молекулярном уровне тесно вплетена в базовую физику Вселенной. Границы между «физическими» и «биологическими» явлениями оказываются условны.</p>
+  </div>
+</section>
+
+<!-- ═══ 03 БОТАНИКА ═══════════════════════════════════════════════════ -->
+<section class="content-section alt" id="botany">
+  <div style="max-width:820px;">
+    <div class="section-num">03</div>
+    <div class="disc-meta">IV век до н.э. · Теофраст «История растений» · 1735 · Карл Линней «Systema Naturae» · далее — Гумбольдт, Дарвин, Мендель</div>
+    <h2>Ботаника —<br><em>лес как единый организм</em></h2>
+    <p>Ботаника — одна из старейших естественных наук. Теофраст, ученик Аристотеля, в IV веке до н.э. написал два больших ботанических трактата, положив начало систематическому изучению растений. Средневековые травники, ренессансные ботанические сады, «Species Plantarum» Линнея (1753) с бинарной номенклатурой — тысячи лет ботаника занималась описанием, классификацией, изучением строения и функции растений. К XX веку у нас было превосходное знание анатомии, физиологии, эволюции растительного царства.</p>
+    <p>Но растения долго рассматривались как пассивные — почти как красивая декорация в природе. Они не двигались (за исключением тропизмов), не издавали звуков, не имели нервной системы. Классификация Аристотеля — «неодушевлённые, растения, животные, разумные существа» — задала иерархию, в которой растения занимали низкое место: чуть выше камня, но значительно ниже насекомых. Само слово «vegetative» в европейских языках стало синонимом бездействия.</p>
+    <p>В 1997 году канадский лесной эколог <strong>Сюзанна Симард</strong> опубликовала в Nature статью с удивительным результатом. Работая в лесах Британской Колумбии, она с помощью изотопных меток показала: разные виды деревьев в лесу связаны подземными сетями гриба-микоризы, через которые обмениваются углеродом. Береза кормит ель. Ель кормит дугласову пихту. Умирающее дерево передаёт углерод молодым соседям — и не обязательно того же вида. Лес — не сумма конкурирующих индивидов, а <strong>сеть кооперирующих организмов</strong>, связанная невидимой подземной инфраструктурой.</p>
+    <p>Британский журналист и научный писатель <strong>Роберт Макфарлейн</strong> в книге «Underland» популяризировал термин <em>Wood Wide Web</em>. Оказалось, что «интернет леса» — не метафора. Микоризная сеть переносит не только питательные вещества, но и сигналы: если дерево поражено насекомым, оно через сеть предупреждает соседей, и те начинают производить защитные химические вещества. Симард в книге «Finding the Mother Tree» (2021) описывает «материнские деревья» — самые старые деревья в лесу, которые узнают своих потомков и передают им ресурсы преимущественно.</p>
+    <p>Немецкий лесник <strong>Питер Воллебен</strong> в книге «Тайная жизнь деревьев» (2015) популяризировал эту картину для широкой публики. Книга разошлась миллионным тиражом. Не все её тезисы академически строги, но общая линия совпадает с современным пониманием: лес — сообщество, а не толпа.</p>
+    <p>Параллельно итальянский биолог <strong>Стефано Манкузо</strong> развивает <em>plant neurobiology</em> — направление, в котором изучаются способности растений к обучению, памяти, принятию решений. Растения ощущают минимум 20 параметров окружающей среды (свет, гравитацию, влажность, звук, электрическое поле, химические сигналы, магнитное поле). Реагируют на них комплексно. Помнят прошлые события. Общаются с соседями через воздушные летучие соединения и подземные сети. Не имея централизованного мозга, они распределяют «когнитивные» функции по всему телу — что делает их, с некоторой точки зрения, более устойчивыми, чем животные с их уязвимой нервной системой.</p>
+    <p>Признать растительный «интеллект» или «сознание» научная община всё ещё готова с оговорками. Термины оспариваются. Но то, что растения — активные, чувствительные, коммуницирующие существа, что лес — единый организм, а не сумма деревьев — постепенно становится частью общего знания. Это меняет и практику: лесное хозяйство, ориентированное на монокультурные плантации максимальной продуктивности, вступает в конфликт с новым пониманием леса как сети. Ландшафтная экология, permaculture, agroforestry, регенеративное лесоводство — все эти направления идут от одного открытия: лес умнее, чем мы думали.</p>
+  </div>
+</section>
+
+<!-- ═══ 04 ЗООЛОГИЯ ═══════════════════════════════════════════════════ -->
+<section class="content-section" id="zoology">
+  <div style="max-width:820px;">
+    <div class="section-num">04</div>
+    <div class="disc-meta">IV век до н.э. · Аристотель «О частях животных», «История животных» · 1735 · Линней · далее — Кювье, Дарвин, Лоренц, Тинберген</div>
+    <h2>Зоология —<br><em>у животных есть внутренний мир</em></h2>
+    <p>Зоология восходит к Аристотелю. В IV веке до н.э. он не только классифицировал более 500 видов животных, но и первым описал их поведение, анатомию, репродукцию. «История животных», «О частях животных», «О движении животных» — три великих трактата, задавших матрицу западной зоологии на две тысячи лет. Возрождение и раннее Новое время дают ренессанс сравнительной анатомии (Везалий, Гарвей), XVIII век — Линнеевскую классификацию, XIX век — эволюционную теорию Дарвина. XX век — этология Лоренца, Тинбергена, фон Фриша (Нобелевская 1973), социобиология Уилсона, эволюционная психология.</p>
+    <p>С XVII века и Декарта («животные — сложные машины») западная зоология по большей части избегала вопросов о внутреннем опыте животных. Слишком антропоморфно. Слишком не научно. Не измеряется. Поведение — да, стимул-реакция — да, эволюционные адаптации — да. Но задавать вопрос «что чувствует летучая мышь?», как это сделал философ Томас Нагель в 1974 году, наука долго считала неприличным.</p>
+    <p>Ситуация изменилась в последние два-три десятилетия. Голландский приматолог <strong>Frans de Waal</strong>, работавший с шимпанзе и бонобо в течение полувека, накопил обширные наблюдения: у обезьян есть эмпатия, справедливость (они возмущаются, если получают меньшее вознаграждение за ту же работу), примирение после конфликтов, культура (традиции, передаваемые из поколения в поколение). В книгах «Наш внутренний примат» (2005) и «Достаточно ли мы умны, чтобы понимать, насколько умны животные?» (2016) де Вааль ставит вопрос: не «есть ли у животных ум?», а «какого он рода?».</p>
+    <p>В 2016 году австралийский философ и дайвер <strong>Peter Godfrey-Smith</strong> публикует «Other Minds: The Octopus, the Sea, and the Deep Origins of Consciousness» — книгу об осьминогах. Осьминог — головоногий моллюск, эволюционно отдалившийся от нас на 600 миллионов лет. Его нервная система устроена принципиально иначе — две трети из 500 миллионов нейронов расположены в щупальцах, а не в мозге. Каждое щупальце имеет собственную «когнитивную автономию». И тем не менее осьминоги очевидно сознательны: узнают отдельных людей, играют, решают сложные задачи, испытывают что-то похожее на любопытство и скуку. Это второе, независимое эволюционное возникновение сложного сознания на Земле — что делает его не случайным.</p>
+    <p>В 2012 году группа ведущих нейробиологов подписала <strong>Кембриджскую декларацию о сознании</strong>: научные свидетельства указывают, что нечеловеческие животные — все млекопитающие, все птицы, многие другие существа, включая осьминогов — обладают неврологическими субстратами сознания. Это радикальный сдвиг: наука впервые официально признала то, что владельцы собак и кошек знали всегда, но что академическая наука считала сомнительным.</p>
+    <p>Из этого следуют глубокие этические выводы. Если у животных есть сознание — их страдание морально значимо. <strong>Peter Singer</strong> ещё в 1975 году в «Освобождении животных» заложил этическую базу. Современное движение animal welfare, распространение веганства, обсуждение прав крупных приматов — всё это следствия. В 2015 году Аргентина признала орангутанга Сандру «нечеловеческим лицом», обладающим правами. В 2021 году Великобритания официально признала осьминогов и крабов «разумными существами» (sentient beings).</p>
+    <p>Параллельно зоология столкнулась с катастрофой. Шестое массовое вымирание — так экологи называют текущий момент. Численность позвоночных с 1970 года снизилась в среднем на 69% (WWF Living Planet Report 2022). Насекомых меньше на 76% в некоторых регионах Европы. Треть амфибий под угрозой. Океанические популяции рыб — на грани обвала. Зоология вступает в парадоксальное состояние: наука о животных, всё сильнее понимающая, как они сложны и чувствительны, — становится наукой об их исчезновении.</p>
+  </div>
+</section>
+
+
+<!-- ═══ 05 ГЕОГРАФИЯ ══════════════════════════════════════════════════ -->
+<section class="content-section alt" id="geography">
+  <div style="max-width:820px;">
+    <div class="section-num">05</div>
+    <div class="disc-meta">III век до н.э. · Эратосфен, Страбон, Птолемей · далее — Александр фон Гумбольдт, Карл Риттер (XIX в.), Видаль де ла Блаш</div>
+    <h2>География —<br><em>ландшафт как живая целостность</em></h2>
+    <p>География зарождается вместе с картографией. Эратосфен в III веке до н.э. рассчитывает окружность Земли с ошибкой всего в 1% — глядя на разницу углов тени в двух городах в один и тот же час. Страбон пишет 17 книг «Географии». Птолемей во II веке н.э. составляет карту известного мира, координатную сетку которой Европа будет использовать полтора тысячелетия. Возрождение с Великими географическими открытиями резко расширяет горизонт. XVIII век — географические экспедиции Кука. XIX век превращает географию в научную дисциплину — с работ Гумбольдта и Риттера в Германии, Реклю во Франции, Меркатора в русской традиции.</p>
+    <p><strong>Александр фон Гумбольдт</strong> (1769–1859) — фигура, объединяющая эпохи. Его пятитомный «Космос» (1845–1862) — попытка описать всю Землю как единое целое: климат, растительность, животных, геологию, культуру, человеческое воображение — всё вместе. Гумбольдт ввёл понятие <em>изотермы</em>, обнаружил вертикальную зональность растительности в Андах, был первым, кто описал изменение климата в результате вырубки лесов. Его подход был холистическим: не отдельные явления, а Земля как единый организм. К концу XIX века эта традиция разошлась в две линии — физическая география (об абстрактных процессах) и география человека (о культурных ландшафтах).</p>
+    <p>Классическая география XX века превратилась в набор специализаций: климатология, гидрология, геоморфология, картография, топография, региональная география, картография, страноведение. Ландшафт — некогда центральное понятие — стал делиться на компоненты. Живое единство, о котором писал Гумбольдт, распалось на переменные.</p>
+    <p>Экологический сдвиг вернул это единство. С 1970-х годов оформляется <strong>ландшафтная экология</strong> — направление, изучающее пространственные конфигурации экосистем в целом. Не «этот лес», «это поле» и «эта река» по отдельности, а весь мозаичный ландшафт с его переходами (экотонами), связностями, коридорами миграции, фрагментацией. Пионеры — Ричард Форман, Мишель Годрон. Ландшафтная экология вернула Гумбольдтову оптику: смотреть на территорию как на единую живую систему.</p>
+    <p>Параллельно в 1970-е в США появляется <strong>биорегионализм</strong>. <strong>Питер Берг</strong> и <strong>Реймонд Дасмэн</strong> в манифесте «Reinhabiting a Separate Country» (1978) формулируют: административные границы (штатов, стран) искусственны и часто разрывают естественные единицы. Настоящая единица территории — <em>биорегион</em>, определяемый водоразделом, климатической зоной, растительным сообществом. Жить биорегионально — значит знать свою землю: откуда приходит вода, куда уходят отходы, какие растения местные, какие птицы прилетают весной. Биорегионализм — не просто теория, а практика: bioregional maps, локальные экономики, региональные сообщества. Из этой линии выросли современные Ecovillage-движение, Transition Towns, permaculture.</p>
+    <p>Ещё одна ветвь — <strong>political ecology</strong>, политическая экология, возникшая в 1980-е (Piers Blaikie, Michael Watts, Paul Robbins). Она задаёт вопрос: почему экологические проблемы распределены неравномерно? Почему в одном месте лес вырубается, а в другом сохраняется? Ответы, оказалось, лежат не в чистой экологии, а в переплетении экологии с политикой, экономикой, историей колониализма. География, изучая распределение засухи, наводнений, вымираний, вернула в свой предмет несправедливость.</p>
+    <p>И самое масштабное — <strong>Earth System Science</strong>, о которой мы поговорим в разделе о климатологии. География, как ни одна другая наука, оказалась тем полем, где соединяются небо, вода, литосфера, биосфера и человечество. Гумбольдтова мечта — единое знание о Земле — возвращается на новом уровне, с ГИС-технологиями, спутниковыми данными, климатическими моделями. География снова становится центральной наукой — той, которая держит в поле зрения планету.</p>
+  </div>
+</section>
+
+<!-- ═══ 06 ХИМИЯ ══════════════════════════════════════════════════════ -->
+<section class="content-section" id="chemistry">
+  <div style="max-width:820px;">
+    <div class="section-num">06</div>
+    <div class="disc-meta">1770-е · Антуан Лавуазье, «Traité élémentaire de chimie» (1789) · далее — Дальтон, Менделеев, Полинг, Кэри Малис</div>
+    <h2>Химия —<br><em>от волшебной палочки к зелёному ремеслу</em></h2>
+    <p>Химия возникла из алхимии в конце XVIII века. <strong>Антуан Лавуазье</strong>, «отец современной химии», в 1770-х годах установил закон сохранения массы, объяснил горение как соединение с кислородом (а не выделение мистического «флогистона»), составил первый список химических элементов. Его «Traité élémentaire de chimie» (1789) — учебник, преобразивший дисциплину. Далее — атомная теория Дальтона (1803), периодический закон Менделеева (1869), электронная теория связи Полинга (1930-е), стереохимия, органический синтез, ПЦР (Малис, 1983), сверхпроводники, зелёная химия.</p>
+    <p>Химия XX века стала невероятно успешной. Она дала пластмассу, антибиотики, полупроводники, синтетические удобрения, витамины, красители, полимеры. Ежегодно синтезируется около 25 миллионов известных веществ, в оборот входит около 350000 промышленных химикатов. Без синтетических удобрений (процесс Габера-Боша, изобретён в 1909) не смогло бы жить нынешние 8 миллиардов людей. Химия — успех цивилизационного масштаба.</p>
+    <p>Но у этого успеха есть тёмная сторона. В 1962 году американский биолог и писатель <strong>Рэйчел Карсон</strong> публикует «Молчаливую весну» (Silent Spring) — книгу, которая изменила отношение к химической индустрии. Её тезис прост и убийственен: пестициды, особенно ДДТ, применяемые в сельском хозяйстве, накапливаются в пищевых цепочках, отравляют птиц (весна тиха, потому что не поют), угрожают здоровью людей. Индустрия ответила ожесточённой кампанией дискредитации. Но правота Карсон была подтверждена. ДДТ запретили в США в 1972 году, в большинстве стран мира. С Карсон начинается современное экологическое движение, а с ним — новое отношение к химии.</p>
+    <p>В 1990-е годы <strong>Пол Анастас</strong> и <strong>Джон Уорнер</strong> формулируют <strong>12 принципов зелёной химии</strong>. Ключевые идеи: избегать образования отходов, а не бороться с ними; проектировать вещества, разлагающиеся до безвредных продуктов; использовать возобновляемое сырьё; минимизировать энергозатраты синтеза; отказаться от токсичных растворителей. Зелёная химия — не «химия наружу», а изменение самого способа мыслить синтез: не «сделать вещество любой ценой», а «сделать его так, чтобы не создать проблему через 50 лет».</p>
+    <p>Параллельно оформляется <strong>circular chemistry</strong> — циркулярная химия, вписывающая производство в замкнутые циклы. Отходы одного процесса — сырьё для другого. Полимеры проектируются с расчётом на вторичное использование. Пластик, разлагаемый морскими микроорганизмами, полимеры на основе водорослей, ферменты, разлагающие ПЭТ, — всё это конкретные результаты.</p>
+    <p>Но проблемы масштабны. Химия XX века выбросила в биосферу тысячи веществ, эволюционно новых для жизни: <strong>PFAS</strong> (перфторалкильные вещества, «вечные химикаты»), микропластик, бисфенол-A, множество гормонально активных соединений. Многие из них не разлагаются столетиями. PFAS обнаружены в крови всех людей на планете, в дождевой воде на Тибете, в тканях пингвинов в Антарктиде. Химия оказалась геологической силой: продукты нашего синтеза стали частью планетарного вещества.</p>
+    <p>Химия почвы, атмосферы, океана — три области, где всё драматичнее видно, как локальные химические решения имеют планетарные последствия. Углеродный цикл сбит выбросами CO₂. Азотный — синтетическими удобрениями. Фосфорный — добычей и распылением. Планетарные биогеохимические границы, о которых мы поговорим в главе о климатологии, — это, по сути, границы того, сколько химических изменений биосфера может переварить, не разрушая себя.</p>
+    <p>Химия как дисциплина оказывается на распутье. Продолжать наращивать список синтезируемых веществ — значит углублять кризис. Переосмыслить сам метод — значит стать частью решения. Green chemistry, biomimetic chemistry (учиться у природы, которая делает всё при комнатной температуре без токсичных растворителей), circular chemistry — направления, куда движется дисциплина. Но переход медленный: инерция промышленности огромна.</p>
+  </div>
+</section>
+
+<!-- ═══ 07 ГЕОЛОГИЯ ═══════════════════════════════════════════════════ -->
+<section class="content-section alt" id="geology">
+  <div style="max-width:820px;">
+    <div class="section-num">07</div>
+    <div class="disc-meta">1795 · Джеймс Хаттон «Theory of the Earth» · далее — Чарльз Лайель, Альфред Вегенер, Гарри Хесс, Пауль Крутцен</div>
+    <h2>Геология —<br><em>антропоцен</em></h2>
+    <p>Геология как современная наука рождается в конце XVIII века с работой шотландского натуралиста <strong>Джеймса Хаттона</strong> «Theory of the Earth» (1795). Его главный тезис — <em>униформитаризм</em>: те же самые процессы, что действуют сейчас (эрозия, вулканизм, тектоника), действовали всегда, только на огромных масштабах времени. Земля не была создана в 4004 году до н.э., как утверждала библейская хронология, — Земле миллионы (сегодня — 4,54 миллиарда) лет. Это переворот в сознании: возраст планеты оказался бесконечно больше человеческой истории. Далее — Чарльз Лайель («Основы геологии», 1830), стратиграфия, палеонтология, теория дрейфа континентов Вегенера (1912), тектоника плит (1960-е).</p>
+    <p>Классическая геология делит историю Земли на эоны, эры, периоды, эпохи. Кайнозой (65 миллионов лет), четвертичный период (2,58 миллиона), голоцен (11,700 лет — эпоха, в которую сложилась цивилизация). Эти деления основаны на резких изменениях в геологической летописи: массовых вымираниях, магнитных инверсиях, климатических сдвигах. Геологическое время — не человеческое время, но пересечения были всегда: мы живём в голоцене, эпохе после ледникового периода, дающего стабильный климат, в котором зародилось земледелие и цивилизации.</p>
+    <p>В 2000 году голландский химик и лауреат Нобелевской премии <strong>Пауль Крутцен</strong> (получивший её за исследование озоновой дыры) на конференции в Мексике произнёс фразу, изменившую геологию: «Мы больше не в голоцене, мы в антропоцене». Термин, который до этого использовался спорадически, стал научной программой. С 2009 года действует <strong>Anthropocene Working Group</strong> Международной комиссии по стратиграфии, изучающая вопрос: следует ли официально признать антропоцен как новую геологическую эпоху?</p>
+    <p>Аргументы «за» весомы. Уровень CO₂ в атмосфере вырос с 280 до 425 ppm — выше, чем за последние 3 миллиона лет. Уровень метана в атмосфере — самый высокий за 800 тысяч лет. Осадки радиоактивных изотопов от ядерных испытаний 1950-х образовали чёткий геохимический маркер. Пластик уже входит в состав донных осадков. Массовое исчезновение видов создаёт «биостратиграфический» разрыв. Скорость биогеохимических изменений на порядки превышает естественную.</p>
+    <p>Вопрос о точной дате начала антропоцена дебатируется. Есть три главные версии. Первая: 1610 год — резкое падение CO₂ в результате колонизации Америки (50 миллионов индейцев погибли, поля заросли лесом, CO₂ поглотился — это привело к малому ледниковому периоду). Вторая: 1784 год — паровая машина Уатта, старт индустриальной революции. Третья: 1945–1950 год — Большое Ускорение: экспоненциальный рост населения, потребления, выбросов после Второй мировой войны, плюс радиоактивный маркер испытаний. В марте 2024 года Комиссия по стратиграфии проголосовала <em>против</em> формального признания антропоцена как эпохи — сохранив за ним статус «geological event». Это по-прежнему обсуждается.</p>
+    <p>Независимо от формального решения, концепция антропоцена изменила самопонимание геологии. Наука о Земле как медленно меняющемся объекте оказалась наукой о Земле, стремительно меняющейся из-за одного вида. Геолог смотрит теперь не только в прошлое, восстанавливая ушедшие эпохи, но и в будущее: какие геологические слои оставим мы? Будут ли отпечатки пластика узнаваемы через миллион лет? Что будущая цивилизация — если она возникнет — обнаружит в породах нашего времени?</p>
+    <p>Из геологии выросло <strong>Earth System Science</strong> — трансдисциплинарная наука, изучающая Землю как единую динамическую систему из литосферы, гидросферы, атмосферы, биосферы и — теперь — антропосферы. Она интегрирует геологию, климатологию, океанографию, экологию, науку о почвах, атмосферную химию. Земля перестала быть объектом отдельной науки. Стала предметом синтеза, где все дисциплины связаны через биогеохимические потоки.</p>
+  </div>
+</section>
+
+<!-- ═══ 08 БИОЛОГИЯ ═══════════════════════════════════════════════════ -->
+<section class="content-section" id="biology">
+  <div style="max-width:820px;">
+    <div class="section-num">08</div>
+    <div class="disc-meta">1802 · Ламарк и Тревиранус независимо вводят термин «биология» · далее — Дарвин (1859), Мендель, Уотсон и Крик (1953), Линн Маргулис</div>
+    <h2>Биология —<br><em>жизнь как альянс, а не борьба</em></h2>
+    <p>Термин «биология» возникает в 1802 году одновременно у двух исследователей — французского Жана-Батиста Ламарка и немецкого Готфрида Рейнхольда Тревирануса. До этого было «естественная история» — описание живого без его теоретической рамки. В XIX веке биология превращается в самостоятельную науку. Ключевые моменты: Дарвин «Происхождение видов» (1859) с теорией естественного отбора; Мендель (1866, переоткрыт в 1900) с законами наследственности; Пастер с микробиологией; Кох с патогенами. XX век — синтетическая теория эволюции (1930-е — Феодосий Добжанский, Эрнст Майр), молекулярная биология (Уотсон и Крик, 1953), геномика.</p>
+    <p>Основная канва биологии XX века была индивидуалистической. Дарвиновская эволюция описывалась как борьба за существование между отдельными организмами. Ричард Докинз в «Эгоистичном гене» (1976) довёл эту логику до предела: настоящей единицей отбора является ген, а организм — лишь «машина выживания» для генов. Мир живой природы, в этом описании, — вечная битва: хищник против жертвы, паразит против хозяина, самец против самца, ген против гена. Кооперация допускалась только там, где она объяснялась «эгоистическими» стратегиями — родственным отбором, взаимным альтруизмом.</p>
+    <p>Против этой картины всю жизнь боролась американский биолог <strong>Линн Маргулис</strong> (1938–2011). В 1960-е она сформулировала <em>теорию эндосимбиоза</em>: эукариотическая клетка (клетка с ядром — та, из которой состоят все растения и животные) возникла не как результат постепенной эволюции, а как <em>слияние</em> нескольких бактерий. Митохондрии — бывшие свободные бактерии, поглощённые протоэвкариотом миллиарды лет назад, но не переваренные, а вошедшие в симбиоз. Хлоропласты у растений — то же самое: бывшие цианобактерии. Мы, эукариоты, — химерные существа, состоящие из бывших независимых организмов, объединившихся в единое целое.</p>
+    <p>Долгое время теория Маргулис отвергалась. Её первую статью отклоняли пятнадцать раз. Но геномика вскоре подтвердила: митохондриальная ДНК действительно бактериального происхождения. Хлоропласты действительно потомки цианобактерий. Эукариотическая клетка — не эволюционировавшая, а собранная. Симбиогенез, а не только естественный отбор, — движущая сила эволюции. Кооперация не «стратегия», а базовое условие сложной жизни.</p>
+    <p>С 2000-х годов эта картина расширяется. Понятие <strong>голобионта</strong> (греч. holos — целое и bios — жизнь) описывает организм вместе со всеми симбионтами — микроорганизмами, живущими в нём и на нём. Голобионт — это не «человек и его микробиом», а единое существо. Гены голобионта — совокупный «hologenome», куда входят и наши, и микробные. Мы не «имеем микробиом» — мы им являемся, наряду с тем, что мы имеем позвоночник.</p>
+    <p>Линн Маргулис в поздних работах — и Скотт Гилберт с соавторами в 2012 году — предлагали радикальный тезис: <em>ни один вид не является полностью автономным</em>. Все живые существа — коллаборации. Корова — не «травоядное», а сложный голобионт, в котором миллионы микробов ферментируют траву в её желудках. Термит — не «пожиратель древесины», а голобионт с симбионтами, разлагающими целлюлозу. Клубеньковые растения — с ризобиями, фиксирующими азот. Кораллы — с водорослями-зооксантеллами. Практически всё, что мы называем «организмом», при внимательном взгляде оказывается сообществом.</p>
+    <p>Из этого следует переоценка эволюции. Не «выживание сильнейших» — а <em>выживание кооперирующих</em>. Не «война всех против всех» — а <em>сотрудничество внутри и между видами</em>. Хищничество и паразитизм существуют, но они — периферия, а не сердцевина. Сердцевина — симбиоз, взаимозависимость, эволюционные соглашения.</p>
+    <p>Эта перемена в самопонимании биологии имеет далеко идущие последствия. Метафора «природы как войны» веками оправдывала социальный дарвинизм, империализм, свободный рынок как «естественный отбор». Новая биология — биология симбиоза — не даёт таких оправданий. Она показывает: жизнь эволюционировала не за счёт конкуренции, а несмотря на неё, через кооперацию. И живучесть биосферы держится на плотности взаимозависимостей, а не на выживаемости индивидов.</p>
+  </div>
+</section>
+
+
+<!-- ═══ 09 МИКРОБИОЛОГИЯ ═══════════════════════════════════════════════ -->
+<section class="content-section alt" id="microbiology">
+  <div style="max-width:820px;">
+    <div class="section-num">09</div>
+    <div class="disc-meta">1860-е · Луи Пастер, Роберт Кох · далее — Мечников, Флеминг, Уинтогрэдский, Human Microbiome Project (2007–2016)</div>
+    <h2>Микробиология —<br><em>где заканчивается «я»?</em></h2>
+    <p>Микроскоп Левенгука в XVII веке открыл новый мир — «anima­lcules», микроскопических существ. Но микробиология как научная дисциплина рождается только в 1860–80-е годы, с работами <strong>Луи Пастера</strong> (пастеризация, теория брожения, вакцина от бешенства) и <strong>Роберта Коха</strong> (постулаты Коха для установления связи «микроб — болезнь», выделение возбудителей туберкулёза, холеры, сибирской язвы). Микробиология рождается в основном как медицинская наука: микробы — это патогены, враги, которые вызывают инфекционные болезни. Первая половина XX века — эра антибиотиков (Флеминг, 1928), сывороток, вакцин, гигиены.</p>
+    <p>В параллель развивалась другая линия — почвенная и общая микробиология. <strong>Сергей Виноградский</strong> в конце XIX века открыл хемосинтез: бактерии, живущие в почве, могут получать энергию из окисления серы, азота, железа — без солнечного света. Это было ошеломляющим открытием: жизнь может существовать вне фотосинтетической пищевой цепи. Позже (1970-е) были открыты гидротермальные источники в океане — целые экосистемы, живущие в темноте вокруг горячих вулканических жерл, полностью на хемосинтезе. Это радикально расширило представление о том, где возможна жизнь.</p>
+    <p>Настоящая революция началась в 2000-е годы с развитием методов метагеномики — возможности читать ДНК из образца среды без выделения отдельных организмов. Оказалось, что микробиологи столетиями изучали только те 1% микробов, которые удавалось культивировать в лаборатории. Остальные 99% — так называемая «микробная тёмная материя» — оставались неизвестными. Метагеномика позволила заглянуть в эту тёмную материю. Результаты меняют картину биосферы.</p>
+    <p>Первое открытие — <strong>микробиом человека</strong>. Проект Human Microbiome Project (2007–2016) картировал микробы, живущие в человеческом теле. Оказалось: в человеке около 30 триллионов человеческих клеток и около 40 триллионов микробных. Микробиом кишечника содержит 100–1000 видов, суммарно 3–5 миллионов уникальных генов — в 150 раз больше, чем в геноме человека. Микробиом влияет на пищеварение, иммунитет, обмен веществ, синтез витаминов, настроение (через ось «кишечник–мозг»), даже на риск ожирения и депрессии.</p>
+    <p>Из этого следует ошеломляющий вывод: «я» — не индивидуальный организм, а <em>сообщество</em>. Клеток «моих» и «чужих» — примерно поровну. Генов «моих» — 1% от всех, что делают «меня» «мной». Философская категория «индивида» — фундамент западной этики, права, психологии, экономики — оказывается биологической иллюзией. Мы никогда не были индивидами.</p>
+    <p>Дальше — больше. Каждая экосистема имеет свой микробиом, и он играет ключевую роль. Микробиом почвы — миллионы видов на грамм, ответственный за плодородие, круговорот азота, минерализацию органики. Разрушение микробиома почвы (пестицидами, глубокой вспашкой, монокультурой) — одна из главных причин деградации сельскохозяйственных земель. Восстановление микробиома через регенеративное земледелие, покровные культуры, компост — стратегия обратного пути.</p>
+    <p>Микробиом океана — крупнейший в биосфере. Около 10³⁰ микробных клеток. Планктонные бактерии и археи производят половину всего кислорода на Земле — не леса, а именно они. Океанический микробиом активно участвует в круговороте углерода. Марина-микробиология и её представитель — <strong>Крейг Вентер</strong> с экспедицией Global Ocean Sampling — показали: любая ложка морской воды содержит тысячи неизвестных видов.</p>
+    <p>Микробиом атмосферы — с 2010-х открывается всё активнее. В воздухе постоянно циркулируют миллионы бактерий, грибов, вирусов. Они участвуют в формировании облаков (некоторые бактерии — центры конденсации), в переносе генов на континентальные расстояния, в круговороте многих элементов.</p>
+    <p>Микробиология сегодня — не «наука о микробах как патогенах», а <em>наука об основе биосферы</em>. Микробы — не «низшая» форма жизни, а наиболее устойчивая, разнообразная и функционально важная её часть. Если завтра исчезнут все крупные животные — биосфера продолжит существовать. Если завтра исчезнут микробы — она рухнет за месяцы.</p>
+    <p>Из этого следует переосмысление места человека в природе. Не «высшая ступень эволюции», а один из бесчисленных обитателей биосферы, целиком зависящий от бактерий — тех, что живут в его кишечнике, тех, что удерживают плодородие полей, тех, что производят кислород, которым он дышит. Микробиология — наука о смирении. И о том, что «внешнее» и «внутреннее» — не такие уж разные вещи.</p>
+  </div>
+</section>
+
+<!-- ═══ 10 ГЕНЕТИКА ═══════════════════════════════════════════════════ -->
+<section class="content-section" id="genetics">
+  <div style="max-width:820px;">
+    <div class="section-num">10</div>
+    <div class="disc-meta">1866 · Грегор Мендель, законы наследственности · 1900 — переоткрытие · 1953 — Уотсон, Крик, ДНК · далее — Барбара МакКлинток, Human Genome Project (2003)</div>
+    <h2>Генетика —<br><em>гены разговаривают со средой</em></h2>
+    <p>В 1866 году монах и учёный <strong>Грегор Мендель</strong> публикует «Опыты над растительными гибридами» — работу, в которой на горохе выявляет базовые законы наследования дискретных признаков. Работа осталась почти незамеченной. Только в 1900 году её независимо переоткрывают Гуго де Фриз, Карл Корренс и Эрих фон Чермак. Начинается генетика. Термин вводит английский биолог <strong>Уильям Бейтсон</strong> в 1905 году. XX век — ошеломительный: Морган с дрозофилой (1910-е), синтетическая теория эволюции (1930-е), структура ДНК Уотсона и Крика (1953), генетический код (1960-е), рекомбинантная ДНК (1970-е), Human Genome Project (2003), CRISPR (2012).</p>
+    <p>Классическая генетика XX века укоренила один образ, ставший общекультурным: <em>ген — программа</em>. В ДНК записана инструкция, по которой строится организм. Гены определяют признаки — цвет глаз, рост, склонность к болезням, поведение. «Ген алкоголизма», «ген агрессии», «ген гомосексуальности» — газетные заголовки 1990-х годов отражали это понимание. Проект «Геном человека» подпитывал ожидания: расшифруем — узнаем всё.</p>
+    <p>Результат оказался неожиданным. В геноме человека — около 20 000 белок-кодирующих генов. Это меньше, чем у некоторых растений; примерно столько же, сколько у нематоды <em>C. elegans</em>, состоящей из 959 клеток. Модель «один ген — один признак» не работает для большинства сложных признаков. И — что стало настоящим сюрпризом — 98% нашего генома не кодирует белки. Долгое время эту часть называли «мусорной ДНК». Оказалось, «мусор» — активный регуляторный слой, определяющий, когда, где и в каких тканях включаются гены.</p>
+    <p>Из этого выросла <strong>эпигенетика</strong> — направление, изучающее, как экспрессия генов регулируется без изменения самой последовательности ДНК. Химические модификации (метилирование ДНК, ацетилирование гистонов), некодирующие РНК, конформация хроматина — всё это влияет на то, какие гены активны, а какие молчат. И, что критически важно, эпигенетические метки чувствительны к среде: к питанию, стрессу, токсинам, температуре, социальным условиям.</p>
+    <p>Классические эксперименты показали шокирующее: <em>жизненный опыт может передаваться следующим поколениям через эпигенетические механизмы</em>. Исследование «Голландской голодной зимы» (1944–45) показало: дети женщин, беременных во время блокадного голода, имели повышенный риск диабета и сердечных заболеваний. Но и их внуки — тоже. Голод проник в геном на два поколения вперёд. Аналогичные эффекты были показаны на мышах (пахнущий страх передаётся потомству), на растениях (стресс запечатлевается в семенах).</p>
+    <p>Это означает, что старая ламарковская идея — наследование приобретённых признаков — оказалась частично реабилитирована. Не в грубой форме («жираф вытягивал шею и передавал длинную детям»), а в тонкой: среда оставляет метки на геноме, которые могут передаваться. Дарвиновский естественный отбор остаётся главной силой эволюции, но эпигенетика добавляет к нему другой механизм, работающий на масштабе поколений, а не миллионов лет.</p>
+    <p>Параллельно из микробиологии пришла ещё одна ошеломительная идея — <strong>горизонтальный перенос генов</strong>. Бактерии обмениваются генами напрямую, минуя половое размножение. Так распространяется устойчивость к антибиотикам. Оказалось, что и эукариоты — в том числе животные — иногда получают гены от бактерий, вирусов, других видов. В геноме человека около 8% — вирусные последовательности, встроившиеся в наших предков миллионы лет назад. Некоторые из них выполняют важные функции (например, синцитин, необходимый для формирования плаценты, — вирусный по происхождению).</p>
+    <p>Дальше — <strong>метагеномика</strong>. Читая ДНК из образцов почвы, океана, кишечника, мы находим огромные микробные сообщества, обменивающиеся генами постоянно. Понятие «вид» на микробном уровне размывается — это скорее «облака геномов», между которыми идёт непрерывный переток информации. И это влияет на макромир: гены, необходимые для переваривания молока во взрослом возрасте (лактазная персистентность), для устойчивости к малярии, для метаболизма алкоголя, — все они прошли через сложные пути, часто с горизонтальными компонентами.</p>
+    <p>Из всего этого рождается новая биология генома. Ген — не «программа» и не «команда». Ген — участник диалога. Он читается в определённых клетках, в определённое время, в определённых условиях. То, что он «делает», зависит от того, кто его читает, какие другие гены активны, какая среда снаружи. Классическая генетика описывала гены как автономные единицы; постгеномная биология описывает их как включённые в сеть — так же, как каждая клетка включена в организм, каждый организм — в биосферу.</p>
+    <p>Это тесно перекликается с картиной, которую мы уже видели в биологии, микробиологии, ботанике. Везде оказывается, что автономных единиц не существует. Есть узлы в сетях, есть локальные центры в потоках, есть моменты стабилизации в непрерывных отношениях. Генетика, дошедшая до предела редукции — до нуклеотида, — вернула нас к сети.</p>
+  </div>
+</section>
+
+<!-- ═══ 11 ЭКОЛОГИЯ ══════════════════════════════════════════════════ -->
+<section class="content-section alt" id="ecology">
+  <div style="max-width:820px;">
+    <div class="section-num">11</div>
+    <div class="disc-meta">1866 · Эрнст Геккель вводит термин «экология» · далее — Артур Тэнсли (1935, «экосистема»), Юджин Одум, Арне Нэсс, Джаред Даймонд</div>
+    <h2>Экология —<br><em>из периферии в центр</em></h2>
+    <p>Термин «экология» ввёл в 1866 году немецкий зоолог и художник <strong>Эрнст Геккель</strong> в «Общей морфологии организмов». От греч. οἶκος (дом) и λόγος (учение) — «наука о доме», об отношениях организмов со средой обитания. Долгое время экология оставалась подразделом биологии, ветвью, изучающей взаимодействия видов с окружением. Первая половина XX века — Реймонд Линдеман с пищевыми цепочками, Артур Тэнсли, введший в 1935 году понятие <em>экосистема</em>, Чарльз Элтон с нишами. В середине века — Юджин и Говард Одумы с системным подходом, доведшим экологию до строгой количественной науки.</p>
+    <p>Классическая экология фокусировалась на локальных сообществах: как лес взаимодействует со стайкой оленей, как хищник контролирует популяцию жертвы, как пожар восстанавливает степь. Это была «полевая» наука в буквальном смысле — с блокнотом, лупой и палаткой. К 1970-м она набрала научную мощь: математические модели популяционной динамики, теория ниш, концепция сукцессии, изучение циклов элементов.</p>
+    <p>В 1973 году норвежский философ <strong>Арне Нэсс</strong> публикует программную статью «Мелкое и глубокое, экологическое движение большого радиуса». Он различает <em>мелкую экологию</em> (борьба с загрязнением, защита ресурсов ради людей) и <em>глубокую экологию</em> (deep ecology) — философское переосмысление места человека в биосфере. Все существа имеют внутреннюю ценность, не зависящую от их полезности для нас. Разнообразие жизни — самоценно. Уменьшение численности людей — не катастрофа, а условие благополучия остальных существ. Это радикальная позиция, вызвавшая долгие дебаты, но она была важна: экология перестала быть только наукой, стала мировоззрением.</p>
+    <p>С 1980-х годов происходит расширение масштаба. Экология выходит из «леса» в биосферу целиком. <strong>Роберт Констанца</strong> в конце 1990-х вводит понятие <em>экосистемные услуги</em> — попытка оценить, сколько экономически стоят функции биосферы (опыление, очистка воды, регуляция климата, плодородие почвы). Хотя концепт спорный (капитализация природы вызывает критику), он изменил разговор: биосфера перестала быть «фоном» и стала фактором в решении.</p>
+    <p>Параллельно оформляется <strong>industrial ecology</strong> — экология индустрии, изучающая материальные и энергетические потоки в человеческой экономике по аналогии с природными экосистемами. Тезис: индустриальная экосистема должна быть замкнутой, как природная. Отходы одного процесса — ресурсы для другого. Из этого выросла циркулярная экономика.</p>
+    <p>С 2000-х годов ключевой становится концепция <strong>планетарных границ</strong> — Planetary Boundaries. В 2009 году шведский эколог <strong>Йохан Рокстрём</strong> с международной командой публикует в Nature работу, в которой формулирует девять биофизических параметров, определяющих «безопасное пространство» человеческого существования на Земле: изменение климата, целостность биосферы, потоки азота и фосфора, кислотность океана, использование пресной воды, изменения землепользования, атмосферные аэрозоли, озоновый слой, загрязнение химикатами. Для каждого параметра существует граница, за которой возможен резкий переход экосистемы Земли в состояние, непригодное для цивилизации.</p>
+    <p>По оценке 2023 года, шесть из девяти границ уже пересечены — включая климатические, биоразнообразия, азотный цикл, землепользование. Это не «когда-то в будущем», это «уже». Экология из наблюдательной науки превратилась в диагностическую: она измеряет состояние здоровья планеты.</p>
+    <p>Экология сегодня — не «одна из биологических дисциплин». Это <em>центральная наука</em>, к которой сходятся все остальные. Климатологи используют экологические модели, чтобы понять, как леса поглощают углерод. Экономисты используют экологический след, чтобы измерять устойчивость. Медики изучают экологию патогенов, чтобы предсказывать пандемии. Инженеры проектируют «живые» здания по принципам экосистем. Юристы работают с концепцией прав природы. Экология стала общим языком, на котором говорят все дисциплины, встречающиеся с планетарной реальностью.</p>
+    <p>Есть и обратная сторона. Из науки, которая когда-то занималась описанием того, что есть, экология превратилась в науку о том, что <em>исчезает</em>. Каталогизация видов накануне их вымирания. Изучение экосистем перед их разрушением. Мониторинг границ, за которые мы уже вышли. Это работа с траурной интонацией — работа наблюдателя над умирающей биосферой. И одновременно — работа последней надежды. Потому что если и есть какое-то знание, которое может помочь замедлить кризис, то это экологическое знание. Оно даёт язык для того, чтобы говорить о планете как о едином живом целом, — единственный масштаб, на котором вопросы имеют смысл.</p>
+  </div>
+</section>
+
+
+<!-- ═══ 12 ОКЕАНОГРАФИЯ ══════════════════════════════════════════════ -->
+<section class="content-section" id="oceanography">
+  <div style="max-width:820px;">
+    <div class="section-num">12</div>
+    <div class="disc-meta">1872–1876 · Экспедиция «Челленджер» · далее — Мари Тарп (карта дна океана, 1957), Жак-Ив Кусто, GEOTRACES, Argo Programme</div>
+    <h2>Океанография —<br><em>климатический орган Земли</em></h2>
+    <p>Океан покрывает 71% поверхности Земли, содержит 97% всей воды, поглотил около 90% избыточного тепла и 25% избыточного CO₂, произведённых человечеством с индустриальной революции. И до конца XIX века о нём почти ничего не знали. Экспедиция британского корабля «Челленджер» (1872–1876) — первая большая систематическая океанографическая работа. За 3,5 года экспедиция прошла 130 000 километров, взяв 492 глубоководных пробы, открыв 4700 новых видов и заложив основы дисциплины. Далее XX век — работы Мари Тарп по картированию дна, разработка эхолотов, батискафов, спутниковой альтиметрии, международные проекты Deep Sea Drilling Project, WOCE, Argo (тысячи автоматических буев, дрейфующих в океане).</p>
+    <p>Классическая океанография XX века занималась несколькими крупными сюжетами: картография рельефа дна (тектонические плиты сначала были обнаружены по карте океана), физика океана (циркуляция, приливы, течения), морская биология (рыбы, моллюски, водоросли, коралловые рифы), морская геология. Океан представлялся резервуаром — большим, глубоким, инерционным. Считалось, что он изменяется медленно, что он огромный буфер, поглощающий всё, что мы в него сбрасываем.</p>
+    <p>Первый большой сдвиг — понимание <strong>термохалинной циркуляции</strong>, огромной ленты течений, соединяющей все океаны в единую систему. Гольфстрим, приносящий тепло Европе, — часть этой ленты. В Северной Атлантике охлаждённая солёная вода погружается на глубину и течёт на юг, замыкая цикл продолжительностью около 1000 лет. Это «глобальный конвейер», как его назвал Уоллес Брокер. И этот конвейер оказался хрупким.</p>
+    <p>С 1990-х годов накапливаются свидетельства, что таяние гренландского ледника разжижает поверхностные слои Северной Атлантики. Это замедляет опускание солёной воды. Замедляет всю циркуляцию. В 2018 году в Nature вышла статья: атлантическая меридиональная опрокидывающая циркуляция (AMOC) находится на самом слабом уровне за 1600 лет. Возможные последствия — резкое похолодание в Европе, засухи в Африке, сдвиг муссонов в Азии, ускорение подъёма уровня моря на восточном побережье США. AMOC может достичь точки коллапса; исследования 2023–24 годов предполагают, что это может произойти где-то между 2025 и 2095 годом.</p>
+    <p>Второй большой сюжет — <strong>закисление океана</strong>. CO₂ из атмосферы растворяется в воде, образуя угольную кислоту. Средняя pH океана снизилась с 8,25 (доиндустриальный уровень) до 8,05. Это кажется маленькой цифрой, но означает 30-процентное увеличение кислотности. Для организмов, строящих раковины и скелеты из карбоната кальция (моллюски, кораллы, планктонные фораминиферы, крылоногие моллюски), это катастрофа: карбонат в кислой среде растворяется. Ожидается: к 2100 году pH может опуститься до 7,7–7,8, что делает большую часть коралловых рифов нежизнеспособной.</p>
+    <p>Третий сюжет — <strong>обесцвечивание кораллов</strong>. Кораллы — это голобионты (тема, знакомая по разделу о биологии): полип и симбиотические водоросли-зооксантеллы. При повышении температуры полип теряет водоросли и обесцвечивается. Если стресс продолжается — гибнет. Массовые обесцвечивания Большого Барьерного рифа происходили в 1998, 2002, 2016, 2017, 2020, 2022, 2024 годах — всё чаще. К 2050 году, при текущем сценарии, 90% коралловых рифов могут исчезнуть. Это не «отдельные виды». Кораллы — фундамент экосистем, поддерживающих 25% всех морских видов.</p>
+    <p>Четвёртый сюжет — <strong>микропластик</strong>. Мировой океан содержит около 170 триллионов частиц пластика. Пластик обнаружен во льдах Арктики, в тканях глубоководных рыб, в организме китов, в раковинах устриц. Пластик разлагается медленно, но микрочастицы проникают в пищевую цепь; их находят в крови человека, в грудном молоке, в плаценте. Долгосрочные последствия неизвестны.</p>
+    <p>Пятый сюжет, о котором мы уже говорили в разделе о микробиологии, — <strong>микробиом океана</strong>. Океанический фитопланктон производит около 50% всего кислорода в атмосфере. Не леса — океан главный «производитель» кислорода. И этот производитель уязвим: закисление, потепление, деоксигенация (снижение уровня растворённого кислорода) угрожают планктонным сообществам.</p>
+    <p>Океанография поняла: океан — не резервуар и не буфер, а <em>активный орган Земли</em>. Он регулирует температуру планеты, распределяет её по глобусу, поглощает избыток CO₂, производит кислород, вырабатывает облака (через диметилсульфид, выделяемый планктоном). Океан — «сердце и лёгкое» планетарной системы. И этот орган сейчас в состоянии, которое медики называют «критическим»: несколько показателей одновременно ушли за пределы норм. Океанография из науки о далёкой водной пустыне превратилась в науку о ключевом органе живой планеты.</p>
+  </div>
+</section>
+
+<!-- ═══ 13 КЛИМАТОЛОГИЯ ═══════════════════════════════════════════════ -->
+<section class="content-section alt" id="climate">
+  <div style="max-width:820px;">
+    <div class="section-num">13</div>
+    <div class="disc-meta">Начало XX века · Владимир Кёппен (классификация климатов, 1900) · далее — Милутин Миланкович, Чарльз Килинг, Джеймс Хансен, IPCC (1988)</div>
+    <h2>Климатология —<br><em>Земля как единая система</em></h2>
+    <p>Метеорология как практика существовала века (наблюдение погоды, барометры XVII века, синоптические карты XIX века). Но климатология как отдельная научная дисциплина оформляется в начале XX века. Владимир Кёппен в 1900 году публикует свою классификацию климатов, деля мир на пять зон (тропический, сухой, умеренный, континентальный, полярный) с подзонами. Дальше — Милутин Миланкович (1920-е — теория орбитальных циклов и ледниковых эпох), Свенте Аррениус (ещё в 1896 году рассчитавший, что удвоение CO₂ повысит температуру Земли примерно на 5–6°C), Гай Каллендар в 1938 году показавший, что температура уже растёт из-за человеческих выбросов.</p>
+    <p>В 1958 году американский геохимик <strong>Чарльз Килинг</strong> начинает измерения концентрации CO₂ в атмосфере на обсерватории Мауна-Лоа на Гавайях. График, названный «Кривой Килинга», — одна из самых знаменитых в науке. Он показывает: концентрация CO₂ растёт устойчиво, с сезонными колебаниями (зимой северного полушария, когда листья опадают, — выше; летом, когда леса поглощают, — ниже). С 315 ppm в 1958 году — до 425 ppm в 2024-м. За 66 лет — 35%. За последние миллион лет ничего подобного не было.</p>
+    <p>В 1988 году американский климатолог <strong>Джеймс Хансен</strong> из NASA даёт знаменитое показание в Конгрессе США: глобальное потепление — уже реальность, антропогенная причина установлена, требуются немедленные действия. Это был момент, когда климатология вышла из лабораторий в политику. В том же году создаётся <strong>IPCC</strong> (Межправительственная группа экспертов по изменению климата) — беспрецедентная международная структура, объединяющая тысячи учёных для регулярной оценки состояния и прогнозов климатической системы.</p>
+    <p>Ключевой методологический сдвиг — переход от «метеорологии» и «климатологии» как отдельных наук о погоде и климате к <strong>Earth System Science</strong>. Земля моделируется не как отдельные подсистемы (атмосфера, океан, лёд, суша, биосфера, антропосфера), а как единый динамический комплекс с потоками углерода, азота, воды, энергии между всеми компонентами. Модели общей циркуляции атмосферы (GCM) эволюционировали в модели земной системы (ESM), включающие биосферу, углеродный цикл, ледники, человеческую активность. Это одна из самых сложных научных программ в истории.</p>
+    <p>Результаты — беспрецедентно точны и одновременно тревожны. Средняя глобальная температура выросла на 1,3°C с доиндустриального уровня. Уровень моря поднялся на 21 см с 1900 года. Ледники Гренландии теряют 270 миллиардов тонн массы ежегодно. Арктический морской лёд сократился на 40% с 1979 года. Океан поглотил столько тепла, что если бы оно попало в атмосферу — температура выросла бы на 30°C. Экстремальные погодные явления (жары, засухи, наводнения, ураганы) значительно участились и усилились.</p>
+    <p>Ключевая концепция последних лет — <strong>точки невозврата</strong> (tipping points). Земная система нелинейна. Она может годами меняться медленно, а потом резко перейти в другое устойчивое состояние. Amazon rainforest может внезапно превратиться в саванну. Гренландский ледник — начать необратимое таяние. Пермафрост — выпустить огромное количество метана. Циркуляция AMOC — коллапсировать. В 2023 году в Science опубликована работа: как минимум 5 из 16 идентифицированных точек невозврата уже перешли или близки к переходу.</p>
+    <p>Из климатологии выросла ещё одна фундаментальная концепция — <strong>планетарные границы</strong>, о которых мы уже говорили в разделе экологии. Рокстрём и коллеги ставят вопрос: каково безопасное операционное пространство для человечества на Земле? Не только по климату — по девяти биофизическим параметрам. Ответ: узкое. Мы уже за его пределами.</p>
+    <p>Климатология — самая молодая и одновременно самая политически значимая из естественных наук. Она собирает в фокус результаты всех остальных: астрономии (солнечная активность), физики (термодинамика атмосферы), химии (циклы газов), геологии (палеоклимат), океанографии (тепловые потоки), биологии (углеродный цикл, экосистемы), экологии (реакция систем на изменения). Ни одна другая наука не требует такой интеграции. И ни одна другая наука не имеет таких прямых политических последствий: от её результатов зависят решения на уровне цивилизации.</p>
+    <p>Есть двойной парадокс климатологии. Первый: наука, которая должна была быть о погоде и климате, оказалась о нас — о том, что мы делаем с планетой. Второй: наука, которая должна быть чисто описательной, оказалась предписательной — она говорит не только «что происходит», но и «что нужно делать». Климатологи в 2020-е годы всё чаще выходят из строгой роли наблюдателей, становятся общественными фигурами, участвуют в движениях, подписывают декларации. Роль учёного меняется — потому что меняется сам объект исследования: он не «природа» в старом смысле, а «Земля как система, в которой мы участники».</p>
+  </div>
+</section>
+
+<!-- ═══ ФИНАЛ ═════════════════════════════════════════════════════════ -->
+<section class="content-section" id="outro">
+  <div style="max-width:820px;">
+    <div class="section-num">14</div>
+    <h2>Тринадцать дисциплин,<br><em>одно движение</em></h2>
+    <p style="font-size:1.05rem;line-height:1.85;color:var(--ink-light);margin-top:2rem;">В разделе о гуманитарных науках мы видели общую линию расширения: субъект знания включал в себя всё больше не-людей, каждая дисциплина уточняла свою рамку, чтобы вместить биосферу. У естественных наук — линия иная, но приводящая туда же. Здесь произошло <em>собирание</em>. Дисциплины, шедшие путём всё большей специализации, на своих пределах — на молекуле, на гене, на клетке, на элементарной частице — обнаружили, что элементарной частицы не существует. Есть узлы в сетях. Есть локальные центры в потоках. Есть моменты стабилизации в непрерывных отношениях.</p>
+    <p style="font-size:1.05rem;line-height:1.85;color:var(--ink-light);margin-top:1.2rem;">Астрономия дошла до масштаба Вселенной — и обнаружила, что Земля не рядовой камень, а редкий планетарный организм, поддерживающий сам себя. Физика дошла до статистики многих частиц — и открыла, что порядок возникает как самостоятельный режим материи в потоке энергии. Ботаника дошла до отдельного дерева — и увидела, что дерево живёт в подземной сети со всем лесом. Зоология дошла до вида — и признала, что у видов есть внутренний мир, культура, эмпатия. География дошла до региона — и обнаружила биорегионы, где всё связано. Химия дошла до отдельной молекулы — и осознала, что молекулы становятся геологической силой. Геология дошла до эпохи — и назвала нынешнюю Антропоценом. Биология дошла до клетки — и увидела, что клетка — сообщество бывших бактерий. Микробиология дошла до микроба — и обнаружила, что микробов в биосфере на порядки больше, чем всего остального, и что мы сами — их сообщество. Генетика дошла до гена — и обнаружила, что гены разговаривают со средой, что среда пишет на них метки, что жизнь не программируется, а импровизируется. Экология из периферийной науки о взаимодействиях перешла в центр — как единственный язык, на котором можно говорить о планетарном. Океанография открыла в океане не резервуар, а активный орган Земли. Климатология собрала все нити и сформулировала ту рамку, которая впервые в истории науки описывает Землю как единую динамическую систему.</p>
+    <p style="font-size:1.05rem;line-height:1.85;color:var(--ink-light);margin-top:1.2rem;">Это одно движение. Одна общая история — история наук, которые, дойдя до своих пределов, обнаружили: изучаемого объекта в изоляции не существует. Всё, что мы можем изучать, — это участники сетей. Клетка — сеть молекул и симбионтов. Организм — сеть клеток и микробов. Вид — сеть организмов и генов. Экосистема — сеть видов и потоков. Биосфера — сеть экосистем и биогеохимических циклов. Планета — сеть биосферы, литосферы, гидросферы, атмосферы. Есть только сети, и есть локальные плотности в них — то, что мы называем «объектами».</p>
+    <p style="font-size:1.05rem;line-height:1.85;color:var(--ink-light);margin-top:1.2rem;">В разделе о гуманитарных науках мы отметили: гуманитарные и естественные науки встречаются посередине. Теперь мы видим где. В понятии Земли как единой живой системы, где различие «природа–культура» перестаёт быть онтологическим — оно превращается в наследие устаревшей эпистемологии, которую нужно перерасти. Не «природа с одной стороны и культура с другой», а планетарный процесс, в котором участвуют бактерии, леса, реки, атмосферы, культуры, языки, экономики, философии, — все одновременно.</p>
+    <p style="font-size:1.05rem;line-height:1.85;color:var(--ink-light);margin-top:1.2rem;">Это не гуманитарная и не естественная наука. Это то, что <a href="section-humanities.html" style="color:var(--moss);">гуманитарные</a> и естественные науки образуют вместе, когда каждая из них проходит своё расширение или собирание. Работая с этим общим ландшафтом, вырабатывая для него общий язык, — этим и занимаются оба крыла науки в XXI веке. Разделение на «две культуры», о котором в 1959 году с тревогой писал Ч. П. Сноу, кажется, начинает истощаться. Не потому, что кто-то захотел его отменить. А потому, что реальность перестала укладываться в это разделение.</p>
+    <p style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--moss);text-align:center;font-size:1.3rem;margin-top:3rem;">На пределе редукции науки нашли не элемент, а сеть.</p>
+    <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(74,124,89,0.15);font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--ink-light);text-align:center;font-size:1rem;">
+      — редакция «ЭкоСознания», раздел «Наука» · июль 2026
+    </div>
+  </div>
+</section>
+<footer class="gf">
+  <div class="gf-top">
+    <div class="gf-brand">
+      <a href="index.html" class="gf-logo">
+        <svg viewBox="0 0 100 100" fill="none" class="logo-svg" style="width:24px;height:24px;flex-shrink:0;"><circle cx="50" cy="50" r="40" stroke="#f3ede3" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#6ea87e"/></svg>
+        <span class="gf-logo-text">Эко<em>Сознание</em></span>
+      </a>
+      <p class="gf-tagline">Экологический взгляд как линза для любой сферы жизни</p>
+    </div>
+    <div class="gf-cols">
+      <div>
+        <div class="gf-col-title">Разделы</div>
+        <div class="gf-sections">
+          <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Философия</span></a>
+          <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
+          <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
+          <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Технологии</span></a>
+          <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
+          <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
+          <a href="section-construction.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="gf-sec-name">Строительство</span></a>
+          <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="gf-sec-name">Экономика</span></a>
+          <a href="section-art.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></span><span class="gf-sec-name">Искусство</span></a>
+          <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Образование</span></a>
+          <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
+          <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
+          <a href="section-health.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Здоровье</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="gf-col-title">Материалы</div>
+        <nav class="gf-nav-links">
+          <a href="essay-truth-and-climate.html" class="gf-nav-link">Истина и климат</a>
+          <a href="essay-passive-design.html" class="gf-nav-link">Пассивный дизайн</a>
+          <a href="essay-solastalgia.html" class="gf-nav-link">Соластальгия</a>
+          <a href="essay-community-survives.html" class="gf-nav-link">Что нужно общине</a>
+          <a href="essay-bread.html" class="gf-nav-link">Хлеб</a>
+          <a href="essay-morning-light.html" class="gf-nav-link">Утренний свет</a>
+          <a href="essay-moneyless-year.html" class="gf-nav-link">Год без денег</a>
+          <a href="lab-heidegger-plastic.html" class="gf-nav-link">Лаб №01 · Пластик</a>
+          <a href="lab-hyperobject-room.html" class="gf-nav-link">Лаб №02 · Комната</a>
+          <a href="lab-jacket-biography.html" class="gf-nav-link">Лаб №03 · Куртка</a>
+          <a href="lab-15min-city.html" class="gf-nav-link">Лаб №04 · Город</a>
+          <a href="lab-bateson-gpt.html" class="gf-nav-link">Лаб №05 · Бейтсон</a>
+        </nav>
+      </div>
+      <div>
+        <div class="gf-col-title">Навигация</div>
+        <nav class="gf-nav-links">
+          <a href="index.html" class="gf-nav-link">Главная</a>
+          <a href="map.html" class="gf-nav-link">Карта связей</a>
+            <a href="about.html" class="gf-nav-link">О проекте</a>
+          <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
+          <a href="section-icons-library.html" class="gf-nav-link">Знаки разделов</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="gf-bottom">
+    <span class="gf-copy">© 2025 ЭкоСознание</span>
+    <div class="gf-bottom-links">
+      <a href="about.html">О проекте</a>
+      <a href="glossary.html">Глоссарий</a>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  // Dropdown toggle
+  document.querySelectorAll('.g-drop-btn').forEach(btn=>{
+    btn.addEventListener('click',e=>{
+      e.stopPropagation();
+      const li=btn.closest('li');
+      const open=li.classList.toggle('g-drop-open');
+      btn.setAttribute('aria-expanded',open);
+      document.querySelectorAll('.g-drop-open').forEach(el=>{if(el!==li)el.classList.remove('g-drop-open');});
+    });
+  });
+  document.addEventListener('click',()=>document.querySelectorAll('.g-drop-open').forEach(el=>el.classList.remove('g-drop-open')));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.g-drop-open').forEach(el=>el.classList.remove('g-drop-open'));});
+
+  // Burger / overlay
+  const burger=document.getElementById('gBurger');
+  const overlay=document.getElementById('gOverlay');
+  if(burger&&overlay){
+    burger.addEventListener('click',()=>{
+      const open=overlay.classList.toggle('open');
+      burger.classList.toggle('open',open);
+      document.body.style.overflow=open?'hidden':'';
+    });
+    overlay.querySelectorAll('a[href]').forEach(a=>a.addEventListener('click',()=>{
+      overlay.classList.remove('open');burger.classList.remove('open');document.body.style.overflow='';
+    }));
+    document.addEventListener('keydown',e=>{
+      if(e.key==='Escape'&&overlay.classList.contains('open')){
+        overlay.classList.remove('open');burger.classList.remove('open');document.body.style.overflow='';
+      }
+    });
+  }
+
+  // Highlight active page
+  const pg = location.pathname.split('/').pop() || 'ecolife-landing.html';
+  // Mark active in dropdown and overlay
+  document.querySelectorAll('.g-dd-link, .g-ov-link').forEach(a => {
+    const href = a.getAttribute('href');
+    if (href === pg) {
+      a.style.background = 'rgba(255,255,255,0.1)';
+      const name = a.querySelector('.g-dd-name, .g-ov-name');
+      if (name) name.style.color = '#f3ede3';
+      const icon = a.querySelector('.g-dd-icon, .g-ov-icon');
+      if (icon) icon.style.color = 'var(--fern)';
+    }
+  });
+  // Mark active top-level nav link
+  document.querySelectorAll('.g-links > li > a').forEach(a => {
+    const href = a.getAttribute('href');
+    if (href === pg || href === 'ecolife-landing.html#latest' && ['essay','lab'].some(p => pg.startsWith(p))) {
+      a.classList.add('g-active');
+    }
+    if (href === 'glossary.html' && pg === 'glossary.html') a.classList.add('g-active');
+    if (href === 'about.html' && pg === 'about.html') a.classList.add('g-active');
+  });
+  // If current page is a section, mark 'Разделы' button as active
+  if (pg.startsWith('section-')) {
+    const btn = document.querySelector('.g-drop-btn');
+    if (btn) btn.style.color = 'var(--moss)';
+  }
+})();</script>
+<script>const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');});},{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+const tl=document.querySelectorAll('.toc-bar a');
+const sc=document.querySelectorAll('section[id]');
+window.addEventListener('scroll',()=>{let c='';sc.forEach(s=>{if(window.scrollY>=s.offsetTop-120)c=s.id;});tl.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+c));});</script>
+</body>
+</html>

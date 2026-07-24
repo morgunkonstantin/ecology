@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+  <meta name="description" content="Соластальгия, биофилия, расширенный разум, разрыв с природой как психологическая травма.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Психология — ЭкоСознание">
+  <meta property="og:description" content="Соластальгия, биофилия, расширенный разум, разрыв с природой как психологическая травма.">
+  <meta property="og:image" content="https://ecosoznanie.ru/og-image.jpg">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Психология — ЭкоСознание">
+  <meta name="twitter:description" content="Соластальгия, биофилия, расширенный разум, разрыв с природой как психологическая травма.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Психология — ЭкоСознание</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --ink:       #1c2b1e;
+  --ink-light: #3d5240;
+  --moss:      #4a7c59;
+  --fern:      #6ea87e;
+  --sage:      #a8c5a0;
+  --mist:      #d4e6d0;
+  --cream:     #f3ede3;
+  --warm:      #ece5d6;
+  --paper:     #faf6ef;
+  --dust:      #e8dfd0;
+  --rust:      #7a4f2e;
+  --clay:      #c4956a;
+}
+html { scroll-behavior: smooth; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+/* ── NAV ── */
+.breadcrumb a { color: var(--moss); text-decoration: none; }
+
+/* ── HERO ── */
+.hero {
+  padding: 10rem 4rem 5rem;
+  display: grid; grid-template-columns: 1fr 380px;
+  gap: 4rem; align-items: end;
+  border-bottom: 1px solid rgba(74,124,89,0.15);
+  position: relative; overflow: hidden;
+  background: var(--paper);
+}
+.hero::before {
+  content: '02';
+  position: absolute; right: 3rem; top: 5rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(8rem, 18vw, 16rem);
+  font-weight: 300; color: rgba(74,124,89,0.06);
+  line-height: 1; pointer-events: none; user-select: none;
+}
+.hero-tag {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--moss); margin-bottom: 1.5rem;
+}
+.hero-tag::before { content: ''; display: block; width: 24px; height: 1px; background: var(--fern); }
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 300; line-height: 1.05; color: var(--ink); margin-bottom: 1.8rem;
+}
+h1 em { font-style: italic; color: var(--moss); display: block; }
+.hero-lead { font-size: 1rem; line-height: 1.85; color: var(--ink-light); max-width: 580px; }
+.hero-meta {
+  display: flex; flex-direction: column; gap: 1.5rem;
+  padding-left: 2rem;
+  border-left: 1px solid rgba(74,124,89,0.2);
+}
+.meta-label { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--sage); margin-bottom: 0.4rem; }
+.meta-value { font-size: 0.9rem; color: var(--ink-light); line-height: 1.6; }
+
+/* ── TOC ── */
+.toc-bar {
+  background: var(--ink); padding: 0 4rem;
+  display: flex; align-items: stretch; overflow-x: auto; gap: 0;
+}
+.toc-bar a {
+  color: rgba(211,230,208,0.6); text-decoration: none;
+  font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  border-right: 1px solid rgba(255,255,255,0.06);
+  white-space: nowrap; transition: color 0.2s, background 0.2s;
+}
+.toc-bar a:hover { color: var(--mist); background: rgba(255,255,255,0.04); }
+.toc-bar a.active { color: var(--fern); }
+
+/* ── SECTION LAYOUT ── */
+.content-section {
+  padding: 5rem 4rem;
+  border-bottom: 1px solid rgba(74,124,89,0.1);
+}
+.content-section.alt { background: var(--cream); }
+.content-section.dark { background: var(--ink); }
+
+.section-label {
+  display: flex; align-items: center; gap: 1rem; margin-bottom: 3rem;
+}
+.section-label-num { font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sage); }
+.section-label-line { flex: 1; height: 1px; background: rgba(74,124,89,0.15); }
+.section-label-tag { font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--moss); }
+
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 300; color: var(--ink); line-height: 1.15; margin-bottom: 1.5rem;
+}
+h2 em { font-style: italic; color: var(--moss); }
+h2.light { color: var(--cream); }
+h2.light em { color: var(--fern); }
+
+.article-layout {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start;
+}
+.article-layout.wide { grid-template-columns: 3fr 2fr; }
+.article-body p {
+  font-size: 0.95rem; line-height: 1.9; color: var(--ink-light); margin-bottom: 1.1rem;
+}
+.article-body p.light { color: rgba(211,230,208,0.72); }
+.article-body p:last-child { margin-bottom: 0; }
+
+/* ── PULL QUOTE ── */
+.pull-quote {
+  border-left: 3px solid var(--moss);
+  padding: 1.2rem 1.5rem; margin: 2rem 0;
+  background: rgba(74,124,89,0.05);
+}
+.pull-quote p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem; font-style: italic; font-weight: 400;
+  color: var(--ink); line-height: 1.5; margin: 0 !important;
+}
+.pull-quote.light { background: rgba(255,255,255,0.06); border-color: var(--fern); }
+.pull-quote.light p { color: var(--cream); }
+
+/* ── CONCEPT CARDS (термины) ── */
+.concepts-grid {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 1px;
+  background: rgba(74,124,89,0.12);
+}
+.concept-card {
+  background: var(--paper); padding: 2rem 1.6rem;
+  transition: background 0.25s; cursor: default;
+}
+.concept-card:hover { background: var(--warm); }
+.concept-term {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem; font-style: italic; color: var(--moss);
+  margin-bottom: 0.3rem;
+}
+.concept-origin {
+  font-size: 0.65rem; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--sage); margin-bottom: 1rem;
+}
+.concept-def { font-size: 0.85rem; line-height: 1.75; color: var(--ink-light); }
+
+/* ── SPECTRUM ── */
+.spectrum {
+  margin: 2.5rem 0;
+  display: flex; flex-direction: column; gap: 0;
+}
+.spectrum-item {
+  display: grid; grid-template-columns: 180px 1fr;
+  align-items: start; gap: 2rem;
+  padding: 1.4rem 0;
+  border-bottom: 1px solid rgba(74,124,89,0.1);
+}
+.spectrum-item:first-child { border-top: 1px solid rgba(74,124,89,0.1); }
+.spectrum-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem; font-style: italic; color: var(--ink);
+}
+.spectrum-label small {
+  display: block; font-family: 'Jost', sans-serif; font-style: normal;
+  font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--clay); margin-top: 0.2rem;
+}
+.spectrum-desc { font-size: 0.85rem; line-height: 1.75; color: var(--ink-light); }
+
+/* ── THEORY BLOCK ── */
+.theory-block {
+  padding: 2.5rem;
+  border: 1px solid rgba(74,124,89,0.2);
+  position: relative; margin: 2rem 0;
+}
+.theory-block::before {
+  content: attr(data-author);
+  position: absolute; top: -0.7rem; left: 1.5rem;
+  font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--moss); background: var(--paper); padding: 0 0.5rem;
+}
+.content-section.alt .theory-block { background: rgba(255,255,255,0.5); }
+.content-section.alt .theory-block::before { background: var(--cream); }
+.theory-block h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem; font-weight: 400; color: var(--ink); margin-bottom: 0.7rem;
+}
+.theory-block p { font-size: 0.87rem; line-height: 1.8; color: var(--ink-light); }
+
+/* ── PRACTICES ── */
+.practices-grid {
+  display: grid; grid-template-columns: repeat(2,1fr); gap: 1px;
+  background: rgba(74,124,89,0.12); margin-top: 2rem;
+}
+.practice-card {
+  background: var(--paper); padding: 2rem 1.8rem;
+  transition: background 0.25s;
+}
+.practice-card:hover { background: var(--warm); }
+.practice-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem; font-weight: 300; color: rgba(74,124,89,0.2);
+  line-height: 1; margin-bottom: 0.8rem;
+}
+.practice-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem; color: var(--ink); margin-bottom: 0.5rem;
+}
+.practice-desc { font-size: 0.83rem; line-height: 1.75; color: var(--ink-light); }
+.practice-tag {
+  display: inline-block; margin-top: 1rem;
+  font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--moss); border: 1px solid rgba(74,124,89,0.25);
+  padding: 0.2rem 0.6rem;
+}
+
+/* ── RESEARCH ITEMS ── */
+.research-list { display: flex; flex-direction: column; gap: 0; }
+.research-item {
+  padding: 1.6rem 0;
+  border-bottom: 1px solid rgba(74,124,89,0.1);
+  display: grid; grid-template-columns: 72px 1fr;
+  gap: 1.5rem; align-items: start;
+  transition: padding-left 0.25s; cursor: default;
+}
+.research-item:first-child { border-top: 1px solid rgba(74,124,89,0.1); }
+.research-item:hover { padding-left: 0.4rem; }
+.research-year {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem; color: var(--clay); padding-top: 0.1rem;
+}
+.research-title { font-size: 0.95rem; color: var(--ink); margin-bottom: 0.35rem; }
+.research-body { font-size: 0.82rem; line-height: 1.7; color: var(--ink-light); }
+.research-author {
+  font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--sage); margin-top: 0.4rem;
+}
+
+/* ── RUBRIC CARDS ── */
+.rubrics-grid {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 1px; background: rgba(74,124,89,0.12); margin-top: 3rem;
+}
+.rubric-card {
+  background: var(--paper); padding: 2rem 1.6rem; transition: background 0.25s;
+}
+.rubric-card:hover { background: var(--warm); }
+.rubric-icon { font-size: 1.4rem; margin-bottom: 1rem; }
+.rubric-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem; color: var(--ink); margin-bottom: 0.6rem;
+}
+.rubric-desc { font-size: 0.82rem; line-height: 1.75; color: var(--ink-light); }
+.rubric-example {
+  margin-top: 1rem; font-size: 0.78rem; font-style: italic;
+  color: var(--moss); line-height: 1.6;
+}
+.rubric-card.dark-card { background: var(--ink); }
+.rubric-card.dark-card:hover { background: #243027; }
+.rubric-card.dark-card .rubric-name { color: var(--cream); }
+.rubric-card.dark-card .rubric-desc { color: rgba(211,230,208,0.65); }
+.rubric-card.dark-card .rubric-example { color: var(--fern); }
+
+/* ── FEATURED ── */
+.featured-strip {
+  background: var(--ink); padding: 3rem 3.5rem;
+  display: grid; grid-template-columns: 1fr auto;
+  gap: 3rem; align-items: center; margin-top: 3rem;
+}
+.featured-label {
+  font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--sage); margin-bottom: 1rem;
+}
+.featured-strip h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem; font-weight: 300; font-style: italic;
+  color: var(--cream); margin-bottom: 0.8rem; line-height: 1.2;
+}
+.featured-strip p { font-size: 0.87rem; line-height: 1.8; color: rgba(211,230,208,0.68); }
+.featured-btn {
+  background: transparent; color: var(--fern);
+  border: 1px solid rgba(110,168,126,0.4);
+  padding: 0.8rem 1.6rem; text-decoration: none;
+  font-family: 'Jost', sans-serif; font-size: 0.78rem;
+  letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap;
+  display: inline-block; transition: background 0.25s, color 0.25s;
+}
+.featured-btn:hover { background: var(--fern); color: var(--ink); }
+
+/* ── FOOTER ── */
+/* ── REVEAL ── */
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.65s ease, transform 0.65s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+.d1 { transition-delay: 0.1s; }
+.d2 { transition-delay: 0.2s; }
+.d3 { transition-delay: 0.3s; }
+/* ── Glossary term links ── */
+a.gterm{color:var(--moss);text-decoration:none;border-bottom:1px dashed rgba(74,124,89,.45);transition:border-color .2s,color .2s;}
+a.gterm:hover{color:var(--ink);border-bottom-style:solid;}
+
+.hero-mark-svg{position:absolute;right:4rem;top:11rem;width:90px;height:90px;color:rgba(74,124,89,.18);pointer-events:none;}
+.hero-mark-svg svg{width:100%;height:100%;display:block;}
+.hero{position:relative;overflow:hidden;}
+@media(max-width:800px){.hero-mark-svg{right:1.5rem;top:9rem;width:60px;height:60px;}}
+/* ── GLOBAL NAV + FOOTER v2 ── */
+.g-nav-wrap{position:fixed;top:0;left:0;right:0;z-index:300;background:rgba(250,246,239,0.95);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(74,124,89,0.13);font-family:'Jost',sans-serif;}
+.g-nav{display:flex;align-items:center;height:62px;padding:0 3rem;gap:0;}
+.g-logo{display:flex;align-items:center;gap:0.55rem;text-decoration:none;flex-shrink:0;margin-right:auto;}
+.g-logo .logo-svg{width:24px;height:24px;color:var(--ink);}
+.g-logo-text{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--ink);white-space:nowrap;}
+.g-logo-text em{font-style:italic;color:var(--moss);}
+.g-links{display:flex;align-items:center;gap:0;list-style:none;}
+.g-links>li{position:relative;}
+.g-links>li>a,.g-links>li>button{display:flex;align-items:center;gap:0.3rem;font-size:0.75rem;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-light);text-decoration:none;padding:0.45rem 0.9rem;border-radius:3px;background:none;border:none;cursor:pointer;font-family:'Jost',sans-serif;transition:color 0.2s,background 0.2s;}
+.g-links>li>a:hover,.g-links>li>button:hover{color:var(--moss);}
+.g-links>li>a.g-active{color:var(--moss);}
+.g-chevron{width:10px;height:10px;display:block;transition:transform 0.25s;}
+.g-drop-open>.g-drop-btn .g-chevron{transform:rotate(180deg);}
+.g-dropdown{position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);background:var(--ink);border:1px solid rgba(255,255,255,0.08);border-radius:6px;box-shadow:0 16px 40px rgba(0,0,0,0.35);padding:1.2rem;min-width:580px;display:none;grid-template-columns:repeat(3,1fr);gap:0.1rem;z-index:400;}
+.g-drop-open .g-dropdown{display:grid;}
+.g-dd-link{display:flex;align-items:center;gap:0.5rem;text-decoration:none;padding:0.5rem 0.6rem;border-radius:4px;transition:background 0.18s;}
+.g-dd-link:hover{background:rgba(255,255,255,0.08);}
+.g-dd-icon{width:18px;height:18px;flex-shrink:0;color:rgba(110,168,126,0.55);}
+.g-dd-icon svg{width:100%;height:100%;}
+.g-dd-link:hover .g-dd-icon{color:var(--fern);}
+.g-dd-name{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(243,237,227,0.85);}
+.g-dd-num{font-size:0.6rem;letter-spacing:0.12em;color:rgba(168,197,160,0.4);margin-left:auto;}
+.g-dd-link.wip{opacity:0.35;pointer-events:none;}
+.g-burger{display:none;flex-direction:column;justify-content:center;gap:5px;width:32px;height:32px;background:none;border:none;cursor:pointer;padding:3px;margin-left:1rem;}
+.g-burger span{display:block;height:1.5px;background:var(--ink);transition:transform 0.28s,opacity 0.28s,width 0.28s;transform-origin:center;}
+.g-burger span:nth-child(1){width:100%;}
+.g-burger span:nth-child(2){width:70%;}
+.g-burger span:nth-child(3){width:45%;}
+.g-burger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);width:100%;}
+.g-burger.open span:nth-child(2){opacity:0;}
+.g-burger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);width:100%;}
+.g-overlay{display:none;position:fixed;inset:62px 0 0 0;z-index:290;background:rgba(28,43,30,0.98);backdrop-filter:blur(20px);overflow-y:auto;padding:2rem 2rem 3rem;}
+.g-overlay.open{display:block;}
+.g-ov-section{margin-bottom:2rem;}
+.g-ov-label{font-size:0.64rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(168,197,160,0.45);margin-bottom:0.8rem;font-family:'Jost',sans-serif;}
+.g-ov-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.15rem;}
+.g-ov-link{display:flex;align-items:center;gap:0.5rem;text-decoration:none;padding:0.6rem 0.5rem;border-radius:4px;transition:background 0.18s;}
+.g-ov-link:hover{background:rgba(255,255,255,0.07);}
+.g-ov-icon{width:18px;height:18px;color:rgba(110,168,126,0.55);flex-shrink:0;}
+.g-ov-icon svg{width:100%;height:100%;}
+.g-ov-name{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(243,237,227,0.85);}
+.g-ov-link.wip{opacity:0.35;pointer-events:none;}
+.g-ov-simple-links{display:flex;flex-direction:column;gap:0.15rem;}
+.g-ov-simple-link{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(243,237,227,0.8);text-decoration:none;padding:0.55rem 0.5rem;border-radius:4px;transition:background 0.18s;}
+.g-ov-simple-link:hover{background:rgba(255,255,255,0.07);color:#f3ede3;}
+
+/* FOOTER */
+.g-footer-logo .logo-svg{width:22px;height:22px;}
+.g-footer-logo-text em{font-style:italic;color:var(--fern);}
+.g-footer-sec-link.wip{opacity:0.25;pointer-events:none;}
+.g-footer-sec-icon svg{width:100%;height:100%;}
+.g-footer-bottom-links a{font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(168,197,160,0.35);text-decoration:none;transition:color 0.18s;}
+.g-footer-bottom-links a:hover{color:var(--fern);}
+
+body{padding-top:62px!important;}
+/* ── GLOBAL FOOTER ── */
+.gf{background:var(--ink);padding:3.5rem 3rem 0;font-family:'Jost',sans-serif;}
+.gf-top{display:grid;grid-template-columns:200px 1fr;gap:4rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,0.07);}
+.gf-brand{}
+.gf-logo{display:flex;align-items:center;gap:0.55rem;text-decoration:none;margin-bottom:1rem;}
+.gf-logo-text{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--cream);}
+.gf-logo-text em{font-style:italic;color:var(--fern);}
+.gf-tagline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.88rem;color:rgba(168,197,160,0.45);line-height:1.65;max-width:175px;}
+.gf-cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2.5rem;}
+.gf-col-title{font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(168,197,160,0.38);margin-bottom:1rem;}
+.gf-sections{display:grid;grid-template-columns:1fr 1fr;gap:0.05rem;}
+.gf-sec-link{display:flex;align-items:center;gap:0.4rem;text-decoration:none;padding:0.38rem 0.25rem;border-radius:3px;opacity:0.68;transition:opacity 0.18s,background 0.18s;}
+.gf-sec-link:hover{opacity:1;background:rgba(255,255,255,0.06);}
+.gf-sec-icon{width:15px;height:15px;color:var(--fern);flex-shrink:0;}
+.gf-sec-icon svg{width:100%;height:100%;}
+.gf-sec-name{font-family:'Cormorant Garamond',serif;font-size:0.9rem;color:var(--mist);}
+.gf-nav-links{display:flex;flex-direction:column;gap:0.05rem;}
+.gf-nav-link{font-family:'Cormorant Garamond',serif;font-size:0.92rem;color:rgba(211,230,208,0.58);text-decoration:none;padding:0.38rem 0.25rem;border-radius:3px;transition:color 0.18s,background 0.18s;}
+.gf-nav-link:hover{color:var(--fern);background:rgba(255,255,255,0.05);}
+.gf-bottom{padding:1.5rem 0 1.8rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.8rem;}
+.gf-copy{font-size:0.67rem;letter-spacing:0.08em;color:rgba(168,197,160,0.28);}
+.gf-bottom-links{display:flex;gap:1rem;}
+.gf-bottom-links a{font-size:0.67rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(168,197,160,0.35);text-decoration:none;transition:color 0.18s;}
+.gf-bottom-links a:hover{color:var(--fern);}
+@media(max-width:860px){
+  .gf{padding:2.5rem 1.5rem 0;}
+  .gf-top{grid-template-columns:1fr;gap:2rem;}
+  .gf-cols{grid-template-columns:1fr 1fr;gap:1.5rem;}
+}
+@media(max-width:540px){
+  .gf-cols{grid-template-columns:1fr;}
+  .gf-sections{grid-template-columns:1fr 1fr;}
+  .gf-bottom{flex-direction:column;align-items:flex-start;gap:0.6rem;}
+}
+</style>
+  <link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
+</head>
+<body>
+<div class="g-nav-wrap" id="gNavWrap">
+  <div class="g-nav">
+    <a href="index.html" class="g-logo">
+      <svg viewBox="0 0 100 100" fill="none" class="logo-svg"><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#4a7c59"/></svg>
+      <span class="g-logo-text">Эко<em>Сознание</em></span>
+    </a>
+    <ul class="g-links">
+      <li>
+        <button class="g-drop-btn" aria-expanded="false">
+          Разделы
+          <svg class="g-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="g-dropdown">
+          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
+          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
+          <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
+          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
+          <a href="section-compost.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Компост</span><span class="g-dd-num">05b</span></a>
+          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
+          <a href="section-construction.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="g-dd-name">Строительство</span><span class="g-dd-num">06b</span></a>
+          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
+          <a href="section-art.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></span><span class="g-dd-name">Искусство</span><span class="g-dd-num">08</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">09</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">10</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">11</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">12</span></a>
+        </div>
+      </li>
+      <li><a href="index.html#latest">Эссе</a></li>
+      <li><a href="glossary.html">Глоссарий</a></li>
+      <li><a href="about.html">О проекте</a></li>
+    </ul>
+    <button class="g-burger" id="gBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+<div class="g-overlay" id="gOverlay">
+  <div class="g-ov-section">
+    <div class="g-ov-label">Разделы</div>
+    <div class="g-ov-grid">
+      <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Философия</span></a>
+      <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
+      <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
+      <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Технологии</span></a>
+      <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
+      <a href="section-compost.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Компост</span></a>
+      <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
+      <a href="section-construction.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/></svg></span><span class="g-ov-name">Строительство</span></a>
+      <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-ov-name">Экономика</span></a>
+      <a href="section-art.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></span><span class="g-ov-name">Искусство</span></a>
+      <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Образование</span></a>
+      <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
+      <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
+      <a href="section-health.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-ov-name">Здоровье</span></a>
+    </div>
+  </div>
+  <div class="g-ov-section">
+    <div class="g-ov-label">Навигация</div>
+    <div class="g-ov-simple-links">
+      <a href="index.html" class="g-ov-simple-link">Главная</a>
+      <a href="index.html#latest" class="g-ov-simple-link">Эссе и лаборатории</a>
+      <a href="glossary.html" class="g-ov-simple-link">Глоссарий</a>
+      <a href="map.html" class="g-ov-simple-link">Карта связей</a>
+      <a href="about.html" class="g-ov-simple-link">О проекте</a>
+    </div>
+  </div>
+</div>
+
+<section class="hero" id="top">
+  <div class="hero-mark-svg"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></div>
+  <div>
+    <div class="hero-tag">Раздел · Психология</div>
+    <h1>Разрыв с природой<br><em>как внутренняя рана</em></h1>
+    <p class="hero-lead">
+      Экологический кризис разворачивается не только снаружи — в атмосфере, почве и океанах. Он разворачивается внутри: в нарастающем ощущении тревоги, бессилия и отчуждённости от живого мира. Экопсихология изучает этот разрыв — и пути его преодоления.
+    </p>
+  </div>
+  <div class="hero-meta">
+    <div>
+      <div class="meta-label">Ключевые понятия</div>
+      <div class="meta-value">Соластальгия · Экотревога · Nature deficit disorder · АТТ · Синрин-йоку</div>
+    </div>
+    <div>
+      <div class="meta-label">Ключевые авторы</div>
+      <div class="meta-value">Теодор Розак · Ричард Лоув · Гленн Альбрехт · Рейчел и Стефан Каплан</div>
+    </div>
+    <div>
+      <div class="meta-label">Рубрики</div>
+      <div class="meta-value">Симптом · Практика · Исследование</div>
+    </div>
+  </div>
+</section>
+
+<!-- TOC -->
+<div class="toc-bar">
+  <a href="#rupture" class="active">Разрыв</a>
+  <a href="#vocabulary">Словарь боли</a>
+  <a href="#theories">Теории</a>
+  <a href="#restoration">Восстановление</a>
+  <a href="#practices">Практики</a>
+  <a href="#research">Исследования</a>
+  <a href="#rubrics">Рубрики</a>
+</div>
+
+<!-- 1. РАЗРЫВ -->
+<section class="content-section" id="rupture">
+  <div class="section-label">
+    <span class="section-label-num">01</span>
+    <span class="section-label-line"></span>
+    <span class="section-label-tag">Исходная точка</span>
+  </div>
+  <div class="article-layout wide reveal">
+    <div class="article-body">
+      <h2>Мы первые люди в истории,<br><em>выросшие без природы</em></h2>
+      <p>На протяжении всей человеческой истории люди жили в непрерывном контакте с живым миром: ритмы сезонов, звуки леса, текстура земли под ногами были частью повседневного существования. Это изменилось примерно за два поколения. Урбанизация, экраны, страх перед «опасностью снаружи» — и дети растут, практически не соприкасаясь с природой.</p>
+      <p>Ричард Лоув назвал это явление «дефицитом природы» — не медицинским диагнозом, а культурным описанием. Его последствия он видит повсюду: в росте тревожных расстройств среди детей, в снижении концентрации внимания, в нарастающем чувстве бессмысленности.</p>
+      <div class="pull-quote">
+        <p>«Природа — не декорация жизни. Она — одно из условий психического здоровья, которое мы тихо отменили»</p>
+      </div>
+      <p>Экопсихология как дисциплина возникла в конце 1980-х именно из этого вопроса: что происходит с психикой человека, когда рвётся его связь с живым миром? И что происходит с живым миром, когда люди перестают воспринимать его как часть себя?</p>
+    </div>
+    <div class="article-visual reveal d1">
+      <div class="spectrum">
+        <div class="spectrum-item">
+          <div class="spectrum-label">Физический разрыв<small>Среда</small></div>
+          <div class="spectrum-desc">Урбанизация, застройка, асфальт вместо почвы. Среднестатистический горожанин проводит 90% времени в помещении.</div>
+        </div>
+        <div class="spectrum-item">
+          <div class="spectrum-label">Сенсорный разрыв<small>Тело</small></div>
+          <div class="spectrum-desc">Экраны заменяют природные стимулы. Искусственный свет нарушает циркадные ритмы. Звуки природы вытеснены городским шумом.</div>
+        </div>
+        <div class="spectrum-item">
+          <div class="spectrum-label">Когнитивный разрыв<small>Мышление</small></div>
+          <div class="spectrum-desc">Утрата биологической грамотности: современный ребёнок знает сотни торговых марок, но не умеет назвать деревья вокруг дома.</div>
+        </div>
+        <div class="spectrum-item">
+          <div class="spectrum-label">Эмоциональный разрыв<small>Душа</small></div>
+          <div class="spectrum-desc">Природа перестаёт быть «своей» — воспринимается как фон, ресурс или угроза. Исчезает чувство принадлежности к чему-то большему.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. СЛОВАРЬ БОЛИ -->
+<section class="content-section alt" id="vocabulary">
+  <div class="section-label">
+    <span class="section-label-num">02</span>
+    <span class="section-label-line"></span>
+    <span class="section-label-tag">Словарь экологической боли</span>
+  </div>
+  <h2 class="reveal">Чувства, у которых<br><em>появились имена</em></h2>
+  <p class="reveal d1" style="font-size:0.95rem; line-height:1.85; color:var(--ink-light); max-width:680px; margin-bottom:3rem;">
+    Одна из задач экопсихологии — дать язык переживаниям, которые раньше не имели названия. Новые термины — это не академическая игра: они позволяют людям узнать своё состояние и почувствовать, что они не одни.
+  </p>
+  <div class="concepts-grid reveal d2">
+    <div class="concept-card">
+      <div class="concept-term"><a href="glossary.html#Соластальгия" class="gterm" title="Соластальгия">Соластальгия</a></div>
+      <div class="concept-origin">Гленн Альбрехт · 2003</div>
+      <div class="concept-def">Тоска по месту, которое изменилось при тебе — не потому что ты уехал, а потому что оно стало другим. Горе по утраченному ландшафту детства, по лесу, ставшему стройплощадкой, по реке, которая обмелела.</div>
+    </div>
+    <div class="concept-card">
+      <div class="concept-term">Экотревога</div>
+      <div class="concept-origin">APA · Climate Psychology Alliance</div>
+      <div class="concept-def">Хроническое ощущение страха и беспомощности перед масштабом экологических изменений. Отличается от обычной тревоги тем, что её объект — реален. Это рациональный ответ на иррациональную ситуацию.</div>
+    </div>
+    <div class="concept-card">
+      <div class="concept-term">Экологическое горе</div>
+      <div class="concept-origin">Ashlee Cunsolo · 2012</div>
+      <div class="concept-def">Скорбь по утраченным видам, экосистемам, сезонам. Психологи начали работать с этим чувством относительно недавно — оно долго считалось «неуместным» или «преувеличенным».</div>
+    </div>
+    <div class="concept-card">
+      <div class="concept-term">Nature deficit disorder</div>
+      <div class="concept-origin">Ричард Лоув · 2005</div>
+      <div class="concept-def">Совокупность психологических и поведенческих последствий разрыва с природой у детей: повышенная тревожность, снижение внимания, сложности с эмпатией. Не диагноз — метафора.</div>
+    </div>
+    <div class="concept-card">
+      <div class="concept-term">Экопаралич</div>
+      <div class="concept-origin">Современная клиническая практика</div>
+      <div class="concept-def">Состояние, когда осознание масштаба проблем вызывает не действие, а полную остановку. Человек знает — и поэтому не может двигаться. Одна из форм защитного оцепенения.</div>
+    </div>
+    <div class="concept-card">
+      <div class="concept-term"><a href="glossary.html#Топофилия" class="gterm" title="Топофилия">Топофилия</a></div>
+      <div class="concept-origin">Ги Тубан / Ии-Фу Туан · 1974</div>
+      <div class="concept-def">Любовь к месту — эмоциональная привязанность человека к конкретному ландшафту, территории, природной среде. Антоним <a href="glossary.html#Соластальгия" class="gterm" title="Соластальгия">соластальгии</a>: то, что возникает до утраты.</div>
+    </div>
+  </div>
+
+  <div class="featured-strip reveal d3">
+    <div>
+      <div class="featured-label">Статья рубрики «Симптом»</div>
+      <h3>Климатическая тревога — болезнь или здравомыслие?</h3>
+      <p>О том, где проходит граница между адаптивным беспокойством и парализующим страхом — и почему психологи перестали считать тревогу о климате патологией.</p>
+    </div>
+    <a href="#" class="featured-btn">Читать →</a>
+  </div>
+</section>
+
+<!-- 3. ТЕОРИИ -->
+<section class="content-section" id="theories">
+  <div class="section-label">
+    <span class="section-label-num">03</span>
+    <span class="section-label-line"></span>
+    <span class="section-label-tag">Теоретические основания</span>
+  </div>
+  <div class="featured-strip reveal d1" style="margin-top:1.5rem;background:rgba(74,124,89,.92);">
+    <div>
+      <div class="featured-label" style="color:rgba(243,237,227,.7);">Эссе раздела · 17 мин</div>
+      <h3>Что происходит с нами, когда исчезает мир</h3>
+      <p>Программное эссе о психологии экологического кризиса. Соластальгия, экотревога, биофилия, экотерапия и активная надежда Джоанны Мэйси.</p>
+    </div>
+    <a href="essay-eco-anxiety.html" class="featured-btn" style="border-color:rgba(243,237,227,.4);color:var(--cream);">Читать →</a>
+  </div>
+  <div class="article-layout reveal">
+    <div class="article-body">
+      <h2>Почему нам<br><em>нужна природа</em></h2>
+      <p>Экопсихология опирается на несколько теоретических традиций. Каждая отвечает на вопрос по-своему — эволюционно, когнитивно или через клиническую практику.</p>
+
+      <div class="theory-block" data-author="Э. О. Уилсон · 1984">
+        <h3>Гипотеза биофилии</h3>
+        <p>Человек эволюционно запрограммирован на связь с живыми системами. 99% истории нашего вида прошло в тесном контакте с природой — за одно-два поколения это не стирается. Влечение к живому миру встроено в нас биологически, и его подавление имеет психологическую цену.</p>
+      </div>
+
+      <div class="theory-block" data-author="Теодор Розак · 1992">
+        <h3>Экопсихология</h3>
+        <p>Розак предложил расширить предмет психологии: если психика формируется в отношениях — с родителями, обществом — то природа тоже является частью этих отношений. Здоровье психики и здоровье экосистем неразделимы. Разрушение природы — это одновременно разрушение части нас самих.</p>
+      </div>
+    </div>
+    <div class="article-visual reveal d1">
+      <div class="theory-block" data-author="Рейчел и Стефан Каплан · 1989">
+        <h3>Теория восстановления внимания (АТТ)</h3>
+        <p>Направленное внимание — тот вид концентрации, который требует усилий — истощается. Природная среда восстанавливает его пассивно, без усилий. Четыре компонента восстанавливающей среды: уход от обыденного, захватывающая протяжённость, очарование (fascination) и совместимость со своими целями.</p>
+      </div>
+
+      <div class="theory-block" data-author="Ульрих и др. · 1984">
+        <h3>Теория снижения стресса (SRT)</h3>
+        <p>Контакт с природой — даже визуальный — снижает уровень кортизола, замедляет сердечный ритм и активирует парасимпатическую нервную систему. Природа действует как физиологический антидот стрессу — быстрее и глубже большинства психотерапевтических техник.</p>
+      </div>
+
+      <div class="pull-quote">
+        <p>«Мы не просто живём в природе. Мы сделаны из неё — и нуждаемся в контакте с ней так же, как в воздухе и воде»</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. ВОССТАНОВЛЕНИЕ -->
+<section class="content-section dark" id="restoration">
+  <div class="section-label">
+    <span class="section-label-num">04</span>
+    <span class="section-label-line"></span>
+    <span class="section-label-tag" style="color:var(--fern)">Путь к воссоединению</span>
+  </div>
+  <div class="article-layout wide reveal">
+    <div class="article-body">
+      <h2 class="light">Исцеление через<br><em>возвращение</em></h2>
+      <p class="light">Если разрыв с природой имеет психологическую цену, то восстановление связи — психологическую ценность. Это не метафора: десятки клинических исследований показывают измеримый эффект контакта с природой на тревогу, депрессию и когнитивное функционирование.</p>
+      <p class="light">Японские учёные показали, что 20-минутная прогулка в лесу снижает концентрацию кортизола на 12–13%, снижает артериальное давление и усиливает активность NK-клеток иммунной системы. Это не «приятный отдых» — это физиологический процесс.</p>
+      <div class="pull-quote light">
+        <p>«Синрин-йоку — буквально "принятие лесных ванн". Не прогулка с задачей, не спорт. Просто присутствие в лесу, всеми органами чувств»</p>
+      </div>
+      <p class="light">Но воссоединение — это не только прогулки. Это и экологическое горевание (признание потери), и участие в восстановлении экосистем, и просто регулярный контакт с живыми существами — растениями, животными, почвой.</p>
+    </div>
+    <div class="reveal d1">
+      <div style="display:flex; flex-direction:column; gap:1px; background:rgba(255,255,255,0.06);">
+        <div style="background:rgba(255,255,255,0.04); padding:1.5rem 1.8rem;">
+          <div style="font-size:0.65rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--sage); margin-bottom:0.6rem;">Синрин-йоку · Япония</div>
+          <div style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; color:var(--cream); margin-bottom:0.5rem;">Лесные ванны</div>
+          <div style="font-size:0.83rem; line-height:1.75; color:rgba(211,230,208,0.65);">Практика осознанного пребывания в лесу, разработанная в Японии в 1982 году. Официально рекомендована Министерством здравоохранения Японии. Снижение кортизола, восстановление иммунитета, снижение тревоги.</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.04); padding:1.5rem 1.8rem;">
+          <div style="font-size:0.65rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--sage); margin-bottom:0.6rem;">Ecotherapy · Великобритания / США</div>
+          <div style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; color:var(--cream); margin-bottom:0.5rem;">Экотерапия</div>
+          <div style="font-size:0.83rem; line-height:1.75; color:rgba(211,230,208,0.65);">Терапевтические сессии, проводимые в природной среде или с использованием природных элементов. Включает прогулочную терапию, садовую терапию, работу с животными. NHS Великобритании включает некоторые формы в страховое покрытие.</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.04); padding:1.5rem 1.8rem;">
+          <div style="font-size:0.65rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--sage); margin-bottom:0.6rem;">Climate psychology · Глобально</div>
+          <div style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; color:var(--cream); margin-bottom:0.5rem;">Климатическая психология</div>
+          <div style="font-size:0.83rem; line-height:1.75; color:rgba(211,230,208,0.65);">Работа с экотревогой, экологическим горем и климатической беспомощностью. Помогает переработать чувства в действие — не через отрицание боли, а через её интеграцию.</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.04); padding:1.5rem 1.8rem;">
+          <div style="font-size:0.65rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--sage); margin-bottom:0.6rem;">Joanna Macy · Work That Reconnects</div>
+          <div style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; color:var(--cream); margin-bottom:0.5rem;">Работа по воссоединению</div>
+          <div style="font-size:0.83rem; line-height:1.75; color:rgba(211,230,208,0.65);">Групповые практики Джоанны Мэйси для работы с экологической болью. «Спираль» начинается с благодарности, проходит через боль и заканчивается переосмыслением отношений с жизнью.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. ПРАКТИКИ -->
+<section class="content-section alt" id="practices">
+  <div class="section-label">
+    <span class="section-label-num">05</span>
+    <span class="section-label-line"></span>
+    <span class="section-label-tag">Практики</span>
+  </div>
+  <h2 class="reveal">Что можно<br><em>сделать сегодня</em></h2>
+  <p class="reveal d1" style="font-size:0.95rem; line-height:1.85; color:var(--ink-light); max-width:640px; margin-bottom:0;">
+    Практики раздела — не список советов «как стать экологичным». Это точки восстановления связи с живым миром, у каждой из которых есть эмпирическое основание.
+  </p>
+  <div class="practices-grid reveal d2">
+    <div class="practice-card">
+      <div class="practice-num">01</div>
+      <div class="practice-name">20 минут без цели</div>
+      <div class="practice-desc">Прогулка в природной среде — лес, парк, берег реки — без телефона, наушников и задачи. Именно отсутствие задачи активирует восстановительный эффект. Исследования Каплан показывают: 20 минут достаточно для значимого снижения стресса.</div>
+      <span class="practice-tag">Ежедневно</span>
+    </div>
+    <div class="practice-card">
+      <div class="practice-num">02</div>
+      <div class="practice-name">Медленное наблюдение</div>
+      <div class="practice-desc">Выбрать одно живое существо — дерево, птицу, облако — и наблюдать за ним 10 минут подряд. Натуралисты называют это «сидеть с существом». Это практика присутствия, а не сбора информации.</div>
+      <span class="practice-tag">Практика внимания</span>
+    </div>
+    <div class="practice-card">
+      <div class="practice-num">03</div>
+      <div class="practice-name">Дневник места</div>
+      <div class="practice-desc">Регулярно записывать изменения в одном и том же месте на протяжении года: что цветёт, что прилетело, как меняется свет. Это развивает топофилию — привязанность к месту — и противодействует соластальгии.</div>
+      <span class="practice-tag">Еженедельно</span>
+    </div>
+    <div class="practice-card">
+      <div class="practice-num">04</div>
+      <div class="practice-name">Работа с экологической болью</div>
+      <div class="practice-desc">Практики Джоанны Мэйси «Work That Reconnects» предлагают структурированный способ прожить экологическое горе в группе. Не для того, чтобы «стало легче» — а чтобы боль стала ресурсом, а не параличом.</div>
+      <span class="practice-tag">Групповая работа</span>
+    </div>
+    <div class="practice-card">
+      <div class="practice-num">05</div>
+      <div class="practice-name">Сенсорное картирование</div>
+      <div class="practice-desc">Закрыть глаза и перечислить все звуки, запахи, тактильные ощущения вокруг — отдельно для природных и антропогенных. Упражнение возвращает к телесному присутствию и обостряет восприятие живой среды.</div>
+      <span class="practice-tag">Разовая практика</span>
+    </div>
+    <div class="practice-card">
+      <div class="practice-num">06</div>
+      <div class="practice-name">Почва своими руками</div>
+      <div class="practice-desc">Контакт с землёй — буквальный, тактильный — снижает тревогу. Садоводство, компостирование, огород. <a href="glossary.html#Микробиом" class="gterm" title="Микробиом">Микробиом</a> почвы содержит Mycobacterium vaccae — бактерию, которая при контакте с кожей стимулирует выработку серотонина.</div>
+      <span class="practice-tag">Регулярно</span>
+    </div>
+  </div>
+</section>
+
+<!-- 6. ИССЛЕДОВАНИЯ -->
+<section class="content-section" id="research">
+  <div class="section-label">
+    <span class="section-label-num">06</span>
+    <span class="section-label-line"></span>
+    <span class="section-label-tag">Исследования</span>
+  </div>
+  <div class="article-layout reveal">
+    <div class="article-body">
+      <h2>Наука о том,<br><em>что мы чувствуем</em></h2>
+      <p>Рубрика «Исследование» — разборы конкретных научных работ, написанные так, чтобы их понял читатель без академического бэкграунда. Не популяризация — диалог. Методология, ограничения, противоречия — всё это часть разговора.</p>
+      <p>Ниже — несколько ключевых работ, которые стоят за темами раздела.</p>
+    </div>
+    <div class="reveal d1">
+      <div class="research-list">
+        <div class="research-item">
+          <div class="research-year">1984</div>
+          <div>
+            <div class="research-title">Вид из окна как фактор выздоровления</div>
+            <div class="research-body">Пациенты после операции, чьи палаты выходили на деревья, выздоравливали быстрее и требовали меньше обезболивающих, чем те, кто видел кирпичную стену. Одно из первых клинических доказательств восстановительной силы природы.</div>
+            <div class="research-author">Roger Ulrich · Science</div>
+          </div>
+        </div>
+        <div class="research-item">
+          <div class="research-year">2008</div>
+          <div>
+            <div class="research-title">Прогулка в природе улучшает рабочую память</div>
+            <div class="research-body">Участники, гулявшие в парке, показали результаты на 20% лучше в тестах на рабочую память, чем те, кто шёл по городской улице. Эффект наблюдался даже зимой, когда деревья были без листьев.</div>
+            <div class="research-author">Berman, Jonides, Kaplan · Psychological Science</div>
+          </div>
+        </div>
+        <div class="research-item">
+          <div class="research-year">2010</div>
+          <div>
+            <div class="research-title">Синрин-йоку: физиологические маркеры</div>
+            <div class="research-body">Систематическое исследование в 24 лесах Японии: лесные прогулки снижали концентрацию кортизола на 12,4%, давление на 1,4%, пульс на 5,8% по сравнению с городскими прогулками.</div>
+            <div class="research-author">Park, Tsunetsugu et al. · Environmental Health & Preventive Medicine</div>
+          </div>
+        </div>
+        <div class="research-item">
+          <div class="research-year">2019</div>
+          <div>
+            <div class="research-title">120 минут в неделю — порог благополучия</div>
+            <div class="research-body">Анализ 20 000 человек: те, кто проводил в природной среде от 120 минут в неделю, значимо лучше оценивали своё здоровье и благополучие. Меньше 120 минут — эффект не наблюдался.</div>
+            <div class="research-author">White et al. · Scientific Reports</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. РУБРИКИ -->
+<section class="content-section alt" id="rubrics">
+  <div class="section-label">
+    <span class="section-label-num">07</span>
+    <span class="section-label-line"></span>
+    <span class="section-label-tag">Рубрики раздела</span>
+  </div>
+  <h2 class="reveal">Форматы<br><em>материалов</em></h2>
+  <div class="rubrics-grid reveal d1">
+    <div class="rubric-card">
+      <div class="rubric-icon">🩺</div>
+      <div class="rubric-name">Симптом</div>
+      <div class="rubric-desc">Описание психологического феномена, связанного с отчуждением от природы — или с её потерей. Не диагностика, а узнавание: «да, это про меня».</div>
+      <div class="rubric-example">→ «Почему мне плохо, когда вырубают лес, который я никогда не видел?»</div>
+    </div>
+    <div class="rubric-card dark-card">
+      <div class="rubric-icon">🌱</div>
+      <div class="rubric-name">Практика</div>
+      <div class="rubric-desc">Конкретная, обоснованная практика восстановления связи с природой. Всегда с контекстом: почему это работает, для кого, при каких условиях.</div>
+      <div class="rubric-example">→ «Синрин-йоку: как правильно "принимать лесные ванны" — и почему важно не делать это правильно»</div>
+    </div>
+    <div class="rubric-card">
+      <div class="rubric-icon">🔬</div>
+      <div class="rubric-name">Исследование</div>
+      <div class="rubric-desc">Разбор одной научной работы: что изучали, как, что нашли и чего не нашли. Методология и ограничения — часть текста, не сноска.</div>
+      <div class="rubric-example">→ «120 минут в неделю: что именно доказывает это исследование — и чего не доказывает»</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+const tocLinks = document.querySelectorAll('.toc-bar a');
+const sections = document.querySelectorAll('section[id]');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
+  tocLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
+});
+</script>
+<!-- FOOTER -->
+<script>
+(function(){
+  // Dropdown toggle
+  document.querySelectorAll('.g-drop-btn').forEach(btn=>{
+    btn.addEventListener('click',e=>{
+      e.stopPropagation();
+      const li=btn.closest('li');
+      const open=li.classList.toggle('g-drop-open');
+      btn.setAttribute('aria-expanded',open);
+      document.querySelectorAll('.g-drop-open').forEach(el=>{if(el!==li)el.classList.remove('g-drop-open');});
+    });
+  });
+  document.addEventListener('click',()=>document.querySelectorAll('.g-drop-open').forEach(el=>el.classList.remove('g-drop-open')));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.g-drop-open').forEach(el=>el.classList.remove('g-drop-open'));});
+
+  // Burger / overlay
+  const burger=document.getElementById('gBurger');
+  const overlay=document.getElementById('gOverlay');
+  if(burger&&overlay){
+    burger.addEventListener('click',()=>{
+      const open=overlay.classList.toggle('open');
+      burger.classList.toggle('open',open);
+      document.body.style.overflow=open?'hidden':'';
+    });
+    overlay.querySelectorAll('a[href]').forEach(a=>a.addEventListener('click',()=>{
+      overlay.classList.remove('open');burger.classList.remove('open');document.body.style.overflow='';
+    }));
+    document.addEventListener('keydown',e=>{
+      if(e.key==='Escape'&&overlay.classList.contains('open')){
+        overlay.classList.remove('open');burger.classList.remove('open');document.body.style.overflow='';
+      }
+    });
+  }
+
+  // Highlight active page
+  const pg = location.pathname.split('/').pop() || 'ecolife-landing.html';
+  // Mark active in dropdown and overlay
+  document.querySelectorAll('.g-dd-link, .g-ov-link').forEach(a => {
+    const href = a.getAttribute('href');
+    if (href === pg) {
+      a.style.background = 'rgba(255,255,255,0.1)';
+      const name = a.querySelector('.g-dd-name, .g-ov-name');
+      if (name) name.style.color = '#f3ede3';
+      const icon = a.querySelector('.g-dd-icon, .g-ov-icon');
+      if (icon) icon.style.color = 'var(--fern)';
+    }
+  });
+  // Mark active top-level nav link
+  document.querySelectorAll('.g-links > li > a').forEach(a => {
+    const href = a.getAttribute('href');
+    if (href === pg || href === 'ecolife-landing.html#latest' && ['essay','lab'].some(p => pg.startsWith(p))) {
+      a.classList.add('g-active');
+    }
+    if (href === 'glossary.html' && pg === 'glossary.html') a.classList.add('g-active');
+    if (href === 'about.html' && pg === 'about.html') a.classList.add('g-active');
+  });
+  // If current page is a section, mark 'Разделы' button as active
+  if (pg.startsWith('section-')) {
+    const btn = document.querySelector('.g-drop-btn');
+    if (btn) btn.style.color = 'var(--moss)';
+  }
+})();</script>
+<footer class="gf">
+  <div class="gf-top">
+    <div class="gf-brand">
+      <a href="index.html" class="gf-logo">
+        <svg viewBox="0 0 100 100" fill="none" class="logo-svg" style="width:24px;height:24px;flex-shrink:0;"><circle cx="50" cy="50" r="40" stroke="#f3ede3" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#6ea87e"/></svg>
+        <span class="gf-logo-text">Эко<em>Сознание</em></span>
+      </a>
+      <p class="gf-tagline">Экологический взгляд как линза для любой сферы жизни</p>
+    </div>
+    <div class="gf-cols">
+      <div>
+        <div class="gf-col-title">Разделы</div>
+        <div class="gf-sections">
+          <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Философия</span></a>
+          <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
+          <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
+          <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Технологии</span></a>
+          <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
+          <a href="section-compost.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Компост</span></a>
+          <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
+          <a href="section-construction.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="gf-sec-name">Строительство</span></a>
+          <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="gf-sec-name">Экономика</span></a>
+          <a href="section-art.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></span><span class="gf-sec-name">Искусство</span></a>
+          <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Образование</span></a>
+          <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
+          <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
+          <a href="section-health.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Здоровье</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="gf-col-title">Материалы</div>
+        <nav class="gf-nav-links">
+          <a href="essay-truth-and-climate.html" class="gf-nav-link">Истина и климат</a>
+          <a href="essay-passive-design.html" class="gf-nav-link">Пассивный дизайн</a>
+          <a href="essay-solastalgia.html" class="gf-nav-link">Соластальгия</a>
+          <a href="essay-community-survives.html" class="gf-nav-link">Что нужно общине</a>
+          <a href="essay-bread.html" class="gf-nav-link">Хлеб</a>
+          <a href="essay-morning-light.html" class="gf-nav-link">Утренний свет</a>
+          <a href="essay-moneyless-year.html" class="gf-nav-link">Год без денег</a>
+          <a href="lab-heidegger-plastic.html" class="gf-nav-link">Лаб №01 · Пластик</a>
+          <a href="lab-hyperobject-room.html" class="gf-nav-link">Лаб №02 · Комната</a>
+          <a href="lab-jacket-biography.html" class="gf-nav-link">Лаб №03 · Куртка</a>
+          <a href="lab-15min-city.html" class="gf-nav-link">Лаб №04 · Город</a>
+          <a href="lab-bateson-gpt.html" class="gf-nav-link">Лаб №05 · Бейтсон</a>
+        </nav>
+      </div>
+      <div>
+        <div class="gf-col-title">Навигация</div>
+        <nav class="gf-nav-links">
+          <a href="index.html" class="gf-nav-link">Главная</a>
+          <a href="map.html" class="gf-nav-link">Карта связей</a>
+            <a href="about.html" class="gf-nav-link">О проекте</a>
+          <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
+          <a href="section-icons-library.html" class="gf-nav-link">Знаки разделов</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="gf-bottom">
+    <span class="gf-copy">© 2025 ЭкоСознание</span>
+    <div class="gf-bottom-links">
+      <a href="about.html">О проекте</a>
+      <a href="glossary.html">Глоссарий</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

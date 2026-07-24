@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+  <meta name="description" content="Медленная жизнь как этическая позиция. Slow movement, моттаинаи, сезонность, ремонт вместо замены.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Стиль жизни — ЭкоСознание">
+  <meta property="og:description" content="Медленная жизнь как этическая позиция. Slow movement, моттаинаи, сезонность, ремонт вместо замены.">
+  <meta property="og:image" content="https://ecosoznanie.ru/og-image.jpg">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Стиль жизни — ЭкоСознание">
+  <meta name="twitter:description" content="Медленная жизнь как этическая позиция. Slow movement, моттаинаи, сезонность, ремонт вместо замены.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Стиль жизни — ЭкоСознание</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--ink:#1c2b1e;--ink-light:#3d5240;--moss:#4a7c59;--fern:#6ea87e;--sage:#a8c5a0;--mist:#d4e6d0;--cream:#f3ede3;--warm:#ece5d6;--paper:#faf6ef;--gold:#b8924a;--clay:#c4956a;--rust:#7a4f2e;}
+html{scroll-behavior:smooth;}
+body{background:var(--paper);color:var(--ink);font-family:'Jost',sans-serif;font-weight:300;overflow-x:hidden;}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--ink);text-decoration:none;}
+.breadcrumb a{color:var(--moss);text-decoration:none;}
+.hero{padding:10rem 4rem 5rem;display:grid;grid-template-columns:1fr 380px;gap:4rem;align-items:end;border-bottom:1px solid rgba(74,124,89,0.15);position:relative;overflow:hidden;}
+.hero-mark-svg{position:absolute;right:4rem;top:11rem;width:90px;height:90px;color:rgba(74,124,89,0.18);pointer-events:none;}
+.hero-mark-svg svg{width:100%;height:100%;display:block;}
+.hero-tag{display:inline-flex;align-items:center;gap:0.6rem;font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--moss);margin-bottom:1.5rem;}
+.hero-tag::before{content:'';display:block;width:24px;height:1px;background:var(--fern);}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,6vw,5rem);font-weight:300;line-height:1.05;color:var(--ink);margin-bottom:1.8rem;}
+h1 em{font-style:italic;color:var(--moss);display:block;}
+.hero-lead{font-size:1rem;line-height:1.85;color:var(--ink-light);max-width:580px;}
+.hero-meta{display:flex;flex-direction:column;gap:1.5rem;padding-left:2rem;border-left:1px solid rgba(74,124,89,0.2);}
+.meta-label{font-size:0.68rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--sage);margin-bottom:0.4rem;}
+.meta-value{font-size:0.9rem;color:var(--ink-light);line-height:1.6;}
+.toc-bar{background:var(--ink);padding:0 4rem;display:flex;align-items:stretch;overflow-x:auto;}
+.toc-bar a{color:rgba(211,230,208,0.6);text-decoration:none;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;padding:1rem 1.5rem;border-right:1px solid rgba(255,255,255,0.06);white-space:nowrap;transition:color 0.2s,background 0.2s;}
+.toc-bar a:hover{color:var(--mist);background:rgba(255,255,255,0.04);}
+.toc-bar a.active{color:var(--fern);}
+.content-section{padding:5rem 4rem;border-bottom:1px solid rgba(74,124,89,0.1);}
+.content-section.alt{background:var(--cream);}
+.content-section.dark{background:var(--ink);}
+.section-label{display:flex;align-items:center;gap:1rem;margin-bottom:3rem;}
+.section-label-num{font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--sage);}
+.section-label-line{flex:1;height:1px;background:rgba(74,124,89,0.15);}
+.section-label-tag{font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--moss);}
+h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;color:var(--ink);line-height:1.15;margin-bottom:1.5rem;}
+h2 em{font-style:italic;color:var(--moss);}
+h2.light{color:var(--cream);}
+h2.light em{color:var(--fern);}
+.article-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+.article-layout.wide{grid-template-columns:3fr 2fr;}
+.article-body p{font-size:0.95rem;line-height:1.9;color:var(--ink-light);margin-bottom:1.1rem;}
+.article-body p:last-child{margin-bottom:0;}
+.pull-quote{border-left:3px solid var(--moss);padding:1.2rem 1.5rem;margin:2rem 0;background:rgba(74,124,89,0.05);}
+.pull-quote p{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;font-weight:400;color:var(--ink);line-height:1.5;margin:0!important;}
+.pull-quote cite{display:block;margin-top:0.6rem!important;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--sage);font-style:normal;}
+.seasons-wheel{margin:2rem 0;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,0.15);}
+.season{background:var(--paper);padding:1.8rem 1.4rem;transition:background 0.25s;}
+.season:hover{background:var(--warm);}
+.season-mark{font-family:'Cormorant Garamond',serif;font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--clay);margin-bottom:0.8rem;}
+.season-name{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:var(--ink);margin-bottom:0.4rem;}
+.season-japanese{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.95rem;color:var(--sage);margin-bottom:1rem;}
+.season-desc{font-size:0.83rem;line-height:1.7;color:var(--ink-light);margin-bottom:0.8rem;}
+.season-actions{border-top:1px dashed rgba(74,124,89,0.25);padding-top:0.8rem;font-size:0.78rem;color:var(--moss);line-height:1.65;}
+.thing-block{margin:2rem 0;padding:1.8rem 2rem;border-left:2px solid var(--clay);background:rgba(196,149,106,0.06);}
+.thing-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--ink);margin-bottom:0.3rem;}
+.thing-meta{font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--clay);margin-bottom:1rem;}
+.thing-stages{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin:1.2rem 0;border-top:1px solid rgba(74,124,89,0.15);border-bottom:1px solid rgba(74,124,89,0.15);}
+.stage{padding:0.8rem 0.5rem;text-align:center;border-right:1px solid rgba(74,124,89,0.1);font-size:0.7rem;line-height:1.5;color:var(--ink-light);}
+.stage:last-child{border-right:none;}
+.stage-num{display:block;font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--moss);margin-bottom:0.2rem;}
+.thing-block p{font-size:0.88rem;line-height:1.8;color:var(--ink-light);margin-bottom:0.7rem;}
+.mottainai-strip{background:var(--ink);padding:3rem 3.5rem;margin:3rem 0;display:grid;grid-template-columns:1fr 1.5fr;gap:3rem;align-items:center;}
+.mottainai-symbol{font-family:'Cormorant Garamond',serif;font-size:4.5rem;font-style:italic;color:var(--fern);line-height:1.2;}
+.mottainai-text h3{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:300;color:var(--cream);margin-bottom:1rem;line-height:1.3;}
+.mottainai-text h3 em{font-style:italic;color:var(--fern);}
+.mottainai-text p{font-size:0.9rem;line-height:1.8;color:rgba(211,230,208,0.7);margin-bottom:0.7rem;}
+.practices-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(74,124,89,0.12);margin-top:2rem;}
+.practice-card{background:var(--paper);padding:2rem 1.8rem;transition:background 0.25s;}
+.content-section.alt .practice-card{background:var(--cream);}
+.practice-card:hover{background:var(--warm);}
+.practice-num{font-family:'Cormorant Garamond',serif;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--clay);margin-bottom:0.6rem;}
+.practice-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--ink);margin-bottom:0.6rem;}
+.practice-name em{font-style:italic;color:var(--moss);}
+.practice-desc{font-size:0.85rem;line-height:1.75;color:var(--ink-light);}
+.featured-strip{background:var(--ink);padding:3rem 3.5rem;display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center;margin-top:3rem;}
+.featured-label{font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--sage);margin-bottom:1rem;}
+.featured-strip h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;font-style:italic;color:var(--cream);margin-bottom:0.8rem;line-height:1.2;}
+.featured-strip p{font-size:0.87rem;line-height:1.8;color:rgba(211,230,208,0.68);}
+.featured-btn{background:transparent;color:var(--fern);border:1px solid rgba(110,168,126,0.4);padding:0.8rem 1.6rem;text-decoration:none;font-family:'Jost',sans-serif;font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;white-space:nowrap;display:inline-block;transition:background 0.25s,color 0.25s;}
+.featured-btn:hover{background:var(--fern);color:var(--ink);}
+.rubrics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,0.12);margin-top:3rem;}
+.rubric-card{background:var(--paper);padding:2rem 1.6rem;transition:background 0.25s;}
+.rubric-card:hover{background:var(--warm);}
+.rubric-icon{font-size:1.4rem;margin-bottom:1rem;}
+.rubric-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--ink);margin-bottom:0.6rem;}
+.rubric-desc{font-size:0.82rem;line-height:1.75;color:var(--ink-light);}
+.rubric-example{margin-top:1rem;font-size:0.78rem;font-style:italic;color:var(--moss);line-height:1.6;}
+.rubric-card.dark-card{background:var(--ink);}
+.rubric-card.dark-card .rubric-name{color:var(--cream);}
+.rubric-card.dark-card .rubric-desc{color:rgba(211,230,208,0.65);}
+.rubric-card.dark-card .rubric-example{color:var(--fern);}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity 0.65s ease,transform 0.65s ease;}
+.reveal.visible{opacity:1;transform:none;}
+.d1{transition-delay:0.1s;}.d2{transition-delay:0.2s;}
+  .hero-meta{padding-left:0;border-left:none;border-top:1px solid rgba(74,124,89,0.2);padding-top:1.5rem;}
+  .hero-mark-svg{right:1.5rem;top:9rem;width:60px;height:60px;}
+  .article-layout,.article-layout.wide{grid-template-columns:1fr;gap:2rem;}
+  .seasons-wheel{grid-template-columns:1fr 1fr;}
+  .thing-stages{grid-template-columns:1fr;}
+  .mottainai-strip{grid-template-columns:1fr;gap:1.5rem;padding:2rem;}
+  .practices-grid,.rubrics-grid{grid-template-columns:1fr;}
+  .featured-strip{grid-template-columns:1fr;gap:1.5rem;}
+}
+/* ── Glossary term links ── */
+a.gterm{color:var(--moss);text-decoration:none;border-bottom:1px dashed rgba(74,124,89,.45);transition:border-color .2s,color .2s;}
+a.gterm:hover{color:var(--ink);border-bottom-style:solid;}
+/* ── GLOBAL NAV + FOOTER v2 ── */
+.g-nav-wrap{position:fixed;top:0;left:0;right:0;z-index:300;background:rgba(250,246,239,0.95);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(74,124,89,0.13);font-family:'Jost',sans-serif;}
+.g-nav{display:flex;align-items:center;height:62px;padding:0 3rem;gap:0;}
+.g-logo{display:flex;align-items:center;gap:0.55rem;text-decoration:none;flex-shrink:0;margin-right:auto;}
+.g-logo .logo-svg{width:24px;height:24px;color:var(--ink);}
+.g-logo-text{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--ink);white-space:nowrap;}
+.g-logo-text em{font-style:italic;color:var(--moss);}
+.g-links{display:flex;align-items:center;gap:0;list-style:none;}
+.g-links>li{position:relative;}
+.g-links>li>a,.g-links>li>button{display:flex;align-items:center;gap:0.3rem;font-size:0.75rem;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-light);text-decoration:none;padding:0.45rem 0.9rem;border-radius:3px;background:none;border:none;cursor:pointer;font-family:'Jost',sans-serif;transition:color 0.2s,background 0.2s;}
+.g-links>li>a:hover,.g-links>li>button:hover{color:var(--moss);}
+.g-links>li>a.g-active{color:var(--moss);}
+.g-chevron{width:10px;height:10px;display:block;transition:transform 0.25s;}
+.g-drop-open>.g-drop-btn .g-chevron{transform:rotate(180deg);}
+.g-dropdown{position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);background:var(--ink);border:1px solid rgba(255,255,255,0.08);border-radius:6px;box-shadow:0 16px 40px rgba(0,0,0,0.35);padding:1.2rem;min-width:580px;display:none;grid-template-columns:repeat(3,1fr);gap:0.1rem;z-index:400;}
+.g-drop-open .g-dropdown{display:grid;}
+.g-dd-link{display:flex;align-items:center;gap:0.5rem;text-decoration:none;padding:0.5rem 0.6rem;border-radius:4px;transition:background 0.18s;}
+.g-dd-link:hover{background:rgba(255,255,255,0.08);}
+.g-dd-icon{width:18px;height:18px;flex-shrink:0;color:rgba(110,168,126,0.55);}
+.g-dd-icon svg{width:100%;height:100%;}
+.g-dd-link:hover .g-dd-icon{color:var(--fern);}
+.g-dd-name{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(243,237,227,0.85);}
+.g-dd-num{font-size:0.6rem;letter-spacing:0.12em;color:rgba(168,197,160,0.4);margin-left:auto;}
+.g-dd-link.wip{opacity:0.35;pointer-events:none;}
+.g-burger{display:none;flex-direction:column;justify-content:center;gap:5px;width:32px;height:32px;background:none;border:none;cursor:pointer;padding:3px;margin-left:1rem;}
+.g-burger span{display:block;height:1.5px;background:var(--ink);transition:transform 0.28s,opacity 0.28s,width 0.28s;transform-origin:center;}
+.g-burger span:nth-child(1){width:100%;}
+.g-burger span:nth-child(2){width:70%;}
+.g-burger span:nth-child(3){width:45%;}
+.g-burger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);width:100%;}
+.g-burger.open span:nth-child(2){opacity:0;}
+.g-burger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);width:100%;}
+.g-overlay{display:none;position:fixed;inset:62px 0 0 0;z-index:290;background:rgba(28,43,30,0.98);backdrop-filter:blur(20px);overflow-y:auto;padding:2rem 2rem 3rem;}
+.g-overlay.open{display:block;}
+.g-ov-section{margin-bottom:2rem;}
+.g-ov-label{font-size:0.64rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(168,197,160,0.45);margin-bottom:0.8rem;font-family:'Jost',sans-serif;}
+.g-ov-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.15rem;}
+.g-ov-link{display:flex;align-items:center;gap:0.5rem;text-decoration:none;padding:0.6rem 0.5rem;border-radius:4px;transition:background 0.18s;}
+.g-ov-link:hover{background:rgba(255,255,255,0.07);}
+.g-ov-icon{width:18px;height:18px;color:rgba(110,168,126,0.55);flex-shrink:0;}
+.g-ov-icon svg{width:100%;height:100%;}
+.g-ov-name{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(243,237,227,0.85);}
+.g-ov-link.wip{opacity:0.35;pointer-events:none;}
+.g-ov-simple-links{display:flex;flex-direction:column;gap:0.15rem;}
+.g-ov-simple-link{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(243,237,227,0.8);text-decoration:none;padding:0.55rem 0.5rem;border-radius:4px;transition:background 0.18s;}
+.g-ov-simple-link:hover{background:rgba(255,255,255,0.07);color:#f3ede3;}
+
+/* FOOTER */
+.g-footer-logo .logo-svg{width:22px;height:22px;}
+.g-footer-logo-text em{font-style:italic;color:var(--fern);}
+.g-footer-sec-link.wip{opacity:0.25;pointer-events:none;}
+.g-footer-sec-icon svg{width:100%;height:100%;}
+.g-footer-bottom-links a{font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(168,197,160,0.35);text-decoration:none;transition:color 0.18s;}
+.g-footer-bottom-links a:hover{color:var(--fern);}
+
+body{padding-top:62px!important;}
+/* ── GLOBAL FOOTER ── */
+.gf{background:var(--ink);padding:3.5rem 3rem 0;font-family:'Jost',sans-serif;}
+.gf-top{display:grid;grid-template-columns:200px 1fr;gap:4rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,0.07);}
+.gf-brand{}
+.gf-logo{display:flex;align-items:center;gap:0.55rem;text-decoration:none;margin-bottom:1rem;}
+.gf-logo-text{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--cream);}
+.gf-logo-text em{font-style:italic;color:var(--fern);}
+.gf-tagline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.88rem;color:rgba(168,197,160,0.45);line-height:1.65;max-width:175px;}
+.gf-cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2.5rem;}
+.gf-col-title{font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(168,197,160,0.38);margin-bottom:1rem;}
+.gf-sections{display:grid;grid-template-columns:1fr 1fr;gap:0.05rem;}
+.gf-sec-link{display:flex;align-items:center;gap:0.4rem;text-decoration:none;padding:0.38rem 0.25rem;border-radius:3px;opacity:0.68;transition:opacity 0.18s,background 0.18s;}
+.gf-sec-link:hover{opacity:1;background:rgba(255,255,255,0.06);}
+.gf-sec-icon{width:15px;height:15px;color:var(--fern);flex-shrink:0;}
+.gf-sec-icon svg{width:100%;height:100%;}
+.gf-sec-name{font-family:'Cormorant Garamond',serif;font-size:0.9rem;color:var(--mist);}
+.gf-nav-links{display:flex;flex-direction:column;gap:0.05rem;}
+.gf-nav-link{font-family:'Cormorant Garamond',serif;font-size:0.92rem;color:rgba(211,230,208,0.58);text-decoration:none;padding:0.38rem 0.25rem;border-radius:3px;transition:color 0.18s,background 0.18s;}
+.gf-nav-link:hover{color:var(--fern);background:rgba(255,255,255,0.05);}
+.gf-bottom{padding:1.5rem 0 1.8rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.8rem;}
+.gf-copy{font-size:0.67rem;letter-spacing:0.08em;color:rgba(168,197,160,0.28);}
+.gf-bottom-links{display:flex;gap:1rem;}
+.gf-bottom-links a{font-size:0.67rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(168,197,160,0.35);text-decoration:none;transition:color 0.18s;}
+.gf-bottom-links a:hover{color:var(--fern);}
+@media(max-width:860px){
+  .gf{padding:2.5rem 1.5rem 0;}
+  .gf-top{grid-template-columns:1fr;gap:2rem;}
+  .gf-cols{grid-template-columns:1fr 1fr;gap:1.5rem;}
+}
+@media(max-width:540px){
+  .gf-cols{grid-template-columns:1fr;}
+  .gf-sections{grid-template-columns:1fr 1fr;}
+  .gf-bottom{flex-direction:column;align-items:flex-start;gap:0.6rem;}
+}
+</style>
+  <link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
+</head>
+<body>
+<div class="g-nav-wrap" id="gNavWrap">
+  <div class="g-nav">
+    <a href="index.html" class="g-logo">
+      <svg viewBox="0 0 100 100" fill="none" class="logo-svg"><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#4a7c59"/></svg>
+      <span class="g-logo-text">Эко<em>Сознание</em></span>
+    </a>
+    <ul class="g-links">
+      <li>
+        <button class="g-drop-btn" aria-expanded="false">
+          Разделы
+          <svg class="g-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="g-dropdown">
+          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
+          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
+          <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
+          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
+          <a href="section-compost.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Компост</span><span class="g-dd-num">05b</span></a>
+          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
+          <a href="section-construction.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="g-dd-name">Строительство</span><span class="g-dd-num">06b</span></a>
+          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
+          <a href="section-art.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></span><span class="g-dd-name">Искусство</span><span class="g-dd-num">08</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">09</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">10</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">11</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">12</span></a>
+        </div>
+      </li>
+      <li><a href="index.html#latest">Эссе</a></li>
+      <li><a href="glossary.html">Глоссарий</a></li>
+      <li><a href="about.html">О проекте</a></li>
+    </ul>
+    <button class="g-burger" id="gBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+<div class="g-overlay" id="gOverlay">
+  <div class="g-ov-section">
+    <div class="g-ov-label">Разделы</div>
+    <div class="g-ov-grid">
+      <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Философия</span></a>
+      <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
+      <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
+      <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Технологии</span></a>
+      <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
+      <a href="section-compost.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Компост</span></a>
+      <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
+      <a href="section-construction.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/></svg></span><span class="g-ov-name">Строительство</span></a>
+      <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-ov-name">Экономика</span></a>
+      <a href="section-art.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></span><span class="g-ov-name">Искусство</span></a>
+      <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Образование</span></a>
+      <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
+      <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
+      <a href="section-health.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-ov-name">Здоровье</span></a>
+    </div>
+  </div>
+  <div class="g-ov-section">
+    <div class="g-ov-label">Навигация</div>
+    <div class="g-ov-simple-links">
+      <a href="index.html" class="g-ov-simple-link">Главная</a>
+      <a href="index.html#latest" class="g-ov-simple-link">Эссе и лаборатории</a>
+      <a href="glossary.html" class="g-ov-simple-link">Глоссарий</a>
+      <a href="map.html" class="g-ov-simple-link">Карта связей</a>
+      <a href="about.html" class="g-ov-simple-link">О проекте</a>
+    </div>
+  </div>
+</div>
+
+<section class="hero" id="top">
+  <div class="hero-mark-svg"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/><line x1="30" y1="30" x2="37" y2="37" stroke-linecap="round"/><line x1="63" y1="63" x2="70" y2="70" stroke-linecap="round"/></svg></div>
+  <div>
+    <div class="hero-tag">Раздел · Стиль жизни</div>
+    <h1>Медленная жизнь —<br><em>этическая позиция</em></h1>
+    <p class="hero-lead">Не «десять экопривычек» и не лайфхаки. Этот раздел про медленность как форму внимания к миру, про сезонность как структуру времени, про вещи и их жизнь. Slow movement, моттаинаи, ремонт вместо замены — формы повседневной этики, в которых экология становится способом быть.</p>
+  </div>
+  <div class="hero-meta">
+    <div><div class="meta-label">Ключевые понятия</div><div class="meta-value">Slow movement · Моттаинаи · Сезонность · Repair culture · Простота · Сатисфайсинг</div></div>
+    <div><div class="meta-label">Ключевые мыслители</div><div class="meta-value">Карло Петрини · Вангари Маатаи · Карл Оноре · Вилли Уэр</div></div>
+    <div><div class="meta-label">Рубрики</div><div class="meta-value">Сезон · Вещь · Дневник замедления</div></div>
+  </div>
+</section>
+
+<div class="toc-bar">
+  <a href="#slow" class="active">Замедление</a>
+  <a href="#seasons">Сезоны</a>
+  <a href="#things">Вещи</a>
+  <a href="#mottainai">Моттаинаи</a>
+  <a href="#practices">Практики</a>
+  <a href="#critique">Честный взгляд</a>
+  <a href="#rubrics">Рубрики</a>
+</div>
+
+<section class="content-section" id="slow">
+  <div class="section-label"><span class="section-label-num">01</span><span class="section-label-line"></span><span class="section-label-tag">Замедление как этика</span></div>
+  <div class="article-layout wide reveal">
+    <div class="article-body">
+      <h2>Slow movement —<br><em>не про скорость</em></h2>
+      <p>В 1986 году в Риме у подножия Испанской лестницы открылся первый Макдоналдс. Журналист Карло Петрини был возмущён — не из-за гамбургеров, а потому что мир, в котором обед готовится за 30 секунд, перестаёт быть местом для полноценной жизни. Так родилось <a href="glossary.html#Slow Food" class="gterm" title="Slow Food">Slow Food</a>.</p>
+      <p>За тридцать лет идея «медленного» распространилась далеко: Slow Travel, Slow Fashion, Slow Cities, Slow Tech. Но это не про скорость само по себе. Медленное движение — про <em style="font-style:italic;color:var(--moss)">внимание</em>. Про возможность заметить, что ты ешь, где находишься, что носишь.</p>
+      <div class="pull-quote"><p>«Слово "slow" не противоположно слову "fast". Оно противоположно слову "rushed" — суетному»</p><cite>Карл Оноре · «In Praise of Slowness»</cite></div>
+      <p>Это и есть мостик между Slow movement и экологией. Поспешное потребление не видит, что покупает. Медленность создаёт условия видения, без которых осознанный выбор невозможен.</p>
+    </div>
+    <div class="reveal d1">
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:400;color:var(--ink);margin-bottom:1rem;">Семейство медленных движений</h3>
+      <div class="practices-grid">
+        <div class="practice-card"><div class="practice-num">с 1986</div><div class="practice-name">Slow <em>Food</em></div><div class="practice-desc">Защита локальных продовольственных традиций и биоразнообразия. 150+ стран в сети.</div></div>
+        <div class="practice-card"><div class="practice-num">с 1999</div><div class="practice-name">Cittaslow</div><div class="practice-desc">«Медленные города» до 50 000 жителей. 290+ городов в 30 странах мира.</div></div>
+        <div class="practice-card"><div class="practice-num">с 2007</div><div class="practice-name">Slow <em>Fashion</em></div><div class="practice-desc">Меньше одежды, лучшего качества, с историей происхождения, чаще ремонтируемой.</div></div>
+        <div class="practice-card"><div class="practice-num">сегодня</div><div class="practice-name">Slow <em>Travel</em></div><div class="practice-desc">Путешествие как пребывание, а не перемещение. Один город две недели вместо четырёх стран.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section alt" id="seasons">
+  <div class="section-label"><span class="section-label-num">02</span><span class="section-label-line"></span><span class="section-label-tag">Сезонность как структура года</span></div>
+  <div class="article-layout wide reveal">
+    <div class="article-body">
+      <h2>Вернуть <em>год</em></h2>
+      <p>Индустриальная цивилизация подарила возможность жить, словно сезонов не существует. Помидоры в декабре, клубника в феврале, ананас круглый год. Цена этого — потеря связи с временем.</p>
+      <p>У японцев год делится не на 4, а на 72 микросезона. Это эстетико-этическая практика: год становится невероятно богатым. Каждый момент — единственный.</p>
+      <div class="pull-quote"><p>«Жить по сезонам — значит позволить году научить тебя ритму, который не ты выбрал»</p></div>
+      <p>Сезонная еда — самое простое начало: клубника в июне вкуснее, чем клубника в январе, и её ожидание становится частью радости. Это не аскеза, а полнота.</p>
+    </div>
+    <div class="reveal d1">
+      <div class="seasons-wheel">
+        <div class="season"><div class="season-mark">Март–Май</div><div class="season-name">Весна</div><div class="season-japanese">— 春 · хару —</div><div class="season-desc">Первые травы: крапива, черемша, сныть. Земля просыпается.</div><div class="season-actions"><strong>Еда:</strong> молодая зелень, редис, ревень<br><strong>Дело:</strong> наблюдать первоцветы</div></div>
+        <div class="season"><div class="season-mark">Июнь–Август</div><div class="season-name">Лето</div><div class="season-japanese">— 夏 · нацу —</div><div class="season-desc">Изобилие. Самый длинный день. Местная еда наиболее разнообразна.</div><div class="season-actions"><strong>Еда:</strong> ягоды, томаты, кабачки<br><strong>Дело:</strong> заготавливать</div></div>
+        <div class="season"><div class="season-mark">Сентябрь–Ноябрь</div><div class="season-name">Осень</div><div class="season-japanese">— 秋 · аки —</div><div class="season-desc">Сбор. Грибы, корнеплоды, тыквы. Время благодарности.</div><div class="season-actions"><strong>Еда:</strong> яблоки, тыквы, орехи<br><strong>Дело:</strong> запасать</div></div>
+        <div class="season"><div class="season-mark">Декабрь–Февраль</div><div class="season-name">Зима</div><div class="season-japanese">— 冬 · фую —</div><div class="season-desc">Темнота и пауза. Время восстановления и глубокого внимания.</div><div class="season-actions"><strong>Еда:</strong> квашеное, орехи, хранимое<br><strong>Дело:</strong> медлить</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section" id="things">
+  <div class="section-label"><span class="section-label-num">03</span><span class="section-label-line"></span><span class="section-label-tag">Жизнь вещи</span></div>
+  <div class="article-layout wide reveal">
+    <div class="article-body">
+      <h2>Вещь как <em>отношение</em></h2>
+      <p>Современное потребление обходится с вещами так, словно у них нет биографии. Покупается — используется — выбрасывается. Но у каждой вещи есть жизнь до нас и жизнь после.</p>
+      <div class="thing-block">
+        <div class="thing-name">Деревянный стул</div>
+        <div class="thing-meta">Пять стадий жизни одной вещи</div>
+        <div class="thing-stages">
+          <div class="stage"><span class="stage-num">1</span>Происхождение<br>лес, ~80 лет</div>
+          <div class="stage"><span class="stage-num">2</span>Изготовление<br>столяр, 8 часов</div>
+          <div class="stage"><span class="stage-num">3</span>Жизнь<br>30–100 лет</div>
+          <div class="stage"><span class="stage-num">4</span>Ремонт<br>ножки, перетяжка</div>
+          <div class="stage"><span class="stage-num">5</span>После<br>дрова, компост</div>
+        </div>
+        <p>Стул, прослуживший 80 лет, — это другой разговор о ресурсах, чем стул, выброшенный через два.</p>
+      </div>
+    </div>
+    <div class="reveal d1">
+      <div class="practices-grid">
+        <div class="practice-card"><div class="practice-num">01</div><div class="practice-name">Покупать <em>меньше и лучше</em></div><div class="practice-desc">Высокая первоначальная цена — инвестиция в длительность. Один хороший нож вместо пяти дешёвых.</div></div>
+        <div class="practice-card"><div class="practice-num">02</div><div class="practice-name">Чинить, <em>не заменять</em></div><div class="practice-desc">Repair café, базовые навыки шитья. Каждая починка — вторая жизнь вещи.</div></div>
+        <div class="practice-card"><div class="practice-num">03</div><div class="practice-name">Делиться <em>редко нужным</em></div><div class="practice-desc">Дрель нужна 13 минут в год. Палатка — 7 ночей. Эти вещи естественно живут коллективно.</div></div>
+        <div class="practice-card"><div class="practice-num">04</div><div class="practice-name">Знать <em>происхождение</em></div><div class="practice-desc">Покупка с пониманием: где произведено, кем, как. От локальных сыров до этической электроники.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section alt" id="mottainai">
+  <div class="section-label"><span class="section-label-num">04</span><span class="section-label-line"></span><span class="section-label-tag">Японский урок</span></div>
+  <div class="article-layout reveal">
+    <div class="article-body">
+      <h2><a href="glossary.html#Моттаинаи" class="gterm" title="Моттаинаи">Моттаинаи</a>:<br><em>«какая жалость, что тратится»</em></h2>
+      <p>В японском есть слово <em style="font-style:italic;color:var(--moss)">もったいない</em> — <a href="glossary.html#Моттаинаи" class="gterm" title="Моттаинаи">моттаинаи</a>. Оно выражает сожаление о напрасной трате чего-то ценного. Не из-за денег — потому что у вещи есть своё достоинство.</p>
+      <p>В 2005 году Вангари Маатаи попыталась сделать это слово глобальным экологическим термином. Она увидела в нём то, чего не хватает западному дискурсу: отношение к вещам без морализма, просто: <em style="font-style:italic;color:var(--moss)">жалко</em>.</p>
+      <div class="pull-quote"><p>«Это слово охватывает четыре R в одном движении — Reduce, Reuse, Recycle, Repair — без лекции»</p><cite>Вангари Маатаи</cite></div>
+    </div>
+    <div class="reveal d1">
+      <div class="mottainai-strip">
+        <div class="mottainai-symbol">もったい<br>ない</div>
+        <div class="mottainai-text">
+          <h3>Четыре практики <em>моттаинаи</em></h3>
+          <p><strong style="color:var(--cream);font-weight:400">Кинцуги</strong> — починка разбитой керамики золотым лаком. Трещина становится частью красоты.</p>
+          <p><strong style="color:var(--cream);font-weight:400">Боро</strong> — многократно ремонтируемые ткани, у которых каждый шов — слой биографии.</p>
+          <p><strong style="color:var(--cream);font-weight:400">Фурошики</strong> — квадратный платок, становящийся сумкой или упаковкой подарка.</p>
+          <p><strong style="color:var(--cream);font-weight:400">Сэнто</strong> — общественные бани, где горячая вода используется коллективно.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section" id="practices">
+  <div class="section-label"><span class="section-label-num">05</span><span class="section-label-line"></span><span class="section-label-tag">Практики</span></div>
+  <h2 class="reveal">Что можно начать <em>сегодня</em></h2>
+  <div class="practices-grid reveal d1">
+    <div class="practice-card"><div class="practice-num">01</div><div class="practice-name">Один сезонный <em>продукт</em></div><div class="practice-desc">Клубника — только июнь-июль. Через год вы будете чувствовать время телом.</div></div>
+    <div class="practice-card"><div class="practice-num">02</div><div class="practice-name">Прогулка <em>без цели</em></div><div class="practice-desc">20 минут без задачи. Способ восстановить внимание к месту, где живёшь.</div></div>
+    <div class="practice-card"><div class="practice-num">03</div><div class="practice-name">Чинить раз <em>в месяц</em></div><div class="practice-desc">Один день в месяц — для починки чего-то одного. Ввести ритм починки в жизнь.</div></div>
+    <div class="practice-card"><div class="practice-num">04</div><div class="practice-name">Локальная еда <em>раз в неделю</em></div><div class="practice-desc">Один приём пищи только из ингредиентов в радиусе 100 км. Упражнение в знании региона.</div></div>
+    <div class="practice-card"><div class="practice-num">05</div><div class="practice-name">Пауза <em>перед покупкой</em></div><div class="practice-desc">Между желанием купить и покупкой — 24 часа. Через сутки 60% желаний пропадают сами.</div></div>
+    <div class="practice-card"><div class="practice-num">06</div><div class="practice-name">Темнота <em>вечером</em></div><div class="practice-desc">За час до сна — выключить верхний свет. Тело начнёт правильно вырабатывать мелатонин.</div></div>
+  </div>
+  <div class="featured-strip reveal d1">
+    <div>
+      <div class="featured-label">Эссе рубрики «Дневник замедления» · 15 мин</div>
+      <h3>Год без денег: эксперимент Марка Бойла</h3>
+      <p>Молодой экономист Бойл в 2008 году решил прожить год без единой монеты. Эксперимент длится до сих пор. Исследование того, что видно, когда деньги перестают быть невидимыми.</p>
+    </div>
+    <a href="essay-moneyless-year.html" class="featured-btn">Читать →</a>
+  </div>
+
+
+  <div class="featured-strip reveal d1" style="margin-top:1.5rem;background:rgba(74,124,89,.92);">
+    <div>
+      <div class="featured-label" style="color:rgba(243,237,227,.7);">Эссе раздела · 16 мин</div>
+      <h3>Медленнее — не значит ленивее. Это другая шкала</h3>
+      <p>Slow Food, Cittaslow, моттаинаи и sufficiency. Программное эссе о медленной жизни как этической позиции и форме экологического действия.</p>
+    </div>
+    <a href="essay-slow-life.html" class="featured-btn" style="border-color:rgba(243,237,227,.4);color:var(--cream);">Читать →</a>
+  </div>
+</section>
+
+<section class="content-section alt" id="critique">
+  <div class="section-label"><span class="section-label-num">06</span><span class="section-label-line"></span><span class="section-label-tag">Честный взгляд</span></div>
+  <div class="article-layout reveal">
+    <div class="article-body">
+      <h2>Чего стиль жизни <em>не решит</em></h2>
+      <p>Раздел «Стиль жизни» — самый соблазнительный и самый опасный во всём ресурсе. Соблазн в простоте: «измени привычки, и всё наладится». Опасность — ровно в этой же простоте.</p>
+      <p>Индивидуальные практики важны, но не заменяют системных изменений. «Slow life» легче тем, у кого есть свободное время. Покупать дорогое и качественное — не всем доступно.</p>
+      <div class="pull-quote"><p>«Цель не быть идеальным потребителем. Цель — постепенно стать человеком, которому меньше нужна сама идея потребления как организующего принципа»</p></div>
+    </div>
+    <div class="reveal d1">
+      <div class="practices-grid">
+        <div class="practice-card"><div class="practice-num">Ловушка 01</div><div class="practice-name">Эко-<em>выгорание</em></div><div class="practice-desc">Когда забота о планете становится постоянной тревогой — это сигнал отступить. Экология не должна быть источником страдания.</div></div>
+        <div class="practice-card"><div class="practice-num">Ловушка 02</div><div class="practice-name">Гринвошинг <em>себя</em></div><div class="practice-desc">Покупка «экологичного» иногда — компенсация, а не уменьшение следа. Новая вещь не становится лучше от наклейки «eco».</div></div>
+        <div class="practice-card"><div class="practice-num">Ловушка 03</div><div class="practice-name">Морализм <em>к другим</em></div><div class="practice-desc">Когда личные практики становятся поводом осуждать — теряется и смысл, и эффект.</div></div>
+        <div class="practice-card"><div class="practice-num">Ловушка 04</div><div class="practice-name">Стиль <em>вместо политики</em></div><div class="practice-desc">Раздельный мусор не отменяет необходимости голосовать. Стиль жизни — дополнение к системным действиям, не замена.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section" id="rubrics">
+  <div class="section-label"><span class="section-label-num">07</span><span class="section-label-line"></span><span class="section-label-tag">Рубрики раздела</span></div>
+  <h2 class="reveal">Форматы <em>материалов</em></h2>
+  <div class="rubrics-grid reveal d1">
+    <div class="rubric-card">
+      <div class="rubric-icon">🌿</div>
+      <div class="rubric-name">Сезон</div>
+      <div class="rubric-desc">Эссе и заметки, посвящённые одному моменту года. Что цветёт, что есть на рынке, какой ритм естественен сейчас.</div>
+      <div class="rubric-example">→ «Май: что растёт у вас под ногами»</div>
+    </div>
+    <div class="rubric-card dark-card">
+      <div class="rubric-icon">🪑</div>
+      <div class="rubric-name">Вещь</div>
+      <div class="rubric-desc">Биография одной вещи. Откуда она, кто её сделал, сколько проживёт. Не каталог — встреча с конкретным предметом.</div>
+      <div class="rubric-example">→ «Чугунная сковорода: история предмета, который переживёт нас»</div>
+    </div>
+    <div class="rubric-card">
+      <div class="rubric-icon">📔</div>
+      <div class="rubric-name">Дневник замедления</div>
+      <div class="rubric-desc">Личные истории людей, которые попробовали изменить ритм. Не «истории успеха» — настоящие дневники с провалами.</div>
+      <div class="rubric-example">→ «Шесть месяцев без новой одежды: дневник»</div>
+    </div>
+  </div>
+</section>
+
+<script>
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.08});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+const tocLinks=document.querySelectorAll('.toc-bar a');
+const sections=document.querySelectorAll('section[id]');
+window.addEventListener('scroll',()=>{let c='';sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)c=s.id;});tocLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+c));});
+</script>
+<!-- FOOTER -->
+<script>
+(function(){
+  // Dropdown toggle
+  document.querySelectorAll('.g-drop-btn').forEach(btn=>{
+    btn.addEventListener('click',e=>{
+      e.stopPropagation();
+      const li=btn.closest('li');
+      const open=li.classList.toggle('g-drop-open');
+      btn.setAttribute('aria-expanded',open);
+      document.querySelectorAll('.g-drop-open').forEach(el=>{if(el!==li)el.classList.remove('g-drop-open');});
+    });
+  });
+  document.addEventListener('click',()=>document.querySelectorAll('.g-drop-open').forEach(el=>el.classList.remove('g-drop-open')));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.g-drop-open').forEach(el=>el.classList.remove('g-drop-open'));});
+
+  // Burger / overlay
+  const burger=document.getElementById('gBurger');
+  const overlay=document.getElementById('gOverlay');
+  if(burger&&overlay){
+    burger.addEventListener('click',()=>{
+      const open=overlay.classList.toggle('open');
+      burger.classList.toggle('open',open);
+      document.body.style.overflow=open?'hidden':'';
+    });
+    overlay.querySelectorAll('a[href]').forEach(a=>a.addEventListener('click',()=>{
+      overlay.classList.remove('open');burger.classList.remove('open');document.body.style.overflow='';
+    }));
+    document.addEventListener('keydown',e=>{
+      if(e.key==='Escape'&&overlay.classList.contains('open')){
+        overlay.classList.remove('open');burger.classList.remove('open');document.body.style.overflow='';
+      }
+    });
+  }
+
+  // Highlight active page
+  const pg = location.pathname.split('/').pop() || 'ecolife-landing.html';
+  // Mark active in dropdown and overlay
+  document.querySelectorAll('.g-dd-link, .g-ov-link').forEach(a => {
+    const href = a.getAttribute('href');
+    if (href === pg) {
+      a.style.background = 'rgba(255,255,255,0.1)';
+      const name = a.querySelector('.g-dd-name, .g-ov-name');
+      if (name) name.style.color = '#f3ede3';
+      const icon = a.querySelector('.g-dd-icon, .g-ov-icon');
+      if (icon) icon.style.color = 'var(--fern)';
+    }
+  });
+  // Mark active top-level nav link
+  document.querySelectorAll('.g-links > li > a').forEach(a => {
+    const href = a.getAttribute('href');
+    if (href === pg || href === 'ecolife-landing.html#latest' && ['essay','lab'].some(p => pg.startsWith(p))) {
+      a.classList.add('g-active');
+    }
+    if (href === 'glossary.html' && pg === 'glossary.html') a.classList.add('g-active');
+    if (href === 'about.html' && pg === 'about.html') a.classList.add('g-active');
+  });
+  // If current page is a section, mark 'Разделы' button as active
+  if (pg.startsWith('section-')) {
+    const btn = document.querySelector('.g-drop-btn');
+    if (btn) btn.style.color = 'var(--moss)';
+  }
+})();</script>
+<footer class="gf">
+  <div class="gf-top">
+    <div class="gf-brand">
+      <a href="index.html" class="gf-logo">
+        <svg viewBox="0 0 100 100" fill="none" class="logo-svg" style="width:24px;height:24px;flex-shrink:0;"><circle cx="50" cy="50" r="40" stroke="#f3ede3" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#6ea87e"/></svg>
+        <span class="gf-logo-text">Эко<em>Сознание</em></span>
+      </a>
+      <p class="gf-tagline">Экологический взгляд как линза для любой сферы жизни</p>
+    </div>
+    <div class="gf-cols">
+      <div>
+        <div class="gf-col-title">Разделы</div>
+        <div class="gf-sections">
+          <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Философия</span></a>
+          <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
+          <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
+          <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Технологии</span></a>
+          <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
+          <a href="section-compost.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Компост</span></a>
+          <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
+          <a href="section-construction.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="gf-sec-name">Строительство</span></a>
+          <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="gf-sec-name">Экономика</span></a>
+          <a href="section-art.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></span><span class="gf-sec-name">Искусство</span></a>
+          <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Образование</span></a>
+          <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
+          <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
+          <a href="section-health.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Здоровье</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="gf-col-title">Материалы</div>
+        <nav class="gf-nav-links">
+          <a href="essay-truth-and-climate.html" class="gf-nav-link">Истина и климат</a>
+          <a href="essay-passive-design.html" class="gf-nav-link">Пассивный дизайн</a>
+          <a href="essay-solastalgia.html" class="gf-nav-link">Соластальгия</a>
+          <a href="essay-community-survives.html" class="gf-nav-link">Что нужно общине</a>
+          <a href="essay-bread.html" class="gf-nav-link">Хлеб</a>
+          <a href="essay-morning-light.html" class="gf-nav-link">Утренний свет</a>
+          <a href="essay-moneyless-year.html" class="gf-nav-link">Год без денег</a>
+          <a href="lab-heidegger-plastic.html" class="gf-nav-link">Лаб №01 · Пластик</a>
+          <a href="lab-hyperobject-room.html" class="gf-nav-link">Лаб №02 · Комната</a>
+          <a href="lab-jacket-biography.html" class="gf-nav-link">Лаб №03 · Куртка</a>
+          <a href="lab-15min-city.html" class="gf-nav-link">Лаб №04 · Город</a>
+          <a href="lab-bateson-gpt.html" class="gf-nav-link">Лаб №05 · Бейтсон</a>
+        </nav>
+      </div>
+      <div>
+        <div class="gf-col-title">Навигация</div>
+        <nav class="gf-nav-links">
+          <a href="index.html" class="gf-nav-link">Главная</a>
+          <a href="map.html" class="gf-nav-link">Карта связей</a>
+            <a href="about.html" class="gf-nav-link">О проекте</a>
+          <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
+          <a href="section-icons-library.html" class="gf-nav-link">Знаки разделов</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="gf-bottom">
+    <span class="gf-copy">© 2025 ЭкоСознание</span>
+    <div class="gf-bottom-links">
+      <a href="about.html">О проекте</a>
+      <a href="glossary.html">Глоссарий</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

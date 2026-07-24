@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="История технологии и её экологический след — от огня до искусственного интеллекта. Мамфорд, Хабер-Бош, Великое ускорение, парадокс Джевонса, Иллич.">
+<meta property="og:title" content="Технология — наша вторая природа. И первая беда — ЭкоСознание">
+<meta property="og:description" content="История технологии и её экологический след — от огня до искусственного интеллекта. Мамфорд, Хабер-Бош, Великое ускорение, парадокс Джевонса.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Технология — наша вторая природа. И первая беда — ЭкоСознание</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--ink:#1c2b1e;--ink-light:#3d5240;--moss:#4a7c59;--fern:#6ea87e;--sage:#a8c5a0;--mist:#d4e6d0;--cream:#f3ede3;--warm:#ece5d6;--paper:#faf6ef;--gold:#b8924a;--clay:#c4956a;--rust:#7a4f2e;}
+html{scroll-behavior:smooth;}
+body{background:var(--paper);color:var(--ink);font-family:'Jost',sans-serif;font-weight:300;overflow-x:hidden;}
+.essay-hero{padding:9rem 4rem 5rem;max-width:1100px;margin:0 auto;}
+.essay-tag{display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:2rem;}
+.essay-tag::before{content:'';display:block;width:24px;height:1px;background:var(--fern);}
+.essay-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,5.5vw,4.6rem);font-weight:300;line-height:1.05;color:var(--ink);margin-bottom:2.5rem;max-width:900px;}
+.essay-hero h1 em{font-style:italic;color:var(--moss);}
+.essay-meta{display:flex;gap:3rem;padding:1.4rem 0;border-top:1px solid rgba(74,124,89,.18);border-bottom:1px solid rgba(74,124,89,.18);flex-wrap:wrap;}
+.essay-meta-item{font-size:.78rem;color:var(--ink-light);}
+.essay-meta-item strong{display:block;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:.3rem;}
+.essay{max-width:720px;margin:0 auto;padding:5rem 4rem 6rem;}
+.essay>p{font-family:'Cormorant Garamond',serif;font-size:1.18rem;line-height:1.75;color:var(--ink);margin-bottom:1.8rem;}
+.essay>p:first-of-type::first-letter{font-size:4.6rem;font-weight:400;line-height:.85;float:left;margin:.25rem .6rem 0 0;color:var(--moss);font-family:'Cormorant Garamond',serif;}
+.essay h2{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--ink);margin:3.5rem 0 2rem;line-height:1.2;}
+.essay h2 em{font-style:italic;color:var(--moss);}
+.essay h2 small{display:block;font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--clay);font-weight:400;margin-bottom:.7rem;}
+.essay em.t{font-style:italic;color:var(--moss);}
+.essay blockquote{margin:2.5rem 0;padding:0 0 0 2rem;border-left:2px solid var(--fern);}
+.essay blockquote p{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-style:italic;color:var(--ink-light);line-height:1.5;margin-bottom:.6rem!important;}
+.essay blockquote cite{font-family:'Jost',sans-serif;font-style:normal;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--moss);}
+.sb{display:flex;align-items:center;justify-content:center;gap:1.5rem;margin:4rem 0;}
+.sb::before,.sb::after{content:'';flex:1;max-width:100px;height:1px;background:rgba(74,124,89,.25);}
+.sb span{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-style:italic;color:var(--moss);}
+.idea{margin:3rem 0;padding:2.2rem 2.5rem 2.2rem 3rem;background:var(--cream);border-left:3px solid var(--moss);position:relative;}
+.idea::before{content:'Идея';position:absolute;top:-.7rem;left:2.2rem;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);background:var(--paper);padding:0 .6rem;}
+.idea p{font-family:'Cormorant Garamond',serif!important;font-size:1.15rem!important;font-style:italic;color:var(--ink)!important;line-height:1.55!important;margin:0!important;}
+.interlude{background:var(--ink);margin:5rem -4rem;padding:4rem 4rem;}
+.interlude-in{max-width:720px;margin:0 auto;}
+.interlude small{font-family:'Jost',sans-serif;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sage);display:block;margin-bottom:1rem;}
+.interlude h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;font-style:italic;color:var(--cream);line-height:1.3;margin-bottom:1.5rem;}
+.interlude p{font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.7;color:rgba(211,230,208,.78);margin-bottom:1.3rem;}
+.numbers-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.15);margin:2rem 0;}
+.num-card{background:var(--cream);padding:1.4rem 1.1rem;text-align:center;}
+.num-card .n-big{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--moss);line-height:1;margin-bottom:.4rem;}
+.num-card .n-lbl{font-size:.74rem;line-height:1.5;color:var(--ink-light);}
+.timeline-mini{margin:2.5rem 0;border-left:2px solid var(--fern);padding-left:1.8rem;}
+.tm-row{margin-bottom:1.3rem;position:relative;}
+.tm-row:last-child{margin-bottom:0;}
+.tm-row::before{content:'';position:absolute;left:-2.1rem;top:.4rem;width:7px;height:7px;border-radius:50%;background:var(--moss);}
+.tm-era{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.25rem;}
+.tm-event{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink);line-height:1.4;}
+.tm-event em{font-style:italic;color:var(--moss);}
+.sig{margin-top:5rem;padding-top:3rem;border-top:1px solid rgba(74,124,89,.18);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem;}
+.sig-a{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink-light);font-style:italic;}
+.sig-m{font-size:.74rem;letter-spacing:.1em;color:var(--sage);text-transform:uppercase;}
+.rel{background:var(--cream);padding:4rem;border-top:1px solid rgba(74,124,89,.15);}
+.rel-in{max-width:1100px;margin:0 auto;}
+.rel-label{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--moss);margin-bottom:1.5rem;}
+.rel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.15);}
+.rel-card{background:var(--cream);padding:1.6rem;text-decoration:none;transition:background .25s;}
+.rel-card:hover{background:var(--warm);}
+.rel-kind{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.5rem;}
+.rel-name{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink);line-height:1.3;}
+.reading-bar{position:fixed;top:0;left:0;height:2px;background:var(--moss);z-index:400;width:0%;transition:width .1s linear;}
+@media(max-width:720px){
+  .essay-hero,.essay,.rel{padding-left:1.5rem;padding-right:1.5rem;}
+  .interlude{margin-left:-1.5rem;margin-right:-1.5rem;padding-left:1.5rem;padding-right:1.5rem;}
+  .rel-grid{grid-template-columns:1fr;}
+  .essay-meta{flex-direction:column;gap:1rem;}
+  .numbers-row{grid-template-columns:1fr 1fr;}
+}
+/* ── Glossary term links ── */
+a.gterm{color:var(--moss);text-decoration:none;border-bottom:1px dashed rgba(74,124,89,.45);transition:border-color .2s,color .2s;}
+a.gterm:hover{color:var(--ink);border-bottom-style:solid;}
+/* ── GLOBAL FOOTER ── */
+.gf{background:var(--ink);padding:3.5rem 3rem 0;font-family:'Jost',sans-serif;}
+.gf-top{display:grid;grid-template-columns:200px 1fr;gap:4rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,0.07);}
+.gf-brand{}
+.gf-logo{display:flex;align-items:center;gap:0.55rem;text-decoration:none;margin-bottom:1rem;}
+.gf-logo-text{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--cream);}
+.gf-logo-text em{font-style:italic;color:var(--fern);}
+.gf-tagline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.88rem;color:rgba(168,197,160,0.45);line-height:1.65;max-width:175px;}
+.gf-cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2.5rem;}
+.gf-col-title{font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(168,197,160,0.38);margin-bottom:1rem;}
+.gf-sections{display:grid;grid-template-columns:1fr 1fr;gap:0.05rem;}
+.gf-sec-link{display:flex;align-items:center;gap:0.4rem;text-decoration:none;padding:0.38rem 0.25rem;border-radius:3px;opacity:0.68;transition:opacity 0.18s,background 0.18s;}
+.gf-sec-link:hover{opacity:1;background:rgba(255,255,255,0.06);}
+.gf-sec-icon{width:15px;height:15px;color:var(--fern);flex-shrink:0;}
+.gf-sec-icon svg{width:100%;height:100%;}
+.gf-sec-name{font-family:'Cormorant Garamond',serif;font-size:0.9rem;color:var(--mist);}
+.gf-nav-links{display:flex;flex-direction:column;gap:0.05rem;}
+.gf-nav-link{font-family:'Cormorant Garamond',serif;font-size:0.92rem;color:rgba(211,230,208,0.58);text-decoration:none;padding:0.38rem 0.25rem;border-radius:3px;transition:color 0.18s,background 0.18s;}
+.gf-nav-link:hover{color:var(--fern);background:rgba(255,255,255,0.05);}
+.gf-bottom{padding:1.5rem 0 1.8rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.8rem;}
+.gf-copy{font-size:0.67rem;letter-spacing:0.08em;color:rgba(168,197,160,0.28);}
+.gf-bottom-links{display:flex;gap:1rem;}
+.gf-bottom-links a{font-size:0.67rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(168,197,160,0.35);text-decoration:none;transition:color 0.18s;}
+.gf-bottom-links a:hover{color:var(--fern);}
+@media(max-width:860px){
+  .gf{padding:2.5rem 1.5rem 0;}
+  .gf-top{grid-template-columns:1fr;gap:2rem;}
+  .gf-cols{grid-template-columns:1fr 1fr;gap:1.5rem;}
+}
+@media(max-width:540px){
+  .gf-cols{grid-template-columns:1fr;}
+  .gf-sections{grid-template-columns:1fr 1fr;}
+  .gf-bottom{flex-direction:column;align-items:flex-start;gap:0.6rem;}
+}
+/* ── GLOBAL NAV + FOOTER v2 ── */
+.g-nav-wrap{position:fixed;top:0;left:0;right:0;z-index:300;background:rgba(250,246,239,0.95);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(74,124,89,0.13);font-family:'Jost',sans-serif;}
+.g-nav{display:flex;align-items:center;height:62px;padding:0 3rem;gap:0;}
+.g-logo{display:flex;align-items:center;gap:0.55rem;text-decoration:none;flex-shrink:0;margin-right:auto;}
+.g-logo .logo-svg{width:24px;height:24px;color:var(--ink);}
+.g-logo-text{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--ink);white-space:nowrap;}
+.g-logo-text em{font-style:italic;color:var(--moss);}
+.g-links{display:flex;align-items:center;gap:0;list-style:none;}
+.g-links>li{position:relative;}
+.g-links>li>a,.g-links>li>button{display:flex;align-items:center;gap:0.3rem;font-size:0.75rem;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-light);text-decoration:none;padding:0.45rem 0.9rem;border-radius:3px;background:none;border:none;cursor:pointer;font-family:'Jost',sans-serif;transition:color 0.2s,background 0.2s;}
+.g-links>li>a:hover,.g-links>li>button:hover{color:var(--moss);}
+.g-links>li>a.g-active{color:var(--moss);}
+.g-chevron{width:10px;height:10px;display:block;transition:transform 0.25s;}
+.g-drop-open>.g-drop-btn .g-chevron{transform:rotate(180deg);}
+.g-dropdown{position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);background:var(--ink);border:1px solid rgba(255,255,255,0.08);border-radius:6px;box-shadow:0 16px 40px rgba(0,0,0,0.35);padding:1.2rem;min-width:580px;display:none;grid-template-columns:repeat(3,1fr);gap:0.1rem;z-index:400;}
+.g-drop-open .g-dropdown{display:grid;}
+.g-dd-link{display:flex;align-items:center;gap:0.5rem;text-decoration:none;padding:0.5rem 0.6rem;border-radius:4px;transition:background 0.18s;}
+.g-dd-link:hover{background:rgba(255,255,255,0.08);}
+.g-dd-icon{width:18px;height:18px;flex-shrink:0;color:rgba(110,168,126,0.55);}
+.g-dd-icon svg{width:100%;height:100%;}
+.g-dd-link:hover .g-dd-icon{color:var(--fern);}
+.g-dd-name{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(243,237,227,0.85);}
+.g-dd-num{font-size:0.6rem;letter-spacing:0.12em;color:rgba(168,197,160,0.4);margin-left:auto;}
+.g-dd-link.wip{opacity:0.35;pointer-events:none;}
+.g-burger{display:none;flex-direction:column;justify-content:center;gap:5px;width:32px;height:32px;background:none;border:none;cursor:pointer;padding:3px;margin-left:1rem;}
+.g-burger span{display:block;height:1.5px;background:var(--ink);transition:transform 0.28s,opacity 0.28s,width 0.28s;transform-origin:center;}
+.g-burger span:nth-child(1){width:100%;}
+.g-burger span:nth-child(2){width:70%;}
+.g-burger span:nth-child(3){width:45%;}
+.g-burger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);width:100%;}
+.g-burger.open span:nth-child(2){opacity:0;}
+.g-burger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);width:100%;}
+.g-overlay{display:none;position:fixed;inset:62px 0 0 0;z-index:290;background:rgba(28,43,30,0.98);backdrop-filter:blur(20px);overflow-y:auto;padding:2rem 2rem 3rem;}
+.g-overlay.open{display:block;}
+.g-ov-section{margin-bottom:2rem;}
+.g-ov-label{font-size:0.64rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(168,197,160,0.45);margin-bottom:0.8rem;font-family:'Jost',sans-serif;}
+.g-ov-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.15rem;}
+.g-ov-link{display:flex;align-items:center;gap:0.5rem;text-decoration:none;padding:0.6rem 0.5rem;border-radius:4px;transition:background 0.18s;}
+.g-ov-link:hover{background:rgba(255,255,255,0.07);}
+.g-ov-icon{width:18px;height:18px;color:rgba(110,168,126,0.55);flex-shrink:0;}
+.g-ov-icon svg{width:100%;height:100%;}
+.g-ov-name{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(243,237,227,0.85);}
+.g-ov-link.wip{opacity:0.35;pointer-events:none;}
+.g-ov-simple-links{display:flex;flex-direction:column;gap:0.15rem;}
+.g-ov-simple-link{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(243,237,227,0.8);text-decoration:none;padding:0.55rem 0.5rem;border-radius:4px;transition:background 0.18s;}
+.g-ov-simple-link:hover{background:rgba(255,255,255,0.07);color:#f3ede3;}
+
+/* FOOTER */
+.g-footer-logo .logo-svg{width:22px;height:22px;}
+.g-footer-logo-text em{font-style:italic;color:var(--fern);}
+.g-footer-sec-link.wip{opacity:0.25;pointer-events:none;}
+.g-footer-sec-icon svg{width:100%;height:100%;}
+.g-footer-bottom-links a{font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(168,197,160,0.35);text-decoration:none;transition:color 0.18s;}
+.g-footer-bottom-links a:hover{color:var(--fern);}
+
+body{padding-top:62px!important;}</style>
+</head>
+<body>
+<div class="g-nav-wrap" id="gNavWrap">
+  <div class="g-nav">
+    <a href="index.html" class="g-logo">
+      <svg viewBox="0 0 100 100" fill="none" class="logo-svg"><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#4a7c59"/></svg>
+      <span class="g-logo-text">Эко<em>Сознание</em></span>
+    </a>
+    <ul class="g-links">
+      <li>
+        <button class="g-drop-btn" aria-expanded="false">
+          Разделы
+          <svg class="g-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="g-dropdown">
+          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
+          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
+          <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
+          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
+          <a href="section-compost.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Компост</span><span class="g-dd-num">05b</span></a>
+          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
+          <a href="section-construction.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="g-dd-name">Строительство</span><span class="g-dd-num">06b</span></a>
+          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
+          <a href="section-art.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></span><span class="g-dd-name">Искусство</span><span class="g-dd-num">08</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">09</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">10</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">11</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">12</span></a>
+        </div>
+      </li>
+      <li><a href="index.html#latest">Эссе</a></li>
+      <li><a href="glossary.html">Глоссарий</a></li>
+      <li><a href="about.html">О проекте</a></li>
+    </ul>
+    <button class="g-burger" id="gBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+<div class="g-overlay" id="gOverlay">
+  <div class="g-ov-section">
+    <div class="g-ov-label">Разделы</div>
+    <div class="g-ov-grid">
+      <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Философия</span></a>
+      <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
+      <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
+      <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Технологии</span></a>
+      <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
+      <a href="section-compost.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Компост</span></a>
+      <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
+      <a href="section-construction.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/></svg></span><span class="g-ov-name">Строительство</span></a>
+      <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-ov-name">Экономика</span></a>
+      <a href="section-art.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></span><span class="g-ov-name">Искусство</span></a>
+      <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Образование</span></a>
+      <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
+      <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
+      <a href="section-health.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-ov-name">Здоровье</span></a>
+    </div>
+  </div>
+  <div class="g-ov-section">
+    <div class="g-ov-label">Навигация</div>
+    <div class="g-ov-simple-links">
+      <a href="index.html" class="g-ov-simple-link">Главная</a>
+      <a href="index.html#latest" class="g-ov-simple-link">Эссе и лаборатории</a>
+      <a href="glossary.html" class="g-ov-simple-link">Глоссарий</a>
+      <a href="map.html" class="g-ov-simple-link">Карта связей</a>
+      <a href="about.html" class="g-ov-simple-link">О проекте</a>
+    </div>
+  </div>
+</div>
+
+<div class="reading-bar" id="rb"></div>
+
+<section class="essay-hero">
+  <div class="essay-tag">Эссе · Технологии</div>
+  <h1>Технология —<br><em>наша вторая природа.</em><br>И первая беда</h1>
+  <div class="essay-meta">
+    <div class="essay-meta-item"><strong>Раздел</strong>Технологии</div>
+    <div class="essay-meta-item"><strong>Тип</strong>Историческое эссе</div>
+    <div class="essay-meta-item"><strong>Темы</strong>Мамфорд · Хабер-Бош · Парадокс Джевонса · Иллич · Биомимикрия</div>
+    <div class="essay-meta-item"><strong>Время</strong>≈ 20 мин</div>
+  </div>
+</section>
+
+<article class="essay">
+
+  <p>В 2023 году учёные сделали странное открытие. В каменных орудиях, найденных в Кении и датируемых примерно тремя миллионами лет назад, обнаружились следы целенаправленной обработки — не случайные сколы, а намеренная форма. Проблема в том, что эти орудия старше самого человека. Их сделал не Homo sapiens и даже не Homo habilis. Их сделал кто-то, кого мы пока не можем уверенно классифицировать. Технология оказалась старше нашего вида. Она не родилась в нас — мы родились в ней.</p>
+
+  <p>Это переворачивает привычную картину. Обычно мы представляем технологию как инструмент, который человек создаёт и применяет. Но в более глубоком смысле верно обратное: технология формирует человека. Наш мозг адаптировался к огню, кулинарии, языку, орудиям. Наша анатомия — результат миллионов лет коэволюции с тем, что мы делаем. Технология не противоположна природе. Она — продолжение природы другими средствами. Наша <em class="t">вторая природа</em>, не отделимая от первой.</p>
+
+  <p>И именно поэтому экологический кризис нельзя решить «правильной технологией» — потому что технология сама по себе и есть та сила, которая привела нас к этому кризису. Это не призыв отказаться от технологии — отказаться от неё в принципе нельзя, она часть того, что мы есть. Это призыв понять её историю и научиться думать о ней иначе. Ниже — попытка рассказать эту историю с одного конкретного угла: что технология сделала с биосферой за свою длинную, странную, многотысячелетнюю жизнь.</p>
+
+  <div class="sb"><span>❦</span></div>
+  <h2><small>Часть I</small>Что такое технология — <em>и что нет</em></h2>
+
+  <p>Когда мы говорим «технология», в голове возникает образ железа: смартфон, машина, серверный зал. Это бытовое значение слова, и оно радикально сужает понятие. В классическом определении технология — это любой организованный способ изменения мира. Огонь — технология. Колесо — технология. Севооборот — технология. Деньги — тоже технология. Язык, кстати, тоже. У всех этих явлений общая структура: они увеличивают возможности человека, преобразуя что-то в мире.</p>
+
+  <p>Льюис Мамфорд в своей фундаментальной работе «Техника и цивилизация» 1934 года ввёл принципиальное различение. Есть техника — конкретные приёмы и инструменты. И есть технология — система мышления, образ организации общества, способ восприятия мира, отлитый в материале. Когда мы говорим «индустриальная технология», мы имеем в виду не только машины и фабрики, но и весь комплекс — рабочее время по часам, разделение труда, города как машины, человек как ресурс. Технология — это не машины. Это образ мышления, который машины делают видимым.</p>
+
+  <blockquote>
+    <p>«Часы, а не паровой двигатель, — ключевая машина индустриальной эпохи. Они задают ритм, разделение, измеряемость, отрыв человека от природного времени. Всё остальное — следствие»</p>
+    <cite>Льюис Мамфорд, «Техника и цивилизация», 1934</cite>
+  </blockquote>
+
+  <p>Двадцатью годами позже Мартин Хайдеггер в «Вопросе о технике» (1953) обострил эту мысль до радикальности. Современная техника, писал он, превращает мир в <em class="t">наличный запас</em> — Bestand. Лес перестаёт быть лесом и становится «древесиной» или «лесозаготовительным фондом». Река — гидроэлектрическим потенциалом. Земля — площадью под застройку или сельхозугодьями. Даже человек становится «трудовыми ресурсами». Этот сдвиг — не в технологии как таковой, а в способе видеть мир, который технология навязывает.</p>
+
+  <p>Эту же мысль независимо развивал французский философ Жак Эллюль в книге «Технологическое общество» (1954). Его центральный термин — <em class="t">La Technique</em>, «техническая система». Это не сумма машин, а сама логика поиска самого эффективного способа — независимо от целей, ценностей и контекста. La Technique не зависит от того, демократия у вас или диктатура, капитализм или социализм. Везде она работает одинаково, оптимизирует одно и то же, перестраивает общество одним и тем же способом.</p>
+
+  <div class="idea"><p>Технология никогда не нейтральна. У каждой технологии есть встроенный взгляд на мир — даже у самой простой. Молоток превращает всё в гвоздь. Калькулятор превращает любую задачу в числа. ИИ превращает любую задачу в распознавание паттернов.</p></div>
+
+  <div class="sb"><span>❦</span></div>
+  <h2><small>Часть II</small>От огня до плуга: <em>первая большая инверсия</em></h2>
+
+  <p>Первая технология, изменившая наш вид как биологический организм, — огонь. Археологические данные указывают, что контролируемое использование огня началось около миллиона лет назад, ещё у Homo erectus. Через несколько сотен тысяч лет огонь стал универсальной частью человеческой жизни. И его последствия оказались грандиознее, чем мы привыкли думать.</p>
+
+  <p>Антрополог Ричард Рэнгем в книге «Зажигая костёр» предложил гипотезу, ставшую сейчас одной из ведущих в эволюционной антропологии: <em class="t">приготовленная пища</em> позволила нашим предкам тратить меньше энергии на пищеварение и направить освободившуюся энергию на развитие мозга. Современный человек физически не приспособлен к сырому рациону — без огня мы не смогли бы быть теми, кто мы есть. Огонь — это не «улучшение качества жизни», это часть нашей биологии.</p>
+
+  <p>Кроме того, огонь радикально расширил ареал. До его освоения люди жили в тропиках. С огнём они колонизировали умеренные и холодные широты, проникли в Северную Европу и Сибирь. Огонь буквально создал большую часть современной географии человечества. И первые крупные изменения ландшафтов — выжигание саванны для охоты — связаны именно с огнём, начиная примерно с 50 тысяч лет назад.</p>
+
+  <p>Но настоящая инверсия произошла позже — примерно 10–12 тысяч лет назад, на склоне последнего ледникового периода. Произошло одновременно в нескольких регионах: на Ближнем Востоке (Плодородный полумесяц), в Китае (рис в долине Янцзы), в Мезоамерике (кукуруза), в Новой Гвинее (таро и ямс). Люди начали целенаправленно выращивать растения и одомашнивать животных. Это была <em class="t">аграрная революция</em>.</p>
+
+  <div class="timeline-mini">
+    <div class="tm-row"><div class="tm-era">~1 млн лет назад</div><div class="tm-event">Контролируемый <em>огонь</em> — Homo erectus в Африке. Перестройка биологии под кулинарию.</div></div>
+    <div class="tm-row"><div class="tm-era">~50 тыс лет назад</div><div class="tm-event">Первые масштабные выжигания <em>саванн</em> — целенаправленное изменение ландшафта.</div></div>
+    <div class="tm-row"><div class="tm-era">~12 тыс лет назад</div><div class="tm-event">Аграрная революция — <em>несколько центров</em>, независимо. Постоянные поселения.</div></div>
+    <div class="tm-row"><div class="tm-era">~5 тыс лет назад</div><div class="tm-event">Металлургия — медь, бронза, железо. <em>Города и государства.</em></div></div>
+    <div class="tm-row"><div class="tm-era">~3 тыс лет назад</div><div class="tm-event">Засоление и эрозия в Месопотамии — <em>первый экологический коллапс</em> агрокультуры.</div></div>
+  </div>
+
+  <p>Аграрная революция изменила всё. Появились излишки — а с ними социальное расслоение, государство, армии, налоги, рабство, иерархии. До земледелия охотники-собиратели работали в среднем 3–5 часов в день и были, вероятно, здоровее ранних земледельцев. Но земледелие позволило прокормить кратно больше людей на той же площади, и поэтому победило не как «лучший способ жизни», а как способ, поддерживающий большие популяции. С тех пор демография задаёт правила.</p>
+
+  <p>Экологический след стал ощутимым уже в первой агрикультуре. Месопотамские цивилизации — Шумер, Аккад, Вавилон — за тысячу лет интенсивного земледелия исчерпали свои земли. Ирригационные системы привели к подъёму грунтовых вод и засолению почв. Эрозия съедала пахотный слой быстрее, чем он восстанавливался. К концу второго тысячелетия до н.э. урожаи в Южной Месопотамии упали вдвое, и центр цивилизации сместился на север. Это первая экологическая катастрофа, вызванная технологией, — и она была локальной.</p>
+
+  <div class="sb"><span>❦</span></div>
+  <h2><small>Часть III</small>Уголь и пар: <em>момент разрыва</em></h2>
+
+  <p>В течение десяти тысяч лет после аграрной революции мир менялся медленно. Технологии накапливались — мельницы, парусные суда, металлургия, печатный станок Гутенберга 1440 года — но темп изменений был сопоставим с продолжительностью человеческой жизни. Сын видел тот же мир, что и отец. И только в XVIII веке случилось нечто новое.</p>
+
+  <p>В 1769 году шотландский инженер Джеймс Уатт запатентовал усовершенствованный паровой двигатель. Сам паровой двигатель был известен с конца XVII века, но был неэффективен. Уатт сделал его экономически выгодным. Уголь, которым раньше топили дома, превратился в источник работы — двигатели можно было поставить где угодно, не зависимо от рек и водяных колёс. Это изменило географию промышленности и сделало возможной массовую механизацию.</p>
+
+  <p>За следующие пятьдесят лет Англия пережила самое радикальное преобразование, которое когда-либо переживало одно общество за столь короткое время. Ткацкие фабрики, металлургические заводы, железные дороги, угольные шахты. Сельское население хлынуло в города. Появился новый класс — фабричные рабочие. Возникли невиданные раньше формы социальной организации — и невиданные раньше формы социального страдания. Всё это блестяще описано Энгельсом в «Положении рабочего класса в Англии» 1845 года и десятками других хроникёров.</p>
+
+  <p>С экологической точки зрения произошло следующее. До 1800 года концентрация CO₂ в атмосфере была стабильной примерно на уровне 280 ppm — таким же, как тысячи лет до этого. Затем она начала расти. Медленно поначалу — к 1900 году достигла 296 ppm. Это плюс шестнадцать единиц за столетие. Сейчас концентрация — около 420 ppm, и растёт на 2–3 ppm в год. Кривая взлетает по экспоненте.</p>
+
+  <blockquote>
+    <p>«Промышленная революция была не только революцией машин. Это была революция в отношениях человека с временем, пространством, энергией и собственным трудом. Она изменила, что значит быть человеком»</p>
+    <cite>Эрик Хобсбаум, «Век революции»</cite>
+  </blockquote>
+
+  <p>Кроме угля, важнейшим компонентом промышленной революции стало <em class="t">ископаемое время</em>. Уголь — это законсервированная солнечная энергия каменноугольного периода, около 300 миллионов лет назад. Сжигая его за десятилетия, мы освобождаем энергию, которую планета накапливала десятки миллионов лет. Это одностороннее заимствование у геологической истории — и оно структурно ограничено объёмом этой истории.</p>
+
+  <p>Здесь нужно сделать ремарку. Промышленную революцию часто описывают исключительно как зло — но это упрощение. За двести лет благодаря ей детская смертность в Европе упала с 30% до 0.4%. Средняя продолжительность жизни выросла с 35 до 80 лет. Голод стал редким исключением вместо нормы. Письменность стала всеобщей. Это всё реальные достижения, отрицать их — нечестно. Промышленная революция дала человечеству возможности, которых раньше не было ни у одного поколения. Цена этих возможностей — то, что мы пытаемся понять и оплатить сейчас.</p>
+
+  <div class="sb"><span>❦</span></div>
+  <h2><small>Часть IV</small>Век ускорения: <em>1950 — точка разрыва</em></h2>
+
+  <p>Если посмотреть на графики практически любых показателей человеческой деятельности — численность населения, потребление энергии, использование удобрений, добыча металлов, производство пластика, концентрация CO₂, выбросы метана, потеря биоразнообразия — все они показывают одну и ту же странную форму. Длинная плоская кривая на протяжении тысячелетий. И резкий, почти вертикальный взлёт начиная примерно с 1950 года.</p>
+
+  <p>Исследователи Международной геосферно-биосферной программы (IGBP) назвали это явление <em class="t">Великим ускорением</em> (Great Acceleration). Это не метафора — это статистический факт. По 24 ключевым показателям человеческой активности и экологического воздействия наблюдается одна и та же траектория. Что-то произошло около 1950 года, что качественно изменило отношения человечества с биосферой.</p>
+
+  <div class="numbers-row">
+    <div class="num-card"><div class="n-big">×3</div><div class="n-lbl">население с 1950 (2.5 → 8 млрд)</div></div>
+    <div class="num-card"><div class="n-big">×6</div><div class="n-lbl">потребление энергии в мире</div></div>
+    <div class="num-card"><div class="n-big">×9</div><div class="n-lbl">использование азотных удобрений</div></div>
+    <div class="num-card"><div class="n-big">×200</div><div class="n-lbl">производство пластика с 1950</div></div>
+  </div>
+
+  <p>В фундаменте Великого ускорения — несколько ключевых технологий, без которых оно было бы невозможно. На первом месте — процесс Хабера-Боша (1909, индустриально с 1913). Немецкие химики Фриц Хабер и Карл Бош разработали способ синтеза аммиака из атмосферного азота. До этого азотные удобрения добывались из птичьего гуано на островах Перу — ресурс ограниченный. После — стали почти неисчерпаемыми. Это позволило в 4–5 раз поднять урожайность зерновых и прокормить демографический взрыв XX века.</p>
+
+  <p>Но процесс Хабера-Боша имеет тёмную сторону. Он потребляет около 1–2% мировой энергии — больше, чем многие отдельные страны. Производство одной тонны аммиака требует 30–40 ГДж энергии, обычно из природного газа. И главное — около половины всего синтетического азота, попадающего в почву, не усваивается растениями. Он уходит в подземные воды, в реки, в океан — и нарушает планетарный азотный цикл. Это одна из <em class="t">планетарных границ</em>, которую мы уже значительно превысили.</p>
+
+  <p>Второй компонент — Зелёная революция 1950–70-х годов, связанная с именем Нормана Борлоуга. Это была программа интенсификации сельского хозяйства: высокоурожайные сорта пшеницы и риса, синтетические удобрения, пестициды, ирригация, механизация. Программа спасла от голода, по оценкам, более миллиарда человек. Борлоуг получил Нобелевскую премию мира в 1970-м. Без Зелёной революции современный мир был бы невозможен.</p>
+
+  <p>Но Зелёная революция тоже имеет свою цену. Она сделала фермерство зависимым от внешних входов — удобрений, пестицидов, дизельного топлива, патентованных семян. Местные сорта, адаптированные к региональным условиям, исчезли — заменённые несколькими «универсальными» гибридами. Биоразнообразие сельского хозяйства схлопнулось. Деградация почв стала повсеместной. И парадоксальным образом, несмотря на гигантский рост производства, число голодающих в мире сейчас сравнимо с тем, что было в 1970-х — еды стало больше, но не у тех, кому она нужнее всего.</p>
+
+  <p>К списку технологий Великого ускорения нужно добавить: атомную энергию (1942), пенициллин и массовый антибиотик (1940-е), массовое производство пластика (после 1950), легковой автомобиль как массовое явление (1950-е в Европе), бытовую электронику, контейнерные перевозки (1956 — Малколм Маклин), компьютеры. Каждая из этих технологий по-своему совершила революцию. Каждая принесла огромные выгоды. И каждая внесла свой вклад в экологический след, который мы теперь пытаемся переосмыслить.</p>
+
+  <div class="interlude">
+    <div class="interlude-in">
+      <small>Понятие антропоцена</small>
+      <h3>Геологи спорят: возможно, мы живём в новой геологической эпохе, и её начало — июль 1945 года</h3>
+      <p>В 2000 году нидерландский химик-нобелевский лауреат Пауль Крутцен предложил термин <em style="color:var(--fern);">антропоцен</em> — эпоха, в которой человеческая деятельность стала ведущей геологической силой. Геологи всерьёз обсуждают, какую точку считать её началом.</p>
+      <p>Один из главных кандидатов — 16 июля 1945 года, момент первого ядерного испытания «Тринити» в Нью-Мексико. С этого момента в осадочных породах по всему миру обнаруживается изотопный след — следы радиоактивных частиц от ядерных испытаний. Этот след сохранится миллионы лет. По нему будущие геологи смогут точно определить, когда началось наше время.</p>
+      <p>Другой кандидат — 1950 год, начало Великого ускорения. Технология как геологическая сила — это самая радикальная формулировка нашего положения, которую дала наука.</p>
+    </div>
+  </div>
+
+  <div class="sb"><span>❦</span></div>
+  <h2><small>Часть V</small>Невидимая революция: <em>цифровая инфраструктура</em></h2>
+
+  <p>В отличие от индустриальной революции, цифровая часто описывается как «нематериальная». Email вместо бумажного письма, видеозвонок вместо командировки, скачивание вместо доставки физического диска — кажется, что мы переходим в «лёгкую» экономику, не оставляющую следа. Это иллюзия. Цифровая инфраструктура — одна из самых ресурсоёмких систем, которые когда-либо строило человечество. Просто её ресурсоёмкость скрыта от глаз пользователя.</p>
+
+  <p>Возьмём один смартфон. В нём содержится около 60 разных химических элементов — почти треть таблицы Менделеева. Среди них редкоземельные металлы (неодим, диспрозий, тербий — для динамиков и магнитов), кобальт (для аккумулятора), индий и галлий (для экрана), тантал (для конденсаторов), литий (для аккумулятора). Многие из этих металлов добываются в условиях экологической и социальной катастрофы — кобальт в Демократической Республике Конго, олово в Индонезии, литий в Боливии и Чили. Производство одного смартфона связано с примерно 70 кг выбросов CO₂ и десятками других экологических следов.</p>
+
+  <p>Дата-центры — невидимая основа всего цифрового мира — потребляют около 1–2% мировой электроэнергии и эта доля растёт. Один большой дата-центр потребляет столько же, сколько город со 100 тысячами жителей. Их охлаждение требует огромного количества воды — в США дата-центры суммарно потребляют около 600 миллиардов литров воды в год. Эти ресурсы невидимы для конечного пользователя, для которого «отправить файл в облако» — это просто нажатие кнопки.</p>
+
+  <p>Обучение одной большой языковой модели в 2022 году требовало, по разным оценкам, от 280 до 550 тонн выбросов CO₂ — столько же, сколько 60–100 автомобилей за год эксплуатации. И это только обучение одной модели. Использование (inference) такой модели миллионами людей ежедневно создаёт нагрузку, сопоставимую с обучением. Бум искусственного интеллекта 2020-х годов ставит дата-центры в категорию крупнейших новых потребителей электроэнергии — на этом фоне крупные технологические компании внезапно начали инвестировать в атомную энергетику.</p>
+
+  <div class="numbers-row">
+    <div class="num-card"><div class="n-big">60</div><div class="n-lbl">элементов таблицы Менделеева в одном смартфоне</div></div>
+    <div class="num-card"><div class="n-big">~70 кг</div><div class="n-lbl">выбросов CO₂ на производство одного телефона</div></div>
+    <div class="num-card"><div class="n-big">1–2%</div><div class="n-lbl">мировой электроэнергии — дата-центры</div></div>
+    <div class="num-card"><div class="n-big">×3</div><div class="n-lbl">скорость роста электронного мусора vs обычного</div></div>
+  </div>
+
+  <p>И есть ещё одна, особенно тяжёлая, сторона цифровой эпохи — электронный мусор. Это самый быстрорастущий поток отходов в мире, увеличивающийся в три раза быстрее обычного мусора. В 2022 году было выброшено 62 миллиона тонн электроники — это эквивалент 4.5 миллионов 40-тонных грузовиков, протянувшихся бы вокруг экватора. Из этого мусора только около 22% перерабатывается официально. Остальное — в основном Африка и Азия, нелегальные свалки, дети, добывающие медь из проводов на токсичных кострах.</p>
+
+  <p>Цифровая революция отличается от предыдущих тем, что её экологический след в основном вынесен туда, где его не видит пользователь. Шахты — в Африке. Сборочные заводы — в Юго-Восточной Азии. Дата-центры — в специальных промышленных зонах. Электронный мусор — снова в Африке. В лофтах и кафе развитых стран, где пользователи работают за лёгкими ноутбуками, кажется, что всё это нематериально. Это и есть главный фокус современной техники — она научилась прятать свою цену.</p>
+
+  <div class="sb"><span>❦</span></div>
+  <h2><small>Часть VI</small>Парадокс Джевонса: <em>почему эффективность не спасает</em></h2>
+
+  <p>В 1865 году британский экономист Уильям Стэнли Джевонс написал книгу «Угольный вопрос», в которой задал странный вопрос. Паровые двигатели Уатта были в несколько раз эффективнее предшественников — то есть требовали меньше угля на единицу работы. Логично было ожидать, что Британия будет потреблять меньше угля. Но происходило обратное: с ростом эффективности рос и общий расход угля. Джевонс задался вопросом — почему?</p>
+
+  <p>Его объяснение оказалось гениальным и тревожным. Когда технология становится эффективнее, использовать её становится дешевле. Значит, она становится экономически выгодной для большего числа применений. Появляется больше паровых двигателей, в большем числе сфер, с большими объёмами. Совокупное потребление ресурса растёт даже при том, что каждый отдельный экземпляр становится экономнее. Это явление сейчас называется <em class="t">парадокс Джевонса</em> или эффект отдачи.</p>
+
+  <blockquote>
+    <p>«Совершенно ошибочно полагать, что экономное использование топлива равнозначно его меньшему общему потреблению. Истина наоборот»</p>
+    <cite>Уильям Стэнли Джевонс, «Угольный вопрос», 1865</cite>
+  </blockquote>
+
+  <p>Этот парадокс пронизывает всю историю технологии. Светодиоды потребляют в 5–10 раз меньше электричества, чем лампы накаливания. С их массовым внедрением мировое потребление электричества на освещение должно было бы упасть. Не упало. Стало даже больше — потому что светодиоды дёшевы, и теперь люди освещают улицы, парки, рекламные щиты, ландшафтный дизайн так, как раньше не делали. Освещённость городов растёт.</p>
+
+  <p>Эффективные двигатели → больше машин и больше километров. Эффективные дома → люди живут в больших домах. Эффективная авиация → больше перелётов. Эффективные компьютеры → больше вычислений на потребительских устройствах и в дата-центрах. Каждая отдельная технология стала экономнее — и совокупное потребление всего, в чём она участвует, выросло.</p>
+
+  <p>Из этого следует фундаментальный вывод: <em class="t">чистая эффективность сама по себе не решает экологическую проблему</em>. Она часть решения, но недостаточная. Чтобы реально снизить совокупное воздействие, нужно либо ограничивать общее потребление (политическими, экономическими или культурными средствами), либо радикально менять архитектуру системы — переходить на принципиально другие модели, в которых эффект отдачи не работает.</p>
+
+  <div class="idea"><p>Никакая технология не «решит экологический кризис», пока сохраняется логика бесконечного роста и роста потребления. Это не техническая, а системная проблема.</p></div>
+
+  <div class="sb"><span>❦</span></div>
+  <h2><small>Часть VII</small>Другая парадигма: <em>конвивиальные инструменты</em></h2>
+
+  <p>В 1973 году австрийско-американский философ Иван Иллич написал короткую и неудобную книгу «Конвивиальность» (Tools for Conviviality). Главная идея: технологии бывают двух типов. <em class="t">Конвивиальные</em> — те, что усиливают возможности человека, оставаясь под его контролем. И <em class="t">манипулятивные</em> — те, что заменяют человека и подчиняют его себе.</p>
+
+  <p>Иллич приводит простой пример. Велосипед — конвивиальный инструмент. Он усиливает естественную человеческую способность передвигаться, не отнимая её. Велосипед можно понять, починить, использовать самостоятельно. Он не требует огромной поддерживающей инфраструктуры — дорогу, отдельную обслуживающую промышленность, систему страхования. Велосипед — продолжение человека.</p>
+
+  <p>Автомобиль — манипулятивный инструмент. Он не «усиливает» способность ходить, а замещает её. Он требует огромной инфраструктуры — дорог, бензоколонок, ремонтных мастерских, страховых компаний, ПДД, парковок, целой отрасли. Он атрофирует то, что должен был улучшать: люди, имеющие машину, перестают ходить пешком и теряют здоровье. Он формирует города под себя, превращая их в системы доступа на автомобиле. Машина не служит человеку — человек служит машине, обслуживая её, оплачивая её, перестраивая свою жизнь вокруг неё.</p>
+
+  <blockquote>
+    <p>«Конвивиальное общество — это то, в котором у каждого члена есть свобода использовать инструменты, минимально подчиняясь другим»</p>
+    <cite>Иван Иллич, «Tools for Conviviality», 1973</cite>
+  </blockquote>
+
+  <p>Иллич не был против технологий — он был против определённой их разновидности, которая, овладевая большим масштабом и сложностью, перестаёт быть подконтрольной отдельному человеку и сообществу. Его критерий — насколько инструмент сохраняет автономию пользователя. Этот критерий потрясающе актуален сегодня, в эпоху алгоритмов, ИИ и платформ.</p>
+
+  <p>Параллельно с Илличем работали другие мыслители схожего направления. Эрнст Шумахер в книге «Малое прекрасно» (1973) предложил концепцию <em class="t">подходящих технологий</em> (appropriate technology) — соразмерных масштабу сообщества, понятных пользователю, использующих местные ресурсы. Дженин Бенюс в книге «Биомимикрия» (1997) предложила учиться у природы — копировать не формы, а принципы организации. Не вырубать лес для производства бумаги, а скопировать клеточную структуру древесины и воспроизвести её из обновляемых биоматериалов.</p>
+
+  <p>Альтернативная парадигма технологии не призывает к примитивизму или отказу от современности. Она предлагает другой критерий выбора. Не «что более эффективно». Не «что более инновационно». А — <em class="t">что соразмерно человеку и природе одновременно</em>. Что усиливает наши возможности, не разрушая наше окружение. Что можно понять, отремонтировать, передать. Что не требует жертв тех, кого мы не видим.</p>
+
+  <p>Многое из этой парадигмы уже работает. Open source движение — это конвивиальная альтернатива проприетарному ПО. Маленькие солнечные станции на крышах — конвивиальная альтернатива огромным электростанциям. Локальные ремонтные кафе (repair cafés), запущенные в Амстердаме в 2009-м, сейчас работают в десятках стран. Биомиметические материалы из мицелия выходят из лабораторий в коммерческое производство. Это не утопия — это уже реальность, просто пока маргинальная.</p>
+
+  <div class="sb"><span>❦</span></div>
+  <h2><small>Часть VIII</small>Заключение: <em>какие технологии нам нужны</em></h2>
+
+  <p>История технологии — это история всё больших масштабов изменения мира с всё большей скоростью. Каждая революция увеличивала возможности человечества и одновременно — его экологический след. Мы прошли путь от овладения огнём до управления планетарной биосферой за один миллион лет, причём подавляющее большинство этих изменений случилось за последние двести лет, а самые драматические — за последние семьдесят.</p>
+
+  <p>Сейчас мы находимся в точке, где этот след начинает разрушать ту самую планетарную основу, на которой технология существует. Это не противоречие — это закономерное следствие траектории. Технология не нейтральна. Каждая технология воспроизводит логику своего времени и расширяет её влияние. Поэтому экологический кризис — это не сбой системы, а её закономерный результат.</p>
+
+  <p>Из этого не следует ни апокалиптическое отчаяние, ни наивная вера, что «новая чудо-технология» нас спасёт. Следует другое — что технология настолько глубоко переплетена со всем устройством общества, что менять нужно не отдельные инструменты, а сам способ мышления о них. Это сложно. Это медленно. Это не даёт быстрых пиар-эффектов и не возбуждает рынки. Но альтернативы нет.</p>
+
+  <p>Какие технологии нам нужны? Те, которые исчезают. Освоенный язык не виден носителю. Велосипед — устаревшая технология XIX века, остающаяся одной из самых эффективных. Простой пассивный дом из 1980-х годов работает лучше большинства «умных» зданий 2020-х. Компост — двухтысячелетняя технология — это до сих пор самая эффективная утилизация органики. Городская архитектура XV–XVIII веков, не оптимизированная под автомобиль, оказывается лучше приспособлена для современного климатического кризиса, чем модернистские районы. Не всё новое — лучшее. Часто лучшее — это правильно понятое старое.</p>
+
+  <p>Идея, которую хочется оставить читателю: технология — это не инструмент решения проблем, отдельный от нас. Это часть того, как мы есть. И поэтому изменение в наших технологиях — это всегда изменение в нас самих. Мы выбираем не «между технологиями», а тип общества, тип жизни, тип отношений с миром. Сегодня этот выбор стал особенно острым — и особенно интересным.</p>
+
+  <p style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--moss);text-align:center;font-size:1.25rem;">Лучшая технология — та, которая делает себя ненужной, оставляя только жизнь.</p>
+
+  <div class="sig">
+    <div class="sig-a">— редакция «ЭкоСознания», рубрика «Технологии»</div>
+    <div class="sig-m">Эссе · Май 2025</div>
+  </div>
+
+</article>
+
+<section class="rel">
+  <div class="rel-in">
+    <div class="rel-label">Читать дальше</div>
+    <div class="rel-grid">
+      <a href="section-technologies.html" class="rel-card">
+        <div class="rel-kind">Раздел</div>
+        <div class="rel-name">Технологии — биомимикрия и регенеративный дизайн</div>
+      </a>
+      <a href="essay-biomimicry.html" class="rel-card">
+        <div class="rel-kind">Эссе</div>
+        <div class="rel-name">Биомимикрия — как природа решает задачи</div>
+      </a>
+      <a href="essay-doughnut.html" class="rel-card">
+        <div class="rel-kind">Эссе</div>
+        <div class="rel-name">ВВП меряет скорость — нам нужен другой прибор</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>window.addEventListener('scroll',()=>{const h=document.documentElement;document.getElementById('rb').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';});</script>
+<footer class="gf">
+  <div class="gf-top">
+    <div class="gf-brand">
+      <a href="index.html" class="gf-logo">
+        <svg viewBox="0 0 100 100" fill="none" class="logo-svg" style="width:24px;height:24px;flex-shrink:0;"><circle cx="50" cy="50" r="40" stroke="#f3ede3" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#6ea87e"/></svg>
+        <span class="gf-logo-text">Эко<em>Сознание</em></span>
+      </a>
+      <p class="gf-tagline">Экологический взгляд как линза для любой сферы жизни</p>
+    </div>
+    <div class="gf-cols">
+      <div>
+        <div class="gf-col-title">Разделы</div>
+        <div class="gf-sections">
+          <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Философия</span></a>
+          <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
+          <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
+          <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Технологии</span></a>
+          <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
+          <a href="section-compost.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Компост</span></a>
+          <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
+          <a href="section-construction.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="gf-sec-name">Строительство</span></a>
+          <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="gf-sec-name">Экономика</span></a>
+          <a href="section-art.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></span><span class="gf-sec-name">Искусство</span></a>
+          <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Образование</span></a>
+          <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
+          <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
+          <a href="section-health.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Здоровье</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="gf-col-title">Материалы</div>
+        <nav class="gf-nav-links">
+          <a href="essay-truth-and-climate.html" class="gf-nav-link">Истина и климат</a>
+          <a href="essay-passive-design.html" class="gf-nav-link">Пассивный дизайн</a>
+          <a href="essay-solastalgia.html" class="gf-nav-link">Соластальгия</a>
+          <a href="essay-community-survives.html" class="gf-nav-link">Что нужно общине</a>
+          <a href="essay-bread.html" class="gf-nav-link">Хлеб</a>
+          <a href="essay-morning-light.html" class="gf-nav-link">Утренний свет</a>
+          <a href="essay-moneyless-year.html" class="gf-nav-link">Год без денег</a>
+          <a href="lab-heidegger-plastic.html" class="gf-nav-link">Лаб №01 · Пластик</a>
+          <a href="lab-hyperobject-room.html" class="gf-nav-link">Лаб №02 · Комната</a>
+          <a href="lab-jacket-biography.html" class="gf-nav-link">Лаб №03 · Куртка</a>
+          <a href="lab-15min-city.html" class="gf-nav-link">Лаб №04 · Город</a>
+          <a href="lab-bateson-gpt.html" class="gf-nav-link">Лаб №05 · Бейтсон</a>
+        </nav>
+      </div>
+      <div>
+        <div class="gf-col-title">Навигация</div>
+        <nav class="gf-nav-links">
+          <a href="index.html" class="gf-nav-link">Главная</a>
+          <a href="map.html" class="gf-nav-link">Карта связей</a>
+            <a href="about.html" class="gf-nav-link">О проекте</a>
+          <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
+          <a href="section-icons-library.html" class="gf-nav-link">Знаки разделов</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="gf-bottom">
+    <span class="gf-copy">© 2025 ЭкоСознание</span>
+    <div class="gf-bottom-links">
+      <a href="about.html">О проекте</a>
+      <a href="glossary.html">Глоссарий</a>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  // Dropdown toggle
+  document.querySelectorAll('.g-drop-btn').forEach(btn=>{
+    btn.addEventListener('click',e=>{
+      e.stopPropagation();
+      const li=btn.closest('li');
+      const open=li.classList.toggle('g-drop-open');
+      btn.setAttribute('aria-expanded',open);
+      document.querySelectorAll('.g-drop-open').forEach(el=>{if(el!==li)el.classList.remove('g-drop-open');});
+    });
+  });
+  document.addEventListener('click',()=>document.querySelectorAll('.g-drop-open').forEach(el=>el.classList.remove('g-drop-open')));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.g-drop-open').forEach(el=>el.classList.remove('g-drop-open'));});
+
+  // Burger / overlay
+  const burger=document.getElementById('gBurger');
+  const overlay=document.getElementById('gOverlay');
+  if(burger&&overlay){
+    burger.addEventListener('click',()=>{
+      const open=overlay.classList.toggle('open');
+      burger.classList.toggle('open',open);
+      document.body.style.overflow=open?'hidden':'';
+    });
+    overlay.querySelectorAll('a[href]').forEach(a=>a.addEventListener('click',()=>{
+      overlay.classList.remove('open');burger.classList.remove('open');document.body.style.overflow='';
+    }));
+    document.addEventListener('keydown',e=>{
+      if(e.key==='Escape'&&overlay.classList.contains('open')){
+        overlay.classList.remove('open');burger.classList.remove('open');document.body.style.overflow='';
+      }
+    });
+  }
+
+  // Highlight active page
+  const pg = location.pathname.split('/').pop() || 'ecolife-landing.html';
+  // Mark active in dropdown and overlay
+  document.querySelectorAll('.g-dd-link, .g-ov-link').forEach(a => {
+    const href = a.getAttribute('href');
+    if (href === pg) {
+      a.style.background = 'rgba(255,255,255,0.1)';
+      const name = a.querySelector('.g-dd-name, .g-ov-name');
+      if (name) name.style.color = '#f3ede3';
+      const icon = a.querySelector('.g-dd-icon, .g-ov-icon');
+      if (icon) icon.style.color = 'var(--fern)';
+    }
+  });
+  // Mark active top-level nav link
+  document.querySelectorAll('.g-links > li > a').forEach(a => {
+    const href = a.getAttribute('href');
+    if (href === pg || href === 'ecolife-landing.html#latest' && ['essay','lab'].some(p => pg.startsWith(p))) {
+      a.classList.add('g-active');
+    }
+    if (href === 'glossary.html' && pg === 'glossary.html') a.classList.add('g-active');
+    if (href === 'about.html' && pg === 'about.html') a.classList.add('g-active');
+  });
+  // If current page is a section, mark 'Разделы' button as active
+  if (pg.startsWith('section-')) {
+    const btn = document.querySelector('.g-drop-btn');
+    if (btn) btn.style.color = 'var(--moss)';
+  }
+})();</script>
+</body>
+</html>
