@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+<script>document.documentElement.classList.replace('no-js','js');</script>
+<meta charset="UTF-8">
+<meta name="description" content="Кривая Килинга — главный портрет климатической науки: рост CO₂ в атмосфере с ~315 (1958) до ~420+ млн⁻¹ сегодня, измеренный Чарльзом Килингом на Мауна-Лоа. Почему у кривой ежегодное «дыхание» биосферы, что значат миллионные доли (доиндустриальный уровень ~280, сейчас выше, чем за миллионы лет), как изотопы выдают ископаемый углерод, и почему одна честная линия стала важнейшим доказательством. Эссе со встроенным графиком.">
+<meta property="og:title" content="Кривая Килинга: как увидели, что воздух меняется — ЭкоСознание">
+<meta property="og:description" content="Одна линия превратила «возможно, мы меняем воздух» в измеренный факт: рост CO₂ с 315 до 420+ млн⁻¹ за жизнь поколения, с ежегодным «дыханием» биосферы.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Кривая Килинга: как увидели, что воздух меняется — ЭкоСознание</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+.hero{padding:10rem 4rem 5rem;display:grid;grid-template-columns:1fr 380px;gap:4rem;align-items:end;border-bottom:1px solid rgba(74,124,89,.15);position:relative;overflow:hidden;}
+.hero-mark-svg{position:absolute;right:4rem;top:11rem;width:90px;height:90px;color:rgba(74,124,89,.18);pointer-events:none;}
+.hero-mark-svg svg{width:100%;height:100%;display:block;}
+.hero-tag{display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:1.5rem;}
+.hero-tag::before{content:'';display:block;width:24px;height:1px;background:var(--fern);}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,6vw,5rem);font-weight:300;line-height:1.05;color:var(--ink);margin-bottom:1.8rem;}
+h1 em{font-style:italic;color:var(--moss);display:block;}
+.hero-lead{font-size:1rem;line-height:1.85;color:var(--ink-light);max-width:580px;}
+.hero-meta{display:flex;flex-direction:column;gap:1.5rem;padding-left:2rem;border-left:1px solid rgba(74,124,89,.2);}
+.meta-label{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:.4rem;}
+.meta-value{font-size:.9rem;color:var(--ink-light);line-height:1.6;}
+.toc-bar{background:var(--ink);padding:0 4rem;display:flex;align-items:stretch;overflow-x:auto;}
+.toc-bar a{color:rgba(211,230,208,.6);text-decoration:none;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:1rem 1.5rem;border-right:1px solid rgba(255,255,255,.06);white-space:nowrap;transition:color .2s,background .2s;}
+.toc-bar a:hover{color:var(--mist);}
+.toc-bar a.active{color:var(--fern);}
+.content-section{padding:5rem 4rem;border-bottom:1px solid rgba(74,124,89,.1);}
+.content-section.alt{background:var(--cream);}
+.content-section.dark{background:var(--ink);}
+.section-label{display:flex;align-items:center;gap:1rem;margin-bottom:3rem;}
+.section-label-num{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);}
+.section-label-line{flex:1;height:1px;background:rgba(74,124,89,.15);}
+.section-label-tag{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);}
+h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;color:var(--ink);line-height:1.15;margin-bottom:1.5rem;}
+h2 em{font-style:italic;color:var(--moss);}
+h2.light{color:var(--cream);}
+h2.light em{color:var(--fern);}
+.article-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+.article-layout.wide{grid-template-columns:3fr 2fr;}
+.article-body p{font-size:.95rem;line-height:1.9;color:var(--ink-light);margin-bottom:1.1rem;}
+.article-body p:last-child{margin-bottom:0;}
+.article-body p.light{color:rgba(211,230,208,.72);}
+.pull-quote{border-left:3px solid var(--moss);padding:1.2rem 1.5rem;margin:2rem 0;background:rgba(74,124,89,.05);}
+.pull-quote p{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:var(--ink);line-height:1.5;margin:0!important;}
+.pull-quote.light{background:rgba(255,255,255,.06);border-color:var(--fern);}
+.pull-quote.light p{color:var(--cream);}
+.pull-quote cite{display:block;margin-top:.6rem!important;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);font-style:normal;}
+.practices-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(74,124,89,.12);margin-top:2rem;}
+.practice-card{background:var(--paper);padding:2rem 1.8rem;transition:background .25s;}
+.content-section.alt .practice-card{background:var(--cream);}
+.practice-card:hover{background:var(--warm);}
+.practice-num{font-family:'Cormorant Garamond',serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.6rem;}
+.practice-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--ink);margin-bottom:.6rem;}
+.practice-name em{font-style:italic;color:var(--moss);}
+.practice-desc{font-size:.85rem;line-height:1.75;color:var(--ink-light);}
+.featured-strip{background:var(--ink);padding:3rem 3.5rem;display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center;margin-top:3rem;}
+.featured-label{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:1rem;}
+.featured-strip h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;font-style:italic;color:var(--cream);margin-bottom:.8rem;line-height:1.2;}
+.featured-strip p{font-size:.87rem;line-height:1.8;color:rgba(211,230,208,.68);}
+.featured-btn{background:transparent;color:var(--fern);border:1px solid rgba(110,168,126,.4);padding:.8rem 1.6rem;text-decoration:none;font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;display:inline-block;transition:background .25s,color .25s;}
+.featured-btn:hover{background:var(--fern);color:var(--ink);}
+.rubrics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.12);margin-top:3rem;}
+.rubric-card{background:var(--paper);padding:2rem 1.6rem;transition:background .25s;}
+.rubric-card:hover{background:var(--warm);}
+.rubric-icon{font-size:1.4rem;margin-bottom:1rem;}
+.rubric-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--ink);margin-bottom:.6rem;}
+.rubric-desc{font-size:.82rem;line-height:1.75;color:var(--ink-light);}
+.rubric-example{margin-top:1rem;font-size:.78rem;font-style:italic;color:var(--moss);line-height:1.6;}
+.rubric-card.dark-card{background:var(--ink);}
+.rubric-card.dark-card .rubric-name{color:var(--cream);}
+.rubric-card.dark-card .rubric-desc{color:rgba(211,230,208,.65);}
+.rubric-card.dark-card .rubric-example{color:var(--fern);}
+.g-next-section{background:var(--ink);padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;}
+.g-next-label{font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(168,197,160,.45);margin-bottom:.5rem;}
+.g-next-link{display:inline-flex;align-items:center;gap:.8rem;text-decoration:none;}
+.g-next-name{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--cream);font-style:italic;transition:color .2s;}
+.g-next-link:hover .g-next-name{color:var(--fern);}
+.g-next-arrow{font-family:'Cormorant Garamond',serif;font-size:2rem;color:rgba(110,168,126,.5);transition:transform .2s,color .2s;}
+.g-next-link:hover .g-next-arrow{transform:translateX(6px);color:var(--fern);}
+.g-next-num{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:300;color:rgba(255,255,255,.06);line-height:1;}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease;}
+.reveal.visible{opacity:1;transform:none;}
+.d1{transition-delay:.1s;}
+.d2{transition-delay:.2s;}
+@media(max-width:800px){ .hero,.toc-bar,.content-section,.g-next-section{padding-left:1.5rem;padding-right:1.5rem;} .hero{grid-template-columns:1fr;} .hero-meta{padding-left:0;border-left:none;border-top:1px solid rgba(74,124,89,.2);padding-top:1.5rem;} .hero-mark-svg{right:1.5rem;top:9rem;width:60px;height:60px;} .article-layout,.article-layout.wide{grid-template-columns:1fr;gap:2rem;} .practices-grid,.rubrics-grid{grid-template-columns:1fr;} .featured-strip{grid-template-columns:1fr;gap:1.5rem;} }
+.methods-table{margin:2rem 0;border:1px solid rgba(74,124,89,.15);overflow-x:auto;}
+.methods-row{display:grid;grid-template-columns:180px repeat(4,1fr);gap:0;border-bottom:1px solid rgba(74,124,89,.1);min-width:760px;}
+.methods-row:last-child{border-bottom:none;}
+.methods-row.header{background:var(--ink);}
+.methods-row.header > div{color:var(--sage);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;padding:.9rem 1rem;}
+.methods-row > div{background:var(--paper);padding:.95rem 1rem;font-size:.85rem;color:var(--ink-light);line-height:1.5;border-right:1px solid rgba(74,124,89,.08);}
+.content-section.alt .methods-row > div{background:var(--cream);}
+.methods-row > div:last-child{border-right:none;}
+.methods-row > .method-name{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;color:var(--ink);}
+.methods-row.header > .method-name{color:var(--sage);font-style:normal;}
+.seasons-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.12);margin:2rem 0;}
+.season-card{background:var(--paper);padding:1.8rem 1.5rem;transition:background .25s;display:flex;flex-direction:column;}
+.content-section.alt .season-card{background:var(--cream);}
+.season-card:hover{background:var(--warm);}
+.season-icon{font-size:1.9rem;margin-bottom:.7rem;line-height:1;}
+.season-name{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--ink);margin-bottom:.2rem;}
+.season-name em{font-style:italic;color:var(--moss);}
+.season-months{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:.9rem;}
+.season-actions{font-size:.83rem;line-height:1.7;color:var(--ink-light);margin-bottom:.8rem;}
+.season-watch{font-size:.78rem;line-height:1.6;color:var(--ink-light);padding-top:.7rem;border-top:1px dashed rgba(74,124,89,.18);margin-top:auto;}
+.season-watch strong{color:var(--rust);font-weight:400;}
+.timeline{margin:2rem 0;position:relative;border-left:1px solid rgba(74,124,89,.2);padding-left:2rem;}
+.timeline-item{margin-bottom:2rem;position:relative;}
+.timeline-item:last-child{margin-bottom:0;}
+.timeline-item::before{content:'';position:absolute;left:-2.45rem;top:.3rem;width:9px;height:9px;border-radius:50%;background:var(--moss);box-shadow:0 0 0 3px var(--paper);}
+.content-section.alt .timeline-item::before{box-shadow:0 0 0 3px var(--cream);}
+.timeline-era{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.4rem;}
+.timeline-name{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--ink);margin-bottom:.5rem;line-height:1.3;}
+.timeline-name em{font-style:italic;color:var(--moss);}
+.timeline-desc{font-size:.88rem;line-height:1.75;color:var(--ink-light);}
+.timeline-desc em{font-style:italic;color:var(--moss);}
+.case-block{background:var(--ink);padding:4rem 3.5rem;margin:2rem 0;}
+.case-inner{max-width:920px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start;}
+.case-block h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;color:var(--cream);line-height:1.25;margin-bottom:1.3rem;}
+.case-block h3 em{font-style:italic;color:var(--fern);}
+.case-block p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.75;color:rgba(211,230,208,.75);margin-bottom:1rem;}
+.case-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.08);}
+.case-stat{background:rgba(255,255,255,.04);padding:1.4rem 1.2rem;text-align:center;}
+.case-stat-num{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--fern);font-weight:300;line-height:1;margin-bottom:.4rem;}
+.case-stat-lbl{font-size:.72rem;color:rgba(211,230,208,.65);line-height:1.5;}
+.case-link{display:inline-flex;align-items:center;gap:.6rem;font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--fern);text-decoration:none;border-bottom:1px solid rgba(110,168,126,.4);padding-bottom:.3rem;margin-top:1rem;}
+.case-link:hover{border-color:var(--fern);}
+@media(max-width:800px){ .case-inner{grid-template-columns:1fr;gap:2rem;} .case-block{padding:2.5rem 1.5rem;} .seasons-grid{grid-template-columns:1fr 1fr;} .methods-row{grid-template-columns:140px repeat(4,1fr);min-width:660px;} }
+@media(max-width:540px){ .seasons-grid{grid-template-columns:1fr;} .case-stats{grid-template-columns:1fr 1fr;} }
+.cycle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.12);margin:2rem 0;}
+.cycle-card{background:var(--paper);padding:1.8rem 1.6rem;text-align:center;transition:background .25s;}
+.content-section.alt .cycle-card{background:var(--cream);}
+.cycle-card:hover{background:var(--warm);}
+.cycle-step{font-family:'Cormorant Garamond',serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.6rem;}
+.cycle-icon{font-size:2rem;margin-bottom:.8rem;line-height:1;}
+.cycle-name{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--ink);margin-bottom:.5rem;}
+.cycle-name em{font-style:italic;color:var(--moss);}
+.cycle-desc{font-size:.82rem;line-height:1.7;color:var(--ink-light);}
+.can-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:2rem 0;}
+.can-col h4{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:400;margin-bottom:1rem;}
+.can-col.yes h4{color:var(--moss);}
+.can-col.no h4{color:var(--rust);}
+.can-list{list-style:none;display:flex;flex-direction:column;gap:0;}
+.can-item{font-size:.85rem;line-height:1.6;color:var(--ink-light);padding:.45rem 0;border-bottom:1px dashed rgba(74,124,89,.12);}
+.can-item:last-child{border-bottom:none;}
+.can-item::before{margin-right:.5rem;}
+.can-col.yes .can-item::before{content:'✓';color:var(--fern);}
+.can-col.no .can-item::before{content:'✗';color:var(--rust);}
+.soil-block{background:var(--ink);padding:4rem 3.5rem;margin:3rem 0;}
+.soil-inner{max-width:720px;margin:0 auto;}
+.soil-block h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;font-style:italic;color:var(--cream);line-height:1.3;margin-bottom:1.5rem;}
+.soil-block h3 em{color:var(--fern);}
+.soil-block p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.8;color:rgba(211,230,208,.75);margin-bottom:1.2rem;}
+.soil-block p:last-child{margin-bottom:0;}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.15);margin:2rem 0;}
+.stat-card{background:var(--paper);padding:1.6rem 1.2rem;text-align:center;}
+.content-section.alt .stat-card{background:var(--cream);}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:300;color:var(--moss);line-height:1;margin-bottom:.4rem;}
+.stat-label{font-size:.78rem;line-height:1.5;color:var(--ink-light);}
+.q-list{display:flex;flex-direction:column;gap:0;margin:1.5rem 0;}
+.q-item{padding:1.2rem 0;border-bottom:1px solid rgba(74,124,89,.1);}
+.q-item:last-child{border-bottom:none;}
+.q-question{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink);margin-bottom:.5rem;font-weight:400;}
+.q-question em{font-style:italic;color:var(--moss);}
+.q-answer{font-size:.88rem;line-height:1.75;color:var(--ink-light);}
+@media(max-width:800px){ .cycle-grid{grid-template-columns:1fr 1fr;} .can-grid{grid-template-columns:1fr;} .stats-row{grid-template-columns:1fr 1fr;} .soil-block{padding:2.5rem 1.5rem;} }
+@media(max-width:540px){ .cycle-grid{grid-template-columns:1fr;} .stats-row{grid-template-columns:1fr 1fr;} }
+.section-num{font-family:'Cormorant Garamond',serif;font-size:0.85rem;letter-spacing:0.3em;color:var(--moss);margin-bottom:1rem;font-style:italic;}
+.disc-meta{font-family:'Jost',sans-serif;font-size:0.78rem;letter-spacing:0.05em;color:var(--ink-light);margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid rgba(74,124,89,0.15);font-weight:300;line-height:1.7;}
+.content-section p{font-size:1rem;line-height:1.85;color:var(--ink);margin-top:1.2rem;}
+.content-section p strong{color:var(--moss);font-weight:500;}
+.content-section p em{font-style:italic;color:var(--ink-light);}
+.content-section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;line-height:1.15;color:var(--ink);margin-bottom:0.5rem;}
+.content-section h2 em{color:var(--moss);font-style:italic;display:block;}
+</style>
+<!-- ECO:MANAGED:head -->
+  <link rel="canonical" href="https://morgunkonstantin.github.io/ecology/essay-keeling-curve.html">
+  <meta property="og:url" content="https://morgunkonstantin.github.io/ecology/essay-keeling-curve.html">
+  <meta property="og:site_name" content="ЭкоСознание">
+  <meta property="og:image" content="https://morgunkonstantin.github.io/ecology/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ЭкоСознание — экология как способ смотреть на реальность">
+  <meta name="twitter:image" content="https://morgunkonstantin.github.io/ecology/assets/og-image.png">
+  <meta name="theme-color" content="#faf6ef">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","name":"Кривая Килинга: как увидели, что воздух меняется","headline":"Кривая Килинга: как увидели, что воздух меняется","description":"Кривая Килинга — главный портрет климатической науки: рост CO₂ в атмосфере с ~315 (1958) до ~420+ млн⁻¹ сегодня, измеренный Чарльзом Килингом на Мауна-Лоа. Почему у кривой ежегодное «дыхание» биосферы, что значат миллионные доли, как изотопы выдают ископаемый углерод, и почему одна честная линия стала важнейшим доказательством.","inLanguage":"ru-RU","url":"https://morgunkonstantin.github.io/ecology/essay-keeling-curve.html","isPartOf":{"@type":"WebSite","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"},"publisher":{"@type":"Organization","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"},"datePublished":"2026-09-11","author":{"@type":"Organization","name":"ЭкоСознание"},"articleSection":"Наука"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://morgunkonstantin.github.io/ecology/"},{"@type":"ListItem","position":2,"name":"Кривая Килинга: как увидели, что воздух меняется","item":"https://morgunkonstantin.github.io/ecology/essay-keeling-curve.html"}]}</script>
+<!-- /ECO:MANAGED:head -->
+</head>
+<body>
+<a class="skip-link" href="#content">Перейти к содержанию</a>
+
+<div class="g-nav-wrap" id="gNavWrap">
+  <div class="g-nav">
+    <a href="index.html" class="g-logo">
+      <svg viewBox="0 0 100 100" fill="none" class="logo-svg"><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#4a7c59"/></svg>
+      <span class="g-logo-text">Эко<em>Сознание</em></span>
+    </a>
+    <ul class="g-links">
+      <li>
+        <button class="g-drop-btn" aria-expanded="false">
+          Разделы
+          <svg class="g-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="g-dropdown">
+          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
+          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
+          <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-compost.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Компост</span><span class="g-dd-num">03b</span></a>
+          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
+          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
+          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
+          <a href="section-construction.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="g-dd-name">Строительство</span><span class="g-dd-num">06b</span></a>
+          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">08</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">09</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">10</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">11</span></a>
+          <a href="section-science.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Наука</span><span class="g-dd-num">12</span></a>
+        </div>
+      </li>
+      <li><a href="index.html#latest">Эссе</a></li>
+      <li><a href="glossary.html">Глоссарий</a></li>
+      <li><a href="about.html">О проекте</a></li>
+    </ul>
+    <button class="g-burger" id="gBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<div class="g-overlay" id="gOverlay">
+  <div class="g-ov-section">
+    <div class="g-ov-label">Разделы</div>
+    <div class="g-ov-grid">
+      <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Философия</span></a>
+      <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
+      <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
+      <a href="section-compost.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Компост</span></a>
+      <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Технологии</span></a>
+      <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
+      <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
+      <a href="section-construction.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/></svg></span><span class="g-ov-name">Строительство</span></a>
+      <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-ov-name">Экономика</span></a>
+      <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Образование</span></a>
+      <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
+      <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
+      <a href="section-health.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-ov-name">Здоровье</span></a>
+      <a href="section-science.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Наука</span></a>
+    </div>
+  </div>
+  <div class="g-ov-section">
+    <div class="g-ov-label">Навигация</div>
+    <div class="g-ov-simple-links">
+      <a href="index.html" class="g-ov-simple-link">Главная</a>
+      <a href="index.html#latest" class="g-ov-simple-link">Эссе и лаборатории</a>
+      <a href="glossary.html" class="g-ov-simple-link">Глоссарий</a>
+      <a href="map.html" class="g-ov-simple-link">Карта связей</a>
+      <a href="contents.html" class="g-ov-simple-link">Все материалы</a>
+      <a href="revisions.html" class="g-ov-simple-link">Что не подтвердилось</a>
+      <a href="search.html" class="g-ov-simple-link">Поиск</a>
+      <a href="paths.html" class="g-ov-simple-link">Тропы чтения</a>
+      <a href="tree.html" class="g-ov-simple-link">Дерево материалов</a>
+      <a href="thinkers.html" class="g-ov-simple-link">Указатель имён</a>
+      <a href="about.html" class="g-ov-simple-link">О проекте</a>
+    </div>
+  </div>
+</div>
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<main id="content" tabindex="-1">
+
+<section class="hero" id="top">
+  <div class="hero-mark-svg"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="50" cy="50" r="45"/><line x1="26" y1="72" x2="26" y2="28" stroke-width="1.6"/><line x1="26" y1="72" x2="74" y2="72" stroke-width="1.6"/><polyline points="30,66 40,60 48,64 56,52 64,54 70,36" stroke-width="2"/><circle cx="70" cy="36" r="2.6" fill="currentColor" stroke="none"/></svg></div>
+  <div>
+    <div class="hero-tag">Одна кривая · Наука</div>
+    <h1>Кривая Килинга —<br><em>как увидели,</em><br>что воздух меняется</h1>
+    <p class="hero-lead">У науки о климате есть свой главный портрет — одна линия, которую называют кривой Килинга: неуклонно поднимающаяся вверх кривая с мелкими ежегодными зубчиками, показывающая рост CO₂ в атмосфере. До неё никто не знал наверняка, растёт ли углекислый газ в воздухе вообще. Доказательство добыл один упрямый человек, который почти семь десятилетий назад начал день за днём измерять воздух на вершине гавайского вулкана — вдали от всех труб и лесов, чтобы поймать «фоновый» воздух всей планеты. За жизнь одного поколения кривая поднялась с ~315 до более чем 420 млн⁻¹ и не остановилась.</p>
+  </div>
+  <div class="hero-meta">
+    <div><div class="meta-label">Что показывает</div><div class="meta-value">Рост CO₂ с ~315 до ~420+ млн⁻¹ · Ежегодный зубец — «дыхание» биосферы · Подъём ускоряется</div></div>
+    <div><div class="meta-label">Как и кто</div><div class="meta-value">Чарльз Килинг · 1958 · обсерватория Мауна-Лоа · Доиндустриальный уровень ~280 · Изотопный отпечаток ископаемого углерода</div></div>
+    <div><div class="meta-label">Способ чтения</div><div class="meta-value">От истории одного упрямого измерения к выводу: одна честная линия превратила «возможно, мы влияем на воздух» в измеренный факт.</div></div>
+  </div>
+</section>
+
+<div class="toc-bar">
+  <a href="#intro" class="active">Введение</a>
+  <a href="#measuring">Как измерили</a>
+  <a href="#chart">Что показывает кривая</a>
+  <a href="#meaning">Что значат цифры</a>
+  <a href="#why">Почему это важно</a>
+  <a href="#outro">Итог</a>
+</div>
+
+<!-- ═══ ВВЕДЕНИЕ ══════════════════════════════════════════════════════════ -->
+<section class="content-section" id="intro">
+  <div style="max-width:820px;">
+    <div class="section-num">00</div>
+    <h2>Одна кривая, <em>изменившая взгляд на воздух</em></h2>
+    <p>У науки о климате есть свой главный портрет — одна линия на графике, которую называют кривой Килинга. Она показывает, как год за годом растёт содержание углекислого газа в атмосфере, и выглядит обманчиво просто: неуклонно поднимающаяся вверх кривая с мелкими ежегодными зубчиками. Но за этой простотой стоит превращение догадки в измеренный факт.</p>
+    <p>До неё никто не знал наверняка, растёт ли вообще углекислый газ в воздухе. Предполагали, спорили, считали на бумаге, — но доказательства не было. Его добыл один упрямый человек, который почти семь десятилетий назад начал терпеливо, день за днём, измерять состав воздуха на вершине гавайского вулкана, — и получил линию, которая с тех пор не переставала расти ни на год.</p>
+    <p>Ниже — как и зачем это измерили, что именно показывает кривая и почему у неё есть ежегодное «дыхание», что означают эти цифры и почему одна линия стала едва ли не важнейшим доказательством того, что человек меняет климат планеты.</p>
+  </div>
+</section>
+
+<!-- ═══ 01 ═══════════════════════════════════════════════════════════════ -->
+<section class="content-section alt" id="measuring">
+  <div style="max-width:820px;">
+    <div class="section-num">01</div>
+    <div class="disc-meta">Чарльз Килинг · 1958 · обсерватория Мауна-Лоа, Гавайи · измерение «фонового» воздуха</div>
+    <h2>Как это <em>измерили</em></h2>
+    <p>В 1958 году американский учёный Чарльз Дэвид Килинг начал то, что казалось почти бессмысленно монотонным занятием: раз за разом точно измерять концентрацию углекислого газа в атмосфере. Главная хитрость была в месте. Килинг выбрал обсерваторию на склоне Мауна-Лоа — вулкана посреди Тихого океана, за тысячи километров от городов, заводов и лесов. Только вдали от любых местных источников и поглотителей можно было поймать «фоновый» воздух всей планеты, усреднённый и не искажённый соседней трубой или полем.</p>
+    <p>Трудность была и в самом измерении. Речь шла о доле газа в сотые доли процента, которую нужно было улавливать с высокой точностью и, главное, одинаково из года в год, десятилетиями, чтобы крошечные изменения не тонули в погрешности приборов. Килинг построил и отладил аппаратуру такой стабильности, что его ряды данных стали эталоном; эту одержимость точностью позже назовут одной из причин, по которым кривая вообще получилась достоверной.</p>
+    <p>Работа не раз висела на волоске из-за нехватки финансирования — измерять «просто воздух» десятилетиями казалось чиновникам сомнительной тратой. Но Килинг не бросал, и измерения на Мауна-Лоа не прерывались. Сегодня это один из самых длинных и ценных непрерывных рядов наблюдений в истории науки — и всё благодаря упрямству одного человека.</p>
+  </div>
+</section>
+
+<!-- ═══ 02 ═══════════════════════════════════════════════════════════════ -->
+<section class="content-section" id="chart">
+  <div style="max-width:860px;">
+    <div class="section-num">02</div>
+    <div class="disc-meta">рост с ~315 до ~420+ млн⁻¹ · ежегодный зубец — «дыхание» биосферы</div>
+    <h2>Что показывает <em>кривая</em></h2>
+    <p>Вот она — концентрация CO₂ в атмосфере по годам, от начала измерений до наших дней. Единица измерения — миллионные доли (ppm, млн⁻¹): сколько молекул углекислого газа приходится на миллион молекул воздуха.</p>
+
+    <!-- ИНФОГРАФИКА -->
+    <div class="kl-panel">
+    <style>
+    .kl-panel{background:var(--warm);border:1px solid rgba(74,124,89,.18);padding:1.6rem 1.5rem 1rem;margin:1.6rem 0;}
+    .kl-sub{font-family:'Jost',sans-serif;font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:.8rem;}
+    .kl-cap{font-family:'Jost',sans-serif;font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sage-text);text-align:center;margin-top:.6rem;}
+    </style>
+      <div class="kl-sub">CO₂ в атмосфере, млн⁻¹ (ppm) · обсерватория Мауна-Лоа</div>
+      <svg viewBox="0 0 780 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Рост концентрации CO2 в атмосфере с 1958 по 2024 год" style="width:100%;height:auto;display:block;">
+        <!-- оси -->
+        <line x1="80" y1="55" x2="80" y2="340" stroke="#a8c5a0" stroke-width="1.2"/>
+        <line x1="80" y1="340" x2="748" y2="340" stroke="#a8c5a0" stroke-width="1.2"/>
+        <!-- горизонтальные уровни -->
+        <g stroke="#a8c5a0" stroke-width=".6" opacity=".6">
+          <line x1="80" y1="287" x2="748" y2="287"/>
+          <line x1="80" y1="200" x2="748" y2="200"/>
+          <line x1="80" y1="112" x2="748" y2="112"/>
+        </g>
+        <g font-family="Jost,sans-serif" font-size="10.5" fill="#7d9a82">
+          <text x="73" y="291" text-anchor="end">300</text>
+          <text x="73" y="204" text-anchor="end">350</text>
+          <text x="73" y="116" text-anchor="end">400</text>
+          <text x="100" y="356" text-anchor="middle">1960</text>
+          <text x="300" y="356" text-anchor="middle">1980</text>
+          <text x="500" y="356" text-anchor="middle">2000</text>
+          <text x="700" y="356" text-anchor="middle">2020</text>
+        </g>
+        <!-- доиндустриальный уровень -->
+        <line x1="80" y1="322" x2="748" y2="322" stroke="#c4956a" stroke-width="1" stroke-dasharray="4 4"/>
+        <text x="744" y="317" text-anchor="end" font-family="Jost,sans-serif" font-size="10" fill="#c4956a">доиндустриальный уровень ~280</text>
+
+        <!-- кривая роста CO2 (годовые средние) -->
+        <polyline points="80,261 150,253 200,242 250,233 300,219 350,207 400,193 450,181 500,167 550,148 600,130 650,111 700,88 740,72"
+          fill="none" stroke="#4a7c59" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <!-- точки-акценты: старт и сейчас -->
+        <circle cx="80" cy="261" r="4.5" fill="#4a7c59"/>
+        <text x="90" y="276" font-family="Cormorant Garamond,serif" font-size="14" fill="#1c2b1e">1958: ~315</text>
+        <circle cx="740" cy="72" r="5.5" fill="#7a4f2e"/>
+        <text x="734" y="64" text-anchor="end" font-family="Cormorant Garamond,serif" font-size="15" fill="#7a4f2e">сегодня: ~420+</text>
+
+        <!-- врезка: «дыхание» биосферы (зубец) -->
+        <g transform="translate(150,78)">
+          <rect x="0" y="0" width="190" height="56" fill="var(--paper,#faf6ef)" stroke="rgba(74,124,89,.3)" stroke-width="1"/>
+          <polyline points="10,34 24,18 38,40 52,22 66,44 80,26 94,46" fill="none" stroke="#6ea87e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="104" y="24" font-family="Cormorant Garamond,serif" font-style="italic" font-size="12" fill="#4a7c59">дыхание</text>
+          <text x="104" y="38" font-family="Cormorant Garamond,serif" font-style="italic" font-size="12" fill="#4a7c59">биосферы</text>
+          <text x="10" y="52" font-family="Jost,sans-serif" font-size="8" fill="#7d9a82">лето ↓ · зима ↑, каждый год</text>
+        </g>
+      </svg>
+      <div class="kl-cap">За жизнь одного человека CO₂ вырос примерно с 315 до 420+ млн⁻¹ — и кривая всё круче</div>
+    </div>
+
+    <p>На кривой видны сразу две вещи. Первая — <em style="color:var(--fern);">неуклонный подъём</em>: за время наблюдений концентрация выросла примерно с 315 до более чем 420 миллионных долей, и подъём этот не просто идёт, а ускоряется — кривая загибается вверх всё круче. Вторая — мелкие ежегодные <em style="color:var(--fern);">зубцы</em>. Это буквально дыхание планеты: каждое северное лето леса и поля распускают листву и забирают CO₂ из воздуха, и концентрация чуть падает; каждую зиму растения замирают, и она снова поднимается. Северное полушарие, где суши и растений больше, задаёт этот общий ритм. Планета дышит раз в год, и это видно на графике.</p>
+  </div>
+</section>
+
+<!-- ═══ 03 ═══════════════════════════════════════════════════════════════ -->
+<section class="content-section alt" id="meaning">
+  <div style="max-width:820px;">
+    <div class="section-num">03</div>
+    <div class="disc-meta">~280 млн⁻¹ тысячи лет · теперь выше, чем за миллионы лет · изотопы выдают ископаемый углерод</div>
+    <h2>Что значат <em>эти цифры</em></h2>
+    <p>Чтобы понять масштаб, нужна точка отсчёта. Тысячи лет, всю эпоху земледелия и цивилизации, концентрация CO₂ держалась около 280 миллионных долей — ровно, с небольшими колебаниями. По пузырькам воздуха, замурованным в древнем льду, учёные восстановили эту линию на сотни тысяч лет назад: она гуляла в узких пределах, но за них не выходила. А за последние полтора века она перевалила за 420 — то есть выросла в полтора раза — и поднялась выше, чем когда-либо за миллионы лет истории планеты.</p>
+    <p>И нет сомнений, откуда этот прирост. Рост кривой точно совпадает по времени и величине со сжиганием угля, нефти и газа. Больше того, у углерода из ископаемого топлива особый изотопный «отпечаток»: он отличается составом изотопов от углерода вулканов или океана. И воздух меняется именно в сторону этого отпечатка — доля «ископаемых» изотопов в атмосферном CO₂ растёт. Это как улика на месте преступления: газ в воздухе прибавляется не откуда угодно, а именно из того, что мы выкапываем и жжём.</p>
+    <p>Так абстрактное «мы выбрасываем углерод» превращается в конкретное, измеренное число, которое можно посмотреть за любой день. CO₂ в воздухе — больше не предмет веры или спора, а показание прибора, растущее на глазах одного поколения.</p>
+  </div>
+</section>
+
+<!-- ═══ 04 ═══════════════════════════════════════════════════════════════ -->
+<section class="content-section" id="why">
+  <div style="max-width:820px;">
+    <div class="section-num">04</div>
+    <div class="disc-meta">догадка стала фактом · простое и неопровержимое доказательство · кривая всё ещё растёт</div>
+    <h2>Почему это <em>важно</em></h2>
+    <p>Кривая Килинга важна не только тем, что она показывает, но и тем, что она сделала с самим спором о климате. До неё связь человека и состава атмосферы была гипотезой — красивой, обоснованной, но недоказанной. После неё она стала измеренным фактом. Одна длинная, честная линия превратила «возможно, мы влияем на воздух» в «вот ровно насколько и вот с какого года». Трудно спорить с графиком, который можно продолжать каждый день.</p>
+    <p>В этом её особая сила — <em style="color:var(--fern);">простота</em>. Климатическая наука сложна, полна моделей и неопределённостей, и в этой сложности легко утонуть или усомниться. А кривая Килинга проста до предела: вот прибор, вот воздух, вот число, вот как оно росло семьдесят лет. Не нужно верить моделям будущего, чтобы увидеть, что уже произошло. Поэтому её часто называют самым важным набором данных во всей науке о климате — не самым сложным, а самым убедительным.</p>
+    <p>И самое трезвое: кривая не остановилась и даже не замедлилась — она продолжает расти, причём всё быстрее. Каждый год к ней добавляется новая точка, и каждый год она выше предыдущей. Линия, с которой начался серьёзный разговор о климате, всё ещё ползёт вверх прямо сейчас, пока вы это читаете.</p>
+  </div>
+</section>
+
+<!-- ═══ ИТОГ ══════════════════════════════════════════════════════════════ -->
+<section class="content-section alt" id="outro">
+  <div style="max-width:820px;">
+    <div class="section-num">—</div>
+    <h2>Итог: <em>линия, которую видно всем</em></h2>
+    <p>Кривая Килинга — редкий случай, когда огромная, спорная, пугающая тема сворачивается в одну ясную линию, понятную без всякой подготовки. Один человек, один вулкан, одно упрямое измерение длиной в жизнь — и вот перед нами воздух планеты, нарисованный во времени. Он менялся тысячи лет в узких пределах и резко пошёл вверх ровно тогда, когда мы начали жечь ископаемое топливо.</p>
+    <p>Есть в этой линии и что-то большее, чем данные. Воздух — самое общее, что есть у всех живущих: один на всех, не поделённый границами, незаметный, пока не задумаешься. Кривая Килинга показывает, что это общее мы все вместе и незаметно меняем — и что изменение можно увидеть, измерить и, значит, остановить. Иногда, чтобы понять свой мир, достаточно посмотреть на одну честно проведённую линию.</p>
+    <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(74,124,89,0.15);font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--ink-light);text-align:center;font-size:1rem;">
+      — редакция «ЭкоСознания», раздел «Наука»
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="gf">
+  <div class="gf-top">
+    <div class="gf-brand">
+      <a href="index.html" class="gf-logo">
+        <svg viewBox="0 0 100 100" fill="none" class="logo-svg" style="width:24px;height:24px;flex-shrink:0;"><circle cx="50" cy="50" r="40" stroke="#f3ede3" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#6ea87e"/></svg>
+        <span class="gf-logo-text">Эко<em>Сознание</em></span>
+      </a>
+      <p class="gf-tagline">Экологический взгляд как линза для любой сферы жизни</p>
+    </div>
+    <div class="gf-cols">
+      <div>
+        <div class="gf-col-title">Разделы</div>
+        <div class="gf-sections">
+          <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Философия</span></a>
+          <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
+          <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
+          <a href="section-compost.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Компост</span></a>
+          <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Технологии</span></a>
+          <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
+          <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
+          <a href="section-construction.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="gf-sec-name">Строительство</span></a>
+          <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="gf-sec-name">Экономика</span></a>
+          <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Образование</span></a>
+          <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
+          <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
+          <a href="section-health.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Здоровье</span></a>
+          <a href="section-science.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Наука</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="gf-col-title">Материалы</div>
+        <nav class="gf-nav-links">
+          <a href="essay-truth-and-climate.html" class="gf-nav-link">Истина и климат</a>
+          <a href="essay-passive-design.html" class="gf-nav-link">Пассивный дизайн</a>
+          <a href="essay-solastalgia.html" class="gf-nav-link">Соластальгия</a>
+          <a href="essay-community-survives.html" class="gf-nav-link">Что нужно общине</a>
+          <a href="essay-bread.html" class="gf-nav-link">Хлеб</a>
+          <a href="essay-morning-light.html" class="gf-nav-link">Утренний свет</a>
+          <a href="essay-moneyless-year.html" class="gf-nav-link">Год без денег</a>
+          <a href="lab-heidegger-plastic.html" class="gf-nav-link">Лаб №01 · Пластик</a>
+          <a href="lab-hyperobject-room.html" class="gf-nav-link">Лаб №02 · Комната</a>
+          <a href="lab-jacket-biography.html" class="gf-nav-link">Лаб №03 · Куртка</a>
+          <a href="lab-15min-city.html" class="gf-nav-link">Лаб №04 · Город</a>
+          <a href="lab-bateson-gpt.html" class="gf-nav-link">Лаб №05 · Бейтсон</a>
+          <a href="lab-raworth-chinovnik.html" class="gf-nav-link">Лаб №06 · Раворт</a>
+          <a href="lab-heidegger-builder.html" class="gf-nav-link">Лаб №07 · Хайдеггер</a>
+          <a href="lab-benyus-engineer.html" class="gf-nav-link">Лаб №08 · Бенюс</a>
+          <a href="lab-illich-social.html" class="gf-nav-link">Лаб №09 · Иллич</a>
+          <a href="lab-morton-raworth.html" class="gf-nav-link">Лаб №10 · Мортон / Раворт</a>
+          <a href="lab-illich-benyus.html" class="gf-nav-link">Лаб №11 · Иллич / Бенюс</a>
+          <a href="lab-degrowth-ecomodern.html" class="gf-nav-link">Лаб №12 · Спор о росте</a>
+        </nav>
+      </div>
+      <div>
+        <div class="gf-col-title">Навигация</div>
+        <nav class="gf-nav-links">
+          <a href="index.html" class="gf-nav-link">Главная</a>
+          <a href="map.html" class="gf-nav-link">Карта связей</a>
+          <a href="paths.html" class="gf-nav-link">Тропы чтения</a>
+          <a href="contents.html" class="gf-nav-link">Все материалы</a>
+          <a href="tree.html" class="gf-nav-link">Дерево материалов</a>
+          <a href="revisions.html" class="gf-nav-link">Что не подтвердилось</a>
+          <a href="thinkers.html" class="gf-nav-link">Указатель имён</a>
+          <a href="search.html" class="gf-nav-link">Поиск</a>
+          <a href="method.html" class="gf-nav-link">Как устроены материалы</a>
+          <a href="corrections.html" class="gf-nav-link">Исправления</a>
+            <a href="about.html" class="gf-nav-link">О проекте</a>
+          <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
+          <a href="section-icons-library.html" class="gf-nav-link">Знаки разделов</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="gf-bottom">
+    <span class="gf-copy">© 2025 ЭкоСознание</span>
+    <div class="gf-bottom-links">
+      <a href="about.html">О проекте</a>
+      <a href="glossary.html">Глоссарий</a>
+    </div>
+  </div>
+</footer>
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+
+
+<!-- ECO:MANAGED:js -->
+<script src="assets/global.js" defer></script>
+<!-- /ECO:MANAGED:js -->
+</body>
+</html>

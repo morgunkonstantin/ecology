@@ -1,28 +1,25 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
 <head>
+<script>document.documentElement.classList.replace('no-js','js');</script>
 <meta charset="UTF-8">
-  <meta name="description" content="Экология как способ смотреть на реальность. Двенадцать разделов, эссе и лаборатории о связях между едой, архитектурой, психологией и планетой.">
+  <meta name="description" content="Экология как способ смотреть на реальность. Семнадцать разделов, эссе и лаборатории о связях между едой, архитектурой, психологией и планетой.">
   <meta name="robots" content="index, follow">
   <meta property="og:type" content="website">
   <meta property="og:title" content="ЭкоСознание">
-  <meta property="og:description" content="Экология как способ смотреть на реальность. Двенадцать разделов, эссе и лаборатории о связях между едой, архитектурой, психологией и планетой.">
+  <meta property="og:description" content="Экология как способ смотреть на реальность. Семнадцать разделов, эссе и лаборатории о связях между едой, архитектурой, психологией и планетой.">
   <meta property="og:image" content="https://ecosoznanie.ru/og-image.jpg">
   <meta property="og:locale" content="ru_RU">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ЭкоСознание">
-  <meta name="twitter:description" content="Экология как способ смотреть на реальность. Двенадцать разделов, эссе и лаборатории о связях между едой, архитектурой, психологией и планетой.">
+  <meta name="twitter:description" content="Экология как способ смотреть на реальность. Семнадцать разделов, эссе и лаборатории о связях между едой, архитектурой, психологией и планетой.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ЭкоСознание</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/base.css">
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-:root{--ink:#1c2b1e;--ink-light:#3d5240;--moss:#4a7c59;--fern:#6ea87e;--sage:#a8c5a0;--mist:#d4e6d0;--cream:#f3ede3;--warm:#ece5d6;--paper:#faf6ef;--gold:#b8924a;--clay:#c4956a;--rust:#7a4f2e;}
-html{scroll-behavior:smooth;}
-body{background:var(--paper);color:var(--ink);font-family:'Jost',sans-serif;font-weight:300;overflow-x:hidden;}
-
-/* HERO */
 .hero{min-height:92vh;display:flex;align-items:flex-end;padding:0 4rem 5rem;position:relative;overflow:hidden;}
 .hero::before{content:'';position:absolute;inset:0;background:linear-gradient(155deg,var(--paper) 0%,rgba(74,124,89,0.05) 55%,rgba(74,124,89,0.11) 100%);}
 .hero-mark{position:absolute;right:4rem;top:50%;transform:translateY(-50%);width:200px;height:200px;opacity:0.07;pointer-events:none;}
@@ -35,8 +32,6 @@ h1 em{font-style:italic;color:var(--moss);display:block;}
 .hero-lead{font-size:1rem;line-height:1.9;color:var(--ink-light);max-width:600px;margin-bottom:2.5rem;}
 .hero-cta{display:inline-flex;align-items:center;gap:0.7rem;text-decoration:none;font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--moss);border-bottom:1px solid rgba(74,124,89,0.3);padding-bottom:0.2rem;transition:border-color 0.2s;}
 .hero-cta:hover{border-color:var(--moss);}
-
-/* SECTIONS GRID */
 .sections-block{padding:6rem 4rem;background:var(--paper);}
 .block-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:3rem;gap:2rem;}
 .block-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;color:var(--ink);}
@@ -53,8 +48,6 @@ h1 em{font-style:italic;color:var(--moss);display:block;}
 .card-desc{font-size:0.8rem;line-height:1.7;color:var(--ink-light);flex:1;}
 .card-arrow{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--moss);margin-top:1rem;}
 .card.wip{opacity:0.5;pointer-events:none;}
-
-/* FRESH */
 .fresh-block{padding:6rem 4rem;background:var(--ink);}
 .fresh-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:3rem;gap:2rem;}
 .fresh-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;color:var(--cream);}
@@ -67,8 +60,6 @@ h1 em{font-style:italic;color:var(--moss);display:block;}
 .fc-name em{font-style:italic;color:var(--fern);}
 .fc-desc{font-size:0.82rem;line-height:1.7;color:rgba(211,230,208,0.62);}
 .fc-read{margin-top:auto;font-size:0.7rem;letter-spacing:0.1em;color:var(--fern);}
-
-/* MANIFESTO */
 .manifesto{padding:7rem 4rem;display:flex;align-items:center;justify-content:center;background:var(--paper);}
 .manifesto-inner{max-width:700px;text-align:center;}
 .manifesto-mark{width:52px;height:52px;margin:0 auto 2rem;opacity:0.3;}
@@ -77,117 +68,38 @@ h1 em{font-style:italic;color:var(--moss);display:block;}
 .manifesto-links{font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--sage);}
 .manifesto-links a{color:var(--moss);text-decoration:none;border-bottom:1px solid rgba(74,124,89,0.3);}
 .manifesto-links a:hover{border-color:var(--moss);}
-
 .reveal{opacity:0;transform:translateY(18px);transition:opacity 0.6s ease,transform 0.6s ease;}
 .reveal.visible{opacity:1;transform:none;}
-.d1{transition-delay:0.07s;}.d2{transition-delay:0.14s;}.d3{transition-delay:0.21s;}.d4{transition-delay:0.28s;}
-
-@media(max-width:960px){
-  .sections-grid,.fresh-grid{grid-template-columns:repeat(2,1fr);}
-  .block-sub{display:none;}
-}
-@media(max-width:640px){
-  .hero,.sections-block,.fresh-block,.manifesto{padding-left:1.5rem;padding-right:1.5rem;}
-  h1{font-size:2.8rem;}
-  .hero-mark{opacity:0.04;width:120px;height:120px;right:1.5rem;}
-  .block-header,.fresh-header{flex-direction:column;align-items:flex-start;}
-  .sections-grid{grid-template-columns:1fr 1fr;}
-  .fresh-grid{grid-template-columns:1fr;}
-}
-/* ── GLOBAL NAV + FOOTER v2 ── */
-.g-nav-wrap{position:fixed;top:0;left:0;right:0;z-index:300;background:rgba(250,246,239,0.95);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(74,124,89,0.13);font-family:'Jost',sans-serif;}
-.g-nav{display:flex;align-items:center;height:62px;padding:0 3rem;gap:0;}
-.g-logo{display:flex;align-items:center;gap:0.55rem;text-decoration:none;flex-shrink:0;margin-right:auto;}
-.g-logo .logo-svg{width:24px;height:24px;color:var(--ink);}
-.g-logo-text{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--ink);white-space:nowrap;}
-.g-logo-text em{font-style:italic;color:var(--moss);}
-.g-links{display:flex;align-items:center;gap:0;list-style:none;}
-.g-links>li{position:relative;}
-.g-links>li>a,.g-links>li>button{display:flex;align-items:center;gap:0.3rem;font-size:0.75rem;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-light);text-decoration:none;padding:0.45rem 0.9rem;border-radius:3px;background:none;border:none;cursor:pointer;font-family:'Jost',sans-serif;transition:color 0.2s,background 0.2s;}
-.g-links>li>a:hover,.g-links>li>button:hover{color:var(--moss);}
-.g-links>li>a.g-active{color:var(--moss);}
-.g-chevron{width:10px;height:10px;display:block;transition:transform 0.25s;}
-.g-drop-open>.g-drop-btn .g-chevron{transform:rotate(180deg);}
-.g-dropdown{position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);background:var(--ink);border:1px solid rgba(255,255,255,0.08);border-radius:6px;box-shadow:0 16px 40px rgba(0,0,0,0.35);padding:1.2rem;min-width:580px;display:none;grid-template-columns:repeat(3,1fr);gap:0.1rem;z-index:400;}
-.g-drop-open .g-dropdown{display:grid;}
-.g-dd-link{display:flex;align-items:center;gap:0.5rem;text-decoration:none;padding:0.5rem 0.6rem;border-radius:4px;transition:background 0.18s;}
-.g-dd-link:hover{background:rgba(255,255,255,0.08);}
-.g-dd-icon{width:18px;height:18px;flex-shrink:0;color:rgba(110,168,126,0.55);}
-.g-dd-icon svg{width:100%;height:100%;}
-.g-dd-link:hover .g-dd-icon{color:var(--fern);}
-.g-dd-name{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(243,237,227,0.85);}
-.g-dd-num{font-size:0.6rem;letter-spacing:0.12em;color:rgba(168,197,160,0.4);margin-left:auto;}
-.g-dd-link.wip{opacity:0.35;pointer-events:none;}
-.g-burger{display:none;flex-direction:column;justify-content:center;gap:5px;width:32px;height:32px;background:none;border:none;cursor:pointer;padding:3px;margin-left:1rem;}
-.g-burger span{display:block;height:1.5px;background:var(--ink);transition:transform 0.28s,opacity 0.28s,width 0.28s;transform-origin:center;}
-.g-burger span:nth-child(1){width:100%;}
-.g-burger span:nth-child(2){width:70%;}
-.g-burger span:nth-child(3){width:45%;}
-.g-burger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);width:100%;}
-.g-burger.open span:nth-child(2){opacity:0;}
-.g-burger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);width:100%;}
-.g-overlay{display:none;position:fixed;inset:62px 0 0 0;z-index:290;background:rgba(28,43,30,0.98);backdrop-filter:blur(20px);overflow-y:auto;padding:2rem 2rem 3rem;}
-.g-overlay.open{display:block;}
-.g-ov-section{margin-bottom:2rem;}
-.g-ov-label{font-size:0.64rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(168,197,160,0.45);margin-bottom:0.8rem;font-family:'Jost',sans-serif;}
-.g-ov-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.15rem;}
-.g-ov-link{display:flex;align-items:center;gap:0.5rem;text-decoration:none;padding:0.6rem 0.5rem;border-radius:4px;transition:background 0.18s;}
-.g-ov-link:hover{background:rgba(255,255,255,0.07);}
-.g-ov-icon{width:18px;height:18px;color:rgba(110,168,126,0.55);flex-shrink:0;}
-.g-ov-icon svg{width:100%;height:100%;}
-.g-ov-name{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(243,237,227,0.85);}
-.g-ov-link.wip{opacity:0.35;pointer-events:none;}
-.g-ov-simple-links{display:flex;flex-direction:column;gap:0.15rem;}
-.g-ov-simple-link{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(243,237,227,0.8);text-decoration:none;padding:0.55rem 0.5rem;border-radius:4px;transition:background 0.18s;}
-.g-ov-simple-link:hover{background:rgba(255,255,255,0.07);color:#f3ede3;}
-
-/* FOOTER */
-.g-footer-logo .logo-svg{width:22px;height:22px;}
-.g-footer-logo-text em{font-style:italic;color:var(--fern);}
-.g-footer-sec-link.wip{opacity:0.25;pointer-events:none;}
-.g-footer-sec-icon svg{width:100%;height:100%;}
-.g-footer-bottom-links a{font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(168,197,160,0.35);text-decoration:none;transition:color 0.18s;}
-.g-footer-bottom-links a:hover{color:var(--fern);}
-
-body{padding-top:62px!important;}
-/* ── GLOBAL FOOTER ── */
-.gf{background:var(--ink);padding:3.5rem 3rem 0;font-family:'Jost',sans-serif;}
-.gf-top{display:grid;grid-template-columns:200px 1fr;gap:4rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,0.07);}
-.gf-brand{}
-.gf-logo{display:flex;align-items:center;gap:0.55rem;text-decoration:none;margin-bottom:1rem;}
-.gf-logo-text{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--cream);}
-.gf-logo-text em{font-style:italic;color:var(--fern);}
-.gf-tagline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.88rem;color:rgba(168,197,160,0.45);line-height:1.65;max-width:175px;}
-.gf-cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2.5rem;}
-.gf-col-title{font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(168,197,160,0.38);margin-bottom:1rem;}
-.gf-sections{display:grid;grid-template-columns:1fr 1fr;gap:0.05rem;}
-.gf-sec-link{display:flex;align-items:center;gap:0.4rem;text-decoration:none;padding:0.38rem 0.25rem;border-radius:3px;opacity:0.68;transition:opacity 0.18s,background 0.18s;}
-.gf-sec-link:hover{opacity:1;background:rgba(255,255,255,0.06);}
-.gf-sec-icon{width:15px;height:15px;color:var(--fern);flex-shrink:0;}
-.gf-sec-icon svg{width:100%;height:100%;}
-.gf-sec-name{font-family:'Cormorant Garamond',serif;font-size:0.9rem;color:var(--mist);}
-.gf-nav-links{display:flex;flex-direction:column;gap:0.05rem;}
-.gf-nav-link{font-family:'Cormorant Garamond',serif;font-size:0.92rem;color:rgba(211,230,208,0.58);text-decoration:none;padding:0.38rem 0.25rem;border-radius:3px;transition:color 0.18s,background 0.18s;}
-.gf-nav-link:hover{color:var(--fern);background:rgba(255,255,255,0.05);}
-.gf-bottom{padding:1.5rem 0 1.8rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.8rem;}
-.gf-copy{font-size:0.67rem;letter-spacing:0.08em;color:rgba(168,197,160,0.28);}
-.gf-bottom-links{display:flex;gap:1rem;}
-.gf-bottom-links a{font-size:0.67rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(168,197,160,0.35);text-decoration:none;transition:color 0.18s;}
-.gf-bottom-links a:hover{color:var(--fern);}
-@media(max-width:860px){
-  .gf{padding:2.5rem 1.5rem 0;}
-  .gf-top{grid-template-columns:1fr;gap:2rem;}
-  .gf-cols{grid-template-columns:1fr 1fr;gap:1.5rem;}
-}
-@media(max-width:540px){
-  .gf-cols{grid-template-columns:1fr;}
-  .gf-sections{grid-template-columns:1fr 1fr;}
-  .gf-bottom{flex-direction:column;align-items:flex-start;gap:0.6rem;}
-}
+.d1{transition-delay:0.07s;}
+.d2{transition-delay:0.14s;}
+.d3{transition-delay:0.21s;}
+.d4{transition-delay:0.28s;}
+@media(max-width:960px){ .sections-grid,.fresh-grid{grid-template-columns:repeat(2,1fr);} .block-sub{display:none;} }
+@media(max-width:640px){ .hero,.sections-block,.fresh-block,.manifesto{padding-left:1.5rem;padding-right:1.5rem;} h1{font-size:2.8rem;} .hero-mark{opacity:0.04;width:120px;height:120px;right:1.5rem;} .block-header,.fresh-header{flex-direction:column;align-items:flex-start;} .sections-grid{grid-template-columns:1fr 1fr;} .fresh-grid{grid-template-columns:1fr;} }
 </style>
+<!-- ECO:MANAGED:head -->
+  <link rel="canonical" href="https://morgunkonstantin.github.io/ecology/">
+  <meta property="og:url" content="https://morgunkonstantin.github.io/ecology/">
+  <meta property="og:site_name" content="ЭкоСознание">
+  <meta property="og:image" content="https://morgunkonstantin.github.io/ecology/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ЭкоСознание — экология как способ смотреть на реальность">
+  <meta name="twitter:image" content="https://morgunkonstantin.github.io/ecology/assets/og-image.png">
+  <meta name="theme-color" content="#faf6ef">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"ЭкоСознание","headline":"ЭкоСознание","description":"Экология как способ смотреть на реальность. Семнадцать разделов, эссе и лаборатории о связях между едой, архитектурой, психологией и планетой.","inLanguage":"ru-RU","url":"https://morgunkonstantin.github.io/ecology/","publisher":{"@type":"Organization","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://morgunkonstantin.github.io/ecology/"}]}</script>
+<!-- /ECO:MANAGED:head -->
 </head>
 <body>
+<a class="skip-link" href="#content">Перейти к содержанию</a>
+
 <div class="g-nav-wrap" id="gNavWrap">
   <div class="g-nav">
     <a href="index.html" class="g-logo">
@@ -204,18 +116,17 @@ body{padding-top:62px!important;}
           <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
           <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
           <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-compost.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Компост</span><span class="g-dd-num">03b</span></a>
           <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
           <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
-          <a href="section-compost.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Компост</span><span class="g-dd-num">05b</span></a>
           <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
           <a href="section-construction.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="g-dd-name">Строительство</span><span class="g-dd-num">06b</span></a>
           <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
-          <a href="section-art.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></span><span class="g-dd-name">Искусство</span><span class="g-dd-num">08</span></a>
-          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">09</span></a>
-          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">10</span></a>
-          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">11</span></a>
-          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">12</span></a>
-          <a href="section-science.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Наука</span><span class="g-dd-num">13</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">08</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">09</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">10</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">11</span></a>
+          <a href="section-science.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Наука</span><span class="g-dd-num">12</span></a>
         </div>
       </li>
       <li><a href="index.html#latest">Эссе</a></li>
@@ -227,6 +138,7 @@ body{padding-top:62px!important;}
     </button>
   </div>
 </div>
+
 <div class="g-overlay" id="gOverlay">
   <div class="g-ov-section">
     <div class="g-ov-label">Разделы</div>
@@ -234,13 +146,12 @@ body{padding-top:62px!important;}
       <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Философия</span></a>
       <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
       <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
+      <a href="section-compost.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Компост</span></a>
       <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Технологии</span></a>
       <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
-      <a href="section-compost.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Компост</span></a>
       <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
       <a href="section-construction.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/></svg></span><span class="g-ov-name">Строительство</span></a>
       <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-ov-name">Экономика</span></a>
-      <a href="section-art.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></span><span class="g-ov-name">Искусство</span></a>
       <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Образование</span></a>
       <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
       <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
@@ -255,17 +166,42 @@ body{padding-top:62px!important;}
       <a href="index.html#latest" class="g-ov-simple-link">Эссе и лаборатории</a>
       <a href="glossary.html" class="g-ov-simple-link">Глоссарий</a>
       <a href="map.html" class="g-ov-simple-link">Карта связей</a>
+      <a href="contents.html" class="g-ov-simple-link">Все материалы</a>
+      <a href="revisions.html" class="g-ov-simple-link">Что не подтвердилось</a>
+      <a href="search.html" class="g-ov-simple-link">Поиск</a>
+      <a href="paths.html" class="g-ov-simple-link">Тропы чтения</a>
+      <a href="tree.html" class="g-ov-simple-link">Дерево материалов</a>
+      <a href="thinkers.html" class="g-ov-simple-link">Указатель имён</a>
       <a href="about.html" class="g-ov-simple-link">О проекте</a>
     </div>
   </div>
 </div>
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<main id="content" tabindex="-1">
 
 <section class="hero" id="top">
   <div class="hero-mark"><svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="40" stroke="#4a7c59" stroke-width="1.5" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="6" fill="#4a7c59"/></svg></div>
   <div class="hero-content">
     <div class="hero-sup">Экологический взгляд на жизнь</div>
     <h1>Не сборник советов,<br><em>а другая линза</em></h1>
-    <p class="hero-lead">Двенадцать разделов, семь эссе, пять лабораторий. Экология как способ видеть связи — между едой и почвой, между архитектурой и климатом, между психологией и ландшафтом.</p>
+    <p class="hero-lead">Семнадцать разделов, семь эссе, пять лабораторий. Экология как способ видеть связи — между едой и почвой, между архитектурой и климатом, между психологией и ландшафтом.</p>
     <a href="#sections" class="hero-cta">Смотреть разделы →</a>
   </div>
 </section>
@@ -273,7 +209,7 @@ body{padding-top:62px!important;}
 <section class="sections-block" id="sections">
   <div class="block-header">
     <h2 class="block-title">Двенадцать <em>разделов</em></h2>
-    <p class="block-sub">Одиннадцать готовы. Раздел «Искусство» — в работе.</p>
+    <p class="block-sub">Все двенадцать разделов готовы.</p>
   </div>
   <div class="sections-grid reveal">
     <a href="section-philosophy.html" class="card d1">
@@ -291,7 +227,7 @@ body{padding-top:62px!important;}
     <a href="section-lifestyle.html" class="card d3">
       <div class="card-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></div>
       <div class="card-num">03</div><div class="card-name">Стиль жизни</div>
-      <div class="card-desc">Медленная жизнь как этическая позиция. Slow food, моттаинаи, сезонность.</div>
+      <div class="card-desc">Медленная жизнь как этическая позиция. Slow food, моттаинаи, сезонность. Внутри — подраздел «Компост».</div>
       <span class="card-arrow">Читать →</span>
     </a>
     <a href="section-technologies.html" class="card d4">
@@ -318,39 +254,33 @@ body{padding-top:62px!important;}
       <div class="card-desc">В пределах планеты. Doughnut Раворт, degrowth, commons, экосистемные услуги.</div>
       <span class="card-arrow">Читать →</span>
     </a>
-    <a href="#" class="card d4 wip">
-      <div class="card-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></div>
-      <div class="card-num">08 · скоро</div><div class="card-name">Искусство</div>
-      <div class="card-desc">Экологическая эстетика как незанятая ниша.</div>
-      <span class="card-arrow">В работе</span>
-    </a>
     <a href="section-education.html" class="card d1">
       <div class="card-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></div>
-      <div class="card-num">09</div><div class="card-name">Образование</div>
+      <div class="card-num">08</div><div class="card-name">Образование</div>
       <div class="card-desc">Образование как форма экологии. Скрытый учебный план, лесные школы, place-based.</div>
       <span class="card-arrow">Читать →</span>
     </a>
     <a href="section-community.html" class="card d2">
       <div class="card-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></div>
-      <div class="card-num">10</div><div class="card-name">Сообщество</div>
+      <div class="card-num">09</div><div class="card-name">Сообщество</div>
       <div class="card-desc">Экологический образ жизни невозможен в одиночку. Commons, общины, совместное.</div>
       <span class="card-arrow">Читать →</span>
     </a>
     <a href="section-travel.html" class="card d3">
       <div class="card-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></div>
-      <div class="card-num">11</div><div class="card-name">Путешествия</div>
+      <div class="card-num">10</div><div class="card-name">Путешествия</div>
       <div class="card-desc">Перемещение и присутствие. Slow travel, паломничество, биорегиональные маршруты.</div>
       <span class="card-arrow">Читать →</span>
     </a>
     <a href="section-health.html" class="card d4">
       <div class="card-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></div>
-      <div class="card-num">12</div><div class="card-name">Здоровье</div>
+      <div class="card-num">11</div><div class="card-name">Здоровье</div>
       <div class="card-desc">Тело и планета — одна система. One Health, циркадные ритмы, экспозом, природа как медицина.</div>
       <span class="card-arrow">Читать →</span>
     </a>
     <a href="section-science.html" class="card d1">
       <div class="card-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></div>
-      <div class="card-num">13</div><div class="card-name">Наука</div>
+      <div class="card-num">12</div><div class="card-name">Наука</div>
       <div class="card-desc">Два подраздела — гуманитарные и естественные науки. Хронологическая карта того, как экологический взгляд перестраивает само знание.</div>
       <span class="card-arrow">Читать →</span>
     </a>
@@ -362,6 +292,198 @@ body{padding-top:62px!important;}
     <h2 class="fresh-title">Свежее из <em>лаборатории</em></h2>
   </div>
   <div class="fresh-grid">
+    <a href="essay-eco-technologies.html" class="fc d1">
+      <div class="fc-kind">Эссе · Технологии · 10 мин</div>
+      <div class="fc-name">Экотехнологии: размер единицы предсказывает больше, <em>чем идея</em></div>
+      <p class="fc-desc">Почему панели подешевели в разы, а атомные блоки дорожают. Обучается не мощность, а штука — и у технологии, существующей в десятках экземпляров, серии нет, значит удешевления ждать не от чего.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="essay-community-power.html" class="fc d2">
+      <div class="fc-kind">Эссе · Сообщество · 16 мин</div>
+      <div class="fc-name">Никто не спасает планету <em>в одиночку</em></div>
+      <p class="fc-desc">Текст, потерявшийся между июльской версией сайта и репозиторием и найденный в старом архиве. Почему индивидуальная ответственность оказалась удобной идеей.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="paths.html" class="fc d1">
+      <div class="fc-kind">Новое · семь маршрутов</div>
+      <div class="fc-name">Тропы <em>чтения</em></div>
+      <p class="fc-desc">Восемьдесят материалов — слишком много, чтобы листать список. Семь маршрутов по пять-семь текстов, и между ними сказано, почему дальше читать именно это. Включая тропу «Если вы не согласны».</p>
+      <div class="fc-read">Выбрать →</div>
+    </a>
+    <a href="essay-compost-return.html" class="fc d1">
+      <div class="fc-kind">Эссе · Компост · 9 мин</div>
+      <div class="fc-name">Стрелка назад: самая <em>недостроенная часть цикла</em></div>
+      <p class="fc-desc">Куча — это не химия, а население. Едва ли не самая конвивиальная технология из существующих — и неприятная арифметика: рычаг не в вашем ведре, а в раздельном сборе органики.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="search.html" class="fc d2">
+      <div class="fc-kind">Новое · служебное</div>
+      <div class="fc-name">Поиск, <em>исправления, метод</em></div>
+      <p class="fc-desc">Поиск по всем материалам работает в браузере. Заведён журнал собственных ошибок и записан редакционный метод — включая признание его слабого места.</p>
+      <div class="fc-read">Открыть →</div>
+    </a>
+    <a href="lab-degrowth-ecomodern.html" class="fc d1">
+      <div class="fc-kind">Лаборатория №12 · 8 мин</div>
+      <div class="fc-name">Спор о расцеплении, в котором обе стороны <em>правы наполовину</em></div>
+      <p class="fc-desc">Дегроус против экомодернизма — но в комнате, где сидит человек с планом на двадцать лет. Из трёх решений сошлись по двум за четыре минуты.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="lab-morton-raworth.html" class="fc d2">
+      <div class="fc-kind">Лаборатория №10 · 8 мин</div>
+      <div class="fc-name">Кольцо, <em>которого нет</em></div>
+      <p class="fc-desc">Мортон против Раворт. Она признаёт, что рисует девять границ одинаково твёрдыми, зная, что они не одинаковы. Его спрашивают, что писать во второй строке.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="lab-illich-benyus.html" class="fc d3">
+      <div class="fc-kind">Лаборатория №11 · 8 мин</div>
+      <div class="fc-name">Иллич и Бенюс: <em>кто может это вырастить</em></div>
+      <p class="fc-desc">«В этой строчке содержится слово „лицензия“». Спор упирается не в материал и не в патент, а в стоимость доказательства: полтора миллиона и два года.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="thinkers.html" class="fc d1">
+      <div class="fc-kind">Справочник · 6 мин</div>
+      <div class="fc-name">Указатель <em>имён</em></div>
+      <p class="fc-desc">Двадцать с лишним мыслителей в хронологическом порядке: кто, когда, что сформулировал — и одно возражение каждому. Мыслитель без возражений превращается в икону, а икона не помогает думать.</p>
+      <div class="fc-read">Смотреть →</div>
+    </a>
+    <a href="term-conviviality.html" class="fc d2">
+      <div class="fc-kind">Понятие · 5 мин</div>
+      <div class="fc-name"><em>Конвивиальность</em></div>
+      <p class="fc-desc">Инструмент расширяет вашу способность действовать — или требует, чтобы вы его обслуживали. Иллич, 1973. И порог, который он так и не определил.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="term-commons.html" class="fc d3">
+      <div class="fc-kind">Понятие · 5 мин</div>
+      <div class="fc-name">Общее <em>как институт</em></div>
+      <p class="fc-desc">Хардин описал не общее, а бесхозное. Восемь условий Остром — и три возражения, включая то, что изучались только выжившие системы.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="term-hyperobject.html" class="fc d4">
+      <div class="fc-kind">Понятие · 5 мин</div>
+      <div class="fc-name"><em>Гиперобъект</em></div>
+      <p class="fc-desc">Сущность, которая целиком не является нигде. И возражение Мальма: плоская онтология уравнивает нефтяную компанию и ледник.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="term-shifting-baseline.html" class="fc d5">
+      <div class="fc-kind">Понятие · 5 мин</div>
+      <div class="fc-name">Сдвиг <em>базовой линии</em></div>
+      <p class="fc-desc">Норма едет вместе с наблюдателем. Фотографии с одной пристани за полвека: рыба мельчает, выражение лиц не меняется.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="place-kola.html" class="fc d1">
+      <div class="fc-kind">Одно место во времени · 7 мин</div>
+      <div class="fc-name">Мончегорск и Никель: место, <em>где выбросы прекратились</em></div>
+      <p class="fc-desc">Люди остались, поток вещества остановили. Что из этого следует — и почему почва оказывается узким местом, а не выбросы.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="place-curonian.html" class="fc d2">
+      <div class="fc-kind">Одно место во времени · 7 мин</div>
+      <div class="fc-name">Куршская коса: ландшафт, <em>который приходится держать</em></div>
+      <p class="fc-desc">Дюны, засыпавшие десяток селений, и полтора столетия ручного закрепления песка. Восстановление работает — и не заканчивается никогда.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="thing-server.html" class="fc d1">
+      <div class="fc-kind">Биография вещи · 7 мин</div>
+      <div class="fc-name">Биография одной <em>серверной стойки</em></div>
+      <p class="fc-desc">Вещь, чья невидимость не случайна, а является продуктом. Сверхчистая вода, неон для литографии и пятая часть электропотребления целой страны.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="number-embodied.html" class="fc d2">
+      <div class="fc-kind">Одно число · 7 мин</div>
+      <div class="fc-name">Воплощённая энергия дома: число, <em>которое всё меняет местами</em></div>
+      <p class="fc-desc">Чем эффективнее здание, тем важнее его постройка. Почему «снесём и построим лучше» может быть верным к 2080 году и неверным для ближайших тридцати лет.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="thing-tomato.html" class="fc d3">
+      <div class="fc-kind">Биография вещи · 6 мин</div>
+      <div class="fc-name">Биография <em>зимнего помидора</em></div>
+      <p class="fc-desc">Почему счёт по километрам вводит в заблуждение и как один ген связал ровную окраску с потерей вкуса.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="number-15.html" class="fc d4">
+      <div class="fc-kind">Одно число · 6 мин</div>
+      <div class="fc-name">Полтора градуса: <em>откуда взялось это число</em></div>
+      <p class="fc-desc">Сначала требование малых островных государств, потом обязательство, и только потом научный доклад. Порядок был обратный привычному.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="number-third.html" class="fc d5">
+      <div class="fc-kind">Одно число · 7 мин</div>
+      <div class="fc-name">Треть еды: <em>как считали и что это значит</em></div>
+      <p class="fc-desc">Организация, породившая это число, от него отказалась — а оно продолжает жить, потому что запоминается.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="thing-battery.html" class="fc d6">
+      <div class="fc-kind">Биография вещи · 6 мин</div>
+      <div class="fc-name">Биография одной <em>пальчиковой батарейки</em></div>
+      <p class="fc-desc">Худший способ хранить электричество — дороже розетки в тысячи раз. И школьный миф, переживший ртуть на тридцать лет.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="essay-right-to-repair.html" class="fc d1">
+      <div class="fc-kind">Эссе · Экономика · 8 мин</div>
+      <div class="fc-name">Право на ремонт: кому принадлежит вещь <em>после покупки</em></div>
+      <p class="fc-desc">Картель «Фебус», спаривание деталей, дистанционно заблокированные тракторы. И почему «чинить, а не выбрасывать» — хороший лозунг и плохое правило.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="essay-carbon-markets.html" class="fc d2">
+      <div class="fc-kind">Эссе · Экономика · 7 мин</div>
+      <div class="fc-name">Углеродные рынки: почему механизм <em>не сработал</em></div>
+      <p class="fc-desc">Четыре условия, при которых удалась торговля выбросами серы, — и почему ни одно из них не выполняется для углерода.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="essay-greenwashing.html" class="fc d3">
+      <div class="fc-kind">Эссе · Экономика · 7 мин</div>
+      <div class="fc-name">Гринвошинг: <em>не обман, а отрасль</em></div>
+      <p class="fc-desc">Шесть рабочих приёмов и экономика асимметричной информации. Почему потребительская бдительность здесь не работает — и почему цинизм тоже способ провалиться.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="essay-critical-minerals.html" class="fc d4">
+      <div class="fc-kind">Эссе · Экономика · 7 мин</div>
+      <div class="fc-name">Литий, кобальт и цена <em>чистого перехода</em></div>
+      <p class="fc-desc">Два утверждения, которые оба верны: переход радикально лучше ископаемой энергетики, и вред от добычи реален, локализован и никем не компенсируется.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="essay-imperial-ecology.html" class="fc d5">
+      <div class="fc-kind">Эссе · Экономика · 7 мин</div>
+      <div class="fc-name">Куда уехала грязь: <em>арифметика чистого воздуха</em></div>
+      <p class="fc-desc">Меморандум Саммерса, две колонки учёта выбросов и «Национальный меч», после которого выяснилось, чем на самом деле был раздельный сбор.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="essay-kropotkin.html" class="fc d1">
+      <div class="fc-kind">Эссе · Сообщество · 9 мин</div>
+      <div class="fc-name">Кропоткин в Сибири: что он искал и <em>чего не нашёл</em></div>
+      <p class="fc-desc">Он уехал проверять Дарвина и вернулся с результатом, которого не ожидал. Почему география наблюдателя определила теорию — и в чём Кропоткин ошибся так же, как социальные дарвинисты.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="essay-vernadsky.html" class="fc d2">
+      <div class="fc-kind">Эссе · Наука · 8 мин</div>
+      <div class="fc-name">Вернадский: мысль как <em>геологическая сила</em></div>
+      <p class="fc-desc">Первая половина его тезиса оказалась абсолютно точной, и точность её страшна. Вторая — о том, что разум ведёт к разумному результату, — не подтвердилась.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="essay-zapovednik.html" class="fc d3">
+      <div class="fc-kind">Эссе · Философия · 10 мин</div>
+      <div class="fc-name">Заповедник: идея охраны природы, <em>которая не про нас</em></div>
+      <p class="fc-desc">Кожевников, 1908 год: территория, изъятая не для людей, а от людей. Единственный природоохранный институт, который не предъявляет счёта — и потому дважды разгромленный.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="essay-aral-zone.html" class="fc d4">
+      <div class="fc-kind">Эссе · Наука · 10 мин</div>
+      <div class="fc-name">Арал и Зона: два места, <em>где проверялась одна гипотеза</em></div>
+      <p class="fc-desc">Плановая катастрофа и случайный заповедник. Усыхание Арала не было ошибкой в расчётах — ошибкой была рамка расчёта.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="revisions.html" class="fc d1">
+      <div class="fc-kind">Новая рубрика · 7 мин</div>
+      <div class="fc-name">Что <em>не подтвердилось</em></div>
+      <p class="fc-desc">Постоянная рубрика: прогнозы и утверждения экологического движения, не выдержавшие проверки. Разбирается только своя сторона — Эрлих, «Пределы роста», антиядерные кампании, органическое земледелие.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
+    <a href="lab-illich-social.html" class="fc d1">
+      <div class="fc-kind">Лаборатория №09 · 20 мин</div>
+      <div class="fc-name">Иллич и <em>разработчик соцсети</em></div>
+      <p class="fc-desc">Иван Иллич встречает молодого разработчика социальной сети. Разговор о конвивиальных инструментах, радикальной монополии и о том, как цифровая инфраструктура становится незаменимой.</p>
+      <div class="fc-read">Читать →</div>
+    </a>
     <a href="essay-morning-light.html" class="fc d1">
       <div class="fc-kind">Эссе · Здоровье · 14 мин</div>
       <div class="fc-name">Утренний <em>свет</em></div>
@@ -378,12 +500,6 @@ body{padding-top:62px!important;}
       <div class="fc-kind">Эссе · Здоровье · 17 мин</div>
       <div class="fc-name">Здоровье человека — это здоровье <em>планеты, прочитанное изнутри</em></div>
       <p class="fc-desc">One Health, экспозом, микробиом, планетарные границы. Программное эссе о медицинском факте: чтобы быть здоровым, нельзя жить так, чтобы планета болела.</p>
-      <div class="fc-read">Читать →</div>
-    </a>
-    <a href="essay-art-perception.html" class="fc d3">
-      <div class="fc-kind">Эссе · Искусство · 15 мин</div>
-      <div class="fc-name">Художник как <em>система восприятия</em> в эпоху исчезновений</div>
-      <p class="fc-desc">Олафур Элиассон, Шкловский, лэнд-арт, японское ма, Анна Аткинс. Что искусство может делать, когда мир уходит из видимости.</p>
       <div class="fc-read">Читать →</div>
     </a>
     <a href="essay-commons.html" class="fc d3">
@@ -405,27 +521,27 @@ body{padding-top:62px!important;}
       <div class="fc-read">Читать →</div>
     </a>
         <a href="essay-biomimicry.html" class="fc d3">
-      <div class="fc-kind">Эссе · Технологии · 14 мин</div>
-      <div class="fc-name">Биомимикрия — как <em>природа решает задачи</em></div>
-      <p class="fc-desc">Дженин Бенюс и «Биомимикрия» 1997 года. Как имитация принципов природы даёт эффективные решения инженерных задач.</p>
+      <div class="fc-kind">Эссе · Технологии · 12 мин</div>
+      <div class="fc-name">Биомимикрия: задачи, <em>которые мы только поставили</em></div>
+      <p class="fc-desc">Три уровня подражания по Дженин Бенюс и ревизия канонических примеров: что подтвердилось, что нет и что работает по другой причине.</p>
       <div class="fc-read">Читать →</div>
     </a>
         <a href="essay-doughnut.html" class="fc d3">
-      <div class="fc-kind">Эссе · Экономика · 13 мин</div>
-      <div class="fc-name">ВВП меряет скорость. Нам нужен другой <em>прибор</em></div>
-      <p class="fc-desc">Пончик Кейт Раворт, degrowth и Амстердам как лаборатория. Что значит экономика в пределах планеты.</p>
+      <div class="fc-kind">Эссе · Экономика · 17 мин</div>
+      <div class="fc-name">ВВП меряет скорость. Нужен прибор, <em>который мерит направление</em></div>
+      <p class="fc-desc">Пончик Кейт Раворт, планетарные границы и спор о расцеплении. С разбором возражений — включая те, что приходят не от защитников роста.</p>
       <div class="fc-read">Читать →</div>
     </a>
         <a href="essay-place-based.html" class="fc d3">
-      <div class="fc-kind">Эссе · Образование · 12 мин</div>
+      <div class="fc-kind">Эссе · Образование · 13 мин</div>
       <div class="fc-name">Шесть вопросов <em>Гэри Снайдера</em></div>
-      <p class="fc-desc">Почему место — главный учебник экологии. Place-based education и вопросы, которые задают все, кто на самом деле знает свой район.</p>
+      <p class="fc-desc">Почему нельзя отвечать за биосферу, не зная, откуда в кране вода. И почему из вашего водосбора всё равно не видно климата.</p>
       <div class="fc-read">Читать →</div>
     </a>
         <a href="essay-slow-travel.html" class="fc d3">
-      <div class="fc-kind">Эссе · Путешествия · 14 мин</div>
+      <div class="fc-kind">Эссе · Путешествия · 12 мин</div>
       <div class="fc-name">Тридцать дней <em>в одном месте</em></div>
-      <p class="fc-desc">Что видит путешественник, которого нет на фото. Про slow travel, паломничество и микроприключения Хамфриза.</p>
+      <p class="fc-desc">Перевозка и странствие у Тима Ингольда, арифметика авиационных выбросов и то, что происходит с восприятием на десятый день.</p>
       <div class="fc-read">Читать →</div>
     </a>
     <a href="essay-tech-history.html" class="fc d3">
@@ -527,72 +643,8 @@ body{padding-top:62px!important;}
   </div>
 </section>
 
-<script>
-const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');});},{threshold:0.06});
-document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-</script>
-<script>
-(function(){
-  // Dropdown toggle
-  document.querySelectorAll('.g-drop-btn').forEach(btn=>{
-    btn.addEventListener('click',e=>{
-      e.stopPropagation();
-      const li=btn.closest('li');
-      const open=li.classList.toggle('g-drop-open');
-      btn.setAttribute('aria-expanded',open);
-      document.querySelectorAll('.g-drop-open').forEach(el=>{if(el!==li)el.classList.remove('g-drop-open');});
-    });
-  });
-  document.addEventListener('click',()=>document.querySelectorAll('.g-drop-open').forEach(el=>el.classList.remove('g-drop-open')));
-  document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.g-drop-open').forEach(el=>el.classList.remove('g-drop-open'));});
+</main>
 
-  // Burger / overlay
-  const burger=document.getElementById('gBurger');
-  const overlay=document.getElementById('gOverlay');
-  if(burger&&overlay){
-    burger.addEventListener('click',()=>{
-      const open=overlay.classList.toggle('open');
-      burger.classList.toggle('open',open);
-      document.body.style.overflow=open?'hidden':'';
-    });
-    overlay.querySelectorAll('a[href]').forEach(a=>a.addEventListener('click',()=>{
-      overlay.classList.remove('open');burger.classList.remove('open');document.body.style.overflow='';
-    }));
-    document.addEventListener('keydown',e=>{
-      if(e.key==='Escape'&&overlay.classList.contains('open')){
-        overlay.classList.remove('open');burger.classList.remove('open');document.body.style.overflow='';
-      }
-    });
-  }
-
-  // Highlight active page
-  const pg = location.pathname.split('/').pop() || 'ecolife-landing.html';
-  // Mark active in dropdown and overlay
-  document.querySelectorAll('.g-dd-link, .g-ov-link').forEach(a => {
-    const href = a.getAttribute('href');
-    if (href === pg) {
-      a.style.background = 'rgba(255,255,255,0.1)';
-      const name = a.querySelector('.g-dd-name, .g-ov-name');
-      if (name) name.style.color = '#f3ede3';
-      const icon = a.querySelector('.g-dd-icon, .g-ov-icon');
-      if (icon) icon.style.color = 'var(--fern)';
-    }
-  });
-  // Mark active top-level nav link
-  document.querySelectorAll('.g-links > li > a').forEach(a => {
-    const href = a.getAttribute('href');
-    if (href === pg || href === 'ecolife-landing.html#latest' && ['essay','lab'].some(p => pg.startsWith(p))) {
-      a.classList.add('g-active');
-    }
-    if (href === 'glossary.html' && pg === 'glossary.html') a.classList.add('g-active');
-    if (href === 'about.html' && pg === 'about.html') a.classList.add('g-active');
-  });
-  // If current page is a section, mark 'Разделы' button as active
-  if (pg.startsWith('section-')) {
-    const btn = document.querySelector('.g-drop-btn');
-    if (btn) btn.style.color = 'var(--moss)';
-  }
-})();</script>
 <footer class="gf">
   <div class="gf-top">
     <div class="gf-brand">
@@ -609,13 +661,12 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
           <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Философия</span></a>
           <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
           <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
+          <a href="section-compost.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Компост</span></a>
           <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Технологии</span></a>
           <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
-          <a href="section-compost.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Компост</span></a>
           <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
           <a href="section-construction.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="gf-sec-name">Строительство</span></a>
           <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="gf-sec-name">Экономика</span></a>
-          <a href="section-art.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></span><span class="gf-sec-name">Искусство</span></a>
           <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Образование</span></a>
           <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
           <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
@@ -638,6 +689,13 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
           <a href="lab-jacket-biography.html" class="gf-nav-link">Лаб №03 · Куртка</a>
           <a href="lab-15min-city.html" class="gf-nav-link">Лаб №04 · Город</a>
           <a href="lab-bateson-gpt.html" class="gf-nav-link">Лаб №05 · Бейтсон</a>
+          <a href="lab-raworth-chinovnik.html" class="gf-nav-link">Лаб №06 · Раворт</a>
+          <a href="lab-heidegger-builder.html" class="gf-nav-link">Лаб №07 · Хайдеггер</a>
+          <a href="lab-benyus-engineer.html" class="gf-nav-link">Лаб №08 · Бенюс</a>
+          <a href="lab-illich-social.html" class="gf-nav-link">Лаб №09 · Иллич</a>
+          <a href="lab-morton-raworth.html" class="gf-nav-link">Лаб №10 · Мортон / Раворт</a>
+          <a href="lab-illich-benyus.html" class="gf-nav-link">Лаб №11 · Иллич / Бенюс</a>
+          <a href="lab-degrowth-ecomodern.html" class="gf-nav-link">Лаб №12 · Спор о росте</a>
         </nav>
       </div>
       <div>
@@ -645,6 +703,14 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
         <nav class="gf-nav-links">
           <a href="index.html" class="gf-nav-link">Главная</a>
           <a href="map.html" class="gf-nav-link">Карта связей</a>
+          <a href="paths.html" class="gf-nav-link">Тропы чтения</a>
+          <a href="contents.html" class="gf-nav-link">Все материалы</a>
+          <a href="tree.html" class="gf-nav-link">Дерево материалов</a>
+          <a href="revisions.html" class="gf-nav-link">Что не подтвердилось</a>
+          <a href="thinkers.html" class="gf-nav-link">Указатель имён</a>
+          <a href="search.html" class="gf-nav-link">Поиск</a>
+          <a href="method.html" class="gf-nav-link">Как устроены материалы</a>
+          <a href="corrections.html" class="gf-nav-link">Исправления</a>
             <a href="about.html" class="gf-nav-link">О проекте</a>
           <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
           <a href="section-icons-library.html" class="gf-nav-link">Знаки разделов</a>
@@ -660,5 +726,28 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
     </div>
   </div>
 </footer>
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+
+
+<!-- ECO:MANAGED:js -->
+<script src="assets/global.js" defer></script>
+<!-- /ECO:MANAGED:js -->
 </body>
 </html>

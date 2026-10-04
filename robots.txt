@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Страницы, закрытые от индексации, помечены meta robots=noindex
+# в самих файлах — Disallow здесь не ставим, иначе робот не увидит
+# noindex и страница может остаться в выдаче.
+# ВНИМАНИЕ: для project-сайта на github.io этот файл поисковиками
+# не читается — robots.txt берётся с корня домена. Он начнёт
+# работать после подключения собственного домена.
+
+Sitemap: https://morgunkonstantin.github.io/ecology/sitemap.xml

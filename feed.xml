@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>ЭкоСознание</title>
+  <link>https://morgunkonstantin.github.io/ecology/</link>
+  <atom:link href="https://morgunkonstantin.github.io/ecology/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>Экология как способ смотреть на реальность</description>
+  <language>ru</language>
+  <lastBuildDate>Sat, 03 Oct 2026 19:50:22 +0000</lastBuildDate>
+  <image>
+    <url>https://morgunkonstantin.github.io/ecology/assets/og-image.png</url>
+    <title>ЭкоСознание</title>
+    <link>https://morgunkonstantin.github.io/ecology/</link>
+  </image>
+  <item>
+    <title>Экотехнологии: размер единицы предсказывает больше, чем идея</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-eco-technologies.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-eco-technologies.html</guid>
+    <description>Почему одни «зелёные» технологии дешевеют, а другие нет. Гранулярность по Уилсону и Грублеру, разделение обучения от масштаба и от опыта, контрпример британских тепловых насосов — и проверка, которую можно применить до всякой оценки эффекта.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 26 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Никто не спасает планету в одиночку</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-community-power.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-community-power.html</guid>
+    <description>Почему индивидуальная ответственность оказалась удобной идеей — и что происходит там, где люди объединяются. Текст, потерянный между июльской версией сайта и репозиторием, возвращён.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 26 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Тропы чтения</title>
+    <link>https://morgunkonstantin.github.io/ecology/paths.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/paths.html</guid>
+    <description>Семь кураторских маршрутов по материалам «ЭкоСознания»: с чего начать, инструменты и зависимость, место как учебник, как считать, где мы ошибались, если вы не согласны, русская линия.</description>
+    <category>Эссе</category>
+  </item>
+  <item>
+    <title>Стрелка назад. Почему возврат вещества — самая недостроенная часть любого цикла</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-compost-return.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-compost-return.html</guid>
+    <description>Что происходит в компостной куче и почему это едва ли не самая конвивиальная технология из существующих. И неприятная арифметика: рычаг находится не в вашем ведре, а в раздельном сборе органики.</description>
+    <category>Эссе</category>
+    <pubDate>Sat, 01 Aug 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Поиск по сайту</title>
+    <link>https://morgunkonstantin.github.io/ecology/search.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/search.html</guid>
+    <description>Поиск по всем материалам «ЭкоСознания»: эссе, лабораториям, разборам и понятиям. Работает целиком в браузере, без сервера.</description>
+    <category>Эссе</category>
+  </item>
+  <item>
+    <title>Спор о расцеплении, в котором обе стороны правы наполовину</title>
+    <link>https://morgunkonstantin.github.io/ecology/lab-degrowth-ecomodern.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/lab-degrowth-ecomodern.html</guid>
+    <description>Дегроус против экомодернизма, помещённые в комнату, где сидит человек с планом на двадцать лет. Что остаётся, когда ищешь решения, устойчивые к тому, кто из спорящих прав.</description>
+    <category>Лаборатория</category>
+    <pubDate>Fri, 31 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Кольцо, которого нет: Мортон против Раворт</title>
+    <link>https://morgunkonstantin.github.io/ecology/lab-morton-raworth.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/lab-morton-raworth.html</guid>
+    <description>Спор о том, можно ли изобразить гиперобъект диаграммой. Раворт признаёт, что точность обменена на возможность решения; Мортона спрашивают, что писать во второй строке.</description>
+    <category>Лаборатория</category>
+    <pubDate>Fri, 31 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Иллич и Бенюс: кто может это вырастить</title>
+    <link>https://morgunkonstantin.github.io/ecology/lab-illich-benyus.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/lab-illich-benyus.html</guid>
+    <description>Мицелиальный материал как повод. Бенюс признаёт, что тридцать лет занималась химией и ни дня — собственностью; Илличу предъявляют отсутствие порога.</description>
+    <category>Лаборатория</category>
+    <pubDate>Fri, 31 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Указатель имён</title>
+    <link>https://morgunkonstantin.github.io/ecology/thinkers.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/thinkers.html</guid>
+    <description>Двадцать с лишним мыслителей, на которых держится сайт, в хронологическом порядке: кто, когда, что сформулировал, где об этом подробнее — и одно возражение каждому.</description>
+    <category>Эссе</category>
+    <pubDate>Thu, 30 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Конвивиальность</title>
+    <link>https://morgunkonstantin.github.io/ecology/term-conviviality.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/term-conviviality.html</guid>
+    <description>Понятие Ивана Иллича: инструмент расширяет вашу способность действовать или требует, чтобы вы его обслуживали. Радикальная монополия, контрпродуктивность — и три возражения.</description>
+    <category>Эссе</category>
+    <pubDate>Thu, 30 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Общее как институт</title>
+    <link>https://morgunkonstantin.github.io/ecology/term-commons.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/term-commons.html</guid>
+    <description>Хардин описал не общее, а бесхозное. Восемь условий устойчивости по Элинор Остром, третья инстанция помимо рынка и государства — и три возражения, включая отбор выживших.</description>
+    <category>Эссе</category>
+    <pubDate>Thu, 30 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Гиперобъект</title>
+    <link>https://morgunkonstantin.github.io/ecology/term-hyperobject.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/term-hyperobject.html</guid>
+    <description>Сущность, настолько растянутая во времени и пространстве, что целиком не является нигде. Свойства по Мортону и критика Андреаса Мальма за размывание ответственности.</description>
+    <category>Эссе</category>
+    <pubDate>Thu, 30 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Сдвиг базовой линии</title>
+    <link>https://morgunkonstantin.github.io/ecology/term-shifting-baseline.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/term-shifting-baseline.html</guid>
+    <description>Норма едет вместе с наблюдателем, и постепенная утрата остаётся невидимой. Фотографии с пристани Ки-Уэста, способы защиты — и вопрос о том, какую именно линию считать истинной.</description>
+    <category>Эссе</category>
+    <pubDate>Thu, 30 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Мончегорск и Никель: место, где выбросы прекратились</title>
+    <link>https://morgunkonstantin.github.io/ecology/place-kola.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/place-kola.html</guid>
+    <description>Техногенная пустошь как самая изученная площадка такого рода в мире. Что происходит, когда люди остаются, а поток вещества останавливают, — и почему почва оказывается узким местом.</description>
+    <category>Эссе</category>
+    <pubDate>Wed, 29 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Куршская коса: ландшафт, который приходится держать</title>
+    <link>https://morgunkonstantin.github.io/ecology/place-curonian.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/place-curonian.html</guid>
+    <description>Сведённый лес, странствующие дюны, засыпавшие десяток селений, и полтора столетия ручного закрепления песка. Восстановление работает — и не заканчивается никогда.</description>
+    <category>Эссе</category>
+    <pubDate>Wed, 29 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Биография одной серверной стойки</title>
+    <link>https://morgunkonstantin.github.io/ecology/thing-server.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/thing-server.html</guid>
+    <description>Сверхчистая вода, неон для литографии, пятая часть электропотребления Ирландии и десятилетие, когда вычислений стало вшестеро больше, а энергии почти столько же.</description>
+    <category>Биография вещи</category>
+    <pubDate>Tue, 28 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Воплощённая энергия дома: число, которое всё меняет местами</title>
+    <link>https://morgunkonstantin.github.io/ecology/number-embodied.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/number-embodied.html</guid>
+    <description>Чем эффективнее здание, тем важнее его постройка. Углеродный всплеск от сноса, процессные выбросы цемента и порядок вопросов, который стоит поменять.</description>
+    <category>Одно число</category>
+    <pubDate>Tue, 28 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Биография зимнего помидора</title>
+    <link>https://morgunkonstantin.github.io/ecology/thing-tomato.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/thing-tomato.html</guid>
+    <description>Пластиковое море Альмерии против голландского стекла, почему счёт по километрам вводит в заблуждение — и один ген, которым шестьдесят лет платили за ровную окраску.</description>
+    <category>Биография вещи</category>
+    <pubDate>Tue, 28 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Полтора градуса: откуда взялось это число</title>
+    <link>https://morgunkonstantin.github.io/ecology/number-15.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/number-15.html</guid>
+    <description>Сначала политическое требование малых островных государств, затем международное обязательство и лишь потом научный доклад. Три способа пользоваться этим числом неправильно.</description>
+    <category>Одно число</category>
+    <pubDate>Tue, 28 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Треть еды: как считали и что это значит</title>
+    <link>https://morgunkonstantin.github.io/ecology/number-third.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/number-third.html</guid>
+    <description>Организация, породившая это число, от него отказалась, а оно продолжает жить. Почему выбор знаменателя решает всё и почему сэкономленное не доедет до голодного.</description>
+    <category>Одно число</category>
+    <pubDate>Tue, 28 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Биография одной пальчиковой батарейки</title>
+    <link>https://morgunkonstantin.github.io/ecology/thing-battery.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/thing-battery.html</guid>
+    <description>Цинк, марганец, графит с трёх континентов ради 2,8 ватт-часа. Почему батарейка — худший способ хранить электричество и почему школьный миф про отравленные квадратные метры устарел.</description>
+    <category>Биография вещи</category>
+    <pubDate>Tue, 28 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Право на ремонт: спор о том, кому принадлежит вещь после покупки</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-right-to-repair.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-right-to-repair.html</guid>
+    <description>Картель «Фебус», спаривание деталей, французский индекс ремонтопригодности — и почему «чинить, а не выбрасывать» хороший лозунг и плохое правило.</description>
+    <category>Эссе</category>
+    <pubDate>Tue, 28 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Углеродные рынки: почему механизм, который должен был работать, в основном не сработал</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-carbon-markets.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-carbon-markets.html</guid>
+    <description>Пигу, Коуз и четыре условия, при которых сработала торговля выбросами серы. Почему ни одно из них не выполняется для углерода и что делать вместо.</description>
+    <category>Эссе</category>
+    <pubDate>Tue, 28 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Гринвошинг: не обман, а отрасль</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-greenwashing.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-greenwashing.html</guid>
+    <description>Шесть рабочих приёмов, экономика асимметричной информации и почему потребительская бдительность не работает. Плюс о том, что цинизм — тоже способ провалиться.</description>
+    <category>Эссе</category>
+    <pubDate>Tue, 28 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Литий, кобальт и цена чистого перехода</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-critical-minerals.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-critical-minerals.html</guid>
+    <description>Кустарная добыча в Конго, вода в Атакаме, никель на угле — и необходимое сравнение порядков величин, из-за которого оба утверждения оказываются верными одновременно.</description>
+    <category>Эссе</category>
+    <pubDate>Tue, 28 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Куда уехала грязь. Экологический империализм и арифметика чистого воздуха</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-imperial-ecology.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-imperial-ecology.html</guid>
+    <description>Меморандум Саммерса 1991 года, две колонки учёта выбросов, «Национальный меч» и пограничный углеродный механизм. И довод «вам было можно, а нам нельзя».</description>
+    <category>Эссе</category>
+    <pubDate>Tue, 28 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Кропоткин в Сибири. Что он искал и чего не нашёл</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-kropotkin.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-kropotkin.html</guid>
+    <description>Почему русский натуралист не увидел в природе борьбы за существование, как ответ Гексли стал «Взаимной помощью», что подтвердила биология — и в чём Кропоткин ошибся так же, как его противники.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 27 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Вернадский: мысль как геологическая сила. И почему это не утешает</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-vernadsky.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-vernadsky.html</guid>
+    <description>Биосфера как продукт жизни, живое вещество как измеримая величина, Гея в сравнении с Вернадским — и почему ноосфера остаётся самой слабой частью наследия.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 27 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Заповедник: единственная идея охраны природы, которая не про нас</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-zapovednik.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-zapovednik.html</guid>
+    <description>Кожевников, 1908: территория, изъятая не для людей, а от людей. Эталон как защита от сдвига базовой линии, два разгрома системы и возражения — от Кронона до косимой степи.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 27 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Арал и Зона. Два места, где проверялась одна гипотеза</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-aral-zone.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-aral-zone.html</guid>
+    <description>Плановая катастрофа и случайный заповедник. Почему усыхание Арала не было ошибкой в расчётах и что данные по Чернобыльской зоне говорят вовсе не о радиации.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 27 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Что не подтвердилось</title>
+    <link>https://morgunkonstantin.github.io/ecology/revisions.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/revisions.html</guid>
+    <description>Постоянная рубрика «ЭкоСознания»: разбор прогнозов и утверждений экологического движения, которые не выдержали проверки. Разбирается только своя сторона.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 26 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Иллич и разработчик соцсети — Лаборатория №09</title>
+    <link>https://morgunkonstantin.github.io/ecology/lab-illich-social.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/lab-illich-social.html</guid>
+    <description>Иван Иллич встречает молодого разработчика соцсети. Диалог о конвивиальных инструментах, радикальной монополии и о том, как цифровая инфраструктура становится незаменимой.</description>
+    <category>Лаборатория</category>
+    <pubDate>Wed, 01 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Утренний свет: десять минут</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-morning-light.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-morning-light.html</guid>
+    <description>Циркадные ритмы и утренний солнечный свет. От нобелевской хронобиологии до конкретного протокола.</description>
+    <category>Эссе</category>
+    <pubDate>Thu, 01 May 2025 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Год без денег: эксперимент Марка Бойла</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-moneyless-year.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-moneyless-year.html</guid>
+    <description>Что становится видно, когда деньги перестают быть невидимыми. Биографическое эссе.</description>
+    <category>Эссе</category>
+    <pubDate>Thu, 01 May 2025 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Здоровье человека — это здоровье планеты</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-planetary-health.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-planetary-health.html</guid>
+    <description>One Health, экспозом, микробиом, планетарные границы. Программное эссе о том, как здоровье человека связано со здоровьем планеты.</description>
+    <category>Эссе</category>
+    <pubDate>Thu, 01 May 2025 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Что не помещается между государством и рынком</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-commons.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-commons.html</guid>
+    <description>Восемь принципов Элинор Остром, commons, экодеревни, городские микро-сообщества. Программное эссе о третьей форме организации между государством и рынком.</description>
+    <category>Эссе</category>
+    <pubDate>Thu, 01 May 2025 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Медленнее — не значит ленивее</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-slow-life.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-slow-life.html</guid>
+    <description>Slow Food, Cittaslow, моттаинаи и sufficiency. Программное эссе о медленной жизни как этической позиции и форме экологического действия.</description>
+    <category>Эссе</category>
+    <pubDate>Thu, 01 May 2025 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Что происходит с нами, когда исчезает мир</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-eco-anxiety.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-eco-anxiety.html</guid>
+    <description>Экотревога, соластальгия, биофилия, экотерапия и активная надежда. Как современная психика переживает экологический кризис и как с этим жить.</description>
+    <category>Эссе</category>
+    <pubDate>Thu, 01 May 2025 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Биомимикрия: как природа решает задачи, которые мы только поставили</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-biomimicry.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-biomimicry.html</guid>
+    <description>Три уровня подражания по Дженин Бенюс, ревизия канонических примеров — что подтвердилось, а что нет, — и структурное возражение Джулиана Винсента.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 26 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>ВВП меряет скорость. Нам нужен прибор, который мерит направление</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-doughnut.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-doughnut.html</guid>
+    <description>Экономика пончика Кейт Раворт: два кольца вместо стрелки роста, планетарные границы, спор о расцеплении и Амстердам как первая городская лаборатория. И честный разбор возражений.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 26 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Шесть вопросов Гэри Снайдера. Почему место — главный учебник экологии</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-place-based.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-place-based.html</guid>
+    <description>Гэри Снайдер, биорегионализм и place-based education: почему нельзя отвечать за биосферу, не зная, откуда в кране вода. И почему из вашего водосбора не видно климата.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 26 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Тридцать дней в одном месте. Что видит путешественник, которого нет на фото</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-slow-travel.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-slow-travel.html</guid>
+    <description>Различение перевозки и странствия у Тима Ингольда, арифметика авиационных выбросов, овертуризм и эффект ослабления памяти при съёмке. И три возражения медленному путешествию.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 26 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Технология — наша вторая природа. И первая беда</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-tech-history.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-tech-history.html</guid>
+    <description>История технологии и её экологический след — от огня до искусственного интеллекта. Мамфорд, Хабер-Бош, Великое ускорение, парадокс Джевонса, Иллич.</description>
+    <category>Эссе</category>
+    <pubDate>Thu, 01 May 2025 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Самый зелёный дом — тот, что уже стоит</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-heritage-buildings.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-heritage-buildings.html</guid>
+    <description>Историческая архитектура — не вопрос ностальгии, а вопрос углеродного бюджета. Воплощённая энергия, Джейн Джейкобс, adaptive reuse и российский контекст.</description>
+    <category>Эссе</category>
+    <pubDate>Thu, 01 May 2025 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Шесть способов построить дом иначе</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-alternative-building.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-alternative-building.html</guid>
+    <description>Землянка, earthbag, earthship, A-frame, дом-теплица, модульный дом — шесть альтернативных подходов к строительству, у каждого своя философия и климатическая привязка.</description>
+    <category>Эссе</category>
+    <pubDate>Thu, 01 May 2025 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Бенюс и инженер нефтегазовой компании — Лаборатория №08</title>
+    <link>https://morgunkonstantin.github.io/ecology/lab-benyus-engineer.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/lab-benyus-engineer.html</guid>
+    <description>Дженин Бенюс и инженер нефтегазовой компании. Диалог о биомимикрии и о том, как компания, добывающая нефть, может учиться у природы — не отказываясь от инженерии.</description>
+    <category>Лаборатория</category>
+    <pubDate>Thu, 01 May 2025 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Хайдеггер и строитель торгового центра — Лаборатория №07</title>
+    <link>https://morgunkonstantin.github.io/ecology/lab-heidegger-builder.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/lab-heidegger-builder.html</guid>
+    <description>Хайдеггер и застройщик торгового центра. Воображаемый диалог о наличном запасе, месте и пространстве — на языке инвестиционного проекта.</description>
+    <category>Лаборатория</category>
+    <pubDate>Thu, 01 May 2025 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Раворт против экономического языка — Лаборатория №06</title>
+    <link>https://morgunkonstantin.github.io/ecology/lab-raworth-chinovnik.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/lab-raworth-chinovnik.html</guid>
+    <description>Кейт Раворт и российский экономический язык. Воображаемый диалог о ВВП, росте и планетарных границах — на уровне пресс-конференции.</description>
+    <category>Лаборатория</category>
+    <pubDate>Thu, 01 May 2025 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Бейтсон против ChatGPT — Лаборатория №05</title>
+    <link>https://morgunkonstantin.github.io/ecology/lab-bateson-gpt.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/lab-bateson-gpt.html</guid>
+    <description>Расширенный разум в эпоху ИИ. Воображаемый диалог Грегори Бейтсона с языковой моделью.</description>
+    <category>Лаборатория</category>
+    <pubDate>Thu, 01 May 2025 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Алетейя пластика — Лаборатория №01</title>
+    <link>https://morgunkonstantin.github.io/ecology/lab-heidegger-plastic.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/lab-heidegger-plastic.html</guid>
+    <description>Применение хайдеггеровской алетейи к повседневному пластиковому предмету. Философская лаборатория.</description>
+    <category>Лаборатория</category>
+    <pubDate>Thu, 01 May 2025 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Гиперобъект в одной комнате — Лаборатория №02</title>
+    <link>https://morgunkonstantin.github.io/ecology/lab-hyperobject-room.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/lab-hyperobject-room.html</guid>
+    <description>20 предметов на кухонном столе как следы климатических гиперобъектов. Полевая опись.</description>
+    <category>Лаборатория</category>
+    <pubDate>Thu, 01 May 2025 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Биография одной куртки — Лаборатория №03</title>
+    <link>https://morgunkonstantin.github.io/ecology/lab-jacket-biography.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/lab-jacket-biography.html</guid>
+    <description>Трассировка цепочки поставок: 7 стран, 12 этапов до вешалки. Синтетика и её настоящая цена.</description>
+    <category>Лаборатория</category>
+    <pubDate>Thu, 01 May 2025 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Соластальгия через одно место</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-solastalgia.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-solastalgia.html</guid>
+    <description>Горе по ландшафту, который меняется в твоём присутствии. Термин Гленна Альбрехта и личное эссе.</description>
+    <category>Эссе</category>
+    <pubDate>Thu, 01 May 2025 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>День в 15-минутном городе — Лаборатория №04</title>
+    <link>https://morgunkonstantin.github.io/ecology/lab-15min-city.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/lab-15min-city.html</guid>
+    <description>Сравнительный хронометраж одного дня в двух городах. Что меняется в шаговой доступности.</description>
+    <category>Лаборатория</category>
+    <pubDate>Thu, 01 May 2025 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Что нужно общине, чтобы не распасться</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-community-survives.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-community-survives.html</guid>
+    <description>Шесть принципов устойчивых намеренных общин по Диане Лиф Кристиан.</description>
+    <category>Эссе</category>
+    <pubDate>Thu, 01 May 2025 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Хлеб — и почему это меняет восприятие еды</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-bread.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-bread.html</guid>
+    <description>Как испечь хлеб на закваске дома и что это делает с отношением к еде. С методикой.</description>
+    <category>Эссе</category>
+    <pubDate>Thu, 01 May 2025 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>A-frame (дом-шалаш): крыша вместо стен</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-a-frame.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-a-frame.html</guid>
+    <description>A-frame — дом-треугольник, где скатная крыша служит и стенами: одинаковые несущие рамы, снег съезжает сам, ветер обтекает, интерьер высотой в два света. Почему треугольник надёжен геометрией, а не массой, бум дачных A-frame в 1950–60-е, и честная обратная сторона — скошенные стены съедают площадь.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Из чего и как строить: технологии, материалы и типы дома</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-building-technologies.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-building-technologies.html</guid>
+    <description>Двадцать способов построить дом, который продолжает место, а не борется с ним: земля, солома, камень, дерево, конопля, префаб, земляные дома, юрта и малые формы жилья. Путеводитель-каталог с двумя ключевыми величинами — тепловой массой и воплощённой энергией.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 21 Aug 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Глина и земля как строительный материал</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-clay-earth.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-clay-earth.html</guid>
+    <description>Глина и земля — самый распространённый строительный материал на планете, из которого живёт треть человечества. Семья земляных техник (саман, адобе, прессованная земля, earthbag, штукатурка), свойства (регуляция влажности, тепловая масса, здоровье), почти нулевая воплощённая энергия и полный возврат в почву, и единственная слабость — вода.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Какое электричество на самом деле чистое?</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-clean-electricity.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-clean-electricity.html</guid>
+    <description>Углеродный след источников электричества по жизненному циклу (оценки IPCC): уголь ~820, газ ~490, солнце ~48, гидро ~24, атом ~12, ветер ~11 г CO₂/кВт·ч. Почему миф «производство панелей тоже загрязняет» рассыпается, честные трудности чистых источников, и вывод — заменить ископаемое любым чистым, вопрос в скорости.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Климатическая тревога — болезнь или здравомыслие?</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-climate-anxiety-symptom.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-climate-anxiety-symptom.html</guid>
+    <description>Климатическая тревога соразмерна реальной угрозе — и потому не значится ни в одной классификации болезней. Данные глобального опроса Хикман (Lancet, 2021), соблазн медикализации, соластальгия Альбрехта и активная надежда Мэйси: где граница между беспокойством, которое включает, и страхом, который парализует.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Саман и лёгкий саман (cob): дом, слепленный руками</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-cob.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-cob.html</guid>
+    <description>Саман (cob) — глина, песок и солома, слепленные руками без опалубки и кирпичей: свобода формы, самый низкий порог входа, здоровый микроклимат. Чем тяжёлый саман отличается от лёгкого (масса против изоляции), почему саманные дома Девона живут по пять веков, и честные ограничения.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Экологический кризис — это кризис образования (Дэвид Орр)</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-crisis-of-education.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-crisis-of-education.html</guid>
+    <description>Дэвид Орр: экологический кризис — не провал образования, а его результат, ведь разрушают планету эффективнее всего наиболее образованные. Почему абстракция, дробление и культ успеха создали проблему, что такое «всякое образование — экологическое» и скрытый учебный план, чему учит само здание школы, и что такое экологическая грамотность (Капра).</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Демархия: что если решения принимать жребием?</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-demarchy.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-demarchy.html</guid>
+    <description>Демархия — назначение решающих не выборами, а жребием. От античных Афин, где жребий считался демократией, а выборы олигархией, до климатических гражданских собраний Ирландии и Франции. Почему случайные информированные граждане оказываются дальновиднее избранных политиков.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Углеродный след тарелки: что весит больше всего</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-diet-carbon.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-diet-carbon.html</guid>
+    <description>Продукты отличаются по климатическому следу в десятки раз: говядина в ~100 раз дороже овощей. Диаграмма следа продуктов (данные Poore &amp; Nemecek, 2018), почему жвачные так вредны (метан, вырубка, потери пищевой цепи), миф о «местном», и честный вывод — не всё или ничего, а сдвиг баланса. Эссе со встроенной инфографикой.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Дом-землянка (earth-sheltered): планета как утеплитель</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-earth-shelter.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-earth-shelter.html</guid>
+    <description>Дом-землянка (earth-sheltered) — заглублённый в склон или обвалованный грунтом дом с южным фасадом к солнцу. Почему температура почвы на глубине почти постоянна и даёт тепловой буфер, обваловка против заглубления, история от исландских дерновых домов до Малкольма Уэллса, и почему землянка требует сухого склона и безупречной гидроизоляции.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Earthbag: дом из мешков с землёй</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-earthbag.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-earthbag.html</guid>
+    <description>Earthbag (земля в мешках) — стена из грунта, вынутого под фундамент: мешки с местным суглинком, колючая проволока, купол без опалубки. Суперадоб Надера Халили, физика тепловой массы и купола, почти нулевая воплощённая энергия и честные ограничения.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Earthship: дом, которому не нужны сети</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-earthship.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-earthship.html</guid>
+    <description>Earthship — автономный дом Майкла Рейнольдса из шин, набитых землёй, с бутылочными перегородками, стеклянным южным фасадом, замкнутым круговоротом дождевой воды и солнечной энергией. Как эти системы сведены в единую замкнутую экосистему, история из пустыни Нью-Мексико, и честная цена автономии.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Карта выбросов: где на самом деле углерод</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-emissions-map.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-emissions-map.html</guid>
+    <description>Откуда на самом деле берутся выбросы: карта по секторам (данные Our World in Data). Две трети — энергия (промышленность, транспорт, здания), пятая часть — еда и землепользование, а отходы с пластиком лишь ~3%. Почему пластик и переработка не главный рычаг, ложная развилка «личное или системное», и где рычаг на самом деле — чистое электричество.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Самолёт в комнате: можно ли путешествовать экологично?</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-flight-carbon.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-flight-carbon.html</guid>
+    <description>Углеродная цена полёта — главное, что обходит стороной разговор об экотуризме. Почему один дальний перелёт равен годовому бюджету CO₂, отчего эффект высоты удваивает вред и чистой замены самолёту пока нет, что стоит за движением флюгскам («стыдно летать») и его критикой, и честный ответ — летать реже, оставаться дольше, мерить поездку глубиной.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Лес как лекарство: целительная сила природы</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-forest-medicine.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-forest-medicine.html</guid>
+    <description>Контакт с природой лечит измеримо: ниже давление и кортизол, меньше тревоги и депрессии, выше иммунитет, быстрее выздоровление (эксперимент Ульриха, 1984). Почему это работает — биофилия, фитонциды, восстановление внимания; что такое синрин-йоку и зелёные рецепты; природодефицит по Луву и практическая доза (около двух часов в неделю, годится и городской парк).</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Дом-теплица (пристроенный солярий): солнце вместо котла</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-greenhouse-home.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-greenhouse-home.html</guid>
+    <description>Дом-теплица — остеклённый солярий у южной стены или стеклянная оболочка на весь дом: днём ловит солнце и греет комнаты, ночью служит буфером, а внутри растёт зелень в январе. Как приручить парниковый эффект, шведский «природный дом», и честные ловушки стекла — перегрев летом и ночные потери зимой.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Костробетон (конопля и известь): стена, поглощающая углерод</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-hempcrete.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-hempcrete.html</guid>
+    <description>Костробетон (hempcrete) — костра конопли с известью и водой вокруг деревянного каркаса: редкое сочетание изоляции и тепловой массы в одном слое, дышащая стена. Почему углерод связывается дважды (в растении и в каменеющей извести), отчего баланс отрицательный, и честные ограничения — не несущий, долго сохнет, редкое сырьё, обжиг извести.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Кривая Килинга: как увидели, что воздух меняется</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-keeling-curve.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-keeling-curve.html</guid>
+    <description>Кривая Килинга — главный портрет климатической науки: рост CO₂ в атмосфере с ~315 (1958) до ~420+ млн⁻¹ сегодня, измеренный Чарльзом Килингом на Мауна-Лоа. Почему у кривой ежегодное «дыхание» биосферы, что значат миллионные доли, как изотопы выдают ископаемый углерод, и почему одна честная линия стала важнейшим доказательством.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Как менялась космологическая картина мира</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-kosmologicheskaya-kartina-mira.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-kosmologicheskaya-kartina-mira.html</guid>
+    <description>Девять вех космологической картины мира — от мифологического космоса с твердью небесной через гелиоцентризм, бесконечную Вселенную и галактики к расширению, Большому взрыву и тёмной Вселенной. Как менялось представление о мире как целом и о месте человека в нём.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 30 Aug 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Модульный и префаб-дом: точность цеха вместо площадки</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-modular-prefab.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-modular-prefab.html</guid>
+    <description>Модульный и префаб-дом — сборка в цеху вместо стройки на площадке: панели или объёмные модули, точность и сухость, герметичность пассивного уровня, монтаж за часы. Чем префаб отличается от модульного, почему завод учится от дома к дому, история от каталожных домов Sears до премиального префаба, и честные ограничения — транспорт, габариты, замороженный проект.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Как менялась научная картина мира</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-nauchnaya-kartina-mira.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-nauchnaya-kartina-mira.html</guid>
+    <description>Девять исторических вех научной картины мира — от замкнутого космоса античности через механику Ньютона, относительность и квант к планетарной системе. Образовательный лонгрид в хронологическом порядке: как каждая научная революция пересобирала мир и место человека в нём.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 30 Aug 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Шесть принципов пассивного дизайна</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-passive-design.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-passive-design.html</guid>
+    <description>Ориентация, оболочка, герметичность, рекуперация, тепловая масса — архитектура без активных систем.</description>
+    <category>Эссе</category>
+    <pubDate>Thu, 01 May 2025 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Прессованная земля (rammed earth): стена в полоску</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-rammed-earth.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-rammed-earth.html</guid>
+    <description>Прессованная земля (rammed earth, pisé) — грунт, утрамбованный в опалубке слоями, дающий полосатую стену без отделки. Физика тепловой массы и регуляции влажности, история от Великой стены и Альгамбры до Мартина Рауха, и честные ограничения: масса — не изоляция, ловушка цемента.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Вторичные материалы: энергия уже потрачена</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-reclaimed.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-reclaimed.html</guid>
+    <description>Вторичные материалы — балки, кирпич, окна и двери из разобранных зданий, взятые повторно с почти отрицательной воплощённой энергией. Чем повторное использование отличается от переработки, почему старый лес и кирпич часто лучше нового, двойная экономия для планеты, и честные ограничения — труд разборки, непредсказуемость, безопасность и нормы.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Маленький дом: сорок метров, спроектированных как сто</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-small-house.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-small-house.html</guid>
+    <description>Маленький дом — самый сильный экологический рычаг в строительстве: площадь бьёт по воплощённой и эксплуатационной энергии сразу. Почему непостроенный метр экологичнее любого материала, как проектирование делает маленькое просторным (принцип «не такого большого дома» Сары Сузанки), достаточность вместо гонки за метрами, и честные ограничения.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Природный камень: стена, которая переживёт строителей</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-stone.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-stone.html</guid>
+    <description>Природный камень — самый долговечный материал: не производят, а добывают, каменная стена даёт максимальную тепловую массу и стоит веками. Сухая кладка против кладки на растворе, камень как тепловой аккумулятор, почему весь его след — в транспорте, бесконечная возвратность, и честные ограничения: вес, привозной транспорт, слабая изоляция.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Соломенные блоки (straw-bale): отход, который греет</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-straw-bale.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-straw-bale.html</guid>
+    <description>Соломенные блоки (straw-bale) — спрессованные тюки соломы как огромные кирпичи, оштукатуренные с двух сторон: выдающаяся изоляция, счета за отопление в разы ниже, запасённый углерод, пожаробезопасность в штукатурке. Несущая «небраскинская» схема и заполнение каркаса, история с 1890-х, и главный враг — вода.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Крошечный дом на колёсах (tiny house): жильё без фундамента</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-tiny-house-wheels.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-tiny-house-wheels.html</guid>
+    <description>Крошечный дом на колёсах (tiny house on wheels) — полноценное жильё на прицепе в габарите дороги: свобода от участка и ипотеки, минимальный след, изобретательные компактные решения. Чем он отличается от автодома и дачи, как экономика долга вытолкнула движение tiny house, и честные ограничения — законная стоянка, размер, инженерия автономии, зима.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Истина — главный вопрос экологии</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-truth-and-climate.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-truth-and-climate.html</guid>
+    <description>Экологический кризис как кризис восприятия и языка. Алетейя, постправда, граждане'ские ассамблеи.</description>
+    <category>Эссе</category>
+    <pubDate>Thu, 01 May 2025 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Фургон и лодка (van-life): жильё в движении</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-van-boat.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-van-boat.html</guid>
+    <description>Фургон-дом и жизнь на лодке — жильё, доведённое до предела: вода в литрах, энергия в ватт-часах, солнечная панель как единственный источник. Почему такая жизнь делает видимым обычно невидимое потребление, чем van-life отличается от дома на колёсах, культура движения и жизни на воде, и честные ограничения — теснота, труд быта, топливо, право.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Вернакулярная архитектура: дома, которые знали свой климат</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-vernacular.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-vernacular.html</guid>
+    <description>Вернакулярная архитектура — народные дома, за тысячи лет настроенные на местный климат без всякой техники. Как охлаждались без кондиционера (толстые стены и дворы, ветроловы-бадгиры, сваи в тропиках) и грелись без котла (компактность, дёрн, снег, общее тепло), единый принцип «форма следует климату», и как пассивный дизайн заново открывает эту мудрость.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Дерево и массивные панели (CLT): материал, который растёт</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-wood-clt.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-wood-clt.html</guid>
+    <description>Дерево — единственный несущий материал, который растёт сам и поглощает углерод при производстве. Формы от сруба и каркаса до перекрёстно-клеёных панелей CLT, снявших вековой потолок высоты; свойства, отрицательный углеродный баланс — и одно жёсткое условие: ответственное происхождение леса.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Юрта: три тысячи лет аэродинамики</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-yurt.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-yurt.html</guid>
+    <description>Юрта — переносное жилище кочевников Центральной Азии: решётчатые стены, жерди купола, войлок и верёвки, сборка за полдня без фундамента. Почему круглая форма выдерживает ветер и экономит материал, купол работает как естественная вентиляция, откуда родом юрта и её современное возрождение, и честные ограничения — одно помещение, зима, уход, нормы.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>«Демографическая бомба» Пола Эрлиха</title>
+    <link>https://morgunkonstantin.github.io/ecology/revision-ehrlich.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/revision-ehrlich.html</guid>
+    <description>Что именно предсказывал Эрлих в 1968 году, почему прогноз не сбылся, чем обернулась риторика перенаселения на практике и почему пари с Джулианом Саймоном — плохой аргумент.</description>
+    <category>Ревизия</category>
+    <pubDate>Sun, 26 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>«Пределы роста»: что там было написано на самом деле</title>
+    <link>https://morgunkonstantin.github.io/ecology/revision-limits.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/revision-limits.html</guid>
+    <description>Книгу 1972 года помнят как предсказание исчерпания ресурсов к 2000 году. Такого предсказания в ней не было. Разбор того, как её неверно прочли обе стороны спора.</description>
+    <category>Ревизия</category>
+    <pubDate>Sun, 26 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Углеродная цена антиядерного движения</title>
+    <link>https://morgunkonstantin.github.io/ecology/revision-nuclear.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/revision-nuclear.html</guid>
+    <description>Риски атомной энергетики не были выдуманы. Ошибка была в сравнении: альтернативой оказался не отказ от станции, а уголь. Самый неудобный разбор рубрики.</description>
+    <category>Ревизия</category>
+    <pubDate>Sun, 26 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Может ли органическое земледелие накормить мир</title>
+    <link>https://morgunkonstantin.github.io/ecology/revision-organic.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/revision-organic.html</guid>
+    <description>Разрыв урожайности, вопрос азота, спор о разделении и совмещении и случай Шри-Ланки 2021 года. Польза реальна, притязание завышено.</description>
+    <category>Ревизия</category>
+    <pubDate>Sun, 26 Jul 2026 09:00:00 +0000</pubDate>
+  </item>
+</channel>
+</rss>

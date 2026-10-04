@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+<script>document.documentElement.classList.replace('no-js','js');</script>
+<meta charset="UTF-8">
+<meta name="description" content="Двадцать способов построить дом, который продолжает место, а не борется с ним: земля, солома, камень, дерево, конопля, префаб, земляные дома, юрта и малые формы жилья. Путеводитель-каталог с двумя ключевыми величинами — тепловой массой и воплощённой энергией.">
+<meta property="og:title" content="Из чего и как строить: технологии, материалы и типы дома">
+<meta property="og:description" content="Двадцать способов построить дом, который продолжает место, а не борется с ним: земля, солома, камень, дерево, конопля, префаб, земляные дома, юрта и малые формы жилья. Путеводитель-каталог с двумя ключевыми величинами — тепловой массой и воплощённой энергией.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Из чего и как строить: технологии, материалы и типы дома — ЭкоСознание</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+.essay-tag{display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:2rem;}
+.essay-meta{display:flex;gap:3rem;padding:1.4rem 0;border-top:1px solid rgba(74,124,89,.18);border-bottom:1px solid rgba(74,124,89,.18);flex-wrap:wrap;}
+.essay-meta-item{font-size:.78rem;color:var(--ink-light);}
+.essay-meta-item strong{display:block;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:.3rem;}
+.essay>p{font-family:'Cormorant Garamond',serif;font-size:1.18rem;line-height:1.75;color:var(--ink);margin-bottom:1.8rem;}
+.essay>p:first-of-type::first-letter{font-size:4.6rem;font-weight:400;line-height:.85;float:left;margin:.25rem .6rem 0 0;color:var(--moss);font-family:'Cormorant Garamond',serif;}
+.essay h2 small{display:block;font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--clay);font-weight:400;margin-bottom:.7rem;}
+.essay blockquote p{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-style:italic;color:var(--ink-light);line-height:1.5;margin-bottom:.6rem!important;}
+.essay blockquote cite{font-family:'Jost',sans-serif;font-style:normal;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--moss);}
+.sb::before,.sb::after{content:'';flex:1;max-width:100px;height:1px;background:rgba(74,124,89,.25);}
+.idea{margin:3rem 0;padding:2.2rem 2.5rem 2.2rem 3rem;background:var(--cream);border-left:3px solid var(--moss);position:relative;}
+.idea::before{content:'Идея';position:absolute;top:-.7rem;left:2.2rem;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);background:var(--paper);padding:0 .6rem;}
+.idea p{font-family:'Cormorant Garamond',serif!important;font-size:1.15rem!important;font-style:italic;color:var(--ink)!important;line-height:1.55!important;margin:0!important;}
+.interlude small{font-family:'Jost',sans-serif;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sage);display:block;margin-bottom:1rem;}
+.interlude p{font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.7;color:rgba(211,230,208,.78);margin-bottom:1.3rem;}
+.numbers-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.15);margin:2rem 0;}
+.num-card{background:var(--cream);padding:1.4rem 1.1rem;text-align:center;}
+.num-card .n-big{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--moss);line-height:1;margin-bottom:.4rem;}
+.num-card .n-lbl{font-size:.74rem;line-height:1.5;color:var(--ink-light);}
+.principles-list{margin:2.5rem 0;border-left:2px solid var(--fern);padding-left:2rem;}
+.pl-item{margin-bottom:1.6rem;position:relative;}
+.pl-item:last-child{margin-bottom:0;}
+.pl-item::before{content:'';position:absolute;left:-2.15rem;top:.5rem;width:9px;height:9px;border-radius:50%;background:var(--moss);}
+.pl-num{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.3rem;}
+.pl-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--ink);margin-bottom:.4rem;}
+.pl-name em{font-style:italic;color:var(--moss);}
+.pl-desc{font-size:.92rem;line-height:1.75;color:var(--ink-light);}
+.sig{margin-top:5rem;padding-top:3rem;border-top:1px solid rgba(74,124,89,.18);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem;}
+.sig-a{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink-light);font-style:italic;}
+.sig-m{font-size:.74rem;letter-spacing:.1em;color:var(--sage);text-transform:uppercase;}
+.rel{background:var(--cream);padding:4rem;border-top:1px solid rgba(74,124,89,.15);}
+.rel-in{max-width:1100px;margin:0 auto;}
+.rel-label{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--moss);margin-bottom:1.5rem;}
+.rel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.15);}
+.rel-card{background:var(--cream);padding:1.6rem;text-decoration:none;transition:background .25s;}
+.rel-kind{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.5rem;}
+.reading-bar{position:fixed;top:0;left:0;height:2px;background:var(--moss);z-index:400;width:0%;transition:width .1s linear;}
+@media(max-width:720px){ .essay-hero,.essay,.rel{padding-left:1.5rem;padding-right:1.5rem;} .interlude{margin-left:-1.5rem;margin-right:-1.5rem;padding-left:1.5rem;padding-right:1.5rem;} .rel-grid{grid-template-columns:1fr;} .essay-meta{flex-direction:column;gap:1rem;} .numbers-row{grid-template-columns:1fr 1fr;} }
+</style>
+
+<style>
+/* ── Источники: единый блок для всех эссе и лабораторий ── */
+.sources{margin:5rem 0 0;padding-top:2.5rem;border-top:1px solid rgba(74,124,89,.2);}
+.src-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;margin-bottom:1.6rem;}
+.src-title small{display:block;font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--clay-text);font-weight:400;margin-bottom:.6rem;}
+.src-list{list-style:none;counter-reset:src;padding:0;margin:0;}
+.src-list li{position:relative;padding-left:2.4rem;margin-bottom:1.1rem;font-size:.86rem;
+  line-height:1.7;color:var(--ink-light);}
+.src-list li::before{counter-increment:src;content:counter(src,decimal-leading-zero);
+  position:absolute;left:0;top:.15rem;font-family:'Jost',sans-serif;font-size:.66rem;
+  letter-spacing:.1em;color:var(--sage-text);}
+.src-a{color:var(--ink);}
+/* ── Ссылка на термин глоссария ── */
+a.term{color:inherit;text-decoration:none;border-bottom:1px dotted var(--fern-text);}
+a.term:hover{border-bottom-style:solid;color:var(--moss);}
+/* ── Вопросы-врезка ── */
+.quiz{background:var(--warm);padding:2.2rem 2.4rem;margin:2.5rem 0;border-left:3px solid var(--moss);}
+.quiz ol{margin:0;padding-left:1.4rem;}
+.quiz li{font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.6;
+  color:var(--ink);margin-bottom:.9rem;}
+.quiz li:last-child{margin-bottom:0;}
+</style>
+<!-- ECO:MANAGED:head -->
+  <link rel="canonical" href="https://morgunkonstantin.github.io/ecology/essay-building-technologies.html">
+  <meta property="og:url" content="https://morgunkonstantin.github.io/ecology/essay-building-technologies.html">
+  <meta property="og:site_name" content="ЭкоСознание">
+  <meta property="og:image" content="https://morgunkonstantin.github.io/ecology/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ЭкоСознание — экология как способ смотреть на реальность">
+  <meta name="twitter:image" content="https://morgunkonstantin.github.io/ecology/assets/og-image.png">
+  <meta name="theme-color" content="#faf6ef">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","name":"Из чего и как строить: технологии, материалы и типы дома","headline":"Из чего и как строить: технологии, материалы и типы дома","description":"Двадцать способов построить дом, который продолжает место, а не борется с ним: земля, солома, камень, дерево, конопля, префаб, земляные дома, юрта и малые формы жилья. Путеводитель-каталог с двумя ключевыми величинами — тепловой массой и воплощённой энергией.","inLanguage":"ru-RU","url":"https://morgunkonstantin.github.io/ecology/essay-building-technologies.html","isPartOf":{"@type":"WebSite","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"},"publisher":{"@type":"Organization","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"},"datePublished":"2026-08-21","author":{"@type":"Organization","name":"ЭкоСознание"},"articleSection":"Технологии"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://morgunkonstantin.github.io/ecology/"},{"@type":"ListItem","position":2,"name":"Из чего и как строить: технологии, материалы и типы дома","item":"https://morgunkonstantin.github.io/ecology/essay-building-technologies.html"}]}</script>
+<!-- /ECO:MANAGED:head -->
+</head>
+<body>
+<a class="skip-link" href="#content">Перейти к содержанию</a>
+
+<div class="g-nav-wrap" id="gNavWrap">
+  <div class="g-nav">
+    <a href="index.html" class="g-logo">
+      <svg viewBox="0 0 100 100" fill="none" class="logo-svg"><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#4a7c59"/></svg>
+      <span class="g-logo-text">Эко<em>Сознание</em></span>
+    </a>
+    <ul class="g-links">
+      <li>
+        <button class="g-drop-btn" aria-expanded="false">
+          Разделы
+          <svg class="g-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="g-dropdown">
+          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
+          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
+          <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-compost.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Компост</span><span class="g-dd-num">03b</span></a>
+          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
+          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
+          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
+          <a href="section-construction.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="g-dd-name">Строительство</span><span class="g-dd-num">06b</span></a>
+          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">08</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">09</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">10</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">11</span></a>
+          <a href="section-science.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Наука</span><span class="g-dd-num">12</span></a>
+        </div>
+      </li>
+      <li><a href="index.html#latest">Эссе</a></li>
+      <li><a href="glossary.html">Глоссарий</a></li>
+      <li><a href="about.html">О проекте</a></li>
+    </ul>
+    <button class="g-burger" id="gBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<div class="g-overlay" id="gOverlay">
+  <div class="g-ov-section">
+    <div class="g-ov-label">Разделы</div>
+    <div class="g-ov-grid">
+      <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Философия</span></a>
+      <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
+      <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
+      <a href="section-compost.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Компост</span></a>
+      <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Технологии</span></a>
+      <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
+      <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
+      <a href="section-construction.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/></svg></span><span class="g-ov-name">Строительство</span></a>
+      <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-ov-name">Экономика</span></a>
+      <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Образование</span></a>
+      <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
+      <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
+      <a href="section-health.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-ov-name">Здоровье</span></a>
+      <a href="section-science.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Наука</span></a>
+    </div>
+  </div>
+  <div class="g-ov-section">
+    <div class="g-ov-label">Навигация</div>
+    <div class="g-ov-simple-links">
+      <a href="index.html" class="g-ov-simple-link">Главная</a>
+      <a href="index.html#latest" class="g-ov-simple-link">Эссе и лаборатории</a>
+      <a href="glossary.html" class="g-ov-simple-link">Глоссарий</a>
+      <a href="map.html" class="g-ov-simple-link">Карта связей</a>
+      <a href="contents.html" class="g-ov-simple-link">Все материалы</a>
+      <a href="revisions.html" class="g-ov-simple-link">Что не подтвердилось</a>
+      <a href="search.html" class="g-ov-simple-link">Поиск</a>
+      <a href="paths.html" class="g-ov-simple-link">Тропы чтения</a>
+      <a href="tree.html" class="g-ov-simple-link">Дерево материалов</a>
+      <a href="thinkers.html" class="g-ov-simple-link">Указатель имён</a>
+      <a href="about.html" class="g-ov-simple-link">О проекте</a>
+    </div>
+  </div>
+</div>
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<main id="content" tabindex="-1">
+
+<style>
+/* ── Каталог технологий строительства: широкая раскладка ── */
+.essay{max-width:1320px;padding-left:4rem;padding-right:4rem;}
+.essay>p,.essay .sb,.essay .principles-list,.essay blockquote{max-width:760px;}
+.essay-hero{max-width:1320px;}
+.hero-il{max-width:1320px;margin:-1rem auto 0;padding:0 4rem;}
+.cat-intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem 4rem;align-items:start;margin:0 0 1rem;}
+.cat-intro-grid>p{font-family:'Cormorant Garamond',serif;font-size:1.18rem;line-height:1.75;color:var(--ink);margin:0 0 1.4rem;}
+.il{display:block;width:100%;height:auto;stroke:var(--moss);stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+.il .thin{stroke-width:.9;opacity:.8}
+.il .dash{stroke-dasharray:4 4;stroke-width:1;opacity:.7}
+.il .fill{fill:var(--moss);stroke:none;opacity:.85}
+.il .fill-light{fill:var(--mist);stroke:none;opacity:.55}
+.il .paper{fill:var(--paper);}
+.il .dot{fill:var(--moss);stroke:none;}
+.il .sun{stroke:var(--gold);fill:none;stroke-width:1.4;}
+.il .ground{stroke:var(--sage);stroke-width:1.2;}
+.il .lbl{font-family:'Jost',sans-serif;font-size:6.5px;letter-spacing:.1em;text-transform:uppercase;fill:var(--ink-light);stroke:none;}
+.il-hero{height:auto;}
+.cat-il{background:var(--warm);margin:-1.7rem -1.6rem 1.3rem;padding:1.2rem 1.6rem .6rem;border-bottom:1px solid rgba(74,124,89,.15);}
+.cat-card:hover .cat-il{background:var(--mist);}
+.two-terms .il-wide{margin:1rem 0 .2rem;}
+@media(max-width:900px){.cat-intro-grid{grid-template-columns:1fr;}}
+@media(max-width:720px){.essay,.hero-il{padding-left:1.5rem;padding-right:1.5rem;}.cat-il{margin:-1.7rem -1.6rem 1.2rem;}}
+/* ── Каталог технологий строительства ── */
+.cat-intro{font-family:'Cormorant Garamond',serif;font-size:1.25rem;line-height:1.6;color:var(--ink-light);margin:2rem 0 1rem;}
+.cat-group{margin:3.5rem 0 1rem;}
+.cat-group-label{font-family:'Jost',sans-serif;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--clay-text);margin-bottom:.5rem;}
+.cat-group h2{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;line-height:1.15;margin:0 0 .8rem;}
+.cat-group h2 em{font-style:italic;color:var(--moss);}
+.cat-group > p{margin-bottom:1.6rem;}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1px;background:rgba(74,124,89,.15);border:1px solid rgba(74,124,89,.15);margin:0 0 1rem;}
+.cat-card{background:var(--paper);padding:1.7rem 1.6rem 1.5rem;display:flex;flex-direction:column;}
+.cat-card:hover{background:var(--warm);}
+.cat-num{font-family:'Jost',sans-serif;font-size:.64rem;letter-spacing:.18em;color:var(--sage-text);margin-bottom:.7rem;}
+.cat-name{font-family:'Cormorant Garamond',serif;font-size:1.45rem;line-height:1.2;color:var(--ink);margin-bottom:.25rem;}
+.cat-line{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.05rem;color:var(--moss);margin-bottom:.9rem;line-height:1.4;}
+.cat-text{font-size:.86rem;line-height:1.7;color:var(--ink-light);margin-bottom:1rem;}
+.cat-plus{list-style:none;padding:0;margin:0 0 1rem;}
+.cat-plus li{position:relative;padding-left:1.1rem;font-size:.82rem;line-height:1.6;color:var(--ink);margin-bottom:.3rem;}
+.cat-plus li::before{content:'';position:absolute;left:0;top:.6rem;width:6px;height:6px;border-radius:50%;background:var(--moss);}
+.cat-fit{font-size:.76rem;line-height:1.6;color:var(--ink-light);border-top:1px solid rgba(74,124,89,.18);padding-top:.8rem;margin-top:auto;}
+.cat-fit strong{font-family:'Jost',sans-serif;font-weight:400;font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage-text);display:block;margin-bottom:.25rem;}
+.cat-soon{display:inline-block;margin-top:.7rem;font-family:'Jost',sans-serif;font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--clay-text);}
+.cat-soon a{color:var(--moss);text-decoration:none;border-bottom:1px solid rgba(74,124,89,.4);}
+.cat-soon a:hover{border-bottom-color:var(--moss);}
+.two-terms{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(74,124,89,.15);border:1px solid rgba(74,124,89,.15);margin:2.2rem 0;}
+.two-terms > div{background:var(--warm);padding:1.8rem 1.7rem;}
+.two-terms h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:400;margin:0 0 .6rem;}
+.two-terms p{font-size:.88rem;line-height:1.7;color:var(--ink-light);margin:0 0 .6rem;}
+.two-terms p:last-child{margin:0;}
+@media(max-width:720px){.two-terms{grid-template-columns:1fr;}.cat-grid{grid-template-columns:1fr;}}
+</style>
+
+<div class="reading-bar" id="rb"></div>
+
+<section class="essay-hero">
+  <div class="essay-tag">Обзор · Технологии</div>
+  <h1>Из чего и как строить:<br>технологии, материалы<br>и <em>типы дома</em></h1>
+  <div class="essay-meta">
+    <div class="essay-meta-item"><strong>Раздел</strong>Технологии</div>
+    <div class="essay-meta-item"><strong>Тип</strong>Путеводитель-каталог</div>
+    <div class="essay-meta-item"><strong>Темы</strong>Тепловая масса · Воплощённая энергия · Земля, дерево, камень · Малые дома</div>
+    <div class="essay-meta-item"><strong>Формат</strong>Каждая позиция станет отдельной страницей</div>
+  </div>
+</section>
+
+<div class="hero-il"><svg class="il il-hero" viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="sun" cx="1040" cy="60" r="26"/><line class="ground" x1="0" y1="220" x2="1200" y2="220"/><path d="M0 220 Q80 215 130 160 Q200 100 320 140 L320 220z" class="fill-light"/><path d="M0 220 Q80 215 130 160 Q200 100 320 140"/><rect x="170" y="175" width="90" height="45" class="paper"/><rect x="184" y="186" width="24" height="34" class="fill"/><rect x="218" y="186" width="30" height="22"/><path d="M360 220 L440 90 L520 220z"/><rect x="428" y="170" width="24" height="50" class="fill"/><path d="M560 220 L560 140 L610 100 L660 140 L660 220z"/><path d="M660 220 L660 150 L760 150 L760 220z"/><line x1="685" y1="150" x2="685" y2="220" class="thin"/><line x1="710" y1="150" x2="710" y2="220" class="thin"/><line x1="735" y1="150" x2="735" y2="220" class="thin"/><path d="M670 220 q0-20 10-20 q10 0 10 20" class="thin"/><path d="M700 220 q0-20 10-20 q10 0 10 20" class="thin"/><path d="M730 220 q0-20 10-20 q10 0 10 20" class="thin"/><path d="M800 220 L800 170 Q880 90 960 170 L960 220z"/><path d="M800 170 L960 170" class="thin"/><line x1="815" y1="170" x2="880" y2="112" class="thin"/><line x1="840" y1="170" x2="880" y2="112" class="thin"/><line x1="920" y1="170" x2="880" y2="112" class="thin"/><line x1="945" y1="170" x2="880" y2="112" class="thin"/><circle cx="880" cy="112" r="8"/><path d="M1080 220 L1080 130" /><path d="M1080 150 q-30 -20 -34 -50 q30 8 34 50z M1080 150 q30 -20 34 -50 q-30 8 -34 50z M1080 185 q-28 -14 -36 -44 q32 10 36 44z M1080 185 q28 -14 36 -44 q-32 10 -36 44z"/></svg></div>
+
+<article class="essay">
+
+  <div class="cat-intro-grid">
+    <div>
+      <p>Дом принято считать укрытием от климата. Стены отгораживают, крыша защищает, отопление борется с зимой, кондиционер — с летом. В этой картине дом похож на машину: он работает, пока в него подаётся энергия, и ветшает, как только подача прекращается.</p>
+
+      <p>Но есть другая картина, и она старше первой на несколько тысячелетий. В ней дом — не стена между человеком и климатом, а посредник между ними. Он берёт у солнца тепло зимой и отдаёт ночную прохладу летом, запасает, отражает, проветривает. Он собран из того, что лежало рядом с площадкой, и после своей жизни может вернуться туда же. Такой дом не борется с местом — он продолжает его.</p>
+
+      <p>Этот обзор собирает технологии, материалы и типы жилья, которые принадлежат второй картине. Он намеренно широк и намеренно краток: каждая позиция здесь — дверь, а не комната. Подробные страницы о каждой из них будут появляться по мере готовности, и эта страница станет для них оглавлением.</p>
+
+    </div>
+    <div>
+      <p class="cat-intro" style="margin-top:0">Всё, что ниже, объединяет одна мысль: хороший дом можно собрать из того, что уже есть вокруг, — и он будет держать тепло сам.</p>
+    </div>
+  </div>
+
+  <div class="sb">
+    <h2><small>Две величины</small>Без которых <em>ничего не понять</em></h2>
+  </div>
+
+  <p>Любая технология из списка ниже оценивается по двум осям, и обе стоит держать в голове одновременно. Первая — как дом ведёт себя, когда в нём живут. Вторая — чего он стоил планете, когда его строили.</p>
+
+  <div class="two-terms">
+    <div>
+      <h3>Тепловая масса</h3><svg class="il il-wide" viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="20" y="30" width="70" height="50"/><rect x="24" y="34" width="62" height="42" class="thin"/><rect x="28" y="38" width="54" height="34" class="thin"/><path d="M100 40 q10 -4 20 0 M100 52 q10 -4 20 0 M100 64 q10 -4 20 0" class="thin"/><rect x="150" y="30" width="70" height="50"/><line x1="150" y1="30" x2="220" y2="80" class="thin"/><line x1="220" y1="30" x2="150" y2="80" class="thin"/><text x="55" y="22" class="lbl" text-anchor="middle">тяжёлый</text><text x="185" y="22" class="lbl" text-anchor="middle">лёгкий</text></svg>
+      <p>Способность материала поглощать тепло, хранить его и отдавать с запозданием. Камень, кирпич, бетон, утрамбованная земля — тяжёлые материалы с большой тепловой массой: они медленно нагреваются и медленно остывают. Дерево, солома, каркас с утеплителем — лёгкие: они почти ничего не запасают, зато хорошо изолируют.</p>
+      <p>Ни то ни другое не лучше само по себе. В климате с большим перепадом дневной и ночной температуры тяжёлые стены работают как аккумулятор. В жарком влажном климате, где нужно в основном охлаждение, они превращаются в ловушку, и выигрывает лёгкая конструкция. Подробнее — в <a href="essay-passive-design.html">принципах пассивного дизайна</a>.</p>
+    </div>
+    <div>
+      <h3>Воплощённая энергия</h3><svg class="il il-wide" viewBox="0 0 240 96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="30" y="72" width="26" height="8" class="fill"/><rect x="62" y="66" width="26" height="14" class="fill"/><rect x="94" y="56" width="26" height="24" class=""/><rect x="126" y="40" width="26" height="40" class=""/><rect x="158" y="20" width="26" height="60" class=""/><rect x="190" y="8" width="26" height="72" class=""/><line x1="20" y1="80" x2="224" y2="80" class="thin"/><text x="43" y="88" class="lbl" text-anchor="middle">глина</text><text x="75" y="88" class="lbl" text-anchor="middle">дерево</text><text x="107" y="88" class="lbl" text-anchor="middle">кирпич</text><text x="139" y="88" class="lbl" text-anchor="middle">бетон</text><text x="171" y="88" class="lbl" text-anchor="middle">сталь</text><text x="203" y="88" class="lbl" text-anchor="middle">алюм.</text></svg>
+      <p>Вся энергия, потраченная на добычу, производство и перевозку материала, — и соответствующие ей выбросы. Алюминий и сталь стоят планете дорого; обожжённый кирпич и цемент — ощутимо; дерево, солома, необожжённая глина и местный камень — почти ничего. У бывших в употреблении материалов <a class="term" href="glossary.html#voploschennaya-energiya">воплощённая энергия</a> уже оплачена кем-то до нас.</p>
+      <p>Чем эффективнее дом в эксплуатации, тем больший вес в его общем следе занимает стройка. Почему это переворачивает привычный порядок вопросов — в тексте <a href="number-embodied.html">об одном числе</a>.</p>
+    </div>
+  </div>
+
+  <p>Хорошая строительная технология обычно выигрывает хотя бы по одной оси и не проигрывает по другой. Лучшие — выигрывают по обеим: берут то, что лежит под ногами, и превращают это в стены, которые сами держат комфорт.</p>
+
+  <!-- ═══ ИНФОГРАФИКА: КАРТА МАТЕРИАЛОВ ═══════════════════════════════════ -->
+  <div class="bm-wrap">
+  <style>
+  .bm-wrap{max-width:900px;margin:3rem auto 1rem;}
+  .bm-kicker{font-family:'Jost',sans-serif;font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:var(--moss);margin-bottom:.6rem;}
+  .bm-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.5rem,3vw,2rem);font-weight:300;line-height:1.15;color:var(--ink);margin:0 0 .5rem;}
+  .bm-title em{font-style:italic;color:var(--moss);}
+  .bm-lead{font-size:.88rem;line-height:1.7;color:var(--ink-light);max-width:620px;margin:0 0 1.6rem;}
+  .bm-panel{background:var(--warm);border:1px solid rgba(74,124,89,.18);padding:1.6rem 1.5rem 1rem;margin-bottom:1.1rem;}
+  .bm-cap{font-family:'Jost',sans-serif;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage-text);text-align:center;margin-top:.4rem;}
+  .bm-sub{font-family:'Jost',sans-serif;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin:0 0 1rem;}
+  /* диаграмма воплощённой энергии */
+  .bm-ee-row{display:grid;grid-template-columns:160px 1fr;align-items:center;gap:.8rem;margin-bottom:.4rem;}
+  .bm-ee-name{font-size:.82rem;color:var(--ink);text-align:right;line-height:1.2;}
+  .bm-ee-track{position:relative;height:22px;}
+  .bm-ee-zero{position:absolute;left:38%;top:-4px;bottom:-4px;width:1px;background:rgba(74,124,89,.35);}
+  .bm-ee-bar{position:absolute;top:3px;height:16px;}
+  .bm-ee-neg{background:var(--moss);right:62%;border-radius:3px 0 0 3px;}
+  .bm-ee-pos{background:var(--clay);left:38%;border-radius:0 3px 3px 0;}
+  .bm-ee-val{position:absolute;top:2px;font-size:.66rem;color:var(--ink-light);white-space:nowrap;}
+  .bm-ee-legend{display:flex;gap:1.5rem;justify-content:center;font-size:.72rem;color:var(--ink-light);margin-top:.9rem;flex-wrap:wrap;}
+  .bm-ee-legend span{display:inline-flex;align-items:center;gap:.4rem;}
+  .bm-ee-chip{width:12px;height:12px;border-radius:2px;display:inline-block;}
+  @media(max-width:620px){.bm-ee-row{grid-template-columns:110px 1fr;}.bm-ee-name{font-size:.72rem;}}
+  </style>
+
+    <div class="bm-kicker">Инфографика · Как читать каталог</div>
+    <h2 class="bm-title" style="margin-top:0;">Две оси, на которых <em>всё держится</em></h2>
+    <p class="bm-lead">Прежде чем разбирать двадцать позиций по одной, стоит увидеть их вместе. Почти всё в каталоге раскладывается по двум осям, о которых только что шла речь: как материал ведёт себя с теплом и чего он стоит планете. Обе схемы ниже — качественные, они показывают соотношение, а не точные цифры.</p>
+
+    <!-- Часть A: карта масса × изоляция -->
+    <div class="bm-panel">
+      <div class="bm-sub">Карта тепла: масса против изоляции</div>
+      <svg viewBox="0 0 780 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Карта материалов по тепловой массе и изоляции" style="width:100%;height:auto;display:block;">
+        <!-- оси -->
+        <line x1="95" y1="55" x2="95" y2="395" stroke="#a8c5a0" stroke-width="1.2"/>
+        <line x1="95" y1="395" x2="745" y2="395" stroke="#a8c5a0" stroke-width="1.2"/>
+        <!-- стрелки осей -->
+        <path d="M95 55 l-4 8 h8 z" fill="#a8c5a0"/>
+        <path d="M745 395 l-8 -4 v8 z" fill="#a8c5a0"/>
+        <!-- подписи осей -->
+        <text transform="rotate(-90 40 225)" x="40" y="225" text-anchor="middle" font-family="Jost,sans-serif" font-size="11" letter-spacing="1.2" fill="#4a7c59">ТЕПЛОВАЯ МАССА →</text>
+        <text x="745" y="414" text-anchor="end" font-family="Jost,sans-serif" font-size="11" letter-spacing="1.2" fill="#4a7c59">ИЗОЛЯЦИЯ →</text>
+        <text x="88" y="392" text-anchor="end" font-family="Jost,sans-serif" font-size="9.5" fill="#9bb59a">мало</text>
+        <text x="88" y="68" text-anchor="end" font-family="Jost,sans-serif" font-size="9.5" fill="#9bb59a">много</text>
+
+        <!-- подсказки углов -->
+
+        <!-- линия компромисса -->
+        <line x1="175" y1="92" x2="660" y2="352" stroke="#c4956a" stroke-width="1.1" stroke-dasharray="4 5" opacity=".7"/>
+        <text x="300" y="150" font-family="Jost,sans-serif" font-size="9.5" fill="#c4956a" opacity=".85" transform="rotate(28 300 150)">линия компромисса</text>
+
+        <!-- точки материалов -->
+        <!-- Камень -->
+        <circle cx="172" cy="82" r="6" fill="#4a7c59"/>
+        <text x="184" y="80" font-family="Cormorant Garamond,serif" font-size="15" fill="#1c2b1e">Камень</text>
+        <!-- Земля и саман (кластер) -->
+        <circle cx="237" cy="130" r="6" fill="#4a7c59"/>
+        <text x="249" y="128" font-family="Cormorant Garamond,serif" font-size="15" fill="#1c2b1e">Земля и саман</text>
+        <text x="249" y="143" font-family="Jost,sans-serif" font-size="9" fill="#7d9a82">earthbag · прессованная · саман</text>
+        <!-- Дерево-каркас -->
+        <circle cx="392" cy="303" r="6" fill="#4a7c59"/>
+        <text x="404" y="301" font-family="Cormorant Garamond,serif" font-size="15" fill="#1c2b1e">Дерево (каркас)</text>
+        <!-- Лёгкий саман -->
+        <circle cx="559" cy="293" r="6" fill="#4a7c59"/>
+        <text x="559" y="281" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="14" fill="#1c2b1e">Лёгкий саман</text>
+        <!-- Солома -->
+        <circle cx="656" cy="351" r="6" fill="#4a7c59"/>
+        <text x="648" y="349" text-anchor="end" font-family="Cormorant Garamond,serif" font-size="15" fill="#1c2b1e">Солома</text>
+        <!-- Костробетон — акцент -->
+        <circle cx="495" cy="225" r="9" fill="none" stroke="#b8924a" stroke-width="2"/>
+        <circle cx="495" cy="225" r="4" fill="#b8924a"/>
+        <text x="508" y="221" font-family="Cormorant Garamond,serif" font-size="15" fill="#7a4f2e">Костробетон</text>
+        <text x="508" y="236" font-family="Jost,sans-serif" font-size="9" fill="#b8924a">совмещает и то, и другое</text>
+      </svg>
+      <div class="bm-cap">Тяжёлые материалы запасают тепло, лёгкие — удерживают; костробетон редко умеет и то, и другое</div>
+    </div>
+
+    <p class="bm-lead" style="margin:0 0 1.6rem;">Отсюда и главное правило выбора: масса хороша там, где важны суточные перепады (жаркий день — прохладная ночь), изоляция — там, где стоит долгая ровная зима. Вторая ось — цена для планеты — почти не зависит от первой.</p>
+
+    <!-- Часть B: воплощённая энергия -->
+    <div class="bm-panel">
+      <div class="bm-sub">Воплощённая энергия: от минуса до тонн</div>
+      <div class="bm-ee">
+        <div class="bm-ee-row"><div class="bm-ee-name">Вторичные материалы</div><div class="bm-ee-track"><span class="bm-ee-zero"></span><span class="bm-ee-bar bm-ee-neg" style="width:34%;"></span></div></div>
+        <div class="bm-ee-row"><div class="bm-ee-name">Дерево</div><div class="bm-ee-track"><span class="bm-ee-zero"></span><span class="bm-ee-bar bm-ee-neg" style="width:26%;"></span></div></div>
+        <div class="bm-ee-row"><div class="bm-ee-name">Солома</div><div class="bm-ee-track"><span class="bm-ee-zero"></span><span class="bm-ee-bar bm-ee-neg" style="width:22%;"></span></div></div>
+        <div class="bm-ee-row"><div class="bm-ee-name">Костробетон</div><div class="bm-ee-track"><span class="bm-ee-zero"></span><span class="bm-ee-bar bm-ee-neg" style="width:16%;"></span></div></div>
+        <div class="bm-ee-row"><div class="bm-ee-name">Глина и земля</div><div class="bm-ee-track"><span class="bm-ee-zero"></span><span class="bm-ee-bar bm-ee-pos" style="width:3%;"></span></div></div>
+        <div class="bm-ee-row"><div class="bm-ee-name">Камень (местный)</div><div class="bm-ee-track"><span class="bm-ee-zero"></span><span class="bm-ee-bar bm-ee-pos" style="width:8%;"></span></div></div>
+        <div class="bm-ee-row"><div class="bm-ee-name">Кирпич обожжённый</div><div class="bm-ee-track"><span class="bm-ee-zero"></span><span class="bm-ee-bar bm-ee-pos" style="width:26%;"></span></div></div>
+        <div class="bm-ee-row"><div class="bm-ee-name">Цемент, бетон</div><div class="bm-ee-track"><span class="bm-ee-zero"></span><span class="bm-ee-bar bm-ee-pos" style="width:40%;"></span></div></div>
+        <div class="bm-ee-row"><div class="bm-ee-name">Сталь</div><div class="bm-ee-track"><span class="bm-ee-zero"></span><span class="bm-ee-bar bm-ee-pos" style="width:50%;"></span></div></div>
+        <div class="bm-ee-row"><div class="bm-ee-name">Алюминий</div><div class="bm-ee-track"><span class="bm-ee-zero"></span><span class="bm-ee-bar bm-ee-pos" style="width:60%;"></span></div></div>
+      </div>
+      <div class="bm-ee-legend">
+        <span><span class="bm-ee-chip" style="background:var(--moss);"></span> запасает углерод / уже оплачено</span>
+        <span><span class="bm-ee-chip" style="background:var(--clay);"></span> выбросы при производстве</span>
+      </div>
+      <div class="bm-cap" style="margin-top:.9rem;">Материалы каталога — слева от нуля или у нуля; привычные индустриальные — справа, и далеко</div>
+    </div>
+
+    <p class="bm-lead" style="margin:0;">Вместе две схемы и дают логику каталога: искать материал, который и подходит климату по теплу, и стоит планете как можно меньше. Лучшие — те, что выигрывают по обеим осям: берут то, что лежит под ногами, и превращают это в стены, которые сами держат комфорт. Ниже — все двадцать по порядку.</p>
+  </div>
+
+  <!-- ═══════════ ГРУППА I ═══════════ -->
+
+  <div class="cat-group">
+    <div class="cat-group-label">Группа I</div>
+    <h2>Технологии <em>возведения</em></h2>
+    <p>Способы собрать дом. Одни из них — ровесники земледелия, другие — ответ на кризисы последних десятилетий. Общее у них одно: они уменьшают количество того, что надо произвести, привезти и потом отапливать.</p>
+  </div>
+
+  <div class="cat-grid">
+
+    <div class="cat-card">
+      <div class="cat-il"><svg class="il" viewBox="0 0 240 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="sun" cx="200" cy="30" r="12"/><line class="ground" x1="10" y1="110" x2="230" y2="110"/><rect x="64" y="99" width="28" height="11" rx="5.5"/><rect x="94" y="99" width="28" height="11" rx="5.5"/><rect x="124" y="99" width="28" height="11" rx="5.5"/><rect x="154" y="99" width="28" height="11" rx="5.5"/><rect x="79" y="88" width="28" height="11" rx="5.5"/><rect x="109" y="88" width="28" height="11" rx="5.5"/><rect x="139" y="88" width="28" height="11" rx="5.5"/><rect x="64" y="77" width="28" height="11" rx="5.5"/><rect x="94" y="77" width="28" height="11" rx="5.5"/><rect x="124" y="77" width="28" height="11" rx="5.5"/><rect x="154" y="77" width="28" height="11" rx="5.5"/><rect x="79" y="66" width="28" height="11" rx="5.5"/><rect x="109" y="66" width="28" height="11" rx="5.5"/><rect x="139" y="66" width="28" height="11" rx="5.5"/><rect x="94" y="55" width="28" height="11" rx="5.5"/><rect x="124" y="55" width="28" height="11" rx="5.5"/><path d="M60 110 Q120 20 180 110" class="dash"/><rect x="112" y="82" width="16" height="28" class="paper"/><rect x="112" y="82" width="16" height="28"/></svg></div>
+      <div class="cat-num">01 · ЗЕМЛЯ В МЕШКАХ</div>
+      <div class="cat-name">Earthbag</div>
+      <div class="cat-line">Стена из того, что выкопали под фундамент</div>
+      <div class="cat-text">Полипропиленовые мешки или длинные рукава наполняют влажным грунтом, укладывают рядами с колючей проволокой между ними и трамбуют. Получается монолит, который можно вести по прямой, по кругу или вывести в купол без единой балки. Технологию довёл до ума архитектор Надер Халили, искавший жильё для беженцев и для Луны; она оказалась пригодной и для Земли.</div>
+      <ul class="cat-plus">
+        <li>Материал — сам участок; воплощённая энергия близка к нулю</li>
+        <li>Большая тепловая масса, устойчивость к ветру и землетрясениям</li>
+        <li>Купол строится без опалубки и леса — руками небольшой бригады</li>
+      </ul>
+      <div class="cat-fit"><strong>Где уместно</strong>Сухой и умеренно-сухой климат, сейсмические зоны, самострой, быстрое жильё после катастроф.</div>
+      <div class="cat-soon"><a href="essay-earthbag.html">Открыть страницу технологии →</a></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-il"><svg class="il" viewBox="0 0 240 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="sun" cx="200" cy="30" r="12"/><line class="ground" x1="10" y1="110" x2="230" y2="110"/><rect x="60" y="40" width="120" height="70"/><path d="M60 50 Q 90 52 120 50 T 180 50" class="thin"/><path d="M60 60 Q 90 62 120 60 T 180 60" class="thin"/><path d="M60 70 Q 90 72 120 70 T 180 70" class="thin"/><path d="M60 80 Q 90 82 120 80 T 180 80" class="thin"/><path d="M60 90 Q 90 92 120 90 T 180 90" class="thin"/><path d="M60 100 Q 90 102 120 100 T 180 100" class="thin"/><rect x="108" y="70" width="22" height="40" class="fill"/><line x1="40" y1="40" x2="200" y2="40" class="thin"/></svg></div>
+      <div class="cat-num">02 · ТРАМБОВКА</div>
+      <div class="cat-name">Прессованная земля</div>
+      <div class="cat-line">Слоистая стена, в которой виден каждый день работы</div>
+      <div class="cat-text">Местный суглинок, иногда с добавкой извести, слегка увлажняют, засыпают в опалубку слоями по десять–пятнадцать сантиметров и трамбуют до звона. После снятия опалубки остаётся плотная стена с горизонтальными прожилками — её не штукатурят, она сама себе отделка. Так построены Великая стена и Альгамбра; так строят сегодня и лаборатории, и винодельни.</div>
+      <ul class="cat-plus">
+        <li>Огромная тепловая масса: стена сглаживает суточные колебания</li>
+        <li>Глина дышит — регулирует влажность без приборов</li>
+        <li>Не горит, не гниёт, не интересует насекомых</li>
+      </ul>
+      <div class="cat-fit"><strong>Где уместно</strong>Континентальный климат с жаркими днями и холодными ночами; регионы с глинистыми грунтами.</div>
+      <div class="cat-soon"><a href="essay-rammed-earth.html">Открыть страницу технологии →</a></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-il"><svg class="il" viewBox="0 0 240 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="sun" cx="200" cy="30" r="12"/><line class="ground" x1="10" y1="110" x2="230" y2="110"/><path d="M60 110 Q55 60 90 52 Q120 35 160 50 Q190 60 182 110z"/><ellipse cx="150" cy="76" rx="9" ry="11"/><line x1="150" y1="65" x2="150" y2="87" class="thin"/><path d="M92 110 q0-28 14-28 q14 0 14 28z" class="fill"/><path d="M50 56 Q120 10 195 58" class="thin"/><path d="M60 62 Q120 22 185 63" class="thin"/></svg></div>
+      <div class="cat-num">03 · РУКАМИ</div>
+      <div class="cat-name">Саман и лёгкий саман</div>
+      <div class="cat-line">Глина, солома, вода — и больше ничего</div>
+      <div class="cat-text">Смесь глины, песка и соломы формуют руками, без опалубки, прямо на стене — отсюда плавные углы и ниши, которые невозможны в кирпиче. Лёгкий саман, где соломы много, а глины мало, даёт тёплую стену с неплохой изоляцией. Технологии как минимум десять тысяч лет, и дома, построенные по ней в Англии в XV веке, до сих пор жилые.</div>
+      <ul class="cat-plus">
+        <li>Самый низкий порог входа: инструмент — собственные руки</li>
+        <li>Здоровый микроклимат: глина впитывает и отдаёт влагу</li>
+        <li>В конце жизни стена просто возвращается в почву</li>
+      </ul>
+      <div class="cat-fit"><strong>Где уместно</strong>Умеренный и сухой климат, небольшие дома, строительство своими силами и в кругу общины.</div>
+      <div class="cat-soon"><a href="essay-cob.html">Открыть страницу технологии →</a></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-il"><svg class="il" viewBox="0 0 240 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="sun" cx="200" cy="30" r="12"/><line class="ground" x1="10" y1="110" x2="230" y2="110"/><rect x="70" y="96" width="30" height="14" rx="3"/><rect x="102" y="96" width="30" height="14" rx="3"/><rect x="134" y="96" width="30" height="14" rx="3"/><rect x="166" y="96" width="30" height="14" rx="3"/><rect x="86" y="82" width="30" height="14" rx="3"/><rect x="118" y="82" width="30" height="14" rx="3"/><rect x="150" y="82" width="30" height="14" rx="3"/><rect x="70" y="68" width="30" height="14" rx="3"/><rect x="102" y="68" width="30" height="14" rx="3"/><rect x="134" y="68" width="30" height="14" rx="3"/><rect x="166" y="68" width="30" height="14" rx="3"/><rect x="86" y="54" width="30" height="14" rx="3"/><rect x="118" y="54" width="30" height="14" rx="3"/><rect x="150" y="54" width="30" height="14" rx="3"/><line x1="76" y1="99" x2="94" y2="107" class="thin"/><line x1="108" y1="99" x2="126" y2="107" class="thin"/><line x1="140" y1="99" x2="158" y2="107" class="thin"/><line x1="172" y1="99" x2="190" y2="107" class="thin"/><line x1="92" y1="85" x2="110" y2="93" class="thin"/><line x1="124" y1="85" x2="142" y2="93" class="thin"/><line x1="156" y1="85" x2="174" y2="93" class="thin"/><line x1="76" y1="71" x2="94" y2="79" class="thin"/><line x1="108" y1="71" x2="126" y2="79" class="thin"/><line x1="140" y1="71" x2="158" y2="79" class="thin"/><line x1="172" y1="71" x2="190" y2="79" class="thin"/><line x1="92" y1="57" x2="110" y2="65" class="thin"/><line x1="124" y1="57" x2="142" y2="65" class="thin"/><line x1="156" y1="57" x2="174" y2="65" class="thin"/><path d="M64 54 L120 22 L176 54" /></svg></div>
+      <div class="cat-num">04 · ТЮКИ</div>
+      <div class="cat-name">Соломенные блоки</div>
+      <div class="cat-line">Отход полеводства, который греет лучше любой ваты</div>
+      <div class="cat-text">Плотно спрессованные тюки соломы укладывают как огромные кирпичи — в несущую стену или как заполнение каркаса — и оштукатуривают глиной или известью с двух сторон. Полуметровая стена из соломы по теплоизоляции оставляет позади большинство современных утеплителей, а оштукатуренная солома, вопреки интуиции, горит хуже дерева: в ней нет воздуха.</div>
+      <ul class="cat-plus">
+        <li>Выдающаяся изоляция: расходы на отопление падают в разы</li>
+        <li>Солома растёт за один сезон и запасает углерод в стене</li>
+        <li>Материал дёшев и есть почти всюду, где есть поле</li>
+      </ul>
+      <div class="cat-fit"><strong>Где уместно</strong>Холодный и умеренный климат; там, где главная задача — удержать тепло.</div>
+      <div class="cat-soon"><a href="essay-straw-bale.html">Открыть страницу технологии →</a></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-il"><svg class="il" viewBox="0 0 240 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="sun" cx="200" cy="30" r="12"/><path d="M10 110 Q60 112 90 80 Q130 30 230 70 L230 110z" class="fill-light"/><path d="M10 110 Q60 112 90 80 Q130 30 230 70"/><line class="ground" x1="10" y1="110" x2="230" y2="110"/><path d="M140 70 q3 -8 6 0" class="thin"/><rect x="92" y="84" width="50" height="26" class="paper"/><rect x="98" y="90" width="14" height="20" class="fill"/><rect x="118" y="90" width="18" height="14"/><path d="M158 70 q3 -8 6 0" class="thin"/><rect x="92" y="84" width="50" height="26" class="paper"/><rect x="98" y="90" width="14" height="20" class="fill"/><rect x="118" y="90" width="18" height="14"/><path d="M176 70 q3 -8 6 0" class="thin"/><rect x="92" y="84" width="50" height="26" class="paper"/><rect x="98" y="90" width="14" height="20" class="fill"/><rect x="118" y="90" width="18" height="14"/><path d="M194 70 q3 -8 6 0" class="thin"/></svg></div>
+      <div class="cat-num">05 · ПОД ХОЛМОМ</div>
+      <div class="cat-name">Дом-землянка</div>
+      <div class="cat-line">Самый старый утеплитель — сама планета</div>
+      <div class="cat-text">Дом заглубляют в склон или укрывают грунтом с боков и сверху, открывая солнцу только южный фасад. На глубине нескольких метров температура почвы почти не меняется круглый год, и стены получают бесконечный тепловой буфер: зимой не нужно греть от мороза, летом не нужно спасаться от жары. Снаружи — холм с окнами, внутри — светлая комната.</div>
+      <ul class="cat-plus">
+        <li>Стабильная температура почти без отопления и охлаждения</li>
+        <li>Защита от ветра, шума и пожара</li>
+        <li>Крыша возвращается ландшафту: на ней растёт луг</li>
+      </ul>
+      <div class="cat-fit"><strong>Где уместно</strong>Холодный и континентальный климат, склоны с южной экспозицией, сухие грунты с хорошим дренажом.</div>
+      <div class="cat-soon"><a href="essay-earth-shelter.html">Открыть страницу технологии →</a></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-il"><svg class="il" viewBox="0 0 240 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="sun" cx="200" cy="30" r="12"/><line class="ground" x1="10" y1="110" x2="230" y2="110"/><path d="M70 110 L120 22 L170 110z"/><path d="M64 110 L120 12 L176 110" class="thin"/><rect x="110" y="78" width="20" height="32" class="fill"/><path d="M120 40 L100 74 L140 74z"/><line x1="120" y1="22" x2="120" y2="110" class="dash"/></svg></div>
+      <div class="cat-num">06 · ОДНА ФОРМА</div>
+      <div class="cat-name">A-frame</div>
+      <div class="cat-line">Крыша, которая решила быть и стенами</div>
+      <div class="cat-text">Две крутые скатные плоскости сходятся коньком и опираются прямо на фундамент: стен нет, есть только крыша. Конструкция собирается из одинаковых треугольных рам, которые можно поднять вдвоём. Снег с неё съезжает сам, ветер обтекает, а интерьер получает высоту собора при площади хижины.</div>
+      <ul class="cat-plus">
+        <li>Минимум деталей, минимум отходов, минимум времени</li>
+        <li>Надёжность в снегопады и ураганы — геометрией, а не массой</li>
+        <li>Самый узнаваемый силуэт в истории лесного домика</li>
+      </ul>
+      <div class="cat-fit"><strong>Где уместно</strong>Снежные и лесные регионы; дачи, гостевые дома, первое жильё на участке.</div>
+      <div class="cat-soon"><a href="essay-a-frame.html">Открыть страницу технологии →</a></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-il"><svg class="il" viewBox="0 0 240 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="sun" cx="200" cy="30" r="12"/><line class="ground" x1="10" y1="110" x2="230" y2="110"/><line x1="142" y1="60" x2="153" y2="110" class="thin"/><path d="M40 110 Q40 60 70 60 L130 60 L190 110z" class="fill-light"/><path d="M40 110 Q40 60 70 60 L130 60 L190 110"/><line x1="154" y1="60" x2="176" y2="110" class="thin"/><path d="M40 110 Q40 60 70 60 L130 60 L190 110z" class="fill-light"/><path d="M40 110 Q40 60 70 60 L130 60 L190 110"/><line x1="166" y1="60" x2="200" y2="110" class="thin"/><circle cx="54" cy="102" r="6"/><circle cx="68" cy="102" r="6"/><circle cx="82" cy="102" r="6"/><circle cx="96" cy="102" r="6"/><circle cx="61" cy="88" r="6"/><circle cx="75" cy="88" r="6"/><circle cx="89" cy="88" r="6"/><circle cx="68" cy="74" r="6"/><circle cx="82" cy="74" r="6"/><path d="M112 60 q0-18 12-18 q12 0 12 18" class="thin"/><path d="M30 92 q-10 0 -10 10 l 0 8" class="thin"/></svg></div>
+      <div class="cat-num">07 · СИНТЕЗ</div>
+      <div class="cat-name">Earthship</div>
+      <div class="cat-line">Дом, которому не нужны сети</div>
+      <div class="cat-text">Майкл Рейнольдс собрал в одном здании всё, что можно было собрать: стены из автомобильных шин, набитых землёй, стеклянный южный фасад с зимним садом, сбор дождевой воды с крыши, четырёхкратное её использование, солнечные панели, естественную вентиляцию через земляные трубы. Результат — дом, который сам греет, сам поит и сам кормит, не подключаясь ни к чему.</div>
+      <ul class="cat-plus">
+        <li>Автономия по теплу, воде и частично по еде</li>
+        <li>Отходы цивилизации — шины, бутылки, банки — становятся стеной</li>
+        <li>Живой пример того, что системное мышление можно построить из мусора</li>
+      </ul>
+      <div class="cat-fit"><strong>Где уместно</strong>Солнечные регионы с холодными ночами; участки вне сетей; те, кто готов жить в системе и понимать её.</div>
+      <div class="cat-soon"><a href="essay-earthship.html">Открыть страницу технологии →</a></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-il"><svg class="il" viewBox="0 0 240 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="sun" cx="200" cy="30" r="12"/><line class="ground" x1="10" y1="110" x2="230" y2="110"/><line x1="158" y1="64" x2="158" y2="110" class="thin"/><path d="M60 110 L60 56 L100 30 L140 56 L140 110z"/><path d="M140 110 L140 64 L210 64 L210 110z"/><path d="M140 64 L210 64 L205 56 L145 56z" class="thin"/><line x1="176" y1="64" x2="176" y2="110" class="thin"/><path d="M60 110 L60 56 L100 30 L140 56 L140 110z"/><path d="M140 110 L140 64 L210 64 L210 110z"/><path d="M140 64 L210 64 L205 56 L145 56z" class="thin"/><line x1="194" y1="64" x2="194" y2="110" class="thin"/><path d="M146 110 q0-14 8-14 q8 0 8 14" class="thin"/><path d="M166 110 q0-14 8-14 q8 0 8 14" class="thin"/><path d="M186 110 q0-14 8-14 q8 0 8 14" class="thin"/><line x1="188" y1="30" x2="165" y2="58" class="dash"/><line x1="200" y1="42" x2="180" y2="62" class="dash"/></svg></div>
+      <div class="cat-num">08 · СОЛНЕЧНАЯ ПРИСТРОЙКА</div>
+      <div class="cat-name">Дом-теплица</div>
+      <div class="cat-line">Зимний сад, который оплачивает отопление</div>
+      <div class="cat-text">Остеклённый объём пристраивают к южной стене дома или накрывают дом целиком. Днём стекло ловит солнце, тёплый воздух поступает в жилые комнаты, ночью теплица служит буфером между домом и морозом. В ней же — грядки с зеленью в январе. В Швеции есть семьи, живущие в обычном деревянном доме, накрытом стеклянной оболочкой: сезон на террасе у них длится с марта по ноябрь.</div>
+      <ul class="cat-plus">
+        <li>Резкое снижение отопительной нагрузки за счёт солнца</li>
+        <li>Огород и сад круглый год в одном шаге от кухни</li>
+        <li>Идея дооснащает и уже построенные дома</li>
+      </ul>
+      <div class="cat-fit"><strong>Где уместно</strong>Умеренный и холодный климат с достаточным зимним солнцем; как пристройка к существующему дому.</div>
+      <div class="cat-soon"><a href="essay-greenhouse-home.html">Открыть страницу технологии →</a></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-il"><svg class="il" viewBox="0 0 240 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="sun" cx="200" cy="30" r="12"/><line class="ground" x1="10" y1="110" x2="230" y2="110"/><rect x="50" y="76" width="60" height="34"/><rect x="110" y="76" width="60" height="34"/><rect x="80" y="42" width="60" height="34"/><rect x="66" y="86" width="14" height="14" class="fill"/><rect x="126" y="86" width="30" height="14"/><rect x="96" y="52" width="14" height="14" class="fill"/><path d="M200 110 L200 30 L226 30" class="thin"/><line x1="212" y1="30" x2="212" y2="44" class="thin"/><rect x="206" y="44" width="12" height="10" class="dash"/></svg></div>
+      <div class="cat-num">09 · ЗАВОД ВМЕСТО ПЛОЩАДКИ</div>
+      <div class="cat-name">Модульный и префаб-дом</div>
+      <div class="cat-line">Точность цеха, собранная за день</div>
+      <div class="cat-text">Дом или его крупные части делают в цеху — с контролем геометрии, сухих материалов и герметичности, какой на стройплощадке под дождём не добиться, — потом привозят и ставят на готовые опоры за часы. Модули можно наращивать, когда семья растёт, и перевезти, когда она переезжает. Это единственная технология в списке, у которой каждый следующий дом учится у предыдущего, — как панель учится у панели.</div>
+      <ul class="cat-plus">
+        <li>Минимум отходов и брака; герметичность пассивного уровня</li>
+        <li>Стройка на участке — дни, а не месяцы</li>
+        <li>Дом растёт, делится и переезжает вместе с хозяевами</li>
+      </ul>
+      <div class="cat-fit"><strong>Где уместно</strong>Любой климат; там, где важны скорость, предсказуемость и возможность изменить дом потом.</div>
+      <div class="cat-soon"><a href="essay-modular-prefab.html">Открыть страницу технологии →</a></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-il"><svg class="il" viewBox="0 0 240 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="sun" cx="200" cy="30" r="12"/><line class="ground" x1="10" y1="110" x2="230" y2="110"/><path d="M60 110 L60 64 L120 30 L180 64 L180 110z"/><path d="M52 110 L52 60 L120 20 L188 60 L188 110" class="dash"/><rect x="130" y="74" width="34" height="36"/><rect x="76" y="80" width="14" height="30" class="fill"/><path d="M200 30 L166 74" class="thin"/><path d="M205 42 L170 86" class="thin"/><path d="M100 52 q8 -6 16 0 q8 6 16 0" class="thin"/></svg></div>
+      <div class="cat-num">10 · ЗДАНИЕ КАК ОРГАНИЗМ</div>
+      <div class="cat-name">Пассивный дом</div>
+      <div class="cat-line">Не технология стен — технология мышления</div>
+      <div class="cat-text">Пассивный дом не привязан к материалу: его можно сделать из соломы, дерева, кирпича или бетона. Это набор правил — ориентация на солнце, непрерывная оболочка утепления, герметичность, окна как солнечные коллекторы, вентиляция с возвратом тепла, — при котором потребность в отоплении падает до величины, которую даёт лампа и двое жильцов. Любая технология из этого списка становится лучше, когда к ней прикладывают эти правила.</div>
+      <ul class="cat-plus">
+        <li>Расход на отопление — в пять–десять раз ниже обычного дома</li>
+        <li>Ровная температура и свежий воздух без сквозняков</li>
+        <li>Совместим со всем, что перечислено выше</li>
+      </ul>
+      <div class="cat-fit"><strong>Где уместно</strong>Везде, где проектируют заранее. <a href="essay-passive-design.html">Шесть принципов</a> — уже на сайте.</div>
+    </div>
+
+  </div>
+
+  <!-- ═══════════ ГРУППА II ═══════════ -->
+
+  <div class="cat-group">
+    <div class="cat-group-label">Группа II</div>
+    <h2>Материалы, <em>у которых есть биография</em></h2>
+    <p>У каждого материала есть происхождение, цена для планеты и будущее после сноса. Ниже — те, у кого все три пункта в порядке.</p>
+  </div>
+
+  <div class="cat-grid">
+
+    <div class="cat-card">
+      <div class="cat-il"><svg class="il" viewBox="0 0 240 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="sun" cx="200" cy="30" r="12"/><line class="ground" x1="10" y1="110" x2="230" y2="110"/><path d="M40 110 Q60 70 120 72 Q180 74 200 110z" class="fill-light"/><path d="M40 110 Q60 70 120 72 Q180 74 200 110"/><path d="M70 92 q4 4 8 0 M90 84 q4 4 8 0 M150 84 q4 4 8 0 M170 94 q4 4 8 0" class="thin"/><path d="M112 110 L112 92 L128 92 L128 110" /><rect x="116" y="96" width="8" height="14" class="fill"/><path d="M100 72 q20 -30 40 0" class="dash"/></svg></div>
+      <div class="cat-num">11 · ИЗ ПОЧВЫ</div>
+      <div class="cat-name">Глина и земля</div>
+      <div class="cat-line">Треть человечества живёт в земляных домах</div>
+      <div class="cat-text">Необожжённая глина — в виде самана, кирпича-сырца, прессованной земли или штукатурки — не требует ни печи, ни завода. Она регулирует влажность лучше любой техники, держит тепло, гасит звук, а в конце жизни снова становится землёй. Самое недооценённое в ней — она есть почти на каждом участке: нередко стены будущего дома выкапывают из его же котлована.</div>
+      <ul class="cat-plus">
+        <li>Воплощённая энергия почти нулевая</li>
+        <li>Стабилизирует влажность и температуру внутри</li>
+        <li>Полностью возвратный материал</li>
+      </ul>
+      <div class="cat-fit"><strong>Где уместно</strong>Стены, штукатурки, полы; любой климат с защитой от прямого дождя — «хорошие сапоги и широкая шляпа».</div>
+      <div class="cat-soon"><a href="essay-clay-earth.html">Открыть страницу материала →</a></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-il"><svg class="il" viewBox="0 0 240 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="sun" cx="200" cy="30" r="12"/><line class="ground" x1="10" y1="110" x2="230" y2="110"/><rect x="50" y="50" width="110" height="60"/><line x1="50" y1="60" x2="160" y2="60" class="thin"/><line x1="50" y1="70" x2="160" y2="70" class="thin"/><line x1="50" y1="80" x2="160" y2="80" class="thin"/><line x1="50" y1="90" x2="160" y2="90" class="thin"/><line x1="50" y1="100" x2="160" y2="100" class="thin"/><line x1="85" y1="50" x2="85" y2="110" class="thin"/><line x1="120" y1="50" x2="120" y2="110" class="thin"/><circle cx="198" cy="88" r="16"/><circle cx="198" cy="88" r="10" class="thin"/><circle cx="198" cy="88" r="4" class="thin"/><path d="M205 40 q-8 -16 -20 -8 q 4 14 20 8z"/><path d="M205 40 l -12 -6" class="thin"/></svg></div>
+      <div class="cat-num">12 · ИЗ ЛЕСА</div>
+      <div class="cat-name">Дерево и массивные панели</div>
+      <div class="cat-line">Единственный несущий материал, который растёт сам</div>
+      <div class="cat-text">Дерево запасает углерод, пока растёт, и держит его, пока стоит дом. Традиционный сруб и каркас дополнились перекрёстно-клеёными панелями (CLT), из которых сегодня собирают многоэтажные дома, конкурирующие с бетоном по прочности и выигрывающие у него по весу и углероду. Вопрос лишь в происхождении: дерево экологично ровно настолько, насколько ответственно ведётся лес, из которого оно взято.</div>
+      <ul class="cat-plus">
+        <li>Отрицательный углеродный баланс при ответственной лесозаготовке</li>
+        <li>Лёгкость, скорость сборки, тёплая поверхность</li>
+        <li>Ремонтируется, перестраивается, перерабатывается</li>
+      </ul>
+      <div class="cat-fit"><strong>Где уместно</strong>Каркасы, перекрытия, крыши, фасады; от хижины до многоэтажки.</div>
+      <div class="cat-soon"><a href="essay-wood-clt.html">Открыть страницу материала →</a></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-il"><svg class="il" viewBox="0 0 240 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="sun" cx="200" cy="30" r="12"/><line class="ground" x1="10" y1="110" x2="230" y2="110"/><path d="M50 110 l 34 0 l -3 -16 l -28 0z"/><path d="M88 110 l 26 0 l -3 -16 l -20 0z"/><path d="M118 110 l 40 0 l -3 -16 l -34 0z"/><path d="M162 110 l 30 0 l -3 -16 l -24 0z"/><path d="M60 94 l 30 0 l -3 -14 l -24 0z"/><path d="M94 94 l 38 0 l -3 -14 l -32 0z"/><path d="M136 94 l 24 0 l -3 -14 l -18 0z"/><path d="M164 94 l 28 0 l -3 -14 l -22 0z"/><path d="M52 80 l 28 0 l -3 -18 l -22 0z"/><path d="M84 80 l 34 0 l -3 -18 l -28 0z"/><path d="M122 80 l 30 0 l -3 -18 l -24 0z"/><path d="M156 80 l 36 0 l -3 -18 l -30 0z"/><path d="M66 62 l 34 0 l -3 -14 l -28 0z"/><path d="M104 62 l 26 0 l -3 -14 l -20 0z"/><path d="M134 62 l 40 0 l -3 -14 l -34 0z"/><path d="M40 110 L40 50 M200 110 L200 50" class="dash"/></svg></div>
+      <div class="cat-num">13 · ИЗ ГОРЫ</div>
+      <div class="cat-name">Природный камень</div>
+      <div class="cat-line">Стена, которая переживёт своих строителей</div>
+      <div class="cat-text">Камень не производят — его только добывают и режут. Отсюда низкая воплощённая энергия при одном условии: карьер должен быть рядом, иначе транспорт съест всё преимущество. Каменная стена — самая большая тепловая масса, какую можно поставить на фундамент, и самый долговечный из всех материалов: дома, сложенные из сухой кладки без раствора, стоят по шестьсот лет.</div>
+      <ul class="cat-plus">
+        <li>Практически вечен; не требует ухода</li>
+        <li>Максимальная тепловая масса</li>
+        <li>Разбирается и используется снова — как разбирали римские форумы</li>
+      </ul>
+      <div class="cat-fit"><strong>Где уместно</strong>Там, где камень — местный; цоколи, стены, тепловые аккумуляторы внутри пассивных домов.</div>
+      <div class="cat-soon"><a href="essay-stone.html">Открыть страницу материала →</a></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-il"><svg class="il" viewBox="0 0 240 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="sun" cx="200" cy="30" r="12"/><line class="ground" x1="10" y1="110" x2="230" y2="110"/><rect x="120" y="50" width="70" height="60"/><circle cx="128" cy="58" r="1.6" class="dot"/><circle cx="128" cy="67" r="1.6" class="dot"/><circle cx="128" cy="76" r="1.6" class="dot"/><circle cx="128" cy="85" r="1.6" class="dot"/><circle cx="128" cy="94" r="1.6" class="dot"/><circle cx="128" cy="103" r="1.6" class="dot"/><circle cx="137" cy="58" r="1.6" class="dot"/><circle cx="137" cy="67" r="1.6" class="dot"/><circle cx="137" cy="76" r="1.6" class="dot"/><circle cx="137" cy="85" r="1.6" class="dot"/><circle cx="137" cy="94" r="1.6" class="dot"/><circle cx="137" cy="103" r="1.6" class="dot"/><circle cx="146" cy="58" r="1.6" class="dot"/><circle cx="146" cy="67" r="1.6" class="dot"/><circle cx="146" cy="76" r="1.6" class="dot"/><circle cx="146" cy="85" r="1.6" class="dot"/><circle cx="146" cy="94" r="1.6" class="dot"/><circle cx="146" cy="103" r="1.6" class="dot"/><circle cx="155" cy="58" r="1.6" class="dot"/><circle cx="155" cy="67" r="1.6" class="dot"/><circle cx="155" cy="76" r="1.6" class="dot"/><circle cx="155" cy="85" r="1.6" class="dot"/><circle cx="155" cy="94" r="1.6" class="dot"/><circle cx="155" cy="103" r="1.6" class="dot"/><circle cx="164" cy="58" r="1.6" class="dot"/><circle cx="164" cy="67" r="1.6" class="dot"/><circle cx="164" cy="76" r="1.6" class="dot"/><circle cx="164" cy="85" r="1.6" class="dot"/><circle cx="164" cy="94" r="1.6" class="dot"/><circle cx="164" cy="103" r="1.6" class="dot"/><circle cx="173" cy="58" r="1.6" class="dot"/><circle cx="173" cy="67" r="1.6" class="dot"/><circle cx="173" cy="76" r="1.6" class="dot"/><circle cx="173" cy="85" r="1.6" class="dot"/><circle cx="173" cy="94" r="1.6" class="dot"/><circle cx="173" cy="103" r="1.6" class="dot"/><circle cx="182" cy="58" r="1.6" class="dot"/><circle cx="182" cy="67" r="1.6" class="dot"/><circle cx="182" cy="76" r="1.6" class="dot"/><circle cx="182" cy="85" r="1.6" class="dot"/><circle cx="182" cy="94" r="1.6" class="dot"/><circle cx="182" cy="103" r="1.6" class="dot"/><path d="M60 110 L60 40" /><path d="M60 58 q-14 -10 -16 -24 q14 4 16 24z M60 58 q14 -10 16 -24 q-14 4 -16 24z M60 78 q-14 -8 -18 -22 q16 4 18 22z M60 78 q14 -8 18 -22 q-16 4 -18 22z M60 40 q-4 -10 0 -18 q4 8 0 18z"/><path d="M90 70 l 22 0" class="dash"/><path d="M106 64 l 6 6 -6 6" class="thin"/></svg></div>
+      <div class="cat-num">14 · ИЗ ПОЛЯ</div>
+      <div class="cat-name">Конопля и костробетон</div>
+      <div class="cat-line">Стена, которая продолжает поглощать углерод</div>
+      <div class="cat-text">Костра — одревесневшая сердцевина стебля конопли — смешивается с известью и водой и заливается в опалубку вокруг деревянного каркаса. Материал лёгкий, паропроницаемый, с хорошей изоляцией и заметной тепловой инерцией одновременно — редкое сочетание. Известь в нём десятилетиями поглощает углекислый газ из воздуха, каменея. Конопля даёт урожай за четыре месяца и не требует пестицидов.</div>
+      <ul class="cat-plus">
+        <li>Углерод связан и в растении, и в затвердевшей извести</li>
+        <li>Изоляция и масса в одном слое; не гниёт, не горит</li>
+        <li>Возобновляется ежегодно на обычном поле</li>
+      </ul>
+      <div class="cat-fit"><strong>Где уместно</strong>Умеренный климат; заполнение каркасных стен, утепление старых домов изнутри и снаружи.</div>
+      <div class="cat-soon"><a href="essay-hempcrete.html">Открыть страницу материала →</a></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-il"><svg class="il" viewBox="0 0 240 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="sun" cx="200" cy="30" r="12"/><line class="ground" x1="10" y1="110" x2="230" y2="110"/><rect x="56" y="60" width="40" height="50"/><line x1="76" y1="60" x2="76" y2="110" class="thin"/><circle cx="70" cy="86" r="2" class="dot"/><rect x="106" y="70" width="30" height="24"/><line x1="121" y1="70" x2="121" y2="94" class="thin"/><line x1="106" y1="82" x2="136" y2="82" class="thin"/><path d="M146 110 L146 80 L186 70 L186 110" /><path d="M150 104 L182 96 M150 94 L182 86" class="thin"/><path d="M100 38 a 20 20 0 1 1 -6 22" class="thin"/><path d="M94 62 l -6 -6 l 8 -2z" class="fill"/></svg></div>
+      <div class="cat-num">15 · ИЗ ВТОРОГО КРУГА</div>
+      <div class="cat-name">Вторичные материалы</div>
+      <div class="cat-line">Энергия уже потрачена — не тратить её снова</div>
+      <div class="cat-text">Балки снесённых амбаров, кирпич старых фабрик, окна, двери, плитка, металл — всё это уже отдало планете свою цену. Использовать повторно значит получить материал с отрицательной воплощённой энергией: сэкономлено и производство нового, и переработка старого. Это самая творческая часть строительства: дом собирается из историй, а не из каталога.</div>
+      <ul class="cat-plus">
+        <li>Нулевое или отрицательное воздействие на климат</li>
+        <li>Качество старого леса и кирпича часто выше нового</li>
+        <li>Дом с характером, которого не купить</li>
+      </ul>
+      <div class="cat-fit"><strong>Где уместно</strong>Повсюду — при условии проверки безопасности и несущей способности.</div>
+      <div class="cat-soon"><a href="essay-reclaimed.html">Открыть страницу материала →</a></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-il"><svg class="il" viewBox="0 0 240 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="sun" cx="200" cy="30" r="12"/><line class="ground" x1="10" y1="110" x2="230" y2="110"/><path d="M62 110 L62 76 a 9 9 0 0 1 18 0 L80 110" /><rect x="50" y="60" width="140" height="50"/><path d="M44 60 L120 26 L196 60"/><path d="M92 110 L92 76 a 9 9 0 0 1 18 0 L110 110" /><rect x="50" y="60" width="140" height="50"/><path d="M44 60 L120 26 L196 60"/><path d="M130 110 L130 76 a 9 9 0 0 1 18 0 L148 110" /><rect x="50" y="60" width="140" height="50"/><path d="M44 60 L120 26 L196 60"/><path d="M160 110 L160 76 a 9 9 0 0 1 18 0 L178 110" /><line x1="120" y1="26" x2="120" y2="12" class="thin"/><path d="M120 12 l 12 4 l -12 4" class="thin"/><path d="M40 110 q 10 -14 20 0" class="thin"/><path d="M200 110 q 10 -14 20 0" class="thin"/></svg></div>
+      <div class="cat-num">16 · ИЗ ПРОШЛОГО</div>
+      <div class="cat-name">Старый дом вместо нового</div>
+      <div class="cat-line">Самое зелёное здание — то, что уже построено</div>
+      <div class="cat-text">Реконструкция вместо сноса сохраняет весь углерод, вложенный в стены, фундамент и перекрытия, — а это обычно больше половины следа нового здания. Старые дома строились из массивных материалов, с окнами по солнцу и с расчётом на десятилетия ремонта. Добавить утепление и герметичность к такой основе — почти всегда дешевле для планеты, чем построить «энергоэффективное» с нуля.</div>
+      <ul class="cat-plus">
+        <li>Углеродный всплеск от стройки и сноса не происходит вовсе</li>
+        <li>Массивные стены, высокие потолки, проверенная геометрия</li>
+        <li>Сохраняется память места — улицы, соседства, ремесла</li>
+      </ul>
+      <div class="cat-fit"><strong>Где уместно</strong>Везде, где есть что сохранять. Подробнее — в эссе <a href="essay-heritage-buildings.html">о старых зданиях</a>.</div>
+    </div>
+
+  </div>
+
+  <!-- ═══════════ ГРУППА III ═══════════ -->
+
+  <div class="cat-group">
+    <div class="cat-group-label">Группа III</div>
+    <h2>Размер и тип: <em>сколько дома нужно</em></h2>
+    <p>Самый сильный рычаг в строительстве — не материал и не технология, а количество квадратных метров. Половина дома — половина стен, половина отопления, половина всего. Ниже — формы жизни, в которых меньше оказалось больше.</p>
+  </div>
+
+  <div class="cat-grid">
+
+    <div class="cat-card">
+      <div class="cat-il"><svg class="il" viewBox="0 0 240 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="sun" cx="200" cy="30" r="12"/><line class="ground" x1="10" y1="110" x2="230" y2="110"/><path d="M50 110 q4 -12 8 0" class="thin"/><rect x="96" y="70" width="48" height="40"/><path d="M90 70 L120 46 L150 70"/><rect x="114" y="88" width="12" height="22" class="fill"/><rect x="102" y="78" width="8" height="8" class="thin"/><rect x="40" y="40" width="160" height="70" class="dash"/><path d="M64 110 q4 -12 8 0" class="thin"/><rect x="96" y="70" width="48" height="40"/><path d="M90 70 L120 46 L150 70"/><rect x="114" y="88" width="12" height="22" class="fill"/><rect x="102" y="78" width="8" height="8" class="thin"/><rect x="40" y="40" width="160" height="70" class="dash"/><path d="M160 110 q4 -12 8 0" class="thin"/><rect x="96" y="70" width="48" height="40"/><path d="M90 70 L120 46 L150 70"/><rect x="114" y="88" width="12" height="22" class="fill"/><rect x="102" y="78" width="8" height="8" class="thin"/><rect x="40" y="40" width="160" height="70" class="dash"/><path d="M176 110 q4 -12 8 0" class="thin"/><rect x="96" y="70" width="48" height="40"/><path d="M90 70 L120 46 L150 70"/><rect x="114" y="88" width="12" height="22" class="fill"/><rect x="102" y="78" width="8" height="8" class="thin"/><rect x="40" y="40" width="160" height="70" class="dash"/><path d="M188 110 q4 -12 8 0" class="thin"/></svg></div>
+      <div class="cat-num">17 · ДОСТАТОЧНО</div>
+      <div class="cat-name">Маленький дом</div>
+      <div class="cat-line">Сорок метров, спроектированных как сто</div>
+      <div class="cat-text">Когда каждый метр продуман, небольшого пространства хватает семье — и многие находят его уютнее. Маленький дом дешевле построить, отопить и содержать; он подталкивает к отбору вещей и освобождает время, которое большой дом забирает на уход за собой. Это не лишение, а точность: жить в том, что нужно, а не в том, что положено.</div>
+      <ul class="cat-plus">
+        <li>Воплощённая и эксплуатационная энергия сокращаются вместе</li>
+        <li>Доступность — финансовая и бытовая</li>
+        <li>Участок остаётся саду, а не дому</li>
+      </ul>
+      <div class="cat-fit"><strong>Где уместно</strong>Любой климат; любой, кто готов считать метры честно.</div>
+      <div class="cat-soon"><a href="essay-small-house.html">Открыть страницу →</a></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-il"><svg class="il" viewBox="0 0 240 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="sun" cx="200" cy="30" r="12"/><line class="ground" x1="10" y1="106" x2="230" y2="106"/><rect x="70" y="50" width="100" height="44"/><path d="M64 50 L120 28 L176 50"/><rect x="84" y="62" width="14" height="14" class="thin"/><rect x="140" y="62" width="20" height="32" class="fill"/><circle cx="96" cy="100" r="7"/><circle cx="148" cy="100" r="7"/><circle cx="96" cy="100" r="2" class="dot"/><circle cx="148" cy="100" r="2" class="dot"/><path d="M70 94 L40 94 L30 104" class="thin"/><path d="M24 104 l-10 0 M12 98 l 8 0 M14 92 l 8 0" class="thin"/></svg></div>
+      <div class="cat-num">18 · НА ПРИЦЕПЕ</div>
+      <div class="cat-name">Крошечный дом на колёсах</div>
+      <div class="cat-line">Дом, который едет за хозяином</div>
+      <div class="cat-text">Полноценное жильё, уложенное в габарит, разрешённый для дорог общего пользования. Ограничение размера стало источником изобретательности: лестницы-комоды, трансформируемые столы, спальные антресоли. Такой дом не привязан к земле, а значит, и к ипотеке; он едет туда, где есть работа, семья или вид из окна, и оставляет за собой только следы колёс.</div>
+      <ul class="cat-plus">
+        <li>Свобода от участка и долгосрочного долга</li>
+        <li>Минимальный след: материалов — на одну комнату</li>
+        <li>Целое движение со своей культурой и опытом</li>
+      </ul>
+      <div class="cat-fit"><strong>Где уместно</strong>Там, где закон позволяет стоянку; для одного-двух человек; как переходное или сезонное жильё.</div>
+      <div class="cat-soon"><a href="essay-tiny-house-wheels.html">Открыть страницу →</a></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-il"><svg class="il" viewBox="0 0 240 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="sun" cx="200" cy="30" r="12"/><line class="ground" x1="10" y1="110" x2="230" y2="110"/><line x1="70" y1="76" x2="120" y2="34" class="thin"/><path d="M60 110 L60 76 Q120 20 180 76 L180 110z"/><path d="M60 76 L180 76" class="thin"/><line x1="85" y1="76" x2="120" y2="34" class="thin"/><path d="M60 110 L60 76 Q120 20 180 76 L180 110z"/><path d="M60 76 L180 76" class="thin"/><line x1="100" y1="76" x2="120" y2="34" class="thin"/><path d="M60 110 L60 76 Q120 20 180 76 L180 110z"/><path d="M60 76 L180 76" class="thin"/><line x1="140" y1="76" x2="120" y2="34" class="thin"/><path d="M60 110 L60 76 Q120 20 180 76 L180 110z"/><path d="M60 76 L180 76" class="thin"/><line x1="155" y1="76" x2="120" y2="34" class="thin"/><path d="M60 110 L60 76 Q120 20 180 76 L180 110z"/><path d="M60 76 L180 76" class="thin"/><line x1="170" y1="76" x2="120" y2="34" class="thin"/><line x1="60" y1="76" x2="74" y2="110" class="thin"/><line x1="74" y1="76" x2="88" y2="110" class="thin"/><line x1="88" y1="76" x2="102" y2="110" class="thin"/><line x1="102" y1="76" x2="116" y2="110" class="thin"/><line x1="116" y1="76" x2="130" y2="110" class="thin"/><line x1="130" y1="76" x2="144" y2="110" class="thin"/><line x1="144" y1="76" x2="158" y2="110" class="thin"/><line x1="158" y1="76" x2="172" y2="110" class="thin"/><line x1="74" y1="76" x2="60" y2="110" class="thin"/><line x1="88" y1="76" x2="74" y2="110" class="thin"/><line x1="102" y1="76" x2="88" y2="110" class="thin"/><line x1="116" y1="76" x2="102" y2="110" class="thin"/><line x1="130" y1="76" x2="116" y2="110" class="thin"/><line x1="144" y1="76" x2="130" y2="110" class="thin"/><line x1="158" y1="76" x2="144" y2="110" class="thin"/><line x1="172" y1="76" x2="158" y2="110" class="thin"/><line x1="180" y1="76" x2="166" y2="110" class="thin"/><circle cx="120" cy="34" r="6"/><rect x="112" y="84" width="16" height="26" class="paper"/></svg></div>
+      <div class="cat-num">19 · ПО КРУГУ</div>
+      <div class="cat-name">Юрта</div>
+      <div class="cat-line">Три тысячи лет аэродинамики</div>
+      <div class="cat-text">Решётчатые стены, жерди купола, войлок и верёвки — конструкция, которую собирают за полдня и везут на двух верблюдах. Круг не даёт ветру зацепиться и не оставляет углов, где застаивается холод; купол выводит горячий воздух летом. Современные юрты с утеплением и стеклянным куполом живут круглый год, не теряя главного: дом, который можно унести.</div>
+      <ul class="cat-plus">
+        <li>Минимальный материал на максимум объёма</li>
+        <li>Устойчивость к ветру и экстремальным температурам</li>
+        <li>Не оставляет фундамента — земля под ней не меняется</li>
+      </ul>
+      <div class="cat-fit"><strong>Где уместно</strong>Степи, предгорья, ветреные побережья; сезонные и гостевые дома; любой, кто хочет жить в круге.</div>
+      <div class="cat-soon"><a href="essay-yurt.html">Открыть страницу →</a></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-il"><svg class="il" viewBox="0 0 240 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="sun" cx="200" cy="30" r="12"/><path d="M10 112 Q60 100 120 112 T230 112" class="thin"/><path d="M40 98 L40 64 L70 44 L150 44 L150 98z"/><rect x="78" y="52" width="24" height="16" class="thin"/><rect x="112" y="52" width="28" height="16" class="thin"/><rect x="74" y="38" width="60" height="6"/><circle cx="62" cy="100" r="7"/><circle cx="130" cy="100" r="7"/><path d="M170 98 L200 98 L200 70 L220 70 L226 98" class="dash"/><path d="M175 98 q 12 -30 24 -4" class="thin"/><path d="M200 70 q 16 -12 22 6" class="thin"/></svg></div>
+      <div class="cat-num">20 · В ДВИЖЕНИИ</div>
+      <div class="cat-name">Фургон и лодка</div>
+      <div class="cat-line">Жильё, у которого меняется вид из окна</div>
+      <div class="cat-text">Четырнадцать квадратных метров фургона или каюта парусной лодки — это дом, доведённый до предела: вода и электричество считаются литрами и ватт-часами, солнечная панель на крыше — не символ, а единственный источник. Такая жизнь учит бережливости быстрее любой книги и даёт то, чего не даст ни один участок: утро каждый раз в новом месте.</div>
+      <ul class="cat-plus">
+        <li>Потребление ресурсов становится видимым и осознанным</li>
+        <li>Почти полная автономия при минимуме вещей</li>
+        <li>Мобильность как способ знать страну, а не смотреть на неё</li>
+      </ul>
+      <div class="cat-fit"><strong>Где уместно</strong>Для одного-двух человек, на сезон или на годы; для тех, кому дорога важнее адреса.</div>
+      <div class="cat-soon"><a href="essay-van-boat.html">Открыть страницу →</a></div>
+    </div>
+
+  </div>
+
+  <div class="sb">
+    <h2><small>Как выбирать</small>Четыре вопроса <em>перед первым камнем</em></h2>
+  </div>
+
+  <p>Ни одна технология из двадцати не лучшая. Каждая отвечает на свой вопрос, и выбор начинается не с каталога, а с участка.</p>
+
+  <div class="principles-list">
+    <div class="pl-item">
+      <div class="pl-num">01</div>
+      <div class="pl-name">Какой здесь климат — и какой он будет через тридцать лет</div>
+      <div class="pl-desc">Большой суточный перепад температур зовёт тяжёлые стены: землю, камень, прессованный грунт. Долгая холодная зима — изоляцию: солому, дерево, коноплю. Влажная жара — лёгкость и проветривание. Климат меняется; проектировать стоит под тот, что придёт.</div>
+    </div>
+    <div class="pl-item">
+      <div class="pl-num">02</div>
+      <div class="pl-name">Что лежит в радиусе пятидесяти километров</div>
+      <div class="pl-desc">Самый экологичный материал — тот, который не везли. Глинистый грунт на участке, лес в соседнем хозяйстве, карьер за холмом, солома с ближнего поля, склад старого кирпича в городе. Каталог начинается с карты, а не с прайс-листа.</div>
+    </div>
+    <div class="pl-item">
+      <div class="pl-num">03</div>
+      <div class="pl-name">Чьи руки будут строить</div>
+      <div class="pl-desc">Саман, earthbag и солома прощают неопытность и собирают вокруг себя людей: это технологии общины. Префаб, CLT и пассивный стандарт требуют точности и профессионалов. И то и другое честно — важно выбрать своё.</div>
+    </div>
+    <div class="pl-item">
+      <div class="pl-num">04</div>
+      <div class="pl-name">Сколько дома действительно нужно</div>
+      <div class="pl-desc">Этот вопрос стоит задавать последним и отвечать на него первым. Всё, что выше, работает вдвое лучше, когда дома вдвое меньше.</div>
+    </div>
+  </div>
+
+  <blockquote>
+    <p>Хороший дом не отгораживает от места. Он учит место — его солнце, его ветер, его глину — быть жильём.</p>
+  </blockquote>
+
+  <p id="soon">Эта страница — оглавление. За каждой карточкой стоит отдельный текст: история технологии, физика, по которой она работает, типичные ошибки, примеры построенных домов и честный список ограничений. Эти страницы будут появляться по одной и получать ссылки отсюда; карточка с пометкой «готовится» означает, что текст ещё не опубликован.</p>
+
+</article>
+
+<section class="rel">
+  <div class="rel-in">
+    <div class="rel-label">Читать дальше</div>
+    <div class="rel-grid">
+      <a href="essay-alternative-building.html" class="rel-card">
+        <div class="rel-kind">Эссе</div>
+        <div class="rel-name">Шесть способов построить дом иначе</div>
+      </a>
+      <a href="essay-passive-design.html" class="rel-card">
+        <div class="rel-kind">Эссе</div>
+        <div class="rel-name">Шесть принципов пассивного дизайна</div>
+      </a>
+      <a href="number-embodied.html" class="rel-card">
+        <div class="rel-kind">Одно число</div>
+        <div class="rel-name">Воплощённая энергия дома</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="gf">
+  <div class="gf-top">
+    <div class="gf-brand">
+      <a href="index.html" class="gf-logo">
+        <svg viewBox="0 0 100 100" fill="none" class="logo-svg" style="width:24px;height:24px;flex-shrink:0;"><circle cx="50" cy="50" r="40" stroke="#f3ede3" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#6ea87e"/></svg>
+        <span class="gf-logo-text">Эко<em>Сознание</em></span>
+      </a>
+      <p class="gf-tagline">Экологический взгляд как линза для любой сферы жизни</p>
+    </div>
+    <div class="gf-cols">
+      <div>
+        <div class="gf-col-title">Разделы</div>
+        <div class="gf-sections">
+          <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Философия</span></a>
+          <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
+          <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
+          <a href="section-compost.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Компост</span></a>
+          <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Технологии</span></a>
+          <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
+          <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
+          <a href="section-construction.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="gf-sec-name">Строительство</span></a>
+          <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="gf-sec-name">Экономика</span></a>
+          <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Образование</span></a>
+          <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
+          <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
+          <a href="section-health.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Здоровье</span></a>
+          <a href="section-science.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Наука</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="gf-col-title">Материалы</div>
+        <nav class="gf-nav-links">
+          <a href="essay-truth-and-climate.html" class="gf-nav-link">Истина и климат</a>
+          <a href="essay-passive-design.html" class="gf-nav-link">Пассивный дизайн</a>
+          <a href="essay-solastalgia.html" class="gf-nav-link">Соластальгия</a>
+          <a href="essay-community-survives.html" class="gf-nav-link">Что нужно общине</a>
+          <a href="essay-bread.html" class="gf-nav-link">Хлеб</a>
+          <a href="essay-morning-light.html" class="gf-nav-link">Утренний свет</a>
+          <a href="essay-moneyless-year.html" class="gf-nav-link">Год без денег</a>
+          <a href="lab-heidegger-plastic.html" class="gf-nav-link">Лаб №01 · Пластик</a>
+          <a href="lab-hyperobject-room.html" class="gf-nav-link">Лаб №02 · Комната</a>
+          <a href="lab-jacket-biography.html" class="gf-nav-link">Лаб №03 · Куртка</a>
+          <a href="lab-15min-city.html" class="gf-nav-link">Лаб №04 · Город</a>
+          <a href="lab-bateson-gpt.html" class="gf-nav-link">Лаб №05 · Бейтсон</a>
+          <a href="lab-raworth-chinovnik.html" class="gf-nav-link">Лаб №06 · Раворт</a>
+          <a href="lab-heidegger-builder.html" class="gf-nav-link">Лаб №07 · Хайдеггер</a>
+          <a href="lab-benyus-engineer.html" class="gf-nav-link">Лаб №08 · Бенюс</a>
+          <a href="lab-illich-social.html" class="gf-nav-link">Лаб №09 · Иллич</a>
+          <a href="lab-morton-raworth.html" class="gf-nav-link">Лаб №10 · Мортон / Раворт</a>
+          <a href="lab-illich-benyus.html" class="gf-nav-link">Лаб №11 · Иллич / Бенюс</a>
+          <a href="lab-degrowth-ecomodern.html" class="gf-nav-link">Лаб №12 · Спор о росте</a>
+        </nav>
+      </div>
+      <div>
+        <div class="gf-col-title">Навигация</div>
+        <nav class="gf-nav-links">
+          <a href="index.html" class="gf-nav-link">Главная</a>
+          <a href="map.html" class="gf-nav-link">Карта связей</a>
+          <a href="paths.html" class="gf-nav-link">Тропы чтения</a>
+          <a href="contents.html" class="gf-nav-link">Все материалы</a>
+          <a href="tree.html" class="gf-nav-link">Дерево материалов</a>
+          <a href="revisions.html" class="gf-nav-link">Что не подтвердилось</a>
+          <a href="thinkers.html" class="gf-nav-link">Указатель имён</a>
+          <a href="search.html" class="gf-nav-link">Поиск</a>
+          <a href="method.html" class="gf-nav-link">Как устроены материалы</a>
+          <a href="corrections.html" class="gf-nav-link">Исправления</a>
+            <a href="about.html" class="gf-nav-link">О проекте</a>
+          <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
+          <a href="section-icons-library.html" class="gf-nav-link">Знаки разделов</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="gf-bottom">
+    <span class="gf-copy">© 2025 ЭкоСознание</span>
+    <div class="gf-bottom-links">
+      <a href="about.html">О проекте</a>
+      <a href="glossary.html">Глоссарий</a>
+    </div>
+  </div>
+</footer>
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+
+
+<!-- ECO:MANAGED:js -->
+<script src="assets/global.js" defer></script>
+<!-- /ECO:MANAGED:js -->
+</body>
+</html>

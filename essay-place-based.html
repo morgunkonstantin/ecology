@@ -1,46 +1,45 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
 <head>
+<script>document.documentElement.classList.replace('no-js','js');</script>
 <meta charset="UTF-8">
-<meta name="description" content="Дэвид Орр, Гэри Снайдер и шесть вопросов о своём месте. Почему place-based education — самая радикальная педагогика.">
-<meta property="og:title" content="Шесть вопросов Гэри Снайдера — place-based education — ЭкоСознание">
-<meta property="og:description" content="Дэвид Орр, Гэри Снайдер и шесть вопросов о своём месте. Почему place-based education — самая радикальная педагогика.">
+<meta name="description" content="Гэри Снайдер, биорегионализм и place-based education: почему нельзя отвечать за биосферу, не зная, откуда в кране вода. И почему из вашего водосбора не видно климата.">
+<meta property="og:title" content="Шесть вопросов Гэри Снайдера. Почему место — главный учебник экологии">
+<meta property="og:description" content="Гэри Снайдер, биорегионализм и place-based education: почему нельзя отвечать за биосферу, не зная, откуда в кране вода. И почему из вашего водосбора не видно климата.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Шесть вопросов Гэри Снайдера.Почему место — главныйучебник экологии — ЭкоСознание</title>
+<title>Шесть вопросов Гэри Снайдера. Почему место — главный учебник экологии — ЭкоСознание</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-:root{--ink:#1c2b1e;--ink-light:#3d5240;--moss:#4a7c59;--fern:#6ea87e;--sage:#a8c5a0;--mist:#d4e6d0;--cream:#f3ede3;--warm:#ece5d6;--paper:#faf6ef;--gold:#b8924a;--clay:#c4956a;--rust:#7a4f2e;}
-html{scroll-behavior:smooth;}body{background:var(--paper);color:var(--ink);font-family:'Jost',sans-serif;font-weight:300;overflow-x:hidden;}
-.essay-hero{padding:9rem 4rem 5rem;max-width:1100px;margin:0 auto;}
+<link rel="stylesheet" href="assets/base.css">
+<style>
 .essay-tag{display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:2rem;}
-.essay-tag::before{content:'';display:block;width:24px;height:1px;background:var(--fern);}
-.essay-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,5.5vw,4.6rem);font-weight:300;line-height:1.05;color:var(--ink);margin-bottom:2.5rem;max-width:900px;}
-.essay-hero h1 em{font-style:italic;color:var(--moss);}
 .essay-meta{display:flex;gap:3rem;padding:1.4rem 0;border-top:1px solid rgba(74,124,89,.18);border-bottom:1px solid rgba(74,124,89,.18);flex-wrap:wrap;}
 .essay-meta-item{font-size:.78rem;color:var(--ink-light);}
 .essay-meta-item strong{display:block;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:.3rem;}
-.essay{max-width:720px;margin:0 auto;padding:5rem 4rem 6rem;}
 .essay>p{font-family:'Cormorant Garamond',serif;font-size:1.18rem;line-height:1.75;color:var(--ink);margin-bottom:1.8rem;}
-.essay>p:first-of-type::first-letter{font-size:4.6rem;font-weight:400;line-height:.85;float:left;margin:.25rem .6rem 0 0;color:var(--moss);}
-.essay h2{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--ink);margin:3.5rem 0 2rem;line-height:1.2;}
-.essay h2 em{font-style:italic;color:var(--moss);}
+.essay>p:first-of-type::first-letter{font-size:4.6rem;font-weight:400;line-height:.85;float:left;margin:.25rem .6rem 0 0;color:var(--moss);font-family:'Cormorant Garamond',serif;}
 .essay h2 small{display:block;font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--clay);font-weight:400;margin-bottom:.7rem;}
-.essay em.t{font-style:italic;color:var(--moss);}
-.essay blockquote{margin:2.5rem 0;padding:0 0 0 2rem;border-left:2px solid var(--fern);}
 .essay blockquote p{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-style:italic;color:var(--ink-light);line-height:1.5;margin-bottom:.6rem!important;}
 .essay blockquote cite{font-family:'Jost',sans-serif;font-style:normal;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--moss);}
-.sb{display:flex;align-items:center;justify-content:center;gap:1.5rem;margin:4rem 0;}
 .sb::before,.sb::after{content:'';flex:1;max-width:100px;height:1px;background:rgba(74,124,89,.25);}
-.sb span{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-style:italic;color:var(--moss);}
 .idea{margin:3rem 0;padding:2.2rem 2.5rem 2.2rem 3rem;background:var(--cream);border-left:3px solid var(--moss);position:relative;}
 .idea::before{content:'Идея';position:absolute;top:-.7rem;left:2.2rem;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);background:var(--paper);padding:0 .6rem;}
 .idea p{font-family:'Cormorant Garamond',serif!important;font-size:1.15rem!important;font-style:italic;color:var(--ink)!important;line-height:1.55!important;margin:0!important;}
-.dark{background:var(--ink);margin:5rem -4rem;padding:4rem 4rem;}
-.dark-in{max-width:720px;margin:0 auto;}
-.dark small{font-family:'Jost',sans-serif;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sage);display:block;margin-bottom:1rem;}
-.dark h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;font-style:italic;color:var(--cream);line-height:1.3;margin-bottom:1.5rem;}
-.dark p{font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.7;color:rgba(211,230,208,.78);margin-bottom:1.3rem;}
+.interlude small{font-family:'Jost',sans-serif;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sage);display:block;margin-bottom:1rem;}
+.interlude p{font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.7;color:rgba(211,230,208,.78);margin-bottom:1.3rem;}
+.numbers-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.15);margin:2rem 0;}
+.num-card{background:var(--cream);padding:1.4rem 1.1rem;text-align:center;}
+.num-card .n-big{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--moss);line-height:1;margin-bottom:.4rem;}
+.num-card .n-lbl{font-size:.74rem;line-height:1.5;color:var(--ink-light);}
+.principles-list{margin:2.5rem 0;border-left:2px solid var(--fern);padding-left:2rem;}
+.pl-item{margin-bottom:1.6rem;position:relative;}
+.pl-item:last-child{margin-bottom:0;}
+.pl-item::before{content:'';position:absolute;left:-2.15rem;top:.5rem;width:9px;height:9px;border-radius:50%;background:var(--moss);}
+.pl-num{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.3rem;}
+.pl-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--ink);margin-bottom:.4rem;}
+.pl-name em{font-style:italic;color:var(--moss);}
+.pl-desc{font-size:.92rem;line-height:1.75;color:var(--ink-light);}
 .sig{margin-top:5rem;padding-top:3rem;border-top:1px solid rgba(74,124,89,.18);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem;}
 .sig-a{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink-light);font-style:italic;}
 .sig-m{font-size:.74rem;letter-spacing:.1em;color:var(--sage);text-transform:uppercase;}
@@ -49,49 +48,45 @@ html{scroll-behavior:smooth;}body{background:var(--paper);color:var(--ink);font-
 .rel-label{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--moss);margin-bottom:1.5rem;}
 .rel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.15);}
 .rel-card{background:var(--cream);padding:1.6rem;text-decoration:none;transition:background .25s;}
-.rel-card:hover{background:var(--warm);}
 .rel-kind{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.5rem;}
-.rel-name{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink);line-height:1.3;}
 .reading-bar{position:fixed;top:0;left:0;height:2px;background:var(--moss);z-index:400;width:0%;transition:width .1s linear;}
-@media(max-width:720px){.essay-hero,.essay,.rel{padding-left:1.5rem;padding-right:1.5rem;}.dark{margin-left:-1.5rem;margin-right:-1.5rem;padding-left:1.5rem;padding-right:1.5rem;}.rel-grid{grid-template-columns:1fr;}.essay-meta{flex-direction:column;gap:1rem;}}
-/* ── GLOBAL FOOTER ── */
-.gf{background:var(--ink);padding:3.5rem 3rem 0;font-family:'Jost',sans-serif;}
-.gf-top{display:grid;grid-template-columns:200px 1fr;gap:4rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,0.07);}
-.gf-brand{}
-.gf-logo{display:flex;align-items:center;gap:0.55rem;text-decoration:none;margin-bottom:1rem;}
-.gf-logo-text{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--cream);}
-.gf-logo-text em{font-style:italic;color:var(--fern);}
-.gf-tagline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.88rem;color:rgba(168,197,160,0.45);line-height:1.65;max-width:175px;}
-.gf-cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2.5rem;}
-.gf-col-title{font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(168,197,160,0.38);margin-bottom:1rem;}
-.gf-sections{display:grid;grid-template-columns:1fr 1fr;gap:0.05rem;}
-.gf-sec-link{display:flex;align-items:center;gap:0.4rem;text-decoration:none;padding:0.38rem 0.25rem;border-radius:3px;opacity:0.68;transition:opacity 0.18s,background 0.18s;}
-.gf-sec-link:hover{opacity:1;background:rgba(255,255,255,0.06);}
-.gf-sec-icon{width:15px;height:15px;color:var(--fern);flex-shrink:0;}
-.gf-sec-icon svg{width:100%;height:100%;}
-.gf-sec-name{font-family:'Cormorant Garamond',serif;font-size:0.9rem;color:var(--mist);}
-.gf-nav-links{display:flex;flex-direction:column;gap:0.05rem;}
-.gf-nav-link{font-family:'Cormorant Garamond',serif;font-size:0.92rem;color:rgba(211,230,208,0.58);text-decoration:none;padding:0.38rem 0.25rem;border-radius:3px;transition:color 0.18s,background 0.18s;}
-.gf-nav-link:hover{color:var(--fern);background:rgba(255,255,255,0.05);}
-.gf-bottom{padding:1.5rem 0 1.8rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.8rem;}
-.gf-copy{font-size:0.67rem;letter-spacing:0.08em;color:rgba(168,197,160,0.28);}
-.gf-bottom-links{display:flex;gap:1rem;}
-.gf-bottom-links a{font-size:0.67rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(168,197,160,0.35);text-decoration:none;transition:color 0.18s;}
-.gf-bottom-links a:hover{color:var(--fern);}
-@media(max-width:860px){
-  .gf{padding:2.5rem 1.5rem 0;}
-  .gf-top{grid-template-columns:1fr;gap:2rem;}
-  .gf-cols{grid-template-columns:1fr 1fr;gap:1.5rem;}
-}
-@media(max-width:540px){
-  .gf-cols{grid-template-columns:1fr;}
-  .gf-sections{grid-template-columns:1fr 1fr;}
-  .gf-bottom{flex-direction:column;align-items:flex-start;gap:0.6rem;}
-}
+@media(max-width:720px){ .essay-hero,.essay,.rel{padding-left:1.5rem;padding-right:1.5rem;} .interlude{margin-left:-1.5rem;margin-right:-1.5rem;padding-left:1.5rem;padding-right:1.5rem;} .rel-grid{grid-template-columns:1fr;} .essay-meta{flex-direction:column;gap:1rem;} .numbers-row{grid-template-columns:1fr 1fr;} }
 </style>
+
+<style>
+.sources{margin:5rem 0 0;padding-top:2.5rem;border-top:1px solid rgba(74,124,89,.2);}
+.src-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;margin-bottom:1.6rem;}
+.src-title small{display:block;font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.22em; text-transform:uppercase;color:var(--clay-text);font-weight:400;margin-bottom:.6rem;}
+.src-list{list-style:none;counter-reset:src;padding:0;margin:0;}
+.src-list li{position:relative;padding-left:2.4rem;margin-bottom:1.1rem;font-size:.86rem; line-height:1.7;color:var(--ink-light);}
+.src-list li::before{counter-increment:src;content:counter(src,decimal-leading-zero); position:absolute;left:0;top:.15rem;font-family:'Jost',sans-serif;font-size:.66rem; letter-spacing:.1em;color:var(--sage-text);}
+.src-a{color:var(--ink);}
+a.term{color:inherit;text-decoration:none;border-bottom:1px dotted var(--fern-text);}
+a.term:hover{border-bottom-style:solid;color:var(--moss);}
+</style>
+<!-- ECO:MANAGED:head -->
+  <link rel="canonical" href="https://morgunkonstantin.github.io/ecology/essay-place-based.html">
+  <meta property="og:url" content="https://morgunkonstantin.github.io/ecology/essay-place-based.html">
+  <meta property="og:site_name" content="ЭкоСознание">
+  <meta property="og:image" content="https://morgunkonstantin.github.io/ecology/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ЭкоСознание — экология как способ смотреть на реальность">
+  <meta name="twitter:image" content="https://morgunkonstantin.github.io/ecology/assets/og-image.png">
+  <meta name="theme-color" content="#faf6ef">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","name":"Шесть вопросов Гэри Снайдера. Почему место — главный учебник экологии","headline":"Шесть вопросов Гэри Снайдера. Почему место — главный учебник экологии","description":"Гэри Снайдер, биорегионализм и place-based education: почему нельзя отвечать за биосферу, не зная, откуда в кране вода. И почему из вашего водосбора не видно климата.","inLanguage":"ru-RU","url":"https://morgunkonstantin.github.io/ecology/essay-place-based.html","isPartOf":{"@type":"WebSite","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"},"publisher":{"@type":"Organization","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"},"datePublished":"2026-07-26","author":{"@type":"Organization","name":"ЭкоСознание"},"articleSection":"Образование"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://morgunkonstantin.github.io/ecology/"},{"@type":"ListItem","position":2,"name":"Шесть вопросов Гэри Снайдера. Почему место — главный учебник экологии","item":"https://morgunkonstantin.github.io/ecology/essay-place-based.html"}]}</script>
+<!-- /ECO:MANAGED:head -->
 </head>
 <body>
+<a class="skip-link" href="#content">Перейти к содержанию</a>
+
 <div class="g-nav-wrap" id="gNavWrap">
   <div class="g-nav">
     <a href="index.html" class="g-logo">
@@ -108,18 +103,17 @@ html{scroll-behavior:smooth;}body{background:var(--paper);color:var(--ink);font-
           <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
           <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
           <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-compost.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Компост</span><span class="g-dd-num">03b</span></a>
           <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
           <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
-          <a href="section-compost.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Компост</span><span class="g-dd-num">05b</span></a>
           <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
           <a href="section-construction.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="g-dd-name">Строительство</span><span class="g-dd-num">06b</span></a>
           <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
-          <a href="section-art.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></span><span class="g-dd-name">Искусство</span><span class="g-dd-num">08</span></a>
-          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">09</span></a>
-          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">10</span></a>
-          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">11</span></a>
-          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">12</span></a>
-          <a href="section-science.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Наука</span><span class="g-dd-num">13</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">08</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">09</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">10</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">11</span></a>
+          <a href="section-science.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Наука</span><span class="g-dd-num">12</span></a>
         </div>
       </li>
       <li><a href="index.html#latest">Эссе</a></li>
@@ -131,6 +125,7 @@ html{scroll-behavior:smooth;}body{background:var(--paper);color:var(--ink);font-
     </button>
   </div>
 </div>
+
 <div class="g-overlay" id="gOverlay">
   <div class="g-ov-section">
     <div class="g-ov-label">Разделы</div>
@@ -138,13 +133,12 @@ html{scroll-behavior:smooth;}body{background:var(--paper);color:var(--ink);font-
       <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Философия</span></a>
       <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
       <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
+      <a href="section-compost.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Компост</span></a>
       <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Технологии</span></a>
       <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
-      <a href="section-compost.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Компост</span></a>
       <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
       <a href="section-construction.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/></svg></span><span class="g-ov-name">Строительство</span></a>
       <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-ov-name">Экономика</span></a>
-      <a href="section-art.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></span><span class="g-ov-name">Искусство</span></a>
       <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Образование</span></a>
       <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
       <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
@@ -159,593 +153,204 @@ html{scroll-behavior:smooth;}body{background:var(--paper);color:var(--ink);font-
       <a href="index.html#latest" class="g-ov-simple-link">Эссе и лаборатории</a>
       <a href="glossary.html" class="g-ov-simple-link">Глоссарий</a>
       <a href="map.html" class="g-ov-simple-link">Карта связей</a>
+      <a href="contents.html" class="g-ov-simple-link">Все материалы</a>
+      <a href="revisions.html" class="g-ov-simple-link">Что не подтвердилось</a>
+      <a href="search.html" class="g-ov-simple-link">Поиск</a>
+      <a href="paths.html" class="g-ov-simple-link">Тропы чтения</a>
+      <a href="tree.html" class="g-ov-simple-link">Дерево материалов</a>
+      <a href="thinkers.html" class="g-ov-simple-link">Указатель имён</a>
       <a href="about.html" class="g-ov-simple-link">О проекте</a>
     </div>
   </div>
 </div>
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<main id="content" tabindex="-1">
 
-<section class="hero">
-  <div>
-    <div class="hero-tag">Раздел · Философия</div>
-    <h1>Истина<br><em>как встреча</em></h1>
-    <p class="hero-lead">
-      Что такое истина — самый старый и самый актуальный вопрос. Сегодня, в эпоху постправды и климатического кризиса, он перестаёт быть академической темой: без общего понятия истины невозможна ни наука, ни демократия, ни коллективное действие. Этот раздел прослеживает историю понятия истины — от Парменида до современности — чтобы показать: экологическое мышление невозможно без работы с истиной.
-    </p>
+<div class="reading-bar" id="rb"></div>
+
+<section class="essay-hero">
+  <div class="essay-tag">Эссе · Образование</div>
+  <h1>Шесть вопросов<br>Гэри Снайдера.<br>Почему место —<br>главный <em>учебник экологии</em></h1>
+  <div class="essay-meta">
+    <div class="essay-meta-item"><strong>Раздел</strong>Образование</div>
+    <div class="essay-meta-item"><strong>Тип</strong>Программное эссе</div>
+    <div class="essay-meta-item"><strong>Темы</strong>Гэри Снайдер · Биорегионализм · Place-based education · Урсула Хайзе</div>
+    <div class="essay-meta-item"><strong>Время</strong>≈ 13 мин</div>
+    <!-- ECO:MANAGED:date --><div class="essay-meta-item"><strong>Опубликовано</strong><time datetime="2026-07-26">26 июля 2026</time></div><!-- /ECO:MANAGED:date -->
   </div>
-  <div class="hero-meta">
-    <div>
-      <div class="meta-label">Сквозная нить</div>
-      <div class="meta-value">Истина — соответствие, событие, встреча. Её природа меняется от эпохи к эпохе, но вопрос остаётся центральным.</div>
+</section>
+
+<article class="essay">
+
+  <p>В 1970 году поэт Гэри Снайдер купил участок на хребте Сан-Хуан в предгорьях Сьерра-Невады, построил там дом по японскому образцу, назвал его Киткитдиззе — по местному кустарнику — и остался. Не на сезон и не на десятилетие. Он живёт там больше полувека, и это обстоятельство важнее любого его отдельного текста, потому что оно и есть аргумент.</p>
+
+  <p>До этого Снайдер провёл около двенадцати лет в Японии, в основном в Киото, занимаясь дзэнской практикой. Он принадлежал к бит-поколению, получил Пулитцеровскую премию 1975 года за «Черепаший остров» и мог выбрать любую точку на карте. Он выбрал конкретный водосборный бассейн и стал изучать его так, как изучают язык: медленно, годами, без надежды закончить.</p>
+
+  <p>Из этого выросла мысль, которая для экологического образования оказалась важнее большинства педагогических теорий. Она состоит примерно в следующем: невозможно научить человека отвечать за биосферу, если он не в состоянии ответить, откуда в его кране вода. Не потому, что вода важнее биосферы, а потому, что это единственный масштаб, на котором знание бывает проверяемым.</p>
+
+  <p>Прежде чем разбирать, стоит оговорить: канонического списка «шести вопросов Снайдера» не существует. Есть его тексты, есть биорегиональная традиция, из которой он вырос, и есть знаменитая анкета <em class="t">«Where You At?»</em>, опубликованная в CoEvolution Quarterly в 1981 году Леонардом Чарльзом, Джимом Доджем, Линнеей Милмен и Викторией Стокли. Шесть вопросов ниже — наша компрессия этой традиции, а не цитата. Снайдеру принадлежит ход мысли, не формулировки.</p>
+
+  <div class="sb">
+    <h2><small>Понятие</small>Реинхабитация: <em>заселиться туда, где уже живёшь</em></h2>
+  </div>
+
+  <p>В 1977 году Питер Берг и эколог Реймонд Дасманн выпустили сборник «Reinhabiting California» и ввели слово, которое трудно перевести на русский без потерь. Реинхабитация — это заселение места, в котором ты формально уже находишься. Предполагается, что современный человек живёт по своему адресу как в гостинице: спит, платит, уезжает, — и не знает почти ничего о системе, которая его содержит.</p>
+
+  <p>Единицей такого знания биорегионалисты предложили считать не административную границу, а водосборный бассейн. Логика здесь не поэтическая, а гидрологическая: границы областей прочерчены по договорам, границы бассейнов — по рельефу, и именно они определяют, куда стекает вода, где растёт что, кто с кем связан ниже по течению. Снайдер писал об этом в «Практике дикого» 1990 года — книге эссе, из которых главное для нашей темы называется «Место, регион и общее».</p>
+
+  <p>Там же он проводит различение, которое стоит отдельного абзаца. Дикая природа как заповедная территория — <em class="t">wilderness</em> — и дикое как процесс — <em class="t">the wild</em>. Первое находится в конкретном месте, обнесённом границей, куда едут на выходные. Второе происходит везде, включая трещину в асфальте и человеческий кишечник. Различение подрывает логику природы-как-достопримечательности: если дикое — процесс, а не место, то ехать за ним никуда не надо, и отговорка «у нас тут нет природы» перестаёт работать.</p>
+
+  <p>Отсюда специфическая интонация Снайдера — он не мистик и не пасторалист. Он повторяет, что дело — это <em class="t">the real work</em>, настоящая работа, и что она состоит в починке конкретных вещей на конкретном склоне: дороги, леса, пожарной безопасности, отношений с соседями. Это ближе к сельскому прагматизму, чем к романтизму.</p>
+
+  <div class="sb">
+    <h2><small>Инструмент</small>Шесть вопросов, на которые <em>почти никто не отвечает</em></h2>
+  </div>
+
+  <p>Смысл вопросов не в проверке эрудиции. Они устроены так, что незнание ответа само по себе информативно: оно показывает, какие связи в вашей жизни устроены как чёрный ящик.</p>
+
+  <div class="principles-list">
+    <div class="pl-item">
+      <div class="pl-num">01</div>
+      <div class="pl-name">Откуда приходит ваша вода</div>
+      <div class="pl-desc">Не «из крана», а: какой водосбор, какая река или горизонт, сколько километров, кто живёт выше по течению и что он туда сбрасывает.</div>
     </div>
-    <div>
-      <div class="meta-label">Ключевые мыслители</div>
-      <div class="meta-value">Парменид · Платон · Аристотель · Фома · Декарт · Кант · Ницше · Гуссерль · Хайдеггер · Бадью · Мортон</div>
+    <div class="pl-item">
+      <div class="pl-num">02</div>
+      <div class="pl-name">Куда уходят ваши отходы</div>
+      <div class="pl-desc">Канализация, мусор, органика. Конкретный полигон, конкретные очистные, конкретное поле, куда попадает осадок.</div>
     </div>
-    <div>
-      <div class="meta-label">Рубрики</div>
-      <div class="meta-value">Понятие · Диалог через века · Вопрос без ответа</div>
+    <div class="pl-item">
+      <div class="pl-num">03</div>
+      <div class="pl-name">Что здесь росло до вас</div>
+      <div class="pl-desc">Какая была растительность, что её сменило, когда и почему. Город стоит на осушённом болоте, на пашне, на пойменном лесу — и это до сих пор определяет, где подтапливает.</div>
+    </div>
+    <div class="pl-item">
+      <div class="pl-num">04</div>
+      <div class="pl-name">Пять растений и пять птиц, которые здесь обычны</div>
+      <div class="pl-desc">По имени, а не по описанию. Способность назвать — не украшение: без имён восприятие остаётся недифференцированным, и «зелень за окном» не распадается на отдельные существа.</div>
+    </div>
+    <div class="pl-item">
+      <div class="pl-num">05</div>
+      <div class="pl-name">Где выращена еда, которую вы ели вчера</div>
+      <div class="pl-desc">Не бренд, а география и способ. Сколько из этого могло бы быть выращено в радиусе ста километров — и почему не выращено.</div>
+    </div>
+    <div class="pl-item">
+      <div class="pl-num">06</div>
+      <div class="pl-name">Что здесь было утрачено при жизни ваших родителей</div>
+      <div class="pl-desc">Какой вид, какая роща, какая река. Самый неудобный вопрос: он превращает абстрактную утрату в личную хронологию и обычно даёт первое настоящее переживание того, что называют <a class="term" href="glossary.html#solastalgiya">соластальгией</a>.</div>
+    </div>
+  </div>
+
+  <p>Люди, которым эти вопросы задают впервые, чаще всего не отвечают ни на один. При этом те же люди без труда рассказывают о таянии арктических льдов. Разрыв в этом месте и есть педагогическая проблема: экологическое знание существует у современного человека почти исключительно в масштабе, где он ничего не может проверить и ни на что не влияет.</p>
+
+  <blockquote>
+    <p>Знание, которое нельзя проверить своими глазами и нельзя применить своими руками, устроено как вера. Оно так же уязвимо для отрицания и так же нуждается в авторитете, который его подтвердит.</p>
+  </blockquote>
+
+  <div class="interlude">
+    <div class="interlude-in">
+      <small>Как это стало педагогикой</small>
+      <h3>Место как учебный план: от «экологической грамотности» Дэвида Орра до сельских школ Новой Англии</h3>
+      <p>Дэвид Орр в «Ecological Literacy» 1992 года сформулировал тезис, который звучит почти как трюизм и при этом переворачивает устройство школы: всякое образование является экологическим — вопрос лишь в том, чему именно оно учит своим устройством. Расписание, звонок, стены, отсутствие окон, отрыв от местности учат не меньше, чем содержание уроков. Это близко к тому, что в педагогике называют <a class="term" href="glossary.html#skrytyy-uchebnyy-plan">скрытым учебным планом</a>.</p>
+      <p>Практическую форму этому придал Дэвид Собел, чья книга «Place-Based Education» 2004 года дала подходу имя и метод. Логика простая: учебный материал берётся из окружающей местности, задания — из реальных нужд сообщества, результат — из проверяемого вклада. Школьники измеряют качество воды в местной речке, и данные идут в муниципалитет. Не проект ради оценки, а работа, у которой есть заказчик.</p>
+      <p>Собел же ввёл возрастное ограничение, которое часто игнорируют: до примерно одиннадцати лет говорить с детьми о глобальных катастрофах вредно. Ребёнок ничего не может сделать с гибелью тропических лесов и получает вместо мотивации беспомощность. Сначала — привязанность к конкретному месту, затем расширение масштаба.</p>
+      <p>Оценки эффекта существуют, но их стоит читать осторожно: большинство исследований мелкие, без контрольных групп, часто проведены сторонниками подхода. Устойчиво воспроизводится одно — рост вовлечённости и посещаемости. Утверждения о превосходстве в академических результатах доказаны слабее, чем принято утверждать в брошюрах.</p>
+    </div>
+  </div>
+
+  <div class="sb">
+    <h2><small>Родословная</small>Откуда это <em>взялось до Снайдера</em></h2>
+  </div>
+
+  <p>Мысль о месте как источнике знания не биорегиональное изобретение. У неё есть по меньшей мере три линии, и полезно их различать.</p>
+
+  <p>Первая — этическая. Олдо Леопольд в «Альманахе песчаного края» 1949 года вывел земельную этику из очень конкретного опыта: он купил истощённую фермерскую землю в Висконсине и много лет её восстанавливал. Его знаменитый разворот — от лесника, стрелявшего волков, к человеку, который понял, зачем волки нужны, — произошёл не в результате чтения, а в результате наблюдения за конкретным склоном, объеденным оленями.</p>
+
+  <p>Вторая — географическая. Йи-Фу Туан в «Топофилии» 1974 года и «Пространстве и месте» 1977-го разработал различение, без которого дальше говорить трудно: пространство абстрактно и однородно, место наполнено значением и всегда чьё-то. Превращение пространства в место — работа, и она требует времени. Отсюда <a class="term" href="glossary.html#topofiliya">топофилия</a> как термин, а не как настроение.</p>
+
+  <p>Третья — тревожная. Роберт Майкл Пайл в 1993 году назвал происходящее вымиранием опыта: каждое следующее поколение вырастает при более бедном контакте с живым, поэтому не замечает утраты — ему не с чем сравнивать. Механизм здесь самоподдерживающийся, и в этом его опасность: чтобы захотеть защищать, надо сначала полюбить, а чтобы полюбить, надо было встретить. Ричард Лоув в 2005 году придумал для популярного разговора выражение «расстройство от дефицита природы» — стоит помнить, что это публицистический термин, а не диагноз, и автор этого не скрывал.</p>
+
+  <div class="sb">
+    <h2><small>Возражения</small>Чем опасна <em>привязанность к месту</em></h2>
+  </div>
+
+  <p>Здесь необходимо остановиться, потому что аргумент о месте имеет тёмную сторону, и делать вид, что её нет, значит проиграть спор заранее.</p>
+
+  <p><em class="t">Первое: локализм легко становится исключающим.</em> «Кровь и почва» — тоже идеология места, и она вырастает из того же корня: здесь наши, здесь наша земля, здесь мы знаем, как правильно. Различие между привязанностью и притязанием на исключительное право проходит не по интенсивности чувства, а по тому, признаёт ли человек за приезжим право стать местным. Биорегионализм этот вопрос обычно не проговаривает.</p>
+
+  <p><em class="t">Второе: место доступно не всем.</em> Этика, требующая глубокой укоренённости, устроена как имущественный тест. Она предполагает возможность остаться — а огромная часть человечества живёт там, где оказалась: мигранты, вынужденные переселенцы, арендаторы, переезжающие каждые два года. Требовать от них полувековой оседлости Снайдера — значит адресовать экологическую этику тем, у кого есть земля.</p>
+
+  <p><em class="t">Третье, и самое серьёзное: место не показывает климат.</em> Урсула Хайзе в книге «Sense of Place and Sense of Planet» 2008 года разобрала это прямо и адресно, в том числе критикуя Снайдера. Её довод в том, что важнейшие экологические процессы современности принципиально не наблюдаемы локально. Из вашего водосбора не видно глобального потепления — видна погода. Изменение климата в терминах Тимоти Мортона есть <a class="term" href="glossary.html#giperobekt">гиперобъект</a>: он распределён во времени и пространстве так, что целиком не является ни в одной точке. Никакая внимательность к месту не даст его увидеть; для этого нужны спутники, модели и доверие к чужим измерениям.</p>
+
+  <p>Хайзе предлагает взамен экокосмополитизм: чувство планетарной принадлежности, основанное не на телесной близости, а на понимании сетей и потоков. Возражение сильное, и оно не снимается ссылкой на пользу локального знания.</p>
+
+  <div class="sb">
+    <h2><small>Что остаётся</small>Не альтернатива, а <em>очерёдность</em></h2>
+  </div>
+
+  <p>Мне кажется, спор Снайдера и Хайзе разрешается не выбором стороны, а различением функций. Хайзе права насчёт того, что место не является достаточным источником экологического знания. Снайдер прав насчёт того, что оно является необходимым источником экологической мотивации. Это разные вещи, и их путают в обе стороны.</p>
+
+  <p>Практически из этого следует очерёдность, а не иерархия. Сначала — способность назвать пять птиц за окном и ответить, куда уходит вода, потому что без этого глобальные факты остаются предметом веры и рушатся при первом умелом опровержении. Затем — спутники, модели и статистика, потому что без них место остаётся хутором, из которого не видно ничего, кроме погоды.</p>
+
+  <p>И один практический вывод, менее возвышенный, чем всё сказанное. Шесть вопросов выше стоит задать себе не как тест, а как список поручений. Ответ на каждый добывается за один выходной: посмотреть схему водоснабжения города, дойти до полигона, найти карту растительности за 1900 год, выучить пять птиц по голосам, прочитать этикетки во вчерашнем чеке, спросить у родителей, что здесь исчезло. Шесть выходных — и вы узнаете о своём месте больше, чем узнали за всю предыдущую жизнь. Это неприлично низкая цена, и именно она делает вопрос о том, почему мы этого не делаем, по-настоящему интересным.</p>
+
+  <section class="sources">
+    <h2 class="src-title"><small>Проверить</small>Источники</h2>
+    <ol class="src-list">
+      <li><span class="src-a">Snyder G.</span> The Practice of the Wild. North Point Press, 1990 — в частности эссе «The Place, the Region, and the Commons». Также: Turtle Island, 1974 (Пулитцеровская премия 1975); A Place in Space, 1995.</li>
+      <li><span class="src-a">Berg P., Dasmann R.</span> Reinhabiting California, 1977; Planet Drum Foundation. Dodge J. Living by Life. CoEvolution Quarterly, 1981.</li>
+      <li><span class="src-a">Charles L., Dodge J., Milliman L., Stockley V.</span> Where You At? A Bioregional Quiz. CoEvolution Quarterly, 1981 — документированный источник жанра.</li>
+      <li><span class="src-a">Orr D.</span> Ecological Literacy: Education and the Transition to a Postmodern World. SUNY Press, 1992.</li>
+      <li><span class="src-a">Sobel D.</span> Place-Based Education: Connecting Classrooms and Communities. Orion Society, 2004.</li>
+      <li><span class="src-a">Leopold A.</span> A Sand County Almanac. Oxford University Press, 1949.</li>
+      <li><span class="src-a">Tuan Yi-Fu.</span> Topophilia, 1974; Space and Place, 1977. University of Minnesota Press.</li>
+      <li><span class="src-a">Pyle R. M.</span> The Thunder Tree: Lessons from an Urban Wildland. Houghton Mifflin, 1993 — понятие «вымирание опыта».</li>
+      <li><span class="src-a">Heise U.</span> Sense of Place and Sense of Planet: The Environmental Imagination of the Global. Oxford University Press, 2008 — критика биорегионализма и Снайдера.</li>
+      <li><span class="src-a">Louv R.</span> Last Child in the Woods. Algonquin Books, 2005 — источник публицистического термина «nature-deficit disorder».</li>
+    </ol>
+  </section>
+
+</article>
+
+<section class="rel">
+  <div class="rel-in">
+    <div class="rel-label">Читать дальше</div>
+    <div class="rel-grid">
+      <a href="essay-solastalgia.html" class="rel-card">
+        <div class="rel-kind">Эссе</div>
+        <div class="rel-name">Соластальгия через одно место</div>
+      </a>
+      <a href="lab-15min-city.html" class="rel-card">
+        <div class="rel-kind">Лаборатория №04</div>
+        <div class="rel-name">День в 15-минутном городе</div>
+      </a>
+      <a href="section-education.html" class="rel-card">
+        <div class="rel-kind">Раздел</div>
+        <div class="rel-name">Образование</div>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- TOC -->
-<div class="toc-bar">
-  <a href="#main-question" class="active">Главный вопрос</a>
-  <a href="#timeline">Хронология</a>
-  <a href="#ancient">Античность</a>
-  <a href="#modern">Новое время</a>
-  <a href="#xx">XX век</a>
-  <a href="#hyperobject">Гиперобъект</a>
-  <a href="#collective">Коллективный разум</a>
-  <a href="#rubrics">Рубрики</a>
-</div>
+</main>
 
-<!-- 01 · ГЛАВНЫЙ ВОПРОС -->
-<section class="content-section" id="main-question">
-  <div class="section-label">
-    <span class="section-label-num">01</span>
-    <span class="section-label-line"></span>
-    <span class="section-label-tag">Главный вопрос</span>
-  </div>
-  <div class="article-layout wide reveal">
-    <div class="article-body">
-      <h2>Истина — главный вопрос<br><em>философии, науки и самой жизни</em></h2>
-      <p>Мы знаем много истин — фактов, опытных закономерностей, практических максим. Они кажутся настолько проверенными поколениями, что мы пользуемся ими, не задумываясь. Но само слово «истина» звучит для современного уха высокопарно: ведь по большинству вопросов у разных людей разные взгляды, а либеральная традиция учит уважать чужие истины как частное дело каждого.</p>
-      <p>И всё же без какой-то общей опоры на реальность мы рискуем потерять почву под ногами — жить в ощущении нереальности, бесцельности, плыть. Современный кризис постправды показал ограниченность чистого скептицизма: когда даже эмпирические факты — глобальное потепление, загрязнение климата — становятся предметом дебатов, под угрозой оказывается сама возможность общего действия.</p>
-      <div class="pull-quote">
-        <p>«Если у каждого истина будет своя, начнётся пост-правда и отсутствие уважения к фактам»</p>
-      </div>
-      <p>Именно поэтому экологический ресурс начинает с философии истины. Климатический кризис — это не только техническая или политическая проблема. Это проблема познания: <em>как договориться о реальности, в которой мы все живём?</em> Без понятия истины — без процедур её установления, без авторитетов, без коллективного обсуждения — экологическое сознание невозможно.</p>
-    </div>
-    <div class="article-visual reveal d1">
-      <div class="thinker">
-        <div class="thinker-name">Скептицизм</div>
-        <div class="thinker-meta">Античность → современность</div>
-        <div class="thinker-key">«Воздержание от суждения» — эпохэ</div>
-        <p>Древний скептицизм — пирронисты и платонисты — учил, что наш опыт ограничен и не может быть ключом к истине. Лучшее, что можно сделать — описывать феномены, «подвешивая» суждения об их истинности.</p>
-        <p>Современный либерализм вырос из этой традиции. Но абсолютизация скептицизма приводит к парадоксу: «если ты скептик, предъяви высокий стандарт истинности — иначе единственной истиной становится твой собственный произвол».</p>
-      </div>
-      <div class="thinker">
-        <div class="thinker-name">Постправда</div>
-        <div class="thinker-meta">XXI век</div>
-        <div class="thinker-key">Кризис общей реальности</div>
-        <p>Когда СМИ становятся идеологическими машинами, политики отказываются от процедур объективности, а авторитеты учёных вытесняются авторитетами поп-звёзд — даже факты подвисают в отсутствие договорённости. Это новый, особенно острый кризис истины.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="source-note reveal d2">
-    <div class="source-note-label">Источник материалов</div>
-    <p>Содержание раздела построено на основе авторской серии эссе об истории понятия истины — от античности до современности — и эссе «Разум и общение». Тексты автора послужили основой структуры и формулировок; дополнительный контекст и связи с экологической проблематикой добавлены редакцией.</p>
-  </div>
-</section>
-
-<!-- 02 · ХРОНОЛОГИЯ -->
-<section class="content-section alt" id="timeline">
-  <div class="section-label">
-    <span class="section-label-num">02</span>
-    <span class="section-label-line"></span>
-    <span class="section-label-tag">Хронология истины</span>
-  </div>
-  <div class="reveal">
-    <h2>Двадцать пять веков<br><em>работы с истиной</em></h2>
-    <p style="font-size:0.95rem; line-height:1.85; color:var(--ink-light); max-width:660px; margin-bottom:1rem;">
-      Понятие истины не было дано раз и навсегда. Каждая эпоха переосмысливала, что значит «знать». Ниже — двенадцать ключевых поворотов, каждый из которых открывал новые возможности и обнажал новые проблемы.
-    </p>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-era">VI в. до н.э.</div>
-        <div>
-          <div class="timeline-name">Парменид</div>
-          <div class="timeline-idea">Истинное познание возможно только умом. То, что движется и меняется, — не истина. <em style="color:var(--clay);"><a href="glossary.html#Алетейя" class="gterm" title="Алетейя">Алетейя</a></em> — истина в познавательном смысле.</div>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-era">IV в. до н.э.</div>
-        <div>
-          <div class="timeline-name">Платон</div>
-          <div class="timeline-idea">Истины — это вечные идеи-формы, постигаемые интуитивно. Окружающий мир соответствует системе бестелесных форм.</div>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-era">IV в. до н.э.</div>
-        <div>
-          <div class="timeline-name">Аристотель</div>
-          <div class="timeline-idea">Истина — характеристика суждения. Подлежащее и сказуемое должны соответствовать связи вещей. Силлогизм и логика.</div>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-era">XIII век</div>
-        <div>
-          <div class="timeline-name">Фома Аквинский</div>
-          <div class="timeline-idea">Истина — соответствие ума и вещи (корреспондентная теория). Истина — также трансцендентальная характеристика самого бытия.</div>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-era">XVII век</div>
-        <div>
-          <div class="timeline-name">Декарт</div>
-          <div class="timeline-idea">Cogito ergo sum. Единственная абсолютная истина — что мы мыслим. От неё строится метод как путь упорядочивания идей.</div>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-era">XVIII век</div>
-        <div>
-          <div class="timeline-name">Кант</div>
-          <div class="timeline-idea">Вещи-сами-по-себе остаются вне нас. Мы накладываем на реальность доопытные логические формы — истина производится полаганием.</div>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-era">XIX век</div>
-        <div>
-          <div class="timeline-name">Ницше</div>
-          <div class="timeline-idea">Истина — «мобильная армия метафор и антропоморфизмов», наиболее удобная для жизни форма иллюзии. Зачем философам нужна истина?</div>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-era">XX век</div>
-        <div>
-          <div class="timeline-name">Гуссерль</div>
-          <div class="timeline-idea">Феноменология. Эпохэ — отказ от вопроса о существовании, чтобы прояснить сами впечатления. Жизненный мир как объективная реальность.</div>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-era">XX век</div>
-        <div>
-          <div class="timeline-name">Хайдеггер</div>
-          <div class="timeline-idea"><em style="color:var(--clay);">Алетейя</em> — «не-сокрытое». Истина — событие обнаружения. Истина — не ответ, а вопрос. Скрывая истину, мы обнаруживаем себя.</div>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-era">XX век</div>
-        <div>
-          <div class="timeline-name">Бадью / Лакан</div>
-          <div class="timeline-idea">Истина — событие, которому субъект хранит верность. «Полная речь» Лакана — истина-действие, отличная от знания.</div>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-era">XXI век</div>
-        <div>
-          <div class="timeline-name">Тимоти Мортон</div>
-          <div class="timeline-idea"><a href="glossary.html#Гиперобъект" class="gterm" title="Гиперобъект">Гиперобъект</a> — феномен, столь распределённый во времени и пространстве, что мышление не справляется с ним традиционными средствами. Климат — <a href="glossary.html#Гиперобъект" class="gterm" title="Гиперобъект">гиперобъект</a>.</div>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-era">XXI век</div>
-        <div>
-          <div class="timeline-name">Мерсье · Спербер</div>
-          <div class="timeline-idea">Социальная теория мышления: разум развивался не для индивидуального поиска истины, а для коллективного обсуждения. Истина — продукт группы.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 03 · АНТИЧНОСТЬ И СРЕДНЕВЕКОВЬЕ -->
-<section class="content-section" id="ancient">
-  <div class="section-label">
-    <span class="section-label-num">03</span>
-    <span class="section-label-line"></span>
-    <span class="section-label-tag">Античность и Средневековье</span>
-  </div>
-  <div class="article-layout wide reveal">
-    <div class="article-body">
-      <h2>Истина как<br><em>откровение бытия</em></h2>
-      <p>Философия зарождается в древней Греции в VI веке до н.э. — и сразу как разговор об истине. Парменид связывает её с богиней Дикэ — справедливостью-правдой, которая ведёт юношу к познанию. У греков было два слова для истины: <em>дикэ</em> — справедливость, правда, и <em><a href="glossary.html#Алетейя" class="gterm" title="Алетейя">алетейя</a></em> — буквально «не-сокрытое». Эти два смысла связаны: истина не просто факт — это раскрытие, явление того, что было скрыто.</p>
-      <p>Платон, ученик Парменида, утверждает, что истины — это вечные интуитивно постигаемые формы. В отличие от учителя, формы у Платона не замкнуты на себя — это <em>качества</em>, подсоединяющиеся к предметам. Окружающий мир соответствует сложной системе бестелесных форм. «Человек, — говорит Платон, — стремится к истине, как бы припоминая её из прошлого своей души».</p>
-
-      <div class="thinker">
-        <div class="thinker-name">Аристотель</div>
-        <div class="thinker-meta">Корреспондентная теория</div>
-        <div class="thinker-key">Истина — соответствие суждения вещи</div>
-        <p>Аристотель меняет перспективу: истина — больше характеристика нашего суждения. Связка подлежащего и сказуемого должна соответствовать связи вещи и её качества. Он же вводит силлогизм: «Все люди смертны. Аристотель — человек. Следовательно, Аристотель смертен».</p>
-        <p>Это позволяет выводить новые истины из уже известных, не обращаясь напрямую к опыту. Так работает познание: система суждений, теорий, опытов, расширяющих и уточняющих определение.</p>
-      </div>
-
-      <div class="thinker">
-        <div class="thinker-name">Фома Аквинский</div>
-        <div class="thinker-meta">XIII век · схоластика</div>
-        <div class="thinker-key">Истина — трансцендентальная характеристика бытия</div>
-        <p>Фома формулирует классическое определение: истина — соответствие ума и вещи. Но добавляет вторую теорию, более радикальную: истина — это качество самих вещей, предикат любого сущего.</p>
-        <p>Если мы встречаем ложь — это не самостоятельное бытие, а недостаток истины. У лжи нет собственного основания, она вторична. Это значит, что вещи стремятся к самораскрытию через нас — обладают <em>силой манифестации</em>. Не мы выбираем предметы для познания, а сама реальность обращает на себя наше внимание.</p>
-      </div>
-    </div>
-    <div class="article-visual reveal d1">
-      <div class="thinker">
-        <div class="thinker-name">Парменид</div>
-        <div class="thinker-meta">VI в. до н.э.</div>
-        <div class="thinker-key">«Алетейя» — истина в познавательном смысле</div>
-        <p>«Дева́ направили путь моих лошадей с колесницей. И благосклонно Богиня меня приняла… Указали Правда и Суд. Познай же как должно и кругловидную Истину с сердцем незыбким, и вместе — мнения смертного люда, которым нет истинной веры».</p>
-        <p>Хотя мнение людей — не истина, по Пармениду их тоже следует изучить. Уже здесь — двойственность: истина и кажимости как два уровня реальности.</p>
-      </div>
-
-      <h3 style="font-family:'Cormorant Garamond',serif; font-size:1.3rem; font-weight:400; color:var(--ink); margin:2.5rem 0 1rem;">Четыре источника истины <em style="color:var(--moss);">по схоластике</em></h3>
-      <div class="sources-grid">
-        <div class="source-item">
-          <div class="source-name">Опыт</div>
-          <div class="source-desc">Даёт узнать ограниченный круг феноменов. Одного опыта недостаточно.</div>
-        </div>
-        <div class="source-item">
-          <div class="source-name">Авторитет</div>
-          <div class="source-desc">80–90% всего, что мы знаем — от авторитетов. Без них — не знаем почти ничего.</div>
-        </div>
-        <div class="source-item">
-          <div class="source-name">Откровение</div>
-          <div class="source-desc">Истина, данная сверх опыта и логики. Источник, не сводимый к остальным.</div>
-        </div>
-        <div class="source-item">
-          <div class="source-name">Логика</div>
-          <div class="source-desc">Самоочевидные следствия. Знание <em>априори</em> — без отсылки к опыту.</div>
-        </div>
-      </div>
-
-      <div class="pull-quote" style="margin-top:2rem;">
-        <p>«Истина — качество и сила вещей, которые стремятся к своему самораскрытию через нас»</p>
-        <cite>Схоластическая традиция</cite>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 04 · НОВОЕ ВРЕМЯ -->
-<section class="content-section alt" id="modern">
-  <div class="section-label">
-    <span class="section-label-num">04</span>
-    <span class="section-label-line"></span>
-    <span class="section-label-tag">Новое время</span>
-  </div>
-  <div class="article-layout reveal">
-    <div class="article-body">
-      <h2>Истина как<br><em>метод</em></h2>
-      <p>В XV–XVI веках, в эпоху Ренессанса, вопрос об истине становится центральным. Античный скептицизм, географические открытия, любопытство, освобождённое от клейма греха, — всё это рождает новую науку. Опытное знание сочетается с математическим. Творцы новой науки решают, что мир устроен математически, и это можно доказать на опыте.</p>
-      <p>Авторитет перестаёт играть главную роль. Истинность подтверждается экспериментом — управляемым опытом, помещающим вещи в искусственную ситуацию, где они «говорят на языке математики». В XVII веке Роберт Бойль проводит эксперименты публично, при множестве свидетелей — это шоу, где факт становится результатом процедуры.</p>
-
-      <div class="thinker">
-        <div class="thinker-name">Декарт</div>
-        <div class="thinker-meta">XVII век</div>
-        <div class="thinker-key">Cogito ergo sum</div>
-        <p>Декарт начинает со скептического допущения: возможно, всё — наваждение, гипноз, матрица. Но в одном мы уверены: что мы в данный момент мыслим. Акт мысли — непосредственная достоверность.</p>
-        <p>От этой точки Декарт строит метод: путь проверенных идей, которым мы ориентируемся в мире. Без метода вокруг — хаос, порождённый нашим несовершенством восприятия.</p>
-      </div>
-
-      <div class="thinker">
-        <div class="thinker-name">Кант</div>
-        <div class="thinker-meta">XVIII век</div>
-        <div class="thinker-key">Вещи-сами-по-себе</div>
-        <p>Кант возвращается к скептическому пониманию науки: мы накладываем доопытные логические представления на реальность, о которой трудно что-то сказать. Реальность — «вещи-сами-по-себе» — отделена от нас, образует матрицу, на которую мы накладываем логическую систему науки.</p>
-        <p>Истина производится путём <em>полагания</em>. Если бы мы не использовали логических форм, перед нами был бы хаос — или нечто вообще не человекоразмерное.</p>
-      </div>
-    </div>
-    <div class="article-visual reveal d1">
-      <div class="thinker">
-        <div class="thinker-name">Локк · Ньютон</div>
-        <div class="thinker-meta">XVII–XVIII век · эмпиризм</div>
-        <div class="thinker-key">Реальность как структурированный опыт</div>
-        <p>В Англии истину выводят более реалистически — из опыта. У Локка реальность уже высокорациональна и структурирована: рациональность переносится в сами вещи.</p>
-        <p>Для Ньютона время и пространство, на которых построена его теория — прямые атрибуты Бога. Не мы вносим их в познание — это сам Бог, одна из Его ипостасей. Теория нужна Ньютону, чтобы утверждать зависимость науки от опыта.</p>
-      </div>
-
-      <div class="thinker">
-        <div class="thinker-name">Ницше</div>
-        <div class="thinker-meta">XIX век</div>
-        <div class="thinker-key">«Зачем философам нужна истина?»</div>
-        <p>Ницше называет истину «мобильной армией метафор и антропоморфизмов» — риторическим конструктом, конструируемым языком не по логическим, а по риторическим стандартам. Позднее уточняет: истина — наиболее удобная для жизни форма иллюзии.</p>
-        <p>Главный его вопрос — не <em>что есть истина</em>, а <em>откуда воля к истине?</em> Ум нужен человеку не чтобы соответствовать реальности, а чтобы притворяться. И всё же Ницше намекает: «искусство нам надо, чтобы не умереть от истины».</p>
-      </div>
-
-      <div class="pull-quote" style="margin-top:1rem;">
-        <p>«Мы упразднили истинный мир — какой же мир остался? Быть может, кажущийся? Но нет — вместе с истинным мы упразднили и кажущийся»</p>
-        <cite>Ницше · «Как истинный мир стал басней»</cite>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 05 · XX ВЕК -->
-<section class="content-section" id="xx">
-  <div class="section-label">
-    <span class="section-label-num">05</span>
-    <span class="section-label-line"></span>
-    <span class="section-label-tag">XX век</span>
-  </div>
-  <div class="article-layout wide reveal">
-    <div class="article-body">
-      <h2>Истина как<br><em>событие встречи</em></h2>
-      <p>XX век — век возвращения к истине через её отрицание. После Канта и Ницше казалось, что наивная корреспондентная теория мертва. Но феноменология Гуссерля и онтология Хайдеггера предложили новый путь: истина — не свойство суждения и не свойство вещи, а <em>событие</em>, в котором каждое из них обнаруживает себя.</p>
-
-      <div class="thinker">
-        <div class="thinker-name">Эдмунд Гуссерль</div>
-        <div class="thinker-meta">Феноменология</div>
-        <div class="thinker-key">Эпохэ и жизненный мир</div>
-        <p>Гуссерль предлагает отбросить вопрос о существовании вещей и сначала проанализировать наши представления о них — не как субъективные, а как объективные формы. Если мы достигаем чёткого и целостного прояснения впечатления — это истина, причём логического характера.</p>
-        <p>Его интуиция: чувство приподнятости при виде голубого неба не «субъективная эмоция», а часть того, <em>что такое небо</em>. Атмосфера и стратосфера — не небо. Небо — то, что даёт нам настроение. Жизненный мир — это и есть истина, эвакуированная наукой в психологию.</p>
-      </div>
-
-      <div class="thinker">
-        <div class="thinker-name">Мартин Хайдеггер</div>
-        <div class="thinker-meta">Онтология истины</div>
-        <div class="thinker-key">Алетейя — «не-сокрытое»</div>
-        <p>Хайдеггер пересматривает корреспондентную теорию: она не учитывает истинности самих вещей, событий, в которых вещь раскрывается. Он возвращается к древнегреческому смыслу <em>алетейи</em> — не-сокрытого. Истина — событие обнаружения. Если есть обнаружение, то есть и сокрытие, тоже значимое.</p>
-        <p>«Истина прежде всего вопрос, а не ответ». Сам вопрос несёт отсылку к возможному ответу. Глагол <em>есть</em>, стоящий между субъектом и предикатом, — событие обнаружения. И мы сами — вещи, которые обнаруживаются: скрывая истину, мы обнаруживаем себя.</p>
-      </div>
-    </div>
-    <div class="article-visual reveal d1">
-      <div class="thinker">
-        <div class="thinker-name">Ханна Арендт</div>
-        <div class="thinker-meta">Политическая философия</div>
-        <div class="thinker-key">Политика как самораскрытие</div>
-        <p>Ученица Хайдеггера переносит его понятие истины в политику. Человеческое общество строится не только на рациональном знании, но и на взаимном самораскрытии людей в публичном пространстве через политическое действие. Не так важно, что они говорят, — важно, чтобы они раскрывались.</p>
-      </div>
-
-      <div class="thinker">
-        <div class="thinker-name">Беньямин · Делёз</div>
-        <div class="thinker-meta">Истина как сочетание</div>
-        <div class="thinker-key">Созвездие и машина</div>
-        <p>Беньямин: истина — не модель и не прообраз, а <em>созвездие</em> — определённым образом сложившиеся, подходящие друг другу разнородные предметы.</p>
-        <p>Делёз: истина — относительно случайное сочетание объектов, образующее «работающую машину». Любовное желание — такая машина: начинается со случайной встречи, питается резонансом двух людей, работает, пока работает сочетание.</p>
-      </div>
-
-      <div class="thinker">
-        <div class="thinker-name">Ален Бадью · Жак Лакан</div>
-        <div class="thinker-meta">Истина и верность</div>
-        <div class="thinker-key">Истина существует только как поддерживаемая</div>
-        <p>Бадью: событие истины само по себе не существует — субъект должен религиозно, с постоянным усилием хранить верность ему. Истина существует только при условии этой верности. Истина не вполне объективна, не вполне субъективна — она на стыке.</p>
-        <p>Лакан: «полная речь» — формульное высказывание, срабатывающее в конкретный момент. Истина у Лакана — действие, противоположное знанию. Знание — то, что мы пассивно устанавливаем о внешней действительности. Истина — то, что мы понимаем о себе.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="pull-quote reveal d2" style="max-width:780px; margin: 3rem auto 0;">
-    <p>«Истина — это встреча, в которой каждый феномен обнаруживается в другом. Без двусторонней встречи, в которой происходит самоузнавание, нет истины»</p>
-    <cite>Синтез XX века</cite>
-  </div>
-</section>
-
-<!-- 06 · ГИПЕРОБЪЕКТ -->
-<section class="content-section dark" id="hyperobject">
-  <div class="section-label">
-    <span class="section-label-num">06</span>
-    <span class="section-label-line"></span>
-    <span class="section-label-tag" style="color:var(--fern)">Поворот к экологии</span>
-  </div>
-  <div class="article-layout wide reveal">
-    <div class="article-body">
-      <h2 class="light">Климат —<br><em>гиперобъект</em></h2>
-      <p class="light">Тимоти Мортон, современный философ-эколог, предложил термин <em>гиперобъект</em> — для феноменов, столь широко распределённых во времени и пространстве, столь вязких и липких, что они прилипают ко всему, чего касаются. Климат — гиперобъект. Радиация — гиперобъект. Пластиковое загрязнение — гиперобъект.</p>
-      <p class="light">Гиперобъект меняет правила работы с истиной. Его нельзя увидеть целиком, потрогать, локализовать. Эксперимент в декартовом смысле к нему неприменим. Корреспондентная теория ломается: чему должно соответствовать наше суждение, если объект распределён на тысячи лет вперёд и охватывает всю планету?</p>
-
-      <div class="pull-quote light">
-        <p>«Любая цивилизация, развивающаяся со скоростью разума, рано или поздно сталкивается с гиперобъектами. Возможно, способность их распознать — это и есть Великий фильтр»</p>
-        <cite style="color:var(--sage);">Парафраз концепции Билла Гейтса · «Как избежать климатической катастрофы»</cite>
-      </div>
-
-      <p class="light">Климат — это не просто плохая погода. Это всемирная медленная катастрофа: больше смертей, больше ущерба, больше засух и наводнений, больше нуждающихся в убежище — и, как следствие, ещё большее использование тех вещей, которые изначально вызвали проблему. Цепная реакция, снежный ком, космический по масштабам процесс, плохо представимый в пределах одной человеческой жизни.</p>
-    </div>
-    <div class="reveal d1">
-      <div class="hyperobject-stat">
-        <div class="hyper-cell">
-          <div class="hyper-num">51 млрд</div>
-          <div class="hyper-label">тонн парниковых газов человечество выбрасывает ежегодно. Цель — ноль.</div>
-        </div>
-        <div class="hyper-cell">
-          <div class="hyper-num">∞</div>
-          <div class="hyper-label">временной горизонт последствий: тысячи лет на разложение атмосферного CO₂.</div>
-        </div>
-        <div class="hyper-cell">
-          <div class="hyper-num">8 млрд</div>
-          <div class="hyper-label">людей должны прийти к согласию — но проблема не очевидна на уровне ощущений.</div>
-        </div>
-        <div class="hyper-cell">
-          <div class="hyper-num">1</div>
-          <div class="hyper-label">Великий фильтр? Вероятно, способность пройти его — расширение эмпатии и разума.</div>
-        </div>
-      </div>
-
-      <div class="thinker" style="background:rgba(255,255,255,0.04); border-color:var(--fern); margin-top:2rem;">
-        <div class="thinker-name" style="color:var(--cream);">Поведенческая инертность</div>
-        <div class="thinker-meta" style="color:var(--sage);">Эволюционная ловушка</div>
-        <div class="thinker-key" style="color:var(--fern);">Когнитивное искажение в сторону статус-кво</div>
-        <p style="color:rgba(211,230,208,0.7);">Если организм выживал — состояния его мира было достаточно для генов. Это всё, что нужно эволюции. Поведенческая инертность помогла нам выжить, но теперь замедляет адаптацию: выбросы невидимы, последствия не сиюминутны и локальны, они влияют на будущие поколения и далёких людей. Жать на инерционный тормоз слишком соблазнительно.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 07 · КОЛЛЕКТИВНЫЙ РАЗУМ -->
-<section class="content-section alt" id="collective">
-  <div class="section-label">
-    <span class="section-label-num">07</span>
-    <span class="section-label-line"></span>
-    <span class="section-label-tag">Коллективный разум</span>
-  </div>
-  <div class="article-layout reveal">
-    <div class="article-body">
-      <h2>Разум развивался<br><em>не для одиночки</em></h2>
-      <p>Если работа с гиперобъектами невозможна индивидуальным разумом, то — кем? Удивительно, но современная когнитивная наука даёт неожиданный ответ. Разум, как выяснилось, никогда и не был задуман для индивидуального поиска истины.</p>
-      <p>Уго Мерсье и Дэн Спербер в книге <em>«Загадка разума»</em> показывают: рассудительность развилась не для индивидуального принятия правильных решений, а для социального обсуждения. Люди — познавательная ниша: не сильны, не быстры, не ядовиты. Наше преимущество — мышление и сотрудничество. Доводы позволяют нам оправдываться друг перед другом, координировать действия, проверять идеи в группе.</p>
-
-      <div class="thinker">
-        <div class="thinker-name">Парадокс склонности к подтверждению</div>
-        <div class="thinker-meta">Социальная теория мышления</div>
-        <div class="thinker-key">Что выглядит как баг, оказывается фичей</div>
-        <p>Когда человек проводит «собственное исследование», он часто приходит к выводам, которые хотел получить изначально. Кажется, что это слабость разума. Но если рассуждение — групповая работа, то это не баг: один человек защищает свою позицию, другой — свою, и совместно они проделывают вдвое меньше работы, чем если бы каждый рассматривал обе.</p>
-      </div>
-
-      <div class="pull-quote">
-        <p>«Группа людей перерабатывает информацию в выводы лучше, чем индивид. Поэтому мы не доверяем важные решения одному человеку — мы просим группу провести обсуждение»</p>
-      </div>
-
-      <p>Это объясняет, почему демократия и наука похожи в своих процедурах: и там, и там истина устанавливается не одним умом, а в столкновении доводов. И там, и там она требует подлинного спора — а не эхо-камеры. Современная проблема в том, что таких пространств всё меньше: интернет позволяет находить только согласных и не сталкиваться с несогласными.</p>
-    </div>
-    <div class="article-visual reveal d1">
-      <h3 style="font-family:'Cormorant Garamond',serif; font-size:1.3rem; font-weight:400; color:var(--ink); margin-bottom:1rem;">Три способности,<br><em style="color:var(--moss);">необходимые для гиперобъекта</em></h3>
-      <div class="reason-grid">
-        <div class="reason-card">
-          <div class="reason-num">01</div>
-          <div class="reason-name">Расширенная эмпатия</div>
-          <div class="reason-desc">Способность сострадать тем, кого никогда не встретишь — будущим поколениям, людям в дальних странах, видам, которые исчезнут. Без неё гиперобъект остаётся абстракцией.</div>
-        </div>
-        <div class="reason-card">
-          <div class="reason-num">02</div>
-          <div class="reason-name">Коллективное обсуждение</div>
-          <div class="reason-desc">Арены, где мнения сталкиваются, а не подтверждают друг друга. Малые группы с разными перспективами, обсуждающие конкретные вопросы, дают точнее результат, чем одиночный эксперт.</div>
-        </div>
-        <div class="reason-card">
-          <div class="reason-num">03</div>
-          <div class="reason-name">Расширенный разум</div>
-          <div class="reason-desc">Понимание, что мысль не находится «в голове» — она распределена между людьми, инструментами, традициями. Знать вместе — единственный способ работать с гиперобъектом.</div>
-        </div>
-      </div>
-
-      <div class="thinker" style="margin-top:2.5rem;">
-        <div class="thinker-name">Демархия</div>
-        <div class="thinker-meta">Lottocracy · радикальное предложение</div>
-        <div class="thinker-key">Решения принимаются случайно выбранными гражданами</div>
-        <p>Аристотель: «Назначение магистратов лотереей должно считаться демократичным, выборы — олигархическим». В Древних Афинах лотерея использовалась для назначения политических должностей. Современные исследователи предлагают вернуться к этой практике: «дни обсуждений», случайные группы, изучающие мнения экспертов и принимающие решения по ключевым вопросам — например, климатическим.</p>
-        <p>Преимущество: у случайно выбранного нет мотива самосохранения во власти. Заинтересованные стороны не могут пристроиться к нему, потому что любой может оказаться на этом месте.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="featured-strip reveal d2">
-    <div>
-      <div class="featured-label">Эссе рубрики «Понятие»</div>
-      <h3>Демархия: что если решения принимать жребием?</h3>
-      <p>Древняя Греция работала иначе: ключевые должности — по лотерее. Сегодня эта идея возвращается как ответ на климатический кризис: коллективный разум случайных граждан против эпохи постправды и захваченных интересов.</p>
-    </div>
-    <a href="#" class="featured-btn">Читать →</a>
-  </div>
-</section>
-
-<!-- 08 · РУБРИКИ -->
-<section class="content-section" id="rubrics">
-  <div class="section-label">
-    <span class="section-label-num">08</span>
-    <span class="section-label-line"></span>
-    <span class="section-label-tag">Рубрики раздела</span>
-  </div>
-  <h2 class="reveal">Форматы<br><em>материалов</em></h2>
-  <div class="rubrics-grid reveal d1">
-    <div class="rubric-card">
-      <div class="rubric-icon">📖</div>
-      <div class="rubric-name">Понятие</div>
-      <div class="rubric-desc">Глубокий разбор одного философского термина: как он возник, как менялся, что значит сегодня. Без академического тумана — но без и упрощений.</div>
-      <div class="rubric-example">→ «Алетейя: что значило истинное у греков»</div>
-    </div>
-    <div class="rubric-card dark-card">
-      <div class="rubric-icon">↔️</div>
-      <div class="rubric-name">Диалог через века</div>
-      <div class="rubric-desc">Двое мыслителей разных эпох на одну тему. Парменид и Хайдеггер об истине. Аристотель и Мерсье о разуме. Кант и Мортон о пределах познания.</div>
-      <div class="rubric-example">→ «Бейтсон против Декарта: где находятся ваши мысли»</div>
-    </div>
-    <div class="rubric-card">
-      <div class="rubric-icon">❓</div>
-      <div class="rubric-name">Вопрос без ответа</div>
-      <div class="rubric-desc">Эссе об открытых философских проблемах, у которых нет — и не должно быть — окончательного ответа. Состояние нерешённости как форма мысли.</div>
-      <div class="rubric-example">→ «Есть ли у камня интересы? И как нам жить с этим вопросом»</div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-
-<script>
-const obs = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-}, { threshold: 0.08 });
-document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-
-const tocLinks = document.querySelectorAll('.toc-bar a');
-const sections = document.querySelectorAll('section[id]');
-window.addEventListener('scroll', () => {
-  let current = '';
-  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
-  tocLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
-});
-</script>
-<!-- FOOTER -->
-<script>
-(function(){
-  // Dropdown toggle
-  document.querySelectorAll('.g-drop-btn').forEach(btn=>{
-    btn.addEventListener('click',e=>{
-      e.stopPropagation();
-      const li=btn.closest('li');
-      const open=li.classList.toggle('g-drop-open');
-      btn.setAttribute('aria-expanded',open);
-      document.querySelectorAll('.g-drop-open').forEach(el=>{if(el!==li)el.classList.remove('g-drop-open');});
-    });
-  });
-  document.addEventListener('click',()=>document.querySelectorAll('.g-drop-open').forEach(el=>el.classList.remove('g-drop-open')));
-  document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.g-drop-open').forEach(el=>el.classList.remove('g-drop-open'));});
-
-  // Burger / overlay
-  const burger=document.getElementById('gBurger');
-  const overlay=document.getElementById('gOverlay');
-  if(burger&&overlay){
-    burger.addEventListener('click',()=>{
-      const open=overlay.classList.toggle('open');
-      burger.classList.toggle('open',open);
-      document.body.style.overflow=open?'hidden':'';
-    });
-    overlay.querySelectorAll('a[href]').forEach(a=>a.addEventListener('click',()=>{
-      overlay.classList.remove('open');burger.classList.remove('open');document.body.style.overflow='';
-    }));
-    document.addEventListener('keydown',e=>{
-      if(e.key==='Escape'&&overlay.classList.contains('open')){
-        overlay.classList.remove('open');burger.classList.remove('open');document.body.style.overflow='';
-      }
-    });
-  }
-
-  // Highlight active page
-  const pg = location.pathname.split('/').pop() || 'ecolife-landing.html';
-  // Mark active in dropdown and overlay
-  document.querySelectorAll('.g-dd-link, .g-ov-link').forEach(a => {
-    const href = a.getAttribute('href');
-    if (href === pg) {
-      a.style.background = 'rgba(255,255,255,0.1)';
-      const name = a.querySelector('.g-dd-name, .g-ov-name');
-      if (name) name.style.color = '#f3ede3';
-      const icon = a.querySelector('.g-dd-icon, .g-ov-icon');
-      if (icon) icon.style.color = 'var(--fern)';
-    }
-  });
-  // Mark active top-level nav link
-  document.querySelectorAll('.g-links > li > a').forEach(a => {
-    const href = a.getAttribute('href');
-    if (href === pg || href === 'ecolife-landing.html#latest' && ['essay','lab'].some(p => pg.startsWith(p))) {
-      a.classList.add('g-active');
-    }
-    if (href === 'glossary.html' && pg === 'glossary.html') a.classList.add('g-active');
-    if (href === 'about.html' && pg === 'about.html') a.classList.add('g-active');
-  });
-  // If current page is a section, mark 'Разделы' button as active
-  if (pg.startsWith('section-')) {
-    const btn = document.querySelector('.g-drop-btn');
-    if (btn) btn.style.color = 'var(--moss)';
-  }
-})();</script>
 <footer class="gf">
   <div class="gf-top">
     <div class="gf-brand">
@@ -762,13 +367,12 @@ window.addEventListener('scroll', () => {
           <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Философия</span></a>
           <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
           <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
+          <a href="section-compost.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Компост</span></a>
           <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Технологии</span></a>
           <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
-          <a href="section-compost.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Компост</span></a>
           <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
           <a href="section-construction.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="gf-sec-name">Строительство</span></a>
           <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="gf-sec-name">Экономика</span></a>
-          <a href="section-art.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="4" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="14"/><circle cx="50" cy="50" r="26" stroke-dasharray="3 5"/></svg></span><span class="gf-sec-name">Искусство</span></a>
           <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Образование</span></a>
           <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
           <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
@@ -791,6 +395,13 @@ window.addEventListener('scroll', () => {
           <a href="lab-jacket-biography.html" class="gf-nav-link">Лаб №03 · Куртка</a>
           <a href="lab-15min-city.html" class="gf-nav-link">Лаб №04 · Город</a>
           <a href="lab-bateson-gpt.html" class="gf-nav-link">Лаб №05 · Бейтсон</a>
+          <a href="lab-raworth-chinovnik.html" class="gf-nav-link">Лаб №06 · Раворт</a>
+          <a href="lab-heidegger-builder.html" class="gf-nav-link">Лаб №07 · Хайдеггер</a>
+          <a href="lab-benyus-engineer.html" class="gf-nav-link">Лаб №08 · Бенюс</a>
+          <a href="lab-illich-social.html" class="gf-nav-link">Лаб №09 · Иллич</a>
+          <a href="lab-morton-raworth.html" class="gf-nav-link">Лаб №10 · Мортон / Раворт</a>
+          <a href="lab-illich-benyus.html" class="gf-nav-link">Лаб №11 · Иллич / Бенюс</a>
+          <a href="lab-degrowth-ecomodern.html" class="gf-nav-link">Лаб №12 · Спор о росте</a>
         </nav>
       </div>
       <div>
@@ -798,6 +409,14 @@ window.addEventListener('scroll', () => {
         <nav class="gf-nav-links">
           <a href="index.html" class="gf-nav-link">Главная</a>
           <a href="map.html" class="gf-nav-link">Карта связей</a>
+          <a href="paths.html" class="gf-nav-link">Тропы чтения</a>
+          <a href="contents.html" class="gf-nav-link">Все материалы</a>
+          <a href="tree.html" class="gf-nav-link">Дерево материалов</a>
+          <a href="revisions.html" class="gf-nav-link">Что не подтвердилось</a>
+          <a href="thinkers.html" class="gf-nav-link">Указатель имён</a>
+          <a href="search.html" class="gf-nav-link">Поиск</a>
+          <a href="method.html" class="gf-nav-link">Как устроены материалы</a>
+          <a href="corrections.html" class="gf-nav-link">Исправления</a>
             <a href="about.html" class="gf-nav-link">О проекте</a>
           <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
           <a href="section-icons-library.html" class="gf-nav-link">Знаки разделов</a>
@@ -813,5 +432,28 @@ window.addEventListener('scroll', () => {
     </div>
   </div>
 </footer>
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+
+
+<!-- ECO:MANAGED:js -->
+<script src="assets/global.js" defer></script>
+<!-- /ECO:MANAGED:js -->
 </body>
 </html>

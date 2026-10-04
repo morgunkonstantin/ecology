@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+<script>document.documentElement.classList.replace('no-js','js');</script>
+<meta charset="UTF-8">
+<meta name="description" content="Юрта — переносное жилище кочевников Центральной Азии: решётчатые стены, жерди купола, войлок и верёвки, сборка за полдня без фундамента. Почему круглая форма выдерживает ветер и экономит материал, купол работает как естественная вентиляция, откуда родом юрта и её современное возрождение, и честные ограничения — одно помещение, зима, уход, нормы. Страница каталога технологий строительства.">
+<meta property="og:title" content="Юрта: три тысячи лет аэродинамики — ЭкоСознание">
+<meta property="og:description" content="Круглый обтекаемый дом из дерева, войлока и верёвок, что ставится на землю без фундамента: отточенная веками аэродинамика и самое лёгкое прикосновение к земле.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Юрта: три тысячи лет аэродинамики — ЭкоСознание</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+.hero{padding:10rem 4rem 5rem;display:grid;grid-template-columns:1fr 380px;gap:4rem;align-items:end;border-bottom:1px solid rgba(74,124,89,.15);position:relative;overflow:hidden;}
+.hero-mark-svg{position:absolute;right:4rem;top:11rem;width:90px;height:90px;color:rgba(74,124,89,.18);pointer-events:none;}
+.hero-mark-svg svg{width:100%;height:100%;display:block;}
+.hero-tag{display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:1.5rem;}
+.hero-tag::before{content:'';display:block;width:24px;height:1px;background:var(--fern);}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,6vw,5rem);font-weight:300;line-height:1.05;color:var(--ink);margin-bottom:1.8rem;}
+h1 em{font-style:italic;color:var(--moss);display:block;}
+.hero-lead{font-size:1rem;line-height:1.85;color:var(--ink-light);max-width:580px;}
+.hero-meta{display:flex;flex-direction:column;gap:1.5rem;padding-left:2rem;border-left:1px solid rgba(74,124,89,.2);}
+.meta-label{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:.4rem;}
+.meta-value{font-size:.9rem;color:var(--ink-light);line-height:1.6;}
+.toc-bar{background:var(--ink);padding:0 4rem;display:flex;align-items:stretch;overflow-x:auto;}
+.toc-bar a{color:rgba(211,230,208,.6);text-decoration:none;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:1rem 1.5rem;border-right:1px solid rgba(255,255,255,.06);white-space:nowrap;transition:color .2s,background .2s;}
+.toc-bar a:hover{color:var(--mist);}
+.toc-bar a.active{color:var(--fern);}
+.content-section{padding:5rem 4rem;border-bottom:1px solid rgba(74,124,89,.1);}
+.content-section.alt{background:var(--cream);}
+.content-section.dark{background:var(--ink);}
+.section-label{display:flex;align-items:center;gap:1rem;margin-bottom:3rem;}
+.section-label-num{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);}
+.section-label-line{flex:1;height:1px;background:rgba(74,124,89,.15);}
+.section-label-tag{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);}
+h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;color:var(--ink);line-height:1.15;margin-bottom:1.5rem;}
+h2 em{font-style:italic;color:var(--moss);}
+h2.light{color:var(--cream);}
+h2.light em{color:var(--fern);}
+.article-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+.article-layout.wide{grid-template-columns:3fr 2fr;}
+.article-body p{font-size:.95rem;line-height:1.9;color:var(--ink-light);margin-bottom:1.1rem;}
+.article-body p:last-child{margin-bottom:0;}
+.article-body p.light{color:rgba(211,230,208,.72);}
+.pull-quote{border-left:3px solid var(--moss);padding:1.2rem 1.5rem;margin:2rem 0;background:rgba(74,124,89,.05);}
+.pull-quote p{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:var(--ink);line-height:1.5;margin:0!important;}
+.pull-quote.light{background:rgba(255,255,255,.06);border-color:var(--fern);}
+.pull-quote.light p{color:var(--cream);}
+.pull-quote cite{display:block;margin-top:.6rem!important;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);font-style:normal;}
+.practices-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(74,124,89,.12);margin-top:2rem;}
+.practice-card{background:var(--paper);padding:2rem 1.8rem;transition:background .25s;}
+.content-section.alt .practice-card{background:var(--cream);}
+.practice-card:hover{background:var(--warm);}
+.practice-num{font-family:'Cormorant Garamond',serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.6rem;}
+.practice-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--ink);margin-bottom:.6rem;}
+.practice-name em{font-style:italic;color:var(--moss);}
+.practice-desc{font-size:.85rem;line-height:1.75;color:var(--ink-light);}
+.featured-strip{background:var(--ink);padding:3rem 3.5rem;display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center;margin-top:3rem;}
+.featured-label{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:1rem;}
+.featured-strip h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;font-style:italic;color:var(--cream);margin-bottom:.8rem;line-height:1.2;}
+.featured-strip p{font-size:.87rem;line-height:1.8;color:rgba(211,230,208,.68);}
+.featured-btn{background:transparent;color:var(--fern);border:1px solid rgba(110,168,126,.4);padding:.8rem 1.6rem;text-decoration:none;font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;display:inline-block;transition:background .25s,color .25s;}
+.featured-btn:hover{background:var(--fern);color:var(--ink);}
+.rubrics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.12);margin-top:3rem;}
+.rubric-card{background:var(--paper);padding:2rem 1.6rem;transition:background .25s;}
+.rubric-card:hover{background:var(--warm);}
+.rubric-icon{font-size:1.4rem;margin-bottom:1rem;}
+.rubric-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--ink);margin-bottom:.6rem;}
+.rubric-desc{font-size:.82rem;line-height:1.75;color:var(--ink-light);}
+.rubric-example{margin-top:1rem;font-size:.78rem;font-style:italic;color:var(--moss);line-height:1.6;}
+.rubric-card.dark-card{background:var(--ink);}
+.rubric-card.dark-card .rubric-name{color:var(--cream);}
+.rubric-card.dark-card .rubric-desc{color:rgba(211,230,208,.65);}
+.rubric-card.dark-card .rubric-example{color:var(--fern);}
+.g-next-section{background:var(--ink);padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;}
+.g-next-label{font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(168,197,160,.45);margin-bottom:.5rem;}
+.g-next-link{display:inline-flex;align-items:center;gap:.8rem;text-decoration:none;}
+.g-next-name{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--cream);font-style:italic;transition:color .2s;}
+.g-next-link:hover .g-next-name{color:var(--fern);}
+.g-next-arrow{font-family:'Cormorant Garamond',serif;font-size:2rem;color:rgba(110,168,126,.5);transition:transform .2s,color .2s;}
+.g-next-link:hover .g-next-arrow{transform:translateX(6px);color:var(--fern);}
+.g-next-num{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:300;color:rgba(255,255,255,.06);line-height:1;}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease;}
+.reveal.visible{opacity:1;transform:none;}
+.d1{transition-delay:.1s;}
+.d2{transition-delay:.2s;}
+@media(max-width:800px){ .hero,.toc-bar,.content-section,.g-next-section{padding-left:1.5rem;padding-right:1.5rem;} .hero{grid-template-columns:1fr;} .hero-meta{padding-left:0;border-left:none;border-top:1px solid rgba(74,124,89,.2);padding-top:1.5rem;} .hero-mark-svg{right:1.5rem;top:9rem;width:60px;height:60px;} .article-layout,.article-layout.wide{grid-template-columns:1fr;gap:2rem;} .practices-grid,.rubrics-grid{grid-template-columns:1fr;} .featured-strip{grid-template-columns:1fr;gap:1.5rem;} }
+.methods-table{margin:2rem 0;border:1px solid rgba(74,124,89,.15);overflow-x:auto;}
+.methods-row{display:grid;grid-template-columns:180px repeat(4,1fr);gap:0;border-bottom:1px solid rgba(74,124,89,.1);min-width:760px;}
+.methods-row:last-child{border-bottom:none;}
+.methods-row.header{background:var(--ink);}
+.methods-row.header > div{color:var(--sage);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;padding:.9rem 1rem;}
+.methods-row > div{background:var(--paper);padding:.95rem 1rem;font-size:.85rem;color:var(--ink-light);line-height:1.5;border-right:1px solid rgba(74,124,89,.08);}
+.content-section.alt .methods-row > div{background:var(--cream);}
+.methods-row > div:last-child{border-right:none;}
+.methods-row > .method-name{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;color:var(--ink);}
+.methods-row.header > .method-name{color:var(--sage);font-style:normal;}
+.seasons-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.12);margin:2rem 0;}
+.season-card{background:var(--paper);padding:1.8rem 1.5rem;transition:background .25s;display:flex;flex-direction:column;}
+.content-section.alt .season-card{background:var(--cream);}
+.season-card:hover{background:var(--warm);}
+.season-icon{font-size:1.9rem;margin-bottom:.7rem;line-height:1;}
+.season-name{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--ink);margin-bottom:.2rem;}
+.season-name em{font-style:italic;color:var(--moss);}
+.season-months{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:.9rem;}
+.season-actions{font-size:.83rem;line-height:1.7;color:var(--ink-light);margin-bottom:.8rem;}
+.season-watch{font-size:.78rem;line-height:1.6;color:var(--ink-light);padding-top:.7rem;border-top:1px dashed rgba(74,124,89,.18);margin-top:auto;}
+.season-watch strong{color:var(--rust);font-weight:400;}
+.timeline{margin:2rem 0;position:relative;border-left:1px solid rgba(74,124,89,.2);padding-left:2rem;}
+.timeline-item{margin-bottom:2rem;position:relative;}
+.timeline-item:last-child{margin-bottom:0;}
+.timeline-item::before{content:'';position:absolute;left:-2.45rem;top:.3rem;width:9px;height:9px;border-radius:50%;background:var(--moss);box-shadow:0 0 0 3px var(--paper);}
+.content-section.alt .timeline-item::before{box-shadow:0 0 0 3px var(--cream);}
+.timeline-era{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.4rem;}
+.timeline-name{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--ink);margin-bottom:.5rem;line-height:1.3;}
+.timeline-name em{font-style:italic;color:var(--moss);}
+.timeline-desc{font-size:.88rem;line-height:1.75;color:var(--ink-light);}
+.timeline-desc em{font-style:italic;color:var(--moss);}
+.case-block{background:var(--ink);padding:4rem 3.5rem;margin:2rem 0;}
+.case-inner{max-width:920px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start;}
+.case-block h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;color:var(--cream);line-height:1.25;margin-bottom:1.3rem;}
+.case-block h3 em{font-style:italic;color:var(--fern);}
+.case-block p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.75;color:rgba(211,230,208,.75);margin-bottom:1rem;}
+.case-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.08);}
+.case-stat{background:rgba(255,255,255,.04);padding:1.4rem 1.2rem;text-align:center;}
+.case-stat-num{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--fern);font-weight:300;line-height:1;margin-bottom:.4rem;}
+.case-stat-lbl{font-size:.72rem;color:rgba(211,230,208,.65);line-height:1.5;}
+.case-link{display:inline-flex;align-items:center;gap:.6rem;font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--fern);text-decoration:none;border-bottom:1px solid rgba(110,168,126,.4);padding-bottom:.3rem;margin-top:1rem;}
+.case-link:hover{border-color:var(--fern);}
+@media(max-width:800px){ .case-inner{grid-template-columns:1fr;gap:2rem;} .case-block{padding:2.5rem 1.5rem;} .seasons-grid{grid-template-columns:1fr 1fr;} .methods-row{grid-template-columns:140px repeat(4,1fr);min-width:660px;} }
+@media(max-width:540px){ .seasons-grid{grid-template-columns:1fr;} .case-stats{grid-template-columns:1fr 1fr;} }
+.cycle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.12);margin:2rem 0;}
+.cycle-card{background:var(--paper);padding:1.8rem 1.6rem;text-align:center;transition:background .25s;}
+.content-section.alt .cycle-card{background:var(--cream);}
+.cycle-card:hover{background:var(--warm);}
+.cycle-step{font-family:'Cormorant Garamond',serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.6rem;}
+.cycle-icon{font-size:2rem;margin-bottom:.8rem;line-height:1;}
+.cycle-name{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--ink);margin-bottom:.5rem;}
+.cycle-name em{font-style:italic;color:var(--moss);}
+.cycle-desc{font-size:.82rem;line-height:1.7;color:var(--ink-light);}
+.can-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:2rem 0;}
+.can-col h4{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:400;margin-bottom:1rem;}
+.can-col.yes h4{color:var(--moss);}
+.can-col.no h4{color:var(--rust);}
+.can-list{list-style:none;display:flex;flex-direction:column;gap:0;}
+.can-item{font-size:.85rem;line-height:1.6;color:var(--ink-light);padding:.45rem 0;border-bottom:1px dashed rgba(74,124,89,.12);}
+.can-item:last-child{border-bottom:none;}
+.can-item::before{margin-right:.5rem;}
+.can-col.yes .can-item::before{content:'✓';color:var(--fern);}
+.can-col.no .can-item::before{content:'✗';color:var(--rust);}
+.soil-block{background:var(--ink);padding:4rem 3.5rem;margin:3rem 0;}
+.soil-inner{max-width:720px;margin:0 auto;}
+.soil-block h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;font-style:italic;color:var(--cream);line-height:1.3;margin-bottom:1.5rem;}
+.soil-block h3 em{color:var(--fern);}
+.soil-block p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.8;color:rgba(211,230,208,.75);margin-bottom:1.2rem;}
+.soil-block p:last-child{margin-bottom:0;}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.15);margin:2rem 0;}
+.stat-card{background:var(--paper);padding:1.6rem 1.2rem;text-align:center;}
+.content-section.alt .stat-card{background:var(--cream);}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:300;color:var(--moss);line-height:1;margin-bottom:.4rem;}
+.stat-label{font-size:.78rem;line-height:1.5;color:var(--ink-light);}
+.q-list{display:flex;flex-direction:column;gap:0;margin:1.5rem 0;}
+.q-item{padding:1.2rem 0;border-bottom:1px solid rgba(74,124,89,.1);}
+.q-item:last-child{border-bottom:none;}
+.q-question{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink);margin-bottom:.5rem;font-weight:400;}
+.q-question em{font-style:italic;color:var(--moss);}
+.q-answer{font-size:.88rem;line-height:1.75;color:var(--ink-light);}
+@media(max-width:800px){ .cycle-grid{grid-template-columns:1fr 1fr;} .can-grid{grid-template-columns:1fr;} .stats-row{grid-template-columns:1fr 1fr;} .soil-block{padding:2.5rem 1.5rem;} }
+@media(max-width:540px){ .cycle-grid{grid-template-columns:1fr;} .stats-row{grid-template-columns:1fr 1fr;} }
+.section-num{font-family:'Cormorant Garamond',serif;font-size:0.85rem;letter-spacing:0.3em;color:var(--moss);margin-bottom:1rem;font-style:italic;}
+.disc-meta{font-family:'Jost',sans-serif;font-size:0.78rem;letter-spacing:0.05em;color:var(--ink-light);margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid rgba(74,124,89,0.15);font-weight:300;line-height:1.7;}
+.content-section p{font-size:1rem;line-height:1.85;color:var(--ink);margin-top:1.2rem;}
+.content-section p strong{color:var(--moss);font-weight:500;}
+.content-section p em{font-style:italic;color:var(--ink-light);}
+.content-section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;line-height:1.15;color:var(--ink);margin-bottom:0.5rem;}
+.content-section h2 em{color:var(--moss);font-style:italic;display:block;}
+</style>
+<!-- ECO:MANAGED:head -->
+  <link rel="canonical" href="https://morgunkonstantin.github.io/ecology/essay-yurt.html">
+  <meta property="og:url" content="https://morgunkonstantin.github.io/ecology/essay-yurt.html">
+  <meta property="og:site_name" content="ЭкоСознание">
+  <meta property="og:image" content="https://morgunkonstantin.github.io/ecology/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ЭкоСознание — экология как способ смотреть на реальность">
+  <meta name="twitter:image" content="https://morgunkonstantin.github.io/ecology/assets/og-image.png">
+  <meta name="theme-color" content="#faf6ef">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","name":"Юрта: три тысячи лет аэродинамики","headline":"Юрта: три тысячи лет аэродинамики","description":"Юрта — переносное жилище кочевников Центральной Азии: решётчатые стены, жерди купола, войлок и верёвки, сборка за полдня без фундамента. Почему круглая форма выдерживает ветер и экономит материал, купол работает как естественная вентиляция, откуда родом юрта и её современное возрождение, и честные ограничения — одно помещение, зима, уход, нормы.","inLanguage":"ru-RU","url":"https://morgunkonstantin.github.io/ecology/essay-yurt.html","isPartOf":{"@type":"WebSite","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"},"publisher":{"@type":"Organization","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"},"datePublished":"2026-09-11","author":{"@type":"Organization","name":"ЭкоСознание"},"articleSection":"Технологии"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://morgunkonstantin.github.io/ecology/"},{"@type":"ListItem","position":2,"name":"Юрта: три тысячи лет аэродинамики","item":"https://morgunkonstantin.github.io/ecology/essay-yurt.html"}]}</script>
+<!-- /ECO:MANAGED:head -->
+</head>
+<body>
+<a class="skip-link" href="#content">Перейти к содержанию</a>
+
+<div class="g-nav-wrap" id="gNavWrap">
+  <div class="g-nav">
+    <a href="index.html" class="g-logo">
+      <svg viewBox="0 0 100 100" fill="none" class="logo-svg"><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#4a7c59"/></svg>
+      <span class="g-logo-text">Эко<em>Сознание</em></span>
+    </a>
+    <ul class="g-links">
+      <li>
+        <button class="g-drop-btn" aria-expanded="false">
+          Разделы
+          <svg class="g-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="g-dropdown">
+          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
+          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
+          <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-compost.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Компост</span><span class="g-dd-num">03b</span></a>
+          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
+          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
+          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
+          <a href="section-construction.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="g-dd-name">Строительство</span><span class="g-dd-num">06b</span></a>
+          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">08</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">09</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">10</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">11</span></a>
+          <a href="section-science.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Наука</span><span class="g-dd-num">12</span></a>
+        </div>
+      </li>
+      <li><a href="index.html#latest">Эссе</a></li>
+      <li><a href="glossary.html">Глоссарий</a></li>
+      <li><a href="about.html">О проекте</a></li>
+    </ul>
+    <button class="g-burger" id="gBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<div class="g-overlay" id="gOverlay">
+  <div class="g-ov-section">
+    <div class="g-ov-label">Разделы</div>
+    <div class="g-ov-grid">
+      <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Философия</span></a>
+      <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
+      <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
+      <a href="section-compost.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Компост</span></a>
+      <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Технологии</span></a>
+      <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
+      <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
+      <a href="section-construction.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/></svg></span><span class="g-ov-name">Строительство</span></a>
+      <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-ov-name">Экономика</span></a>
+      <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Образование</span></a>
+      <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
+      <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
+      <a href="section-health.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-ov-name">Здоровье</span></a>
+      <a href="section-science.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Наука</span></a>
+    </div>
+  </div>
+  <div class="g-ov-section">
+    <div class="g-ov-label">Навигация</div>
+    <div class="g-ov-simple-links">
+      <a href="index.html" class="g-ov-simple-link">Главная</a>
+      <a href="index.html#latest" class="g-ov-simple-link">Эссе и лаборатории</a>
+      <a href="glossary.html" class="g-ov-simple-link">Глоссарий</a>
+      <a href="map.html" class="g-ov-simple-link">Карта связей</a>
+      <a href="contents.html" class="g-ov-simple-link">Все материалы</a>
+      <a href="revisions.html" class="g-ov-simple-link">Что не подтвердилось</a>
+      <a href="search.html" class="g-ov-simple-link">Поиск</a>
+      <a href="paths.html" class="g-ov-simple-link">Тропы чтения</a>
+      <a href="tree.html" class="g-ov-simple-link">Дерево материалов</a>
+      <a href="thinkers.html" class="g-ov-simple-link">Указатель имён</a>
+      <a href="about.html" class="g-ov-simple-link">О проекте</a>
+    </div>
+  </div>
+</div>
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<main id="content" tabindex="-1">
+
+<section class="hero" id="top">
+  <div class="hero-mark-svg"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="50" cy="50" r="45"/><path d="M28 70 L28 52 Q50 30 72 52 L72 70 Z"/><line x1="28" y1="52" x2="72" y2="52" stroke-width="1.3"/><line x1="38" y1="52" x2="50" y2="38" stroke-width="1.2" opacity=".7"/><line x1="62" y1="52" x2="50" y2="38" stroke-width="1.2" opacity=".7"/><circle cx="50" cy="38" r="4"/><rect x="45" y="60" width="10" height="10" fill="currentColor" stroke="none" opacity=".5"/></svg></div>
+  <div>
+    <div class="hero-tag">Размер и тип · Каталог</div>
+    <h1>Юрта —<br><em>три тысячи лет</em><br>аэродинамики</h1>
+    <p class="hero-lead">Решётчатые стены, жерди купола, войлок и верёвки — конструкция, которую собирают за полдня и везут на двух верблюдах. Круг не даёт ветру зацепиться и не оставляет углов, где застаивается холод; купол выводит горячий воздух летом и впускает свет. Современные юрты с утеплением и стеклянным куполом живут круглый год, не теряя главного: дом, который можно унести, поставленный на землю без единого гвоздя в неё — и снятый, не оставляя следа. Самое лёгкое прикосновение к земле во всём каталоге.</p>
+  </div>
+  <div class="hero-meta">
+    <div><div class="meta-label">Суть</div><div class="meta-value">Решётка стен и жерди купола · Войлок и верёвки · Сборка за полдня без фундамента</div></div>
+    <div><div class="meta-label">Сильные стороны</div><div class="meta-value">Минимальный материал на максимум объёма · Устойчивость к ветру и экстремальным температурам · Не оставляет фундамента</div></div>
+    <div><div class="meta-label">Где уместно</div><div class="meta-value">Степи, предгорья, ветреные побережья; сезонные и гостевые дома; любой, кто хочет жить в круге.</div></div>
+  </div>
+</section>
+
+<div class="toc-bar">
+  <a href="#intro" class="active">Введение</a>
+  <a href="#how">Как устроено</a>
+  <a href="#why">Почему работает</a>
+  <a href="#history">Откуда взялось</a>
+  <a href="#limits">Плюсы и ограничения</a>
+  <a href="#outro">Итог</a>
+</div>
+
+<!-- ═══ ВВЕДЕНИЕ ══════════════════════════════════════════════════════════ -->
+<section class="content-section" id="intro">
+  <div style="max-width:820px;">
+    <div class="section-num">00</div>
+    <p style="font-family:'Jost',sans-serif;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage-text);margin-bottom:1rem;"><a href="essay-building-technologies.html" style="color:var(--moss);text-decoration:none;border-bottom:1px dotted currentColor;">← Каталог технологий</a> · Размер и тип 19</p>
+    <h2>Три тысячи лет <em>аэродинамики</em></h2>
+    <p>Если <a href="essay-tiny-house-wheels.html">дом на колёсах</a> — недавнее изобретение, то юрта — противоположный полюс: жилище, которое кочевники Центральной Азии довели до совершенства за тысячи лет и почти не меняли, потому что менять было нечего. Решётчатые стены, жерди купола, войлок и верёвки — вся конструкция собирается за полдня, разбирается так же быстро и умещается на паре верблюдов. Дом, который можно унести с собой.</p>
+    <p>За кажущейся простотой стоит инженерия, отточенная степью. Круг в плане — не эстетика, а расчёт: ветру не за что зацепиться, он обтекает юрту со всех сторон, а внутри нет углов, где застаивался бы холод. Купол вверху выводит горячий воздух и дым и впускает свет. Форма, найденная кочевниками, оказалась так хороша, что современные юрты с утеплением и стеклянным куполом живут круглый год, ничего не теряя из древнего замысла.</p>
+    <p>Ниже — как устроена юрта, за счёт какой физики она держит и ветер, и мороз, и зной, откуда она родом и в чём её честные ограничения как постоянного жилья.</p>
+  </div>
+</section>
+
+<!-- ═══ 01 ═══════════════════════════════════════════════════════════════ -->
+<section class="content-section alt" id="how">
+  <div style="max-width:820px;">
+    <div class="section-num">01</div>
+    <div class="disc-meta">решётка стен · жерди купола · войлок и верёвки · сборка за полдня без фундамента</div>
+    <h2>Как это <em>устроено</em></h2>
+    <p>Юрта собирается из нескольких простых частей, каждая из которых веками отработана до идеала. Стены — это складные решётки (по-монгольски «хана»): деревянные планки, скреплённые крест-накрест так, что решётка растягивается в стену, а складывается в компактную связку. Их ставят по кругу и связывают в кольцо. Крыша — веер тонких жердей («уни»), которые нижними концами опираются на верх решётки, а верхними сходятся к деревянному кольцу купола («тооно») в центре.</p>
+    <p>Всё это стягивается верёвками и накрывается войлоком — плотной валяной шерстью, которая и греет, и не пропускает воду; поверх иногда идёт чехол от дождя. Центральное кольцо купола остаётся открытым или застеклённым: это и окно, и выход для дыма и горячего воздуха, и главный источник света. Конструкция самонесущая и удивительно жёсткая: растянутые стены и сходящиеся жерди держат друг друга.</p>
+    <p>И ключевое для этой группы каталога свойство: юрта <em style="color:var(--fern);">не требует фундамента</em>. Она просто ставится на землю — на утоптанную площадку, деревянный настил или лёгкую платформу. Собрать её можно за полдня силами нескольких человек, разобрать так же, а всё жилище уместить в несколько тюков. После снятия под ней остаётся нетронутая земля.</p>
+  </div>
+</section>
+
+<!-- ═══ 02 ═══════════════════════════════════════════════════════════════ -->
+<section class="content-section" id="why">
+  <div style="max-width:820px;">
+    <div class="section-num">02</div>
+    <div class="disc-meta">круг против ветра · минимум материала на максимум объёма · купол-вентиляция · земля не меняется</div>
+    <h2>Почему это <em>работает</em></h2>
+    <p>Главная находка юрты — <em style="color:var(--fern);">форма</em>. Круглый обтекаемый объём почти не даёт ветру опоры: там, где прямая стена работает как парус и ловит удар, юрта его рассеивает, и потому выдерживает степные ветра, валящие дома с плоскими стенами. Тот же круг экономит материал: из всех форм круг охватывает наибольшую площадь наименьшим периметром, так что на заданный объём жилья уходит минимум стен — а значит, минимум материала и минимум поверхности, через которую теряется тепло.</p>
+    <p>Купол наверху — естественная вентиляция и терморегуляция без всякой техники. Летом через открытое кольцо уходит перегретый воздух, и юрта проветривается сама; зимой его прикрывают, запирая тепло, а очаг в центре греет и отводит дым туда же, вверх. Войлок стен работает и как утеплитель в мороз, и как защита от зноя — плотная шерсть одинаково хорошо держит и тепло внутри, и жару снаружи. Не случайно одна и та же конструкция веками служила и в морозных монгольских степях, и в жарких.</p>
+    <p>И, наконец, самое созвучное духу каталога: юрта почти ничего не берёт у земли, на которой стоит. Нет котлована, нет бетона, нет свай — только несколько тюков дерева, шерсти и верёвок, поставленных на грунт. Снял юрту — и место осталось таким же, каким было. Из всех жилищ каталога это, пожалуй, самое лёгкое прикосновение к земле.</p>
+  </div>
+</section>
+
+<!-- ═══ 03 ═══════════════════════════════════════════════════════════════ -->
+<section class="content-section alt" id="history">
+  <div style="max-width:820px;">
+    <div class="section-num">03</div>
+    <div class="disc-meta">кочевники Центральной Азии · тысячелетия почти без изменений · современное возрождение</div>
+    <h2>Откуда это <em>взялось</em></h2>
+    <p>Юрта родилась у кочевых народов Центральной Азии — монголов, тюрков, казахов, киргизов — и её возраст измеряется тысячелетиями. Для кочевника, следующего за стадами по степи, дом обязан был быть переносным: таким, чтобы собраться и сняться с места за часть дня, уместиться на вьючных животных и снова встать на новой стоянке к вечеру. Юрта решала эту задачу так хорошо, что её конструкция почти не менялась веками — совершенствовать было нечего.</p>
+    <p>Это одно из редких жилищ, которое дошло до нас живым, а не музейным: в Монголии и Средней Азии в юртах живут и сегодня, и для многих народов это часть самой идентичности, символ дома в глубоком смысле. Устройство юрты, отражающее и уклад, и картину мира кочевника, передаётся из поколения в поколение.</p>
+    <p>А в последние десятилетия юрта неожиданно пережила второе рождение далеко за пределами степи — в Европе, Северной Америке, на экопоселениях. Её оценили за то же, за что ценили кочевники: лёгкость, дешевизну, скорость сборки, минимальный след и особую атмосферу круглого пространства. Современные версии добавили утепление, стеклянный купол, печь и деревянный пол — и юрта из сезонного жилья кочевника превратилась ещё и в круглогодичный дом тех, кто хочет жить легко и в круге.</p>
+  </div>
+</section>
+
+<!-- ═══ 04 ═══════════════════════════════════════════════════════════════ -->
+<section class="content-section" id="limits">
+  <div style="max-width:820px;">
+    <div class="section-num">04</div>
+    <div class="disc-meta">плюсы и честные ограничения · одно помещение, зима, уход за войлоком, нормы</div>
+    <h2>Плюсы <em>и ограничения</em></h2>
+    <p>Достоинства юрты уже названы и по-своему уникальны: минимум материала на максимум объёма, устойчивость к ветру и к перепадам температур, скорость сборки, дешевизна, полная переносимость и — что ценно для экологии — отсутствие фундамента, оставляющее землю нетронутой. Как сезонное, гостевое или лёгкое круглогодичное жильё для одного-двух человек, особенно в открытых, ветреных местах, юрта почти вне конкуренции.</p>
+    <p>Но у древней формы есть и древние ограничения. Первое: юрта — это, по сути, <em style="color:var(--fern);">одно круглое помещение</em>. Разделить её на комнаты трудно, приватности почти нет, а санузел и полноценную кухню приходится выносить в пристройки или отдельные постройки. Это жильё для простого уклада, а не для семьи, которой нужны отдельные спальни. Второе: <em style="color:var(--fern);">зима</em>. Традиционный войлок хорош, но у современного человека запросы выше: без хорошего дополнительного утепления, тёплого пола и печи в настоящий мороз в юрте некомфортно, а тонкая оболочка требует активного отопления.</p>
+    <p>Третье: <em style="color:var(--fern);">уход и долговечность</em>. Ткань и войлок — не кирпич: их нужно беречь от постоянной сырости, проветривать, чинить, время от времени менять; юрта требует внимания и живёт меньше капитального дома. И четвёртое, знакомое всем нестандартным жилищам: <em style="color:var(--fern);">нормы</em> — во многих странах юрту трудно оформить как постоянное жильё, и она остаётся в статусе временной постройки. Ничто из этого не умаляет её красоты и мудрости, но честно очерчивает: юрта великолепна как лёгкий дом для простой жизни и куда сложнее в роли капитального семейного жилья.</p>
+  </div>
+</section>
+
+<!-- ═══ ИТОГ ══════════════════════════════════════════════════════════════ -->
+<section class="content-section alt" id="outro">
+  <div style="max-width:820px;">
+    <div class="section-num">—</div>
+    <h2>Итог: <em>самое лёгкое прикосновение к земле</em></h2>
+    <p>Юрта — это тысячелетний ответ на вопрос, который весь остальной каталог только начинает задавать: как жить, почти ничего не отнимая у земли под ногами? Ответ кочевников оказался элегантным до предела — круглая, обтекаемая, самонесущая конструкция из дерева, шерсти и верёвок, которая ставится на грунт без единого гвоздя в землю и снимается, не оставляя следа. За кажущейся простотой — отточенная веками аэродинамика и точный расчёт материала.</p>
+    <p>Как постоянный семейный дом юрта ограничена одним помещением, зависимостью от ухода и суровостью зимы. Но как форма она бесценна и удивительно современна: в эпоху, когда экостроительство заново учится строить легко, обратимо и с уважением к месту, оказалось, что кочевники знали это ответом три тысячи лет назад. Иногда самое передовое решение — самое старое.</p>
+    <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(74,124,89,0.15);font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--ink-light);text-align:center;font-size:1rem;">
+      Размер и тип 19 из каталога «<a href="essay-building-technologies.html" style="color:var(--moss);">Из чего и как строить</a>» · раздел «Технологии»
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="gf">
+  <div class="gf-top">
+    <div class="gf-brand">
+      <a href="index.html" class="gf-logo">
+        <svg viewBox="0 0 100 100" fill="none" class="logo-svg" style="width:24px;height:24px;flex-shrink:0;"><circle cx="50" cy="50" r="40" stroke="#f3ede3" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#6ea87e"/></svg>
+        <span class="gf-logo-text">Эко<em>Сознание</em></span>
+      </a>
+      <p class="gf-tagline">Экологический взгляд как линза для любой сферы жизни</p>
+    </div>
+    <div class="gf-cols">
+      <div>
+        <div class="gf-col-title">Разделы</div>
+        <div class="gf-sections">
+          <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Философия</span></a>
+          <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
+          <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
+          <a href="section-compost.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Компост</span></a>
+          <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Технологии</span></a>
+          <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
+          <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
+          <a href="section-construction.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="gf-sec-name">Строительство</span></a>
+          <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="gf-sec-name">Экономика</span></a>
+          <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Образование</span></a>
+          <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
+          <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
+          <a href="section-health.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Здоровье</span></a>
+          <a href="section-science.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Наука</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="gf-col-title">Материалы</div>
+        <nav class="gf-nav-links">
+          <a href="essay-truth-and-climate.html" class="gf-nav-link">Истина и климат</a>
+          <a href="essay-passive-design.html" class="gf-nav-link">Пассивный дизайн</a>
+          <a href="essay-solastalgia.html" class="gf-nav-link">Соластальгия</a>
+          <a href="essay-community-survives.html" class="gf-nav-link">Что нужно общине</a>
+          <a href="essay-bread.html" class="gf-nav-link">Хлеб</a>
+          <a href="essay-morning-light.html" class="gf-nav-link">Утренний свет</a>
+          <a href="essay-moneyless-year.html" class="gf-nav-link">Год без денег</a>
+          <a href="lab-heidegger-plastic.html" class="gf-nav-link">Лаб №01 · Пластик</a>
+          <a href="lab-hyperobject-room.html" class="gf-nav-link">Лаб №02 · Комната</a>
+          <a href="lab-jacket-biography.html" class="gf-nav-link">Лаб №03 · Куртка</a>
+          <a href="lab-15min-city.html" class="gf-nav-link">Лаб №04 · Город</a>
+          <a href="lab-bateson-gpt.html" class="gf-nav-link">Лаб №05 · Бейтсон</a>
+          <a href="lab-raworth-chinovnik.html" class="gf-nav-link">Лаб №06 · Раворт</a>
+          <a href="lab-heidegger-builder.html" class="gf-nav-link">Лаб №07 · Хайдеггер</a>
+          <a href="lab-benyus-engineer.html" class="gf-nav-link">Лаб №08 · Бенюс</a>
+          <a href="lab-illich-social.html" class="gf-nav-link">Лаб №09 · Иллич</a>
+          <a href="lab-morton-raworth.html" class="gf-nav-link">Лаб №10 · Мортон / Раворт</a>
+          <a href="lab-illich-benyus.html" class="gf-nav-link">Лаб №11 · Иллич / Бенюс</a>
+          <a href="lab-degrowth-ecomodern.html" class="gf-nav-link">Лаб №12 · Спор о росте</a>
+        </nav>
+      </div>
+      <div>
+        <div class="gf-col-title">Навигация</div>
+        <nav class="gf-nav-links">
+          <a href="index.html" class="gf-nav-link">Главная</a>
+          <a href="map.html" class="gf-nav-link">Карта связей</a>
+          <a href="paths.html" class="gf-nav-link">Тропы чтения</a>
+          <a href="contents.html" class="gf-nav-link">Все материалы</a>
+          <a href="tree.html" class="gf-nav-link">Дерево материалов</a>
+          <a href="revisions.html" class="gf-nav-link">Что не подтвердилось</a>
+          <a href="thinkers.html" class="gf-nav-link">Указатель имён</a>
+          <a href="search.html" class="gf-nav-link">Поиск</a>
+          <a href="method.html" class="gf-nav-link">Как устроены материалы</a>
+          <a href="corrections.html" class="gf-nav-link">Исправления</a>
+            <a href="about.html" class="gf-nav-link">О проекте</a>
+          <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
+          <a href="section-icons-library.html" class="gf-nav-link">Знаки разделов</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="gf-bottom">
+    <span class="gf-copy">© 2025 ЭкоСознание</span>
+    <div class="gf-bottom-links">
+      <a href="about.html">О проекте</a>
+      <a href="glossary.html">Глоссарий</a>
+    </div>
+  </div>
+</footer>
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+
+
+<!-- ECO:MANAGED:js -->
+<script src="assets/global.js" defer></script>
+<!-- /ECO:MANAGED:js -->
+</body>
+</html>

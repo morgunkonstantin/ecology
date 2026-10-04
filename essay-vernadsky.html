@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+<script>document.documentElement.classList.replace('no-js','js');</script>
+<meta charset="UTF-8">
+<meta name="description" content="Биосфера как продукт жизни, живое вещество как измеримая величина, Гея в сравнении с Вернадским — и почему ноосфера остаётся самой слабой частью наследия.">
+<meta property="og:title" content="Вернадский: мысль как геологическая сила. И почему это не утешает">
+<meta property="og:description" content="Биосфера как продукт жизни, живое вещество как измеримая величина, Гея в сравнении с Вернадским — и почему ноосфера остаётся самой слабой частью наследия.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Вернадский: мысль как геологическая сила. И почему это не утешает — ЭкоСознание</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+.essay-tag{display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:2rem;}
+.essay-meta{display:flex;gap:3rem;padding:1.4rem 0;border-top:1px solid rgba(74,124,89,.18);border-bottom:1px solid rgba(74,124,89,.18);flex-wrap:wrap;}
+.essay-meta-item{font-size:.78rem;color:var(--ink-light);}
+.essay-meta-item strong{display:block;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:.3rem;}
+.essay>p{font-family:'Cormorant Garamond',serif;font-size:1.18rem;line-height:1.75;color:var(--ink);margin-bottom:1.8rem;}
+.essay>p:first-of-type::first-letter{font-size:4.6rem;font-weight:400;line-height:.85;float:left;margin:.25rem .6rem 0 0;color:var(--moss);font-family:'Cormorant Garamond',serif;}
+.essay h2 small{display:block;font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--clay);font-weight:400;margin-bottom:.7rem;}
+.essay blockquote p{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-style:italic;color:var(--ink-light);line-height:1.5;margin-bottom:.6rem!important;}
+.essay blockquote cite{font-family:'Jost',sans-serif;font-style:normal;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--moss);}
+.sb::before,.sb::after{content:'';flex:1;max-width:100px;height:1px;background:rgba(74,124,89,.25);}
+.idea{margin:3rem 0;padding:2.2rem 2.5rem 2.2rem 3rem;background:var(--cream);border-left:3px solid var(--moss);position:relative;}
+.idea::before{content:'Идея';position:absolute;top:-.7rem;left:2.2rem;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);background:var(--paper);padding:0 .6rem;}
+.idea p{font-family:'Cormorant Garamond',serif!important;font-size:1.15rem!important;font-style:italic;color:var(--ink)!important;line-height:1.55!important;margin:0!important;}
+.interlude small{font-family:'Jost',sans-serif;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sage);display:block;margin-bottom:1rem;}
+.interlude p{font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.7;color:rgba(211,230,208,.78);margin-bottom:1.3rem;}
+.numbers-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.15);margin:2rem 0;}
+.num-card{background:var(--cream);padding:1.4rem 1.1rem;text-align:center;}
+.num-card .n-big{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--moss);line-height:1;margin-bottom:.4rem;}
+.num-card .n-lbl{font-size:.74rem;line-height:1.5;color:var(--ink-light);}
+.principles-list{margin:2.5rem 0;border-left:2px solid var(--fern);padding-left:2rem;}
+.pl-item{margin-bottom:1.6rem;position:relative;}
+.pl-item:last-child{margin-bottom:0;}
+.pl-item::before{content:'';position:absolute;left:-2.15rem;top:.5rem;width:9px;height:9px;border-radius:50%;background:var(--moss);}
+.pl-num{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.3rem;}
+.pl-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--ink);margin-bottom:.4rem;}
+.pl-name em{font-style:italic;color:var(--moss);}
+.pl-desc{font-size:.92rem;line-height:1.75;color:var(--ink-light);}
+.sig{margin-top:5rem;padding-top:3rem;border-top:1px solid rgba(74,124,89,.18);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem;}
+.sig-a{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink-light);font-style:italic;}
+.sig-m{font-size:.74rem;letter-spacing:.1em;color:var(--sage);text-transform:uppercase;}
+.rel{background:var(--cream);padding:4rem;border-top:1px solid rgba(74,124,89,.15);}
+.rel-in{max-width:1100px;margin:0 auto;}
+.rel-label{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--moss);margin-bottom:1.5rem;}
+.rel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.15);}
+.rel-card{background:var(--cream);padding:1.6rem;text-decoration:none;transition:background .25s;}
+.rel-kind{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.5rem;}
+.reading-bar{position:fixed;top:0;left:0;height:2px;background:var(--moss);z-index:400;width:0%;transition:width .1s linear;}
+@media(max-width:720px){ .essay-hero,.essay,.rel{padding-left:1.5rem;padding-right:1.5rem;} .interlude{margin-left:-1.5rem;margin-right:-1.5rem;padding-left:1.5rem;padding-right:1.5rem;} .rel-grid{grid-template-columns:1fr;} .essay-meta{flex-direction:column;gap:1rem;} .numbers-row{grid-template-columns:1fr 1fr;} }
+</style>
+
+<style>
+.sources{margin:5rem 0 0;padding-top:2.5rem;border-top:1px solid rgba(74,124,89,.2);}
+.src-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;margin-bottom:1.6rem;}
+.src-title small{display:block;font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.22em; text-transform:uppercase;color:var(--clay-text);font-weight:400;margin-bottom:.6rem;}
+.src-list{list-style:none;counter-reset:src;padding:0;margin:0;}
+.src-list li{position:relative;padding-left:2.4rem;margin-bottom:1.1rem;font-size:.86rem; line-height:1.7;color:var(--ink-light);}
+.src-list li::before{counter-increment:src;content:counter(src,decimal-leading-zero); position:absolute;left:0;top:.15rem;font-family:'Jost',sans-serif;font-size:.66rem; letter-spacing:.1em;color:var(--sage-text);}
+.src-a{color:var(--ink);}
+a.term{color:inherit;text-decoration:none;border-bottom:1px dotted var(--fern-text);}
+a.term:hover{border-bottom-style:solid;color:var(--moss);}
+</style>
+<!-- ECO:MANAGED:head -->
+  <link rel="canonical" href="https://morgunkonstantin.github.io/ecology/essay-vernadsky.html">
+  <meta property="og:url" content="https://morgunkonstantin.github.io/ecology/essay-vernadsky.html">
+  <meta property="og:site_name" content="ЭкоСознание">
+  <meta property="og:image" content="https://morgunkonstantin.github.io/ecology/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ЭкоСознание — экология как способ смотреть на реальность">
+  <meta name="twitter:image" content="https://morgunkonstantin.github.io/ecology/assets/og-image.png">
+  <meta name="theme-color" content="#faf6ef">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","name":"Вернадский: мысль как геологическая сила. И почему это не утешает","headline":"Вернадский: мысль как геологическая сила. И почему это не утешает","description":"Биосфера как продукт жизни, живое вещество как измеримая величина, Гея в сравнении с Вернадским — и почему ноосфера остаётся самой слабой частью наследия.","inLanguage":"ru-RU","url":"https://morgunkonstantin.github.io/ecology/essay-vernadsky.html","isPartOf":{"@type":"WebSite","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"},"publisher":{"@type":"Organization","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"},"datePublished":"2026-07-27","author":{"@type":"Organization","name":"ЭкоСознание"},"articleSection":"Наука"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://morgunkonstantin.github.io/ecology/"},{"@type":"ListItem","position":2,"name":"Вернадский: мысль как геологическая сила. И почему это не утешает","item":"https://morgunkonstantin.github.io/ecology/essay-vernadsky.html"}]}</script>
+<!-- /ECO:MANAGED:head -->
+</head>
+<body>
+<a class="skip-link" href="#content">Перейти к содержанию</a>
+
+<div class="g-nav-wrap" id="gNavWrap">
+  <div class="g-nav">
+    <a href="index.html" class="g-logo">
+      <svg viewBox="0 0 100 100" fill="none" class="logo-svg"><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#4a7c59"/></svg>
+      <span class="g-logo-text">Эко<em>Сознание</em></span>
+    </a>
+    <ul class="g-links">
+      <li>
+        <button class="g-drop-btn" aria-expanded="false">
+          Разделы
+          <svg class="g-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="g-dropdown">
+          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
+          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
+          <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-compost.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Компост</span><span class="g-dd-num">03b</span></a>
+          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
+          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
+          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
+          <a href="section-construction.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="g-dd-name">Строительство</span><span class="g-dd-num">06b</span></a>
+          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">08</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">09</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">10</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">11</span></a>
+          <a href="section-science.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Наука</span><span class="g-dd-num">12</span></a>
+        </div>
+      </li>
+      <li><a href="index.html#latest">Эссе</a></li>
+      <li><a href="glossary.html">Глоссарий</a></li>
+      <li><a href="about.html">О проекте</a></li>
+    </ul>
+    <button class="g-burger" id="gBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<div class="g-overlay" id="gOverlay">
+  <div class="g-ov-section">
+    <div class="g-ov-label">Разделы</div>
+    <div class="g-ov-grid">
+      <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Философия</span></a>
+      <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
+      <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
+      <a href="section-compost.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Компост</span></a>
+      <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Технологии</span></a>
+      <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
+      <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
+      <a href="section-construction.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/></svg></span><span class="g-ov-name">Строительство</span></a>
+      <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-ov-name">Экономика</span></a>
+      <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Образование</span></a>
+      <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
+      <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
+      <a href="section-health.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-ov-name">Здоровье</span></a>
+      <a href="section-science.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Наука</span></a>
+    </div>
+  </div>
+  <div class="g-ov-section">
+    <div class="g-ov-label">Навигация</div>
+    <div class="g-ov-simple-links">
+      <a href="index.html" class="g-ov-simple-link">Главная</a>
+      <a href="index.html#latest" class="g-ov-simple-link">Эссе и лаборатории</a>
+      <a href="glossary.html" class="g-ov-simple-link">Глоссарий</a>
+      <a href="map.html" class="g-ov-simple-link">Карта связей</a>
+      <a href="contents.html" class="g-ov-simple-link">Все материалы</a>
+      <a href="revisions.html" class="g-ov-simple-link">Что не подтвердилось</a>
+      <a href="search.html" class="g-ov-simple-link">Поиск</a>
+      <a href="paths.html" class="g-ov-simple-link">Тропы чтения</a>
+      <a href="tree.html" class="g-ov-simple-link">Дерево материалов</a>
+      <a href="thinkers.html" class="g-ov-simple-link">Указатель имён</a>
+      <a href="about.html" class="g-ov-simple-link">О проекте</a>
+    </div>
+  </div>
+</div>
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<main id="content" tabindex="-1">
+
+<div class="reading-bar" id="rb"></div>
+
+<section class="essay-hero">
+  <div class="essay-tag">Эссе · Наука</div>
+  <h1>Вернадский:<br>мысль как <em>геологическая сила</em>.<br>И почему это не утешает</h1>
+  <div class="essay-meta">
+    <div class="essay-meta-item"><strong>Раздел</strong>Наука</div>
+    <div class="essay-meta-item"><strong>Тип</strong>Программное эссе</div>
+    <div class="essay-meta-item"><strong>Темы</strong>Биосфера · Живое вещество · Ноосфера · Антропоцен</div>
+    <div class="essay-meta-item"><strong>Время</strong>≈ 8 мин</div>
+    <!-- ECO:MANAGED:date --><div class="essay-meta-item"><strong>Опубликовано</strong><time datetime="2026-07-27">27 июля 2026</time></div><!-- /ECO:MANAGED:date -->
+  </div>
+</section>
+
+<article class="essay">
+
+  <p>Слово «биосфера» придумал не Вернадский. Его в 1875 году употребил австрийский геолог Эдуард Зюсс — в довольно скромном смысле: оболочка, где встречается жизнь, наряду с литосферой, гидросферой и атмосферой. Одна из сфер, отведённое место.</p>
+
+  <p>Вернадский в книге 1926 года сделал с этим понятием нечто иное. Он предложил рассматривать жизнь не как обитателя оболочки, а как геологическую силу — сопоставимую по масштабу воздействия с тектоникой и выветриванием. Совокупность организмов он назвал живым веществом и потребовал считать его так же, как считают породу: в тоннах, в химическом составе, в скорости переноса элементов.</p>
+
+  <p>Из этого следовал вывод, звучавший тогда экстравагантно, а сегодня стоящий в школьных учебниках. Состав атмосферы — продукт жизни. Кислород, которым мы дышим, — отходы фотосинтеза, накопившиеся за два с лишним миллиарда лет. Огромные толщи известняков — спрессованные скелеты. Почва — не измельчённая порода, а особое тело, созданное организмами. Планета, которую мы наблюдаем, в значительной степени изготовлена живым.</p>
+
+  <div class="sb">
+    <h2><small>Родословная</small>Почва как <em>историческое тело</em></h2>
+  </div>
+
+  <p>У этой мысли была местная предыстория, и она заслуживает упоминания отдельно, потому что представляет собой один из немногих бесспорных случаев, когда русская наука основала целую дисциплину.</p>
+
+  <p>Василий Докучаев, учитель Вернадского, в конце XIX века изучал чернозёмы и пришёл к выводу, что почва — не рыхлый слой на поверхности горной породы, а самостоятельное природно-историческое тело, возникающее из взаимодействия породы, климата, рельефа, организмов и времени. Из этого выросло почвоведение как наука, а термины «чернозём» и «подзол» вошли в мировой научный язык без перевода.</p>
+
+  <p>Вернадский, по сути, проделал с планетой то же, что Докучаев с почвой: перестал считать её ареной, на которой происходит жизнь, и начал считать продуктом, который жизнь производит.</p>
+
+  <div class="sb">
+    <h2><small>Сопоставление</small>Вернадский <em>и Гея</em></h2>
+  </div>
+
+  <p>Джеймс Лавлок с начала семидесятых развивал гипотезу Геи — вместе с Линн Маргулис, — и впоследствии называл Вернадского своим предшественником. Сходство очевидно, но различие важнее, и оно в пользу Вернадского.</p>
+
+  <p>Вернадский утверждал, что жизнь есть геохимическая сила планетарного масштаба. Это утверждение о величине воздействия, и оно проверяемо: можно измерить потоки углерода, азота, кислорода и убедиться, что биота их определяет. Сегодня это никем не оспаривается.</p>
+
+  <p>Гея добавила к этому второе утверждение — о саморегуляции: будто биосфера поддерживает условия, пригодные для жизни, наподобие термостата. Оно куда уязвимее. Оппоненты возражали, что отбор действует на организмы, а не на планету, и что механизма планетарной регуляции не описано; сторонники отвечали моделями вроде «маргаритковой планеты». Спор продолжается, и общепринятого разрешения у него нет.</p>
+
+  <p>Отсюда следует практический вывод для чтения обоих: у Вернадского защитима вся конструкция, у Лавлока — только первая её половина. Более осторожная мысль оказалась более долговечной.</p>
+
+  <blockquote>
+    <p>Понятие антропоцена, введённое в 2000 году, — это по существу тезис Вернадского с новым именем: человек стал геологической силой. Разница в том, что Вернадский считал это надеждой, а мы называем это диагнозом.</p>
+  </blockquote>
+
+  <div class="sb">
+    <h2><small>Ноосфера</small>Самая слабая <em>часть наследия</em></h2>
+  </div>
+
+  <p>Термин «ноосфера» появился в Париже в двадцатые годы в кругу, где Вернадский читал лекции в Сорбонне: его употребляли математик и философ Эдуар Леруа и Пьер Тейяр де Шарден. Вернадский взял слово и придал ему собственное значение, наиболее внятно изложенное в короткой работе 1944 года «Несколько слов о ноосфере».</p>
+
+  <p>Схема такая: человеческая мысль, вооружённая наукой, становится геологической силой; биосфера переходит в новое состояние, где определяющим фактором становится разум; переход этот необратим и, по Вернадскому, благотворен.</p>
+
+  <p>Первая половина утверждения оказалась совершенно точной, и точность её страшна. Человечество перемещает больше породы, чем все реки мира; связывает больше азота, чем вся биота; изменило состав атмосферы за два столетия сильнее, чем природные процессы за тысячелетия. Мысль действительно стала геологической силой — ровно в том смысле, в каком Вернадский это описал.</p>
+
+  <p>Вторая половина не подтвердилась, и это надо сказать прямо. В концепции ноосферы нет теории ошибки. Вернадский исходил из того, что научно организованный разум по своей природе ведёт к разумному результату, — и не рассматривал возможности, что тот же разум, столь же научно организованный, произведёт катастрофу. У него нет ни политики, ни конфликта интересов, ни бюрократии, ни ведомственного планирования, ни различия между знанием и его применением. Есть разум как таковой, у которого нет владельца.</p>
+
+  <p>Работа написана в 1944 году в Советском Союзе. Оптимизм в ней объясним биографически и исторически. Но объяснить — не то же, что оправдать: как теория ноосфера дефектна именно тем, что не содержит собственного опровержения.</p>
+
+  <div class="interlude">
+    <div class="interlude-in">
+      <small>Неудобное продолжение</small>
+      <h3>Разум как геологическая сила: что было дальше в той же стране</h3>
+      <p>Личной ответственности Вернадского за это нет — он умер в январе 1945 года. Но интеллектуальный климат, в котором преобразование природы человеческим разумом считалось законным и естественным продолжением развития биосферы, имел вполне прослеживаемое продолжение.</p>
+      <p>«Великий план преобразования природы» 1948 года — полосные лесонасаждения, изменение водного режима на огромных площадях. Затем ирригационные программы Средней Азии, обратившие Амударью и Сырдарью на поля хлопка. Затем — уже в шестидесятые и семидесятые — проекты переброски северных рек, до реализации не дошедшие.</p>
+      <p>Здесь важна точность в различении. Часть этих замыслов опиралась на настоящую науку: докучаевская идея защитных лесополос работает, и лесополосы, посаженные тогда, до сих пор держат почву. Часть была ведомственным произволом, прикрытым научной риторикой. Отличить одно от другого можно было только по одному признаку — готовности признать отрицательный результат, — а именно этот признак в системе и отсутствовал.</p>
+      <p>Есть у биографии Вернадского и деталь, которая делает всю тему почти невыносимо буквальной. Он возглавлял Радиевый институт и в 1940 году был среди тех, кто обратил внимание руководства страны на военные возможности урана; с его участием была создана Комиссия по проблеме урана. Человек, писавший о мысли как геологической силе, оказался у истоков технологии, которая эту формулу подтвердила самым прямым и самым мрачным образом.</p>
+    </div>
+  </div>
+
+  <div class="sb">
+    <h2><small>Что делать с этим наследием</small>Разделить <em>две части</em></h2>
+  </div>
+
+  <p>Вернадского в русскоязычной традиции обычно берут целиком — вместе с ноосферой, космизмом и родством с Циолковским и Фёдоровым, — и в этом виде он превращается в предмет благоговения, а не мышления. Между тем его наследие отчётливо делится на две неравные части.</p>
+
+  <p>Первая — биогеохимия. Живое вещество как измеримая величина, биосфера как система потоков элементов, планета как продукт жизни. Это работающая наука, она вошла в основание современного изучения циклов углерода и азота, и в ней Вернадский был впереди своего времени на десятилетия.</p>
+
+  <p>Вторая — ноосфера. Это философия истории с оптимистической телеологией, и как теория она несостоятельна, потому что не предусматривает возможности провала. Её ценность сегодня скорее диагностическая: она показывает, как выглядела вера в науку до того, как XX век предъявил счёт.</p>
+
+  <p>Практический вывод для нашего разговора получается неожиданно жёстким. Вернадский был прав, что человеческая мысль стала силой планетарного масштаба, и неправ, что это хорошая новость. Обретение геологической мощности не сопровождалось обретением способности отменить собственное решение: сила выросла, а тормоза — институты, признающие ошибку и умеющие остановиться, — не выросли вместе с ней. Это и есть настоящая проблема ноосферы, и она не решена до сих пор.</p>
+
+  <section class="sources">
+    <h2 class="src-title"><small>Проверить</small>Источники</h2>
+    <ol class="src-list">
+      <li><span class="src-a">Вернадский В. И.</span> Биосфера. Л., 1926; франц. изд. La Biosphère, Paris, 1929. Несколько слов о ноосфере, 1944. Химическое строение биосферы Земли и её окружения, 1965 (посмертно).</li>
+      <li><span class="src-a">Suess E.</span> Die Entstehung der Alpen, 1875 — первое употребление термина «биосфера».</li>
+      <li><span class="src-a">Докучаев В. В.</span> Русский чернозём, 1883.</li>
+      <li><span class="src-a">Lovelock J., Margulis L.</span> Atmospheric homeostasis by and for the biosphere: the Gaia hypothesis. Tellus, 1974.</li>
+      <li><span class="src-a">Crutzen P., Stoermer E.</span> The «Anthropocene». IGBP Newsletter, 2000.</li>
+      <li><span class="src-a">Grinevald J.</span> Sketch for a history of the idea of the biosphere — история рецепции Вернадского на Западе.</li>
+      <li><span class="src-a">Erisman J. W. et al.</span> How a century of ammonia synthesis changed the world. Nature Geoscience, 2008 — масштаб антропогенной фиксации азота.</li>
+      <li><span class="src-a">Wilson E. O., Bekker M.</span> и др. — оценки объёмов породы, перемещаемой человеком, в сравнении с речным стоком.</li>
+    </ol>
+  </section>
+
+</article>
+
+<section class="rel">
+  <div class="rel-in">
+    <div class="rel-label">Читать дальше</div>
+    <div class="rel-grid">
+      <a href="essay-aral-zone.html" class="rel-card">
+        <div class="rel-kind">Эссе</div>
+        <div class="rel-name">Арал и Зона: два места, где проверялась одна гипотеза</div>
+      </a>
+      <a href="essay-zapovednik.html" class="rel-card">
+        <div class="rel-kind">Эссе</div>
+        <div class="rel-name">Заповедник: идея охраны природы, которая не про нас</div>
+      </a>
+      <a href="section-science.html" class="rel-card">
+        <div class="rel-kind">Раздел</div>
+        <div class="rel-name">Наука</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="gf">
+  <div class="gf-top">
+    <div class="gf-brand">
+      <a href="index.html" class="gf-logo">
+        <svg viewBox="0 0 100 100" fill="none" class="logo-svg" style="width:24px;height:24px;flex-shrink:0;"><circle cx="50" cy="50" r="40" stroke="#f3ede3" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#6ea87e"/></svg>
+        <span class="gf-logo-text">Эко<em>Сознание</em></span>
+      </a>
+      <p class="gf-tagline">Экологический взгляд как линза для любой сферы жизни</p>
+    </div>
+    <div class="gf-cols">
+      <div>
+        <div class="gf-col-title">Разделы</div>
+        <div class="gf-sections">
+          <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Философия</span></a>
+          <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
+          <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
+          <a href="section-compost.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Компост</span></a>
+          <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Технологии</span></a>
+          <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
+          <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
+          <a href="section-construction.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="gf-sec-name">Строительство</span></a>
+          <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="gf-sec-name">Экономика</span></a>
+          <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Образование</span></a>
+          <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
+          <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
+          <a href="section-health.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Здоровье</span></a>
+          <a href="section-science.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Наука</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="gf-col-title">Материалы</div>
+        <nav class="gf-nav-links">
+          <a href="essay-truth-and-climate.html" class="gf-nav-link">Истина и климат</a>
+          <a href="essay-passive-design.html" class="gf-nav-link">Пассивный дизайн</a>
+          <a href="essay-solastalgia.html" class="gf-nav-link">Соластальгия</a>
+          <a href="essay-community-survives.html" class="gf-nav-link">Что нужно общине</a>
+          <a href="essay-bread.html" class="gf-nav-link">Хлеб</a>
+          <a href="essay-morning-light.html" class="gf-nav-link">Утренний свет</a>
+          <a href="essay-moneyless-year.html" class="gf-nav-link">Год без денег</a>
+          <a href="lab-heidegger-plastic.html" class="gf-nav-link">Лаб №01 · Пластик</a>
+          <a href="lab-hyperobject-room.html" class="gf-nav-link">Лаб №02 · Комната</a>
+          <a href="lab-jacket-biography.html" class="gf-nav-link">Лаб №03 · Куртка</a>
+          <a href="lab-15min-city.html" class="gf-nav-link">Лаб №04 · Город</a>
+          <a href="lab-bateson-gpt.html" class="gf-nav-link">Лаб №05 · Бейтсон</a>
+          <a href="lab-raworth-chinovnik.html" class="gf-nav-link">Лаб №06 · Раворт</a>
+          <a href="lab-heidegger-builder.html" class="gf-nav-link">Лаб №07 · Хайдеггер</a>
+          <a href="lab-benyus-engineer.html" class="gf-nav-link">Лаб №08 · Бенюс</a>
+          <a href="lab-illich-social.html" class="gf-nav-link">Лаб №09 · Иллич</a>
+          <a href="lab-morton-raworth.html" class="gf-nav-link">Лаб №10 · Мортон / Раворт</a>
+          <a href="lab-illich-benyus.html" class="gf-nav-link">Лаб №11 · Иллич / Бенюс</a>
+          <a href="lab-degrowth-ecomodern.html" class="gf-nav-link">Лаб №12 · Спор о росте</a>
+        </nav>
+      </div>
+      <div>
+        <div class="gf-col-title">Навигация</div>
+        <nav class="gf-nav-links">
+          <a href="index.html" class="gf-nav-link">Главная</a>
+          <a href="map.html" class="gf-nav-link">Карта связей</a>
+          <a href="paths.html" class="gf-nav-link">Тропы чтения</a>
+          <a href="contents.html" class="gf-nav-link">Все материалы</a>
+          <a href="tree.html" class="gf-nav-link">Дерево материалов</a>
+          <a href="revisions.html" class="gf-nav-link">Что не подтвердилось</a>
+          <a href="thinkers.html" class="gf-nav-link">Указатель имён</a>
+          <a href="search.html" class="gf-nav-link">Поиск</a>
+          <a href="method.html" class="gf-nav-link">Как устроены материалы</a>
+          <a href="corrections.html" class="gf-nav-link">Исправления</a>
+            <a href="about.html" class="gf-nav-link">О проекте</a>
+          <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
+          <a href="section-icons-library.html" class="gf-nav-link">Знаки разделов</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="gf-bottom">
+    <span class="gf-copy">© 2025 ЭкоСознание</span>
+    <div class="gf-bottom-links">
+      <a href="about.html">О проекте</a>
+      <a href="glossary.html">Глоссарий</a>
+    </div>
+  </div>
+</footer>
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+
+
+<!-- ECO:MANAGED:js -->
+<script src="assets/global.js" defer></script>
+<!-- /ECO:MANAGED:js -->
+</body>
+</html>

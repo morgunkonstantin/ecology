@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+<script>document.documentElement.classList.replace('no-js','js');</script>
+<meta charset="UTF-8">
+<meta name="description" content="Плановая катастрофа и случайный заповедник. Почему усыхание Арала не было ошибкой в расчётах и что данные по Чернобыльской зоне говорят вовсе не о радиации.">
+<meta property="og:title" content="Арал и Зона. Два места, где проверялась одна гипотеза">
+<meta property="og:description" content="Плановая катастрофа и случайный заповедник. Почему усыхание Арала не было ошибкой в расчётах и что данные по Чернобыльской зоне говорят вовсе не о радиации.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Арал и Зона. Два места, где проверялась одна гипотеза — ЭкоСознание</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+.essay-tag{display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:2rem;}
+.essay-meta{display:flex;gap:3rem;padding:1.4rem 0;border-top:1px solid rgba(74,124,89,.18);border-bottom:1px solid rgba(74,124,89,.18);flex-wrap:wrap;}
+.essay-meta-item{font-size:.78rem;color:var(--ink-light);}
+.essay-meta-item strong{display:block;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:.3rem;}
+.essay>p{font-family:'Cormorant Garamond',serif;font-size:1.18rem;line-height:1.75;color:var(--ink);margin-bottom:1.8rem;}
+.essay>p:first-of-type::first-letter{font-size:4.6rem;font-weight:400;line-height:.85;float:left;margin:.25rem .6rem 0 0;color:var(--moss);font-family:'Cormorant Garamond',serif;}
+.essay h2 small{display:block;font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--clay);font-weight:400;margin-bottom:.7rem;}
+.essay blockquote p{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-style:italic;color:var(--ink-light);line-height:1.5;margin-bottom:.6rem!important;}
+.essay blockquote cite{font-family:'Jost',sans-serif;font-style:normal;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--moss);}
+.sb::before,.sb::after{content:'';flex:1;max-width:100px;height:1px;background:rgba(74,124,89,.25);}
+.idea{margin:3rem 0;padding:2.2rem 2.5rem 2.2rem 3rem;background:var(--cream);border-left:3px solid var(--moss);position:relative;}
+.idea::before{content:'Идея';position:absolute;top:-.7rem;left:2.2rem;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);background:var(--paper);padding:0 .6rem;}
+.idea p{font-family:'Cormorant Garamond',serif!important;font-size:1.15rem!important;font-style:italic;color:var(--ink)!important;line-height:1.55!important;margin:0!important;}
+.interlude small{font-family:'Jost',sans-serif;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sage);display:block;margin-bottom:1rem;}
+.interlude p{font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.7;color:rgba(211,230,208,.78);margin-bottom:1.3rem;}
+.numbers-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.15);margin:2rem 0;}
+.num-card{background:var(--cream);padding:1.4rem 1.1rem;text-align:center;}
+.num-card .n-big{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--moss);line-height:1;margin-bottom:.4rem;}
+.num-card .n-lbl{font-size:.74rem;line-height:1.5;color:var(--ink-light);}
+.principles-list{margin:2.5rem 0;border-left:2px solid var(--fern);padding-left:2rem;}
+.pl-item{margin-bottom:1.6rem;position:relative;}
+.pl-item:last-child{margin-bottom:0;}
+.pl-item::before{content:'';position:absolute;left:-2.15rem;top:.5rem;width:9px;height:9px;border-radius:50%;background:var(--moss);}
+.pl-num{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.3rem;}
+.pl-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--ink);margin-bottom:.4rem;}
+.pl-name em{font-style:italic;color:var(--moss);}
+.pl-desc{font-size:.92rem;line-height:1.75;color:var(--ink-light);}
+.sig{margin-top:5rem;padding-top:3rem;border-top:1px solid rgba(74,124,89,.18);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem;}
+.sig-a{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink-light);font-style:italic;}
+.sig-m{font-size:.74rem;letter-spacing:.1em;color:var(--sage);text-transform:uppercase;}
+.rel{background:var(--cream);padding:4rem;border-top:1px solid rgba(74,124,89,.15);}
+.rel-in{max-width:1100px;margin:0 auto;}
+.rel-label{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--moss);margin-bottom:1.5rem;}
+.rel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.15);}
+.rel-card{background:var(--cream);padding:1.6rem;text-decoration:none;transition:background .25s;}
+.rel-kind{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.5rem;}
+.reading-bar{position:fixed;top:0;left:0;height:2px;background:var(--moss);z-index:400;width:0%;transition:width .1s linear;}
+@media(max-width:720px){ .essay-hero,.essay,.rel{padding-left:1.5rem;padding-right:1.5rem;} .interlude{margin-left:-1.5rem;margin-right:-1.5rem;padding-left:1.5rem;padding-right:1.5rem;} .rel-grid{grid-template-columns:1fr;} .essay-meta{flex-direction:column;gap:1rem;} .numbers-row{grid-template-columns:1fr 1fr;} }
+</style>
+
+<style>
+.sources{margin:5rem 0 0;padding-top:2.5rem;border-top:1px solid rgba(74,124,89,.2);}
+.src-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;margin-bottom:1.6rem;}
+.src-title small{display:block;font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.22em; text-transform:uppercase;color:var(--clay-text);font-weight:400;margin-bottom:.6rem;}
+.src-list{list-style:none;counter-reset:src;padding:0;margin:0;}
+.src-list li{position:relative;padding-left:2.4rem;margin-bottom:1.1rem;font-size:.86rem; line-height:1.7;color:var(--ink-light);}
+.src-list li::before{counter-increment:src;content:counter(src,decimal-leading-zero); position:absolute;left:0;top:.15rem;font-family:'Jost',sans-serif;font-size:.66rem; letter-spacing:.1em;color:var(--sage-text);}
+.src-a{color:var(--ink);}
+a.term{color:inherit;text-decoration:none;border-bottom:1px dotted var(--fern-text);}
+a.term:hover{border-bottom-style:solid;color:var(--moss);}
+</style>
+<!-- ECO:MANAGED:head -->
+  <link rel="canonical" href="https://morgunkonstantin.github.io/ecology/essay-aral-zone.html">
+  <meta property="og:url" content="https://morgunkonstantin.github.io/ecology/essay-aral-zone.html">
+  <meta property="og:site_name" content="ЭкоСознание">
+  <meta property="og:image" content="https://morgunkonstantin.github.io/ecology/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ЭкоСознание — экология как способ смотреть на реальность">
+  <meta name="twitter:image" content="https://morgunkonstantin.github.io/ecology/assets/og-image.png">
+  <meta name="theme-color" content="#faf6ef">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","name":"Арал и Зона. Два места, где проверялась одна гипотеза","headline":"Арал и Зона. Два места, где проверялась одна гипотеза","description":"Плановая катастрофа и случайный заповедник. Почему усыхание Арала не было ошибкой в расчётах и что данные по Чернобыльской зоне говорят вовсе не о радиации.","inLanguage":"ru-RU","url":"https://morgunkonstantin.github.io/ecology/essay-aral-zone.html","isPartOf":{"@type":"WebSite","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"},"publisher":{"@type":"Organization","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"},"datePublished":"2026-07-27","author":{"@type":"Organization","name":"ЭкоСознание"},"articleSection":"Наука"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://morgunkonstantin.github.io/ecology/"},{"@type":"ListItem","position":2,"name":"Арал и Зона. Два места, где проверялась одна гипотеза","item":"https://morgunkonstantin.github.io/ecology/essay-aral-zone.html"}]}</script>
+<!-- /ECO:MANAGED:head -->
+</head>
+<body>
+<a class="skip-link" href="#content">Перейти к содержанию</a>
+
+<div class="g-nav-wrap" id="gNavWrap">
+  <div class="g-nav">
+    <a href="index.html" class="g-logo">
+      <svg viewBox="0 0 100 100" fill="none" class="logo-svg"><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#4a7c59"/></svg>
+      <span class="g-logo-text">Эко<em>Сознание</em></span>
+    </a>
+    <ul class="g-links">
+      <li>
+        <button class="g-drop-btn" aria-expanded="false">
+          Разделы
+          <svg class="g-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="g-dropdown">
+          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
+          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
+          <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-compost.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Компост</span><span class="g-dd-num">03b</span></a>
+          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
+          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
+          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
+          <a href="section-construction.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="g-dd-name">Строительство</span><span class="g-dd-num">06b</span></a>
+          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">08</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">09</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">10</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">11</span></a>
+          <a href="section-science.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Наука</span><span class="g-dd-num">12</span></a>
+        </div>
+      </li>
+      <li><a href="index.html#latest">Эссе</a></li>
+      <li><a href="glossary.html">Глоссарий</a></li>
+      <li><a href="about.html">О проекте</a></li>
+    </ul>
+    <button class="g-burger" id="gBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<div class="g-overlay" id="gOverlay">
+  <div class="g-ov-section">
+    <div class="g-ov-label">Разделы</div>
+    <div class="g-ov-grid">
+      <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Философия</span></a>
+      <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
+      <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
+      <a href="section-compost.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Компост</span></a>
+      <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Технологии</span></a>
+      <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
+      <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
+      <a href="section-construction.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/></svg></span><span class="g-ov-name">Строительство</span></a>
+      <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-ov-name">Экономика</span></a>
+      <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Образование</span></a>
+      <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
+      <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
+      <a href="section-health.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-ov-name">Здоровье</span></a>
+      <a href="section-science.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Наука</span></a>
+    </div>
+  </div>
+  <div class="g-ov-section">
+    <div class="g-ov-label">Навигация</div>
+    <div class="g-ov-simple-links">
+      <a href="index.html" class="g-ov-simple-link">Главная</a>
+      <a href="index.html#latest" class="g-ov-simple-link">Эссе и лаборатории</a>
+      <a href="glossary.html" class="g-ov-simple-link">Глоссарий</a>
+      <a href="map.html" class="g-ov-simple-link">Карта связей</a>
+      <a href="contents.html" class="g-ov-simple-link">Все материалы</a>
+      <a href="revisions.html" class="g-ov-simple-link">Что не подтвердилось</a>
+      <a href="search.html" class="g-ov-simple-link">Поиск</a>
+      <a href="paths.html" class="g-ov-simple-link">Тропы чтения</a>
+      <a href="tree.html" class="g-ov-simple-link">Дерево материалов</a>
+      <a href="thinkers.html" class="g-ov-simple-link">Указатель имён</a>
+      <a href="about.html" class="g-ov-simple-link">О проекте</a>
+    </div>
+  </div>
+</div>
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<main id="content" tabindex="-1">
+
+<div class="reading-bar" id="rb"></div>
+
+<section class="essay-hero">
+  <div class="essay-tag">Эссе · Наука</div>
+  <h1>Арал и Зона.<br>Два места, где проверялась<br><em>одна гипотеза</em></h1>
+  <div class="essay-meta">
+    <div class="essay-meta-item"><strong>Раздел</strong>Наука</div>
+    <div class="essay-meta-item"><strong>Тип</strong>Одно место во времени</div>
+    <div class="essay-meta-item"><strong>Темы</strong>Аралкум · Полесский заповедник · Присутствие против намерения</div>
+    <div class="essay-meta-item"><strong>Время</strong>≈ 10 мин</div>
+    <!-- ECO:MANAGED:date --><div class="essay-meta-item"><strong>Опубликовано</strong><time datetime="2026-07-27">27 июля 2026</time></div><!-- /ECO:MANAGED:date -->
+  </div>
+</section>
+
+<article class="essay">
+
+  <p>Есть два места на карте бывшего Советского Союза, которые стоит рассматривать вместе, хотя их обычно рассматривают порознь. В одном человек действовал по плану, разумно и последовательно, — и получилась крупнейшая экологическая катастрофа столетия. В другом человек исчез внезапно, в результате аварии, — и получился крупнейший непреднамеренный заповедник Европы.</p>
+
+  <p>Сопоставление этих двух случаев даёт результат, который трудно уложить в привычную рамку, и именно поэтому оно полезно.</p>
+
+  <div class="sb">
+    <h2><small>Арал</small>Катастрофа, <em>случившаяся по расчёту</em></h2>
+  </div>
+
+  <p>Аральское море было четвёртым по площади озером мира — около шестидесяти восьми тысяч квадратных километров. Его питали две реки, Амударья и Сырдарья. С конца пятидесятых и особенно с шестидесятых годов сток этих рек стали в возрастающих объёмах забирать на орошение, главным образом под хлопок.</p>
+
+  <p>Дальнейшее известно. Уровень падал десятилетиями, море распалось на части, восточная доля южного Арала к 2014 году пересохла полностью. Объём воды сократился более чем на девяносто процентов. Солёность выросла с примерно десяти граммов на литр до величин, местами превышающих сто, — то есть до уровня, при котором из двух десятков местных видов рыб не выживает практически никто. Промысловое рыболовство, кормившее Аральск и Муйнак, исчезло вместе с рыбой, а с ним — десятки тысяч рабочих мест.</p>
+
+  <p>На месте дна возникла новая пустыня — Аралкум, около шестидесяти тысяч квадратных километров солончака, насыщенного остатками пестицидов и удобрений, смытых с полей за полвека. Пыльно-солевые бури переносят этот материал на населённые районы; в Каракалпакстане фиксируются повышенные показатели респираторных заболеваний и онкологии. Остров Возрождения, где располагался полигон биологического оружия, в 2001 году соединился с материком по мере отступления воды.</p>
+
+  <p>Но самое важное в этой истории — не масштаб, а обстоятельство, которое обычно опускают. Это не было ошибкой в расчётах и не было следствием невежества. Плановики знали, что море усохнет. Существуют документы, где усыхание обсуждается как ожидаемое следствие, и делается вывод, что хлопок и рабочие места в орошаемом земледелии стоят дороже, чем рыболовство и водоём в пустыне. Некоторые формулировки прямо говорят о том, что море, испаряющее воду впустую, экономически бесполезно.</p>
+
+  <p>То есть внутри собственной системы координат решение было рациональным. Считали, сравнивали и выбрали. Просто в счёт не входили солевые бури, здоровье жителей Каракалпакстана, климат региона и всё остальное, что деньгами не выражалось.</p>
+
+  <blockquote>
+    <p>Арал — не памятник глупости. Это памятник узкому расчёту, проведённому корректно. Внутри своей рамки он не содержал ошибки: ошибкой была рамка.</p>
+  </blockquote>
+
+  <div class="sb">
+    <h2><small>Оговорка</small>Северный Арал: <em>то, что получилось вернуть</em></h2>
+  </div>
+
+  <p>История, однако, не закончилась пустыней, и об этом говорят реже, чем следовало бы, потому что мрачная версия сильнее действует.</p>
+
+  <p>В 2005 году при поддержке Всемирного банка Казахстан завершил Кокаральскую плотину, отделившую северную, малую часть Арала от высохшего юга. Результат наступил быстрее, чем ожидали: уровень поднялся, площадь выросла, солёность упала, вернулась часть рыбы, в Аральске снова заработал промысел и рыбоперерабатывающее производство.</p>
+
+  <p>Северный Арал не является восстановленным Аральским морем — это малая доля прежнего водоёма, и южная часть в прежнем виде не вернётся. Но случай доказывает нечто важное: даже в ситуации, которая десятилетиями подавалась как окончательная, оставался работающий рычаг, и он оказался довольно простым инженерным решением. Необратимость, о которой много говорят, иногда является утверждением о политической воле, а не о физике.</p>
+
+  <div class="sb">
+    <h2><small>Зона</small>Заповедник, <em>которого никто не хотел</em></h2>
+  </div>
+
+  <p>Второй случай начался 26 апреля 1986 года. Из зоны вокруг Чернобыльской станции вывезли людей — в работе, на которую мы здесь опираемся, названа цифра сто шестнадцать тысяч человек и площадь около четырёх тысяч двухсот квадратных километров — и оставили эту территорию без сельского хозяйства, охоты, рубок и движения. В 1988 году на белорусской стороне был официально учреждён Полесский государственный радиационно-экологический заповедник — заповедник, возникший не по замыслу Кожевникова, а по обстоятельствам.</p>
+
+  <p>Дальше начинается спор, который стоит изложить как спор, а не как готовый вывод.</p>
+
+  <p>В 2015 году в Current Biology вышла работа группы Татьяны Дерябиной, основанная на многолетних учётах на белорусской части: численность лося, косули, оленя, кабана и волка оказалась сопоставимой с показателями незагрязнённых заповедников региона или выше, причём волка — кратно выше. Позже сюда завезли лошадей Пржевальского, и популяция выросла.</p>
+
+  <p>С другой стороны, Андерс Мёллер и Тимоти Муссо публикуют многолетние работы, показывающие негативные эффекты радиации на птицах и насекомых: снижение численности, аномалии, повышенная частота повреждений. Их методология оспаривается, они оспаривают методологию оппонентов, и по ряду пунктов согласия нет до сих пор.</p>
+
+  <p>Осторожная формулировка, которая, кажется, совместима с обоими массивами данных, звучит так: для крупных млекопитающих устранение человека дало выигрыш, превосходящий проигрыш от радиации; для мелких организмов с коротким жизненным циклом эффекты радиации регистрируются заметнее. И главный вывод здесь — не о радиации.</p>
+
+  <div class="interlude">
+    <div class="interlude-in">
+      <small>Что это значит</small>
+      <h3>Вывод, который стоит произнести медленно: сравнение идёт не с идеалом, а с нами</h3>
+      <p>Когда говорят, что в Зоне отчуждения расплодились волки и вернулись рыси, это часто читают как утверждение о безвредности радиации. Это неверное чтение.</p>
+      <p>Правильное чтение обратное. Территория, загрязнённая радионуклидами настолько, что людям там жить запрещено, оказалась для крупных зверей более пригодной, чем окружающие обычные земли — с полями, дорогами, посёлками, охотой и лесозаготовкой. Сравнение производится не с первозданной природой, а с нормальным хозяйственным использованием той же местности.</p>
+      <p>Иными словами, Зона не сообщает нам ничего утешительного о радиации. Она сообщает кое-что весьма неутешительное о нашем обычном, законном, не считающемся катастрофой присутствии.</p>
+      <p>И ещё одно, чтобы избежать романтизации. Люди, вывезенные из Зоны, потеряли дома, кладбища и уклад, а часть из них — здоровье; никакие волки этого не уравновешивают, и «природа взяла своё» — фраза, которую уместно произносить только помня, чьей ценой. В 2022 году к этому добавился новый слой: территория стала местом боевых действий, в загрязнённом грунте копали окопы, горели леса.</p>
+    </div>
+  </div>
+
+  <div class="sb">
+    <h2><small>Сопоставление</small>Присутствие <em>против намерения</em></h2>
+  </div>
+
+  <p>Теперь сложим два случая. В одном человек действовал сознательно, планово и с добрыми целями — накормить, одеть, дать работу, — и результат оказался разрушительным. В другом человек исчез случайно, оставив после себя тяжёлое загрязнение, и результат для крупной фауны оказался положительным.</p>
+
+  <p>Из этой пары следует довольно жёсткое обобщение: для состояния экосистемы решающей переменной оказывается не качество человеческих намерений, а сам факт и характер человеческого присутствия. Разумное хозяйствование Арала уничтожило море; безумная авария создала заповедник.</p>
+
+  <p>Это, разумеется, не аргумент в пользу исчезновения человека — такой вывод был бы и мизантропическим, и практически бессмысленным. Но это аргумент против определённого способа думать, и способ этот носит имя, которое на этом сайте уже обсуждалось.</p>
+
+  <p>Ноосфера в изложении Вернадского предполагала, что мысль, став геологической силой, будет действовать благотворно, поскольку она мысль. Арал — прямая проверка этой посылки, проведённая в той же стране в течение полувека после её формулировки. Проверка дала отрицательный результат: сила выросла, разумность применения — нет. А Зона показала, что там, где сила по случайности отключилась, система начала восстанавливаться сама, без всякого руководства.</p>
+
+  <div class="sb">
+    <h2><small>Что из этого следует</small>Три вывода, <em>которые я готов защищать</em></h2>
+  </div>
+
+  <p><em class="t">Первый — о рамке расчёта.</em> Арал показывает, что главная опасность исходит не от людей, которые считать не умеют, а от тех, кто считает хорошо, но по неполному перечню статей. Все катастрофические ошибки такого типа выглядят как рациональные решения — до тех пор, пока не появится статья, которую забыли включить. Из чего следует, что важнейшая работа в экологической экспертизе — не уточнение цифр, а расширение перечня.</p>
+
+  <p><em class="t">Второй — о необратимости.</em> Кокаральская плотина показывает, что часть якобы окончательных приговоров окончательна не физически, а политически. Это относится и к менее драматичным случаям: реки, спрямлённые в двадцатом веке, сейчас возвращают в старые русла в Европе, и это работает. Утверждение «уже поздно» требует проверки в каждом отдельном случае, потому что оно очень удобно и потому произносится чаще, чем обосновано.</p>
+
+  <p><em class="t">Третий — о восстановлении.</em> Зона показывает, что способность экосистем к самовосстановлению больше, чем принято думать, и что самое действенное природоохранное мероприятие — часто просто отсутствие. Отсюда, между прочим, прямой мост к идее заповедника: Кожевников утверждал в 1908 году именно это, только на теоретических основаниях. Зона отчуждения — его гипотеза, поставленная в виде натурного эксперимента, которого никто не планировал и который никому не пожелаешь.</p>
+
+  <section class="sources">
+    <h2 class="src-title"><small>Проверить</small>Источники</h2>
+    <ol class="src-list">
+      <li><span class="src-a">Micklin P.</span> The Aral Sea Disaster. Annual Review of Earth and Planetary Sciences, 2007; The Aral Sea: The Devastation and Partial Rehabilitation of a Great Lake, Springer, 2014.</li>
+      <li><span class="src-a">NASA Earth Observatory</span> — серия снимков усыхания Аральского моря, 1960–2020.</li>
+      <li><span class="src-a">Wiggs G. et al.</span> The dynamics and characteristics of aeolian dust in dryland Central Asia. Journal of Arid Environments — перенос солевой пыли с Аралкума.</li>
+      <li><span class="src-a">World Bank</span>, Syr Darya Control and Northern Aral Sea Project — документация Кокаральской плотины, 2001–2005.</li>
+      <li><span class="src-a">Deryabina T. et al.</span> Long-term census data reveal abundant wildlife populations at Chernobyl. Current Biology, 25(19), 2015. Проверено: работа выполнена на белорусской части (Полесский заповедник); численность лося, косули, оленя и кабана сопоставима с четырьмя незагрязнёнными заповедниками региона, волка — более чем в семь раз выше.</li>
+      <li><span class="src-a">Møller A., Mousseau T.</span> серия работ о влиянии радиации на птиц и насекомых в Чернобыльской зоне, 2007–2020 — методологически оспариваемая противоположная позиция.</li>
+      <li><span class="src-a">UNSCEAR</span>, доклад 2008 года о последствиях чернобыльской аварии.</li>
+      <li><span class="src-a">Полесский государственный радиационно-экологический заповедник</span> — учреждён в 1988 году.</li>
+    </ol>
+  </section>
+
+</article>
+
+<section class="rel">
+  <div class="rel-in">
+    <div class="rel-label">Читать дальше</div>
+    <div class="rel-grid">
+      <a href="essay-vernadsky.html" class="rel-card">
+        <div class="rel-kind">Эссе</div>
+        <div class="rel-name">Вернадский: мысль как геологическая сила</div>
+      </a>
+      <a href="essay-zapovednik.html" class="rel-card">
+        <div class="rel-kind">Эссе</div>
+        <div class="rel-name">Заповедник: идея охраны природы, которая не про нас</div>
+      </a>
+      <a href="revisions.html" class="rel-card">
+        <div class="rel-kind">Рубрика</div>
+        <div class="rel-name">Что не подтвердилось</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="gf">
+  <div class="gf-top">
+    <div class="gf-brand">
+      <a href="index.html" class="gf-logo">
+        <svg viewBox="0 0 100 100" fill="none" class="logo-svg" style="width:24px;height:24px;flex-shrink:0;"><circle cx="50" cy="50" r="40" stroke="#f3ede3" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#6ea87e"/></svg>
+        <span class="gf-logo-text">Эко<em>Сознание</em></span>
+      </a>
+      <p class="gf-tagline">Экологический взгляд как линза для любой сферы жизни</p>
+    </div>
+    <div class="gf-cols">
+      <div>
+        <div class="gf-col-title">Разделы</div>
+        <div class="gf-sections">
+          <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Философия</span></a>
+          <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
+          <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
+          <a href="section-compost.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Компост</span></a>
+          <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Технологии</span></a>
+          <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
+          <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
+          <a href="section-construction.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="gf-sec-name">Строительство</span></a>
+          <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="gf-sec-name">Экономика</span></a>
+          <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Образование</span></a>
+          <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
+          <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
+          <a href="section-health.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Здоровье</span></a>
+          <a href="section-science.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Наука</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="gf-col-title">Материалы</div>
+        <nav class="gf-nav-links">
+          <a href="essay-truth-and-climate.html" class="gf-nav-link">Истина и климат</a>
+          <a href="essay-passive-design.html" class="gf-nav-link">Пассивный дизайн</a>
+          <a href="essay-solastalgia.html" class="gf-nav-link">Соластальгия</a>
+          <a href="essay-community-survives.html" class="gf-nav-link">Что нужно общине</a>
+          <a href="essay-bread.html" class="gf-nav-link">Хлеб</a>
+          <a href="essay-morning-light.html" class="gf-nav-link">Утренний свет</a>
+          <a href="essay-moneyless-year.html" class="gf-nav-link">Год без денег</a>
+          <a href="lab-heidegger-plastic.html" class="gf-nav-link">Лаб №01 · Пластик</a>
+          <a href="lab-hyperobject-room.html" class="gf-nav-link">Лаб №02 · Комната</a>
+          <a href="lab-jacket-biography.html" class="gf-nav-link">Лаб №03 · Куртка</a>
+          <a href="lab-15min-city.html" class="gf-nav-link">Лаб №04 · Город</a>
+          <a href="lab-bateson-gpt.html" class="gf-nav-link">Лаб №05 · Бейтсон</a>
+          <a href="lab-raworth-chinovnik.html" class="gf-nav-link">Лаб №06 · Раворт</a>
+          <a href="lab-heidegger-builder.html" class="gf-nav-link">Лаб №07 · Хайдеггер</a>
+          <a href="lab-benyus-engineer.html" class="gf-nav-link">Лаб №08 · Бенюс</a>
+          <a href="lab-illich-social.html" class="gf-nav-link">Лаб №09 · Иллич</a>
+          <a href="lab-morton-raworth.html" class="gf-nav-link">Лаб №10 · Мортон / Раворт</a>
+          <a href="lab-illich-benyus.html" class="gf-nav-link">Лаб №11 · Иллич / Бенюс</a>
+          <a href="lab-degrowth-ecomodern.html" class="gf-nav-link">Лаб №12 · Спор о росте</a>
+        </nav>
+      </div>
+      <div>
+        <div class="gf-col-title">Навигация</div>
+        <nav class="gf-nav-links">
+          <a href="index.html" class="gf-nav-link">Главная</a>
+          <a href="map.html" class="gf-nav-link">Карта связей</a>
+          <a href="paths.html" class="gf-nav-link">Тропы чтения</a>
+          <a href="contents.html" class="gf-nav-link">Все материалы</a>
+          <a href="tree.html" class="gf-nav-link">Дерево материалов</a>
+          <a href="revisions.html" class="gf-nav-link">Что не подтвердилось</a>
+          <a href="thinkers.html" class="gf-nav-link">Указатель имён</a>
+          <a href="search.html" class="gf-nav-link">Поиск</a>
+          <a href="method.html" class="gf-nav-link">Как устроены материалы</a>
+          <a href="corrections.html" class="gf-nav-link">Исправления</a>
+            <a href="about.html" class="gf-nav-link">О проекте</a>
+          <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
+          <a href="section-icons-library.html" class="gf-nav-link">Знаки разделов</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="gf-bottom">
+    <span class="gf-copy">© 2025 ЭкоСознание</span>
+    <div class="gf-bottom-links">
+      <a href="about.html">О проекте</a>
+      <a href="glossary.html">Глоссарий</a>
+    </div>
+  </div>
+</footer>
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+
+
+<!-- ECO:MANAGED:js -->
+<script src="assets/global.js" defer></script>
+<!-- /ECO:MANAGED:js -->
+</body>
+</html>
