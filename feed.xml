@@ -6,7 +6,7 @@
   <atom:link href="https://morgunkonstantin.github.io/ecology/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Экология как способ смотреть на реальность</description>
   <language>ru</language>
-  <lastBuildDate>Sat, 03 Oct 2026 19:50:22 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 05 Oct 2026 09:23:43 +0000</lastBuildDate>
   <image>
     <url>https://morgunkonstantin.github.io/ecology/assets/og-image.png</url>
     <title>ЭкоСознание</title>
@@ -475,6 +475,14 @@
     <pubDate>Fri, 21 Aug 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
+    <title>Круговорот углерода: одна лишняя стрелка</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-carbon-cycle.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-carbon-cycle.html</guid>
+    <description>Круговорот углерода на одной схеме: атмосфера, суша и океан обмениваются углеродом в равновесии, а человек добавил один лишний односторонний поток — сжигание ископаемого. Почему из-за этого CO₂ копится, как это связано с кривой Килинга, и почему «ноль нетто» — это восстановление равновесия цикла.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
     <title>Глина и земля как строительный материал</title>
     <link>https://morgunkonstantin.github.io/ecology/essay-clay-earth.html</link>
     <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-clay-earth.html</guid>
@@ -703,6 +711,14 @@
     <link>https://morgunkonstantin.github.io/ecology/essay-vernacular.html</link>
     <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-vernacular.html</guid>
     <description>Вернакулярная архитектура — народные дома, за тысячи лет настроенные на местный климат без всякой техники. Как охлаждались без кондиционера (толстые стены и дворы, ветроловы-бадгиры, сваи в тропиках) и грелись без котла (компактность, дёрн, снег, общее тепло), единый принцип «форма следует климату», и как пассивный дизайн заново открывает эту мудрость.</description>
+    <category>Эссе</category>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Виртуальная вода: сколько её спрятано в тарелке</title>
+    <link>https://morgunkonstantin.github.io/ecology/essay-virtual-water.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology/essay-virtual-water.html</guid>
+    <description>Виртуальная вода — тонны воды, невидимо потраченные на еду: гамбургер ~2500 л, говядина &gt;15 000 л/кг против овощей ~300. Диаграмма водного следа продуктов, почему мясо так водоёмко, торговля виртуальной водой и пересохшие реки (Арал), и вывод — углерод и вода тянутся одним, один сдвиг рациона облегчает оба.</description>
     <category>Эссе</category>
     <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
   </item>
