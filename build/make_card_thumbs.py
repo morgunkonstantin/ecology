@@ -11,8 +11,9 @@
    <img class="card-thumb">. Повторный запуск заменяет миниатюры, а не
    добавляет новые; карточки на страницы без обложки не трогает.
 3. В тёмные плашки разделов — «Читать →» (featured-strip, featured-article)
-   и «Следующий раздел» (g-next-section) — вставляет миниатюру-ссылку
-   <a class="block-thumb"> первым элементом блока.
+   и «Следующий раздел» (g-next-section) — вставляет фоновую картинку-ссылку
+   <a class="block-bg"> первым элементом блока (обложка целевой страницы;
+   вид задаёт assets/site.css).
 
 Запускать после make_cover.py, make_section_lists.py и make_paths.py:
 эти скрипты пересобирают карточки и стирают миниатюры.
@@ -90,15 +91,15 @@ def patch_html(path, cov):
     return n
 
 
-BLOCK_RE = re.compile(r'<div class="(featured-strip|featured-article|g-next-section)\b[^"]*"[^>]*>')
-BLOCK_THUMB_RE = re.compile(r'\s*<a class="block-thumb"[^>]*>\s*<img[^>]*>\s*</a>')
+BLOCK_RE = re.compile(r'<div class="(featured-strip|featured-article|g-next-section)(?=[\s"])[^"]*"[^>]*>')
+BLOCK_THUMB_RE = re.compile(r'\s*<a class="block-(?:thumb|bg)"[^>]*>\s*<img[^>]*>\s*</a>')
 BLOCK_LINK = {"featured-strip": "featured-btn", "featured-article": "featured-btn",
               "g-next-section": "g-next-link"}
 
 
 def patch_blocks(path, cov):
-    """Тёмные плашки «Читать →» и «Следующий раздел»: миниатюра-ссылка
-    первым элементом блока (раскладку задаёт assets/site.css)."""
+    """Тёмные плашки «Читать →» и «Следующий раздел»: фон-ссылка
+    первым элементом блока."""
     s = BLOCK_THUMB_RE.sub("", open(path, encoding="utf-8").read())
     out, pos, n = [], 0, 0
     for m in BLOCK_RE.finditer(s):
@@ -111,9 +112,11 @@ def patch_blocks(path, cov):
         if target not in cov:
             continue
         out.append(s[pos:m.end()])
-        out.append('<a class="block-thumb" href="%s" tabindex="-1" aria-hidden="true">'
-                   '<img src="assets/img/%s-thumb.webp" width="%d" height="%d" alt="" '
-                   'loading="lazy" decoding="async"></a>' % (target, cov[target], W, H))
+        name = cov[target]
+        out.append('<a class="block-bg" href="%s" tabindex="-1" aria-hidden="true">'
+                   '<img src="assets/img/%s-hero-1200.webp" srcset="assets/img/%s-hero-1200.webp 1200w, '
+                   'assets/img/%s-hero-2000.webp 2000w" sizes="(max-width: 900px) 100vw, 1320px" '
+                   'alt="" loading="lazy" decoding="async"></a>' % (target, name, name, name))
         pos = m.end()
         n += 1
     out.append(s[pos:])
