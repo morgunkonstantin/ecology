@@ -255,3 +255,28 @@ html body .hero-cover + .lab-hero{padding-top:4rem;}
   html body .hero-cover + .essay-hero,
   html body .hero-cover + .lab-hero{padding-top:2.5rem;}
 }
+
+/* ─── Миниатюры в карточках-ссылках (вставляет build/make_card_thumbs.py) ───
+   Картинка стоит первым элементом карточки и выходит под её поля, чтобы
+   занять всю ширину; отрицательные поля равны внутренним полям карточки. */
+.card-thumb{display:block;width:100%;max-width:none;height:auto;aspect-ratio:16/9;object-fit:cover;background:var(--warm);transition:opacity .25s;}
+a:hover>.card-thumb{opacity:.88;}
+.rel-card>.card-thumb,
+.related-card>.card-thumb{width:calc(100% + 3.2rem);margin:-1.6rem -1.6rem 1.2rem;}
+.sec-mat-card>.card-thumb{width:calc(100% + 3rem);margin:-1.4rem -1.5rem 1.1rem;}
+.fc>.card-thumb{width:calc(100% + 3.6rem);margin:-2.5rem -1.8rem 0;}
+.pt-card:has(>.card-thumb){display:grid;grid-template-columns:minmax(0,1fr) 9rem;column-gap:1.2rem;align-items:center;}
+.pt-card>.card-thumb{grid-column:2;grid-row:1 / span 2;}
+.pt-card>.pt-kind,.pt-card>.pt-name{grid-column:1;}
+@media(max-width:540px){.pt-card:has(>.card-thumb){grid-template-columns:minmax(0,1fr) 6.5rem;column-gap:.9rem;}}
+/* Чтобы одна карточка не оставалась одна в последнем ряду: при числе
+   карточек 3k+1 сетка на широком экране — 4 колонки, на планшете — 2. */
+@media(min-width:961px){
+  .rel-grid:has(> :nth-child(3n+4):last-child),
+  .related-grid:has(> :nth-child(3n+4):last-child),
+  .sec-mat-grid:has(> :nth-child(3n+4):last-child){grid-template-columns:repeat(4,1fr);}
+}
+@media(min-width:721px) and (max-width:960px){
+  .rel-grid:has(> :nth-child(3n+4):last-child),
+  .related-grid:has(> :nth-child(3n+4):last-child){grid-template-columns:repeat(2,1fr);}
+}

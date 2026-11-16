@@ -72,6 +72,12 @@ build/make_termlinks.py   автолинковка понятий глоссар
 
     python3 build/make_cover.py картинка.webp essay-cob.html --alt "описание" --mobile-x 15 --og-center 0.3
     python3 build/patch_pages.py
+    python3 build/make_card_thumbs.py
+
+`make_card_thumbs.py` делает миниатюру 16:9 и ставит её во все карточки-ссылки
+на эту страницу («Читать дальше», материалы раздела, «Новое» на главной,
+«Тропы чтения»). Его нужно запускать и после `make_section_lists.py` и
+`make_paths.py`: они пересобирают карточки без миниатюр.
 
 Картинка — широкая, около 3:1 (лучше 2000×666). `--mobile-x` — точка
 обрезки на телефоне в процентах (0 — левый край), `--og-center` — центр
@@ -91,7 +97,7 @@ build/make_termlinks.py   автолинковка понятий глоссар
    иконки, JSON-LD, `<main>`, skip-link, подключит общие CSS и JS.
 4. Прогнать сборку в таком порядке:
    `make_section_lists.py` → `make_contents.py` → `patch_pages.py`
-   → `make_termlinks.py` → `make_feeds.py`
+   → `make_termlinks.py` → `make_card_thumbs.py` → `make_feeds.py`
 5. Добавить ссылку в подвал (колонка «Материалы») и на главную,
    если материал должен попасть в блок «свежее».
 
