@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+<script>document.documentElement.classList.replace('no-js','js');</script>
+<meta charset="UTF-8">
+<meta name="description" content="Шесть рабочих приёмов, экономика асимметричной информации и почему потребительская бдительность не работает. Плюс о том, что цинизм — тоже способ провалиться.">
+<meta property="og:title" content="Гринвошинг: не обман, а отрасль">
+<meta property="og:description" content="Шесть рабочих приёмов, экономика асимметричной информации и почему потребительская бдительность не работает. Плюс о том, что цинизм — тоже способ провалиться.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Гринвошинг: не обман, а отрасль — ЭкоСознание</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+.essay-tag{display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:2rem;}
+.essay-meta{display:flex;gap:3rem;padding:1.4rem 0;border-top:1px solid rgba(74,124,89,.18);border-bottom:1px solid rgba(74,124,89,.18);flex-wrap:wrap;}
+.essay-meta-item{font-size:.78rem;color:var(--ink-light);}
+.essay-meta-item strong{display:block;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:.3rem;}
+.essay>p{font-family:'Cormorant Garamond',serif;font-size:1.18rem;line-height:1.75;color:var(--ink);margin-bottom:1.8rem;}
+.essay>p:first-of-type::first-letter{font-size:4.6rem;font-weight:400;line-height:.85;float:left;margin:.25rem .6rem 0 0;color:var(--moss);font-family:'Cormorant Garamond',serif;}
+.essay h2 small{display:block;font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--clay);font-weight:400;margin-bottom:.7rem;}
+.essay blockquote p{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-style:italic;color:var(--ink-light);line-height:1.5;margin-bottom:.6rem!important;}
+.essay blockquote cite{font-family:'Jost',sans-serif;font-style:normal;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--moss);}
+.sb::before,.sb::after{content:'';flex:1;max-width:100px;height:1px;background:rgba(74,124,89,.25);}
+.idea{margin:3rem 0;padding:2.2rem 2.5rem 2.2rem 3rem;background:var(--cream);border-left:3px solid var(--moss);position:relative;}
+.idea::before{content:'Идея';position:absolute;top:-.7rem;left:2.2rem;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);background:var(--paper);padding:0 .6rem;}
+.idea p{font-family:'Cormorant Garamond',serif!important;font-size:1.15rem!important;font-style:italic;color:var(--ink)!important;line-height:1.55!important;margin:0!important;}
+.interlude small{font-family:'Jost',sans-serif;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sage);display:block;margin-bottom:1rem;}
+.interlude p{font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.7;color:rgba(211,230,208,.78);margin-bottom:1.3rem;}
+.numbers-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.15);margin:2rem 0;}
+.num-card{background:var(--cream);padding:1.4rem 1.1rem;text-align:center;}
+.num-card .n-big{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--moss);line-height:1;margin-bottom:.4rem;}
+.num-card .n-lbl{font-size:.74rem;line-height:1.5;color:var(--ink-light);}
+.principles-list{margin:2.5rem 0;border-left:2px solid var(--fern);padding-left:2rem;}
+.pl-item{margin-bottom:1.6rem;position:relative;}
+.pl-item:last-child{margin-bottom:0;}
+.pl-item::before{content:'';position:absolute;left:-2.15rem;top:.5rem;width:9px;height:9px;border-radius:50%;background:var(--moss);}
+.pl-num{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.3rem;}
+.pl-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--ink);margin-bottom:.4rem;}
+.pl-name em{font-style:italic;color:var(--moss);}
+.pl-desc{font-size:.92rem;line-height:1.75;color:var(--ink-light);}
+.sig{margin-top:5rem;padding-top:3rem;border-top:1px solid rgba(74,124,89,.18);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem;}
+.sig-a{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink-light);font-style:italic;}
+.sig-m{font-size:.74rem;letter-spacing:.1em;color:var(--sage);text-transform:uppercase;}
+.rel{background:var(--cream);padding:4rem;border-top:1px solid rgba(74,124,89,.15);}
+.rel-in{max-width:1100px;margin:0 auto;}
+.rel-label{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--moss);margin-bottom:1.5rem;}
+.rel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.15);}
+.rel-card{background:var(--cream);padding:1.6rem;text-decoration:none;transition:background .25s;}
+.rel-kind{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.5rem;}
+.reading-bar{position:fixed;top:0;left:0;height:2px;background:var(--moss);z-index:400;width:0%;transition:width .1s linear;}
+@media(max-width:720px){ .essay-hero,.essay,.rel{padding-left:1.5rem;padding-right:1.5rem;} .interlude{margin-left:-1.5rem;margin-right:-1.5rem;padding-left:1.5rem;padding-right:1.5rem;} .rel-grid{grid-template-columns:1fr;} .essay-meta{flex-direction:column;gap:1rem;} .numbers-row{grid-template-columns:1fr 1fr;} }
+</style>
+
+<style>
+.sources{margin:5rem 0 0;padding-top:2.5rem;border-top:1px solid rgba(74,124,89,.2);}
+.src-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;margin-bottom:1.6rem;}
+.src-title small{display:block;font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.22em; text-transform:uppercase;color:var(--clay-text);font-weight:400;margin-bottom:.6rem;}
+.src-list{list-style:none;counter-reset:src;padding:0;margin:0;}
+.src-list li{position:relative;padding-left:2.4rem;margin-bottom:1.1rem;font-size:.86rem; line-height:1.7;color:var(--ink-light);}
+.src-list li::before{counter-increment:src;content:counter(src,decimal-leading-zero); position:absolute;left:0;top:.15rem;font-family:'Jost',sans-serif;font-size:.66rem; letter-spacing:.1em;color:var(--sage-text);}
+.src-a{color:var(--ink);}
+a.term{color:inherit;text-decoration:none;border-bottom:1px dotted var(--fern-text);}
+a.term:hover{border-bottom-style:solid;color:var(--moss);}
+</style>
+<!-- ECO:MANAGED:head -->
+  <link rel="canonical" href="https://morgunkonstantin.github.io/ecology/essay-greenwashing.html">
+  <meta property="og:url" content="https://morgunkonstantin.github.io/ecology/essay-greenwashing.html">
+  <meta property="og:site_name" content="ЭкоСознание">
+  <meta property="og:image" content="https://morgunkonstantin.github.io/ecology/assets/img/greenwashing-og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Женщина с лупой приподнимает зелёный ярлык с листиком, а под ним карьер, дымящий завод, склад, грузовик и контейнеровоз.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://morgunkonstantin.github.io/ecology/assets/img/greenwashing-og.jpg">
+  <meta name="theme-color" content="#faf6ef">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","name":"Гринвошинг: не обман, а отрасль","headline":"Гринвошинг: не обман, а отрасль","description":"Шесть рабочих приёмов, экономика асимметричной информации и почему потребительская бдительность не работает. Плюс о том, что цинизм — тоже способ провалиться.","inLanguage":"ru-RU","url":"https://morgunkonstantin.github.io/ecology/essay-greenwashing.html","isPartOf":{"@type":"WebSite","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"},"publisher":{"@type":"Organization","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"},"datePublished":"2026-07-28","image":"https://morgunkonstantin.github.io/ecology/assets/img/greenwashing-og.jpg","author":{"@type":"Organization","name":"ЭкоСознание"},"articleSection":"Экономика"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://morgunkonstantin.github.io/ecology/"},{"@type":"ListItem","position":2,"name":"Экономика","item":"https://morgunkonstantin.github.io/ecology/section-economy.html"},{"@type":"ListItem","position":3,"name":"Гринвошинг: не обман, а отрасль","item":"https://morgunkonstantin.github.io/ecology/essay-greenwashing.html"}]}</script>
+<!-- /ECO:MANAGED:head -->
+</head>
+<body>
+<a class="skip-link" href="#content">Перейти к содержанию</a>
+
+<!-- ECO:MANAGED:nav -->
+<div class="g-nav-wrap" id="gNavWrap">
+  <div class="g-nav">
+    <a href="index.html" class="g-logo">
+      <svg viewBox="0 0 100 100" fill="none" class="logo-svg"><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#4a7c59"/></svg>
+      <span class="g-logo-text">Эко<em>Сознание</em></span>
+    </a>
+    <ul class="g-links">
+      <li>
+        <button class="g-drop-btn" aria-expanded="false">
+          Разделы
+          <svg class="g-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="g-dropdown">
+          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
+          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
+          <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
+          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
+          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
+          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">08</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">09</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">10</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">11</span></a>
+          <a href="section-science.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Наука</span><span class="g-dd-num">12</span></a>
+        </div>
+      </li>
+      <li><a href="about.html">О проекте</a></li>
+    </ul>
+    <button class="g-burger" id="gBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<div class="g-overlay" id="gOverlay">
+  <div class="g-ov-section">
+    <div class="g-ov-label">Разделы</div>
+    <div class="g-ov-grid">
+      <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Философия</span></a>
+      <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
+      <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
+      <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="g-ov-name">Технологии</span></a>
+      <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
+      <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
+      <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Экономика</span></a>
+      <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="g-ov-name">Образование</span></a>
+      <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
+      <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
+      <a href="section-health.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Здоровье</span></a>
+      <a href="section-science.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Наука</span></a>
+    </div>
+  </div>
+  <div class="g-ov-section">
+    <div class="g-ov-label">Навигация</div>
+    <div class="g-ov-simple-links">
+      <a href="index.html" class="g-ov-simple-link">Главная</a>
+      <a href="map.html" class="g-ov-simple-link">Карта связей</a>
+      <a href="contents.html" class="g-ov-simple-link">Все материалы</a>
+      <a href="revisions.html" class="g-ov-simple-link">Что не подтвердилось</a>
+      <a href="search.html" class="g-ov-simple-link">Поиск</a>
+      <a href="paths.html" class="g-ov-simple-link">Тропы чтения</a>
+      <a href="tree.html" class="g-ov-simple-link">Дерево материалов</a>
+      <a href="thinkers.html" class="g-ov-simple-link">Указатель имён</a>
+      <a href="about.html" class="g-ov-simple-link">О проекте</a>
+    </div>
+  </div>
+</div>
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<main id="content" tabindex="-1">
+<!-- ECO:MANAGED:breadcrumb -->
+<nav class="breadcrumb" aria-label="Хлебные крошки"><a href="index.html">Главная</a> <span class="bc-sep">→</span> <a href="section-economy.html">Экономика</a> <span class="bc-sep">→</span> <span class="bc-current">Гринвошинг: не обман, а отрасль</span></nav>
+<!-- /ECO:MANAGED:breadcrumb -->
+
+<div class="reading-bar" id="rb"></div>
+
+<figure class="hero-cover hero-cover--essay" style="--cover-x-mobile:8%;">
+  <img src="assets/img/greenwashing-hero-2000.webp"
+       srcset="assets/img/greenwashing-hero-1200.webp 1200w, assets/img/greenwashing-hero-2000.webp 2000w"
+       sizes="100vw" width="2000" height="666" fetchpriority="high" decoding="async"
+       alt="Женщина с лупой приподнимает зелёный ярлык с листиком, а под ним карьер, дымящий завод, склад, грузовик и контейнеровоз.">
+</figure>
+
+<section class="essay-hero">
+  <div class="essay-tag">Эссе · Экономика</div>
+  <h1>Гринвошинг:<br>не обман, <em>а отрасль</em></h1>
+  <div class="essay-meta">
+    <div class="essay-meta-item"><strong>Раздел</strong>Экономика</div>
+    <div class="essay-meta-item"><strong>Тип</strong>Политэкономия</div>
+    <div class="essay-meta-item"><strong>Темы</strong>Полотенца в отеле · Область охвата 3 · Асимметрия информации</div>
+    <div class="essay-meta-item"><strong>Время</strong>≈ 7 мин</div>
+    <!-- ECO:MANAGED:date --><div class="essay-meta-item"><strong>Опубликовано</strong><time datetime="2026-07-28">28 июля 2026</time></div><!-- /ECO:MANAGED:date -->
+  </div>
+</section>
+
+<article class="essay">
+
+  <p>Слово придумал в 1986 году американский студент Джей Вестервельд, написав эссе о карточках в гостиничных номерах, предлагающих повторно использовать полотенца ради спасения океана. Он обратил внимание, что отель, столь озабоченный природой, одновременно расширялся на прибрежную территорию, а экономия на стирке шла в его прибыль.</p>
+
+  <p>Пример хорош тем, что содержит всю конструкцию целиком. Действие реально: полотенца действительно стираются реже. Экологический эффект существует, хоть и мал. Выгода получателя не названа. И главное — жест адресован потребителю, тогда как основные решения принимаются не им.</p>
+
+  <p>Ошибочно думать, что гринвошинг — это ложь отдельных недобросовестных компаний. Это сложившийся сектор услуг: с поставщиками, стандартами, сертификатами, консультантами, аудиторами, рейтингами и вполне устойчивым спросом. Понимать его надо как отрасль, а не как проступок.</p>
+
+  <div class="sb">
+    <h2><small>Механика</small>Шесть <em>рабочих приёмов</em></h2>
+  </div>
+
+  <div class="principles-list">
+    <div class="pl-item">
+      <div class="pl-num">01</div>
+      <div class="pl-name">Выборочное раскрытие</div>
+      <div class="pl-desc">Публикуется показатель, по которому дела идут хорошо. Отчёт правдив в каждом утверждении и ложен как целое.</div>
+    </div>
+    <div class="pl-item">
+      <div class="pl-num">02</div>
+      <div class="pl-name">Неопределяемые слова</div>
+      <div class="pl-desc">«Экологичный», «натуральный», «ответственный», «климатически осознанный». Слова без определения нельзя проверить, а значит нельзя и опровергнуть.</div>
+    </div>
+    <div class="pl-item">
+      <div class="pl-num">03</div>
+      <div class="pl-name">Компенсация вместо сокращения</div>
+      <div class="pl-desc">Покупка зачётов взамен изменения производства. Учитывая, что происходит с качеством зачётов, это чаще всего перевод денег в обмен на формулировку.</div>
+    </div>
+    <div class="pl-item">
+      <div class="pl-num">04</div>
+      <div class="pl-name">Молчание об области охвата 3</div>
+      <div class="pl-desc">Компании охотно отчитываются по прямым выбросам и закупленной энергии. У большинства потребительских брендов и у нефтяных компаний основная часть следа лежит в цепочке поставок и в использовании продукции — то есть именно в той области, которая в отчёт не попадает.</div>
+    </div>
+    <div class="pl-item">
+      <div class="pl-num">05</div>
+      <div class="pl-name">Перенос цели за горизонт</div>
+      <div class="pl-desc">Обязательство к 2050 году без промежуточных рубежей. Руководитель, объявивший его, к сроку исполнения не будет ни в должности, ни, возможно, в живых.</div>
+    </div>
+    <div class="pl-item">
+      <div class="pl-num">06</div>
+      <div class="pl-name">Размножение знаков</div>
+      <div class="pl-desc">Экомаркировок в мире несколько сотен. Часть опирается на серьёзную проверку, часть выдаётся по заявлению и оплате. Потребитель отличить их не может, и в этом смысл.</div>
+    </div>
+  </div>
+
+  <div class="sb">
+    <h2><small>Почему это устойчиво</small>Спрос <em>на видимость</em></h2>
+  </div>
+
+  <p>Объяснение существования отрасли лежит в экономике информации, и оно неутешительно.</p>
+
+  <p>Потребитель хочет, чтобы товар был экологичным, но проверить это не может: у него нет доступа к цепочке поставок, нет измерительных приборов и нет времени. Следовательно, он покупает не свойство, а сигнал о свойстве. С точки зрения продавца это два разных товара с разной себестоимостью: изменить производство дорого, изменить упаковку и отчёт дёшево.</p>
+
+  <p>Когда покупатель не в состоянии различить два товара, а цены их различаются в тысячи раз, рынок сходится на дешёвом. Это классическая ситуация неблагоприятного отбора: добросовестный производитель несёт издержки, которых потребитель не видит, и проигрывает конкуренту, который несёт только издержки на коммуникацию.</p>
+
+  <p>Отсюда следует важное практическое: гринвошинг не лечится потребительской бдительностью. Требование «изучайте состав и выбирайте ответственные бренды» перекладывает на человека задачу верификации, невыполнимую по определению. Это ещё и очень удобное требование — оно занимает место разговора о регулировании.</p>
+
+  <blockquote>
+    <p>Когда свойство товара невозможно проверить, а сигнал о свойстве стоит дёшево, рынок начинает торговать сигналами. Проблема не в моральном облике компаний, а в устройстве информации — и решается она там же.</p>
+  </blockquote>
+
+  <div class="sb">
+    <h2><small>Случаи</small>Что происходило <em>в судах и регуляторах</em></h2>
+  </div>
+
+  <p>Практика последнего десятилетия показывает, что дело сдвигается — медленно и через принуждение.</p>
+
+  <p>История с дизельными двигателями Volkswagen 2015 года — строго говоря, не гринвошинг, а прямое мошенничество с программным обеспечением, занижавшим показания на испытаниях. Но она важна как случай, где рекламная кампания о чистоте держалась на подделке измерения: обнаружить это могли только исследователи с собственным оборудованием, что и произошло.</p>
+
+  <p>Реклама углеродно-нейтрального топлива вызвала разбирательства в нескольких юрисдикциях, и надзорные органы неоднократно признавали такие формулировки вводящими в заблуждение, поскольку нейтральность обеспечивалась зачётами сомнительного качества. В Нидерландах судебный спор об обязанностях нефтяной компании прошёл обе инстанции: суд первой инстанции в 2021 году предписал конкретное сокращение, апелляция в 2024-м это предписание отменила, подтвердив при этом наличие у компании обязанности проявлять заботу. Формулировка «обязанность есть, а её конкретное содержание суд назначать не вправе» довольно точно описывает нынешнее состояние вопроса.</p>
+
+  <p>Со стороны регулирования Евросоюз в 2024 году принял правила, запрещающие общие экологические утверждения без подтверждения и ограничивающие использование компенсаций в маркетинге. В сфере инвестиций надзорные органы занялись фондами устойчивого развития после того, как выяснилось, что их портфели зачастую мало отличаются от обычных.</p>
+
+  <p>Общее направление во всех случаях одно: от добровольного заявления к обязательному раскрытию по единой методике и к ответственности за его недостоверность. Это тот же путь, который прошла финансовая отчётность сто лет назад, и по той же причине.</p>
+
+  <div class="sb">
+    <h2><small>Оговорка</small>Цинизм <em>тоже способ провалиться</em></h2>
+  </div>
+
+  <p>Есть обратная ошибка, менее обсуждаемая и по-своему опасная.</p>
+
+  <p>Если всякое заявление объявляется гринвошингом заранее, то компания, действительно вложившаяся в изменение производства, получает ровно ту же реакцию, что и компания, вложившаяся в буклет. При таком раскладе рациональная стратегия — вкладываться в буклет, и стимул к настоящим изменениям исчезает совсем.</p>
+
+  <p>Различать поэтому необходимо, и различение вполне выполнимо по формальным признакам. Есть ли промежуточные цели с датами до 2030 года. Включена ли область охвата 3. Верифицирует ли отчётность независимая сторона, и кто ей платит. Совпадают ли заявления с тем, что компания говорит инвесторам и чего требует от отраслевых ассоциаций, в которых состоит. Последний признак самый показательный: расхождение между публичной позицией и лоббистской деятельностью выявляется легко и врёт редко.</p>
+
+  <p>И, пожалуй, главное. Гринвошинг существует потому, что репутация приносит доход быстрее, чем перестройка производства, — то есть по той же причине, по которой существует любой разрыв между показателем и явлением. Мы обсуждали этот разрыв применительно к ВВП, к углеродным зачётам и к сертификатам. Всякий раз, когда общество вводит показатель и начинает вознаграждать за его значение, возникает индустрия по производству значения в обход явления. Это не порок конкретной сферы, а свойство самой конструкции измерения, и учитывать его надо на этапе проектирования, а не возмущаться им потом.</p>
+
+  <section class="sources">
+    <h2 class="src-title"><small>Проверить</small>Источники</h2>
+    <ol class="src-list">
+      <li><span class="src-a">Westerveld J.</span>, 1986 — эссе, введшее термин; история изложена в ряде обзоров по экологической коммуникации.</li>
+      <li><span class="src-a">Akerlof G.</span> The Market for Lemons. Quarterly Journal of Economics, 1970 — механизм неблагоприятного отбора при асимметрии информации.</li>
+      <li><span class="src-a">Delmas M., Burbano V.</span> The Drivers of Greenwashing. California Management Review, 2011.</li>
+      <li><span class="src-a">CDP</span>, отчётность по областям охвата 1, 2 и 3; методика GHG Protocol.</li>
+      <li><span class="src-a">Директива ЕС</span> о расширении прав потребителей в контексте зелёного перехода, 2024 — запрет общих экологических утверждений без подтверждения.</li>
+      <li><span class="src-a">Milieudefensie и др. против Shell</span> — решение окружного суда Гааги, 2021; решение апелляционного суда, 2024.</li>
+      <li><span class="src-a">Ecolabel Index</span> — реестр действующих экологических маркировок.</li>
+    </ol>
+  </section>
+
+</article>
+
+<section class="rel">
+  <div class="rel-in">
+    <div class="rel-label">Читать дальше</div>
+    <div class="rel-grid">
+      <a href="essay-esg.html" class="rel-card">
+        <div class="rel-kind">Эссе · Экономика</div>
+        <div class="rel-name">ESG и устойчивое развитие: прибор или вывеска?</div>
+      </a>
+      <a href="essay-carbon-markets.html" class="rel-card">
+        <div class="rel-kind">Эссе</div>
+        <div class="rel-name">Углеродные рынки</div>
+      </a>
+      <a href="essay-biomimicry.html" class="rel-card">
+        <div class="rel-kind">Эссе</div>
+        <div class="rel-name">Биомимикрия и приставка «био-» как средство отмывания</div>
+      </a>
+      <a href="section-economy.html" class="rel-card">
+        <div class="rel-kind">Раздел</div>
+        <div class="rel-name">Экономика</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ECO:MANAGED:footer -->
+<footer class="gf">
+  <div class="gf-top">
+    <div class="gf-brand">
+      <a href="index.html" class="gf-logo">
+        <svg viewBox="0 0 100 100" fill="none" class="logo-svg" style="width:24px;height:24px;flex-shrink:0;"><circle cx="50" cy="50" r="40" stroke="#f3ede3" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#6ea87e"/></svg>
+        <span class="gf-logo-text">Эко<em>Сознание</em></span>
+      </a>
+      <p class="gf-tagline">Экологический взгляд как линза для любой сферы жизни</p>
+    </div>
+    <div class="gf-cols">
+      <div>
+        <div class="gf-col-title">Разделы</div>
+        <div class="gf-sections">
+          <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Философия</span></a>
+          <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
+          <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
+          <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="gf-sec-name">Технологии</span></a>
+          <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
+          <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
+          <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Экономика</span></a>
+          <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="gf-sec-name">Образование</span></a>
+          <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
+          <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
+          <a href="section-health.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Здоровье</span></a>
+          <a href="section-science.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Наука</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="gf-col-title">Навигация</div>
+        <nav class="gf-nav-links">
+          <a href="index.html" class="gf-nav-link">Главная</a>
+          <a href="map.html" class="gf-nav-link">Карта связей</a>
+          <a href="paths.html" class="gf-nav-link">Тропы чтения</a>
+          <a href="tree.html" class="gf-nav-link">Дерево материалов</a>
+          <a href="revisions.html" class="gf-nav-link">Что не подтвердилось</a>
+          <a href="thinkers.html" class="gf-nav-link">Указатель имён</a>
+          <a href="search.html" class="gf-nav-link">Поиск</a>
+          <a href="method.html" class="gf-nav-link">Как устроены материалы</a>
+            <a href="about.html" class="gf-nav-link">О проекте</a>
+          <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="gf-bottom">
+    <span class="gf-copy">© 2026 ЭкоСознание</span>
+    <div class="gf-bottom-links">
+      <a href="about.html">О проекте</a>
+      <a href="glossary.html">Глоссарий</a>
+    </div>
+  </div>
+</footer>
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+
+
+<!-- ECO:MANAGED:js -->
+<script src="assets/global.js" defer></script>
+<!-- /ECO:MANAGED:js -->
+</body>
+</html>

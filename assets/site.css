@@ -157,3 +157,98 @@ footer a:focus-visible,
 @media (max-width: 720px) {
   .g-ov-link, .gf-nav-link, .g-dd-link { min-height: 44px; display: flex; align-items: center; }
 }
+
+/* Хлебные крошки (вставляются patch_pages после <main>) */
+.breadcrumb{max-width:1320px;margin:0 auto;padding:1.1rem 2rem 0;font-family:'Jost',sans-serif;font-size:.72rem;letter-spacing:.05em;display:flex;flex-wrap:wrap;gap:.45rem;align-items:center;color:#7d9a82;}
+.breadcrumb a{color:var(--moss);text-decoration:none;}
+.breadcrumb a:hover{text-decoration:underline;}
+.breadcrumb .bc-sep{color:var(--sage);opacity:.65;}
+.breadcrumb .bc-current{color:var(--ink-light);}
+@media(max-width:720px){.breadcrumb{padding:.75rem 1.2rem 0;font-size:.68rem;}}
+
+/* ── Мобильная вёрстка (общий слой; перекрывает встроенные стили страниц) ── */
+@media (max-width: 860px) {
+  html body .hero { grid-template-columns: 1fr; padding: 7.5rem 1.5rem 3rem; gap: 2rem; }
+  html body .content-section { padding: 3.5rem 1.5rem; }
+  html body .article-layout,
+  html body .article-layout.wide { grid-template-columns: 1fr; gap: 2rem; }
+  html body .sources-grid,
+  html body .reason-grid,
+  html body .rubrics-grid,
+  html body .concepts-grid,
+  html body .numbers-strip { grid-template-columns: 1fr; }
+  html body .hyperobject-stat,
+  html body .practices-grid,
+  html body .tools-grid,
+  html body .info-panels { grid-template-columns: 1fr; }
+  html body .featured-strip,
+  html body .featured-article { grid-template-columns: 1fr; gap: 1.5rem; padding: 2rem 1.5rem; }
+  html body .timeline-item { grid-template-columns: 1fr; gap: .4rem; padding-left: 1.2rem; }
+  html body .spectrum-item { grid-template-columns: 1fr; gap: .5rem; }
+  html body .research-item { grid-template-columns: 1fr; gap: .4rem; }
+  html body .topic-item { grid-template-columns: 36px 1fr; gap: 1rem; }
+  html body .topic-item .topic-tag { grid-column: 2; justify-self: start; }
+  html body .thinker,
+  html body .profile,
+  html body .criticism,
+  html body .source-block,
+  html body .source-note { padding: 1.4rem 1.2rem 1.4rem 1.4rem; }
+  html body .g-next-section { padding: 2rem 1.5rem; flex-direction: column; align-items: flex-start; }
+  html body .article-layout > *, html body .hero > * { min-width: 0; }
+  html body .dark-section { margin-left: 0; margin-right: 0; padding: 3.5rem 1.5rem; }
+  html body .hero-meta { padding-left: 0; border-left: none; border-top: 1px solid rgba(74,124,89,.2); padding-top: 1.5rem; }
+}
+@media (max-width: 720px) {
+  /* длинные слова и ссылки не должны распирать страницу */
+  html body main, html body article, html body section { overflow-wrap: anywhere; }
+  html body img, html body svg, html body video { max-width: 100%; }
+  /* широкие таблицы прокручиваются внутри себя */
+  html body .material-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  html body .featured-btn { white-space: normal; text-align: center; }
+}
+@media (max-width: 540px) {
+  html body .idx-list, html body .sec-mat-grid { grid-template-columns: 1fr; }
+  html body .se-field input, html body input[type="search"], html body input[type="text"] { max-width: 100%; box-sizing: border-box; }
+}
+
+/* Шапка на телефоне: ссылки прячем, показываем бургер (открывает .g-overlay) */
+@media (max-width: 860px) {
+  html body .g-nav { padding: 0 1.25rem; }
+  html body .g-links { display: none; }
+  html body .g-burger { display: flex; margin-left: auto; }
+}
+
+/* Выпадающее меню «Разделы»: прижато к правому краю пункта, а не центрировано —
+   иначе у правого края окна обрезается */
+@media (min-width: 861px) {
+  html body .g-dropdown { left: auto; right: 0; transform: none; max-width: calc(100vw - 2rem); }
+}
+
+/* Тёмные полосы «featured»: описание было тёмным на тёмном фоне */
+html body .featured-strip p { color: rgba(211,230,208,.75); }
+/* Блок «Читайте также» в конце эссе */
+html body .see-also a { color: var(--moss); text-decoration: none; border-bottom: 1px solid rgba(74,124,89,.4); }
+html body .see-also a:hover { border-bottom-color: var(--moss); }
+
+/* ─── Обложка статьи (hero-cover) ─────────────────────────────────────
+   <figure class="hero-cover"> ставится сразу перед <section class="hero">
+   (или "essay-hero", "lab-hero"). Вставляет build/make_cover.py.
+   Картинка 3:1 на десктопе, 16:9 на телефоне. Точку кадрирования по
+   горизонтали задают переменные --cover-x и --cover-x-mobile. */
+.hero-cover{margin:0;padding:1.5rem 4rem 0;}
+.hero-cover img{display:block;width:100%;height:auto;aspect-ratio:3/1;object-fit:cover;object-position:var(--cover-x,50%) 50%;background:var(--warm);}
+html body .hero-cover + .hero{padding-top:4rem;}
+/* крупный номер раздела на фоне шапки (.hero::before с content:'04')
+   рассчитан на большой верхний отступ; под обложкой он наезжает на заголовок */
+.hero-cover + .hero::before{content:none!important;}
+/* эссе и лаборатории с узкой колонкой: обложка по ширине текста */
+.hero-cover--essay{max-width:1100px;margin:0 auto;}
+html body .hero-cover + .essay-hero,
+html body .hero-cover + .lab-hero{padding-top:4rem;}
+@media (max-width: 860px){
+  .hero-cover{padding:1rem 1.5rem 0;}
+  .hero-cover img{aspect-ratio:16/9;object-position:var(--cover-x-mobile,50%) 50%;}
+  html body .hero-cover + .hero,
+  html body .hero-cover + .essay-hero,
+  html body .hero-cover + .lab-hero{padding-top:2.5rem;}
+}

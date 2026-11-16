@@ -8,7 +8,6 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Все материалы">
   <meta property="og:description" content="Полный указатель «ЭкоСознания»: семнадцать разделов, эссе, лаборатории и разборы рубрики «Что не подтвердилось» — все материалы сайта на одной странице.">
-  <meta property="og:image" content="https://ecosoznanie.ru/og-image.jpg">
   <meta property="og:locale" content="ru_RU">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Все материалы">
@@ -99,6 +98,12 @@
 .idx-item:hover{background:var(--warm);}
 .idx-name{font-family:'Cormorant Garamond',serif;font-size:1.16rem;line-height:1.3;color:var(--ink);margin-bottom:.45rem;}
 .idx-desc{font-size:.8rem;line-height:1.65;color:var(--ink-light);}
+.idx-group h2 a.idx-sec-link{color:var(--ink);text-decoration:none;}
+.idx-group h2 a.idx-sec-link:hover{color:var(--moss);}
+.idx-sub{margin-top:1.9rem;margin-left:1.4rem;padding-left:1.5rem;border-left:2px solid rgba(74,124,89,.22);}
+.idx-sub h3{font-family:'Cormorant Garamond',serif;font-size:1.32rem;font-weight:400;margin-bottom:1rem;color:var(--ink);}
+.idx-sub h3 a{color:inherit;text-decoration:none;}.idx-sub h3 a:hover{color:var(--moss);}
+.idx-sub h3 .idx-arrow{color:var(--sage);margin-right:.4rem;}
 @media(max-width:720px){.idx-hero{padding:7rem 1.5rem 2rem;}.idx-body{padding:1rem 1.5rem 4rem;}}
 </style>
 <!-- ECO:MANAGED:head -->
@@ -124,6 +129,7 @@
 <body>
 <a class="skip-link" href="#content">Перейти к содержанию</a>
 
+<!-- ECO:MANAGED:nav -->
 <div class="g-nav-wrap" id="gNavWrap">
   <div class="g-nav">
     <a href="index.html" class="g-logo">
@@ -137,24 +143,20 @@
           <svg class="g-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
         </button>
         <div class="g-dropdown">
-          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
-          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
+          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
+          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
           <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
-          <a href="section-compost.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Компост</span><span class="g-dd-num">03b</span></a>
-          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
-          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
-          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
-          <a href="section-construction.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="g-dd-name">Строительство</span><span class="g-dd-num">06b</span></a>
-          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
-          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">08</span></a>
+          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
+          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
+          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
+          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">08</span></a>
           <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">09</span></a>
           <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">10</span></a>
-          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">11</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">11</span></a>
           <a href="section-science.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Наука</span><span class="g-dd-num">12</span></a>
         </div>
       </li>
-      <li><a href="index.html#latest">Эссе</a></li>
-      <li><a href="glossary.html">Глоссарий</a></li>
       <li><a href="about.html">О проекте</a></li>
     </ul>
     <button class="g-burger" id="gBurger" aria-label="Меню">
@@ -167,19 +169,17 @@
   <div class="g-ov-section">
     <div class="g-ov-label">Разделы</div>
     <div class="g-ov-grid">
-      <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Философия</span></a>
-      <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
+      <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Философия</span></a>
+      <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
       <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
-      <a href="section-compost.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Компост</span></a>
-      <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Технологии</span></a>
-      <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
-      <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
-      <a href="section-construction.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/></svg></span><span class="g-ov-name">Строительство</span></a>
-      <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="g-ov-name">Экономика</span></a>
-      <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Образование</span></a>
+      <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="g-ov-name">Технологии</span></a>
+      <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
+      <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
+      <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Экономика</span></a>
+      <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="g-ov-name">Образование</span></a>
       <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
       <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
-      <a href="section-health.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="g-ov-name">Здоровье</span></a>
+      <a href="section-health.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Здоровье</span></a>
       <a href="section-science.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Наука</span></a>
     </div>
   </div>
@@ -187,8 +187,6 @@
     <div class="g-ov-label">Навигация</div>
     <div class="g-ov-simple-links">
       <a href="index.html" class="g-ov-simple-link">Главная</a>
-      <a href="index.html#latest" class="g-ov-simple-link">Эссе и лаборатории</a>
-      <a href="glossary.html" class="g-ov-simple-link">Глоссарий</a>
       <a href="map.html" class="g-ov-simple-link">Карта связей</a>
       <a href="contents.html" class="g-ov-simple-link">Все материалы</a>
       <a href="revisions.html" class="g-ov-simple-link">Что не подтвердилось</a>
@@ -218,88 +216,209 @@
 <!-- /ECO:MANAGED:nav -->
 <!-- /ECO:MANAGED:nav -->
 <!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
 <main id="content" tabindex="-1">
+<!-- ECO:MANAGED:breadcrumb -->
+<nav class="breadcrumb" aria-label="Хлебные крошки"><a href="index.html">Главная</a> <span class="bc-sep">→</span> <span class="bc-current">Все материалы</span></nav>
+<!-- /ECO:MANAGED:breadcrumb -->
 <section class="idx-hero">
   <div class="idx-tag">Указатель</div>
   <h1>Все <em>материалы</em></h1>
-  <p class="idx-lead">Полный список того, что есть на сайте. Если вы ищете связи между темами, а не перечень, посмотрите <a href="map.html">карту связей</a>.</p>
+  <p class="idx-lead">Полный состав сайта по разделам, в той же иерархии, что и хлебные крошки: подразделы вложены в свои разделы. Если нужна сворачиваемая карта — <a href="tree.html">дерево материалов</a>; если связи между темами — <a href="map.html">карта связей</a>.</p>
 </section>
 
 <div class="idx-body">
   <section class="idx-group">
-    <h2>Разделы <em>по темам</em></h2>
-    <div class="idx-count">16 материалов</div>
+    <h2><a class="idx-sec-link" href="section-philosophy.html">Философия</a> <em>раздел</em></h2>
+    <div class="idx-count">7 материалов</div>
     <div class="idx-list">
-    <a class="idx-item" href="section-philosophy.html">
-      <div class="idx-name">Философия</div>
-      <div class="idx-desc">Экологический кризис как кризис восприятия. Хайдеггер, Тимоти Мортон, алетейя и гиперобъекты.</div>
+    <a class="idx-item" href="lab-heidegger-plastic.html">
+      <div class="idx-name">Алетейя пластика — Лаборатория №01</div>
+      <div class="idx-desc">Применение хайдеггеровской алетейи к повседневному пластиковому предмету. Философская лаборатория.</div>
     </a>
-    <a class="idx-item" href="section-psychology.html">
-      <div class="idx-name">Психология</div>
-      <div class="idx-desc">Соластальгия, биофилия, расширенный разум, разрыв с природой как психологическая травма.</div>
+    <a class="idx-item" href="term-hyperobject.html">
+      <div class="idx-name">Гиперобъект</div>
+      <div class="idx-desc">Сущность, настолько растянутая во времени и пространстве, что целиком не является нигде. Свойства по Мортону и критика Андреаса Мальма за…</div>
     </a>
-    <a class="idx-item" href="section-lifestyle.html">
-      <div class="idx-name">Стиль жизни</div>
-      <div class="idx-desc">Медленная жизнь как этическая позиция: slow movement, моттаинаи, сезонность, ремонт вместо замены. Внутри — подраздел «Компост».</div>
+    <a class="idx-item" href="lab-hyperobject-room.html">
+      <div class="idx-name">Гиперобъект в одной комнате — Лаборатория №02</div>
+      <div class="idx-desc">20 предметов на кухонном столе как следы климатических гиперобъектов. Полевая опись.</div>
     </a>
-    <a class="idx-item" href="section-technologies.html">
-      <div class="idx-name">Технологии</div>
-      <div class="idx-desc">Биомимикрия, регенеративные технологии, цикличность как принцип проектирования систем.</div>
+    <a class="idx-item" href="essay-demarchy.html">
+      <div class="idx-name">Демархия: что если решения принимать жребием?</div>
+      <div class="idx-desc">Демархия — назначение решающих не выборами, а жребием. От античных Афин, где жребий считался демократией, а выборы олигархией, до климатических…</div>
     </a>
-    <a class="idx-item" href="section-food.html">
-      <div class="idx-name">Питание</div>
-      <div class="idx-desc">Еда как отношение. Углеродный след тарелки, ультраобработанные продукты, местная еда и продовольственный суверенитет.</div>
+    <a class="idx-item" href="essay-zapovednik.html">
+      <div class="idx-name">Заповедник: единственная идея охраны природы, которая не про нас</div>
+      <div class="idx-desc">Кожевников, 1908: территория, изъятая не для людей, а от людей. Эталон как защита от сдвига базовой линии, два разгрома системы и возражения — от…</div>
     </a>
-    <a class="idx-item" href="section-compost.html">
-      <div class="idx-name">Компост</div>
-      <div class="idx-desc">Компостирование как начало экологического мышления. Зачем, как, что можно — и почему живая почва важнее, чем кажется.</div>
+    <a class="idx-item" href="essay-truth-and-climate.html">
+      <div class="idx-name">Истина — главный вопрос экологии</div>
+      <div class="idx-desc">Экологический кризис как кризис восприятия и языка. Алетейя, постправда, граждане'ские ассамблеи.</div>
     </a>
-    <a class="idx-item" href="section-architecture.html">
-      <div class="idx-name">Архитектура</div>
-      <div class="idx-desc">Здание как договор с климатом. Пассивный дом, вернакулярная архитектура, 15-минутный город и воплощённая энергия.</div>
-    </a>
-    <a class="idx-item" href="section-construction.html">
-      <div class="idx-name">Строительство</div>
-      <div class="idx-desc">Устойчивое строительство: тепловая масса, воплощённая энергия, пассивный и активный дизайн, альтернативные технологии и материалы.</div>
-    </a>
-    <a class="idx-item" href="section-economy.html">
-      <div class="idx-name">Экономика</div>
-      <div class="idx-desc">Экономика в пределах планеты. Doughnut Economics Кейт Раворт, degrowth, commons, экосистемные услуги.</div>
-    </a>
-    <a class="idx-item" href="section-education.html">
-      <div class="idx-name">Образование</div>
-      <div class="idx-desc">Образование как форма экологии. Скрытый учебный план, place-based education, лесные школы.</div>
-    </a>
-    <a class="idx-item" href="section-community.html">
-      <div class="idx-name">Сообщество</div>
-      <div class="idx-desc">Экологический образ жизни невозможен в одиночку. Commons, намеренные общины, совместное управление.</div>
-    </a>
-    <a class="idx-item" href="section-travel.html">
-      <div class="idx-name">Путешествия</div>
-      <div class="idx-desc">Перемещение и присутствие. Slow travel, паломничество, биорегиональные маршруты, флайгскам.</div>
-    </a>
-    <a class="idx-item" href="section-health.html">
-      <div class="idx-name">Здоровье</div>
-      <div class="idx-desc">Тело и планета — одна система. One Health, циркадные ритмы, экспозом и природа как медицина.</div>
-    </a>
-    <a class="idx-item" href="section-science.html">
-      <div class="idx-name">Наука</div>
-      <div class="idx-desc">Наука — экологический взгляд на само знание. Раздел объединяет два подраздела: гуманитарные и естественные науки. Тринадцать дисциплин в каждом, в…</div>
-    </a>
-    <a class="idx-item" href="section-humanities.html">
-      <div class="idx-name">Гуманитарные науки</div>
-      <div class="idx-desc">Гуманитарные науки в порядке исторического формирования — от философии до культурологии — и то, как каждую из них перестроила встреча с…</div>
-    </a>
-    <a class="idx-item" href="section-natural-sciences.html">
-      <div class="idx-name">Естественные науки</div>
-      <div class="idx-desc">Естественные науки в порядке исторического формирования — от астрономии до климатологии — и то, как каждая на своём пределе редукции обнаружила…</div>
+    <a class="idx-item" href="term-conviviality.html">
+      <div class="idx-name">Конвивиальность</div>
+      <div class="idx-desc">Понятие Ивана Иллича: инструмент расширяет вашу способность действовать или требует, чтобы вы его обслуживали. Радикальная монополия,…</div>
     </a>
     </div>
   </section>
   <section class="idx-group">
-    <h2>Эссе <em>длинные тексты</em></h2>
-    <div class="idx-count">62 материала</div>
+    <h2><a class="idx-sec-link" href="section-psychology.html">Психология</a> <em>раздел</em></h2>
+    <div class="idx-count">5 материалов</div>
     <div class="idx-list">
+    <a class="idx-item" href="lab-bateson-gpt.html">
+      <div class="idx-name">Бейтсон против ChatGPT — Лаборатория №05</div>
+      <div class="idx-desc">Расширенный разум в эпоху ИИ. Воображаемый диалог Грегори Бейтсона с языковой моделью.</div>
+    </a>
+    <a class="idx-item" href="essay-climate-anxiety-symptom.html">
+      <div class="idx-name">Климатическая тревога — болезнь или здравомыслие?</div>
+      <div class="idx-desc">Климатическая тревога соразмерна реальной угрозе — и потому не значится ни в одной классификации болезней. Данные глобального опроса Хикман…</div>
+    </a>
+    <a class="idx-item" href="essay-solastalgia.html">
+      <div class="idx-name">Соластальгия через одно место</div>
+      <div class="idx-desc">Горе по ландшафту, который меняется в твоём присутствии. Термин Гленна Альбрехта и личное эссе.</div>
+    </a>
+    <a class="idx-item" href="essay-eco-anxiety.html">
+      <div class="idx-name">Что происходит с нами, когда исчезает мир</div>
+      <div class="idx-desc">Экотревога, соластальгия, биофилия, экотерапия и активная надежда. Как современная психика переживает экологический кризис и как с этим жить.</div>
+    </a>
+    <a class="idx-item" href="essay-consciousness-evolution.html">
+      <div class="idx-name">Эволюция сознания — недостающее звено устойчивости</div>
+      <div class="idx-desc">Почему знаний и технологий недостаточно для устойчивого развития: ступени взрослого развития по Кигану, расширяющийся круг заботы, разрыв между…</div>
+    </a>
+    </div>
+  </section>
+  <section class="idx-group">
+    <h2><a class="idx-sec-link" href="section-lifestyle.html">Стиль жизни</a> <em>раздел</em></h2>
+    <div class="idx-count">6 материалов</div>
+    <div class="idx-list">
+    <a class="idx-item" href="lab-jacket-biography.html">
+      <div class="idx-name">Биография одной куртки — Лаборатория №03</div>
+      <div class="idx-desc">Трассировка цепочки поставок: 7 стран, 12 этапов до вешалки. Синтетика и её настоящая цена.</div>
+    </a>
+    <a class="idx-item" href="essay-moneyless-year.html">
+      <div class="idx-name">Год без денег: эксперимент Марка Бойла</div>
+      <div class="idx-desc">Что становится видно, когда деньги перестают быть невидимыми. Биографическое эссе.</div>
+    </a>
+    <a class="idx-item" href="essay-forest-activism.html">
+      <div class="idx-name">Лесной активизм: вырастить лес своими руками</div>
+      <div class="idx-desc">Как вырастить дерево из жёлудя, семени или черенка: какие виды каким способом размножать, горшки и мини-теплицы из пластиковых бутылок, зимовка в…</div>
+    </a>
+    <a class="idx-item" href="essay-slow-life.html">
+      <div class="idx-name">Медленнее — не значит ленивее</div>
+      <div class="idx-desc">Slow Food, Cittaslow, моттаинаи и sufficiency. Программное эссе о медленной жизни как этической позиции и форме экологического действия.</div>
+    </a>
+    </div>
+    <div class="idx-sub">
+      <h3><span class="idx-arrow">↳</span><a href="section-compost.html">Компост</a></h3>
+      <div class="idx-list">
+    <a class="idx-item" href="essay-apartment-compost.html">
+      <div class="idx-name">Компост в квартире</div>
+      <div class="idx-desc">Как перерабатывать пищевые отходы в городской квартире без запаха и дачи: вермикомпостер с червями, бокаши, морозилка и общий компост, что можно и…</div>
+    </a>
+    <a class="idx-item" href="essay-compost-return.html">
+      <div class="idx-name">Стрелка назад. Почему возврат вещества — самая недостроенная часть любого цикла</div>
+      <div class="idx-desc">Что происходит в компостной куче и почему это едва ли не самая конвивиальная технология из существующих. И неприятная арифметика: рычаг находится…</div>
+    </a>
+      </div>
+    </div>
+  </section>
+  <section class="idx-group">
+    <h2><a class="idx-sec-link" href="section-technologies.html">Технологии</a> <em>раздел</em></h2>
+    <div class="idx-count">9 материалов</div>
+    <div class="idx-list">
+    <a class="idx-item" href="lab-benyus-engineer.html">
+      <div class="idx-name">Бенюс и инженер нефтегазовой компании — Лаборатория №08</div>
+      <div class="idx-desc">Дженин Бенюс и инженер нефтегазовой компании. Диалог о биомимикрии и о том, как компания, добывающая нефть, может учиться у природы — не…</div>
+    </a>
+    <a class="idx-item" href="thing-battery.html">
+      <div class="idx-name">Биография одной пальчиковой батарейки</div>
+      <div class="idx-desc">Цинк, марганец, графит с трёх континентов ради 2,8 ватт-часа. Почему батарейка — худший способ хранить электричество и почему школьный миф про…</div>
+    </a>
+    <a class="idx-item" href="thing-server.html">
+      <div class="idx-name">Биография одной серверной стойки</div>
+      <div class="idx-desc">Сверхчистая вода, неон для литографии, пятая часть электропотребления Ирландии и десятилетие, когда вычислений стало вшестеро больше, а энергии…</div>
+    </a>
+    <a class="idx-item" href="essay-biomimicry.html">
+      <div class="idx-name">Биомимикрия: как природа решает задачи, которые мы только поставили</div>
+      <div class="idx-desc">Три уровня подражания по Дженин Бенюс, ревизия канонических примеров — что подтвердилось, а что нет, — и структурное возражение Джулиана Винсента.</div>
+    </a>
+    <a class="idx-item" href="lab-illich-benyus.html">
+      <div class="idx-name">Иллич и Бенюс: кто может это вырастить</div>
+      <div class="idx-desc">Мицелиальный материал как повод. Бенюс признаёт, что тридцать лет занималась химией и ни дня — собственностью; Илличу предъявляют отсутствие порога.</div>
+    </a>
+    <a class="idx-item" href="lab-illich-social.html">
+      <div class="idx-name">Иллич и разработчик соцсети — Лаборатория №09</div>
+      <div class="idx-desc">Иван Иллич встречает молодого разработчика соцсети. Диалог о конвивиальных инструментах, радикальной монополии и о том, как цифровая…</div>
+    </a>
+    <a class="idx-item" href="essay-clean-electricity.html">
+      <div class="idx-name">Какое электричество на самом деле чистое?</div>
+      <div class="idx-desc">Углеродный след источников электричества по жизненному циклу (оценки IPCC): уголь ~820, газ ~490, солнце ~48, гидро ~24, атом ~12, ветер ~11 г…</div>
+    </a>
+    <a class="idx-item" href="essay-tech-history.html">
+      <div class="idx-name">Технология — наша вторая природа. И первая беда</div>
+      <div class="idx-desc">История технологии и её экологический след — от огня до искусственного интеллекта. Мамфорд, Хабер-Бош, Великое ускорение, парадокс Джевонса, Иллич.</div>
+    </a>
+    <a class="idx-item" href="essay-eco-technologies.html">
+      <div class="idx-name">Экотехнологии: размер единицы предсказывает больше, чем идея</div>
+      <div class="idx-desc">Почему одни «зелёные» технологии дешевеют, а другие нет. Гранулярность по Уилсону и Грублеру, разделение обучения от масштаба и от опыта,…</div>
+    </a>
+    </div>
+  </section>
+  <section class="idx-group">
+    <h2><a class="idx-sec-link" href="section-food.html">Питание</a> <em>раздел</em></h2>
+    <div class="idx-count">5 материалов</div>
+    <div class="idx-list">
+    <a class="idx-item" href="thing-tomato.html">
+      <div class="idx-name">Биография зимнего помидора</div>
+      <div class="idx-desc">Пластиковое море Альмерии против голландского стекла, почему счёт по километрам вводит в заблуждение — и один ген, которым шестьдесят лет платили…</div>
+    </a>
+    <a class="idx-item" href="essay-virtual-water.html">
+      <div class="idx-name">Виртуальная вода: сколько её спрятано в тарелке</div>
+      <div class="idx-desc">Виртуальная вода — тонны воды, невидимо потраченные на еду: гамбургер ~2500 л, говядина >15 000 л/кг против овощей ~300. Диаграмма водного следа…</div>
+    </a>
+    <a class="idx-item" href="number-third.html">
+      <div class="idx-name">Треть еды: как считали и что это значит</div>
+      <div class="idx-desc">Организация, породившая это число, от него отказалась, а оно продолжает жить. Почему выбор знаменателя решает всё и почему сэкономленное не доедет…</div>
+    </a>
+    <a class="idx-item" href="essay-diet-carbon.html">
+      <div class="idx-name">Углеродный след тарелки: что весит больше всего</div>
+      <div class="idx-desc">Продукты отличаются по климатическому следу в десятки раз: говядина в ~100 раз дороже овощей. Диаграмма следа продуктов (данные Poore & Nemecek,…</div>
+    </a>
+    <a class="idx-item" href="essay-bread.html">
+      <div class="idx-name">Хлеб — и почему это меняет восприятие еды</div>
+      <div class="idx-desc">Как испечь хлеб на закваске дома и что это делает с отношением к еде. С методикой.</div>
+    </a>
+    </div>
+  </section>
+  <section class="idx-group">
+    <h2><a class="idx-sec-link" href="section-architecture.html">Архитектура</a> <em>раздел</em></h2>
+    <div class="idx-count">26 материалов</div>
+    <div class="idx-list">
+    <a class="idx-item" href="essay-vernacular.html">
+      <div class="idx-name">Вернакулярная архитектура: дома, которые знали свой климат</div>
+      <div class="idx-desc">Вернакулярная архитектура — народные дома, за тысячи лет настроенные на местный климат без всякой техники. Как охлаждались без кондиционера…</div>
+    </a>
+    <a class="idx-item" href="lab-15min-city.html">
+      <div class="idx-name">День в 15-минутном городе — Лаборатория №04</div>
+      <div class="idx-desc">Сравнительный хронометраж одного дня в двух городах. Что меняется в шаговой доступности.</div>
+    </a>
+    <a class="idx-item" href="essay-heritage-buildings.html">
+      <div class="idx-name">Самый зелёный дом — тот, что уже стоит</div>
+      <div class="idx-desc">Историческая архитектура — не вопрос ностальгии, а вопрос углеродного бюджета. Воплощённая энергия, Джейн Джейкобс, adaptive reuse и российский…</div>
+    </a>
+    <a class="idx-item" href="lab-heidegger-builder.html">
+      <div class="idx-name">Хайдеггер и строитель торгового центра — Лаборатория №07</div>
+      <div class="idx-desc">Хайдеггер и застройщик торгового центра. Воображаемый диалог о наличном запасе, месте и пространстве — на языке инвестиционного проекта.</div>
+    </a>
+    </div>
+    <div class="idx-sub">
+      <h3><span class="idx-arrow">↳</span><a href="section-construction.html">Строительство</a></h3>
+      <div class="idx-list">
     <a class="idx-item" href="essay-a-frame.html">
       <div class="idx-name">A-frame (дом-шалаш): крыша вместо стен</div>
       <div class="idx-desc">A-frame — дом-треугольник, где скатная крыша служит и стенами: одинаковые несущие рамы, снег съезжает сам, ветер обтекает, интерьер высотой в два…</div>
@@ -312,25 +431,9 @@
       <div class="idx-name">Earthship: дом, которому не нужны сети</div>
       <div class="idx-desc">Earthship — автономный дом Майкла Рейнольдса из шин, набитых землёй, с бутылочными перегородками, стеклянным южным фасадом, замкнутым круговоротом…</div>
     </a>
-    <a class="idx-item" href="essay-biomimicry.html">
-      <div class="idx-name">Биомимикрия: как природа решает задачи, которые мы только поставили</div>
-      <div class="idx-desc">Три уровня подражания по Дженин Бенюс, ревизия канонических примеров — что подтвердилось, а что нет, — и структурное возражение Джулиана Винсента.</div>
-    </a>
-    <a class="idx-item" href="essay-doughnut.html">
-      <div class="idx-name">ВВП меряет скорость. Нам нужен прибор, который мерит направление</div>
-      <div class="idx-desc">Экономика пончика Кейт Раворт: два кольца вместо стрелки роста, планетарные границы, спор о расцеплении и Амстердам как первая городская…</div>
-    </a>
-    <a class="idx-item" href="essay-vernadsky.html">
-      <div class="idx-name">Вернадский: мысль как геологическая сила. И почему это не утешает</div>
-      <div class="idx-desc">Биосфера как продукт жизни, живое вещество как измеримая величина, Гея в сравнении с Вернадским — и почему ноосфера остаётся самой слабой частью…</div>
-    </a>
-    <a class="idx-item" href="essay-vernacular.html">
-      <div class="idx-name">Вернакулярная архитектура: дома, которые знали свой климат</div>
-      <div class="idx-desc">Вернакулярная архитектура — народные дома, за тысячи лет настроенные на местный климат без всякой техники. Как охлаждались без кондиционера…</div>
-    </a>
-    <a class="idx-item" href="essay-virtual-water.html">
-      <div class="idx-name">Виртуальная вода: сколько её спрятано в тарелке</div>
-      <div class="idx-desc">Виртуальная вода — тонны воды, невидимо потраченные на еду: гамбургер ~2500 л, говядина >15 000 л/кг против овощей ~300. Диаграмма водного следа…</div>
+    <a class="idx-item" href="number-embodied.html">
+      <div class="idx-name">Воплощённая энергия дома: число, которое всё меняет местами</div>
+      <div class="idx-desc">Чем эффективнее здание, тем важнее его постройка. Углеродный всплеск от сноса, процессные выбросы цемента и порядок вопросов, который стоит поменять.</div>
     </a>
     <a class="idx-item" href="essay-reclaimed.html">
       <div class="idx-name">Вторичные материалы: энергия уже потрачена</div>
@@ -339,18 +442,6 @@
     <a class="idx-item" href="essay-clay-earth.html">
       <div class="idx-name">Глина и земля как строительный материал</div>
       <div class="idx-desc">Глина и земля — самый распространённый строительный материал на планете, из которого живёт треть человечества. Семья земляных техник (саман,…</div>
-    </a>
-    <a class="idx-item" href="essay-moneyless-year.html">
-      <div class="idx-name">Год без денег: эксперимент Марка Бойла</div>
-      <div class="idx-desc">Что становится видно, когда деньги перестают быть невидимыми. Биографическое эссе.</div>
-    </a>
-    <a class="idx-item" href="essay-greenwashing.html">
-      <div class="idx-name">Гринвошинг: не обман, а отрасль</div>
-      <div class="idx-desc">Шесть рабочих приёмов, экономика асимметричной информации и почему потребительская бдительность не работает. Плюс о том, что цинизм — тоже способ…</div>
-    </a>
-    <a class="idx-item" href="essay-demarchy.html">
-      <div class="idx-name">Демархия: что если решения принимать жребием?</div>
-      <div class="idx-desc">Демархия — назначение решающих не выборами, а жребием. От античных Афин, где жребий считался демократией, а выборы олигархией, до климатических…</div>
     </a>
     <a class="idx-item" href="essay-wood-clt.html">
       <div class="idx-name">Дерево и массивные панели (CLT): материал, который растёт</div>
@@ -364,93 +455,25 @@
       <div class="idx-name">Дом-теплица (пристроенный солярий): солнце вместо котла</div>
       <div class="idx-desc">Дом-теплица — остеклённый солярий у южной стены или стеклянная оболочка на весь дом: днём ловит солнце и греет комнаты, ночью служит буфером, а…</div>
     </a>
-    <a class="idx-item" href="essay-zapovednik.html">
-      <div class="idx-name">Заповедник: единственная идея охраны природы, которая не про нас</div>
-      <div class="idx-desc">Кожевников, 1908: территория, изъятая не для людей, а от людей. Эталон как защита от сдвига базовой линии, два разгрома системы и возражения — от…</div>
-    </a>
-    <a class="idx-item" href="essay-planetary-health.html">
-      <div class="idx-name">Здоровье человека — это здоровье планеты</div>
-      <div class="idx-desc">One Health, экспозом, микробиом, планетарные границы. Программное эссе о том, как здоровье человека связано со здоровьем планеты.</div>
-    </a>
     <a class="idx-item" href="essay-building-technologies.html">
       <div class="idx-name">Из чего и как строить: технологии, материалы и типы дома</div>
       <div class="idx-desc">Двадцать способов построить дом, который продолжает место, а не борется с ним: земля, солома, камень, дерево, конопля, префаб, земляные дома, юрта…</div>
-    </a>
-    <a class="idx-item" href="essay-truth-and-climate.html">
-      <div class="idx-name">Истина — главный вопрос экологии</div>
-      <div class="idx-desc">Экологический кризис как кризис восприятия и языка. Алетейя, постправда, граждане'ские ассамблеи.</div>
-    </a>
-    <a class="idx-item" href="essay-kosmologicheskaya-kartina-mira.html">
-      <div class="idx-name">Как менялась космологическая картина мира</div>
-      <div class="idx-desc">Девять вех космологической картины мира — от мифологического космоса с твердью небесной через гелиоцентризм, бесконечную Вселенную и галактики к…</div>
-    </a>
-    <a class="idx-item" href="essay-nauchnaya-kartina-mira.html">
-      <div class="idx-name">Как менялась научная картина мира</div>
-      <div class="idx-desc">Девять исторических вех научной картины мира — от замкнутого космоса античности через механику Ньютона, относительность и квант к планетарной…</div>
-    </a>
-    <a class="idx-item" href="essay-clean-electricity.html">
-      <div class="idx-name">Какое электричество на самом деле чистое?</div>
-      <div class="idx-desc">Углеродный след источников электричества по жизненному циклу (оценки IPCC): уголь ~820, газ ~490, солнце ~48, гидро ~24, атом ~12, ветер ~11 г…</div>
-    </a>
-    <a class="idx-item" href="essay-emissions-map.html">
-      <div class="idx-name">Карта выбросов: где на самом деле углерод</div>
-      <div class="idx-desc">Откуда на самом деле берутся выбросы: карта по секторам (данные Our World in Data). Две трети — энергия (промышленность, транспорт, здания), пятая…</div>
-    </a>
-    <a class="idx-item" href="essay-climate-anxiety-symptom.html">
-      <div class="idx-name">Климатическая тревога — болезнь или здравомыслие?</div>
-      <div class="idx-desc">Климатическая тревога соразмерна реальной угрозе — и потому не значится ни в одной классификации болезней. Данные глобального опроса Хикман…</div>
     </a>
     <a class="idx-item" href="essay-hempcrete.html">
       <div class="idx-name">Костробетон (конопля и известь): стена, поглощающая углерод</div>
       <div class="idx-desc">Костробетон (hempcrete) — костра конопли с известью и водой вокруг деревянного каркаса: редкое сочетание изоляции и тепловой массы в одном слое,…</div>
     </a>
-    <a class="idx-item" href="essay-keeling-curve.html">
-      <div class="idx-name">Кривая Килинга: как увидели, что воздух меняется</div>
-      <div class="idx-desc">Кривая Килинга — главный портрет климатической науки: рост CO₂ в атмосфере с ~315 (1958) до ~420+ млн⁻¹ сегодня, измеренный Чарльзом Килингом на…</div>
-    </a>
-    <a class="idx-item" href="essay-kropotkin.html">
-      <div class="idx-name">Кропоткин в Сибири. Что он искал и чего не нашёл</div>
-      <div class="idx-desc">Почему русский натуралист не увидел в природе борьбы за существование, как ответ Гексли стал «Взаимной помощью», что подтвердила биология — и в…</div>
-    </a>
     <a class="idx-item" href="essay-tiny-house-wheels.html">
       <div class="idx-name">Крошечный дом на колёсах (tiny house): жильё без фундамента</div>
       <div class="idx-desc">Крошечный дом на колёсах (tiny house on wheels) — полноценное жильё на прицепе в габарите дороги: свобода от участка и ипотеки, минимальный след,…</div>
-    </a>
-    <a class="idx-item" href="essay-carbon-cycle.html">
-      <div class="idx-name">Круговорот углерода: одна лишняя стрелка</div>
-      <div class="idx-desc">Круговорот углерода на одной схеме: атмосфера, суша и океан обмениваются углеродом в равновесии, а человек добавил один лишний односторонний поток…</div>
-    </a>
-    <a class="idx-item" href="essay-imperial-ecology.html">
-      <div class="idx-name">Куда уехала грязь. Экологический империализм и арифметика чистого воздуха</div>
-      <div class="idx-desc">Меморандум Саммерса 1991 года, две колонки учёта выбросов, «Национальный меч» и пограничный углеродный механизм. И довод «вам было можно, а нам…</div>
-    </a>
-    <a class="idx-item" href="essay-forest-medicine.html">
-      <div class="idx-name">Лес как лекарство: целительная сила природы</div>
-      <div class="idx-desc">Контакт с природой лечит измеримо: ниже давление и кортизол, меньше тревоги и депрессии, выше иммунитет, быстрее выздоровление (эксперимент…</div>
-    </a>
-    <a class="idx-item" href="essay-critical-minerals.html">
-      <div class="idx-name">Литий, кобальт и цена чистого перехода</div>
-      <div class="idx-desc">Кустарная добыча в Конго, вода в Атакаме, никель на угле — и необходимое сравнение порядков величин, из-за которого оба утверждения оказываются…</div>
     </a>
     <a class="idx-item" href="essay-small-house.html">
       <div class="idx-name">Маленький дом: сорок метров, спроектированных как сто</div>
       <div class="idx-desc">Маленький дом — самый сильный экологический рычаг в строительстве: площадь бьёт по воплощённой и эксплуатационной энергии сразу. Почему…</div>
     </a>
-    <a class="idx-item" href="essay-slow-life.html">
-      <div class="idx-name">Медленнее — не значит ленивее</div>
-      <div class="idx-desc">Slow Food, Cittaslow, моттаинаи и sufficiency. Программное эссе о медленной жизни как этической позиции и форме экологического действия.</div>
-    </a>
     <a class="idx-item" href="essay-modular-prefab.html">
       <div class="idx-name">Модульный и префаб-дом: точность цеха вместо площадки</div>
       <div class="idx-desc">Модульный и префаб-дом — сборка в цеху вместо стройки на площадке: панели или объёмные модули, точность и сухость, герметичность пассивного…</div>
-    </a>
-    <a class="idx-item" href="essay-community-power.html">
-      <div class="idx-name">Никто не спасает планету в одиночку</div>
-      <div class="idx-desc">Почему индивидуальная ответственность оказалась удобной идеей — и что происходит там, где люди объединяются. Текст, потерянный между июльской…</div>
-    </a>
-    <a class="idx-item" href="essay-right-to-repair.html">
-      <div class="idx-name">Право на ремонт: спор о том, кому принадлежит вещь после покупки</div>
-      <div class="idx-desc">Картель «Фебус», спаривание деталей, французский индекс ремонтопригодности — и почему «чинить, а не выбрасывать» хороший лозунг и плохое правило.</div>
     </a>
     <a class="idx-item" href="essay-rammed-earth.html">
       <div class="idx-name">Прессованная земля (rammed earth): стена в полоску</div>
@@ -464,69 +487,13 @@
       <div class="idx-name">Саман и лёгкий саман (cob): дом, слепленный руками</div>
       <div class="idx-desc">Саман (cob) — глина, песок и солома, слепленные руками без опалубки и кирпичей: свобода формы, самый низкий порог входа, здоровый микроклимат. Чем…</div>
     </a>
-    <a class="idx-item" href="essay-flight-carbon.html">
-      <div class="idx-name">Самолёт в комнате: можно ли путешествовать экологично?</div>
-      <div class="idx-desc">Углеродная цена полёта — главное, что обходит стороной разговор об экотуризме. Почему один дальний перелёт равен годовому бюджету CO₂, отчего…</div>
-    </a>
-    <a class="idx-item" href="essay-heritage-buildings.html">
-      <div class="idx-name">Самый зелёный дом — тот, что уже стоит</div>
-      <div class="idx-desc">Историческая архитектура — не вопрос ностальгии, а вопрос углеродного бюджета. Воплощённая энергия, Джейн Джейкобс, adaptive reuse и российский…</div>
-    </a>
-    <a class="idx-item" href="essay-solastalgia.html">
-      <div class="idx-name">Соластальгия через одно место</div>
-      <div class="idx-desc">Горе по ландшафту, который меняется в твоём присутствии. Термин Гленна Альбрехта и личное эссе.</div>
-    </a>
     <a class="idx-item" href="essay-straw-bale.html">
       <div class="idx-name">Соломенные блоки (straw-bale): отход, который греет</div>
       <div class="idx-desc">Соломенные блоки (straw-bale) — спрессованные тюки соломы как огромные кирпичи, оштукатуренные с двух сторон: выдающаяся изоляция, счета за…</div>
     </a>
-    <a class="idx-item" href="essay-compost-return.html">
-      <div class="idx-name">Стрелка назад. Почему возврат вещества — самая недостроенная часть любого цикла</div>
-      <div class="idx-desc">Что происходит в компостной куче и почему это едва ли не самая конвивиальная технология из существующих. И неприятная арифметика: рычаг находится…</div>
-    </a>
-    <a class="idx-item" href="essay-tech-history.html">
-      <div class="idx-name">Технология — наша вторая природа. И первая беда</div>
-      <div class="idx-desc">История технологии и её экологический след — от огня до искусственного интеллекта. Мамфорд, Хабер-Бош, Великое ускорение, парадокс Джевонса, Иллич.</div>
-    </a>
-    <a class="idx-item" href="essay-slow-travel.html">
-      <div class="idx-name">Тридцать дней в одном месте. Что видит путешественник, которого нет на фото</div>
-      <div class="idx-desc">Различение перевозки и странствия у Тима Ингольда, арифметика авиационных выбросов, овертуризм и эффект ослабления памяти при съёмке. И три…</div>
-    </a>
-    <a class="idx-item" href="essay-carbon-markets.html">
-      <div class="idx-name">Углеродные рынки: почему механизм, который должен был работать, в основном не сработал</div>
-      <div class="idx-desc">Пигу, Коуз и четыре условия, при которых сработала торговля выбросами серы. Почему ни одно из них не выполняется для углерода и что делать вместо.</div>
-    </a>
-    <a class="idx-item" href="essay-diet-carbon.html">
-      <div class="idx-name">Углеродный след тарелки: что весит больше всего</div>
-      <div class="idx-desc">Продукты отличаются по климатическому следу в десятки раз: говядина в ~100 раз дороже овощей. Диаграмма следа продуктов (данные Poore & Nemecek,…</div>
-    </a>
-    <a class="idx-item" href="essay-morning-light.html">
-      <div class="idx-name">Утренний свет: десять минут</div>
-      <div class="idx-desc">Циркадные ритмы и утренний солнечный свет. От нобелевской хронобиологии до конкретного протокола.</div>
-    </a>
     <a class="idx-item" href="essay-van-boat.html">
       <div class="idx-name">Фургон и лодка (van-life): жильё в движении</div>
       <div class="idx-desc">Фургон-дом и жизнь на лодке — жильё, доведённое до предела: вода в литрах, энергия в ватт-часах, солнечная панель как единственный источник.…</div>
-    </a>
-    <a class="idx-item" href="essay-bread.html">
-      <div class="idx-name">Хлеб — и почему это меняет восприятие еды</div>
-      <div class="idx-desc">Как испечь хлеб на закваске дома и что это делает с отношением к еде. С методикой.</div>
-    </a>
-    <a class="idx-item" href="essay-commons.html">
-      <div class="idx-name">Что не помещается между государством и рынком</div>
-      <div class="idx-desc">Восемь принципов Элинор Остром, commons, экодеревни, городские микро-сообщества. Программное эссе о третьей форме организации между государством и…</div>
-    </a>
-    <a class="idx-item" href="essay-community-survives.html">
-      <div class="idx-name">Что нужно общине, чтобы не распасться</div>
-      <div class="idx-desc">Шесть принципов устойчивых намеренных общин по Диане Лиф Кристиан.</div>
-    </a>
-    <a class="idx-item" href="essay-eco-anxiety.html">
-      <div class="idx-name">Что происходит с нами, когда исчезает мир</div>
-      <div class="idx-desc">Экотревога, соластальгия, биофилия, экотерапия и активная надежда. Как современная психика переживает экологический кризис и как с этим жить.</div>
-    </a>
-    <a class="idx-item" href="essay-place-based.html">
-      <div class="idx-name">Шесть вопросов Гэри Снайдера. Почему место — главный учебник экологии</div>
-      <div class="idx-desc">Гэри Снайдер, биорегионализм и place-based education: почему нельзя отвечать за биосферу, не зная, откуда в кране вода. И почему из вашего…</div>
     </a>
     <a class="idx-item" href="essay-passive-design.html">
       <div class="idx-name">Шесть принципов пассивного дизайна</div>
@@ -536,143 +503,198 @@
       <div class="idx-name">Шесть способов построить дом иначе</div>
       <div class="idx-desc">Землянка, earthbag, earthship, A-frame, дом-теплица, модульный дом — шесть альтернативных подходов к строительству, у каждого своя философия и…</div>
     </a>
-    <a class="idx-item" href="essay-crisis-of-education.html">
-      <div class="idx-name">Экологический кризис — это кризис образования (Дэвид Орр)</div>
-      <div class="idx-desc">Дэвид Орр: экологический кризис — не провал образования, а его результат, ведь разрушают планету эффективнее всего наиболее образованные. Почему…</div>
-    </a>
-    <a class="idx-item" href="essay-eco-technologies.html">
-      <div class="idx-name">Экотехнологии: размер единицы предсказывает больше, чем идея</div>
-      <div class="idx-desc">Почему одни «зелёные» технологии дешевеют, а другие нет. Гранулярность по Уилсону и Грублеру, разделение обучения от масштаба и от опыта,…</div>
-    </a>
     <a class="idx-item" href="essay-yurt.html">
       <div class="idx-name">Юрта: три тысячи лет аэродинамики</div>
       <div class="idx-desc">Юрта — переносное жилище кочевников Центральной Азии: решётчатые стены, жерди купола, войлок и верёвки, сборка за полдня без фундамента. Почему…</div>
     </a>
+      </div>
     </div>
   </section>
   <section class="idx-group">
-    <h2>Лаборатории <em>диалоги и мысленные эксперименты</em></h2>
-    <div class="idx-count">12 материалов</div>
+    <h2><a class="idx-sec-link" href="section-economy.html">Экономика</a> <em>раздел</em></h2>
+    <div class="idx-count">11 материалов</div>
     <div class="idx-list">
-    <a class="idx-item" href="lab-heidegger-plastic.html">
-      <div class="idx-name">Алетейя пластика — Лаборатория №01</div>
-      <div class="idx-desc">Применение хайдеггеровской алетейи к повседневному пластиковому предмету. Философская лаборатория.</div>
+    <a class="idx-item" href="essay-esg.html">
+      <div class="idx-name">ESG и устойчивое развитие: прибор или вывеска?</div>
+      <div class="idx-desc">Что такое ESG и как оно связано с устойчивым развитием: все 17 Целей устойчивого развития ООН с ключевыми цифрами, почему до 2030 года мир отстаёт…</div>
     </a>
-    <a class="idx-item" href="lab-hyperobject-room.html">
-      <div class="idx-name">Гиперобъект в одной комнате — Лаборатория №02</div>
-      <div class="idx-desc">20 предметов на кухонном столе как следы климатических гиперобъектов. Полевая опись.</div>
+    <a class="idx-item" href="essay-doughnut.html">
+      <div class="idx-name">ВВП меряет скорость. Нам нужен прибор, который мерит направление</div>
+      <div class="idx-desc">Экономика пончика Кейт Раворт: два кольца вместо стрелки роста, планетарные границы, спор о расцеплении и Амстердам как первая городская…</div>
     </a>
-    <a class="idx-item" href="lab-jacket-biography.html">
-      <div class="idx-name">Биография одной куртки — Лаборатория №03</div>
-      <div class="idx-desc">Трассировка цепочки поставок: 7 стран, 12 этапов до вешалки. Синтетика и её настоящая цена.</div>
+    <a class="idx-item" href="essay-greenwashing.html">
+      <div class="idx-name">Гринвошинг: не обман, а отрасль</div>
+      <div class="idx-desc">Шесть рабочих приёмов, экономика асимметричной информации и почему потребительская бдительность не работает. Плюс о том, что цинизм — тоже способ…</div>
     </a>
-    <a class="idx-item" href="lab-15min-city.html">
-      <div class="idx-name">День в 15-минутном городе — Лаборатория №04</div>
-      <div class="idx-desc">Сравнительный хронометраж одного дня в двух городах. Что меняется в шаговой доступности.</div>
-    </a>
-    <a class="idx-item" href="lab-bateson-gpt.html">
-      <div class="idx-name">Бейтсон против ChatGPT — Лаборатория №05</div>
-      <div class="idx-desc">Расширенный разум в эпоху ИИ. Воображаемый диалог Грегори Бейтсона с языковой моделью.</div>
-    </a>
-    <a class="idx-item" href="lab-raworth-chinovnik.html">
-      <div class="idx-name">Раворт против экономического языка — Лаборатория №06</div>
-      <div class="idx-desc">Кейт Раворт и российский экономический язык. Воображаемый диалог о ВВП, росте и планетарных границах — на уровне пресс-конференции.</div>
-    </a>
-    <a class="idx-item" href="lab-heidegger-builder.html">
-      <div class="idx-name">Хайдеггер и строитель торгового центра — Лаборатория №07</div>
-      <div class="idx-desc">Хайдеггер и застройщик торгового центра. Воображаемый диалог о наличном запасе, месте и пространстве — на языке инвестиционного проекта.</div>
-    </a>
-    <a class="idx-item" href="lab-benyus-engineer.html">
-      <div class="idx-name">Бенюс и инженер нефтегазовой компании — Лаборатория №08</div>
-      <div class="idx-desc">Дженин Бенюс и инженер нефтегазовой компании. Диалог о биомимикрии и о том, как компания, добывающая нефть, может учиться у природы — не…</div>
-    </a>
-    <a class="idx-item" href="lab-illich-social.html">
-      <div class="idx-name">Иллич и разработчик соцсети — Лаборатория №09</div>
-      <div class="idx-desc">Иван Иллич встречает молодого разработчика соцсети. Диалог о конвивиальных инструментах, радикальной монополии и о том, как цифровая…</div>
+    <a class="idx-item" href="essay-emissions-map.html">
+      <div class="idx-name">Карта выбросов: где на самом деле углерод</div>
+      <div class="idx-desc">Откуда на самом деле берутся выбросы: карта по секторам (данные Our World in Data). Две трети — энергия (промышленность, транспорт, здания), пятая…</div>
     </a>
     <a class="idx-item" href="lab-morton-raworth.html">
       <div class="idx-name">Кольцо, которого нет: Мортон против Раворт</div>
       <div class="idx-desc">Спор о том, можно ли изобразить гиперобъект диаграммой. Раворт признаёт, что точность обменена на возможность решения; Мортона спрашивают, что…</div>
     </a>
-    <a class="idx-item" href="lab-illich-benyus.html">
-      <div class="idx-name">Иллич и Бенюс: кто может это вырастить</div>
-      <div class="idx-desc">Мицелиальный материал как повод. Бенюс признаёт, что тридцать лет занималась химией и ни дня — собственностью; Илличу предъявляют отсутствие порога.</div>
+    <a class="idx-item" href="essay-imperial-ecology.html">
+      <div class="idx-name">Куда уехала грязь. Экологический империализм и арифметика чистого воздуха</div>
+      <div class="idx-desc">Меморандум Саммерса 1991 года, две колонки учёта выбросов, «Национальный меч» и пограничный углеродный механизм. И довод «вам было можно, а нам…</div>
+    </a>
+    <a class="idx-item" href="essay-critical-minerals.html">
+      <div class="idx-name">Литий, кобальт и цена чистого перехода</div>
+      <div class="idx-desc">Кустарная добыча в Конго, вода в Атакаме, никель на угле — и необходимое сравнение порядков величин, из-за которого оба утверждения оказываются…</div>
+    </a>
+    <a class="idx-item" href="essay-right-to-repair.html">
+      <div class="idx-name">Право на ремонт: спор о том, кому принадлежит вещь после покупки</div>
+      <div class="idx-desc">Картель «Фебус», спаривание деталей, французский индекс ремонтопригодности — и почему «чинить, а не выбрасывать» хороший лозунг и плохое правило.</div>
+    </a>
+    <a class="idx-item" href="lab-raworth-chinovnik.html">
+      <div class="idx-name">Раворт против экономического языка — Лаборатория №06</div>
+      <div class="idx-desc">Кейт Раворт и российский экономический язык. Воображаемый диалог о ВВП, росте и планетарных границах — на уровне пресс-конференции.</div>
     </a>
     <a class="idx-item" href="lab-degrowth-ecomodern.html">
       <div class="idx-name">Спор о расцеплении, в котором обе стороны правы наполовину</div>
       <div class="idx-desc">Дегроус против экомодернизма, помещённые в комнату, где сидит человек с планом на двадцать лет. Что остаётся, когда ищешь решения, устойчивые к…</div>
     </a>
-    </div>
-  </section>
-  <section class="idx-group">
-    <h2>Биография вещи <em>одна вещь до самого начала</em></h2>
-    <div class="idx-count">3 материала</div>
-    <div class="idx-list">
-    <a class="idx-item" href="thing-battery.html">
-      <div class="idx-name">Биография одной пальчиковой батарейки</div>
-      <div class="idx-desc">Цинк, марганец, графит с трёх континентов ради 2,8 ватт-часа. Почему батарейка — худший способ хранить электричество и почему школьный миф про…</div>
-    </a>
-    <a class="idx-item" href="thing-server.html">
-      <div class="idx-name">Биография одной серверной стойки</div>
-      <div class="idx-desc">Сверхчистая вода, неон для литографии, пятая часть электропотребления Ирландии и десятилетие, когда вычислений стало вшестеро больше, а энергии…</div>
-    </a>
-    <a class="idx-item" href="thing-tomato.html">
-      <div class="idx-name">Биография зимнего помидора</div>
-      <div class="idx-desc">Пластиковое море Альмерии против голландского стекла, почему счёт по километрам вводит в заблуждение — и один ген, которым шестьдесят лет платили…</div>
+    <a class="idx-item" href="essay-carbon-markets.html">
+      <div class="idx-name">Углеродные рынки: почему механизм, который должен был работать, в основном не сработал</div>
+      <div class="idx-desc">Пигу, Коуз и четыре условия, при которых сработала торговля выбросами серы. Почему ни одно из них не выполняется для углерода и что делать вместо.</div>
     </a>
     </div>
   </section>
   <section class="idx-group">
-    <h2>Одно место во времени <em>территория как аргумент</em></h2>
+    <h2><a class="idx-sec-link" href="section-education.html">Образование</a> <em>раздел</em></h2>
     <div class="idx-count">3 материала</div>
     <div class="idx-list">
+    <a class="idx-item" href="essay-place-based.html">
+      <div class="idx-name">Шесть вопросов Гэри Снайдера. Почему место — главный учебник экологии</div>
+      <div class="idx-desc">Гэри Снайдер, биорегионализм и place-based education: почему нельзя отвечать за биосферу, не зная, откуда в кране вода. И почему из вашего…</div>
+    </a>
+    <a class="idx-item" href="essay-outdoor-school.html">
+      <div class="idx-name">Школа под открытым небом</div>
+      <div class="idx-desc">Обучение на природе: лесные детские сады Дании и Германии, Forest School и udeskole, российская традиция юннатов и школьных лесничеств, что…</div>
+    </a>
+    <a class="idx-item" href="essay-crisis-of-education.html">
+      <div class="idx-name">Экологический кризис — это кризис образования (Дэвид Орр)</div>
+      <div class="idx-desc">Дэвид Орр: экологический кризис — не провал образования, а его результат, ведь разрушают планету эффективнее всего наиболее образованные. Почему…</div>
+    </a>
+    </div>
+  </section>
+  <section class="idx-group">
+    <h2><a class="idx-sec-link" href="section-community.html">Сообщество</a> <em>раздел</em></h2>
+    <div class="idx-count">6 материалов</div>
+    <div class="idx-list">
+    <a class="idx-item" href="essay-kropotkin.html">
+      <div class="idx-name">Кропоткин в Сибири. Что он искал и чего не нашёл</div>
+      <div class="idx-desc">Почему русский натуралист не увидел в природе борьбы за существование, как ответ Гексли стал «Взаимной помощью», что подтвердила биология — и в…</div>
+    </a>
+    <a class="idx-item" href="essay-community-power.html">
+      <div class="idx-name">Никто не спасает планету в одиночку</div>
+      <div class="idx-desc">Почему индивидуальная ответственность оказалась удобной идеей — и что происходит там, где люди объединяются. Текст, потерянный между июльской…</div>
+    </a>
+    <a class="idx-item" href="term-commons.html">
+      <div class="idx-name">Общее как институт</div>
+      <div class="idx-desc">Хардин описал не общее, а бесхозное. Восемь условий устойчивости по Элинор Остром, третья инстанция помимо рынка и государства — и три возражения,…</div>
+    </a>
+    <a class="idx-item" href="essay-network-states.html">
+      <div class="idx-name">Сетевые государства: объединить людей не страхом</div>
+      <div class="idx-desc">Одиночество как болезнь эпохи, урок Ханны Арендт, доверие как капитал и идея сетевых государств — сообществ по ценностям, а не по паспорту. Какие…</div>
+    </a>
+    <a class="idx-item" href="essay-commons.html">
+      <div class="idx-name">Что не помещается между государством и рынком</div>
+      <div class="idx-desc">Восемь принципов Элинор Остром, commons, экодеревни, городские микро-сообщества. Программное эссе о третьей форме организации между государством и…</div>
+    </a>
+    <a class="idx-item" href="essay-community-survives.html">
+      <div class="idx-name">Что нужно общине, чтобы не распасться</div>
+      <div class="idx-desc">Шесть принципов устойчивых намеренных общин по Диане Лиф Кристиан.</div>
+    </a>
+    </div>
+  </section>
+  <section class="idx-group">
+    <h2><a class="idx-sec-link" href="section-travel.html">Путешествия</a> <em>раздел</em></h2>
+    <div class="idx-count">3 материала</div>
+    <div class="idx-list">
+    <a class="idx-item" href="place-curonian.html">
+      <div class="idx-name">Куршская коса: ландшафт, который приходится держать</div>
+      <div class="idx-desc">Сведённый лес, странствующие дюны, засыпавшие десяток селений, и полтора столетия ручного закрепления песка. Восстановление работает — и не…</div>
+    </a>
+    <a class="idx-item" href="essay-flight-carbon.html">
+      <div class="idx-name">Самолёт в комнате: можно ли путешествовать экологично?</div>
+      <div class="idx-desc">Углеродная цена полёта — главное, что обходит стороной разговор об экотуризме. Почему один дальний перелёт равен годовому бюджету CO₂, отчего…</div>
+    </a>
+    <a class="idx-item" href="essay-slow-travel.html">
+      <div class="idx-name">Тридцать дней в одном месте. Что видит путешественник, которого нет на фото</div>
+      <div class="idx-desc">Различение перевозки и странствия у Тима Ингольда, арифметика авиационных выбросов, овертуризм и эффект ослабления памяти при съёмке. И три…</div>
+    </a>
+    </div>
+  </section>
+  <section class="idx-group">
+    <h2><a class="idx-sec-link" href="section-health.html">Здоровье</a> <em>раздел</em></h2>
+    <div class="idx-count">3 материала</div>
+    <div class="idx-list">
+    <a class="idx-item" href="essay-planetary-health.html">
+      <div class="idx-name">Здоровье человека — это здоровье планеты</div>
+      <div class="idx-desc">One Health, экспозом, микробиом, планетарные границы. Программное эссе о том, как здоровье человека связано со здоровьем планеты.</div>
+    </a>
+    <a class="idx-item" href="essay-forest-medicine.html">
+      <div class="idx-name">Лес как лекарство: целительная сила природы</div>
+      <div class="idx-desc">Контакт с природой лечит измеримо: ниже давление и кортизол, меньше тревоги и депрессии, выше иммунитет, быстрее выздоровление (эксперимент…</div>
+    </a>
+    <a class="idx-item" href="essay-morning-light.html">
+      <div class="idx-name">Утренний свет: десять минут</div>
+      <div class="idx-desc">Циркадные ритмы и утренний солнечный свет. От нобелевской хронобиологии до конкретного протокола.</div>
+    </a>
+    </div>
+  </section>
+  <section class="idx-group">
+    <h2><a class="idx-sec-link" href="section-science.html">Наука</a> <em>раздел</em></h2>
+    <div class="idx-count">13 материалов</div>
+    <div class="idx-list">
+    <a class="idx-item" href="section-natural-sciences.html">
+      <div class="idx-name">Естественные науки</div>
+      <div class="idx-desc">Естественные науки в порядке исторического формирования — от астрономии до климатологии — и то, как каждая на своём пределе редукции обнаружила…</div>
+    </a>
+    <a class="idx-item" href="section-humanities.html">
+      <div class="idx-name">Гуманитарные науки</div>
+      <div class="idx-desc">Гуманитарные науки в порядке исторического формирования — от философии до культурологии — и то, как каждую из них перестроила встреча с…</div>
+    </a>
     <a class="idx-item" href="essay-aral-zone.html">
       <div class="idx-name">Арал и Зона. Два места, где проверялась одна гипотеза</div>
       <div class="idx-desc">Плановая катастрофа и случайный заповедник. Почему усыхание Арала не было ошибкой в расчётах и что данные по Чернобыльской зоне говорят вовсе не о…</div>
     </a>
-    <a class="idx-item" href="place-curonian.html">
-      <div class="idx-name">Куршская коса: ландшафт, который приходится держать</div>
-      <div class="idx-desc">Сведённый лес, странствующие дюны, засыпавшие десяток селений, и полтора столетия ручного закрепления песка. Восстановление работает — и не…</div>
+    <a class="idx-item" href="essay-vernadsky.html">
+      <div class="idx-name">Вернадский: мысль как геологическая сила. И почему это не утешает</div>
+      <div class="idx-desc">Биосфера как продукт жизни, живое вещество как измеримая величина, Гея в сравнении с Вернадским — и почему ноосфера остаётся самой слабой частью…</div>
+    </a>
+    <a class="idx-item" href="essay-trees-air.html">
+      <div class="idx-name">Дерево из воздуха</div>
+      <div class="idx-desc">Откуда у дуба двадцать тонн массы? Не из земли: почти всё дерево сделано из воздуха и воды. Опыт ван Гельмонта, фотосинтез, огонь как фотосинтез…</div>
+    </a>
+    <a class="idx-item" href="essay-kosmologicheskaya-kartina-mira.html">
+      <div class="idx-name">Как менялась космологическая картина мира</div>
+      <div class="idx-desc">Девять вех космологической картины мира — от мифологического космоса с твердью небесной через гелиоцентризм, бесконечную Вселенную и галактики к…</div>
+    </a>
+    <a class="idx-item" href="essay-nauchnaya-kartina-mira.html">
+      <div class="idx-name">Как менялась научная картина мира</div>
+      <div class="idx-desc">Девять исторических вех научной картины мира — от замкнутого космоса античности через механику Ньютона, относительность и квант к планетарной…</div>
+    </a>
+    <a class="idx-item" href="essay-mycorrhiza.html">
+      <div class="idx-name">Как устроен лес: подземная сеть</div>
+      <div class="idx-desc">Микориза — союз деревьев и грибов, которому больше 400 миллионов лет: как дерево меняет сахар на воду, азот и фосфор, два типа микоризы, что о…</div>
+    </a>
+    <a class="idx-item" href="essay-keeling-curve.html">
+      <div class="idx-name">Кривая Килинга: как увидели, что воздух меняется</div>
+      <div class="idx-desc">Кривая Килинга — главный портрет климатической науки: рост CO₂ в атмосфере с ~315 (1958) до ~420+ млн⁻¹ сегодня, измеренный Чарльзом Килингом на…</div>
+    </a>
+    <a class="idx-item" href="essay-carbon-cycle.html">
+      <div class="idx-name">Круговорот углерода: одна лишняя стрелка</div>
+      <div class="idx-desc">Круговорот углерода на одной схеме: атмосфера, суша и океан обмениваются углеродом в равновесии, а человек добавил один лишний односторонний поток…</div>
     </a>
     <a class="idx-item" href="place-kola.html">
       <div class="idx-name">Мончегорск и Никель: место, где выбросы прекратились</div>
       <div class="idx-desc">Техногенная пустошь как самая изученная площадка такого рода в мире. Что происходит, когда люди остаются, а поток вещества останавливают, — и…</div>
     </a>
-    </div>
-  </section>
-  <section class="idx-group">
-    <h2>Одно число <em>откуда оно взялось и что значит</em></h2>
-    <div class="idx-count">3 материала</div>
-    <div class="idx-list">
     <a class="idx-item" href="number-15.html">
       <div class="idx-name">Полтора градуса: откуда взялось это число</div>
       <div class="idx-desc">Сначала политическое требование малых островных государств, затем международное обязательство и лишь потом научный доклад. Три способа…</div>
-    </a>
-    <a class="idx-item" href="number-embodied.html">
-      <div class="idx-name">Воплощённая энергия дома: число, которое всё меняет местами</div>
-      <div class="idx-desc">Чем эффективнее здание, тем важнее его постройка. Углеродный всплеск от сноса, процессные выбросы цемента и порядок вопросов, который стоит поменять.</div>
-    </a>
-    <a class="idx-item" href="number-third.html">
-      <div class="idx-name">Треть еды: как считали и что это значит</div>
-      <div class="idx-desc">Организация, породившая это число, от него отказалась, а оно продолжает жить. Почему выбор знаменателя решает всё и почему сэкономленное не доедет…</div>
-    </a>
-    </div>
-  </section>
-  <section class="idx-group">
-    <h2>Понятия <em>генеалогия и сильнейшее возражение</em></h2>
-    <div class="idx-count">4 материала</div>
-    <div class="idx-list">
-    <a class="idx-item" href="term-commons.html">
-      <div class="idx-name">Общее как институт</div>
-      <div class="idx-desc">Хардин описал не общее, а бесхозное. Восемь условий устойчивости по Элинор Остром, третья инстанция помимо рынка и государства — и три возражения,…</div>
-    </a>
-    <a class="idx-item" href="term-conviviality.html">
-      <div class="idx-name">Конвивиальность</div>
-      <div class="idx-desc">Понятие Ивана Иллича: инструмент расширяет вашу способность действовать или требует, чтобы вы его обслуживали. Радикальная монополия,…</div>
-    </a>
-    <a class="idx-item" href="term-hyperobject.html">
-      <div class="idx-name">Гиперобъект</div>
-      <div class="idx-desc">Сущность, настолько растянутая во времени и пространстве, что целиком не является нигде. Свойства по Мортону и критика Андреаса Мальма за…</div>
     </a>
     <a class="idx-item" href="term-shifting-baseline.html">
       <div class="idx-name">Сдвиг базовой линии</div>
@@ -708,11 +730,15 @@
   </section>
   <section class="idx-group">
     <h2>Служебные страницы <em></em></h2>
-    <div class="idx-count">4 материала</div>
+    <div class="idx-count">9 материалов</div>
     <div class="idx-list">
     <a class="idx-item" href="about.html">
       <div class="idx-name">О проекте</div>
       <div class="idx-desc">Что такое ЭкоСознание, зачем он создан и как здесь думают. Манифест редакции и принципы.</div>
+    </a>
+    <a class="idx-item" href="method.html">
+      <div class="idx-name">Как устроены материалы</div>
+      <div class="idx-desc">Редакционный метод сайта, записанный явно: четыре хода, из которых состоит текст, пять форматов, список запретов — и признание слабого места…</div>
     </a>
     <a class="idx-item" href="glossary.html">
       <div class="idx-name">Глоссарий</div>
@@ -726,11 +752,28 @@
       <div class="idx-name">Карта связей разделов</div>
       <div class="idx-desc">Интерактивная карта связей между четырнадцатью разделами «ЭкоСознания». Питание соединяется с компостом, психология с архитектурой, экономика с…</div>
     </a>
+    <a class="idx-item" href="tree.html">
+      <div class="idx-name">Дерево материалов</div>
+      <div class="idx-desc">Все материалы «ЭкоСознания» одним деревом: по разделам или по рубрикам, с раскрывающимися ветвями. Дополнение к карте связей — та показывает…</div>
+    </a>
+    <a class="idx-item" href="paths.html">
+      <div class="idx-name">Тропы чтения</div>
+      <div class="idx-desc">Кураторские маршруты по материалам «ЭкоСознания»: с чего начать, инструменты и зависимость, место как учебник, как считать, где мы ошибались, если…</div>
+    </a>
+    <a class="idx-item" href="search.html">
+      <div class="idx-name">Поиск по сайту</div>
+      <div class="idx-desc">Поиск по всем материалам «ЭкоСознания»: эссе, лабораториям, разборам и понятиям. Работает целиком в браузере, без сервера.</div>
+    </a>
+    <a class="idx-item" href="corrections.html">
+      <div class="idx-name">Исправления</div>
+      <div class="idx-desc">Журнал ошибок, найденных в материалах «ЭкоСознания»: что было, что стало, когда и почему. И перечень того, что пока не проверено.</div>
+    </a>
     </div>
   </section>
 </div>
 </main>
 
+<!-- ECO:MANAGED:footer -->
 <footer class="gf">
   <div class="gf-top">
     <div class="gf-brand">
@@ -744,45 +787,19 @@
       <div>
         <div class="gf-col-title">Разделы</div>
         <div class="gf-sections">
-          <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><ellipse cx="50" cy="50" rx="38" ry="18"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Философия</span></a>
-          <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 25 50 Q 32 38,40 50 T 60 50 T 75 50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
+          <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Философия</span></a>
+          <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
           <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
-          <a href="section-compost.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 65 Q 30 40,50 35 Q 70 40,70 65" stroke-linecap="round"/><path d="M 40 65 Q 40 48,50 44 Q 60 48,60 65" stroke-linecap="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Компост</span></a>
-          <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Технологии</span></a>
-          <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="25"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><line x1="25" y1="50" x2="75" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
-          <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 60 L 50 35 L 70 60" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="65" x2="70" y2="65" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
-          <a href="section-construction.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><rect x="28" y="40" width="44" height="26" rx="2"/><line x1="50" y1="40" x2="50" y2="27" stroke-linecap="round"/><line x1="36" y1="27" x2="64" y2="27" stroke-linecap="round"/><line x1="36" y1="53" x2="64" y2="53" stroke-linecap="round" stroke-dasharray="3 3"/></svg></span><span class="gf-sec-name">Строительство</span></a>
-          <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="10"/></svg></span><span class="gf-sec-name">Экономика</span></a>
-          <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Образование</span></a>
+          <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="gf-sec-name">Технологии</span></a>
+          <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
+          <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
+          <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Экономика</span></a>
+          <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="gf-sec-name">Образование</span></a>
           <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
           <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
-          <a href="section-health.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 35 50 Q 35 35,50 35 Q 65 35,65 50 Q 65 65,50 65 Q 42 65,42 57 Q 42 50,50 50 Q 56 50,56 56" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Здоровье</span></a>
+          <a href="section-health.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Здоровье</span></a>
           <a href="section-science.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Наука</span></a>
         </div>
-      </div>
-      <div>
-        <div class="gf-col-title">Материалы</div>
-        <nav class="gf-nav-links">
-          <a href="essay-truth-and-climate.html" class="gf-nav-link">Истина и климат</a>
-          <a href="essay-passive-design.html" class="gf-nav-link">Пассивный дизайн</a>
-          <a href="essay-solastalgia.html" class="gf-nav-link">Соластальгия</a>
-          <a href="essay-community-survives.html" class="gf-nav-link">Что нужно общине</a>
-          <a href="essay-bread.html" class="gf-nav-link">Хлеб</a>
-          <a href="essay-morning-light.html" class="gf-nav-link">Утренний свет</a>
-          <a href="essay-moneyless-year.html" class="gf-nav-link">Год без денег</a>
-          <a href="lab-heidegger-plastic.html" class="gf-nav-link">Лаб №01 · Пластик</a>
-          <a href="lab-hyperobject-room.html" class="gf-nav-link">Лаб №02 · Комната</a>
-          <a href="lab-jacket-biography.html" class="gf-nav-link">Лаб №03 · Куртка</a>
-          <a href="lab-15min-city.html" class="gf-nav-link">Лаб №04 · Город</a>
-          <a href="lab-bateson-gpt.html" class="gf-nav-link">Лаб №05 · Бейтсон</a>
-          <a href="lab-raworth-chinovnik.html" class="gf-nav-link">Лаб №06 · Раворт</a>
-          <a href="lab-heidegger-builder.html" class="gf-nav-link">Лаб №07 · Хайдеггер</a>
-          <a href="lab-benyus-engineer.html" class="gf-nav-link">Лаб №08 · Бенюс</a>
-          <a href="lab-illich-social.html" class="gf-nav-link">Лаб №09 · Иллич</a>
-          <a href="lab-morton-raworth.html" class="gf-nav-link">Лаб №10 · Мортон / Раворт</a>
-          <a href="lab-illich-benyus.html" class="gf-nav-link">Лаб №11 · Иллич / Бенюс</a>
-          <a href="lab-degrowth-ecomodern.html" class="gf-nav-link">Лаб №12 · Спор о росте</a>
-        </nav>
       </div>
       <div>
         <div class="gf-col-title">Навигация</div>
@@ -790,28 +807,30 @@
           <a href="index.html" class="gf-nav-link">Главная</a>
           <a href="map.html" class="gf-nav-link">Карта связей</a>
           <a href="paths.html" class="gf-nav-link">Тропы чтения</a>
-          <a href="contents.html" class="gf-nav-link">Все материалы</a>
           <a href="tree.html" class="gf-nav-link">Дерево материалов</a>
           <a href="revisions.html" class="gf-nav-link">Что не подтвердилось</a>
           <a href="thinkers.html" class="gf-nav-link">Указатель имён</a>
           <a href="search.html" class="gf-nav-link">Поиск</a>
           <a href="method.html" class="gf-nav-link">Как устроены материалы</a>
-          <a href="corrections.html" class="gf-nav-link">Исправления</a>
             <a href="about.html" class="gf-nav-link">О проекте</a>
           <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
-          <a href="section-icons-library.html" class="gf-nav-link">Знаки разделов</a>
         </nav>
       </div>
     </div>
   </div>
   <div class="gf-bottom">
-    <span class="gf-copy">© 2025 ЭкоСознание</span>
+    <span class="gf-copy">© 2026 ЭкоСознание</span>
     <div class="gf-bottom-links">
       <a href="about.html">О проекте</a>
       <a href="glossary.html">Глоссарий</a>
     </div>
   </div>
 </footer>
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
 <!-- /ECO:MANAGED:footer -->
 <!-- /ECO:MANAGED:footer -->
 <!-- /ECO:MANAGED:footer -->

@@ -64,13 +64,32 @@ def build_data():
             "a": bool(m.get("date_approx")),
         })
 
+    SUBS = {"Стиль жизни": ["Компост"], "Архитектура": ["Строительство"]}
+    SUB_NAMES = {n for v in SUBS.values() for n in v}
+
+    def grp(name):
+        kids = [i for i in items if i["s"] == name and i["r"] != "Раздел"]
+        head = next((i for i in items if i["r"] == "Раздел" and i["t"] == name), None)
+        return {"n": name, "u": head["u"] if head else "", "c": kids}
+
     by_sec = []
     for s in SEC_ORDER:
-        kids = [i for i in items if i["s"] == s and i["r"] != "Раздел"]
-        head = next((i for i in items if i["r"] == "Раздел" and i["t"] == s), None)
-        if kids or head:
-            by_sec.append({"n": s, "u": head["u"] if head else "", "c": kids})
-    rest = [i for i in items if not i["s"] and i["r"] != "Раздел"]
+        if s in SUB_NAMES:
+            continue
+        g = grp(s)
+        subs = [grp(x) for x in SUBS.get(s, [])]
+        subs = [sg for sg in subs if sg["c"] or sg["u"]]
+        if subs:
+            g["sub"] = subs
+        if g["c"] or g["u"] or g.get("sub"):
+            by_sec.append(g)
+    sci = [i for i in items if i["u"] in ("section-humanities.html", "section-natural-sciences.html")]
+    for g in by_sec:
+        if g["n"] == "Наука" and sci:
+            g["c"] = sci + g["c"]
+            break
+    rest = [i for i in items if not i["s"] and i["r"] != "Раздел"
+            and i["u"] not in ("section-humanities.html", "section-natural-sciences.html")]
     if rest:
         by_sec.append({"n": "Вне разделов", "u": "", "c": rest})
 
@@ -101,6 +120,7 @@ STYLE = """
 .tr-link{fill:none;stroke:rgba(74,124,89,.35);}
 .tr-grp{font-family:'Cormorant Garamond',serif;font-size:19px;fill:var(--ink);cursor:pointer;}
 .tr-grp:hover{fill:var(--moss);}
+.tr-subgrp{font-size:16px;}
 .tr-cnt{font-family:'Jost',sans-serif;font-size:10px;letter-spacing:1.2px;fill:var(--sage-text);cursor:pointer;}
 .tr-leaf{font-family:'Cormorant Garamond',serif;font-size:15px;fill:var(--ink-light);cursor:pointer;}
 .tr-leaf:hover{fill:var(--moss);text-decoration:underline;}
@@ -121,6 +141,7 @@ SCRIPT = """
 
   function draw(){
     var gs=groups(), y=60, rows=[], links=[];
+    var XSG=182, XSL=360;
     gs.forEach(function(g,gi){
       var key=mode+':'+g.n, isOpen=!!open[key];
       var gy=y;
@@ -131,6 +152,20 @@ SCRIPT = """
           rows.push({type:'l',x:XL,y:y,it:it});
           links.push([XG+6,gy+5,XL-10,y-4]);
           y+=RL;
+        });
+        (g.sub||[]).forEach(function(sg){
+          var skey=key+'/'+sg.n, sOpen=!!open[skey], sgy=y;
+          rows.push({type:'g',x:XSG,y:sgy,g:sg,key:skey,open:sOpen,sub:true});
+          links.push([XG+6,gy+5,XSG-8,sgy-4]);
+          y+=RG+8;
+          if(sOpen){
+            sg.c.forEach(function(it){
+              rows.push({type:'l',x:XSL,y:y,it:it});
+              links.push([XSG+6,sgy+5,XSL-10,y-4]);
+              y+=RL;
+            });
+            y+=6;
+          }
         });
         y+=10;
       }
@@ -146,7 +181,8 @@ SCRIPT = """
     rows.forEach(function(r,i){
       if(r.type==='g'){
         var mark=r.open?'−':'+';
-        s.push('<g data-i="'+i+'"><text x="'+r.x+'" y="'+r.y+'" class="tr-grp">'+mark+' '+esc(r.g.n)+'</text>');
+        var gcls=r.sub?'tr-grp tr-subgrp':'tr-grp';
+        s.push('<g data-i="'+i+'"><text x="'+r.x+'" y="'+r.y+'" class="'+gcls+'">'+mark+' '+esc(r.g.n)+'</text>');
         s.push('<text x="300" y="'+r.y+'" text-anchor="end" class="tr-cnt">'+r.g.c.length+'</text></g>');
       } else {
         var t=r.it.t.length>58 ? r.it.t.slice(0,56)+'…' : r.it.t;
@@ -177,7 +213,10 @@ SCRIPT = """
   document.getElementById('br').addEventListener('click',function(){setMode('rub');});
   document.getElementById('ba').addEventListener('click',function(){
     var all=true; groups().forEach(function(g){ if(!open[mode+':'+g.n]) all=false; });
-    groups().forEach(function(g){ open[mode+':'+g.n]=!all; });
+    groups().forEach(function(g){
+      open[mode+':'+g.n]=!all;
+      (g.sub||[]).forEach(function(sg){ open[mode+':'+g.n+'/'+sg.n]=!all; });
+    });
     draw();
   });
   setMode('sec');
