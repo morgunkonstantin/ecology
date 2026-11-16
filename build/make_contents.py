@@ -41,6 +41,12 @@ STYLE = """
 .idx-item:hover{background:var(--warm);}
 .idx-name{font-family:'Cormorant Garamond',serif;font-size:1.16rem;line-height:1.3;color:var(--ink);margin-bottom:.45rem;}
 .idx-desc{font-size:.8rem;line-height:1.65;color:var(--ink-light);}
+.idx-group h2 a.idx-sec-link{color:var(--ink);text-decoration:none;}
+.idx-group h2 a.idx-sec-link:hover{color:var(--moss);}
+.idx-sub{margin-top:1.9rem;margin-left:1.4rem;padding-left:1.5rem;border-left:2px solid rgba(74,124,89,.22);}
+.idx-sub h3{font-family:'Cormorant Garamond',serif;font-size:1.32rem;font-weight:400;margin-bottom:1rem;color:var(--ink);}
+.idx-sub h3 a{color:inherit;text-decoration:none;}.idx-sub h3 a:hover{color:var(--moss);}
+.idx-sub h3 .idx-arrow{color:var(--sage);margin-right:.4rem;}
 @media(max-width:720px){.idx-hero{padding:7rem 1.5rem 2rem;}.idx-body{padding:1rem 1.5rem 4rem;}}
 </style>
 """
@@ -91,41 +97,80 @@ def build():
         pre = re.sub(r'<meta %s content="[^"]*"' % attr, '<meta %s content="%s"' % (attr, val), pre)
     pre = pre.replace("</head>", STYLE + "</head>", 1)
 
-    sections = ["section-%s.html" % k for k in SEC_ORDER if "section-%s.html" % k in META]
-    essays = sorted((f for f in META if f.startswith("essay-")
-                     and not META[f].get("broken") and not META[f].get("rubric")),
-                    key=lambda f: META[f]["title"])
-    labs = sorted((f for f in META if f.startswith("lab-")),
-                  key=lambda f: (re.search(r"№(\d+)", META[f]["title_full"]) or ["", "99"])[1])
-    def by_rubric(name):
-        return sorted(f for f in META if META[f].get("rubric") == name)
+    from collections import defaultdict
+    by_section = defaultdict(list)
+    for fn, m in META.items():
+        if fn.startswith("section-") or fn == "index.html" or m.get("noindex"):
+            continue
+        st = m.get("section_title")
+        if st:
+            by_section[st].append(fn)
+    for st in by_section:
+        by_section[st].sort(key=lambda fn: META[fn]["title"])
+    for sh in ("section-humanities.html", "section-natural-sciences.html"):
+        if sh in META:
+            by_section.setdefault("Наука", [])
+            if sh not in by_section["Наука"]:
+                by_section["Наука"].insert(0, sh)
 
-    revisions = ["revisions.html"] + by_rubric("Что не подтвердилось")
-    things = by_rubric("Биография вещи")
-    numbers = by_rubric("Одно число")
-    places = by_rubric("Одно место во времени")
-    terms = by_rubric("Понятие")
-    pages = [f for f in ["about.html", "glossary.html", "thinkers.html", "map.html"] if f in META]
+    HIER = [
+        ("Философия", "section-philosophy.html", []),
+        ("Психология", "section-psychology.html", []),
+        ("Стиль жизни", "section-lifestyle.html", [("Компост", "section-compost.html")]),
+        ("Технологии", "section-technologies.html", []),
+        ("Питание", "section-food.html", []),
+        ("Архитектура", "section-architecture.html", [("Строительство", "section-construction.html")]),
+        ("Экономика", "section-economy.html", []),
+        ("Образование", "section-education.html", []),
+        ("Сообщество", "section-community.html", []),
+        ("Путешествия", "section-travel.html", []),
+        ("Здоровье", "section-health.html", []),
+        ("Наука", "section-science.html", []),
+    ]
+
+    def sub_block(title, hub, files):
+        if not files:
+            return ""
+        head = ('    <div class="idx-sub">\n      <h3><span class="idx-arrow">\u21b3</span>'
+                '<a href="%s">%s</a></h3>\n      <div class="idx-list">\n%s      </div>\n    </div>\n'
+                % (hub, title, "".join(item(fn) for fn in files)))
+        return head
+
+    def sec_group(title, hub, files, subs):
+        n = len(files) + sum(len(by_section.get(st, [])) for st, _ in subs)
+        body = ('  <section class="idx-group">\n'
+                '    <h2><a class="idx-sec-link" href="%s">%s</a> <em>раздел</em></h2>\n'
+                '    <div class="idx-count">%d %s</div>\n'
+                '    <div class="idx-list">\n%s    </div>\n'
+                % (hub, title, n, plural(n), "".join(item(fn) for fn in files)))
+        for st, shub in subs:
+            body += sub_block(st, shub, by_section.get(st, []))
+        return body + "  </section>\n"
+
+    def by_rubric(name):
+        return sorted(fn for fn in META if META[fn].get("rubric") == name)
+    revisions = ["revisions.html"] + sorted(by_section.get("Ревизия", []))
+    pages = [fn for fn in ["about.html", "method.html", "glossary.html", "thinkers.html",
+                           "map.html", "tree.html", "paths.html", "search.html",
+                           "corrections.html"] if fn in META]
+
+    hier_html = "".join(sec_group(t, hub, by_section.get(t, []), subs) for t, hub, subs in HIER)
 
     content = ('\n<section class="idx-hero">\n  <div class="idx-tag">Указатель</div>\n'
                '  <h1>Все <em>материалы</em></h1>\n'
-               '  <p class="idx-lead">Полный список того, что есть на сайте. Если вы ищете '
-               'связи между темами, а не перечень, посмотрите <a href="map.html">карту связей</a>.</p>\n'
+               '  <p class="idx-lead">Полный состав сайта по разделам, в той же иерархии, '
+               'что и хлебные крошки: подразделы вложены в свои разделы. Если нужна '
+               'сворачиваемая карта — <a href="tree.html">дерево материалов</a>; если связи '
+               'между темами — <a href="map.html">карта связей</a>.</p>\n'
                '</section>\n\n<div class="idx-body">\n'
-               + group("Разделы", "по темам", sections)
-               + group("Эссе", "длинные тексты", essays)
-               + group("Лаборатории", "диалоги и мысленные эксперименты", labs)
-               + group("Биография вещи", "одна вещь до самого начала", things)
-               + group("Одно место во времени", "территория как аргумент", places)
-               + group("Одно число", "откуда оно взялось и что значит", numbers)
-               + group("Понятия", "генеалогия и сильнейшее возражение", terms)
+               + hier_html
                + group("Что не подтвердилось", "ревизия собственных ошибок", revisions)
                + group("Служебные страницы", "", pages)
                + "</div>\n")
 
     open("contents.html", "w", encoding="utf-8").write(pre + content + post)
-    print("contents.html: разделов %d · эссе %d · лабораторий %d · разборов %d"
-          % (len(sections), len(essays), len(labs), len(revisions)))
+    print("contents.html: иерархия по разделам · %d разделов · %d материалов · %d ревизий"
+          % (len(HIER), sum(len(v) for v in by_section.values()), len(revisions)))
 
 
 if __name__ == "__main__":

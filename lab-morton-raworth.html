@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+<script>document.documentElement.classList.replace('no-js','js');</script>
+<meta charset="UTF-8">
+  <meta name="description" content="Спор о том, можно ли изобразить гиперобъект диаграммой. Раворт признаёт, что точность обменена на возможность решения; Мортона спрашивают, что писать во второй строке.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Кольцо, которого нет: Мортон против Раворт">
+  <meta property="og:description" content="Спор о том, можно ли изобразить гиперобъект диаграммой. Раворт признаёт, что точность обменена на возможность решения; Мортона спрашивают, что писать во второй строке.">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Кольцо, которого нет: Мортон против Раворт">
+  <meta name="twitter:description" content="Спор о том, можно ли изобразить гиперобъект диаграммой. Раворт признаёт, что точность обменена на возможность решения; Мортона спрашивают, что писать во второй строке.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Кольцо, которого нет: Мортон против Раворт — ЭкоСознание</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+.lab-hero{padding:9rem 4rem 4rem;max-width:1100px;margin:0 auto;}
+.lab-tag{display:inline-flex;align-items:center;gap:0.6rem;font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--clay);margin-bottom:2rem;}
+.lab-tag::before{content:'';display:block;width:24px;height:1px;background:var(--clay);}
+.lab-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,5vw,4.2rem);font-weight:300;line-height:1.08;color:var(--ink);margin-bottom:2rem;max-width:860px;}
+.lab-hero h1 em{font-style:italic;color:var(--moss);}
+.lab-meta-row{display:flex;gap:3rem;flex-wrap:wrap;padding:1.2rem 0;border-top:1px solid rgba(74,124,89,0.15);border-bottom:1px solid rgba(74,124,89,0.15);margin-bottom:3rem;}
+.lab-meta-item{font-size:0.78rem;color:var(--ink-light);}
+.lab-meta-item strong{display:block;font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--sage);margin-bottom:0.25rem;}
+.lab-body{max-width:840px;margin:0 auto;padding:0 4rem 6rem;}
+.lab-body p{font-family:'Cormorant Garamond',serif;font-size:1.12rem;line-height:1.8;color:var(--ink);margin-bottom:1.6rem;}
+.lab-body p:first-of-type::first-letter{font-size:4.2rem;font-weight:400;line-height:0.85;float:left;margin:0.2rem 0.55rem 0 0;color:var(--moss);font-family:'Cormorant Garamond',serif;}
+.lab-body em.t{font-style:italic;color:var(--moss);}
+.lab-body blockquote{margin:2.5rem 0;padding:0 0 0 2rem;border-left:2px solid var(--fern);}
+.lab-body blockquote p{font-size:1.25rem;font-style:italic;color:var(--ink-light);margin-bottom:0.5rem!important;}
+.lab-body blockquote cite{font-family:'Jost',sans-serif;font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--moss);font-style:normal;}
+.lab-section{margin:3rem 0;padding:1.8rem 2rem;background:var(--cream);border-left:3px solid var(--clay);}
+.lab-section-label{font-size:0.64rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--clay);margin-bottom:0.7rem;}
+.lab-section h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:400;color:var(--ink);margin-bottom:0.8rem;}
+.lab-section h3 em{font-style:italic;color:var(--moss);}
+.lab-section p{font-family:'Jost',sans-serif!important;font-size:0.9rem!important;line-height:1.85!important;color:var(--ink-light)!important;margin-bottom:0.7rem!important;}
+.lab-section p:last-child{margin-bottom:0!important;}
+.dialogue{margin:3rem 0;display:flex;flex-direction:column;gap:0;}
+.dial-line{padding:1.2rem 0;border-bottom:1px solid rgba(74,124,89,0.1);}
+.dial-line:last-child{border-bottom:none;}
+.dial-who{font-family:'Jost',sans-serif;font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:0.5rem;}
+.dial-who.bateson{color:var(--moss);}
+.dial-who.gpt{color:var(--clay);}
+.dial-text{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.7;color:var(--ink);}
+.dial-text em{font-style:italic;color:var(--moss);}
+.dark-block{background:var(--ink);margin:4rem -4rem;padding:3.5rem 4rem;}
+.dark-block-inner{max-width:840px;margin:0 auto;}
+.dark-block small{font-family:'Jost',sans-serif;font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--sage);display:block;margin-bottom:0.8rem;}
+.dark-block h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;font-style:italic;color:var(--cream);line-height:1.3;margin-bottom:1.2rem;}
+.dark-block p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.75;color:rgba(211,230,208,0.75);margin-bottom:1rem;}
+.dark-block p:last-child{margin-bottom:0;}
+.sb{display:flex;align-items:center;justify-content:center;gap:1.5rem;margin:3.5rem 0;}
+.sb::before,.sb::after{content:'';flex:1;max-width:80px;height:1px;background:rgba(74,124,89,0.25);}
+.sb span{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-style:italic;color:var(--moss);}
+.conclusion{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--moss);text-align:center;font-size:1.2rem;margin-top:3.5rem;}
+.lab-sig{margin-top:4rem;padding-top:2.5rem;border-top:1px solid rgba(74,124,89,0.15);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;}
+.lab-sig-author{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--ink-light);font-style:italic;}
+.lab-sig-meta{font-size:0.72rem;letter-spacing:0.1em;color:var(--sage);text-transform:uppercase;}
+.reading-bar{position:fixed;top:0;left:0;height:2px;background:var(--moss);z-index:400;width:0%;transition:width 0.1s linear;}
+@media(max-width:720px){ .lab-hero,.lab-body{padding-left:1.5rem;padding-right:1.5rem;} .dark-block{margin-left:-1.5rem;margin-right:-1.5rem;padding-left:1.5rem;padding-right:1.5rem;} .lab-meta-row{flex-direction:column;gap:1rem;} }
+</style>
+
+<style>
+.dial-who.benyus{color:var(--moss);}
+.dial-who.engineer{color:var(--rust);}
+.dial-who.narrator{color:var(--sage);}
+.dial-who.illich{color:var(--moss);}
+.dial-who.artem{color:var(--rust);}
+.aside-note{background:var(--warm);padding:1.5rem 1.8rem;margin:2rem 0;border-left:3px solid var(--gold);font-family:'Jost',sans-serif;font-size:.86rem;line-height:1.75;color:var(--ink-light);}
+.aside-note strong{display:block;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;font-weight:400;}
+</style>
+
+<style>
+.dial-who.raworth,.dial-who.benyus,.dial-who.degrowth{color:var(--moss);}
+.dial-who.morton,.dial-who.illich,.dial-who.ecomodern{color:var(--rust);}
+.dial-who.iris,.dial-who.hanna,.dial-who.daniel{color:var(--clay-text);}
+.dial-who.narrator{color:var(--sage-text);}
+</style>
+
+<style>
+/* ECO:MANAGED — схемы */
+.fig{margin:3.5rem 0;}
+.fig svg{width:100%;height:auto;display:block;}
+.fig figcaption{margin-top:1rem;font-size:.78rem;line-height:1.7;color:var(--ink-light);
+  padding-left:1rem;border-left:2px solid rgba(74,124,89,.3);}
+.fig figcaption b{color:var(--ink);font-weight:400;}
+.fig-t{font-family:'Jost',sans-serif;font-size:12px;fill:var(--ink-light);}
+.fig-s{font-family:'Jost',sans-serif;font-size:10px;letter-spacing:1.4px;
+  text-transform:uppercase;fill:var(--moss);}
+.fig-n{font-family:'Cormorant Garamond',serif;font-size:22px;fill:var(--ink);}
+.fig-l{stroke:var(--moss);fill:none;}
+.fig-d{stroke:rgba(74,124,89,.3);fill:none;stroke-dasharray:3 4;}
+</style>
+<!-- ECO:MANAGED:head -->
+  <link rel="canonical" href="https://morgunkonstantin.github.io/ecology/lab-morton-raworth.html">
+  <meta property="og:url" content="https://morgunkonstantin.github.io/ecology/lab-morton-raworth.html">
+  <meta property="og:site_name" content="ЭкоСознание">
+  <meta property="og:image" content="https://morgunkonstantin.github.io/ecology/assets/img/morton-raworth-og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Жители сидят вокруг большой круглой схемы-кольца: в середине долина с рекой, по кругу люди, а снаружи вода, лес, поля, ветряки и солнечные панели.">
+  <meta name="twitter:image" content="https://morgunkonstantin.github.io/ecology/assets/img/morton-raworth-og.jpg">
+  <meta name="theme-color" content="#faf6ef">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","name":"Кольцо, которого нет: Мортон против Раворт","headline":"Кольцо, которого нет: Мортон против Раворт","description":"Спор о том, можно ли изобразить гиперобъект диаграммой. Раворт признаёт, что точность обменена на возможность решения; Мортона спрашивают, что писать во второй строке.","inLanguage":"ru-RU","url":"https://morgunkonstantin.github.io/ecology/lab-morton-raworth.html","isPartOf":{"@type":"WebSite","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"},"publisher":{"@type":"Organization","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"},"datePublished":"2026-07-31","image":"https://morgunkonstantin.github.io/ecology/assets/img/morton-raworth-og.jpg","author":{"@type":"Organization","name":"ЭкоСознание"},"articleSection":"Экономика"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://morgunkonstantin.github.io/ecology/"},{"@type":"ListItem","position":2,"name":"Экономика","item":"https://morgunkonstantin.github.io/ecology/section-economy.html"},{"@type":"ListItem","position":3,"name":"Кольцо, которого нет: Мортон против Раворт","item":"https://morgunkonstantin.github.io/ecology/lab-morton-raworth.html"}]}</script>
+<!-- /ECO:MANAGED:head -->
+</head>
+<body>
+<a class="skip-link" href="#content">Перейти к содержанию</a>
+
+<!-- ECO:MANAGED:nav -->
+<div class="g-nav-wrap" id="gNavWrap">
+  <div class="g-nav">
+    <a href="index.html" class="g-logo">
+      <svg viewBox="0 0 100 100" fill="none" class="logo-svg"><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#4a7c59"/></svg>
+      <span class="g-logo-text">Эко<em>Сознание</em></span>
+    </a>
+    <ul class="g-links">
+      <li>
+        <button class="g-drop-btn" aria-expanded="false">
+          Разделы
+          <svg class="g-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="g-dropdown">
+          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
+          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
+          <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
+          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
+          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
+          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">08</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">09</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">10</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">11</span></a>
+          <a href="section-science.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Наука</span><span class="g-dd-num">12</span></a>
+        </div>
+      </li>
+      <li><a href="about.html">О проекте</a></li>
+    </ul>
+    <button class="g-burger" id="gBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<div class="g-overlay" id="gOverlay">
+  <div class="g-ov-section">
+    <div class="g-ov-label">Разделы</div>
+    <div class="g-ov-grid">
+      <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Философия</span></a>
+      <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
+      <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
+      <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="g-ov-name">Технологии</span></a>
+      <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
+      <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
+      <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Экономика</span></a>
+      <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="g-ov-name">Образование</span></a>
+      <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
+      <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
+      <a href="section-health.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Здоровье</span></a>
+      <a href="section-science.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Наука</span></a>
+    </div>
+  </div>
+  <div class="g-ov-section">
+    <div class="g-ov-label">Навигация</div>
+    <div class="g-ov-simple-links">
+      <a href="index.html" class="g-ov-simple-link">Главная</a>
+      <a href="map.html" class="g-ov-simple-link">Карта связей</a>
+      <a href="contents.html" class="g-ov-simple-link">Все материалы</a>
+      <a href="revisions.html" class="g-ov-simple-link">Что не подтвердилось</a>
+      <a href="search.html" class="g-ov-simple-link">Поиск</a>
+      <a href="paths.html" class="g-ov-simple-link">Тропы чтения</a>
+      <a href="tree.html" class="g-ov-simple-link">Дерево материалов</a>
+      <a href="thinkers.html" class="g-ov-simple-link">Указатель имён</a>
+      <a href="about.html" class="g-ov-simple-link">О проекте</a>
+    </div>
+  </div>
+</div>
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<main id="content" tabindex="-1">
+<!-- ECO:MANAGED:breadcrumb -->
+<nav class="breadcrumb" aria-label="Хлебные крошки"><a href="index.html">Главная</a> <span class="bc-sep">→</span> <a href="section-economy.html">Экономика</a> <span class="bc-sep">→</span> <span class="bc-current">Кольцо, которого нет: Мортон против Раворт</span></nav>
+<!-- /ECO:MANAGED:breadcrumb -->
+
+<figure class="hero-cover hero-cover--essay" style="--cover-x-mobile:30%;">
+  <img src="assets/img/morton-raworth-hero-2000.webp"
+       srcset="assets/img/morton-raworth-hero-1200.webp 1200w, assets/img/morton-raworth-hero-2000.webp 2000w"
+       sizes="100vw" width="2000" height="666" fetchpriority="high" decoding="async"
+       alt="Жители сидят вокруг большой круглой схемы-кольца: в середине долина с рекой, по кругу люди, а снаружи вода, лес, поля, ветряки и солнечные панели.">
+</figure>
+
+<section class="lab-hero">
+  <div class="lab-tag">Лаборатория №10 · Экономика</div>
+  <h1>Кольцо,<br><em>которого нет</em></h1>
+  <div class="lab-meta-row">
+    <div class="lab-meta-item"><strong>Метод</strong>Спор двух своих: оба внутри экологии, оба правы наполовину</div>
+    <div class="lab-meta-item"><strong>Вопрос</strong>Что произошло бы, если бы Кейт Раворт и Тимоти Мортона пригласили консультировать один и тот же город по одной и той же стратегии?</div>
+    <div class="lab-meta-item"><strong>Понятия</strong>Пончик · <a class="term" href="glossary.html#giperobekt">Гиперобъект</a> · <a class="term" href="glossary.html#planetarnye-granicy">Планетарные границы</a> · Измеримость</div>
+    <div class="lab-meta-item"><strong>Время чтения</strong>≈ 8 мин</div>
+    <div class="lab-meta-item"><strong>Жанр</strong>Вымышленный диалог. Позиции взяты из опубликованных работ, реплики сконструированы</div>
+    <!-- ECO:MANAGED:date --><div class="essay-meta-item"><strong>Опубликовано</strong><time datetime="2026-07-31">31 июля 2026</time></div><!-- /ECO:MANAGED:date -->
+  </div>
+</section>
+
+<div class="lab-body">
+
+  <p>Все предыдущие лаборатории этого сайта устроены одинаково: мыслитель встречается с практиком, и меняется практик. Формат честный, но у него есть предел. Он предполагает, что мыслитель прав, а разговор нужен только для того, чтобы это дошло до того, кто принимает решения.</p>
+
+  <p>Здесь предел снимается. В комнате два человека, оба внутри экологического мышления, оба много сделали, и они не согласны друг с другом в вещи, от которой зависит практика.</p>
+
+  <p>Кейт Раворт построила диаграмму — два кольца, между ними безопасное и справедливое пространство. Конструкция разошлась по миру и была принята десятками городов как рамка планирования. Она держится на измеримости: девять планетарных границ и двенадцать социальных оснований, каждое со своим показателем.</p>
+
+  <p>Тимоти Мортон утверждает, что важнейшие экологические сущности нашего времени принципиально не даны нам как целое. Гиперобъект нельзя увидеть, нельзя обойти и нельзя покинуть; наблюдаются только следы, которые им не являются. Из этой позиции диаграмма с кольцом выглядит не просто упрощением, а изображением чего-то, чего нет: границы, снаружи которой можно было бы оказаться.</p>
+
+  <p>Поводом для встречи служит городская администрация, которой нужно решение, а не философия.</p>
+
+  <div class="sb"><span>❦</span></div>
+
+  <div class="dialogue">
+    <div class="dial-line">
+      <div class="dial-who narrator">Ситуация</div>
+      <div class="dial-text">Небольшой европейский город, около четырёхсот тысяч жителей. Отдел устойчивого развития готовит стратегию на пятнадцать лет и решил делать её по методу городского портрета. Ирис, младший аналитик отдела, отвечает за подготовку и по собственной инициативе пригласила второго консультанта. Совещание в переговорной с плохой вентиляцией.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who iris">Ирис</div>
+      <div class="dial-text">Я объясню, зачем позвала обоих. Мы взяли метод четырёх окон: что хорошо для наших людей, что хорошо для нашей природы, как мы влияем на людей в мире и как — на биосферу. Первые три окна мы заполнили. Четвёртое не заполняется. Я подумала, что это не техническая проблема.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who raworth">Раворт</div>
+      <div class="dial-text">Оно не заполняется, потому что данных по цепочкам поставок города не существует в готовом виде. Это решаемо: есть межотраслевые балансы, есть оценки по потреблению. Хуже, но считается.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who morton">Мортон</div>
+      <div class="dial-text">Оно не заполняется по другой причине. Первые три окна показывают то, что находится внутри города, — то есть внутри границы, которую вы провели. Четвёртое просит показать то, у чего границы нет. Вы просите изобразить нелокальное в форме, придуманной для локального.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who raworth">Раворт</div>
+      <div class="dial-text">Я знаю. Диаграмма — не карта территории, а согласованная рамка обсуждения. Её задача не описать мир, а дать людям в этой комнате возможность говорить об одном и том же.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who morton">Мортон</div>
+      <div class="dial-text">Тогда я задам вопрос, который вам, вероятно, задают редко. Вы рисуете внешнее кольцо — экологический потолок. Кольцо подразумевает, что есть внутри и есть снаружи. Но что означает «выйти за пределы» климата? Мы не выходим за его пределы. Мы находимся внутри и всегда находились. Ваше кольцо изображает выход из того, из чего выхода нет.</div>
+    </div>
+  </div>
+
+  <div class="lab-section">
+    <div class="lab-section-label">Сдвиг первый · Раворт признаёт то, что обычно не проговаривает</div>
+  </div>
+
+  <div class="dialogue">
+    <div class="dial-line">
+      <div class="dial-who raworth">Раворт</div>
+      <div class="dial-text">Хорошо. Скажу вещь, которую я не пишу в книгах. Девять границ на моей диаграмме нарисованы одинаково твёрдыми. Они не одинаковы. Климатическая обсчитана подробно, потоки азота и фосфора — прилично, целостность биосферы и новые вещества — плохо, и с числами там спорят сами авторы.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who morton">Мортон</div>
+      <div class="dial-text">И вы рисуете их одинаково.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who raworth">Раворт</div>
+      <div class="dial-text">Да. Потому что диаграмма с доверительными интервалами не принимается ни одним городским советом. Я пробовала. Инфографика, честно показывающая неопределённость, читается как «учёные сами не знают» и используется против нас в тот же день.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who morton">Мортон</div>
+      <div class="dial-text">То есть вы приняли решение о представлении, зная его цену.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who raworth">Раворт</div>
+      <div class="dial-text">Я приняла решение о том, чтобы вообще состоялся разговор. Цена мне известна: часть точности обменена на возможность принять решение. Я не считаю этот обмен постыдным. Я считаю его обменом, и предпочитаю, чтобы о нём знали.</div>
+    </div>
+  </div>
+
+  <div class="aside-note">
+    <strong>Комментарий на полях.</strong> Здесь произошло нечто более редкое, чем кажется. Раворт не защитила диаграмму — она признала, что диаграмма выполняет политическую функцию за счёт научной точности, и назвала обмен обменом. Большинство споров об экологической коммуникации не доходит до этой точки, потому что обе стороны делают вид, что упрощение либо безобидно, либо преступно.
+  </div>
+
+  <div class="lab-section">
+    <div class="lab-section-label">Сдвиг второй · Мортона спрашивают, что делать во вторник</div>
+  </div>
+
+  <div class="dialogue">
+    <div class="dial-line">
+      <div class="dial-who iris">Ирис</div>
+      <div class="dial-text">Профессор Мортон, у меня практический вопрос. Стратегия должна уйти в совет через шесть недель. Если кольца нет — что мне писать вместо него?</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who morton">Мортон</div>
+      <div class="dial-text">Я бы начал с признания, что вы находитесь внутри. Что город — не наблюдатель, оценивающий своё воздействие, а часть того, что оценивает.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who iris">Ирис</div>
+      <div class="dial-text">Это первая строка преамбулы. Что во второй?</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who morton">Мортон</div>
+      <div class="dial-text">…</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who raworth">Раворт</div>
+      <div class="dial-text">Я не злорадствую. Я двадцать лет работала в организациях, где после красивого анализа кто-то должен написать пункт в бюджете. Разница между нами не в глубине понимания. Она в том, что мой инструмент обязан пережить встречу с финансовым департаментом, а ваш — нет.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who morton">Мортон</div>
+      <div class="dial-text">Принимается. Моя позиция не даёт процедуры, и я это знаю. Но у неё есть одно применение, и оно не декоративное: она сообщает, какие ошибки вы совершите, пользуясь своим инструментом. Вы будете считать себя снаружи. Вы будете думать, что достигли цели, когда придёте к границе на бумаге. И вы будете считать четвёртое окно необязательным, потому что оно единственное не сводится к вашей территории.</div>
+    </div>
+  </div>
+
+  
+
+<!-- ECO:MANAGED:fig -->
+<figure class="fig"><svg viewBox="0 0 640 400" role="img" aria-labelledby="wnt wnd"><title id="wnt">Четыре окна городского портрета</title><desc id="wnd">Матрица два на два: локальное и глобальное по горизонтали, социальное и экологическое по вертикали. Четвёртое окно, глобально-экологическое, внедряется хуже остальных.</desc><rect x="60" y="70" width="250" height="130" fill="var(--paper)" stroke="rgba(74,124,89,.35)"/><text x="80" y="102" class="fig-s">Локально · социально</text><text x="80" y="132" class="fig-n" font-size="17">Как живут наши жители</text><text x="80" y="166" class="fig-t" fill="var(--moss)">рассчитано</text><rect x="330" y="70" width="250" height="130" fill="var(--paper)" stroke="rgba(74,124,89,.35)"/><text x="350" y="102" class="fig-s">Глобально · социально</text><text x="350" y="132" class="fig-n" font-size="17">На кого мы влияем в мире</text><text x="350" y="166" class="fig-t" fill="var(--moss)">частично</text><rect x="60" y="225" width="250" height="130" fill="var(--paper)" stroke="rgba(74,124,89,.35)"/><text x="80" y="257" class="fig-s">Локально · экологически</text><text x="80" y="287" class="fig-n" font-size="17">Что с природой здесь</text><text x="80" y="321" class="fig-t" fill="var(--moss)">рассчитано</text><rect x="330" y="225" width="250" height="130" fill="rgba(122,79,46,.09)" stroke="rgba(74,124,89,.35)"/><text x="350" y="257" class="fig-s">Глобально · экологически</text><text x="350" y="287" class="fig-n" font-size="17">След наших цепочек поставок</text><text x="350" y="321" class="fig-t" fill="var(--rust)">не финансируется</text><text x="320" y="382" text-anchor="middle" class="fig-t">Четвёртое окно — единственное, где рамка признаёт нелокальность</text></svg><figcaption>Метод амстердамского городского портрета. Первые три окна показывают город; четвёртое показывает, что <b>города как отдельной вещи не существует</b>. Оно же единственное, за которое город никто не похвалит, — и потому внедряется хуже всех.</figcaption></figure>
+<!-- /ECO:MANAGED:fig -->
+<div class="lab-section">
+    <div class="lab-section-label">Сдвиг третий · Оба обнаруживают, что спорили не о том</div>
+  </div>
+
+  <div class="dialogue">
+    <div class="dial-line">
+      <div class="dial-who raworth">Раворт</div>
+      <div class="dial-text">Подождите. Вы сейчас сказали, что четвёртое окно — единственное, где рамка признаёт нелокальность.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who morton">Мортон</div>
+      <div class="dial-text">Да. Три первых окна показывают город. Четвёртое показывает, что города как отдельной вещи не существует. Это самая честная часть вашей схемы, и она попала туда, насколько я понимаю, не из философии, а из практики.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who raworth">Раворт</div>
+      <div class="dial-text">Из практики. И это часть, которую внедряют хуже всего. У меня нет ни одного города, где четвёртое окно повлияло бы на бюджет. Оно всегда остаётся разделом в приложении.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who morton">Мортон</div>
+      <div class="dial-text">Потому что оно единственное, за что вас никто не похвалит. Первые три окна дают показатели, по которым город отчитывается и выигрывает премии. Четвёртое даёт только обязательства без наград.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who iris">Ирис</div>
+      <div class="dial-text">То есть вы оба говорите, что моя проблема не в методе, а в том, что у четвёртого окна нет ни данных, ни стимула, ни адресата.</div>
+    </div>
+    <div class="dial-line">
+      <div class="dial-who raworth">Раворт</div>
+      <div class="dial-text">Да. И из этого, между прочим, следует единственное действие, которое здесь вообще возможно: найти хотя бы одну процедуру, где четвёртое окно обязательно к заполнению. Не стратегию — процедуру.</div>
+    </div>
+  </div>
+
+  <div class="aside-note">
+    <strong>Комментарий на полях.</strong> Обратите внимание, где они сошлись. Не на метафизике и не на том, существует ли кольцо. Они сошлись на конкретном месте, где конструкция даёт сбой, — и обнаружили, что сбой у обоих один и тот же. Спор о представлении оказался спором о том, что бюрократия способна удержать в голове, а этот вопрос решается не аргументами, а регламентом.
+  </div>
+
+  <div class="lab-section">
+    <div class="lab-section-label">Эпилог · Два года спустя</div>
+  </div>
+
+  <p>Стратегия принята. Городской портрет вошёл в неё целиком, диаграмма с двумя кольцами напечатана на обложке. Раздел о глобальном воздействии занимает четыре страницы в приложении, бюджетной строки не имеет.</p>
+
+  <p>Фраза Мортона о том, что город является частью того, что оценивает, попала в преамбулу — второй абзац, третье предложение. Её, по всей вероятности, не прочитал никто.</p>
+
+  <p>За исключением одного человека. Ирис через полтора года перешла в отдел закупок и, готовя обновление регламента, добавила в форму оценки поставщика пункт: указать страну происхождения сырья первого передела и подтвердить отсутствие в цепочке предприятий из списка высокого риска. Пункт обязателен к заполнению; при пустом поле заявка не подаётся.</p>
+
+  <p>За первый год по этому пункту были отклонены две заявки и переоформлены семь. Ни в одном отчёте города это не отражено, потому что показателя для такого не предусмотрено.</p>
+
+  <p>Мортон об этом не знает. Раворт, вероятно, тоже. Кольцо на обложке осталось нарисованным одинаково твёрдым по всем девяти границам.</p>
+
+  <div class="lab-sig">
+    <div class="lab-sig-author">ЭкоСознание</div>
+    <div class="lab-sig-meta">Лаборатория №10 · Июль 2026</div>
+  </div>
+
+</div>
+
+<section class="rel">
+  <div class="rel-in">
+    <div class="rel-label">Читать дальше</div>
+    <div class="rel-grid">
+      <a href="essay-doughnut.html" class="rel-card">
+        <div class="rel-kind">Эссе</div>
+        <div class="rel-name">ВВП меряет скорость</div>
+      </a>
+      <a href="term-hyperobject.html" class="rel-card">
+        <div class="rel-kind">Понятие</div>
+        <div class="rel-name">Гиперобъект</div>
+      </a>
+      <a href="lab-illich-benyus.html" class="rel-card">
+        <div class="rel-kind">Лаборатория №11</div>
+        <div class="rel-name">Иллич и Бенюс: кто может это вырастить</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ECO:MANAGED:footer -->
+<footer class="gf">
+  <div class="gf-top">
+    <div class="gf-brand">
+      <a href="index.html" class="gf-logo">
+        <svg viewBox="0 0 100 100" fill="none" class="logo-svg" style="width:24px;height:24px;flex-shrink:0;"><circle cx="50" cy="50" r="40" stroke="#f3ede3" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#6ea87e"/></svg>
+        <span class="gf-logo-text">Эко<em>Сознание</em></span>
+      </a>
+      <p class="gf-tagline">Экологический взгляд как линза для любой сферы жизни</p>
+    </div>
+    <div class="gf-cols">
+      <div>
+        <div class="gf-col-title">Разделы</div>
+        <div class="gf-sections">
+          <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Философия</span></a>
+          <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
+          <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
+          <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="gf-sec-name">Технологии</span></a>
+          <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
+          <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
+          <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Экономика</span></a>
+          <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="gf-sec-name">Образование</span></a>
+          <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
+          <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
+          <a href="section-health.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Здоровье</span></a>
+          <a href="section-science.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Наука</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="gf-col-title">Навигация</div>
+        <nav class="gf-nav-links">
+          <a href="index.html" class="gf-nav-link">Главная</a>
+          <a href="map.html" class="gf-nav-link">Карта связей</a>
+          <a href="paths.html" class="gf-nav-link">Тропы чтения</a>
+          <a href="tree.html" class="gf-nav-link">Дерево материалов</a>
+          <a href="revisions.html" class="gf-nav-link">Что не подтвердилось</a>
+          <a href="thinkers.html" class="gf-nav-link">Указатель имён</a>
+          <a href="search.html" class="gf-nav-link">Поиск</a>
+          <a href="method.html" class="gf-nav-link">Как устроены материалы</a>
+            <a href="about.html" class="gf-nav-link">О проекте</a>
+          <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="gf-bottom">
+    <span class="gf-copy">© 2026 ЭкоСознание</span>
+    <div class="gf-bottom-links">
+      <a href="about.html">О проекте</a>
+      <a href="glossary.html">Глоссарий</a>
+    </div>
+  </div>
+</footer>
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+
+
+<!-- ECO:MANAGED:js -->
+<script src="assets/global.js" defer></script>
+<!-- /ECO:MANAGED:js -->
+</body>
+</html>

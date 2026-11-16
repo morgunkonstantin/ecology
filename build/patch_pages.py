@@ -28,6 +28,59 @@ os.chdir(ROOT)
 with open("build/pages.json", encoding="utf-8") as fh:
     META = json.load(fh)
 
+SECTION_MAP = {
+    "Философия": "section-philosophy.html", "Психология": "section-psychology.html",
+    "Стиль жизни": "section-lifestyle.html", "Технологии": "section-technologies.html",
+    "Питание": "section-food.html", "Компост": "section-compost.html",
+    "Архитектура": "section-architecture.html", "Строительство": "section-construction.html",
+    "Экономика": "section-economy.html", "Образование": "section-education.html",
+    "Сообщество": "section-community.html", "Путешествия": "section-travel.html",
+    "Здоровье": "section-health.html", "Наука": "section-science.html",
+}
+
+
+def crumb_trail(fname, info):
+    """Иерархический путь: [(название, ссылка|None), ...]; последний элемент — текущая страница (ссылка None)."""
+    crumbs = [("Главная", "index.html")]
+    if fname == "index.html":
+        return crumbs
+    if fname.startswith("section-"):
+        if info.get("parent"):
+            crumbs.append((info.get("parent_title", ""), info["parent"]))
+        else:
+            sec = info.get("section_title")
+            hub = SECTION_MAP.get(sec)
+            if hub and hub != fname:
+                crumbs.append((sec, hub))
+        crumbs.append((info.get("title", fname), None))
+        return crumbs
+    sec = info.get("section_title")
+    hub = SECTION_MAP.get(sec)
+    if hub and hub != fname:
+        hub_info = META.get(hub, {})
+        if hub_info.get("parent"):
+            crumbs.append((hub_info.get("parent_title", ""), hub_info["parent"]))
+        crumbs.append((sec, hub))
+    crumbs.append((info.get("title", fname), None))
+    return crumbs
+
+
+def build_breadcrumb_html(fname, info):
+    trail = crumb_trail(fname, info)
+    if fname == "index.html" or len(trail) < 2:
+        return ""
+    parts = []
+    for nm, href in trail:
+        if href is None:
+            disp = nm if len(nm) <= 52 else nm[:50].rstrip() + "…"
+            parts.append('<span class="bc-current">%s</span>' % esc(disp))
+        else:
+            parts.append('<a href="%s">%s</a>' % (href, esc(nm)))
+    inner = ' <span class="bc-sep">\u2192</span> '.join(parts)
+    return ('<!-- %s:breadcrumb -->\n'
+            '<nav class="breadcrumb" aria-label="\u0425\u043b\u0435\u0431\u043d\u044b\u0435 \u043a\u0440\u043e\u0448\u043a\u0438">%s</nav>\n'
+            '<!-- /%s:breadcrumb -->' % (MARK, inner, MARK))
+
 
 # ── вспомогательные ──────────────────────────────────────────────────
 
@@ -55,11 +108,21 @@ def esc(text):
 
 # ── блоки, которые вставляем в <head> ────────────────────────────────
 
-def build_head(fname, info):
+DEFAULT_OG_IMAGE = "assets/og-image.png"
+DEFAULT_OG_ALT = "ЭкоСознание — экология как способ смотреть на реальность"
+
+
+def build_head(fname, info, has_twitter_card=False):
     url = "%s/%s" % (SITE, "" if fname == "index.html" else fname)
     title = info["title"]
     desc = info["description"]
     kind = info["kind"]
+    # Своя картинка превью для соцсетей: "og_image" в pages.json (путь от
+    # корня сайта, строго 1200×630) и "og_image_alt". Иначе — общая заставка.
+    og_image = "%s/%s" % (SITE, info.get("og_image", DEFAULT_OG_IMAGE))
+    og_alt = info.get("og_image_alt", DEFAULT_OG_ALT)
+    twitter_card = ('  <meta name="twitter:card" content="summary_large_image">\n'
+                    if info.get("og_image") and not has_twitter_card else "")
 
     ld = {
         "@context": "https://schema.org",
@@ -78,18 +141,16 @@ def build_head(fname, info):
         ld["name"] = "ЭкоСознание"
     if info.get("date"):
         ld["datePublished"] = info["date"]
+    if info.get("og_image"):
+        ld["image"] = og_image
     if kind == "article":
         ld["author"] = {"@type": "Organization", "name": "ЭкоСознание"}
         ld["articleSection"] = info.get("section_title", "")
 
-    crumbs = [{"@type": "ListItem", "position": 1, "name": "Главная", "item": SITE + "/"}]
-    if info.get("parent"):
-        crumbs.append({"@type": "ListItem", "position": 2,
-                       "name": info["parent_title"],
-                       "item": "%s/%s" % (SITE, info["parent"])})
-    if fname != "index.html":
-        crumbs.append({"@type": "ListItem", "position": len(crumbs) + 1,
-                       "name": title, "item": url})
+    crumbs = []
+    for pos, (nm, href) in enumerate(crumb_trail(fname, info), 1):
+        item = (SITE + "/") if href == "index.html" else (url if href is None else "%s/%s" % (SITE, href))
+        crumbs.append({"@type": "ListItem", "position": pos, "name": nm, "item": item})
     breadcrumb = {"@context": "https://schema.org", "@type": "BreadcrumbList",
                   "itemListElement": crumbs}
 
@@ -100,11 +161,11 @@ def build_head(fname, info):
 {noindex}  <link rel="canonical" href="{url}">
   <meta property="og:url" content="{url}">
   <meta property="og:site_name" content="ЭкоСознание">
-  <meta property="og:image" content="{site}/assets/og-image.png">
+  <meta property="og:image" content="{og_image}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="ЭкоСознание — экология как способ смотреть на реальность">
-  <meta name="twitter:image" content="{site}/assets/og-image.png">
+  <meta property="og:image:alt" content="{og_alt}">
+{twitter_card}  <meta name="twitter:image" content="{og_image}">
   <meta name="theme-color" content="#faf6ef">
   <meta name="color-scheme" content="light">
   <link rel="icon" href="favicon.ico" sizes="any">
@@ -116,6 +177,7 @@ def build_head(fname, info):
   <script type="application/ld+json">{bc}</script>
 <!-- /{mark}:head -->
 """.format(mark=MARK, url=url, site=SITE, noindex=noindex,
+           og_image=og_image, og_alt=esc(og_alt), twitter_card=twitter_card,
            ld=json.dumps(ld, ensure_ascii=False, separators=(",", ":")),
            bc=json.dumps(breadcrumb, ensure_ascii=False, separators=(",", ":")))
 
@@ -133,15 +195,20 @@ def patch(fname):
     s = re.sub(r"<!-- %s:head -->.*?<!-- /%s:head -->\n?" % (MARK, MARK), "", s, flags=re.S)
     s = re.sub(r"\n?<!-- %s:js -->.*?<!-- /%s:js -->" % (MARK, MARK), "", s, flags=re.S)
     s = re.sub(r'\s*<a class="skip-link"[^>]*>.*?</a>', "", s, flags=re.S)
+    s = re.sub(r"<!-- %s:breadcrumb -->.*?<!-- /%s:breadcrumb -->\n?" % (MARK, MARK), "", s, flags=re.S)
+
+    # 1a. Старые картинки превью вне управляемого блока (например,
+    #     ecosoznanie.ru/og-image.jpg): соцсети берут первую, а правильную
+    #     ставит блок head ниже.
+    s, n = re.subn(r'[ \t]*<meta (?:property="og:image(?::[a-z]+)?"|name="twitter:image")[^>]*>\n', "", s)
+    if n:
+        log.append("old og:image")
 
     # 2. Заголовок и описание
     if info.get("title_fix"):
         s = re.sub(r"<title>.*?</title>",
                    "<title>%s</title>" % esc(info["title_full"]), s, flags=re.S)
         log.append("title")
-    if "Двенадцать разделов" in s:
-        s = s.replace("Двенадцать разделов", "Семнадцать разделов")
-        log.append("desc-count")
 
     # 3. Единый набор шрифтов + preconnect на gstatic
     s = re.sub(r'https://fonts\.googleapis\.com/css2\?[^"]+', FONTS, s)
@@ -162,7 +229,7 @@ def patch(fname):
                       "replace('no-js','js');</script>", 1)
 
     # 6. Управляемый блок в <head>
-    s = s.replace("</head>", build_head(fname, info) + "</head>", 1)
+    s = s.replace("</head>", build_head(fname, info, "twitter:card" in s) + "</head>", 1)
 
     # 7. skip-link сразу после <body>
     s = re.sub(r"(<body[^>]*>)",
@@ -178,6 +245,11 @@ def patch(fname):
             s = (s[:end] + '\n<main id="content" tabindex="-1">\n'
                  + s[end:j] + "</main>\n" + s[j:])
             log.append("main")
+
+    # 8.5 Видимая полоса хлебных крошек — сразу после <main id="content">
+    bc = build_breadcrumb_html(fname, info)
+    if bc:
+        s = re.sub(r'(<main id="content"[^>]*>)', lambda m: m.group(1) + "\n" + bc, s, count=1)
 
     # 9. Скрипты: убрать все встроенные общие, подключить общий файл
     def drop(m):

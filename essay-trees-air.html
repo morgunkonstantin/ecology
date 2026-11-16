@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+<script>document.documentElement.classList.replace('no-js','js');</script>
+<meta charset="UTF-8">
+<meta name="description" content="Откуда у дуба двадцать тонн массы? Не из земли: почти всё дерево сделано из воздуха и воды. Опыт ван Гельмонта, фотосинтез, огонь как фотосинтез наоборот, путешествие атома углерода, уголь как древний лес — и почему именно деревья помогают остановить перегрев планеты. Шесть инфографик.">
+<meta property="og:title" content="Дерево из воздуха">
+<meta property="og:description" content="Откуда у дуба двадцать тонн массы? Не из земли: почти всё дерево сделано из воздуха и воды. Опыт ван Гельмонта, фотосинтез, огонь как фотосинтез наоборот, путешествие атома углерода, уголь как древний лес — и почему именно деревья помогают остановить перегрев планеты. Шесть инфографик.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Дерево из воздуха — ЭкоСознание</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+.hero{padding:10rem 4rem 5rem;display:grid;grid-template-columns:1fr 380px;gap:4rem;align-items:end;border-bottom:1px solid rgba(74,124,89,.15);position:relative;overflow:hidden;}
+.hero-mark-svg{position:absolute;right:4rem;top:11rem;width:90px;height:90px;color:rgba(74,124,89,.18);pointer-events:none;}
+.hero-mark-svg svg{width:100%;height:100%;display:block;}
+.hero-tag{display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:1.5rem;}
+.hero-tag::before{content:'';display:block;width:24px;height:1px;background:var(--fern);}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,6vw,5rem);font-weight:300;line-height:1.05;color:var(--ink);margin-bottom:1.8rem;}
+h1 em{font-style:italic;color:var(--moss);display:block;}
+.hero-lead{font-size:1rem;line-height:1.85;color:var(--ink-light);max-width:580px;}
+.hero-meta{display:flex;flex-direction:column;gap:1.5rem;padding-left:2rem;border-left:1px solid rgba(74,124,89,.2);}
+.meta-label{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:.4rem;}
+.meta-value{font-size:.9rem;color:var(--ink-light);line-height:1.6;}
+.toc-bar{background:var(--ink);padding:0 4rem;display:flex;align-items:stretch;overflow-x:auto;}
+.toc-bar a{color:rgba(211,230,208,.6);text-decoration:none;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:1rem 1.5rem;border-right:1px solid rgba(255,255,255,.06);white-space:nowrap;transition:color .2s,background .2s;}
+.toc-bar a:hover{color:var(--mist);}
+.toc-bar a.active{color:var(--fern);}
+.content-section{padding:5rem 4rem;border-bottom:1px solid rgba(74,124,89,.1);}
+.content-section.alt{background:var(--cream);}
+.content-section.dark{background:var(--ink);}
+.section-label{display:flex;align-items:center;gap:1rem;margin-bottom:3rem;}
+.section-label-num{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);}
+.section-label-line{flex:1;height:1px;background:rgba(74,124,89,.15);}
+.section-label-tag{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);}
+h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;color:var(--ink);line-height:1.15;margin-bottom:1.5rem;}
+h2 em{font-style:italic;color:var(--moss);}
+h2.light{color:var(--cream);}
+h2.light em{color:var(--fern);}
+.article-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+.article-layout.wide{grid-template-columns:3fr 2fr;}
+.article-body p{font-size:.95rem;line-height:1.9;color:var(--ink-light);margin-bottom:1.1rem;}
+.article-body p:last-child{margin-bottom:0;}
+.article-body p.light{color:rgba(211,230,208,.72);}
+.pull-quote{border-left:3px solid var(--moss);padding:1.2rem 1.5rem;margin:2rem 0;background:rgba(74,124,89,.05);}
+.pull-quote p{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:var(--ink);line-height:1.5;margin:0!important;}
+.pull-quote.light{background:rgba(255,255,255,.06);border-color:var(--fern);}
+.pull-quote.light p{color:var(--cream);}
+.pull-quote cite{display:block;margin-top:.6rem!important;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);font-style:normal;}
+.practices-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(74,124,89,.12);margin-top:2rem;}
+.practice-card{background:var(--paper);padding:2rem 1.8rem;transition:background .25s;}
+.content-section.alt .practice-card{background:var(--cream);}
+.practice-card:hover{background:var(--warm);}
+.practice-num{font-family:'Cormorant Garamond',serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.6rem;}
+.practice-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--ink);margin-bottom:.6rem;}
+.practice-name em{font-style:italic;color:var(--moss);}
+.practice-desc{font-size:.85rem;line-height:1.75;color:var(--ink-light);}
+.featured-strip{background:var(--ink);padding:3rem 3.5rem;display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center;margin-top:3rem;}
+.featured-label{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:1rem;}
+.featured-strip h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;font-style:italic;color:var(--cream);margin-bottom:.8rem;line-height:1.2;}
+.featured-strip p{font-size:.87rem;line-height:1.8;color:rgba(211,230,208,.68);}
+.featured-btn{background:transparent;color:var(--fern);border:1px solid rgba(110,168,126,.4);padding:.8rem 1.6rem;text-decoration:none;font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;display:inline-block;transition:background .25s,color .25s;}
+.featured-btn:hover{background:var(--fern);color:var(--ink);}
+.rubrics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.12);margin-top:3rem;}
+.rubric-card{background:var(--paper);padding:2rem 1.6rem;transition:background .25s;}
+.rubric-card:hover{background:var(--warm);}
+.rubric-icon{font-size:1.4rem;margin-bottom:1rem;}
+.rubric-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--ink);margin-bottom:.6rem;}
+.rubric-desc{font-size:.82rem;line-height:1.75;color:var(--ink-light);}
+.rubric-example{margin-top:1rem;font-size:.78rem;font-style:italic;color:var(--moss);line-height:1.6;}
+.rubric-card.dark-card{background:var(--ink);}
+.rubric-card.dark-card .rubric-name{color:var(--cream);}
+.rubric-card.dark-card .rubric-desc{color:rgba(211,230,208,.65);}
+.rubric-card.dark-card .rubric-example{color:var(--fern);}
+.g-next-section{background:var(--ink);padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;}
+.g-next-label{font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(168,197,160,.45);margin-bottom:.5rem;}
+.g-next-link{display:inline-flex;align-items:center;gap:.8rem;text-decoration:none;}
+.g-next-name{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--cream);font-style:italic;transition:color .2s;}
+.g-next-link:hover .g-next-name{color:var(--fern);}
+.g-next-arrow{font-family:'Cormorant Garamond',serif;font-size:2rem;color:rgba(110,168,126,.5);transition:transform .2s,color .2s;}
+.g-next-link:hover .g-next-arrow{transform:translateX(6px);color:var(--fern);}
+.g-next-num{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:300;color:rgba(255,255,255,.06);line-height:1;}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease;}
+.reveal.visible{opacity:1;transform:none;}
+.d1{transition-delay:.1s;}
+.d2{transition-delay:.2s;}
+@media(max-width:800px){ .hero,.toc-bar,.content-section,.g-next-section{padding-left:1.5rem;padding-right:1.5rem;} .hero{grid-template-columns:1fr;} .hero-meta{padding-left:0;border-left:none;border-top:1px solid rgba(74,124,89,.2);padding-top:1.5rem;} .hero-mark-svg{right:1.5rem;top:9rem;width:60px;height:60px;} .article-layout,.article-layout.wide{grid-template-columns:1fr;gap:2rem;} .practices-grid,.rubrics-grid{grid-template-columns:1fr;} .featured-strip{grid-template-columns:1fr;gap:1.5rem;} }
+.methods-table{margin:2rem 0;border:1px solid rgba(74,124,89,.15);overflow-x:auto;}
+.methods-row{display:grid;grid-template-columns:180px repeat(4,1fr);gap:0;border-bottom:1px solid rgba(74,124,89,.1);min-width:760px;}
+.methods-row:last-child{border-bottom:none;}
+.methods-row.header{background:var(--ink);}
+.methods-row.header > div{color:var(--sage);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;padding:.9rem 1rem;}
+.methods-row > div{background:var(--paper);padding:.95rem 1rem;font-size:.85rem;color:var(--ink-light);line-height:1.5;border-right:1px solid rgba(74,124,89,.08);}
+.content-section.alt .methods-row > div{background:var(--cream);}
+.methods-row > div:last-child{border-right:none;}
+.methods-row > .method-name{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;color:var(--ink);}
+.methods-row.header > .method-name{color:var(--sage);font-style:normal;}
+.seasons-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.12);margin:2rem 0;}
+.season-card{background:var(--paper);padding:1.8rem 1.5rem;transition:background .25s;display:flex;flex-direction:column;}
+.content-section.alt .season-card{background:var(--cream);}
+.season-card:hover{background:var(--warm);}
+.season-icon{font-size:1.9rem;margin-bottom:.7rem;line-height:1;}
+.season-name{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--ink);margin-bottom:.2rem;}
+.season-name em{font-style:italic;color:var(--moss);}
+.season-months{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:.9rem;}
+.season-actions{font-size:.83rem;line-height:1.7;color:var(--ink-light);margin-bottom:.8rem;}
+.season-watch{font-size:.78rem;line-height:1.6;color:var(--ink-light);padding-top:.7rem;border-top:1px dashed rgba(74,124,89,.18);margin-top:auto;}
+.season-watch strong{color:var(--rust);font-weight:400;}
+.timeline{margin:2rem 0;position:relative;border-left:1px solid rgba(74,124,89,.2);padding-left:2rem;}
+.timeline-item{margin-bottom:2rem;position:relative;}
+.timeline-item:last-child{margin-bottom:0;}
+.timeline-item::before{content:'';position:absolute;left:-2.45rem;top:.3rem;width:9px;height:9px;border-radius:50%;background:var(--moss);box-shadow:0 0 0 3px var(--paper);}
+.content-section.alt .timeline-item::before{box-shadow:0 0 0 3px var(--cream);}
+.timeline-era{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.4rem;}
+.timeline-name{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--ink);margin-bottom:.5rem;line-height:1.3;}
+.timeline-name em{font-style:italic;color:var(--moss);}
+.timeline-desc{font-size:.88rem;line-height:1.75;color:var(--ink-light);}
+.timeline-desc em{font-style:italic;color:var(--moss);}
+.case-block{background:var(--ink);padding:4rem 3.5rem;margin:2rem 0;}
+.case-inner{max-width:920px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start;}
+.case-block h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;color:var(--cream);line-height:1.25;margin-bottom:1.3rem;}
+.case-block h3 em{font-style:italic;color:var(--fern);}
+.case-block p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.75;color:rgba(211,230,208,.75);margin-bottom:1rem;}
+.case-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.08);}
+.case-stat{background:rgba(255,255,255,.04);padding:1.4rem 1.2rem;text-align:center;}
+.case-stat-num{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--fern);font-weight:300;line-height:1;margin-bottom:.4rem;}
+.case-stat-lbl{font-size:.72rem;color:rgba(211,230,208,.65);line-height:1.5;}
+.case-link{display:inline-flex;align-items:center;gap:.6rem;font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--fern);text-decoration:none;border-bottom:1px solid rgba(110,168,126,.4);padding-bottom:.3rem;margin-top:1rem;}
+.case-link:hover{border-color:var(--fern);}
+@media(max-width:800px){ .case-inner{grid-template-columns:1fr;gap:2rem;} .case-block{padding:2.5rem 1.5rem;} .seasons-grid{grid-template-columns:1fr 1fr;} .methods-row{grid-template-columns:140px repeat(4,1fr);min-width:660px;} }
+@media(max-width:540px){ .seasons-grid{grid-template-columns:1fr;} .case-stats{grid-template-columns:1fr 1fr;} }
+.cycle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.12);margin:2rem 0;}
+.cycle-card{background:var(--paper);padding:1.8rem 1.6rem;text-align:center;transition:background .25s;}
+.content-section.alt .cycle-card{background:var(--cream);}
+.cycle-card:hover{background:var(--warm);}
+.cycle-step{font-family:'Cormorant Garamond',serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.6rem;}
+.cycle-icon{font-size:2rem;margin-bottom:.8rem;line-height:1;}
+.cycle-name{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--ink);margin-bottom:.5rem;}
+.cycle-name em{font-style:italic;color:var(--moss);}
+.cycle-desc{font-size:.82rem;line-height:1.7;color:var(--ink-light);}
+.can-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:2rem 0;}
+.can-col h4{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:400;margin-bottom:1rem;}
+.can-col.yes h4{color:var(--moss);}
+.can-col.no h4{color:var(--rust);}
+.can-list{list-style:none;display:flex;flex-direction:column;gap:0;}
+.can-item{font-size:.85rem;line-height:1.6;color:var(--ink-light);padding:.45rem 0;border-bottom:1px dashed rgba(74,124,89,.12);}
+.can-item:last-child{border-bottom:none;}
+.can-item::before{margin-right:.5rem;}
+.can-col.yes .can-item::before{content:'✓';color:var(--fern);}
+.can-col.no .can-item::before{content:'✗';color:var(--rust);}
+.soil-block{background:var(--ink);padding:4rem 3.5rem;margin:3rem 0;}
+.soil-inner{max-width:720px;margin:0 auto;}
+.soil-block h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;font-style:italic;color:var(--cream);line-height:1.3;margin-bottom:1.5rem;}
+.soil-block h3 em{color:var(--fern);}
+.soil-block p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.8;color:rgba(211,230,208,.75);margin-bottom:1.2rem;}
+.soil-block p:last-child{margin-bottom:0;}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.15);margin:2rem 0;}
+.stat-card{background:var(--paper);padding:1.6rem 1.2rem;text-align:center;}
+.content-section.alt .stat-card{background:var(--cream);}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:300;color:var(--moss);line-height:1;margin-bottom:.4rem;}
+.stat-label{font-size:.78rem;line-height:1.5;color:var(--ink-light);}
+.q-list{display:flex;flex-direction:column;gap:0;margin:1.5rem 0;}
+.q-item{padding:1.2rem 0;border-bottom:1px solid rgba(74,124,89,.1);}
+.q-item:last-child{border-bottom:none;}
+.q-question{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink);margin-bottom:.5rem;font-weight:400;}
+.q-question em{font-style:italic;color:var(--moss);}
+.q-answer{font-size:.88rem;line-height:1.75;color:var(--ink-light);}
+@media(max-width:800px){ .cycle-grid{grid-template-columns:1fr 1fr;} .can-grid{grid-template-columns:1fr;} .stats-row{grid-template-columns:1fr 1fr;} .soil-block{padding:2.5rem 1.5rem;} }
+@media(max-width:540px){ .cycle-grid{grid-template-columns:1fr;} .stats-row{grid-template-columns:1fr 1fr;} }
+.section-num{font-family:'Cormorant Garamond',serif;font-size:0.85rem;letter-spacing:0.3em;color:var(--moss);margin-bottom:1rem;font-style:italic;}
+.disc-meta{font-family:'Jost',sans-serif;font-size:0.78rem;letter-spacing:0.05em;color:var(--ink-light);margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid rgba(74,124,89,0.15);font-weight:300;line-height:1.7;}
+.content-section p{font-size:1rem;line-height:1.85;color:var(--ink);margin-top:1.2rem;}
+.content-section p strong{color:var(--moss);font-weight:500;}
+.content-section p em{font-style:italic;color:var(--ink-light);}
+.content-section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;line-height:1.15;color:var(--ink);margin-bottom:0.5rem;}
+.content-section h2 em{color:var(--moss);font-style:italic;display:block;}
+</style>
+
+<style>
+/* ── Источники: единый блок для всех эссе и лабораторий ── */
+.sources{margin:5rem 0 0;padding-top:2.5rem;border-top:1px solid rgba(74,124,89,.2);}
+.src-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;margin-bottom:1.6rem;}
+.src-title small{display:block;font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--clay-text);font-weight:400;margin-bottom:.6rem;}
+.src-list{list-style:none;counter-reset:src;padding:0;margin:0;}
+.src-list li{position:relative;padding-left:2.4rem;margin-bottom:1.1rem;font-size:.86rem;
+  line-height:1.7;color:var(--ink-light);}
+.src-list li::before{counter-increment:src;content:counter(src,decimal-leading-zero);
+  position:absolute;left:0;top:.15rem;font-family:'Jost',sans-serif;font-size:.66rem;
+  letter-spacing:.1em;color:var(--sage-text);}
+.src-a{color:var(--ink);}
+/* ── Ссылка на термин глоссария ── */
+a.term{color:inherit;text-decoration:none;border-bottom:1px dotted var(--fern-text);}
+a.term:hover{border-bottom-style:solid;color:var(--moss);}
+/* ── Вопросы-врезка ── */
+.quiz{background:var(--warm);padding:2.2rem 2.4rem;margin:2.5rem 0;border-left:3px solid var(--moss);}
+.quiz ol{margin:0;padding-left:1.4rem;}
+.quiz li{font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.6;
+  color:var(--ink);margin-bottom:.9rem;}
+.quiz li:last-child{margin-bottom:0;}
+</style>
+<!-- ECO:MANAGED:head -->
+  <link rel="canonical" href="https://morgunkonstantin.github.io/ecology/essay-trees-air.html">
+  <meta property="og:url" content="https://morgunkonstantin.github.io/ecology/essay-trees-air.html">
+  <meta property="og:site_name" content="ЭкоСознание">
+  <meta property="og:image" content="https://morgunkonstantin.github.io/ecology/assets/img/trees-air-og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Женщина смотрит на огромное дерево, в крону которого втекают потоки воздуха и превращаются в листья.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://morgunkonstantin.github.io/ecology/assets/img/trees-air-og.jpg">
+  <meta name="theme-color" content="#faf6ef">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","name":"Дерево из воздуха","headline":"Дерево из воздуха","description":"Откуда у дуба двадцать тонн массы? Не из земли: почти всё дерево сделано из воздуха и воды. Опыт ван Гельмонта, фотосинтез, огонь как фотосинтез наоборот, путешествие атома углерода, уголь как древний лес — и почему именно деревья помогают остановить перегрев планеты. Шесть инфографик.","inLanguage":"ru-RU","url":"https://morgunkonstantin.github.io/ecology/essay-trees-air.html","isPartOf":{"@type":"WebSite","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"},"publisher":{"@type":"Organization","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"},"datePublished":"2026-10-18","image":"https://morgunkonstantin.github.io/ecology/assets/img/trees-air-og.jpg","author":{"@type":"Organization","name":"ЭкоСознание"},"articleSection":"Наука"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://morgunkonstantin.github.io/ecology/"},{"@type":"ListItem","position":2,"name":"Наука","item":"https://morgunkonstantin.github.io/ecology/section-science.html"},{"@type":"ListItem","position":3,"name":"Дерево из воздуха","item":"https://morgunkonstantin.github.io/ecology/essay-trees-air.html"}]}</script>
+<!-- /ECO:MANAGED:head -->
+</head>
+<body>
+<a class="skip-link" href="#content">Перейти к содержанию</a>
+
+<!-- ECO:MANAGED:nav -->
+<div class="g-nav-wrap" id="gNavWrap">
+  <div class="g-nav">
+    <a href="index.html" class="g-logo">
+      <svg viewBox="0 0 100 100" fill="none" class="logo-svg"><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#4a7c59"/></svg>
+      <span class="g-logo-text">Эко<em>Сознание</em></span>
+    </a>
+    <ul class="g-links">
+      <li>
+        <button class="g-drop-btn" aria-expanded="false">
+          Разделы
+          <svg class="g-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="g-dropdown">
+          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
+          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
+          <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
+          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
+          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
+          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">08</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">09</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">10</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">11</span></a>
+          <a href="section-science.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Наука</span><span class="g-dd-num">12</span></a>
+        </div>
+      </li>
+      <li><a href="about.html">О проекте</a></li>
+    </ul>
+    <button class="g-burger" id="gBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<div class="g-overlay" id="gOverlay">
+  <div class="g-ov-section">
+    <div class="g-ov-label">Разделы</div>
+    <div class="g-ov-grid">
+      <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Философия</span></a>
+      <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
+      <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
+      <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="g-ov-name">Технологии</span></a>
+      <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
+      <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
+      <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Экономика</span></a>
+      <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="g-ov-name">Образование</span></a>
+      <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
+      <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
+      <a href="section-health.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Здоровье</span></a>
+      <a href="section-science.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Наука</span></a>
+    </div>
+  </div>
+  <div class="g-ov-section">
+    <div class="g-ov-label">Навигация</div>
+    <div class="g-ov-simple-links">
+      <a href="index.html" class="g-ov-simple-link">Главная</a>
+      <a href="map.html" class="g-ov-simple-link">Карта связей</a>
+      <a href="contents.html" class="g-ov-simple-link">Все материалы</a>
+      <a href="revisions.html" class="g-ov-simple-link">Что не подтвердилось</a>
+      <a href="search.html" class="g-ov-simple-link">Поиск</a>
+      <a href="paths.html" class="g-ov-simple-link">Тропы чтения</a>
+      <a href="tree.html" class="g-ov-simple-link">Дерево материалов</a>
+      <a href="thinkers.html" class="g-ov-simple-link">Указатель имён</a>
+      <a href="about.html" class="g-ov-simple-link">О проекте</a>
+    </div>
+  </div>
+</div>
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<main id="content" tabindex="-1">
+<!-- ECO:MANAGED:breadcrumb -->
+<nav class="breadcrumb" aria-label="Хлебные крошки"><a href="index.html">Главная</a> <span class="bc-sep">→</span> <a href="section-science.html">Наука</a> <span class="bc-sep">→</span> <span class="bc-current">Дерево из воздуха</span></nav>
+<!-- /ECO:MANAGED:breadcrumb -->
+
+<figure class="hero-cover" style="--cover-x-mobile:15%;">
+  <img src="assets/img/trees-air-hero-2000.webp"
+       srcset="assets/img/trees-air-hero-1200.webp 1200w, assets/img/trees-air-hero-2000.webp 2000w"
+       sizes="100vw" width="2000" height="666" fetchpriority="high" decoding="async"
+       alt="Женщина смотрит на огромное дерево, в крону которого втекают потоки воздуха и превращаются в листья.">
+</figure>
+
+<section class="hero" id="top">
+  <div>
+    <div class="hero-tag">Большое эссе с инфографикой · Наука</div>
+    <h1>Дерево<br><em>из воздуха</em></h1>
+    <p class="hero-lead">Положите ладонь на ствол старого дуба. Под рукой — десятки тонн твёрдого, тяжёлого вещества. А теперь простой вопрос, на который почти никто не отвечает правильно: откуда эти тонны взялись? Ответ звучит как шутка, но это строгая физика и химия: дерево почти целиком сделано из воздуха. И именно поэтому деревья — главные союзники человечества в борьбе с перегревом планеты.</p>
+  </div>
+  <div class="hero-meta">
+    <div><div class="meta-label">Главная мысль</div><div class="meta-value">≈ 99% сухой массы дерева — это воздух и вода · из почвы приходит лишь около процента</div></div>
+    <div><div class="meta-label">Почему это важно</div><div class="meta-value">Строя себя из CO₂, деревья вытягивают из атмосферы тот самый газ, избыток которого нагревает Землю</div></div>
+    <div><div class="meta-label">Как читать</div><div class="meta-value">Медленно. Это длинный текст — от горшка ван Гельмонта до угольных пластов и вашего камина. Около 30 минут.</div></div>
+  </div>
+</section>
+
+<div class="toc-bar">
+  <a href="#question" class="active">Вопрос</a>
+  <a href="#helmont">Опыт с ивой</a>
+  <a href="#air">Ответ</a>
+  <a href="#leaf">Лист-фабрика</a>
+  <a href="#fire">Огонь</a>
+  <a href="#journey">Путешествие атома</a>
+  <a href="#coal">Уголь</a>
+  <a href="#climate">Климат</a>
+  <a href="#honest">Честно</a>
+  <a href="#outro">Итог</a>
+</div>
+
+<!-- ═══ 00 ВОПРОС ═════════════════════════════════════════════════════════ -->
+<section class="content-section" id="question">
+  <div style="max-width:820px;">
+    <div class="section-num">00</div>
+    <div class="disc-meta">наивный вопрос, который стоит задать всерьёз</div>
+    <h2>Откуда берутся <em>тонны</em></h2>
+    <p>Начнём не с книги, а с прогулки. Найдите рядом с домом большое дерево — дуб, липу, старую берёзу — и приложите ладонь к коре. Почувствуйте, насколько оно плотное и неподвижное. Ствол, который не обхватить руками, ветви толщиной с человека, крона, закрывающая полнеба.</p>
+    <p>Старый дуб весит десятки тонн. Если взять дерево в двадцать тонн, это вес нескольких гружёных самосвалов. Двадцать тысяч килограммов вещества, которое можно потрогать, распилить, сжечь.</p>
+    <p>А ведь когда-то этот дуб был жёлудем. Жёлудь весит несколько граммов. Прошло полвека — и на месте этих граммов стоят двадцать тонн. Значит, почти все двадцать тысяч килограммов пришли откуда-то <em>снаружи</em>. Вещество не возникает из ничего — это один из самых надёжных законов природы. Так откуда?</p>
+    <p>Большинство людей отвечает сразу и уверенно: из земли. Корни уходят в почву, тянут из неё соки, дерево «питается землёй». Мы говорим «плодородная почва», «удобрить землю», «посадить в землю». Здравый смысл не видит здесь никакой загадки.</p>
+    <p>И здравый смысл ошибается. Почти полностью. Эта статья — о том, почему, и о том, как один этот ответ меняет взгляд на леса, на дрова в печке, на уголь, на климат и даже на собственное дыхание.</p>
+  </div>
+</section>
+
+<!-- ═══ 01 ОПЫТ ВАН ГЕЛЬМОНТА ═════════════════════════════════════════════ -->
+<section class="content-section alt" id="helmont">
+  <div style="max-width:860px;">
+    <div class="section-num">01</div>
+    <div class="disc-meta">первый количественный опыт в биологии растений · Нидерланды, первая половина XVII века</div>
+    <h2>Учёный, <em>который взвесил землю</em></h2>
+    <p>Почти четыреста лет назад этот вопрос задал себе фламандский врач и естествоиспытатель Ян Баптист ван Гельмонт. И сделал то, до чего до него никто не додумался: не стал спорить, а взвесил.</p>
+    <p>Он насыпал в большой глиняный горшок двести фунтов высушенной земли, посадил туда ивовый прут весом около пяти фунтов, накрыл горшок крышкой с отверстиями, чтобы внутрь не попадала пыль, и пять лет только поливал иву дождевой водой. Больше в горшок не добавлялось ничего.</p>
+    <p>Через пять лет ива весила около ста шестидесяти девяти фунтов. Прибавка — больше семидесяти килограммов. Ван Гельмонт снова высушил землю и взвесил её. Если дерево «ест землю», почвы должно было заметно убавиться. Она потеряла около двух унций — меньше шестидесяти граммов.</p>
+
+    <!-- ИНФОГРАФИКА 1: ОПЫТ ВАН ГЕЛЬМОНТА -->
+    <div class="tr-panel">
+      <div class="tr-sub">Инфографика 1 · Опыт ван Гельмонта: пять лет, один горшок</div>
+      <div class="tr-vh">
+        <div class="tr-vh-col">
+          <div class="tr-vh-h">Было</div>
+          <svg viewBox="0 0 200 220" role="img" aria-label="Начало опыта: ивовый прут 5 фунтов, земля 200 фунтов" style="width:100%;max-width:200px;height:auto;display:block;margin:0 auto;">
+            <path d="M100 150 V110" stroke="#4a7c59" stroke-width="3" stroke-linecap="round"/>
+            <path d="M100 122 L88 112 M100 116 L111 106" stroke="#4a7c59" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M42 150 H158 L146 212 H54 Z" fill="#c4956a"/>
+            <rect x="48" y="146" width="104" height="10" fill="#3d2b1e"/>
+          </svg>
+          <div class="tr-vh-row"><span>ива</span><b>≈ 2,3 кг</b></div>
+          <div class="tr-vh-row"><span>земля</span><b>≈ 90,7 кг</b></div>
+        </div>
+        <div class="tr-vh-arrow">5 лет<br>только<br>дождевая<br>вода →</div>
+        <div class="tr-vh-col">
+          <div class="tr-vh-h">Стало</div>
+          <svg viewBox="0 0 200 220" role="img" aria-label="Конец опыта: ива 169 фунтов, земля потеряла около 57 граммов" style="width:100%;max-width:200px;height:auto;display:block;margin:0 auto;">
+            <path d="M100 150 V60" stroke="#3d5240" stroke-width="7" stroke-linecap="round"/>
+            <path d="M100 100 L66 74 M100 86 L134 58 M100 72 L78 46" stroke="#3d5240" stroke-width="4" stroke-linecap="round"/>
+            <ellipse cx="100" cy="52" rx="62" ry="38" fill="#4a7c59" opacity=".75"/>
+            <path d="M42 150 H158 L146 212 H54 Z" fill="#c4956a"/>
+            <rect x="48" y="146" width="104" height="10" fill="#3d2b1e"/>
+          </svg>
+          <div class="tr-vh-row"><span>ива</span><b>≈ 76,7 кг</b></div>
+          <div class="tr-vh-row"><span>земля</span><b>−57 г</b></div>
+        </div>
+      </div>
+      <div class="tr-vh-sum">Дерево прибавило <b>≈ 74 кг</b> · почва отдала <b>≈ 0,06 кг</b> — в тысячу с лишним раз меньше</div>
+      <div class="tr-cap">По описанию самого ван Гельмонта (опубликовано посмертно в 1648 году): 5 фунтов → 169 фунтов 3 унции; земля потеряла около 2 унций</div>
+    </div>
+
+    <p>Для своего времени это был ошеломляющий результат. Ван Гельмонт сделал из него вывод, который казался единственно возможным: раз он добавлял в горшок только воду, значит, дерево выросло из воды. Он был прав наполовину — и эта половина оказалась самой неожиданной частью ответа.</p>
+    <p>Чтобы найти вторую половину, науке понадобилось ещё полтора века. Нужно было открыть, что воздух — не однородная «стихия», а смесь газов. Джозеф Блэк описал «связанный воздух» — углекислый газ. Джозеф Пристли и Антуан Лавуазье открыли и объяснили кислород. Голландский врач Ян Ингенхаус показал, что зелёные листья на свету поглощают «испорченный» воздух и выделяют «живительный». Только тогда картина сложилась целиком.</p>
+  </div>
+</section>
+
+<!-- ═══ 02 ОТВЕТ ══════════════════════════════════════════════════════════ -->
+<section class="content-section" id="air">
+  <div style="max-width:860px;">
+    <div class="section-num">02</div>
+    <div class="disc-meta">ответ, в который сначала трудно поверить</div>
+    <h2>Дерево сделано <em>из воздуха</em></h2>
+    <p>Вот этот ответ — медленно, потому что с первого раза мозг его отталкивает. Почти вся твёрдая масса дерева — это бывший воздух. Ствол, ветви, кора, корни — это газ, который когда-то свободно плавал вокруг, невидимый и почти невесомый, а потом был пойман, разобран на атомы и сложен в твёрдое вещество.</p>
+    <p>Звучит как фокус. Как из прозрачного газа может получиться бревно, на которое можно сесть? Давайте разберёмся, из чего дерево состоит на самом деле. Если отдать кусок высушенной древесины на химический анализ, лаборатория вернёт примерно такой ответ.</p>
+
+    <!-- ИНФОГРАФИКА 2: СОСТАВ И ПРОИСХОЖДЕНИЕ -->
+    <div class="tr-panel">
+      <div class="tr-sub">Инфографика 2 · Из чего сделано дерево — и откуда это пришло</div>
+      <div class="tr-bar" role="img" aria-label="Состав сухой древесины: углерод около 50 процентов, кислород около 43, водород около 6, минералы около 1">
+        <div style="flex:50;background:#1c2b1e">углерод ≈ 50%</div>
+        <div style="flex:43;background:#6ea87e">кислород ≈ 43%</div>
+        <div style="flex:6;background:#a8c5a0" title="водород ≈ 6%">H</div>
+        <div style="flex:1.4;background:#c4956a" title="минералы ≈ 1%"></div>
+      </div>
+      <div class="tr-origin">
+        <div><i style="background:#1c2b1e"></i><b>Углерод</b> — только из CO₂ воздуха</div>
+        <div><i style="background:#6ea87e"></i><b>Кислород</b> — из CO₂ и воды</div>
+        <div><i style="background:#a8c5a0"></i><b>Водород</b> — из воды</div>
+        <div><i style="background:#c4956a"></i><b>Минералы</b> (азот, калий, кальций, фосфор, магний, железо…) — из почвы</div>
+      </div>
+      <div class="tr-eq">
+        <div class="tr-eq-cell tr-dark"><div class="tr-big">≈ 99%</div><div>воздух и вода</div></div>
+        <div class="tr-eq-op">+</div>
+        <div class="tr-eq-cell"><div class="tr-big">≈ 1%</div><div>почва</div></div>
+      </div>
+      <div class="tr-cap">Доли — для сухой древесины; у живого дерева ещё значительная часть массы приходится на воду в тканях</div>
+    </div>
+
+    <p>Углерод — половина сухой массы. Каждый второй атом в полене — углерод. И в почве дерево его не берёт: каждый атом углерода в древесине когда-то был частью молекулы углекислого газа в воздухе. Кислород — частично из того же CO₂, частично из воды. Водород — из воды. Всё вместе это около девяноста девяти процентов.</p>
+    <p>Из земли приходит только остаток — примерно процент. Азот, фосфор, калий, кальций, магний, железо и ещё десятки элементов в следовых количествах. Они жизненно необходимы: без магния не бывает хлорофилла, без фосфора клетка не может запасать энергию, без азота не построить ни одного белка. Но по массе это специи, а не мука. Если дуб весит двадцать тонн в сухом выражении, из почвы он взял порядка двухсот килограммов. Остальное — воздух и дождь.</p>
+    <p>Именно эти два унции, которые потерял горшок ван Гельмонта, и были минеральной частью. Он измерил её с поразительной точностью — просто не знал, что держит в руках.</p>
+
+    <h3 class="tr-h3">Как поймать редкий газ</h3>
+    <p>Самое удивительное начинается, когда понимаешь, насколько редок в воздухе этот строительный материал. Углекислого газа в атмосфере около 0,04 процента: примерно четыре молекулы на десять тысяч. Представьте мешок с десятью тысячами горошин, из которых нужные вам — четыре. А дерево собирает из таких «горошин» десятки тонн.</p>
+    <p>Делает оно это за счёт огромной площади. У крупного взрослого бука может быть порядка двухсот тысяч листьев с общей площадью больше тысячи квадратных метров — больше теннисного корта, причём сложенного так, чтобы поместиться в одну крону. Вся эта поверхность работает как сеть, растянутая в воздухе, — сеть для ловли молекул CO₂.</p>
+  </div>
+</section>
+
+<!-- ═══ 03 ЛИСТ-ФАБРИКА ═════════════════════════════════════════════════ -->
+<section class="content-section alt" id="leaf">
+  <div style="max-width:860px;">
+    <div class="section-num">03</div>
+    <div class="disc-meta">устьица · водяной насос без мотора · хлорофилл · фотосинтез</div>
+    <h2>Лист — <em>фабрика твёрдого из газа</em></h2>
+    <p>Посмотрим, как устроен этот улов. На нижней стороне листа — тысячи микроскопических пор, устьиц. Через них лист «дышит»: впускает воздух внутрь, к влажным клеткам. Там молекулы CO₂ растворяются в воде клеточных стенок и попадают туда, где их ждёт главная машина.</p>
+
+    <h3 class="tr-h3">Вода, поднятая без насоса</h3>
+    <p>Но сначала — вода, без которой ничего не получится. Корневая система дерева — это огромная подземная сеть, часто не меньшая, чем крона над землёй. Тончайшие корневые волоски всасывают воду с растворёнными минералами. А дальше происходит то, что инженеры до сих пор считают маленьким чудом: вода поднимается на десятки метров вверх — без насоса, мотора и электричества.</p>
+    <p>Работает здесь чистая физика. Вода испаряется с поверхности листьев, и это испарение тянет за собой непрерывный столб воды по тончайшим сосудам ствола. Молекулы воды держатся друг за друга (когезия) и за стенки сосудов (адгезия), поэтому столб не рвётся. Это называется транспирацией. Большое дерево в жаркий день прокачивает через себя сотни литров. И большая часть этой воды вовсе не нужна для химии — она испаряется обратно в небо, охлаждая лист и подпитывая облака. Для самого фотосинтеза требуется лишь малая доля.</p>
+
+    <h3 class="tr-h3">Ловец солнечного света</h3>
+    <p>Внутри клеток листа — хлоропласты, крохотные зелёные органеллы размером в несколько микрометров. Зелёные они из-за хлорофилла. У хлорофилла есть свойство, на котором держится почти вся жизнь на Земле: он поглощает свет и превращает его энергию в химическую работу.</p>
+    <p>Фотон, порция света, вылетевшая из Солнца примерно восемь минут назад и пролетевшая около ста пятидесяти миллионов километров, попадает в молекулу хлорофилла и выбивает её электрон на более высокий энергетический уровень. Этот «толчок» запускает цепочку реакций: десятки промежуточных стадий, две фотосистемы, электрон-транспортная цепь и, наконец, цикл Кальвина, где и происходит сборка.</p>
+    <p>Задача у всей этой машины, по сути, одна: разорвать молекулу углекислого газа. CO₂ — очень устойчивая молекула, углерод прочно держится за свои два атома кислорода. Чтобы отделить его, нужна энергия — и её даёт Солнце. Растение соединяет углерод с водородом, взятым из воды, и собирает молекулу сахара — глюкозы. Лишний кислород выпускается через устьица наружу.</p>
+
+    <!-- ИНФОГРАФИКА 3: ЛИСТ-ФАБРИКА -->
+    <div class="tr-panel">
+      <div class="tr-sub">Инфографика 3 · Что входит в лист и что из него выходит</div>
+      <div class="tr-scroll">
+      <svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Схема фотосинтеза: на входе свет, углекислый газ через устьица и вода из корней; на выходе сахар, из которого строится древесина, и кислород, уходящий в воздух" style="width:100%;height:auto;display:block;">
+        <defs>
+          <marker id="fA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#3d5240"/></marker>
+        </defs>
+        <!-- лист -->
+        <path d="M250 165 C 300 60, 470 50, 520 165 C 470 280, 300 270, 250 165 Z" fill="#6ea87e" opacity=".85"/>
+        <path d="M250 165 H520" stroke="#3d5240" stroke-width="2"/>
+        <text x="385" y="150" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="22" fill="#1c2b1e">хлоропласты</text>
+        <text x="385" y="190" text-anchor="middle" font-family="Jost,sans-serif" font-size="13" fill="#1c2b1e">свет разрывает CO₂</text>
+        <!-- входы -->
+        <g font-family="Jost,sans-serif" font-size="15" fill="#3d5240">
+          <text x="30" y="58">☀ солнечный свет</text>
+          <line x1="150" y1="68" x2="280" y2="118" stroke="#b8924a" stroke-width="4" marker-end="url(#fA)"/>
+          <text x="30" y="170">CO₂ из воздуха</text>
+          <text x="30" y="188" font-size="12" fill="#6b8a70">через устьица</text>
+          <line x1="150" y1="170" x2="245" y2="167" stroke="#3d5240" stroke-width="3" marker-end="url(#fA)"/>
+          <text x="30" y="282">H₂O из корней</text>
+          <text x="30" y="300" font-size="12" fill="#6b8a70">по сосудам ствола</text>
+          <line x1="150" y1="276" x2="285" y2="222" stroke="#6e8fa8" stroke-width="3" marker-end="url(#fA)"/>
+        </g>
+        <!-- выходы -->
+        <g font-family="Jost,sans-serif" font-size="15" fill="#3d5240">
+          <line x1="500" y1="110" x2="610" y2="64" stroke="#3d5240" stroke-width="3" stroke-dasharray="6 5" marker-end="url(#fA)"/>
+          <text x="618" y="58">O₂ в воздух</text>
+          <text x="618" y="76" font-size="12" fill="#6b8a70">«отход» производства</text>
+          <line x1="520" y1="165" x2="606" y2="165" stroke="#1c2b1e" stroke-width="4" marker-end="url(#fA)"/>
+          <text x="618" y="161">сахар</text>
+          <text x="618" y="179" font-size="12" fill="#6b8a70">C₆H₁₂O₆</text>
+          <line x1="500" y1="222" x2="606" y2="268" stroke="#1c2b1e" stroke-width="4" marker-end="url(#fA)"/>
+          <text x="618" y="270">древесина</text>
+          <text x="618" y="288" font-size="12" fill="#6b8a70">целлюлоза, лигнин</text>
+        </g>
+      </svg>
+      </div>
+      <p class="tr-formula">6 CO₂ + 6 H₂O + свет → C₆H₁₂O₆ + 6 O₂</p>
+      <div class="tr-cap">Итоговое уравнение фотосинтеза — короткая запись десятков реакций</div>
+    </div>
+
+    <p>Вдумайтесь в одну деталь. Кислород, без которого мы не проживём и нескольких минут, для растения — побочный продукт. Растению нужен углерод, а кислород остаётся лишним и уходит в воздух. Всё, чем дышат животные на суше и в океане, — это, по сути, «выхлоп» фотосинтеза. (О том, какую долю кислорода дают именно деревья, а какую — океан, честно поговорим ниже.)</p>
+    <p>Масштаб этой работы трудно представить. Растения суши ежегодно связывают в ходе фотосинтеза порядка ста двадцати миллиардов тонн углерода. Большую часть они тут же тратят на собственное дыхание, часть уходит в листья, корни и опад, а часть — нарастает новой древесиной.</p>
+
+    <h3 class="tr-h3">Из сахара — в бревно</h3>
+    <p>Глюкоза — лишь полуфабрикат. Из неё растение собирает всё остальное. Целлюлоза — это длинные цепочки из тысяч звеньев глюкозы, уложенные в прочные волокна. Лигнин пропитывает и склеивает эти волокна, превращая их в жёсткую конструкцию — примерно как бетон держит арматуру. Из тех же сахаров строятся смолы, дубильные вещества, масла, пигменты. И в каждой из этих молекул каждый атом углерода когда-то был молекулой CO₂ в воздухе.</p>
+    <p>Ствол — бывший воздух. Ветви — бывший воздух. Кора — бывший воздух. Даже корни, уходящие глубоко в почву, построены из углерода, который пришёл сверху, из листьев, а не снизу, из земли.</p>
+
+    <div class="tr-aside">
+      <div class="tr-aside-k">Отступление · квантовый лист</div>
+      <p>В популярных рассказах о фотосинтезе часто говорят, что энергия света в листе «одновременно проходит все пути и выбирает лучший» благодаря квантовой когерентности. Эксперименты 2000-х годов действительно увидели квантовые эффекты на первых стадиях переноса энергии. Но последующие работы показали, что эти эффекты очень кратковременны и, скорее всего, не играют той решающей роли, которую им приписывали. Поглощение света хлорофиллом — бесспорно квантовое событие. А вот «квантовый навигатор» внутри листа — пока открытый научный спор, а не установленный факт.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 04 ОГОНЬ ═══════════════════════════════════════════════════════ -->
+<section class="content-section" id="fire">
+  <div style="max-width:860px;">
+    <div class="section-num">04</div>
+    <div class="disc-meta">горение — фотосинтез, прокрученный назад</div>
+    <h2>Огонь в печи — <em>фотосинтез наоборот</em></h2>
+    <p>Теперь возьмём полено и бросим его в печь. Что происходит, когда дерево горит? Целлюлоза и лигнин соединяются с кислородом воздуха — и получаются углекислый газ и водяной пар. Ровно те же вещества, из которых дерево когда-то себя построило.</p>
+    <p>Углерод, который листья десятилетиями по молекуле вылавливали из воздуха, за один вечер возвращается в воздух. Вода, поднятая корнями, уходит в трубу паром. А тепло и свет пламени — это та самая солнечная энергия, которую хлорофилл когда-то поймал и спрятал в химических связях. Горящее полено — как старая грампластинка: свет Солнца был записан на молекулы целлюлозы, и огонь проигрывает эту запись обратно, только вместо музыки — жар.</p>
+
+    <!-- ИНФОГРАФИКА 4: ПРОВЕРКА ПЕПЛОМ -->
+    <div class="tr-panel">
+      <div class="tr-sub">Инфографика 4 · Проверка пеплом: сожгите полено — и узнаете, сколько в нём было почвы</div>
+      <div class="tr-ash">
+        <div class="tr-ash-in"><div class="tr-big">1 кг</div><div>сухих дров</div></div>
+        <div class="tr-ash-arr">огонь →</div>
+        <div class="tr-ash-out">
+          <div class="tr-ash-row"><div class="tr-ash-bar" style="width:99%;background:#a8c5a0"></div><span>≈ 99% улетает в воздух — CO₂ и водяной пар</span></div>
+          <div class="tr-ash-row"><div class="tr-ash-bar" style="width:3%;min-width:8px;background:#3d2b1e"></div><span>≈ 0,5–1,5% остаётся пеплом — это и есть «почва»</span></div>
+        </div>
+      </div>
+      <div class="tr-cap">Зольность древесины обычно от 0,3 до 1,5% · пепел — минералы, которые корни взяли из земли; всё остальное было воздухом и водой</div>
+    </div>
+
+    <p>Этот домашний опыт — самый честный ответ на вопрос «сколько дерева пришло из земли». Сожгите полено полностью, и от килограмма дров останется горстка золы в несколько граммов. Это минералы из почвы. Всё остальное улетело обратно туда, откуда пришло, — в атмосферу.</p>
+    <p>Заодно понятно, почему дерево такое лёгкое по сравнению с камнем или металлом. Камень — это минералы, спрессованные недрами. Металл — плотно упакованные тяжёлые атомы. А древесина — организованный бывший газ, пронизанный тончайшими каналами, по которым когда-то текла вода. При этом инженерно она великолепна: волокна целлюлозы уложены слоями и спиралями, давая сочетание гибкости и прочности. Прочность лучших древесин и бамбука в пересчёте на вес сопоставима со сталью, а секвойи, построенные из воздуха и воды, вырастают выше ста метров и стоят тысячелетиями.</p>
+    <p>Каждый деревянный стол, дверь, карандаш, паркет — это бывшая атмосфера, собранная солнечным светом.</p>
+  </div>
+</section>
+
+<!-- ═══ 05 ПУТЕШЕСТВИЕ АТОМА ═══════════════════════════════════════════ -->
+<section class="content-section alt" id="journey">
+  <div style="max-width:860px;">
+    <div class="section-num">05</div>
+    <div class="disc-meta">углерод — вечный путешественник, дерево — гостиница на его пути</div>
+    <h2>Атом, который <em>был всем</em></h2>
+    <p>Откуда в воздухе берётся углекислый газ, который ловят деревья? Вы выдыхаете его прямо сейчас: ваше тело «сжигает» глюкозу из еды и выдыхает CO₂. Его выпускает двигатель автомобиля, печь, электростанция, лесной пожар, вулкан, гниющий пень. И всё это деревья подхватывают и встраивают в свои стволы.</p>
+    <p>Отсюда мысль, от которой немного кружится голова. Атомы углерода не создаются и не исчезают — они только переходят из одной формы в другую. Атом, который сегодня сидит в годичном кольце берёзы за вашим окном, мог побывать в вулканическом газе, в древней водоросли, в раковине морского существа, в известняке на дне моря, снова в вулкане, в папоротнике мелового периода, в динозавре, который этот папоротник съел, в почве, в воздухе — и только потом в берёзе.</p>
+
+    <!-- ИНФОГРАФИКА 5: ПУТЕШЕСТВИЕ АТОМА УГЛЕРОДА -->
+    <div class="tr-panel">
+      <div class="tr-sub">Инфографика 5 · Круг, по которому путешествует углерод</div>
+      <div class="tr-scroll">
+      <svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Круговорот углерода: воздух, лист, древесина, животные и люди, почва и опад, снова воздух; ответвление — уголь и нефть, откуда углерод возвращается при сжигании" style="width:100%;height:auto;display:block;">
+        <defs>
+          <marker id="jA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#4a7c59"/></marker>
+          <marker id="jR" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#7a4f2e"/></marker>
+        </defs>
+        <g font-family="Jost,sans-serif" text-anchor="middle">
+          <g><rect x="300" y="14" width="160" height="56" rx="28" fill="#a8c5a0"/><text x="380" y="40" font-size="16" fill="#1c2b1e">воздух</text><text x="380" y="58" font-size="12" fill="#3d5240">CO₂</text></g>
+          <g><rect x="560" y="110" width="170" height="56" rx="28" fill="#6ea87e"/><text x="645" y="136" font-size="16" fill="#1c2b1e">лист</text><text x="645" y="154" font-size="12" fill="#1c2b1e">фотосинтез</text></g>
+          <g><rect x="560" y="240" width="170" height="56" rx="28" fill="#4a7c59"/><text x="645" y="266" font-size="16" fill="#faf6ef">древесина</text><text x="645" y="284" font-size="12" fill="#faf6ef">десятки–сотни лет</text></g>
+          <g><rect x="300" y="320" width="160" height="56" rx="28" fill="#c4956a"/><text x="380" y="346" font-size="15" fill="#1c2b1e">грибы, жуки, звери</text><text x="380" y="364" font-size="12" fill="#1c2b1e">едят, разлагают, дышат</text></g>
+          <g><rect x="30" y="240" width="170" height="56" rx="28" fill="#8a6a3e"/><text x="115" y="266" font-size="16" fill="#faf6ef">почва, опад</text><text x="115" y="284" font-size="12" fill="#faf6ef">микробы разлагают</text></g>
+          <g><rect x="30" y="110" width="170" height="56" rx="28" fill="#1c2b1e"/><text x="115" y="136" font-size="16" fill="#faf6ef">уголь, нефть, газ</text><text x="115" y="154" font-size="12" fill="#a8c5a0">сотни миллионов лет</text></g>
+        </g>
+        <path d="M460 50 C 540 60, 600 80, 630 108" stroke="#4a7c59" stroke-width="3" fill="none" marker-end="url(#jA)"/>
+        <path d="M645 168 V236" stroke="#4a7c59" stroke-width="3" fill="none" marker-end="url(#jA)"/>
+        <path d="M600 298 C 560 330, 500 345, 464 348" stroke="#4a7c59" stroke-width="3" fill="none" marker-end="url(#jA)"/>
+        <path d="M300 348 C 250 345, 210 320, 180 300" stroke="#4a7c59" stroke-width="3" fill="none" marker-end="url(#jA)"/>
+        <path d="M150 238 C 220 160, 260 90, 298 58" stroke="#4a7c59" stroke-width="3" fill="none" marker-end="url(#jA)"/>
+        <path d="M100 238 V172" stroke="#3d5240" stroke-width="2" stroke-dasharray="4 5" fill="none" marker-end="url(#jA)"/>
+        <text x="40" y="208" font-family="Jost,sans-serif" font-size="11" fill="#3d5240">захоронение</text>
+        <path d="M150 108 C 190 70, 240 50, 298 44" stroke="#7a4f2e" stroke-width="4" fill="none" marker-end="url(#jR)"/>
+        <text x="115" y="98" text-anchor="middle" font-family="Jost,sans-serif" font-size="12" fill="#7a4f2e">сжигание сегодня</text>
+        <text x="380" y="210" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="22" fill="#3d5240" font-style="italic">круг без начала и конца</text>
+      </svg>
+      </div>
+      <div class="tr-legend">
+        <span><i class="tr-key" style="background:#4a7c59"></i>естественный круговорот</span>
+        <span><i class="tr-key" style="background:#7a4f2e"></i>древний углерод, который человек возвращает в воздух</span>
+      </div>
+    </div>
+
+    <p>Ни один атом углерода в дереве не был создан этим деревом. Дерево берёт его взаймы — на десятилетия, иногда на века. Когда оно упадёт, грибы и бактерии разберут его древесину обратно на CO₂ и воду, и углерод отправится дальше. Это и есть углеродный цикл, о котором говорят в новостях: не абстрактная схема, а бесконечное путешествие одних и тех же атомов.</p>
+    <p>И здесь есть очень личная сторона. Вы выдыхаете углекислый газ — и рано или поздно лист какого-нибудь дерева поймает одну из ваших молекул. Атом углерода, который побывал в вашей крови, может оказаться в стволе сосны за тысячу километров от вас. Старая липа на деревенской площади, которой триста лет, хранит в своих кольцах углерод, выдохнутый людьми петровской эпохи. Дерево — это материальная память дыхания поколений. А годичные кольца — ещё и летопись климата: по их толщине и составу дендрохронологи восстанавливают погоду прошлых веков.</p>
+  </div>
+</section>
+
+<!-- ═══ 06 УГОЛЬ ═══════════════════════════════════════════════════════ -->
+<section class="content-section" id="coal">
+  <div style="max-width:860px;">
+    <div class="section-num">06</div>
+    <div class="disc-meta">уголь — древний лес · нефть и газ — древняя жизнь · кислородная революция</div>
+    <h2>Уголь — это <em>лес, ставший камнем</em></h2>
+    <p>Отступим ещё дальше в прошлое. Около двух с половиной миллиардов лет назад атмосфера Земли почти не содержала кислорода. Первыми фотосинтез «изобрели» цианобактерии — крошечные одноклеточные, дальние предки хлоропластов в каждом листе. Сотни миллионов лет они выпускали кислород как побочный продукт. Он окислил железо в океанах — так образовались многие железорудные залежи, которые мы добываем до сих пор, — а потом начал копиться в воздухе. Это событие называют Великим кислородным. Без него не появились бы ни животные, ни мы.</p>
+    <p>Около трёхсот миллионов лет назад, в каменноугольном периоде — задолго до динозавров — Землю покрывали болотные леса из гигантских плаунов и хвощей высотой в десятки метров, над которыми летали стрекозы с размахом крыльев около семидесяти сантиметров. Эти леса миллионы лет вытягивали углерод из воздуха. Падая в болота, деревья оказывались в воде, где почти нет кислорода и гниение идёт очень медленно. Слой за слоем древесина погребалась под осадками, сжималась, нагревалась и превращалась в торф, затем в бурый и, наконец, в каменный уголь.</p>
+    <p>Уголь — это древний лес. Древний воздух, пойманный древними листьями и запертый в земной коре. Нефть и природный газ — похожая история, только их главным источником была микроскопическая морская жизнь. Разведанных запасов угля на планете порядка триллиона тонн. Когда электростанция сжигает уголь, она выпускает в небо CO₂, который растения выловили из воздуха сотни миллионов лет назад. Человечество открывает углеродный сейф, который природа запирала невообразимо долго, и опустошает его за пару столетий.</p>
+  </div>
+</section>
+
+<!-- ═══ 07 КЛИМАТ ═══════════════════════════════════════════════════════ -->
+<section class="content-section alt" id="climate">
+  <div style="max-width:860px;">
+    <div class="section-num">07</div>
+    <div class="disc-meta">парниковый эффект · куда уходит каждая выброшенная тонна · роль лесов</div>
+    <h2>Почему это важно <em>именно сейчас</em></h2>
+    <p>Вот здесь история о дереве из воздуха перестаёт быть просто красивой. Углекислый газ — не только строительный материал для деревьев. Это ещё и парниковый газ. Солнечный свет свободно проходит сквозь атмосферу и нагревает землю, а нагретая земля отдаёт тепло обратно — в виде невидимого инфракрасного излучения. Молекулы CO₂ это излучение поглощают и переизлучают во все стороны, в том числе обратно вниз. Они работают не как зеркало, а как одеяло: не греют сами, но не дают остывать.</p>
+    <p>Немного такого одеяла — благо: без парникового эффекта средняя температура Земли была бы около минус восемнадцати градусов. Но до промышленной эпохи в воздухе было около 280 молекул CO₂ на миллион, а сегодня — около 425. Это больше, чем когда-либо за сотни тысяч лет, и причина известна точно: ежегодно человечество сжигает уголь, нефть и газ и сводит леса, выбрасывая около сорока миллиардов тонн CO₂. Мы выпускаем древний углерод из сейфа быстрее, чем природа способна его вернуть.</p>
+
+    <!-- ИНФОГРАФИКА 6: КУДА УХОДЯТ ВЫБРОСЫ -->
+    <div class="tr-panel">
+      <div class="tr-sub">Инфографика 6 · Куда уходит углерод, который выбрасывает человек</div>
+      <div class="tr-rows" role="img" aria-label="Среднее за 2014–2023 годы: выбросы 10,8 млрд тонн углерода в год; в атмосфере остаётся 5,2, суша поглощает 3,2, океан 2,9">
+        <div class="tr-row"><div class="tr-row-l">Выбросы<br><small>ископаемое топливо + вырубки</small></div><div class="tr-row-b"><div class="tr-fill" style="width:100%;background:#7a4f2e"></div></div><div class="tr-row-v">10,8</div></div>
+        <div class="tr-row"><div class="tr-row-l">Остаётся в атмосфере</div><div class="tr-row-b"><div class="tr-fill" style="width:48%;background:#c4956a"></div></div><div class="tr-row-v">5,2</div></div>
+        <div class="tr-row"><div class="tr-row-l">Забирает суша<br><small>прежде всего леса</small></div><div class="tr-row-b"><div class="tr-fill" style="width:30%;background:#4a7c59"></div></div><div class="tr-row-v">3,2</div></div>
+        <div class="tr-row"><div class="tr-row-l">Забирает океан</div><div class="tr-row-b"><div class="tr-fill" style="width:27%;background:#6e8fa8"></div></div><div class="tr-row-v">2,9</div></div>
+      </div>
+      <div class="tr-cap">Млрд тонн углерода в год, среднее за 2014–2023 · Global Carbon Budget 2024 · 1 т углерода = 3,67 т CO₂</div>
+    </div>
+
+    <p>Почти половина наших выбросов остаётся в воздухе и подтыкает одеяло всё плотнее. Около четверти растворяет океан. Около трети забирает суша — и главные работники здесь растущие леса. По глобальным оценкам, леса мира ежегодно связывают около 15,6 миллиарда тонн CO₂, но вырубки, пожары и деградация возвращают в воздух около 8,1 миллиарда. Чистый вклад лесов — около 7,6 миллиарда тонн в год, примерно пятая часть всех человеческих выбросов.</p>
+    <p>Теперь понятно, почему вырубка леса — это не только потеря красоты. Срубленное дерево, сгнив или сгорев, отдаёт воздуху весь углерод, который копило десятилетиями. Вырубленный лес — вскрытый склад углерода. А каждое новое растущее дерево — маленький насос, который откачивает CO₂ из атмосферы в твёрдое хранилище. Причём самые мощные насосы — старые большие деревья: у большинства видов годовой прирост древесины с возрастом не падает, а растёт. И почти половина лесного углерода хранится не в стволах, а в почве под ними, поэтому сохранить старый лес важнее, чем посадить новый.</p>
+    <p>Для России это вопрос особый: здесь около пятой части всех лесов планеты, и тайга — один из крупнейших наземных стоков углерода. И одновременно один из самых уязвимых: пожары последних лет в Сибири за один сезон выбрасывали в воздух сотни миллионов тонн CO₂.</p>
+  </div>
+</section>
+
+<!-- ═══ 08 ЧЕСТНО ═══════════════════════════════════════════════════════ -->
+<section class="content-section" id="honest">
+  <div style="max-width:860px;">
+    <div class="section-num">08</div>
+    <div class="disc-meta">где красивая история упрощает · критика темы</div>
+    <h2>Теперь — <em>честно</em></h2>
+    <p>Хорошее объяснение обязано показывать, где оно упрощает. Вот несколько мест, где рассказ о деревьях часто уходит дальше фактов.</p>
+    <p><strong>«Дерево сделано из воздуха» — почти правда.</strong> Точнее: из воздуха и воды, плюс около процента минералов из почвы. И живое дерево ещё наполовину состоит из воды в тканях — проценты выше относятся к сухой древесине.</p>
+    <p><strong>«Весь кислород — подарок деревьев» — преувеличение.</strong> Примерно половину кислорода Земли производит океанский фитопланктон. А взрослый лес почти весь свой кислород сам же и расходует — на дыхание деревьев и разложение опада. Запаса кислорода в атмосфере хватит на тысячи лет. Леса бесценны не как «лёгкие», а как хранилище углерода, воды и жизни: в них обитают около 80% видов земноводных, 75% видов птиц и 68% видов млекопитающих.</p>
+    <p><strong>Посадками нельзя «отменить» нефть и уголь.</strong> Только ископаемое топливо даёт около 37 миллиардов тонн CO₂ в год, а чистый сток всех лесов — около 7,6. Даже удвоив леса, мы не догоним выбросы. Деревья — помощь сокращению выбросов, а не его замена.</p>
+    <p><strong>Дерево — медленное и не вечное хранилище.</strong> Саженец десятилетиями набирает массу, а пожар, засуха, жук-короед или топор возвращают углерод в воздух за один сезон. Посадить — это начало. Результат — выросший и сохранённый лес.</p>
+    <p><strong>Не всякая посадка полезна.</strong> Ровные ряды одного вида на месте луга, степи или болота могут навредить: уничтожить естественные экосистемы, иссушить почву, а на севере — сделать поверхность темнее и теплее зимой. Сажать стоит местные виды и прежде всего там, где лес был.</p>
+  </div>
+</section>
+
+<!-- ═══ ИТОГ ══════════════════════════════════════════════════════════ -->
+<section class="content-section alt" id="outro">
+  <div style="max-width:820px;">
+    <div class="section-num">—</div>
+    <h2>Вернёмся <em>к дубу</em></h2>
+    <p>Вы снова стоите у того же дерева, ладонь на коре. Только теперь вы знаете, что перед вами. Двадцать тонн бывшего воздуха. Углекислый газ, пойманный листьями, вода, поднятая корнями на десятки метров, и солнечный свет, родившийся в термоядерной печи звезды и пролетевший сто пятьдесят миллионов километров, — всё это кольцо за кольцом, год за годом сложилось в ствол. Плюс щепотка минералов из земли.</p>
+    <p>Ричард Фейнман любил повторять, что знание не отнимает у мира красоту, а умножает её. Тот, кто знает, как устроен цветок, видит в нём не меньше, а больше. С деревом так же: человек, который знает, что ствол — это затвердевший воздух, скреплённый энергией Солнца, видит в обычной берёзе у дороги целую вселенную.</p>
+    <p>А ещё он видит выход. Деревья умеют делать то, что сейчас нужнее всего: забирать из воздуха углерод, которого там слишком много, и надолго прятать его в древесину и почву. Наша часть работы — перестать открывать древний углеродный сейф, беречь старые леса и помогать новым. И это уже не абстракция: вырастить своё дерево из жёлудя или семечка, подрастить, высадить и довести до взрослого может каждый. Об этом — <a href="essay-forest-activism.html">следующий текст</a>.</p>
+    <a class="tr-next" href="essay-forest-activism.html" style="display:block;text-decoration:none;">
+      <div class="tr-next-k">Продолжение · читать →</div>
+      <div class="tr-next-t">Лесной активизм: как вырастить дерево из жёлудя, черенка или семени — от бутылки и теплицы до школьного питомника, посадки и бонсай</div>
+    </a>
+    <p style="margin-top:2rem;">Читайте также: <a href="essay-mycorrhiza.html">Как устроен лес: подземная сеть</a> · <a href="essay-consciousness-evolution.html">Эволюция сознания — недостающее звено устойчивости</a> · <a href="essay-carbon-cycle.html">Круговорот углерода: одна лишняя стрелка</a> · <a href="essay-keeling-curve.html">Кривая Килинга</a> · <a href="essay-forest-medicine.html">Лесная медицина</a></p>
+
+    <div class="sources">
+      <div class="src-title"><small>Источники</small>На чём основан текст</div>
+      <ol class="src-list">
+        <li>Ролик «Объяснения Фейнмана» о том, из чего сделано дерево, — идея и структура рассказа (YouTube).</li>
+        <li>Van Helmont J. B. Ortus Medicinae (1648) — описание опыта с ивой; см. также обзор в учебниках истории биологии.</li>
+        <li>Feynman R. «Fun to Imagine» (BBC, 1983) и «What Do You Care What Other People Think?» (1988) — о дереве из воздуха и о красоте знания.</li>
+        <li>NOAA Global Monitoring Laboratory. <a class="src-a" href="https://gml.noaa.gov/ccgg/trends/" rel="noopener">Trends in Atmospheric Carbon Dioxide</a> — концентрация CO₂ ~425 ppm.</li>
+        <li>IPCC (2021). Climate Change 2021: The Physical Science Basis, WG I, гл. 5 и 7 — углеродный цикл и парниковый эффект.</li>
+        <li>Friedlingstein P. et al. (2025). <a class="src-a" href="https://essd.copernicus.org/articles/17/965/2025/" rel="noopener">Global Carbon Budget 2024</a>. Earth System Science Data 17, 965–1039.</li>
+        <li>Harris N. L. et al. (2021). Global maps of twenty-first century forest carbon fluxes. Nature Climate Change 11, 234–240.</li>
+        <li>Pan Y. et al. (2011). A large and persistent carbon sink in the world’s forests. Science 333, 988–993.</li>
+        <li>Stephenson N. L. et al. (2014). Rate of tree carbon accumulation increases continuously with tree size. Nature 507, 90–93.</li>
+        <li>Cao J. et al. (2020). Quantum biology revisited. Science Advances 6, eaaz4888 — о роли квантовой когерентности в фотосинтезе.</li>
+        <li>FAO (2020). Global Forest Resources Assessment 2020; The State of the World’s Forests 2020.</li>
+        <li>Lyons T. W., Reinhard C. T., Planavsky N. J. (2014). The rise of oxygen in Earth’s early ocean and atmosphere. Nature 506, 307–315.</li>
+      </ol>
+    </div>
+
+    <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(74,124,89,0.15);font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--ink-light);text-align:center;font-size:1rem;">
+      — редакция «ЭкоСознания», раздел «Наука»
+    </div>
+  </div>
+</section>
+
+<style>
+.tr-panel{background:var(--warm);border:1px solid rgba(74,124,89,.18);padding:1.6rem 1.4rem 1.1rem;margin:1.8rem 0;}
+.tr-sub{font-family:'Jost',sans-serif;font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:1rem;text-align:center;}
+.tr-cap{font-family:'Jost',sans-serif;font-size:.62rem;letter-spacing:.08em;color:var(--sage-text,#6b8a70);text-align:center;margin-top:.9rem;line-height:1.6;}
+.tr-legend{display:flex;gap:1.4rem;justify-content:center;flex-wrap:wrap;font-size:.76rem;color:var(--ink-light);margin-top:.7rem;}
+.tr-legend span{display:inline-flex;align-items:center;gap:.45rem;}
+.tr-key{display:inline-block;width:20px;height:4px;}
+.tr-h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:400;margin:2.4rem 0 .9rem;color:var(--ink);}
+.tr-formula{font-family:'Cormorant Garamond',serif;font-size:1.45rem;text-align:center;color:var(--ink);margin:1.2rem 0 .2rem;letter-spacing:.02em;}
+.tr-bar{display:flex;height:46px;border-radius:3px;overflow:hidden;font-family:'Jost',sans-serif;font-size:.78rem;color:#faf6ef;}
+.tr-bar>div{display:flex;align-items:center;justify-content:center;white-space:nowrap;overflow:hidden;}
+.tr-origin{display:grid;grid-template-columns:1fr 1fr;gap:.5rem 1.4rem;margin-top:1rem;font-size:.8rem;color:var(--ink-light);}
+.tr-origin i{display:inline-block;width:12px;height:12px;margin-right:.5rem;vertical-align:-1px;}
+.tr-origin b{color:var(--ink);font-weight:500;}
+.tr-eq{display:flex;align-items:stretch;justify-content:center;gap:.6rem;margin-top:1.4rem;flex-wrap:wrap;}
+.tr-eq-cell{background:var(--paper);border:1px solid rgba(74,124,89,.2);padding:.8rem 1.1rem;text-align:center;font-size:.78rem;color:var(--ink-light);min-width:130px;}
+.tr-eq-cell.tr-dark{background:var(--ink);color:rgba(243,237,227,.8);border-color:var(--ink);}
+.tr-big{font-family:'Cormorant Garamond',serif;font-size:2rem;line-height:1.1;color:var(--ink);}
+.tr-dark .tr-big{color:#a8c5a0;}
+.tr-eq-op{align-self:center;font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--moss);}
+.tr-vh{display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;align-items:center;}
+.tr-vh-h{font-family:'Jost',sans-serif;font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);text-align:center;margin-bottom:.4rem;}
+.tr-vh-row{display:flex;justify-content:space-between;max-width:200px;margin:.3rem auto 0;font-size:.82rem;color:var(--ink-light);border-bottom:1px solid rgba(74,124,89,.15);padding-bottom:.25rem;}
+.tr-vh-row b{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:500;color:var(--ink);}
+.tr-vh-arrow{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.05rem;color:var(--moss);text-align:center;line-height:1.3;}
+.tr-vh-sum{text-align:center;margin-top:1.2rem;font-size:.9rem;color:var(--ink);}
+.tr-vh-sum b{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:500;}
+.tr-rows{display:flex;flex-direction:column;gap:.75rem;}
+.tr-row{display:grid;grid-template-columns:170px 1fr 48px;align-items:center;gap:.9rem;}
+.tr-row-l{font-size:.82rem;color:var(--ink);line-height:1.3;}
+.tr-row-l small{color:var(--ink-light);font-size:.7rem;}
+.tr-row-b{background:rgba(74,124,89,.08);height:26px;border-radius:2px;overflow:hidden;}
+.tr-fill{height:100%;}
+.tr-row-v{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--ink);text-align:right;}
+.tr-ash{display:grid;grid-template-columns:auto auto 1fr;gap:1.2rem;align-items:center;}
+.tr-ash-in{background:var(--ink);color:rgba(243,237,227,.8);padding:.9rem 1.2rem;text-align:center;font-size:.8rem;}
+.tr-ash-in .tr-big{color:#a8c5a0;}
+.tr-ash-arr{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--rust,#7a4f2e);font-size:1.15rem;}
+.tr-ash-row{margin:.5rem 0;}
+.tr-ash-bar{height:22px;border-radius:2px;}
+.tr-ash-row span{display:block;font-size:.8rem;color:var(--ink-light);margin-top:.25rem;}
+.tr-aside{background:var(--paper);border:1px dashed rgba(74,124,89,.35);padding:1.4rem 1.6rem;margin:2.2rem 0 .5rem;}
+.tr-aside-k{font-family:'Jost',sans-serif;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:.6rem;}
+.tr-aside p{font-size:.9rem;margin:0;}
+.tr-next{background:var(--ink);color:rgba(243,237,227,.85);padding:1.6rem 1.8rem;margin-top:2rem;}
+.tr-next-k{font-family:'Jost',sans-serif;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:#a8c5a0;margin-bottom:.5rem;}
+.tr-next-t{font-family:'Cormorant Garamond',serif;font-size:1.3rem;line-height:1.4;color:#f3ede3;}
+.tr-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+@media(max-width:600px){
+  .tr-scroll svg{min-width:600px;}
+  .tr-row{grid-template-columns:1fr 40px;}
+  .tr-row-l{grid-column:1 / -1;}
+  .tr-bar{font-size:.68rem;}
+  .tr-origin{grid-template-columns:1fr;}
+  .tr-vh{grid-template-columns:1fr 1fr;}
+  .tr-vh-arrow{grid-column:1 / -1;order:-1;}
+  .tr-ash{grid-template-columns:1fr;}
+}
+</style>
+
+</main>
+
+<!-- ECO:MANAGED:footer -->
+<footer class="gf">
+  <div class="gf-top">
+    <div class="gf-brand">
+      <a href="index.html" class="gf-logo">
+        <svg viewBox="0 0 100 100" fill="none" class="logo-svg" style="width:24px;height:24px;flex-shrink:0;"><circle cx="50" cy="50" r="40" stroke="#f3ede3" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#6ea87e"/></svg>
+        <span class="gf-logo-text">Эко<em>Сознание</em></span>
+      </a>
+      <p class="gf-tagline">Экологический взгляд как линза для любой сферы жизни</p>
+    </div>
+    <div class="gf-cols">
+      <div>
+        <div class="gf-col-title">Разделы</div>
+        <div class="gf-sections">
+          <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Философия</span></a>
+          <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
+          <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
+          <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="gf-sec-name">Технологии</span></a>
+          <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
+          <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
+          <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Экономика</span></a>
+          <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="gf-sec-name">Образование</span></a>
+          <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
+          <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
+          <a href="section-health.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Здоровье</span></a>
+          <a href="section-science.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Наука</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="gf-col-title">Навигация</div>
+        <nav class="gf-nav-links">
+          <a href="index.html" class="gf-nav-link">Главная</a>
+          <a href="map.html" class="gf-nav-link">Карта связей</a>
+          <a href="paths.html" class="gf-nav-link">Тропы чтения</a>
+          <a href="tree.html" class="gf-nav-link">Дерево материалов</a>
+          <a href="revisions.html" class="gf-nav-link">Что не подтвердилось</a>
+          <a href="thinkers.html" class="gf-nav-link">Указатель имён</a>
+          <a href="search.html" class="gf-nav-link">Поиск</a>
+          <a href="method.html" class="gf-nav-link">Как устроены материалы</a>
+            <a href="about.html" class="gf-nav-link">О проекте</a>
+          <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="gf-bottom">
+    <span class="gf-copy">© 2026 ЭкоСознание</span>
+    <div class="gf-bottom-links">
+      <a href="about.html">О проекте</a>
+      <a href="glossary.html">Глоссарий</a>
+    </div>
+  </div>
+</footer>
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+
+
+<!-- ECO:MANAGED:js -->
+<script src="assets/global.js" defer></script>
+<!-- /ECO:MANAGED:js -->
+</body>
+</html>
