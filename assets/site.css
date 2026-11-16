@@ -159,12 +159,14 @@ footer a:focus-visible,
 }
 
 /* Хлебные крошки (вставляются patch_pages после <main>) */
-.breadcrumb{max-width:1320px;margin:0 auto;padding:1.1rem 2rem 0;font-family:'Jost',sans-serif;font-size:.72rem;letter-spacing:.05em;display:flex;flex-wrap:wrap;gap:.45rem;align-items:center;color:#7d9a82;}
+.breadcrumb{max-width:none;margin:0;padding:1.1rem 3rem 0;font-family:'Jost',sans-serif;font-size:.72rem;letter-spacing:.05em;display:flex;flex-wrap:wrap;gap:.45rem;align-items:center;color:#7d9a82;}
 .breadcrumb a{color:var(--moss);text-decoration:none;}
 .breadcrumb a:hover{text-decoration:underline;}
 .breadcrumb .bc-sep{color:var(--sage);opacity:.65;}
 .breadcrumb .bc-current{color:var(--ink-light);}
-@media(max-width:720px){.breadcrumb{padding:.75rem 1.2rem 0;font-size:.68rem;}}
+/* Крошки прижаты к левому краю с тем же полем, что и логотип в шапке. */
+@media(max-width:860px){.breadcrumb{padding-left:1.25rem;padding-right:1.25rem;}}
+@media(max-width:720px){.breadcrumb{padding-top:.75rem;font-size:.68rem;}}
 
 /* ── Мобильная вёрстка (общий слой; перекрывает встроенные стили страниц) ── */
 @media (max-width: 860px) {
@@ -233,20 +235,21 @@ html body .see-also a:hover { border-bottom-color: var(--moss); }
 /* ─── Обложка статьи (hero-cover) ─────────────────────────────────────
    <figure class="hero-cover"> ставится сразу перед <section class="hero">
    (или "essay-hero", "lab-hero"). Вставляет build/make_cover.py.
-   Картинка 3:1 на десктопе, 16:9 на телефоне. Точку кадрирования по
+   Картинка во всю ширину окна, без полей: 3:1 на десктопе (не выше 640px),
+   16:9 на телефоне. Точку кадрирования по
    горизонтали задают переменные --cover-x и --cover-x-mobile. */
-.hero-cover{margin:0;padding:1.5rem 4rem 0;}
-.hero-cover img{display:block;width:100%;height:auto;aspect-ratio:3/1;object-fit:cover;object-position:var(--cover-x,50%) 50%;background:var(--warm);}
+.hero-cover{margin:.9rem 0 0;padding:0;}
+.hero-cover img{display:block;width:100%;height:auto;aspect-ratio:3/1;max-height:640px;object-fit:cover;object-position:var(--cover-x,50%) 50%;background:var(--warm);}
 html body .hero-cover + .hero{padding-top:4rem;}
 /* крупный номер раздела на фоне шапки (.hero::before с content:'04')
    рассчитан на большой верхний отступ; под обложкой он наезжает на заголовок */
 .hero-cover + .hero::before{content:none!important;}
 /* эссе и лаборатории с узкой колонкой: обложка по ширине текста */
-.hero-cover--essay{max-width:1100px;margin:0 auto;}
+.hero-cover--essay{max-width:none;}
 html body .hero-cover + .essay-hero,
 html body .hero-cover + .lab-hero{padding-top:4rem;}
 @media (max-width: 860px){
-  .hero-cover{padding:1rem 1.5rem 0;}
+  .hero-cover{margin-top:.75rem;}
   .hero-cover img{aspect-ratio:16/9;object-position:var(--cover-x-mobile,50%) 50%;}
   html body .hero-cover + .hero,
   html body .hero-cover + .essay-hero,
