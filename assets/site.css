@@ -280,3 +280,27 @@ a:hover>.card-thumb{opacity:.88;}
   .rel-grid:has(> :nth-child(3n+4):last-child),
   .related-grid:has(> :nth-child(3n+4):last-child){grid-template-columns:repeat(2,1fr);}
 }
+
+/* ─── Миниатюры в тёмных плашках разделов («Читать →», «Следующий раздел») ─── */
+.block-thumb{display:block;line-height:0;}
+.block-thumb img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;transition:opacity .25s;}
+.block-thumb:hover img{opacity:.85;}
+/* картинка слева на две строки, кнопка «Читать →» под текстом */
+html body .featured-strip:has(>.block-thumb),
+html body .featured-article:has(>.block-thumb){grid-template-columns:14rem minmax(0,1fr);gap:1.4rem 2.2rem;min-width:0;}
+.featured-strip>.block-thumb,.featured-article>.block-thumb{grid-row:1 / span 2;align-self:start;}
+html body .featured-strip:has(>.block-thumb)>.featured-btn,
+html body .featured-article:has(>.block-thumb)>.featured-btn{grid-column:2;justify-self:start;}
+/* «Следующий раздел»: картинка справа, на месте бледного номера */
+.g-next-section:has(>.block-thumb) .g-next-num{display:none;}
+.g-next-section>.block-thumb{order:2;width:13rem;flex:none;}
+/* В узкой колонке (в т.ч. боковой колонке раздела) картинка встаёт сверху */
+:has(>.featured-strip>.block-thumb),:has(>.featured-article>.block-thumb){container-type:inline-size;}
+@container (max-width:560px){
+  html body .featured-strip:has(>.block-thumb),
+  html body .featured-article:has(>.block-thumb){grid-template-columns:1fr;gap:1.4rem;}
+  .featured-strip>.block-thumb,.featured-article>.block-thumb{grid-row:auto;}
+  html body .featured-strip:has(>.block-thumb)>.featured-btn,
+  html body .featured-article:has(>.block-thumb)>.featured-btn{grid-column:1;}
+}
+@media(max-width:720px){.g-next-section>.block-thumb{order:0;width:100%;max-width:22rem;}}
