@@ -63,6 +63,16 @@
 .lab-sig-meta{font-size:0.72rem;letter-spacing:0.1em;color:var(--sage);text-transform:uppercase;}
 .reading-bar{position:fixed;top:0;left:0;height:2px;background:var(--moss);z-index:400;width:0%;transition:width 0.1s linear;}
 @media(max-width:720px){ .lab-hero,.lab-body{padding-left:1.5rem;padding-right:1.5rem;} .dark-block{margin-left:-1.5rem;margin-right:-1.5rem;padding-left:1.5rem;padding-right:1.5rem;} .lab-meta-row{flex-direction:column;gap:1rem;} }
+/* «Читать дальше» — те же стили, что у эссе */
+.rel{background:var(--cream);padding:4rem;border-top:1px solid rgba(74,124,89,.15);}
+.rel-in{max-width:1100px;margin:0 auto;}
+.rel-label{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--moss);margin-bottom:1.5rem;}
+.rel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.15);}
+.rel-card{display:block;background:var(--cream);padding:1.6rem;text-decoration:none;transition:background .25s;}
+.rel-card:hover{background:var(--warm);}
+.rel-kind{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.5rem;}
+.rel-name{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink);line-height:1.3;}
+@media(max-width:720px){.rel{padding-left:1.5rem;padding-right:1.5rem;}.rel-grid{grid-template-columns:1fr;}}
 </style>
 
 <style>
@@ -390,15 +400,15 @@
   <div class="rel-in">
     <div class="rel-label">Читать дальше</div>
     <div class="rel-grid">
-      <a href="essay-biomimicry.html" class="rel-card">
+      <a href="essay-biomimicry.html" class="rel-card"><img class="card-thumb" src="assets/img/biomimicry-thumb.webp" width="640" height="360" alt="" loading="lazy" decoding="async">
         <div class="rel-kind">Эссе</div>
         <div class="rel-name">Биомимикрия: ревизия каталога</div>
       </a>
-      <a href="term-conviviality.html" class="rel-card">
+      <a href="term-conviviality.html" class="rel-card"><img class="card-thumb" src="assets/img/conviviality-thumb.webp" width="640" height="360" alt="" loading="lazy" decoding="async">
         <div class="rel-kind">Понятие</div>
         <div class="rel-name">Конвивиальность</div>
       </a>
-      <a href="lab-degrowth-ecomodern.html" class="rel-card">
+      <a href="lab-degrowth-ecomodern.html" class="rel-card"><img class="card-thumb" src="assets/img/degrowth-ecomodern-thumb.webp" width="640" height="360" alt="" loading="lazy" decoding="async">
         <div class="rel-kind">Лаборатория №12</div>
         <div class="rel-name">Спор о расцеплении</div>
       </a>
