@@ -10,6 +10,10 @@
    ведут на страницу с обложкой, первым элементом вставляет
    <img class="card-thumb">. Повторный запуск заменяет миниатюры, а не
    добавляет новые; карточки на страницы без обложки не трогает.
+3. В тёмные плашки разделов — «Читать →» (featured-strip, featured-article)
+   и «Следующий раздел» (g-next-section) — вставляет фоновую картинку-ссылку
+   <a class="block-bg"> первым элементом блока (обложка целевой страницы;
+   вид задаёт assets/site.css).
 
 Запускать после make_cover.py, make_section_lists.py и make_paths.py:
 эти скрипты пересобирают карточки и стирают миниатюры.
@@ -87,15 +91,51 @@ def patch_html(path, cov):
     return n
 
 
+BLOCK_RE = re.compile(r'<div class="(featured-strip|featured-article|g-next-section)(?=[\s"])[^"]*"[^>]*>')
+BLOCK_THUMB_RE = re.compile(r'\s*<a class="block-(?:thumb|bg)"[^>]*>\s*<img[^>]*>\s*</a>')
+BLOCK_LINK = {"featured-strip": "featured-btn", "featured-article": "featured-btn",
+              "g-next-section": "g-next-link"}
+
+
+def patch_blocks(path, cov):
+    """Тёмные плашки «Читать →» и «Следующий раздел»: фон-ссылка
+    первым элементом блока."""
+    s = BLOCK_THUMB_RE.sub("", open(path, encoding="utf-8").read())
+    out, pos, n = [], 0, 0
+    for m in BLOCK_RE.finditer(s):
+        kind = m.group(1)
+        nxt = BLOCK_RE.search(s, m.end())
+        chunk = s[m.end():nxt.start() if nxt else m.end() + 4000]
+        link = re.search(r'<a\s[^>]*href="([^"#?]+)"[^>]*class="%s|<a\s[^>]*class="%s"[^>]*href="([^"#?]+)"'
+                         % (BLOCK_LINK[kind], BLOCK_LINK[kind]), chunk)
+        target = link and (link.group(1) or link.group(2))
+        if target not in cov:
+            continue
+        out.append(s[pos:m.end()])
+        name = cov[target]
+        out.append('<a class="block-bg" href="%s" tabindex="-1" aria-hidden="true">'
+                   '<img src="assets/img/%s-hero-1200.webp" srcset="assets/img/%s-hero-1200.webp 1200w, '
+                   'assets/img/%s-hero-2000.webp 2000w" sizes="(max-width: 900px) 100vw, 1320px" '
+                   'alt="" loading="lazy" decoding="async"></a>' % (target, name, name, name))
+        pos = m.end()
+        n += 1
+    out.append(s[pos:])
+    new = "".join(out)
+    if new != open(path, encoding="utf-8").read():
+        open(path, "w", encoding="utf-8").write(new)
+    return n
+
+
 def main():
     cov = covers()
     for page, name in cov.items():
         make_thumb(name, focus_x(page))
-    total = 0
+    total = blocks = 0
     for f in sorted(os.listdir(ROOT)):
         if f.endswith(".html"):
             total += patch_html(os.path.join(ROOT, f), cov)
-    print("миниатюр: %d файлов, %d карточек" % (len(cov), total))
+            blocks += patch_blocks(os.path.join(ROOT, f), cov)
+    print("миниатюр: %d файлов, %d карточек, %d тёмных плашек" % (len(cov), total, blocks))
 
 
 if __name__ == "__main__":

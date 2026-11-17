@@ -280,3 +280,30 @@ a:hover>.card-thumb{opacity:.88;}
   .rel-grid:has(> :nth-child(3n+4):last-child),
   .related-grid:has(> :nth-child(3n+4):last-child){grid-template-columns:repeat(2,1fr);}
 }
+
+/* ─── Фон-иллюстрация в тёмных плашках разделов («Читать →», «Следующий раздел»)
+   Обложка целевой страницы на всю площадь плашки: чёрно-белая и затемнённая,
+   при наведении — цветная. Ссылка-фон лежит под текстом и делает кликабельной
+   всю плашку; текст пропускает клики к ней, кнопка остаётся своей ссылкой. */
+html body .featured-strip:has(>.block-bg),
+html body .featured-article:has(>.block-bg),
+html body .g-next-section:has(>.block-bg){position:relative;overflow:hidden;isolation:isolate;background:#16211a;}
+.block-bg{position:absolute;inset:0;z-index:0;display:block;}
+.block-bg img{width:100%;height:100%;object-fit:cover;object-position:50% 45%;
+  filter:grayscale(1) brightness(.5) contrast(1.05);transform:scale(1.02);
+  transition:filter .6s ease,transform .8s ease;}
+.block-bg::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(16,26,19,.82) 0%,rgba(16,26,19,.55) 55%,rgba(16,26,19,.35) 100%);
+}
+:is(.featured-strip,.featured-article,.g-next-section):has(>.block-bg):hover .block-bg img,
+:is(.featured-strip,.featured-article,.g-next-section):has(>.block-bg):focus-within .block-bg img{filter:grayscale(0) brightness(.56) contrast(1);transform:scale(1.05);}
+:is(.featured-strip,.featured-article,.g-next-section):has(>.block-bg)>*:not(.block-bg){position:relative;z-index:1;pointer-events:none;}
+:is(.featured-strip,.featured-article,.g-next-section):has(>.block-bg) :is(a,button){pointer-events:auto;}
+.g-next-section:has(>.block-bg) .g-next-num{color:rgba(255,255,255,.14);}
+@media (prefers-reduced-motion:reduce){.block-bg img,.block-bg::after{transition:none;}}
+/* В узкой колонке (боковая колонка раздела) кнопка «Читать →» уходит под текст */
+:has(>.featured-strip>.block-bg),:has(>.featured-article>.block-bg){container-type:inline-size;}
+@container (max-width:560px){
+  html body .featured-strip:has(>.block-bg),
+  html body .featured-article:has(>.block-bg){grid-template-columns:1fr;gap:1.4rem;}
+}
