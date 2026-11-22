@@ -75,16 +75,35 @@ h1 em{font-style:italic;color:var(--moss);display:block;}
 .d4{transition-delay:0.28s;}
 @media(max-width:960px){ .sections-grid,.fresh-grid{grid-template-columns:repeat(2,1fr);} .block-sub{display:none;} }
 @media(max-width:640px){ .hero,.sections-block,.fresh-block,.manifesto{padding-left:1.5rem;padding-right:1.5rem;} h1{font-size:2.8rem;} .hero-mark{opacity:0.04;width:120px;height:120px;right:1.5rem;} .block-header,.fresh-header{flex-direction:column;align-items:flex-start;} .sections-grid{grid-template-columns:1fr 1fr;} .fresh-grid{grid-template-columns:1fr;} }
+/* Главный экран с иллюстрацией. От 1200px картинка на весь экран, текст — справа,
+   на светлом небе; уже — картинка сверху, текст под ней. */
+html body .hero.home-hero{display:block;min-height:0;padding:0;}
+.home-hero::before{display:none;}
+.home-hero-img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:0% 50%;}
+html body .home-hero .hero-content{max-width:none;padding:2.5rem 4rem 3.5rem;}
+.home-hero h1{font-size:clamp(2.6rem,6vw,4.4rem);}
+@media(max-width:640px){
+  .home-hero-img{aspect-ratio:4/3;}
+  html body .home-hero .hero-content{padding:2rem 1.5rem 3rem;}
+}
+@media(min-width:1200px){
+  html body .hero.home-hero{display:flex;align-items:center;justify-content:flex-end;
+    height:min(56.25vw,calc(100vh - 62px));min-height:600px;padding:0 4rem;}
+  .home-hero-img{position:absolute;inset:0;height:100%;aspect-ratio:auto;}
+  /* текст начинается на 66% ширины — там, где кончается карта и начинается небо */
+  html body .home-hero .hero-content{width:calc(34vw - 4rem);max-width:640px;padding:0;}
+  .home-hero h1{font-size:clamp(3rem,4.2vw,5rem);}
+}
 </style>
 <!-- ECO:MANAGED:head -->
   <link rel="canonical" href="https://morgunkonstantin.github.io/ecology/">
   <meta property="og:url" content="https://morgunkonstantin.github.io/ecology/">
   <meta property="og:site_name" content="ЭкоСознание">
-  <meta property="og:image" content="https://morgunkonstantin.github.io/ecology/assets/og-image.png">
+  <meta property="og:image" content="https://morgunkonstantin.github.io/ecology/assets/img/home-og.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="ЭкоСознание — экология как способ смотреть на реальность">
-  <meta name="twitter:image" content="https://morgunkonstantin.github.io/ecology/assets/og-image.png">
+  <meta property="og:image:alt" content="Женщина под деревом рассматривает ожившую карту: гора, ручьи, дерево с корнями, река, огород и деревня.">
+  <meta name="twitter:image" content="https://morgunkonstantin.github.io/ecology/assets/img/home-og.jpg">
   <meta name="theme-color" content="#faf6ef">
   <meta name="color-scheme" content="light">
   <link rel="icon" href="favicon.ico" sizes="any">
@@ -92,7 +111,7 @@ h1 em{font-style:italic;color:var(--moss);display:block;}
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
   <link rel="stylesheet" href="assets/site.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"ЭкоСознание","headline":"ЭкоСознание","description":"Экология как способ смотреть на реальность. Размышления и практики об устойчивой жизни — о доме, еде, сообществе и о том, как мы думаем о мире.","inLanguage":"ru-RU","url":"https://morgunkonstantin.github.io/ecology/","publisher":{"@type":"Organization","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"ЭкоСознание","headline":"ЭкоСознание","description":"Экология как способ смотреть на реальность. Размышления и практики об устойчивой жизни — о доме, еде, сообществе и о том, как мы думаем о мире.","inLanguage":"ru-RU","url":"https://morgunkonstantin.github.io/ecology/","publisher":{"@type":"Organization","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology/"},"image":"https://morgunkonstantin.github.io/ecology/assets/img/home-og.jpg"}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://morgunkonstantin.github.io/ecology/"}]}</script>
 <!-- /ECO:MANAGED:head -->
 </head>
@@ -193,8 +212,11 @@ h1 em{font-style:italic;color:var(--moss);display:block;}
 <!-- /ECO:MANAGED:nav -->
 <main id="content" tabindex="-1">
 
-<section class="hero" id="top">
-  <div class="hero-mark"><svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="40" stroke="#4a7c59" stroke-width="1.5" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="6" fill="#4a7c59"/></svg></div>
+<section class="hero home-hero" id="top">
+  <img class="home-hero-img" src="assets/img/home-hero-2000.webp"
+       srcset="assets/img/home-hero-1200.webp 1200w, assets/img/home-hero-2000.webp 2000w"
+       sizes="100vw" width="2000" height="1125" fetchpriority="high" decoding="async"
+       alt="Женщина сидит под деревом с книгами и карандашом; перед ней раскрыта карта, которая оживает: гора, ручьи, дерево с корнями, река, огород и деревня.">
   <div class="hero-content">
     <div class="hero-sup">Экологический взгляд на жизнь</div>
     <h1>Не сборник советов,<br><em>а другая линза</em></h1>
